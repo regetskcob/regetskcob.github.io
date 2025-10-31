@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="de-de"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+
+<meta name="description" content="Using a Magic Keyboard and Trackpad on multiple Macs"/>
+
+
+
+<title>
+    
+    Magic Keyboard and Trackpad on Multiple Macs | regetskcob
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/posts/pair-unpair/"/>
+
+<meta property="og:url" content="http://localhost:1313/posts/pair-unpair/">
+  <meta property="og:site_name" content="regetskcob">
+  <meta property="og:title" content="Magic Keyboard and Trackpad on Multiple Macs">
+  <meta property="og:description" content="Using a Magic Keyboard and Trackpad on multiple Macs">
+  <meta property="og:locale" content="de_de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-08T00:00:00+00:00">
+    <meta property="article:tag" content="Mac">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.56b1873d8852f8a5a109abda36c1bfcde55cb48e5bcbe0d8c934a196a7dc374a.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/">regetskcob</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/library" >
+                /library
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/about" >
+                /profil
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
+        <a href="/posts/pair-unpair/">Magic Keyboard and Trackpad on Multiple Macs</a></div>
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">Magic Keyboard and Trackpad on Multiple Macs</h1>
+        <p class="single-summary">Not havint to manually unpair your devices from one Mac to another.</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2025-09-08T00:00:00&#43;00:00">September 8, 2025</time>
+              &nbsp; · &nbsp;2 min read
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <p>The problem of using a Magic Keyboard and Trackpad on multiple Macs seems to be a recurring issue.
+You basically struggle to switch focus from one Mac to another if those devices are paired to both.</p>
+<p>There are some paid apps that promise to fix this, for only <strong>$14.99</strong>!
+But you only need ten free lines of code to make this work (most of the times).</p>
+<h2 class="heading" id="requirements">
+  Requirements
+  <a class="anchor" href="#requirements">#</a>
+</h2>
+<p>Start by installing <a href="https://github.com/toy/blueutil">blueutil</a>, a CLI for bluetooth on MacOS:</p>
+<pre tabindex="0"><code>brew install blueutil
+</code></pre><p>You&rsquo;ll then need to get IDs of your devices as follows:</p>
+<pre tabindex="0"><code>&gt; blueutil --paired
+address: &lt;your-keyboard-id&gt;, connected, ... , name: &#34;Magic Keyboard&#34;, ...
+address: &lt;your-trackpad-id&gt;, connected, ... , name: &#34;Magic Trackpad&#34;, ...
+</code></pre><h2 class="heading" id="pairing-and-unpairing-from-terminal">
+  Pairing and Unpairing from Terminal
+  <a class="anchor" href="#pairing-and-unpairing-from-terminal">#</a>
+</h2>
+<p>We can use blueutil to pair, unpair, connect and disconnect devices.
+To make this easier, I wrote two functions that give you convenient <code>pair</code> and <code>unpair</code> commands from the terminal, you can simply put them in your <code>~/.zshrc</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">MAGIC_KEYBOARD</span>=<span style="color:#666;font-style:italic">&#34;&lt;your-keyboard-id&gt;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">MAGIC_TRACKPAD</span>=<span style="color:#666;font-style:italic">&#34;&lt;your-trackpad-id&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">function</span> pair() {
+</span></span><span style="display:flex;"><span>  blueutil --pair <span style="color:#666;font-weight:bold;font-style:italic">$MAGIC_KEYBOARD</span>
+</span></span><span style="display:flex;"><span>  blueutil --pair <span style="color:#666;font-weight:bold;font-style:italic">$MAGIC_TRACKPAD</span>
+</span></span><span style="display:flex;"><span>  blueutil --connect <span style="color:#666;font-weight:bold;font-style:italic">$MAGIC_KEYBOARD</span>
+</span></span><span style="display:flex;"><span>  blueutil --connect <span style="color:#666;font-weight:bold;font-style:italic">$MAGIC_TRACKPAD</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">function</span> unpair() {
+</span></span><span style="display:flex;"><span>  blueutil --disconnect <span style="color:#666;font-weight:bold;font-style:italic">$MAGIC_KEYBOARD</span>
+</span></span><span style="display:flex;"><span>  blueutil --disconnect <span style="color:#666;font-weight:bold;font-style:italic">$MAGIC_TRACKPAD</span>
+</span></span><span style="display:flex;"><span>  blueutil --unpair <span style="color:#666;font-weight:bold;font-style:italic">$MAGIC_KEYBOARD</span>
+</span></span><span style="display:flex;"><span>  blueutil --unpair <span style="color:#666;font-weight:bold;font-style:italic">$MAGIC_TRACKPAD</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Boom you&rsquo;re done. Add these helpers on every Mac, run unpair on one before pairing on the other,
+you might need to turn off and on the keyboard and trackpad before pairing.</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/posts/search-engine/">
+                        Search Engine in Rust
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    
+    
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>

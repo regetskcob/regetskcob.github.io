@@ -1,0 +1,88 @@
+baseURL = 'https://regetskcob.github.io'
+languageCode = 'de-de'
+title = 'regetskcob'
+theme = 'typo'
+
+# Google analytics code
+#googleAnalytics = "G-xxxxxxxxx"
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Meta description
+description = "Eine wilde Mischung aus Noten, Natur, Quellcode und Technik."
+
+# Appearance settings
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+Ich bin Daniel, online meistens als @regetskcob unterwegs. Beruflich bin ich Software Entwickler, in meiner Freizeit mit Passion und Leidenschaft Jäger und Landschaftsfotograf. Im Oktober 2025 habe ich damit begonnen zu lernen auf dem Tenorhorn zu spielen.
+
+Von diesem Blog könnt ihr alles erwarten, was sich aus dieser kurzem Beschreiben ergibt und noch mehr. Es gibt kein festes Thema, kein festes Ziel. Wonach mir ist, wovon ich glaube damit Mehrwert zu stiften, das wird gepostet.
+
+Freut mich dich dabei zu haben, ich hoffe du kannst aus den Inhalten etwas für dich mitnehmen!
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 25
+listSummaries = true
+listDateFormat = '2. Januar 2006'
+
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "Home"
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/regetskcob/"
+
+[[params.social]]
+name = "instagram"
+url = "https://medium.com/@regetskcob"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/regetskcob"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "library"
+url = "/library"
+
+[[params.menu]]
+name = "profil"
+url = "/about"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+#enable = false
+#repo = "user/repo"
+#repoid = "repoId"
+#category = "General"
+#categoryid = "categoryId"
+#mapping = "pathname"
+#theme = "preferred_color_scheme"

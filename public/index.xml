@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on regetskcob</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on regetskcob</description>
+    <generator>Hugo</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magic Keyboard and Trackpad on Multiple Macs</title>
+      <link>http://localhost:1313/posts/pair-unpair/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pair-unpair/</guid>
+      <description>Not havint to manually unpair your devices from one Mac to another.</description>
+    </item>
+    <item>
+      <title>Search Engine in Rust</title>
+      <link>http://localhost:1313/posts/search-engine/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/search-engine/</guid>
+      <description>A search engine overview and Rust implementation, supporting free and boolean ranked queries, efficient disk and memory usage, and spelling correction.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hi, ich bin Daniel!&lt;/p&gt;&#xA;&lt;p&gt;Ich habe in den letzten 14 Jahren einen Großteil meines Alltags der Software Entwicklung gewidmet. Mit 2024 als Native iOS App Developer mit Hauptfokus auf die Entwicklung von intuitiven iPhone und insbesondere iPad Apps für Handwerksbetriebe. Zeiterfassung, Rechnungspositionen einsehen, Aufmaße vor Ort erstellen. Dinge, die beim Kunden funktionieren müssen, um den Auftrag auch beim nächsten Mal sicher zu haben.&lt;/p&gt;&#xA;&lt;p&gt;Nach insgesamt 13 Jahren bei meinem alten Arbeitgeber zog es mich dann aber in neue, für mich zuerst nebel-verhangene Gefilde. Cross-Plattform Entwicklung wurde zuvor zwar schon immer wieder Thema aufgrund sinkender Team-Größe, aber eher als Mittel zum Zweck, um die Kapazitäten zu halten.. Beim neuen Arbeitgeber wurde es zum Kern der Kultur. Schnelle MVP Entwicklung für wechselnde Plattformen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Library</title>
+      <link>http://localhost:1313/library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/library/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://dataintensive.net/&#34;&gt;Designing Data-Intensive Applications&lt;/a&gt; &lt;br&gt;&#xA;Excellent book about many distributed systems concepts, databases, and big data processing ideas.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://nlp.stanford.edu/IR-book/information-retrieval-book.html&#34;&gt;Introduction to information retrieval&lt;/a&gt; &lt;br&gt;&#xA;How search engines work, how they are built and maintained. Also covers web crawling.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://aipoweredsearch.com/&#34;&gt;AI-Powered Search&lt;/a&gt; &lt;br&gt;&#xA;Building AI-enhanced modern search engines, covering semantic search, learn to rank, LLM summaries, etc.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.databass.dev/&#34;&gt;Database Internals&lt;/a&gt; &lt;br&gt;&#xA;Deep dive into database concepts that the first book only touches briefly, like data organization on disk, log-structured databases, and so on. It also covers distributed systems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
