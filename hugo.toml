@@ -3,11 +3,16 @@ languageCode = 'de-de'
 title = 'regetskcob'
 theme = 'typo'
 
-# Google analytics code
-#googleAnalytics = "G-xxxxxxxxx"
-
 [taxonomies]
 tag = 'tags'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/hugomods/umami-analytics'
+    
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 [params]
 # Meta description
