@@ -6,35 +6,35 @@
     <description>Recent content in Home on regetskcob</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Magic Keyboard and Trackpad on Multiple Macs</title>
-      <link>http://localhost:1313/posts/pair-unpair/</link>
-      <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/pair-unpair/</guid>
-      <description>Not havint to manually unpair your devices from one Mac to another.</description>
+      <title>Simplifying migration from Ghost to Hugo</title>
+      <link>http://localhost:1313/posts/ghost2hugo/</link>
+      <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ghost2hugo/</guid>
+      <description>I created a simple python script to convert Ghost backup-files into Hugo markdowns.</description>
     </item>
     <item>
-      <title>Search Engine in Rust</title>
-      <link>http://localhost:1313/posts/search-engine/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/search-engine/</guid>
-      <description>A search engine overview and Rust implementation, supporting free and boolean ranked queries, efficient disk and memory usage, and spelling correction.</description>
+      <title>Legal</title>
+      <link>http://localhost:1313/legal/</link>
+      <pubDate>Sun, 05 Apr 2020 16:31:43 +0000</pubDate>
+      <guid>http://localhost:1313/legal/</guid>
+      <description>&lt;h2 class=&#34;heading&#34; id=&#34;legal&#34;&gt;&#xA;  Legal&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#legal&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Diese Webseite wird betrieben von:&lt;/strong&gt;&lt;br&gt;&#xA;Daniel Bocksteger&lt;br&gt;&#xA;&lt;a href=&#34;mailto:regetskcob@icloud.com&#34;&gt;regetskcob@icloud.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;datenschutzerklärung&#34;&gt;&#xA;  Datenschutzerklärung&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#datenschutzerkl%c3%a4rung&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Diese Webseite wird bei als statische generierte Webseite per &lt;a href=&#34;https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection&#34; title=&#34;GitHub Pages&#34;&gt;GitHub Pages&lt;/a&gt; gehostet.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Persönliche Daten&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Die Sammlung und Speicherung persönlicher Daten ist soweit möglich eingeschränkt.&lt;/li&gt;&#xA;&lt;li&gt;Zur Analyse der Nutzung meiner Webseite verwende ich &lt;a href=&#34;https://umami.is/privacy&#34; title=&#34;Umami&#34;&gt;Umami&lt;/a&gt;. Eine Analyse Plattform, die sich dem Datenschutz verschrieben hat und ausschließlich anonymisierte Daten zur Analyse sammelt.&lt;/li&gt;&#xA;&lt;li&gt;Für die Kommentar-Funktion wird &lt;a href=&#34;https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md&#34; title=&#34;Giscus&#34;&gt;Giscus&lt;/a&gt; verwendet, ebenso dem Datenschutz verschrieben und mit eurem &lt;a href=&#34;https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement&#34; title=&#34;GitHub&#34;&gt;GitHub&lt;/a&gt;-Konto gekoppelt. Seid ihr nicht angemeldet oder schreibt keine Kommentare, werden auch keine Daten von euch erfasst.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;haftungsausschluss&#34;&gt;&#xA;  Haftungsausschluss&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#haftungsausschluss&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Haftung für Inhalte&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About</title>
+      <title>Über mich</title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Apr 2020 15:07:57 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Hi, ich bin Daniel!&lt;/p&gt;&#xA;&lt;p&gt;Ich habe in den letzten 14 Jahren einen Großteil meines Alltags der Software Entwicklung gewidmet. Mit 2024 als Native iOS App Developer mit Hauptfokus auf die Entwicklung von intuitiven iPhone und insbesondere iPad Apps für Handwerksbetriebe. Zeiterfassung, Rechnungspositionen einsehen, Aufmaße vor Ort erstellen. Dinge, die beim Kunden funktionieren müssen, um den Auftrag auch beim nächsten Mal sicher zu haben.&lt;/p&gt;&#xA;&lt;p&gt;Nach insgesamt 13 Jahren bei meinem alten Arbeitgeber zog es mich dann aber in neue, für mich zuerst nebel-verhangene Gefilde. Cross-Plattform Entwicklung wurde zuvor zwar schon immer wieder Thema aufgrund sinkender Team-Größe, aber eher als Mittel zum Zweck, um die Kapazitäten zu halten.. Beim neuen Arbeitgeber wurde es zum Kern der Kultur. Schnelle MVP Entwicklung für wechselnde Plattformen.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hi,&lt;/p&gt;&#xA;&lt;p&gt;schön dass ich Dich hier begrüßen darf! Es scheint, als würden dich Fotografie oder Software/Technologie interessieren. Das freut mich ungemein, denn genau darum dreht sich hier auf dem Blog sozusagen jede Zeile. ☺️&lt;/p&gt;&#xA;&lt;p&gt;Ich bin Daniel, beruflich seit 2015 als festangestellter Software-Entwickler tätig und in meiner Freizeit beschäftige ich mich insbesondere mit der Fotografie.&lt;/p&gt;&#xA;&lt;p&gt;Ansonsten kann ich über mich sagen, dass eine meiner größten Stärken zugleich meine größte Schwäche darstellt. Mir fällt es sehr leicht, mich in technische und logisch komplexe Themen oder Aufgabenstellungen „reinzufuchsen“, was soweit erstmal positiv ist. Die „negative“ Seite ergibt sich daraus, dass ich mich parallel auch für viel zu viele Dinge interessiere und begeistern kann, was zum „Springen“ zwischen all diesen Themen führt.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Library</title>
+      <title>„Bibliothek“</title>
       <link>http://localhost:1313/library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/library/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://dataintensive.net/&#34;&gt;Designing Data-Intensive Applications&lt;/a&gt; &lt;br&gt;&#xA;Excellent book about many distributed systems concepts, databases, and big data processing ideas.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://nlp.stanford.edu/IR-book/information-retrieval-book.html&#34;&gt;Introduction to information retrieval&lt;/a&gt; &lt;br&gt;&#xA;How search engines work, how they are built and maintained. Also covers web crawling.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://aipoweredsearch.com/&#34;&gt;AI-Powered Search&lt;/a&gt; &lt;br&gt;&#xA;Building AI-enhanced modern search engines, covering semantic search, learn to rank, LLM summaries, etc.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.databass.dev/&#34;&gt;Database Internals&lt;/a&gt; &lt;br&gt;&#xA;Deep dive into database concepts that the first book only touches briefly, like data organization on disk, log-structured databases, and so on. It also covers distributed systems.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.engguidebook.com/&#34;&gt;The Software Engineer&amp;rsquo;s Guidebook&lt;/a&gt; \&#xA;Good insights on a software engineer career.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Steve_Jobs_(book)&#34;&gt;Steve Jobs Biography&lt;/a&gt; \&#xA;An overview of the founder of Apple&amp;rsquo;s life.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

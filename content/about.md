@@ -1,14 +1,24 @@
 ---
-title: "About"
-description: „Über Daniel, einen passionierten Software Entwickler mit zu vielen Hobbies für zu wenig Freizeit.“
-hideBackToTop: true
-hidePagination: true
+title: Über mich
+title_plain: Über mich
+date: 2020-04-05T15:07:57+0000
+lastmod: 2025-03-30T12:48:14+0000
+description: Wer schreibt hier eigentlich?
 ---
 
-Hi, ich bin Daniel!
+Hi,
 
-Ich habe in den letzten 14 Jahren einen Großteil meines Alltags der Software Entwicklung gewidmet. Mit 2024 als Native iOS App Developer mit Hauptfokus auf die Entwicklung von intuitiven iPhone und insbesondere iPad Apps für Handwerksbetriebe. Zeiterfassung, Rechnungspositionen einsehen, Aufmaße vor Ort erstellen. Dinge, die beim Kunden funktionieren müssen, um den Auftrag auch beim nächsten Mal sicher zu haben.
+schön dass ich Dich hier begrüßen darf! Es scheint, als würden dich Fotografie oder Software/Technologie interessieren. Das freut mich ungemein, denn genau darum dreht sich hier auf dem Blog sozusagen jede Zeile. ☺️
 
-Nach insgesamt 13 Jahren bei meinem alten Arbeitgeber zog es mich dann aber in neue, für mich zuerst nebel-verhangene Gefilde. Cross-Plattform Entwicklung wurde zuvor zwar schon immer wieder Thema aufgrund sinkender Team-Größe, aber eher als Mittel zum Zweck, um die Kapazitäten zu halten.. Beim neuen Arbeitgeber wurde es zum Kern der Kultur. Schnelle MVP Entwicklung für wechselnde Plattformen. 
+Ich bin Daniel, beruflich seit 2015 als festangestellter Software-Entwickler tätig und in meiner Freizeit beschäftige ich mich insbesondere mit der Fotografie.
 
-… Fortsetzung folgt …
+Ansonsten kann ich über mich sagen, dass eine meiner größten Stärken zugleich meine größte Schwäche darstellt. Mir fällt es sehr leicht, mich in technische und logisch komplexe Themen oder Aufgabenstellungen „reinzufuchsen“, was soweit erstmal positiv ist. Die „negative“ Seite ergibt sich daraus, dass ich mich parallel auch für viel zu viele Dinge interessiere und begeistern kann, was zum „Springen“ zwischen all diesen Themen führt.
+
+Dabei liegt mein Fokus insbesondere auf den folgenden Themen:
+
+  * 👨🏻‍💻 | Software-Entwicklung (native iOS mit Objective-C & Swift, Cross-Platform mit Flutter)
+  * ⚡️ | Haus-Automatisierung mit KNX - In unserem Eigenheim habe ich die smarte Elektro-Installation komplett in Eigenleistung geplant und durchgeführt.
+  * 📸 | Fotografie mit Kamera & -Drohne
+  * 🥾 | Ich gehe gerne in den umliegenden Wäldern wandern und nehme die Kamera mit auf die Tour.
+  * 📚 | Ich lese in meiner übrigen Freizeit am liebsten über die Fotografie und die Jagd. Aber auch Bücher zu Technologien stehen immer wieder auf der Leseliste.
+  * 🦌 | In April 2024 haben meine Partnerin und ich unsere Jagdschein-Prüfung nach 6 Monaten Unterricht und Jagdpraxis absolviert und engagieren uns seit dem im heimischen Hegering & Revier. In 2025 starten wir außerdem als zertifizierte UAV Fernpiloten in die Kitz-/Jungwildrettung.

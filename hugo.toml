@@ -61,16 +61,16 @@ name = "home"
 url = "/"
 
 [[params.menu]]
-name = "posts"
-url = "/posts"
-
-[[params.menu]]
 name = "library"
 url = "/library"
 
 [[params.menu]]
-name = "profil"
+name = "about"
 url = "/about"
+
+[[params.menu]]
+name = "legal"
+url = "/legal"
 
 # Syntax highlight on code blocks
 [markup]
@@ -79,10 +79,15 @@ style = 'algol'
 
 # Giscus comments
 [params.giscus]
-#enable = false
-#repo = "user/repo"
-#repoid = "repoId"
-#category = "General"
-#categoryid = "categoryId"
-#mapping = "pathname"
-#theme = "preferred_color_scheme"
+enable = true
+repo = "regetskcob/regetskcob.github.io"
+repoid = "R_kgDOQNAtWg"
+category = "General"
+categoryid = "DIC_kwDOQNAtWs4CxXN6"
+mapping = "pathname"
+theme = "preferred_color_scheme"
+
+[params.umami]
+enable = true
+websiteId = "c06c7f84-1748-4134-a2ab-c3e5b7b0fe5d"
+jsLocation = "https://cloud.umami.is/script.js"
