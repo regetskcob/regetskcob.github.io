@@ -1,12 +1,9 @@
 ---
-title: Legal
-title\_plain: Legal
+title: Rechtliches
 date: 2020-04-05T16:31:43+0000
 lastmod: 2024-11-17T15:19:02+0000
 description: ‚Legal‘
 ---
-
-## Legal
 
 **Diese Webseite wird betrieben von:**  
 Daniel Bocksteger  

@@ -16,7 +16,7 @@ tag = 'tags'
 
 [params]
 # Meta description
-description = "Eine wilde Mischung aus Noten, Natur, Quellcode und Technik."
+description = "Eine wilde Mischung aus Natur, Quellcode und Technik."
 
 # Appearance settings
 colorPalette = 'default'

@@ -1,8 +1,7 @@
 ---
 title: 📚 | Zukunft ist ein guter Ort
 title_plain: '| Zukunft ist ein guter Ort'
-date: 2020-04-23T12:00:00+0000
-lastmod: 2024-11-17T15:07:25+0000
+date: 2020-04-23
 slug: zukunft-ist-ein-guter-ort
 draft: false
 type: post

@@ -1,5 +1,5 @@
 ---
-title: „Bibliothek“
+title: Bibliothek
 description: „Gelesen und für gut befunden.“
 hideBackToTop: false
 hidePagination: true
