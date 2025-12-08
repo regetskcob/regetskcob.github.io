@@ -8,13 +8,10 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 2
-description: „Wer dieses Buch gelesen und die Porträts unserer wilden Mitbewohner
+summary: „Wer dieses Buch gelesen und die Porträts unserer wilden Mitbewohner
   gesehen hat, wird schnell von der Erkenntnis heimgesucht, dass wir dem großen Schatz,
   den uns die Natur hier anvertraut hat, mit Rücksicht, Bewunderung und Respekt begegnen
   sollen.“
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./DSCF4594.jpeg
 cover: ./DSCF4594.jpeg
 seo:

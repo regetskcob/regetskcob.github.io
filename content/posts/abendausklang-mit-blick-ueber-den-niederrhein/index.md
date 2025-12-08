@@ -8,7 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 3
-description: Aktuell leben die meisten von uns in Ausnahmesituationen. Soziale Kontakte
+summary: Aktuell leben die meisten von uns in Ausnahmesituationen. Soziale Kontakte
   müssen auf ein Minimum zurückgefahren werden. Corona bestimmt unseren Alltag.
 featured_image: ./dscf2916.jpg
 cover: ./dscf2916.jpg

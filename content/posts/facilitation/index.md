@@ -8,13 +8,10 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 1
-description: Dieses Buch ist eine inspirierende Lektüre für die Mittagspause oder
+summary: Dieses Buch ist eine inspirierende Lektüre für die Mittagspause oder
   den Feierabend, könnte aber auch während der Arbeit gelesen werden. Die Illustrationen
   sind liebevoll gestaltet und perfekt auf den Inhalt zugeschnitten, sodass markante
   Informationen einprägsam visualisiert werden.
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 cover: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 seo:

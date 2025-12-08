@@ -8,12 +8,8 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 1
-description: Das wichtigste ist mit dem Titel des Buches bereits gesagt. Am einfachsten
-  erreicht man ein _hyggeliges_ Leben, wenn man den positiven Fokus auf die vielen
-  K…
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
+summary: Das wichtigste ist mit dem Titel des Buches bereits gesagt. Am einfachsten
+  erreicht man ein hyggeliges Leben, wenn man den Fokus auf die vielen kleinen glücklichen Momente im leben richtet.
 featured_image: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
 cover: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
 seo:

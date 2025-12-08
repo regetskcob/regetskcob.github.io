@@ -1,6 +1,6 @@
 ---
 title: "Simplifying migration from Ghost to Hugo"
-date: "2025-11-02"
+date: 2025-11-02T07:00:00+0000
 summary: "I created a simple python script to convert Ghost backup-files into Hugo markdowns."
 description: "Migration from Ghost to Hugo"
 draft: false

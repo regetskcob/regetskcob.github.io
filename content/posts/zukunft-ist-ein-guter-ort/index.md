@@ -8,11 +8,8 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 1
-description: Wenn _Sina Trinkwalder_ davon schreibt, was eine nachhaltige Gesellschaft
-  ausmachen würde, ist es wie ein schöner Traum. Als würde man die aktuelle Welt durc…
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
+summary: Wenn Sina Trinkwalder davon schreibt, was eine nachhaltige Gesellschaft
+  ausmachen würde, ist es wie ein schöner Traum. Als würde man die aktuelle Welt durch die förmlich rosarote Brille sehen.
 featured_image: ./fc69725a-01ae-48b0-9b80-524011009ca4-23010-000012bfb29fe23e.jpg
 cover: ./fc69725a-01ae-48b0-9b80-524011009ca4-23010-000012bfb29fe23e.jpg
 seo:
