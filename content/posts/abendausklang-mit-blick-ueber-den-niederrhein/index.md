@@ -1,8 +1,8 @@
 ---
 title: 📸 | Abendausklang mit Blick über den Niederrhein
 title_plain: '| Abendausklang mit Blick über den Niederrhein'
-date: 2020-04-11T21:08:49+0000
-lastmod: 2025-03-30T12:08:31+0000
+date: "2020-04-11"
+lastmod: "2025-12-09"
 slug: abendausklang-mit-blick-ueber-den-niederrhein
 draft: false
 type: post
