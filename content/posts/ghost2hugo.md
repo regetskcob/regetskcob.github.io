@@ -13,9 +13,10 @@ showTags: false
 
 Hi, 
 
-usually this will be a German blog. But since this topic is relevant to the whole Ghost community, I write it in English to increase the chance to reach the relevant people searching for a similar solution.
+usually this will be a German blog. But since this topic is relevant to the whole Ghost community, I write this post in english to increase the chance to reach the relevant people searching for a similar solution.
 
-I was struggling around with the task to write all posts again in Hugo formatted \*.md files. After the first few posts I asked Chat-GPT and delegated this Job to „him“. So the real code-owner might be Chat-GPT, but it took a look of prompts and turns to get satisfying results.
+When i decided to switch from Ghost to GitHub-Pages (using Hugo), I was struggling around with the task to write all posts again in Hugo formatted \*.md files. After the first few posts I asked Chat-GPT and delegated this Job to „him“. 
+So the real code-owner might be Chat-GPT, but it took a look of prompts and turns to get satisfying results.
 
 In case you want to migrate from Ghost to a static site generator, maybe Hugo, give [my Script][1] a Chance. 
 
