@@ -47,7 +47,7 @@ DateForm = "2. Jan. 2006"
 # Breadcrumbs
 [params.breadcrumbs]
 enabled = true
-showCurrentPage = true
+showCurrentPage = false
 home = "Home"
 
 # Social icons
@@ -63,21 +63,25 @@ url = "https://medium.com/@regetskcob"
 name = "github"
 url = "https://github.com/regetskcob"
 
+[[params.social]]
+name = "medium"
+url = "https://medium.com/regetskcob"
+
 # Main menu pages
 [[params.menu]]
-name = "home"
+name = "Start"
 url = "/"
 
 [[params.menu]]
-name = "library"
+name = "Bibliothek"
 url = "/library"
 
 [[params.menu]]
-name = "about"
+name = "Über"
 url = "/about"
 
 [[params.menu]]
-name = "legal"
+name = "Rechtliches"
 url = "/legal"
 
 # Syntax highlight on code blocks
