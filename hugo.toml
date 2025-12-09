@@ -16,7 +16,7 @@ tag = 'tags'
 
 [params]
 # Meta description
-description = "Eine wilde Mischung aus Natur, Quellcode und Technik."
+description = "Eine wilde Mischung aus Natur, Fotografie und Technik."
 
 # Appearance settings
 colorPalette = 'default'
@@ -25,15 +25,16 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hi!'
 homeIntroContent = """
-Ich bin Daniel, online meistens als @regetskcob unterwegs. Beruflich bin ich Software Entwickler, in meiner Freizeit mit Passion und Leidenschaft Jäger und Landschaftsfotograf. Im Oktober 2025 habe ich damit begonnen zu lernen auf dem Tenorhorn zu spielen.
+ich bin Daniel, online meistens als @regetskcob unterwegs. Beruflich bin ich Software Entwickler bei der BWI GmbH, wo ich in der Prototypen-Entwicklung mit Flutter tätig bin. 
+Meine Freizeit widme ich mit Passion und Leidenschaft der Natur, sowohl als Jäger als auch als Landschaftsfotograf. 
 
-Von diesem Blog könnt ihr alles erwarten, was sich aus dieser kurzem Beschreiben ergibt und noch mehr. Es gibt kein festes Thema, kein festes Ziel. Wonach mir ist, wovon ich glaube damit Mehrwert zu stiften, das wird gepostet.
+Von diesem Blog könnt ihr alles erwarten, was sich irgendwie im Dunstkreis zwischen Technik und Natur bewegt. 
 
 Freut mich dich dabei zu haben, ich hoffe du kannst aus den Inhalten etwas für dich mitnehmen!
 """
 
 # Collection to display on home
-homeCollectionTitle = 'Posts'
+homeCollectionTitle = 'Beiträge'
 homeCollection = 'posts'
 
 # Lists parameters
