@@ -9,7 +9,7 @@ Hi,
 
 schön dass ich Dich hier begrüßen darf! Es scheint, als würden dich Fotografie oder Software/Technologie interessieren. Das freut mich ungemein, denn genau darum dreht sich hier auf dem Blog sozusagen jede Zeile. ☺️
 
-Ich bin Daniel, beruflich seit 2015 als festangestellter Software-Entwickler tätig und in meiner Freizeit beschäftige ich mich insbesondere mit der Fotografie.
+Ich bin Daniel, seit 2015 festangestellter Software-Entwickler und in meiner Freizeit beschäftige ich mich insbesondere mit der Fotografie und der Natur, die mich umgibt.
 
 Ansonsten kann ich über mich sagen, dass eine meiner größten Stärken zugleich auch meine größte Schwäche ist. Mir fällt es sehr leicht, mich in technische und logisch komplexe Themen oder Aufgabenstellungen „reinzufuchsen“, was soweit erstmal positiv ist. 
 Die „negative“ Seite ergibt sich daraus, dass ich mich parallel auch für viel zu viele Dinge interessiere und begeistern kann, was zum „Springen“ zwischen all diesen Themen führt, was den Fokus manchmal etwas verschwimmen lässt.
