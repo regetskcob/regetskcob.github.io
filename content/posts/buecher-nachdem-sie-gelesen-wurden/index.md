@@ -1,6 +1,6 @@
 ---
 title: 🤓 | Bücher, nachdem sie gelesen wurden
-title_plain: '| Bücher, nachdem sie gelesen wurden'
+title_plain: 'Bücher, nachdem sie gelesen wurden'
 date: 2022-12-03T20:57:47+0000
 lastmod: 2025-01-06T13:27:42+0000
 slug: buecher-nachdem-sie-gelesen-wurden

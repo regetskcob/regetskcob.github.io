@@ -1,6 +1,6 @@
 ---
 title: 📚 | C in a Nutshell
-title_plain: '| C in a Nutshell'
+title_plain: 'C in a Nutshell'
 date: 2015-04-20T18:00:00+0000
 lastmod: 2024-11-17T15:09:41+0000
 slug: c-in-a-nutshell
