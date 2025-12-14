@@ -9,7 +9,7 @@ readTime: true
 autonumber: false
 math: false
 tags: ["Ghost", "Hugo"]
-showTags: false
+showTags: true
 ---
 
 Hi, 
