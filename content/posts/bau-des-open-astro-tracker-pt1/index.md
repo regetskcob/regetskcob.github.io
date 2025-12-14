@@ -4,7 +4,7 @@ title_plain: ️Bau des OpenAstroTracker - Teil I
 date: 2025-12-14T10:40:00+0000
 lastmod: 2025-12-14T10:40:00+0000
 slug: bau-des-openastrotracker-teil-i
-draft: true
+draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: true
