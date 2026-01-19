@@ -2,6 +2,7 @@ baseURL = 'https://regetskcob.github.io'
 languageCode = 'de-de'
 title = 'regetskcob'
 theme = 'typo'
+enableRobotsTXT = true
 
 [taxonomies]
 tag = 'tags'
