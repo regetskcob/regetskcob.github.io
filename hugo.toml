@@ -45,7 +45,7 @@ Freut mich dich dabei zu haben, ich hoffe du kannst aus den Inhalten etwas für 
 
 # Collection to display on home
 homeCollectionTitle = 'Beiträge'
-homeCollection = 'posts'
+homeCollection = 'blog'
 
 # Lists parameters
 paginationSize = 25
@@ -81,6 +81,10 @@ url = "https://medium.com/@regetskcob"
 [[params.menu]]
 name = "Start"
 url = "/"
+
+[[params.menu]]
+name = "Blog"
+url = "/blog"
 
 [[params.menu]]
 name = "Bibliothek"
