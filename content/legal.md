@@ -17,7 +17,6 @@ regetskcob@icloud.com
 
   * Die Sammlung und Speicherung persönlicher Daten ist soweit möglich eingeschränkt.
   * Zur Analyse der Nutzung meiner Webseite verwende ich [Umami][2]. Eine Analyse Plattform, die sich dem Datenschutz verschrieben hat und ausschließlich anonymisierte Daten zur Analyse sammelt.
-  * Für die Kommentar-Funktion wird [Giscus][3] verwendet, ebenso dem Datenschutz verschrieben und mit eurem [GitHub][4]-Konto gekoppelt. Seid ihr nicht angemeldet oder schreibt keine Kommentare, werden auch keine Daten von euch erfasst. 
 
 ## Haftungsausschluss
 
@@ -31,5 +30,3 @@ Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wi
 
 [1]:	https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection "GitHub Pages"
 [2]:	https://umami.is/privacy "Umami"
-[3]:	https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md "Giscus"
-[4]:	https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement "GitHub"

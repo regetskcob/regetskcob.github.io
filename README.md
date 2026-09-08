@@ -19,10 +19,9 @@ Live: <https://regetskcob.github.io>
 | Dienst | Zweck | Konfiguriert in |
 | --- | --- | --- |
 | [Umami](https://umami.is) via [hugomods/umami-analytics](https://github.com/hugomods/umami-analytics) v0.3.1 | Datenschutzfreundliche, cookielose Reichweitenmessung | `[params.umami]` in `hugo.toml` |
-| [Giscus](https://giscus.app) | Kommentare auf Basis von GitHub Discussions | `[params.giscus]` in `hugo.toml` |
 | [Stylink](https://stylink.it) | Affiliate-Links in der Bibliothek | Links in `content/library.md` |
 
-Alle drei sind in der [Datenschutzerklärung](content/legal.md) benannt.
+Beide sind in der [Datenschutzerklärung](content/legal.md) benannt.
 
 ## Projektstruktur
 
