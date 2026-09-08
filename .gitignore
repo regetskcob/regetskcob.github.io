@@ -6,3 +6,6 @@ hugo.linux
 hugo.darwin
 
 *.DS_Store
+
+# Ulysses (no longer used)
+.Ulysses-*.plist
