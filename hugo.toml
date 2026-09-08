@@ -1,5 +1,6 @@
 baseURL = 'https://regetskcob.github.io'
 languageCode = 'de-de'
+defaultContentLanguage = 'de'
 title = 'regetskcob'
 theme = 'typo'
 enableRobotsTXT = true
@@ -50,7 +51,7 @@ homeCollection = 'posts'
 paginationSize = 25
 listSummaries = true
 listDateFormat = "02.01.2006"
-DateForm = "02.01.2006"
+singleDateFormat = ":date_long"
 
 
 # Breadcrumbs
@@ -66,7 +67,7 @@ url = "https://www.linkedin.com/in/regetskcob/"
 
 [[params.social]]
 name = "instagram"
-url = "https://medium.com/@regetskcob"
+url = "https://www.instagram.com/regetskcob/"
 
 [[params.social]]
 name = "github"
@@ -93,10 +94,8 @@ url = "/about"
 name = "Rechtliches"
 url = "/legal"
 
-# Syntax highlight on code blocks
-[markup]
-[markup.highlight]
-style = 'algol'
+# Syntax highlighting is styled by the theme's syntax-highlighting.css
+# (theme sets markup.highlight.noClasses = false), so no style is set here.
 
 # Giscus comments
 [params.giscus]
