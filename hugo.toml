@@ -35,7 +35,7 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hi!'
 homeIntroContent = """
-ich bin Daniel, online als @regetskcob unterwegs. Beruflich entwickle ich Software, überwiegend mit Flutter. Meine freie Zeit verbringe ich draußen, mit der Kamera am Niederrhein, im Wald und im Revier.
+Ich bin Daniel, online als @regetskcob unterwegs. Beruflich entwickle ich Software, überwiegend mit Flutter. Meine freie Zeit verbringe ich draußen, mit der Kamera am Niederrhein, im Wald und im Revier.
 
 Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür und Berichte aus Projekten, die zwischen Technik und Natur entstehen. KNX im Eigenheim, Messwerte in Grafana, ein selbstgebauter Astro-Tracker.
 """
