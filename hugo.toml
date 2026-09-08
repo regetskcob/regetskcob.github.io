@@ -35,12 +35,9 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hi!'
 homeIntroContent = """
-ich bin Daniel, online meistens als @regetskcob unterwegs. Beruflich bin ich Software Entwickler bei der BWI GmbH, wo ich in der Prototypen-Entwicklung mit Flutter tätig bin. 
-Meine Freizeit widme ich mit Passion und Leidenschaft der Natur, sowohl als Jäger als auch als Landschaftsfotograf. 
+ich bin Daniel, online als @regetskcob unterwegs. Beruflich entwickle ich Software, überwiegend mit Flutter. Meine freie Zeit verbringe ich draußen, mit der Kamera am Niederrhein, im Wald und im Revier.
 
-Von diesem Blog könnt ihr alles erwarten, was sich irgendwie im Dunstkreis zwischen Technik und Natur bewegt. 
-
-Freut mich dich dabei zu haben, ich hoffe du kannst aus den Inhalten etwas für dich mitnehmen!
+Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür und Berichte aus Projekten, die zwischen Technik und Natur entstehen. KNX im Eigenheim, Messwerte in Grafana, ein selbstgebauter Astro-Tracker.
 """
 
 # Collection to display on home
