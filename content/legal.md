@@ -10,8 +10,8 @@ description: Impressum und Datenschutzerklärung
 Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):
 
 Daniel Bocksteger  
-**[BITTE ERGÄNZEN: Straße und Hausnummer]**  
-**[BITTE ERGÄNZEN: PLZ und Ort]**  
+Kirchstraße 42  
+47546 Kalkar  
 Deutschland
 
 E-Mail: regetskcob@icloud.com
