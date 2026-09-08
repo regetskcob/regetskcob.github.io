@@ -4,6 +4,14 @@ title = 'regetskcob'
 theme = 'typo'
 enableRobotsTXT = true
 
+# Don't publish original bundle images: the custom render-image hook emits
+# resized WebP renditions, so the originals would only bloat the Pages artifact.
+[[cascade]]
+  [cascade.build]
+    publishResources = false
+  [cascade._target]
+    path = '/posts/**'
+
 [taxonomies]
 tag = 'tags'
 
