@@ -11,7 +11,7 @@ enableRobotsTXT = true
   [cascade.build]
     publishResources = false
   [cascade._target]
-    path = '/posts/**'
+    path = '/blog/**'
 
 [taxonomies]
 tag = 'tags'
