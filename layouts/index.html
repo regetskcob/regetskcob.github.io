@@ -1,0 +1,52 @@
+{{/*
+  Home page. Replaces the theme's home layout, which renders the full paginated
+  post list, with a landing page: intro, gallery, and only the latest posts.
+
+  Sections for projects and a proper hero still have to be added — see the
+  placeholder below.
+*/}}
+{{ define "main" }}
+
+{{ .Content }}
+
+{{/* Intro */}}
+{{ if or site.Params.homeIntroTitle site.Params.homeIntroContent }}
+<div class="intro">
+  {{ with site.Params.homeIntroTitle }}<h1>{{ . }}</h1>{{ end }}
+  {{ with site.Params.homeIntroContent }}<p>{{ . | markdownify }}</p>{{ end }}
+</div>
+{{ end }}
+
+{{/* Social icons */}}
+{{ with site.Params.social }}
+<div class="social-icons">
+  {{- range . }}
+  <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
+     title="{{ (.title | default .name) | title }}">
+    {{ partial "svg.html" . }}
+  </a>
+  {{- end }}
+</div>
+{{ end }}
+
+{{/* Gallery */}}
+{{ partial "gallery.html" . }}
+
+{{/* TODO: projects section — needs content under content/projects/ first. */}}
+
+{{/* Latest posts, not the full archive: that lives at /blog/ now. */}}
+{{ with site.Params.homeCollection }}
+  {{ $pages := where site.RegularPages "Section" . }}
+  {{ $limit := site.Params.homeCollectionLimit | default 5 }}
+  {{ with first $limit $pages }}
+<div class="list-container">
+  <h1>{{ site.Params.homeCollectionTitle | default "Beiträge" }}</h1>
+  {{ range . }}
+    {{ partial "post-entry.html" . }}
+  {{ end }}
+  <p class="all-posts-link"><a href="/blog/">Alle Beiträge →</a></p>
+</div>
+  {{ end }}
+{{ end }}
+
+{{ end }}

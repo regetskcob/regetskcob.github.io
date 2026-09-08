@@ -46,6 +46,10 @@ Freut mich dich dabei zu haben, ich hoffe du kannst aus den Inhalten etwas für 
 # Collection to display on home
 homeCollectionTitle = 'Beiträge'
 homeCollection = 'blog'
+# How many posts the landing page shows before linking to /blog/
+homeCollectionLimit = 5
+# Heading above the photo gallery; the images come from data/gallery.yaml
+galleryTitle = 'Fotografie'
 
 # Lists parameters
 paginationSize = 25

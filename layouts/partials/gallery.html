@@ -1,0 +1,56 @@
+{{/*
+  Photo gallery, driven by data/gallery.yaml.
+
+  An entry with "post" + "image" pulls the file out of that blog post's page
+  bundle and links the tile to the post; an entry with only "image" reads
+  assets/gallery/<image> and renders an unlinked tile. Missing files are
+  skipped rather than failing the build, so a typo in the data file does not
+  take the home page down.
+
+  Tiles are cropped to a uniform 3:2 so the grid stays even regardless of the
+  source aspect ratios.
+*/}}
+
+{{- $items := slice -}}
+{{/* $ is the template root inside range, so bind the item explicitly. */}}
+{{- range $it := site.Data.gallery.items -}}
+  {{- $img := "" -}}
+  {{- with $it.post -}}
+    {{- with site.GetPage (printf "/blog/%s" .) -}}
+      {{- $img = .Resources.Get $it.image -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $img = resources.Get (printf "gallery/%s" $it.image) -}}
+  {{- end -}}
+  {{- with $img -}}
+    {{- $items = $items | append (dict "img" . "caption" $it.caption "post" $it.post) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $items }}
+<section class="gallery-section">
+  <h1>{{ with site.Params.galleryTitle }}{{ . }}{{ else }}Fotografie{{ end }}</h1>
+
+  <div class="gallery-grid">
+    {{- range . }}
+      {{- $t := .img.Fill "600x400 webp q80 smart" -}}
+      {{- $t2 := .img.Fill "1200x800 webp q75 smart" -}}
+      {{- $tile := printf `<img src="%s" srcset="%s 600w, %s 1200w" sizes="(max-width: 640px) 100vw, 380px" width="%d" height="%d" loading="lazy" decoding="async" alt="%s">`
+            $t.RelPermalink $t.RelPermalink $t2.RelPermalink $t.Width $t.Height (.caption | plainify) -}}
+
+      <figure class="gallery-item">
+        {{- with .post }}
+          {{- with site.GetPage (printf "/blog/%s" .) }}
+        <a href="{{ .RelPermalink }}" title="{{ .Title | plainify }}">{{ $tile | safeHTML }}</a>
+          {{- end }}
+        {{- else }}
+        {{ $tile | safeHTML }}
+        {{- end }}
+        {{- with .caption }}
+        <figcaption>{{ . }}</figcaption>
+        {{- end }}
+      </figure>
+    {{- end }}
+  </div>
+</section>
+{{- end }}

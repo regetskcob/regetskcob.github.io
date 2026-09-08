@@ -1,0 +1,51 @@
+/* Overrides the theme's empty custom.css. Loaded after the theme's own styles. */
+
+/* --- Home gallery --- */
+
+.gallery-section {
+  margin-top: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  margin: 0;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.gallery-item a {
+  display: block;
+  /* the theme underlines links; a photo should not get one */
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.gallery-item figcaption {
+  font-size: var(--caption-font-size);
+  color: var(--content-secondary);
+  margin-top: 0.4rem;
+}
+
+@media screen and (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Home post list --- */
+
+.all-posts-link {
+  margin-top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
