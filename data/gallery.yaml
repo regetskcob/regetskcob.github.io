@@ -1,33 +1,44 @@
-# Curated gallery shown on the home page.
+# Photo galleries shown on the home page.
 #
-# Each entry either points at an image inside a blog post's page bundle
-# (post + image, and the tile then links to that post), or at a standalone
-# file in assets/gallery/ (image only).
+# Each block renders as its own titled section, in the order listed here — to
+# add a new theme, append another block at the bottom. "description" is
+# optional.
 #
-# This is a placeholder selection drawn from existing posts — swap it for
+# An item either points at an image inside a blog post's page bundle
+# (post + image; the tile then links to that post), or at a standalone file in
+# assets/gallery/ (image only). Images referenced from a post are not copied,
+# they are read straight out of the post's bundle.
+#
+# The selection below is a placeholder drawn from existing posts — swap it for
 # whatever should actually represent the work.
 
-items:
-  - post: abendausklang-mit-blick-ueber-den-niederrhein
-    image: dscf9752-pano-2.jpg
-    caption: Abendstimmung über dem Niederrhein
+galleries:
+  - title: Niederrhein
+    description: Felder, Weite und Abendlicht vor der Haustür.
+    items:
+      - post: abendausklang-mit-blick-ueber-den-niederrhein
+        image: dscf9752-pano-2.jpg
+        caption: Abendstimmung über dem Niederrhein
 
-  - post: uedemer-feld-hohe-muehle
-    image: dscf3638.jpg
-    caption: Uedemer Feld an der Hohen Mühle
+      - post: uedemer-feld-hohe-muehle
+        image: dscf3638.jpg
+        caption: Uedemer Feld an der Hohen Mühle
 
-  - post: die-ruhe-der-natur
-    image: img_4639.jpg
-    caption: Blick nach oben im Uedemer Hochwald
+      - post: schafe-in-grieth-mit-dem-fujifilm-xf55-200mm-f3-5-4-8-fotografieren
+        image: dscf2746.jpg
+        caption: Schafe bei Grieth
 
-  - post: schafe-in-grieth-mit-dem-fujifilm-xf55-200mm-f3-5-4-8-fotografieren
-    image: dscf2746.jpg
-    caption: Schafe bei Grieth
+  - title: Wald
+    description: Unterwegs im Uedemer Hochwald.
+    items:
+      - post: die-ruhe-der-natur
+        image: img_4639.jpg
+        caption: Blick nach oben
 
-  - post: wie-der-borkenkaefer-die-baeume-quaelt
-    image: dscf2510.jpg
-    caption: Spuren des Borkenkäfers
+      - post: wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald
+        image: dscf1601-hdr.jpg
+        caption: Uedemer Hochwald
 
-  - post: wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald
-    image: dscf1601-hdr.jpg
-    caption: Uedemer Hochwald
+      - post: wie-der-borkenkaefer-die-baeume-quaelt
+        image: dscf2510.jpg
+        caption: Spuren des Borkenkäfers

@@ -6,6 +6,17 @@
   margin-top: 3rem;
 }
 
+/* One block per theme; blocks stack down the page. */
+.gallery-block + .gallery-block {
+  margin-top: 2.5rem;
+}
+
+.gallery-description {
+  color: var(--content-secondary);
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

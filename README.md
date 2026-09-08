@@ -115,14 +115,27 @@ hugo new content blog/mein-beitrag/index.md
 
 ### Galerie pflegen
 
-Die Bilder der Startseiten-Galerie stehen in `data/gallery.yaml`. Ein Eintrag mit
-`post` und `image` holt das Foto direkt aus dem Page Bundle des Beitrags und
-verlinkt die Kachel dorthin — so liegt kein Bild doppelt im Repository. Ein
-Eintrag mit nur `image` liest stattdessen aus `assets/gallery/`.
+Die Startseiten-Galerie steht in `data/gallery.yaml` und besteht aus benannten
+Blöcken, die in der Reihenfolge der Datei untereinander gerendert werden. Ein
+neues Thema kommt dazu, indem unten ein weiterer Block angehängt wird — das
+Template muss dafür nicht angefasst werden. `description` ist optional.
+
+Ein Eintrag mit `post` und `image` holt das Foto direkt aus dem Page Bundle des
+Beitrags und verlinkt die Kachel dorthin — so liegt kein Bild doppelt im
+Repository. Ein Eintrag mit nur `image` liest stattdessen aus `assets/gallery/`.
+Fehlende Dateien werden übersprungen und lassen den Build nicht scheitern.
 
 ```yaml
-items:
-  - post: uedemer-feld-hohe-muehle
-    image: dscf3638.jpg
-    caption: Uedemer Feld an der Hohen Mühle
+galleries:
+  - title: Niederrhein
+    description: Felder, Weite und Abendlicht vor der Haustür.
+    items:
+      - post: uedemer-feld-hohe-muehle
+        image: dscf3638.jpg
+        caption: Uedemer Feld an der Hohen Mühle
+
+  - title: Wald                 # weiterer Block, einfach anhängen
+    items:
+      - image: winterwald.jpg   # ohne "post": aus assets/gallery/
+        caption: Erster Schnee
 ```

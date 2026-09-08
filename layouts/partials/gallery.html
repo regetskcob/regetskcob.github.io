@@ -1,42 +1,58 @@
 {{/*
-  Photo gallery, driven by data/gallery.yaml.
+  Photo galleries, driven by data/gallery.yaml.
 
-  An entry with "post" + "image" pulls the file out of that blog post's page
-  bundle and links the tile to the post; an entry with only "image" reads
-  assets/gallery/<image> and renders an unlinked tile. Missing files are
-  skipped rather than failing the build, so a typo in the data file does not
-  take the home page down.
+  Renders one titled block per entry under "galleries", in file order, so a new
+  theme is added by appending a block to that file — no template change needed.
 
-  Tiles are cropped to a uniform 3:2 so the grid stays even regardless of the
+  Within a block, an item with "post" + "image" pulls the file out of that blog
+  post's page bundle and links the tile to the post; an item with only "image"
+  reads assets/gallery/<image>. Missing files are skipped rather than failing
+  the build, so a typo in the data file does not take the home page down.
+
+  Tiles are cropped to a uniform 3:2 so each grid stays even regardless of the
   source aspect ratios.
 */}}
 
-{{- $items := slice -}}
-{{/* $ is the template root inside range, so bind the item explicitly. */}}
-{{- range $it := site.Data.gallery.items -}}
-  {{- $img := "" -}}
-  {{- with $it.post -}}
-    {{- with site.GetPage (printf "/blog/%s" .) -}}
-      {{- $img = .Resources.Get $it.image -}}
+{{- $blocks := slice -}}
+
+{{/* $ is the template root inside range, so bind items explicitly. */}}
+{{- range $g := site.Data.gallery.galleries -}}
+  {{- $tiles := slice -}}
+  {{- range $it := $g.items -}}
+    {{- $img := "" -}}
+    {{- with $it.post -}}
+      {{- with site.GetPage (printf "/blog/%s" .) -}}
+        {{- $img = .Resources.Get $it.image -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $img = resources.Get (printf "gallery/%s" $it.image) -}}
     {{- end -}}
-  {{- else -}}
-    {{- $img = resources.Get (printf "gallery/%s" $it.image) -}}
+    {{- with $img -}}
+      {{- $tiles = $tiles | append (dict "img" . "caption" $it.caption "post" $it.post) -}}
+    {{- end -}}
   {{- end -}}
-  {{- with $img -}}
-    {{- $items = $items | append (dict "img" . "caption" $it.caption "post" $it.post) -}}
+  {{- with $tiles -}}
+    {{- $blocks = $blocks | append (dict "title" $g.title "description" $g.description "tiles" .) -}}
   {{- end -}}
 {{- end -}}
 
-{{- with $items }}
+{{- with $blocks }}
 <section class="gallery-section">
-  <h1>{{ with site.Params.galleryTitle }}{{ . }}{{ else }}Fotografie{{ end }}</h1>
+  {{- with site.Params.galleryTitle }}
+  <h1>{{ . }}</h1>
+  {{- end }}
 
-  <div class="gallery-grid">
-    {{- range . }}
-      {{- $t := .img.Fill "600x400 webp q80 smart" -}}
-      {{- $t2 := .img.Fill "1200x800 webp q75 smart" -}}
-      {{- $tile := printf `<img src="%s" srcset="%s 600w, %s 1200w" sizes="(max-width: 640px) 100vw, 380px" width="%d" height="%d" loading="lazy" decoding="async" alt="%s">`
-            $t.RelPermalink $t.RelPermalink $t2.RelPermalink $t.Width $t.Height (.caption | plainify) -}}
+  {{- range . }}
+  <div class="gallery-block">
+    {{- with .title }}<h2>{{ . }}</h2>{{ end }}
+    {{- with .description }}<p class="gallery-description">{{ . }}</p>{{ end }}
+
+    <div class="gallery-grid">
+      {{- range .tiles }}
+        {{- $t := .img.Fill "600x400 webp q80 smart" -}}
+        {{- $t2 := .img.Fill "1200x800 webp q75 smart" -}}
+        {{- $tile := printf `<img src="%s" srcset="%s 600w, %s 1200w" sizes="(max-width: 640px) 100vw, 380px" width="%d" height="%d" loading="lazy" decoding="async" alt="%s">`
+              $t.RelPermalink $t.RelPermalink $t2.RelPermalink $t.Width $t.Height (.caption | plainify) -}}
 
       <figure class="gallery-item">
         {{- with .post }}
@@ -50,7 +66,9 @@
         <figcaption>{{ . }}</figcaption>
         {{- end }}
       </figure>
-    {{- end }}
+      {{- end }}
+    </div>
   </div>
+  {{- end }}
 </section>
 {{- end }}
