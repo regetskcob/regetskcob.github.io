@@ -72,7 +72,7 @@ Besonders beliebt sind hier die Themengebiete Projektmanagement, Rechnungswesen 
 
 Aber selbst aufgeben wie die folgende könnten euch über den Weg laufen:
 
-![‍\ \|\ Wie\ werde\ ich\ Fachinformatiker\ \-\ IV](./img_1575.jpg)
+![‍ | Wie werde ich Fachinformatiker - IV](./img_1575.jpg)
 
 **Aufgabe** Ermitteln Sie, um viel Prozent die Anzahl der Kunden 2013 im Vergleich zum Vorjahr gestiegen ist, die mindestens die Note 3 vergeben hat.
 

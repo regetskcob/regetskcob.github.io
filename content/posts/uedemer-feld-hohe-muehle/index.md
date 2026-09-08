@@ -16,7 +16,7 @@ seo:
   image: ./dscf3640.jpg
 ---
 
-![\|\ Uedemer\ Feld\ \&\ Hohe\ Mühle](./dscf3638.jpg)Fujifilm X-T30 mit dem XF 16mm F2.8 R WR
+![Uedemer Feld & Hohe Mühle](./dscf3638.jpg)Fujifilm X-T30 mit dem XF 16mm F2.8 R WR
 
 🛒
 

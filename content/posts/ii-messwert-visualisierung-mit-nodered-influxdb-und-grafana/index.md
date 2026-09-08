@@ -27,35 +27,35 @@ Als erstes bereiten wir nun unsere Datenablage mit der InfluxDB vor. Dazu erstel
 
 Ich nenne mein Bucket im weiteren Verlauf "KNX".
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-20.56.10-1.png)![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-20.56.13-1.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-20.56.10-1.png)![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-20.56.13-1.png)
 
 ## NodeRED einrichten
 
 Der nötige Flow (so nennt man in NodeRED einen Prozess) sieht relativ simpel aus.
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-21.24.23.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-21.24.23.png)
 
 Im Grunde ist er es auch. Es wird ein KNX Knoten eingesetzt um Telegramme auf dem Bus mitzulesen. Diese wird mit den Knoten "Prepare" und "Filter" aufbereitet und anschließend über den InfluxDB Knoten in die Datenbank geschrieben.
 
 Als erstes installieren wir die zusätzlichen Pakete für die KNX und InfluxDB Anbindung.
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-21.32.39.png)![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-21.41.39.png)![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-21.32.19.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-21.32.39.png)![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-21.41.39.png)![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-21.32.19.png)
 
 #### Verbindung zum KNX Bus
 
 Da wir die Werte vom KNX Bus in unsere InfluxDB schreiben wollen um diese zu visualisieren benötigen wir einen Knoten, der die Schnittstelle zum Bus bereitstellt. Dieser ist der 'KNX Device'-Knoten. Dort konfiguriert ihr die Schnittstelle mit IP-Adresse eures KNX-IP-Gateways, dessen Port und importiert eine CVS der Gruppenadressen aus eurem ETS-Projekt.
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-21.30.58.png)![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-21.25.35.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-21.30.58.png)![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-21.25.35.png)
 
 #### Verbindung zur InfluxDB
 
 Um NodeRED nun mit der InfluxDB zu koppeln benötigen wir einen sog. API Token. Diesen erstellen wir mit Lese & Schreib-Berechtigung und weisen ihm den KNX Bucket zu.
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-20.56.40.png)![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-20.56.53.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-20.56.40.png)![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-20.56.53.png)
 
 Diesen Token könnt ihr nun kopieren und in den Einstellungen des InfluxDB Knoten einsetzen. Außerdem geben wir den Hostname und Port an, unter dem die Installation erreichbar ist. Bei mir ist es localhost, da alles auf dem gleichen Pi läuft und der Standardport der InfluxDB.
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-27-um-21.31.41.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-27-um-21.31.41.png)
 
 #### Aufbereitung der Daten für die InfluxDB
 
@@ -69,17 +69,17 @@ Im letzten Schritt können die eingesetzten Knoten miteinander verknüpft werden
 
 ### Daten mit Grafana auslesen
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-31-um-20.21.18.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-31-um-20.21.18.png)
 
 Zuerst müssen wir in Grafana eine sog. Datenquelle konfigurieren, um das System mit der InfluxDB 'vertraut' zu machen.
 
 Ist das erledigt können wir die Datenquelle erstellen und konfigurieren. In meinem Fall liegen alle System wie bereits erwähnt auf dem gleichen RaspberryPi, daher ist auch InfluxDB per localhost zu erreichen.
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-31-um-20.19.29.png)![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-31-um-20.19.44.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-31-um-20.19.29.png)![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-31-um-20.19.44.png)
 
 Danach könnt ihr die Datenquelle nutzen um eure Dashboard-Views zu füttern. Konkret filtere ich die vorhandenen Datenpunkte nach den GA*-Bezeichnungen.
 
-![️\|\ II:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-10-31-um-20.18.16.png)
+![II: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-10-31-um-20.18.16.png)
 
 * * *
 

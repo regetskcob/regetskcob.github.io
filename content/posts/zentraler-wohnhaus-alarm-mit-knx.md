@@ -33,7 +33,7 @@ Mögliche Schritte zur Erweiterung sind die Einbindung von Sonos Boxen zur verst
 
 #### Unterstütze den Blog
 
-[![️\ \|\ Zentraler\ Wohnhaus\-Alarm\ mit\ KNX](//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=3836287005&Format=_SL160_&ID=AsinImage&MarketPlace=DE&ServiceVersion=20070822&WS=1&tag=regetskcob03-21&language=de_DE)](https://www.amazon.de/Heimautomation-mit-Dali-1-Wire-Hardware-Tipps/dp/3836287005?crid=3PFM1J4DYCLAV&keywords=heimautomation&qid=1670359610&sprefix=heimautomatiio%2Caps%2C68&sr=8-4&linkCode=li2&tag=regetskcob03-21&linkId=ab429144b7f88b76ddfd9e2ff7137c25&language=de_DE&ref_=as_li_ss_il)![️\ \|\ Zentraler\ Wohnhaus\-Alarm\ mit\ KNX](https://ir-de.amazon-adsystem.com/e/ir?t=regetskcob03-21&language=de_DE&l=li2&o=3&a=3836287005)
+[![Zentraler Wohnhaus-Alarm mit KNX](//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=3836287005&Format=_SL160_&ID=AsinImage&MarketPlace=DE&ServiceVersion=20070822&WS=1&tag=regetskcob03-21&language=de_DE)](https://www.amazon.de/Heimautomation-mit-Dali-1-Wire-Hardware-Tipps/dp/3836287005?crid=3PFM1J4DYCLAV&keywords=heimautomation&qid=1670359610&sprefix=heimautomatiio%2Caps%2C68&sr=8-4&linkCode=li2&tag=regetskcob03-21&linkId=ab429144b7f88b76ddfd9e2ff7137c25&language=de_DE&ref_=as_li_ss_il)![Zentraler Wohnhaus-Alarm mit KNX](https://ir-de.amazon-adsystem.com/e/ir?t=regetskcob03-21&language=de_DE&l=li2&o=3&a=3836287005)
 
 Indem du das Buch über diesen Affiliate-Link erwirbst unterstützt du mich und damit die Inhalte hier auf dem Blog.
 

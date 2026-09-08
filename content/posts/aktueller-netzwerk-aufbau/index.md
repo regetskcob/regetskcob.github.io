@@ -48,7 +48,7 @@ Unten sind einige Produkte aus unserem Stack mit Amazon-Affiliate Links versehen
   * Die Daten unserer Heizung (Luft-Wärme-Pumpe mit Solarthemrie-Unterstützung) sollen per Modbus ausgelesen und visualisiert werden.
   * Aktuell hat unser Haus nur eine Tag-/Nacht-Umschaltung. Ich werde über den Winterurlaub auch eine Sommer-/Winter-Umschaltung implementieren, um abhängig davon Zeitschaltungen und Automationen steuern zu können.
 
-![‍\ \|\ Aktueller\ Netzwerk\-Aufbau](./IMG_3634.jpeg)
+![‍ | Aktueller Netzwerk-Aufbau](./IMG_3634.jpeg)
 
 #### Deutsche Glasfaser - 3 Wochen Ausfall, weil sich keiner kümmert.
 

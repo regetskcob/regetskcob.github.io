@@ -20,4 +20,4 @@ seo:
 
 Dennoch hatte ich Glück und konnte an einer Wiese relativ nah an eine Schafherde heran, wollte allerdings auch nicht zu weit auf die Wiese laufen, um zu vermeiden das Gras unnötig platt zu treten oder die Schafe aufzuscheuchen.
 
-![\|\ Schafe\ in\ Grieth\ mit\ dem\ FUJIFILM\ XF55\-200mm\ f3\.5\-4\.8\ fotografieren](./dscf2746.jpg)![\|\ Schafe\ in\ Grieth\ mit\ dem\ FUJIFILM\ XF55\-200mm\ f3\.5\-4\.8\ fotografieren](./dscf2742.jpg)
+![Schafe in Grieth mit dem FUJIFILM XF55-200mm f3.5-4.8 fotografieren](./dscf2746.jpg)![Schafe in Grieth mit dem FUJIFILM XF55-200mm f3.5-4.8 fotografieren](./dscf2742.jpg)

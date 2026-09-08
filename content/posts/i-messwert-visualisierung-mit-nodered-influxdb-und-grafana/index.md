@@ -23,13 +23,13 @@ Mit einem "smarten Zuhause" besitzt man nicht nur Flexibilität und individuelle
 
 Aus früheren Projekten besitze ich noch einen RaspberryPi 4, welchen ich zur Ablage und Visualisierung nutzen möchte. Grundsätzlich würden hier aber auch ältere Pis oder ein NAS einsetzbar sein.
 
-## 1\. Vorbereitungen
+## 1. Vorbereitungen
 
 Vorbereitend für die nachfolgenden Schritte müssen wir eine SD Karte für den Raspberry Pi beschreiben und einige Einstellungen treffen. Ich nutze hierfür den [Raspberry Pi Imager](https://www.raspberrypi.com/software/), da dieser auch direkt das Treffen der Voreinstellungen auf der Boot-Partition ermöglicht.
 
 Ich hatte hier früher den balenaEtcher im Einsatz, doch durch das direkte Treffen der nötigen Einstellungen, gerade jetzt wo es den pi-Defaultuser nicht mehr gibt, ist der Imager direkt für den Raspberry das bessere Werkzeug.
 
-![️\|\ I:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-09-18-um-15.34.14.png)![️\|\ I:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-09-18-um-15.34.10.png)![️\|\ I:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-09-18-um-15.35.26.png)![️\|\ I:\ Messwert\-Visualisierung\ mit\ NodeRED,\ InfluxDB\ und\ Grafana](./bildschirmfoto-2022-09-18-um-15.35.42.png)
+![I: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-09-18-um-15.34.14.png)![I: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-09-18-um-15.34.10.png)![I: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-09-18-um-15.35.26.png)![I: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-09-18-um-15.35.42.png)
 
 Mit diesem Setup ist die SD Karte, erst im Raspberry Pi eingesetzt, sofort einsatzfähig. Nach dem ersten Start solltet ihr direkt erstmal die Pakete aktualisieren und ein Upgrade durchführen.
     
@@ -37,7 +37,7 @@ Mit diesem Setup ist die SD Karte, erst im Raspberry Pi eingesetzt, sofort einsa
     sudo apt update
     sudo apt upgrade -y
 
-## 2\. Installation von InfluxDB 2
+## 2. Installation von InfluxDB 2
 
 Das wichtigste für die dauerhafte Auswertung der Messwerte ist eine Datenbank. InfluxDB ist eine Datenbank, die auf die Speicherung von Massen an Werten ausgerichtet ist und sich damit perfekt eignet.
 
@@ -61,9 +61,9 @@ Anschließend könnt ihr mit dem "status"-befehl prüfen, ob der Service läuft.
     
     sudo service influxdb status
 
-Ihr erreicht eure Influx-Installation http://<ipaddresse>:8086.
+Ihr erreicht eure Influx-Installation `http://<ipaddresse>:8086`.
 
-## 3\. Installation von NodeRed
+## 3. Installation von NodeRed
 
 Zur Installation von NodeRed genügt es folgendes Script aufzuführen.
     
@@ -82,9 +82,9 @@ Den Hintergrundprozess aktiviert ihr mit folgendem Aufruf.
     
     sudo systemctl enable nodered.service
 
-Ihr erreicht eure NodeRed-Installation http://<ipaddresse>:1880.
+Ihr erreicht eure NodeRed-Installation `http://<ipaddresse>:1880`.
 
-## 4\. Installation von Grafana
+## 4. Installation von Grafana
 
 Wie schon bei der Installation von InfluxDB nehmen wir auch hier die offiziellen Pakete zum System auf und starten die Installation.
     
@@ -100,7 +100,7 @@ Auch hier müsst ihr Rückfrage wieder mit Y bestätigen. Im Anschluss setzt ihr
     sudo systemctl start grafana-server
     sudo systemctl enable grafana-server.service
 
-Ihr erreicht eure Grafana-Installation http://<ipaddresse>:3000.
+Ihr erreicht eure Grafana-Installation `http://<ipaddresse>:3000`.
 
 * * *
 

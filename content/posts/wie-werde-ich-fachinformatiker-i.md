@@ -37,7 +37,7 @@ Aber auch unter den Anwendungsentwicklern gibt es Unterschiede, was einfach dara
 
 #### Unterstütze den Blog
 
-[![‍\ \|\ Wie\ werde\ ich\ Fachinformatiker\ \-\ I](//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=3836285592&Format=_SL160_&ID=AsinImage&MarketPlace=DE&ServiceVersion=20070822&WS=1&tag=regetskcob03-21&language=de_DE)](https://www.amazon.de/Node-RED-umfassende-Handbuch-Visuelles-Programmieren/dp/3836285592?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1POGI4P20DLWA&keywords=node-red&qid=1670358777&sprefix=nodered%2Caps%2C105&sr=8-1&linkCode=li2&tag=regetskcob03-21&linkId=cf9afadf8e8532146f9fb8305eff4583&language=de_DE&ref_=as_li_ss_il)![‍\ \|\ Wie\ werde\ ich\ Fachinformatiker\ \-\ I](https://ir-de.amazon-adsystem.com/e/ir?t=regetskcob03-21&language=de_DE&l=li2&o=3&a=3836285592)
+[![‍ | Wie werde ich Fachinformatiker - I](//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=3836285592&Format=_SL160_&ID=AsinImage&MarketPlace=DE&ServiceVersion=20070822&WS=1&tag=regetskcob03-21&language=de_DE)](https://www.amazon.de/Node-RED-umfassende-Handbuch-Visuelles-Programmieren/dp/3836285592?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1POGI4P20DLWA&keywords=node-red&qid=1670358777&sprefix=nodered%2Caps%2C105&sr=8-1&linkCode=li2&tag=regetskcob03-21&linkId=cf9afadf8e8532146f9fb8305eff4583&language=de_DE&ref_=as_li_ss_il)![‍ | Wie werde ich Fachinformatiker - I](https://ir-de.amazon-adsystem.com/e/ir?t=regetskcob03-21&language=de_DE&l=li2&o=3&a=3836285592)
 
 Indem du das Buch über diesen Affiliate-Link erwirbst unterstützt du mich und damit die Inhalte hier auf dem Blog.
 

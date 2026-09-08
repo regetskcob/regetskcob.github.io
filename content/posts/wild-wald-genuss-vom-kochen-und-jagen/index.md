@@ -32,13 +32,13 @@ Das Buch beginnt mit einer Ode an das Wildfleisch, an die Qualität der Produkte
 
 Im Anschluss thematisiert Rüssel kurz und knapp das sog. "Hundewesen". Ein Thema, das bei keinem jagenden zu kurz kommen sollte. Er bringt sehr prägnant die Entscheidungswege und Gründe auf den Punkt. Was muss ich mir überlegen, bei der Wahl der Jagdhunderasse? Welche Rasse ist worauf spezialisiert? 
 
-![\|\ Wild,\ Wald,\ Genuss\ \-\ Vom\ Kochen\ und\ Jagen](./IMG_4289.jpeg)Harald Rüssel mit seinem Sohn und Hund Arco (KLM)
+![Wild, Wald, Genuss - Vom Kochen und Jagen](./IMG_4289.jpeg)Harald Rüssel mit seinem Sohn und Hund Arco (KLM)
 
 Daran anschließend gibt er ein Gespräch mit dem Reichsgrafen Rudolf Kesselstatt wieder, in dem einige Fakten zum Wald thematisiert und diskutiert werden. Die beiden behandeln u.A. die Klimaerwärmung, das Fichtensterben sowie den nachhaltigen Wiederaufbau von zukunftsträchtigen Forstkulturen. Auch der Jagddruck bzw. die Nachtzeit wird thematisiert, genauso wie die Vorzüge eines gesunden Waldes für den Menschen angerissen werden, bevor das Gesprächsprotokoll mit einem Einblick in die leidenschaftlich-familiären Verhältnisse beider Protagonisten ein angenehmes Ende findet. 
 
 Vorbereitend für die darauf folgenden Rezepte werden von H. Rüssel im Anschluss die wichtigsten Wildarten und deren wichtigsten Teilstücke vom Wildbret vermittelt. z.B. _"Wo sitzt die Nuss und wie kann sie zubereitet werden?"_ oder auch _"Wie kann das Wildbret einer geschossenen Wildtaube nachhaltig verwertet werden?"_
 
-![\|\ Wild,\ Wald,\ Genuss\ \-\ Vom\ Kochen\ und\ Jagen](./IMG_4282.jpeg) Rehnuss
+![Wild, Wald, Genuss - Vom Kochen und Jagen](./IMG_4282.jpeg) Rehnuss
 
 Bevor es nun an dieSchulbank der Wild-Pflanzenschule geht, ermahnt der Autor noch Jäger:innen, Landwirt:innen und deren Gemeinschaften, bspw. Hegeringe und Jagdgenossenschaften enger zusammen zu arbeiten, insbesondere im Naturschutz, der Artenvielfalt oder bspw. auch der Jungwildrettung. Die daran anschließende Pflanzen-/Kräuterschule erstreckt sich vom Fichtenspross, über die Brennnessel bis zum wilden Majoran, geht auf Erntezeit, Eigenheiten bzw. Eigenschaften und deren Verwendung ein.
 
