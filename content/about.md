@@ -7,7 +7,7 @@ description: Wer schreibt hier eigentlich?
 
 Hi,
 
-schön dass ich Dich hier begrüßen darf! Es scheint, als würden dich Fotografie oder Software/Technologie interessieren. Das freut mich ungemein, denn genau darum dreht sich hier auf dem Blog sozusagen jede Zeile. ☺️
+schön, dass ich dich hier begrüßen darf! Es scheint, als würden dich Fotografie oder Software/Technologie interessieren. Das freut mich ungemein, denn genau darum dreht sich hier auf dem Blog sozusagen jede Zeile. ☺️
 
 Ich bin Daniel, seit 2015 festangestellter Software-Entwickler und in meiner Freizeit beschäftige ich mich insbesondere mit der Fotografie und der Natur, die mich umgibt.
 
