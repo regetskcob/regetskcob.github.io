@@ -25,12 +25,16 @@ Umami ist in der [Datenschutzerklärung](content/legal.md) benannt.
 ## Projektstruktur
 
 ```
-content/          Inhalte (Markdown, Posts als Page Bundles mit ihren Bildern)
-  posts/          Blogbeiträge
+content/          Inhalte (Markdown, Beiträge als Page Bundles mit ihren Bildern)
+  blog/           Blogbeiträge, erreichbar unter /blog/
   about.md        Über mich
   library.md      Bibliothek / Buchempfehlungen
   legal.md        Impressum & Datenschutz
+data/
+  gallery.yaml    Kuratierte Bildauswahl für die Galerie auf der Startseite
 layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen
+assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
+assets/gallery/   Optionale Galerie-Bilder ohne zugehörigen Beitrag
 themes/typo/      Theme als Git-Submodule (nicht direkt bearbeiten)
 static/           Unverarbeitete Dateien (Favicons)
 hugo.toml         Zentrale Konfiguration
@@ -49,6 +53,16 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   In `hugo.toml` sorgt dazu eine `cascade`-Regel mit `build.publishResources = false`
   dafür, dass die Original-Dateien nicht zusätzlich ins Deploy-Artefakt wandern.
   Wirkung: die ausgelieferten Bilder schrumpfen von rund 71 MB auf 15 MB.
+
+- **`layouts/partials/head/og-image.html`** — liefert das Vorschaubild fürs Teilen
+  als absolute URL, zugeschnitten auf 1200×630. Reihenfolge: das in `cover` bzw.
+  `featured_image` benannte Bild, sonst das erste Bild des Beitrags, sonst
+  `assets/images/og-image.*` als seitenweiter Rückfall (noch nicht angelegt).
+
+- **`layouts/index.html`** — Landing-Page statt der vollständigen Beitragsliste
+  des Themes: Intro, Galerie und die neuesten Beiträge.
+
+- **`layouts/partials/gallery.html`** — Galerie, gespeist aus `data/gallery.yaml`.
 
 ## Lokale Entwicklung
 
@@ -96,5 +110,19 @@ der Render-Hook:
 Neuen Beitrag anlegen:
 
 ```bash
-hugo new content posts/mein-beitrag/index.md
+hugo new content blog/mein-beitrag/index.md
+```
+
+### Galerie pflegen
+
+Die Bilder der Startseiten-Galerie stehen in `data/gallery.yaml`. Ein Eintrag mit
+`post` und `image` holt das Foto direkt aus dem Page Bundle des Beitrags und
+verlinkt die Kachel dorthin — so liegt kein Bild doppelt im Repository. Ein
+Eintrag mit nur `image` liest stattdessen aus `assets/gallery/`.
+
+```yaml
+items:
+  - post: uedemer-feld-hohe-muehle
+    image: dscf3638.jpg
+    caption: Uedemer Feld an der Hohen Mühle
 ```
