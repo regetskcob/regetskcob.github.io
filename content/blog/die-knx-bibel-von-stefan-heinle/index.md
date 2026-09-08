@@ -66,8 +66,6 @@ Danach geht es wie bereits geschrieben unter vielem anderem noch an diese Themen
   * Energiesparen mit Smart Metering und dem Smart Home
   * Geldwerte Tipps zum Einkauf, der Arbeit mit den Gewerken u.v.m.
 
-
-
 ### Webseite
 
 [Hier](https://www.heimautomation-buch.de) findet ihr außerdem die Webseite zum Buch. In der ersten Auflage warb Autor Stefan Heinle damit, regelmäßige Ergänzungen oder weitergehende Inhalte bereitstellen zu wollen, schnell entwickelte sich die Seite leider eher zu einer „Einladung“ für die Beratungsanfrage. Inzwischen vergrößern sich auch die Update-Zyklen für das Buch, Neues wird erst nach einer halben Ewigkeit (in der Technikwelt leider fatal!) ergänzt.

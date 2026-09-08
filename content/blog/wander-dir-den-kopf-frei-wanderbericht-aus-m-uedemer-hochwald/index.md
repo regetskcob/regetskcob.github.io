@@ -51,14 +51,6 @@ Im Herbst/Winter ist es durchaus ratsam fester und wasserdichtes Schuhwerk mitzu
 
 Viele der Wege sind mit Nummern versehen, die die Wege für Pferde ausweisen. Diese dienen durchaus zur groben Orientierung. Aufgrund der zahlreichen Kreuzungen, Abkürzungen und Auf- und Ab-Passagen sollte man sich dennoch vor dem ersten Spaziergang überlegen, wie man sich im Notfall zurecht finden wird.
 
-#### Unterstütze den Blog
-
-[FujifilmAmazon Shop](https://amzn.to/3BfwNth)
-
-Indem du Fujifilm Technik über diesen Affiliate-Link erwirbst unterstützt du mich und damit die Inhalte hier auf dem Blog.
-
-Von den generierten Einnahmen bezahle ich die Domain-Adresse, das Wordpress.com-Hosting und andere zum Betrieb notwendige Dinge.
-
 ## Forst, Wild und Jagd
 
 Selbstverständlich ist der Uedemer Hochwald weder ein Naherholungsgebiet, noch als Touristenmagnet gedacht. Es ist ein Wirtschaftswald, in dem Bäume gefällt, gelagert und gepflanzt werden.

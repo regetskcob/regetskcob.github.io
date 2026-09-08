@@ -46,8 +46,6 @@ Etwas anderes, meiner Meinung nach sehr wichtiges, was man aber in kaum einer St
 
   * [8 Eigenschaften die Software-Entwickler ausmachen](https://norberteder.com/diese-8-eigenschaften-solltest-du-als-softwareentwickler-haben/)
 
-
-
 ### **Zusammengefasst**
 
 Zusammengefasst lässt sich denke ich sagen, dass eine gesunde Mischung aus all diesen Anforderungen die Chance auf einen Erfolg bei der Bewerbung deutlich erhöht. Auch wichtig ist vielleicht zu erwähnen, dass auch bspw. ein Defizit in Mathematik kein K.O. für euch bedeutet. Ihr müsst euch dann nur mit Hilfe der restlichen Fähigkeiten und Eigenschaften verkaufen.

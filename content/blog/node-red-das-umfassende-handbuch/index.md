@@ -36,9 +36,4 @@ In den noch weiter fortgeschrittenen Kapiteln werden dann „Advanced Nodes“ e
 
 Unter dem letzten Kapitel des Buches „Mikrocontroller programmieren“ hatte ich mir eingangs etwas gänzlich anderes vorgestellt. Meine Erwartung war es, Mikrocontroller so zu programmieren, dass bspw. Sensordaten von diesem per Node-RED weiterverarbeitet werden, um zum Beispiel Systeme mit sehr geringem Stromverbrauch zu realisieren, die in an Stellen ohne feste Stromversorgung per Solar-/Akkuversorgung Messdaten bereitstellen könnten. Stattdessen wurde auf insgesamt 8 Seiten leider lediglich thematisiert, wie man Mikrocontroller über den Node-RED Editor programmieren/flashen kann, ähnlich wie mit der Arduino IDE.
 
-Unterm Strich kann ich dem Buch dennoch ein solides, positives Fazit aussprechen, insbesondere wenn man als Einsteiger in die Themenwelt daran interessiert ist, Grundlagenwissen aufzubauen. Man sollte sich allerdings nichts desto trotz auch der Online Dokumentation widmen, denn nichts vergeht so schnell, wie Informationen/Dokumentationen in der IT Welt. 
-
-🛒
-
-****Buch kaufen, Blog unterstützen****  
-Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über [_diesen Affiliate-Link bei Amazon_](https://amzn.to/3BNwUA2) erwerben würdest.
+Unterm Strich kann ich dem Buch dennoch ein solides, positives Fazit aussprechen, insbesondere wenn man als Einsteiger in die Themenwelt daran interessiert ist, Grundlagenwissen aufzubauen. Man sollte sich allerdings nichts desto trotz auch der Online Dokumentation widmen, denn nichts vergeht so schnell, wie Informationen/Dokumentationen in der IT Welt.

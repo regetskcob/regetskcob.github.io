@@ -37,9 +37,6 @@ Die besagten 22 Kapitel sind unterteilt in drei Abschnitte.
   2. Die C Standard Bibliothek
   3. Die nützlichsten und wichtigsten Werkzeuge  
 
-
-
-
 Besonders die Abschnitte 1. und 2. sind für Einsteiger in die Sprache unumgänglich. Aber auch für Fortgeschrittene auf diesem Gebiet warten hier mit großer Wahrscheinlichkeit Themen, die noch unbekannt sind.
 
 ### Teil I

@@ -25,16 +25,10 @@ Das wichtigste ist mit dem Titel des Buches bereits gesagt. Am einfachsten errei
   * Die persönlichen Erinnerungen, die als Bilder die Wände des Wohnraums verzieren
   * Lieblingsgerichte oder -gebäck
 
-
-
 All jene genannten Dinge werden aus den ersten ~80 Buchseiten deutlich und lassen sich durchaus im Leben integrieren.
 
 Die darauffolgenden ~140 Seiten sind in meinen Augen allerdings eine Mischung aus Kochbuch, Bastelanleitungen und Einrichtungsratgeber. Das verschiebt den Fokus des Buches und trägt nur wenig dazu bei, _hygge_ als Lebensart zu akzeptieren, da dieser Abschnitt des Buches den Eindruck erweckt _hygge_ wäre von bestimmten Einrichtungselementen abhängig.
 
 * * *
 
-_Marie Tourell Søderberg_ hat ein optisch ansprechendes Buch geschrieben, dass im ersten Abschnitt absolut lesenswert ist. Leider gerät der rote Faden allerdings im Verlauf des Buches aus dem Ruder.  
-  
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über folgenden Affiliate-Link bei Amazon erwerben würdest.
-
-[Zum Produkt auf Amazon](https://amzn.to/3baFwhi)
+_Marie Tourell Søderberg_ hat ein optisch ansprechendes Buch geschrieben, dass im ersten Abschnitt absolut lesenswert ist. Leider gerät der rote Faden allerdings im Verlauf des Buches aus dem Ruder.

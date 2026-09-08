@@ -31,9 +31,4 @@ Leser loben das Buch für seine detaillierte Darstellung und den humorvollen Sch
 
 Ein weiterer Leser hebt hervor: "I haven't had this much fun reading a language book in awhile. One of the best books on TypeScript and also serves as a great reference. Highly recommend it to anyone starting with TypeScript."
 
-🛒
-
-****Unterstütze den Blog****  
-Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das beschriebene Buch über [_diesen Affiliate-Link bei Amazon_](https://amzn.to/427cJaX) erwerben würdest.
-
 Insgesamt wird "Programmieren in TypeScript" als wertvolle Ressource für Entwickler angesehen, die ihre Fähigkeiten erweitern und qualitativ hochwertigen, typsicheren Code schreiben möchten. Die Kombination aus theoretischem Wissen und praktischen Beispielen bietet einen umfassenden Überblick über die Möglichkeiten von TypeScript und unterstützt Entwickler dabei, ihre Projekte effizienter und skalierbarer zu gestalten.

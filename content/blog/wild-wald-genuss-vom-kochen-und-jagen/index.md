@@ -53,8 +53,3 @@ Letztendlich möchte ich euch die Rezepte nicht vorweg nehmen, aber natürlich d
 Raffinierte Wild-Rezepte garniert mit ansprechenden Bildern und authentischen Geschichten, die zum Mitfühlen und Genießen einladen. Absolute Empfehlung!
 
 * * *
-
-🛒
-
-****Buch kaufen, Blog unterstützen****  
-Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über [_diesen Affiliate-Link bei Amazon_](https://amzn.to/3BNwUA2) erwerben würdest.

@@ -25,23 +25,17 @@ In den letzten zwei Jahren sieht sich kaum etwas in unserem Haus mehr Veränderu
 
 ## Unser Technology-Stack
 
-🛒
-
-Unten sind einige Produkte aus unserem Stack mit Amazon-Affiliate Links versehen, über deren Kauf ihr diesen Blog unterstützen könnt! 😊
-
   * FTTH Anschluss der deutschen Glasfaser (dazu weiter unten mehr…)
   * Nokia-Glasfaser-Modem
-  * [Fritz!Box 7590 als reiner DSL Router](https://amzn.to/4a7D5vx)
-  * [24 Port Netgear Gigabit Switch (12x POE)](https://amzn.to/3PmaV6n)
-  * [5 Port Netgear Gigabit Switch](https://amzn.to/408bFkm)
-  * [RaspberryPi 3B+](https://amzn.to/3WagQ2e)
-  * [RaspberryPi 5 8GB](https://amzn.to/3DKhmxo)
+  * Fritz!Box 7590 als reiner DSL Router
+  * 24 Port Netgear Gigabit Switch (12x POE)
+  * 5 Port Netgear Gigabit Switch
+  * RaspberryPi 3B+
+  * RaspberryPi 5 8GB
     * Der 3er hostet aktuellen Grafana, InfluxDB, MQTT, NodeRed und Zigbee2MQTT
     * Der 5er hostet eine [HKKNX](https://hochgatterer.me/hkknx/?lang=de) Instanz, die unsere KNX Infrastruktur mit Apple Home(Kit) kombiniert
   * Phillips Hue Bridge
   * 2TB Apple TimeCapsule für Backups der Macs im Haushalt
-
-
 
 ## Momentane ToDos
 

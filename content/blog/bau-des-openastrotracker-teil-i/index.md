@@ -33,9 +33,8 @@ Ich habe mich dazu entschieden, den OpenAstroTracker aus klaren PETG-Translucent
 
 ---
 
-Im Moment lese ich parallel dazu [Das Praxisbuch 'Nachthimmel fotografieren' von Rutger Bus][2], welches das geballte Wissen des Autors auf leicht verständliche Art vermittelt, sowohl was die fotografischen, meterologischen aber auch technischen Hintergründe anbelangt.
+Im Moment lese ich parallel dazu Das Praxisbuch 'Nachthimmel fotografieren' von Rutger Bus, welches das geballte Wissen des Autors auf leicht verständliche Art vermittelt, sowohl was die fotografischen, meterologischen aber auch technischen Hintergründe anbelangt.
 
 Fortsetzung folgt...
 
 [1]:  https://openastrotech.com
-[2]:  https://www.stylink.it/qPVnVF3lzPv

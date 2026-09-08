@@ -30,8 +30,6 @@ Entfaltete Organisationen basieren auf einem hohen Maß an Vertrauen zwischen de
   4. **Ganzheitlichkeit:**  
 Laloux fordert eine ganzheitliche Perspektive auf die Arbeit und die Menschen, die in Organisationen tätig sind. In entfalteten Organisationen werden die Mitarbeitenden nicht nur als „Arbeitskräfte“ betrachtet, sondern als ganze Menschen mit Emotionen, Werten und Bedürfnissen, die in ihre Arbeitsweise integriert werden.
 
-
-
 ## **Praxisbeispiele und Fallstudien**
 
 Das Buch stützt sich auf eine Vielzahl von praktischen Beispielen aus der realen Welt. Laloux stellt Unternehmen vor, die bereits erfolgreich die Prinzipien der entfalteten Organisation umgesetzt haben. Zu den bekanntesten Beispielen gehören die „FAVI“-Fabrik in Frankreich und das Unternehmen „Buurtzorg“ in den Niederlanden. Diese Unternehmen zeichnen sich durch flache Hierarchien, hohe Eigenverantwortung der Mitarbeitenden und einen klaren, gemeinsamen Sinn aus.

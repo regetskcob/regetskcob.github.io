@@ -73,8 +73,6 @@ So können unter anderem Fragen wie diese auf euch zukommen:
   * Was ist die grundlegende Funktion hinter einem **Pointer** in C++?
   * Welche Modelle kennen Sie aus dem Bereich **Qualitätssicherung**?
 
-
-
 Und viele mehr. Wichtig ist hier, dass ihr begreift, dass und wie ihr die Prüfer lenken könnt. Wenn ihr in der Präsentation bestimmte Fragen zu Themen aus- oder offen lasst, welche ihr aber beantworten könnt, könnt ihr euch zu einem gewissen Grad sicher sein, dass diese Themen von den Prüfern abgefragt werden. So habe ich bspw. relativ am Ende betont, dass ich der Firma hauptsächlich mit Objective-C und C++ arbeite, welche als Besonderheit bspw. **Pointer** bieten, oder dass zwei Auszubildende das Projekt im Anschluss an die Entwicklung auf seine Qualität **überprüft** haben.
 
 **Es ist an der Zeit…**

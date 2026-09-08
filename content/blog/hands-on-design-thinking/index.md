@@ -42,8 +42,6 @@ Zum Abschluss des Buches geben die Autoren jedem Interessierten einige Fragen un
   * Wie können bestehende Produkte innovativ ergänzt werden?
   * ...
 
-
-
 Mit den genannten und weiteren Fragen sind Leserinnen und Leser darauf vorbereitet, wie Sie die ersten Schritte in eigenen Innovationsprojekten gehen könnten. Als physischer Werkzeugkasten kommen daran anschließen die zum Buch zugehörigen Moderationskarten ins Spiel, deren Einsatz ebenfalls erläutert wird, um mit einem roten Faden in erste Projekte und Meetings zu starten.
 
 ## Fazit
@@ -55,8 +53,3 @@ Sowohl das Buch, aber vor allem die Moderationskarten, sind gut verarbeitet und 
 Klare Kauf- und Leseempfehlung!
 
 * * *
-
-🛒
-
-****Buch kaufen, Blog unterstützen****  
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über [diesen Affiliate-Link bei Amazon](https://amzn.to/4j2nQIe) erwerben würdest.

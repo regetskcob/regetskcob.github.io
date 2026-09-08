@@ -32,8 +32,6 @@ Als Zielgruppe des Buches würde ich jeden definieren, der sich vorstellen kann 
   * Programmier-Crashkurse mit Python, C und PHP, Zugriff auf GPIO-Pins, GPS- oder RFID-Daten
   * Realisierung diverser Projekte, z.B. Werbeblocker, Servocam, eigener Router, Luftqualitätsmesser, Home-Assistent, eigenes NAS, …
 
-
-
 Der Umfang des Buches macht eines bereits von Außen - aber auch immer wieder im Text - klar. Den Projekten, die ihr mit dem Pi umsetzt, sind nahezu keine Grenzen gesetzt. Am Ende kratzt selbst dieses umfangreiche Werk mehr oder minder nur an der Oberfläche der Möglichkeiten, um euch diese Welt zu eröffnen, euch zu motivieren selbst loszulegen.
 
 ### Webseite zum Buch
@@ -57,11 +55,4 @@ So zu sehen in beigefügtem Auszug vom Blog-Artikel der Autoren zur neuen Auflag
   * Home Assistant
   * RaspAP
 
-
-
 Ich kann jedem Elektrotechnik Begeisterten, Bastler, Maker oder wie auch immer ihr euch nennt nur ans Herz legen, [dieses Buch](https://www.rheinwerk-verlag.de/raspberry-pi-das-umfassende-handbuch/) in die Heim-Bibliothek aufzunehmen. Es lädt zum experimentieren ein, motiviert neue Wege zu gehen. Klare Kaufempfehlung!
-
-🛒
-
-****Buch kaufen, Blog unterstützen****  
-Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über [_diesen Affiliate-Link bei Amazon_](https://amzn.to/3BNwUA2) erwerben würdest.

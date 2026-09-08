@@ -47,8 +47,3 @@ Immer mehr Industrielle Anlagen und Touristische Attraktionen drängen das Wild 
 Als Wildtier-Fotograf und Berufsjäger erlebt Christoph Burgstaller diese Einflüsse in seiner alltäglichen Arbeit. Ich finde es großartig, ein solch hochwertiges Werk dazu zu nutzen, diese Themen gesellschaftsfähig zu vermitteln, was ihm für mein Empfinden äußerst gut gelungen ist. 
 
 Es ist ein Buch, dass ich jeder und jedem Natur- und Wildtier-Fotograf:in ausdrücklich ans Herz legen kann.
-
-🛒
-
-****Unterstütze den Blog****  
-Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das beschriebene Buch über [_diesen Affiliate-Link bei Amazon_](https://amzn.to/40p0Pb8) erwerben würdest.

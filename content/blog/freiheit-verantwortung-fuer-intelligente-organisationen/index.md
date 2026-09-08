@@ -34,8 +34,4 @@ Der Kern des Buches, den ich für mich mitgenommen habe, liegt darin, dass es un
 
 * * *
 
-Ich möchte das Buch jedem ans Herz legen, der sich mit den Strukturen in Unternehmen auseinander setzen und lebens- damit aber auch zukunftsfähige System (Unternehmen) aufstellen möchte.  
-  
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über folgenden Affiliate-Link bei Amazon erwerben würdest.
-
-[Zum Produkt bei Amazon](https://amzn.to/2Vj4fcw)
+Ich möchte das Buch jedem ans Herz legen, der sich mit den Strukturen in Unternehmen auseinander setzen und lebens- damit aber auch zukunftsfähige System (Unternehmen) aufstellen möchte.

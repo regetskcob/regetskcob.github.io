@@ -31,8 +31,4 @@ _Trinkwalders_ Ansatz, das politische Grundsystem auf sogenannten Kompetenz-Kamm
 
 * * *
 
-Das Buch von _Sina Trinkwalder_ ist eine Pflichtlektüre für alle, die sich die Frage stellen, wie man unsere aktuelle Gesellschaft in eine nachhaltige Form überführen könnte. Es zeigt viele mögliche Szenarien auf, die unsere Politik, die Gesellschaft, einzelne Unternehmen oder jede und jeder einzelne umsetzen könnte.  
-  
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über folgenden Affiliate-Link bei Amazon erwerben würdest.
-
-[Zum Produkt auf Amazon](https://amzn.to/2RBrHkj)
+Das Buch von _Sina Trinkwalder_ ist eine Pflichtlektüre für alle, die sich die Frage stellen, wie man unsere aktuelle Gesellschaft in eine nachhaltige Form überführen könnte. Es zeigt viele mögliche Szenarien auf, die unsere Politik, die Gesellschaft, einzelne Unternehmen oder jede und jeder einzelne umsetzen könnte.
