@@ -1,0 +1,55 @@
+{{/*
+  Open Graph image, returned as an absolute URL string.
+
+  The theme's opengraph.html calls this only as a fallback: Hugo's built-in
+  _funcs/get-page-images runs first and wins whenever a page declares "images" in
+  front matter or carries a resource named *cover* / *feature* / *thumbnail*.
+  Everything else — the home page, sections, and posts whose images are named
+  plainly — lands here.
+
+  Order: the image named in front matter (cover / featured_image, carried over from
+  the Ghost export), else the first image of the page bundle, else the site-wide
+  fallback. All are cropped to 1200x630, the ratio Facebook, LinkedIn, Slack and
+  WhatsApp expect.
+*/}}
+
+{{- $spec := "1200x630 webp q85 smart" -}}
+{{- $og := "" -}}
+
+{{/* Only raster images can be cropped; skip SVG and animated GIF. */}}
+{{- $raster := slice -}}
+{{- range .Resources.ByType "image" -}}
+  {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}
+    {{- $raster = $raster | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* An explicit choice in front matter wins over bundle order. */}}
+{{- with or .Params.cover .Params.featured_image -}}
+  {{- $named := $.Resources.Get (strings.TrimPrefix "./" .) -}}
+  {{- with $named -}}
+    {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}
+      {{- with .Fill $spec -}}
+        {{- $og = .Permalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $og -}}
+  {{- with $raster -}}
+    {{- with (index . 0).Fill $spec -}}
+      {{- $og = .Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $og -}}
+  {{- with resources.GetMatch "images/og-image.{png,jpg,jpeg,webp}" -}}
+    {{- with .Fill $spec -}}
+      {{- $og = .Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $og -}}
