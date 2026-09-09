@@ -30,8 +30,9 @@ content/          Inhalte (Markdown, Beiträge als Page Bundles mit ihren Bilder
   about.md        Über mich
   library.md      Bibliothek / Buchempfehlungen
   legal.md        Impressum & Datenschutz
+  niederrhein.md  Foto-Langzeitserie (Text und Bildfolge im Front Matter)
 data/
-  gallery.yaml    Kuratierte Bildauswahl für die Galerie auf der Startseite
+  gallery.yaml    Kuratierte Bildauswahl für die Galerien auf der Startseite
 layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen
 assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
 assets/gallery/   Optionale Galerie-Bilder ohne zugehörigen Beitrag
@@ -62,7 +63,12 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
 - **`layouts/index.html`** — Landing-Page statt der vollständigen Beitragsliste
   des Themes: Intro, Galerie und die neuesten Beiträge.
 
-- **`layouts/partials/gallery.html`** — Galerie, gespeist aus `data/gallery.yaml`.
+- **`layouts/partials/gallery.html`** — Galerien, gespeist aus `data/gallery.yaml`.
+
+- **`layouts/_default/series.html`** — Layout für eine Foto-Serie. Anders als die
+  Galerien ein einspaltiger Ablauf in fester Reihenfolge, weil bei einer Serie die
+  Abfolge Teil der Aussage ist. Die Bildliste steht im Front Matter der Seite unter
+  `photos` (nicht `images`, das ist bei Hugo für OpenGraph reserviert).
 
 ## Lokale Entwicklung
 
@@ -112,6 +118,13 @@ Neuen Beitrag anlegen:
 ```bash
 hugo new content blog/mein-beitrag/index.md
 ```
+
+### Serie vs. Galerie
+
+`content/niederrhein.md` ist eine laufende Serie: eigener Text, feste Reihenfolge,
+eigene Seite. Die Blöcke in `data/gallery.yaml` sind lose Sammlungen nach Motiv.
+Auf der Startseite steht die Serie oben und wird angeteasert, die Galerien folgen
+darunter.
 
 ### Galerie pflegen
 

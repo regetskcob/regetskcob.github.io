@@ -1,0 +1,48 @@
+{{/*
+  A photo series: an introductory text followed by the images in the exact order
+  given in front matter.
+
+  Unlike the home galleries, a series is not a masonry grid. The images run one
+  per row at full content width, so the sequence reads top to bottom the way it
+  was arranged — order carries meaning here.
+*/}}
+{{ define "main" }}
+
+<article class="series">
+  <h1>{{ .Title }}</h1>
+
+  <div class="series-intro">
+    {{ .Content }}
+  </div>
+
+  {{- with .Params.photos }}
+  <div class="series-images">
+    {{/* Bind the item: inside "with $img" the dot is the image, not the entry. */}}
+    {{- range $it := . }}
+      {{- $img := resources.Get (printf "gallery/%s" $it.image) -}}
+      {{- with $img }}
+        {{- $srcset := slice -}}
+        {{- range $w := (slice 600 900 1400) -}}
+          {{- if le $w $img.Width -}}
+            {{- $r := $img.Resize (printf "%dx webp q82" $w) -}}
+            {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+          {{- end -}}
+        {{- end -}}
+        {{- $main := $img.Resize (printf "%dx webp q82" (cond (gt $img.Width 1400) 1400 $img.Width)) -}}
+        {{- if not $srcset -}}{{- $srcset = slice (printf "%s %dw" $main.RelPermalink $main.Width) -}}{{- end }}
+    <figure class="series-item">
+      <img src="{{ $main.RelPermalink }}"
+           srcset="{{ delimit $srcset ", " }}"
+           sizes="(max-width: 780px) 100vw, 780px"
+           width="{{ $main.Width }}" height="{{ $main.Height }}"
+           loading="lazy" decoding="async"
+           alt="{{ $it.alt }}">
+    </figure>
+      {{- end }}
+    {{- end }}
+  </div>
+  {{- end }}
+
+</article>
+
+{{ end }}

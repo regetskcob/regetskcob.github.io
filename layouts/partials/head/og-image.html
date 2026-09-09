@@ -24,8 +24,17 @@
   {{- end -}}
 {{- end -}}
 
+{{/* A series lists its photos in front matter; the first one represents it. */}}
+{{- with .Params.photos -}}
+  {{- with resources.Get (printf "gallery/%s" (index . 0).image) -}}
+    {{- with .Fill $spec -}}
+      {{- $og = .Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
 {{/* An explicit choice in front matter wins over bundle order. */}}
-{{- with or .Params.cover .Params.featured_image -}}
+{{- if not $og -}}{{- with or .Params.cover .Params.featured_image -}}
   {{- $named := $.Resources.Get (strings.TrimPrefix "./" .) -}}
   {{- with $named -}}
     {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}
@@ -34,7 +43,7 @@
       {{- end -}}
     {{- end -}}
   {{- end -}}
-{{- end -}}
+{{- end -}}{{- end -}}
 
 {{- if not $og -}}
   {{- with $raster -}}

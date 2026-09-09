@@ -66,3 +66,42 @@
   font-family: var(--font-mono);
   font-size: 0.9em;
 }
+
+/* --- Photo series --- */
+
+.series-intro {
+  margin-bottom: 2.5rem;
+}
+
+.series-item {
+  margin: 0 0 2rem;
+}
+
+.series-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* --- Series teaser on the home page --- */
+
+.series-teaser {
+  margin-top: 3rem;
+}
+
+.series-teaser h1 a {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.series-teaser-text {
+  color: var(--content-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.series-more {
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}

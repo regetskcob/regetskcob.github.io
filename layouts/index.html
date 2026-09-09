@@ -29,6 +29,9 @@
 </div>
 {{ end }}
 
+{{/* Ongoing series first, then the loose galleries below it. */}}
+{{ partial "series-teaser.html" . }}
+
 {{/* Gallery */}}
 {{ partial "gallery.html" . }}
 
