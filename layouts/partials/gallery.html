@@ -9,8 +9,9 @@
   reads assets/gallery/<image>. Missing files are skipped rather than failing
   the build, so a typo in the data file does not take the home page down.
 
-  Tiles are cropped to a uniform 3:2 so each grid stays even regardless of the
-  source aspect ratios.
+  Images keep their own aspect ratio and flow into a masonry column layout:
+  cropping everything to a uniform tile would cut roughly half the height off
+  the portrait shots.
 */}}
 
 {{- $blocks := slice -}}
@@ -48,21 +49,30 @@
     {{- with .description }}<p class="gallery-description">{{ . }}</p>{{ end }}
 
     <div class="gallery-grid">
-      {{- range .tiles }}
-        {{- $t := .img.Fill "600x400 webp q80 smart" -}}
-        {{- $t2 := .img.Fill "1200x800 webp q75 smart" -}}
-        {{- $tile := printf `<img src="%s" srcset="%s 600w, %s 1200w" sizes="(max-width: 640px) 100vw, 380px" width="%d" height="%d" loading="lazy" decoding="async" alt="%s">`
-              $t.RelPermalink $t.RelPermalink $t2.RelPermalink $t.Width $t.Height (.caption | plainify) -}}
+      {{- range $t := .tiles }}
+        {{/* Widths only — Resize keeps the aspect ratio. Never upscale. */}}
+        {{- $w := $t.img.Width -}}
+        {{- $srcset := slice -}}
+        {{- range $width := (slice 400 800 1200) -}}
+          {{- if le $width $w -}}
+            {{- $r := $t.img.Resize (printf "%dx webp q80" $width) -}}
+            {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+          {{- end -}}
+        {{- end -}}
+        {{- $main := $t.img.Resize (printf "%dx webp q80" (cond (gt $w 1200) 1200 $w)) -}}
+        {{- if not $srcset -}}{{- $srcset = slice (printf "%s %dw" $main.RelPermalink $main.Width) -}}{{- end -}}
+        {{- $tile := printf `<img src="%s" srcset="%s" sizes="(max-width: 640px) 100vw, 370px" width="%d" height="%d" loading="lazy" decoding="async" alt="%s">`
+              $main.RelPermalink (delimit $srcset ", ") $main.Width $main.Height ($t.caption | plainify) -}}
 
       <figure class="gallery-item">
-        {{- with .post }}
+        {{- with $t.post }}
           {{- with site.GetPage (printf "/blog/%s" .) }}
         <a href="{{ .RelPermalink }}" title="{{ .Title | plainify }}">{{ $tile | safeHTML }}</a>
           {{- end }}
         {{- else }}
         {{ $tile | safeHTML }}
         {{- end }}
-        {{- with .caption }}
+        {{- with $t.caption }}
         <figcaption>{{ . }}</figcaption>
         {{- end }}
       </figure>

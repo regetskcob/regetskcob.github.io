@@ -1,44 +1,72 @@
 # Photo galleries shown on the home page.
 #
 # Each block renders as its own titled section, in the order listed here — to
-# add a new theme, append another block at the bottom. "description" is
-# optional.
+# add a new theme, append another block at the bottom. "description" and
+# "caption" are optional.
 #
 # An item either points at an image inside a blog post's page bundle
 # (post + image; the tile then links to that post), or at a standalone file in
 # assets/gallery/ (image only). Images referenced from a post are not copied,
 # they are read straight out of the post's bundle.
 #
-# The selection below is a placeholder drawn from existing posts — swap it for
-# whatever should actually represent the work.
+# Source files were resized to 2000px on the long edge and stripped of all
+# metadata before being added — the originals carried GPS coordinates and this
+# repository is public.
 
 galleries:
   - title: Niederrhein
-    description: Felder, Weite und Abendlicht vor der Haustür.
+    description: Felder, Deiche und Abendlicht vor der Haustür.
     items:
-      - post: abendausklang-mit-blick-ueber-den-niederrhein
-        image: dscf9752-pano-2.jpg
-        caption: Abendstimmung über dem Niederrhein
+      - image: niederrhein/20190727-dscf0435.jpg
+      - image: niederrhein/20191231-dscf1802.jpg
+      - image: niederrhein/dji-20250114-102856.jpg
+      - image: niederrhein/dsc06590-2.jpg
+      - image: niederrhein/dsc06591.jpg
+      - image: niederrhein/dscf1625.jpg
+      - image: niederrhein/dscf2041.jpg
+      - image: niederrhein/dscf2072.jpg
+      - image: niederrhein/dscf2741.jpg
+      - image: niederrhein/dscf2852.jpg
+      - image: niederrhein/dscf2891.jpg
+      - image: niederrhein/dscf2898-1.jpg
+      - image: niederrhein/dscf2916.jpg
+      - image: niederrhein/img-6242.jpg
 
-      - post: uedemer-feld-hohe-muehle
-        image: dscf3638.jpg
-        caption: Uedemer Feld an der Hohen Mühle
-
-      - post: schafe-in-grieth-mit-dem-fujifilm-xf55-200mm-f3-5-4-8-fotografieren
-        image: dscf2746.jpg
-        caption: Schafe bei Grieth
-
-  - title: Wald
-    description: Unterwegs im Uedemer Hochwald.
+  - title: Nebel
+    description: Frühe Morgen, wenn der Dunst über dem Land steht.
     items:
-      - post: die-ruhe-der-natur
-        image: img_4639.jpg
-        caption: Blick nach oben
+      - image: nebel/dji-0308.jpg
+      - image: nebel/dji-0311.jpg
+      - image: nebel/dji-20240806-071000.jpg
+      - image: nebel/dji-20250310-074904.jpg
+      - image: nebel/dji-20250310-081026.jpg
+      - image: nebel/dji-20250327-072352.jpg
+      - image: nebel/dji-20260824-072346.jpg
+      - image: nebel/dji-20260824-073128.jpg
+      - image: nebel/dscf0923.jpg
+      - image: nebel/dscf0960.jpg
+      - image: nebel/dscf5860.jpg
+      - image: nebel/dscf5861.jpg
+      - image: nebel/dscf5863.jpg
+      - image: nebel/dscf5867.jpg
+      - image: nebel/img-0075.jpg
+      - image: nebel/img-2449.jpg
+      - image: nebel/img-6167.jpg
+      - image: nebel/kalkar-3.jpg
+      - image: nebel/niers-01.jpg
 
-      - post: wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald
-        image: dscf1601-hdr.jpg
-        caption: Uedemer Hochwald
-
-      - post: wie-der-borkenkaefer-die-baeume-quaelt
-        image: dscf2510.jpg
-        caption: Spuren des Borkenkäfers
+  - title: Allgäu
+    description: Berge, sobald es einmal weiter weg gehen darf.
+    items:
+      - image: allgaeu/dscf0480.jpg
+      - image: allgaeu/dscf0544.jpg
+      - image: allgaeu/dscf0919.jpg
+      - image: allgaeu/dscf0930.jpg
+      - image: allgaeu/dscf1061.jpg
+      - image: allgaeu/dscf1097.jpg
+      - image: allgaeu/dscf1109.jpg
+      - image: allgaeu/dscf1127.jpg
+      - image: allgaeu/dscf1128.jpg
+      - image: allgaeu/dscf1132.jpg
+      - image: allgaeu/dscf1139.jpg
+      - image: allgaeu/img-3945.jpg
