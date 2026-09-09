@@ -12,6 +12,10 @@
   Images keep their own aspect ratio and flow into a masonry column layout:
   cropping everything to a uniform tile would cut roughly half the height off
   the portrait shots.
+
+  "alt" describes the image for screen readers and is expected on every item.
+  "caption" is separate and optional: it renders visibly under the tile, so it
+  is only worth setting where there is something to add beyond the description.
 */}}
 
 {{- $blocks := slice -}}
@@ -29,7 +33,7 @@
       {{- $img = resources.Get (printf "gallery/%s" $it.image) -}}
     {{- end -}}
     {{- with $img -}}
-      {{- $tiles = $tiles | append (dict "img" . "caption" $it.caption "post" $it.post) -}}
+      {{- $tiles = $tiles | append (dict "img" . "alt" $it.alt "caption" $it.caption "post" $it.post) -}}
     {{- end -}}
   {{- end -}}
   {{- with $tiles -}}
@@ -62,7 +66,7 @@
         {{- $main := $t.img.Resize (printf "%dx webp q80" (cond (gt $w 1200) 1200 $w)) -}}
         {{- if not $srcset -}}{{- $srcset = slice (printf "%s %dw" $main.RelPermalink $main.Width) -}}{{- end -}}
         {{- $tile := printf `<img src="%s" srcset="%s" sizes="(max-width: 640px) 100vw, 370px" width="%d" height="%d" loading="lazy" decoding="async" alt="%s">`
-              $main.RelPermalink (delimit $srcset ", ") $main.Width $main.Height ($t.caption | plainify) -}}
+              $main.RelPermalink (delimit $srcset ", ") $main.Width $main.Height (or $t.alt $t.caption "" | plainify) -}}
 
       <figure class="gallery-item">
         {{- with $t.post }}

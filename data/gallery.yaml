@@ -1,72 +1,119 @@
 # Photo galleries shown on the home page.
 #
 # Each block renders as its own titled section, in the order listed here — to
-# add a new theme, append another block at the bottom. "description" and
-# "caption" are optional.
+# add a new theme, append another block at the bottom.
+#
+# "alt" describes the image for screen readers and belongs on every item.
+# "caption" is optional and separate: it renders visibly under the tile, so set
+# it only where there is something to add beyond the description.
 #
 # An item either points at an image inside a blog post's page bundle
 # (post + image; the tile then links to that post), or at a standalone file in
-# assets/gallery/ (image only). Images referenced from a post are not copied,
-# they are read straight out of the post's bundle.
+# assets/gallery/ (image only).
 #
 # Source files were resized to 2000px on the long edge and stripped of all
 # metadata before being added — the originals carried GPS coordinates and this
 # repository is public.
 
 galleries:
-  - title: Niederrhein
-    description: Felder, Deiche und Abendlicht vor der Haustür.
+  - title: "Niederrhein"
+    description: "Felder, Deiche und Abendlicht vor der Haustür."
     items:
-      - image: niederrhein/20190727-dscf0435.jpg
-      - image: niederrhein/20191231-dscf1802.jpg
-      - image: niederrhein/dji-20250114-102856.jpg
-      - image: niederrhein/dsc06590-2.jpg
-      - image: niederrhein/dsc06591.jpg
-      - image: niederrhein/dscf1625.jpg
-      - image: niederrhein/dscf2041.jpg
-      - image: niederrhein/dscf2072.jpg
-      - image: niederrhein/dscf2741.jpg
-      - image: niederrhein/dscf2852.jpg
-      - image: niederrhein/dscf2891.jpg
-      - image: niederrhein/dscf2898-1.jpg
-      - image: niederrhein/dscf2916.jpg
-      - image: niederrhein/img-6242.jpg
+      - image: "niederrhein/20190727-dscf0435.jpg"
+        alt: "Sonnenuntergang über einem Kartoffelfeld, eine Baumgruppe am Horizont, Schleierwolken im goldenen Abendhimmel"
+      - image: "niederrhein/20191231-dscf1802.jpg"
+        alt: "Nebliger Nadelwald im Winter, rechts ein hölzerner Hochsitz am Rand einer Schneise"
+      - image: "niederrhein/dji-20250114-102856.jpg"
+        alt: "Senkrechte Luftaufnahme zweier Baggerseen, dazwischen ein Feldweg zwischen kahlen Bäumen, Raureif auf den Wiesen"
+      - image: "niederrhein/dsc06590-2.jpg"
+        alt: "Zwei Windräder über einer Baumreihe, davor ein Feldweg zwischen Äckern und Gewächshäusern"
+      - image: "niederrhein/dsc06591.jpg"
+        alt: "Weites Feld im Abendlicht, zwei Windräder am Horizont, ein Feldweg führt nach rechts"
+      - image: "niederrhein/dscf1625.jpg"
+        alt: "Feldberegnung im Gegenlicht der tief stehenden Sonne, der Wasserstrahl leuchtet golden über dem Acker"
+      - image: "niederrhein/dscf2041.jpg"
+        alt: "Traktor mit Grubber auf einem abgeernteten Acker, dahinter eine Staubwolke und Windräder"
+      - image: "niederrhein/dscf2072.jpg"
+        alt: "Traktor bei der Bodenbearbeitung, aus Bodenhöhe durch Gräser hindurch fotografiert, Staub steht zwischen den Bäumen"
+      - image: "niederrhein/dscf2741.jpg"
+        alt: "Schafherde auf einem Deich, einzelne Tiere stehen als Silhouette gegen den blassen Himmel"
+      - image: "niederrhein/dscf2852.jpg"
+        alt: "Dunstiger Blick über eine Ortschaft, ein Kirchturm und ein Backsteinturm zeichnen sich im rosafarbenen Licht ab"
+      - image: "niederrhein/dscf2891.jpg"
+        alt: "Diesiger Blick über Baumwipfel, in der Ferne ein Kirchturm im hellen Dunst"
+      - image: "niederrhein/dscf2898-1.jpg"
+        alt: "Blick über ein Dorf mit Windmühle und Backsteinhäusern, davor eine Wiese, ringsum Frühlingsgrün"
+      - image: "niederrhein/dscf2916.jpg"
+        alt: "Baumkronen im frischen Frühlingsgrün, dahinter ein Kirchturm im Dunst unter rosa Himmel"
+      - image: "niederrhein/img-6242.jpg"
+        alt: "Abgeernteter Acker im klaren Morgenlicht, eine Baumreihe am Horizont, Gräser und Zaunpfähle im Vordergrund"
 
-  - title: Nebel
-    description: Frühe Morgen, wenn der Dunst über dem Land steht.
+  - title: "Nebel"
+    description: "Frühe Morgen, wenn der Dunst über dem Land steht."
     items:
-      - image: nebel/dji-0308.jpg
-      - image: nebel/dji-0311.jpg
-      - image: nebel/dji-20240806-071000.jpg
-      - image: nebel/dji-20250310-074904.jpg
-      - image: nebel/dji-20250310-081026.jpg
-      - image: nebel/dji-20250327-072352.jpg
-      - image: nebel/dji-20260824-072346.jpg
-      - image: nebel/dji-20260824-073128.jpg
-      - image: nebel/dscf0923.jpg
-      - image: nebel/dscf0960.jpg
-      - image: nebel/dscf5860.jpg
-      - image: nebel/dscf5861.jpg
-      - image: nebel/dscf5863.jpg
-      - image: nebel/dscf5867.jpg
-      - image: nebel/img-0075.jpg
-      - image: nebel/img-2449.jpg
-      - image: nebel/img-6167.jpg
-      - image: nebel/kalkar-3.jpg
-      - image: nebel/niers-01.jpg
+      - image: "nebel/dji-0308.jpg"
+        alt: "Luftaufnahme einer Ortschaft im Morgennebel, der Kirchturm ragt aus dem Dunst, davor Wiesen und ein gestreifter Acker"
+      - image: "nebel/dji-0311.jpg"
+        alt: "Luftaufnahme desselben Ortes im Gegenlicht, Nebelschleier ziehen zwischen den Häusern und Bäumen"
+      - image: "nebel/dji-20240806-071000.jpg"
+        alt: "Luftaufnahme über Feldern, Nebelschwaden liegen in den Senken, ein Windrad und lange Schatten im Morgenlicht"
+      - image: "nebel/dji-20250310-074904.jpg"
+        alt: "Luftaufnahme einer Anhöhe im goldenen Morgendunst, lange Baumschatten fallen über das Feld"
+      - image: "nebel/dji-20250310-081026.jpg"
+        alt: "Luftaufnahme eines Dorfes im Gegenlicht, Nebel liegt über den umliegenden Feldern, am Horizont Windräder"
+      - image: "nebel/dji-20250327-072352.jpg"
+        alt: "Luftaufnahme über einem Nebelmeer, eine Reihe kahler Bäume wirft lange Schatten in das Morgenlicht"
+      - image: "nebel/dji-20260824-072346.jpg"
+        alt: "Luftaufnahme über einem Maisfeld, Bodennebel zieht in Bändern, die Sonne steht knapp über dem Horizont"
+      - image: "nebel/dji-20260824-073128.jpg"
+        alt: "Luftaufnahme über Feldern und Baumgruppen, Nebelbänke und lange Schatten, rechts ein Hochsitz am Feldrand"
+      - image: "nebel/dscf0923.jpg"
+        alt: "Verschneiter Berggipfel, fast vollständig von Wolken verhüllt, nahezu monochrom"
+      - image: "nebel/dscf0960.jpg"
+        alt: "Bergkette mit Wolkenbändern über bewaldeten Hängen, im Tal ein Kirchturm"
+      - image: "nebel/dscf5860.jpg"
+        alt: "Frisch gepflügter Acker, dahinter ein Nebelband über einer Baumreihe im warmen Morgenlicht"
+      - image: "nebel/dscf5861.jpg"
+        alt: "Dunkler Acker im Morgenlicht, links eine rot leuchtende Hecke, im Hintergrund Nebel zwischen kahlen Bäumen"
+      - image: "nebel/dscf5863.jpg"
+        alt: "Die Sonne steht als heller Fleck im Dunst über einer Baumreihe, davor ein dunkler Acker mit Grasbüschel"
+      - image: "nebel/dscf5867.jpg"
+        alt: "Hochsitz am Ufer eines Gewässers, Raureif auf der Wiese, kahle Bäume im Morgendunst"
+      - image: "nebel/img-0075.jpg"
+        alt: "Waldweg im Nebel, Buchen mit Herbstlaub säumen die Fahrbahn"
+      - image: "nebel/img-2449.jpg"
+        alt: "Wiese im Morgendunst, links eine Kopfweide über einem Trampelpfad, die Sonne steht flach hinter den Bäumen"
+      - image: "nebel/img-6167.jpg"
+        alt: "Frisch gefurchter Acker, dahinter steht eine tief hängende Nebelwand über dem Horizont"
+      - image: "nebel/kalkar-3.jpg"
+        alt: "Luftaufnahme von Kalkar mit Kirche und Mühlenturm im Ortskern, davor Wiesen, eine Kopfweidenreihe und ein Bachlauf"
+      - image: "nebel/niers-01.jpg"
+        alt: "Die Niers im Morgennebel, die Sonne spiegelt sich im Wasser, Weiden säumen das Ufer"
 
-  - title: Allgäu
-    description: Berge, sobald es einmal weiter weg gehen darf.
+  - title: "Allgäu"
+    description: "Berge, sobald es einmal weiter weg gehen darf."
     items:
-      - image: allgaeu/dscf0480.jpg
-      - image: allgaeu/dscf0544.jpg
-      - image: allgaeu/dscf0919.jpg
-      - image: allgaeu/dscf0930.jpg
-      - image: allgaeu/dscf1061.jpg
-      - image: allgaeu/dscf1097.jpg
-      - image: allgaeu/dscf1109.jpg
-      - image: allgaeu/dscf1127.jpg
-      - image: allgaeu/dscf1128.jpg
-      - image: allgaeu/dscf1132.jpg
-      - image: allgaeu/dscf1139.jpg
-      - image: allgaeu/img-3945.jpg
+      - image: "allgaeu/dscf0480.jpg"
+        alt: "Bewaldeter Bergrücken, ein Wolkenband zieht quer darüber, darunter liegt ein einzelner Hof am Hang"
+      - image: "allgaeu/dscf0544.jpg"
+        alt: "Bergpanorama mit schneebedeckten Gipfeln über bewaldeten Hängen, Wolken hängen in den Graten"
+      - image: "allgaeu/dscf0919.jpg"
+        alt: "Markanter Berggipfel, halb in Wolken, darunter ein Dorf zwischen Wiesen und Nadelwald"
+      - image: "allgaeu/dscf0930.jpg"
+        alt: "Dichte Wolkendecke über bewaldeten Berghängen, die Gipfel bleiben verhüllt"
+      - image: "allgaeu/dscf1061.jpg"
+        alt: "Bergkette im Abendlicht, schneebedeckte Gipfel unter einem hohen Wolkenhimmel"
+      - image: "allgaeu/dscf1097.jpg"
+        alt: "Schroffe Felsgipfel mit Schneefeldern, darüber Quellwolken und blauer Himmel"
+      - image: "allgaeu/dscf1109.jpg"
+        alt: "Schneebedeckte Gipfelkette, davor ein dunkler, grün bewachsener Bergrücken im Schatten"
+      - image: "allgaeu/dscf1127.jpg"
+        alt: "Nahaufnahme eines verschneiten Felsgrats, dahinter eine einzelne Wolkenbank vor blauem Himmel"
+      - image: "allgaeu/dscf1128.jpg"
+        alt: "Verschneite Gipfel hinter einem dunklen Felsgrat, darüber Quellwolken"
+      - image: "allgaeu/dscf1132.jpg"
+        alt: "Kleine Wandergruppen als Silhouetten auf einem schneebedeckten Grat neben einer Felsnase"
+      - image: "allgaeu/dscf1139.jpg"
+        alt: "Bergkette mit Schneefeldern in den Flanken, darüber weiße Quellwolken am blauen Himmel"
+      - image: "allgaeu/img-3945.jpg"
+        alt: "Blick von einem Hang mit Schneeresten hinunter ins Tal, Wolken ziehen über die gegenüberliegende Bergkette"
