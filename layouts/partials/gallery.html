@@ -64,7 +64,10 @@
           {{- end -}}
         {{- end -}}
         {{- $main := $t.img.Resize (printf "%dx webp q80" (cond (gt $w 1200) 1200 $w)) -}}
-        {{- if not $srcset -}}{{- $srcset = slice (printf "%s %dw" $main.RelPermalink $main.Width) -}}{{- end -}}
+        {{/* Die ausgelieferte Variante gehört selbst ins srcset, sonst kennt der
+             Browser sie nicht und greift auf die nächstkleinere zurück. */}}
+        {{- $mainEntry := printf "%s %dw" $main.RelPermalink $main.Width -}}
+        {{- if not (in $srcset $mainEntry) -}}{{- $srcset = $srcset | append $mainEntry -}}{{- end -}}
         {{- $tile := printf `<img src="%s" srcset="%s" sizes="(max-width: 640px) 100vw, 370px" width="%d" height="%d" loading="lazy" decoding="async" alt="%s">`
               $main.RelPermalink (delimit $srcset ", ") $main.Width $main.Height (or $t.alt $t.caption "" | plainify) -}}
 

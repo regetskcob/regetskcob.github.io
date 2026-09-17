@@ -29,7 +29,10 @@
           {{- end -}}
         {{- end -}}
         {{- $main := $img.Resize (printf "%dx webp q82" (cond (gt $img.Width 1400) 1400 $img.Width)) -}}
-        {{- if not $srcset -}}{{- $srcset = slice (printf "%s %dw" $main.RelPermalink $main.Width) -}}{{- end }}
+        {{/* Die ausgelieferte Variante gehört selbst ins srcset, sonst kennt der
+             Browser sie nicht und greift auf die nächstkleinere zurück. */}}
+        {{- $mainEntry := printf "%s %dw" $main.RelPermalink $main.Width -}}
+        {{- if not (in $srcset $mainEntry) -}}{{- $srcset = $srcset | append $mainEntry -}}{{- end }}
     <figure class="series-item">
       <img src="{{ $main.RelPermalink }}"
            srcset="{{ delimit $srcset ", " }}"
