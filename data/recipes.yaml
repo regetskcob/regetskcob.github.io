@@ -1,6 +1,9 @@
 # The JPEG recipes of the C slots, rendered by layouts/_default/recipes.html on
 # content/rezepte.md. Values as of the recipe card dated 2026-09-17, except the
-# A1 minimum ISO, lowered to each body's base ISO afterwards (160 / 125).
+# A2 minimum ISO on the X-T5, raised from 125 to 250 so that DR200 in C3 applies.
+#
+# Bank minimum ISOs must not drop below what the recipes' dynamic range needs:
+# DR200 from ISO 320 (X-T30) / 250 (X-T5), DR400 from 640 / 500.
 #
 # Two levels: "basics" sits above all recipes (autofocus, auto ISO banks,
 # settings that stay put), and each C slot below lists only its image
@@ -69,14 +72,14 @@ basics:
     banks:
       - bank: "A1"
         purpose: "Ruhiges Motiv, gutes Licht. Landschaft, Architektur."
-        xt30: "160 · max 1600"
-        xt5: "125 · max 3200"
+        xt30: "640 · max 1600"
+        xt5: "640 · max 3200"
         time: "AUTO"
         recipes: "C1 · C2"
       - bank: "A2"
         purpose: "Wenig Licht, Menschen. Innenräume, Feiern im Freundeskreis."
         xt30: "320 · max 3200"
-        xt5: "125 · max 6400"
+        xt5: "250 · max 6400"
         time: "1/250 s"
         recipes: "C3"
       - bank: "A3"
@@ -88,11 +91,12 @@ basics:
     notes:
       - title: "Mehr Spielraum an der X-T5"
         text: >-
-          Die Maximalwerte der X-T5 liegen eine Blendenstufe über denen der
-          X-T30, weil der neuere Sensor das verträgt. A1 startet an beiden Bodys
-          auf der Basis-ISO, also bei 160 an der X-T30 und 125 an der X-T5, und
-          an der X-T5 gilt das auch für A2. Rauscht eine Bank in der Praxis zu
-          stark, drehe ich an ihrem Maximum und lasse das Rezept in Ruhe.
+          Die Untergrenzen folgen dem Dynamikbereich der Rezepte, denn DR400
+          greift an der X-T30 erst ab ISO 640 und an der X-T5 ab 500, DR200 ab
+          320 bzw. 250. Die Maximalwerte der X-T5 liegen eine Blendenstufe über
+          denen der X-T30, weil der neuere Sensor das verträgt. Rauscht eine Bank
+          in der Praxis zu stark, drehe ich an ihrem Maximum und lasse das Rezept
+          in Ruhe.
 
   - kind: "list"
     title: "Was immer steht"
