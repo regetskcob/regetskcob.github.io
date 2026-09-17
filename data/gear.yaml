@@ -1,4 +1,5 @@
-# Photographic gear, rendered by layouts/_default/gear.html on content/gear.md.
+# Photographic gear, rendered by layouts/_default/gear.html on
+# content/ausruestung.md.
 #
 # Same shape as data/gallery.yaml: named blocks that appear top to bottom in the
 # order of this file. A new block is added by appending it at the bottom; the
@@ -16,14 +17,12 @@
 
 groups:
   - title: "Kameras"
-    description: "Zwei Bodys, beide mit L-Griff und rotem Softauslöser."
+    description: "Zwei Bodys, beide gleich eingerichtet, damit ich mich beim Wechsel nicht umgewöhnen muss."
     items:
       - name: "Fujifilm X-T5"
-        note: "Seit September 2026 die Hauptkamera. Mit SmallRig L-Bracket Grip 4260."
+        note: "Seit September 2026 die Hauptkamera. Mit SmallRig L-Bracket Grip 4260 und rotem, konkavem JJC-Softauslöser."
       - name: "Fujifilm X-T30"
-        note: "Bleibt als Zweitbody im Einsatz, mit SmallRig L-Griff 5664."
-      - name: "JJC Softauslöser, rot und konkav"
-        note: "An beiden Bodys derselbe, damit sich der Auslösepunkt gleich anfühlt."
+        note: "Bleibt als Zweitbody dabei, mit SmallRig L-Griff 5664 und demselben JJC-Softauslöser."
 
   - title: "Objektive"
     items:
