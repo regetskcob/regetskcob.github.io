@@ -4,14 +4,21 @@ description: "Eine Langzeitserie über die Gegend, in der ich wohne."
 layout: series
 teaser: "Eine Langzeitserie über die Gegend, in der ich wohne. Immer wieder dieselben Wege, zu verschiedenen Tages- und Jahreszeiten."
 
-# Order matters here: this is a series, not a pile of photos. Rearrange freely,
-# the page renders them top to bottom in exactly this order.
+# Shuffled on every visit. Without JavaScript, and for the home page teaser
+# (first four entries), the order below applies.
+shuffle: true
+
+# Per photo: image and alt are required. `size: large` makes a tile span two
+# columns and two rows. Portraits and panoramas are detected from the image
+# itself and need no flag.
 photos:
   - image: "niederrhein/20190727-dscf0435.jpg"
+    size: large
     alt: "Sonnenuntergang über einem Kartoffelfeld, eine Baumgruppe am Horizont, Schleierwolken im goldenen Abendhimmel"
   - image: "niederrhein/20191231-dscf1802.jpg"
     alt: "Nebliger Nadelwald im Winter, rechts ein hölzerner Hochsitz am Rand einer Schneise"
   - image: "niederrhein/dji-20250114-102856.jpg"
+    size: large
     alt: "Senkrechte Luftaufnahme zweier Baggerseen, dazwischen ein Feldweg zwischen kahlen Bäumen, Raureif auf den Wiesen"
   - image: "niederrhein/dsc06590-2.jpg"
     alt: "Zwei Windräder über einer Baumreihe, davor ein Feldweg zwischen Äckern und Gewächshäusern"

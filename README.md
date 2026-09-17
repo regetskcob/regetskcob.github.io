@@ -88,10 +88,17 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   `layouts/partials/recipe-notes.html` rendert die Hinweise unter einer Tabelle
   und wird von beiden Ebenen genutzt.
 
-- **`layouts/_default/series.html`** — Layout für eine Foto-Serie. Anders als die
-  Galerien ein einspaltiger Ablauf in fester Reihenfolge, weil bei einer Serie die
-  Abfolge Teil der Aussage ist. Die Bildliste steht im Front Matter der Seite unter
+- **`layouts/_default/series.html`** und **`assets/js/series.js`** — Layout für eine
+  Foto-Serie: ein gemischtes Raster, das aus der Textspalte ausbricht und bis zu
+  80 % der Seitenbreite nutzt, mit zwei, drei oder vier Spalten je nach Breite.
+  Hochformate belegen zwei Zeilen, Panoramen zwei Spalten, mit `size: large`
+  markierte Bilder zwei mal zwei. Die Bildliste steht im Front Matter unter
   `photos` (nicht `images`, das ist bei Hugo für OpenGraph reserviert).
+
+  Das Skript mischt die Reihenfolge bei jedem Besuch, rechnet die Anordnung vorab
+  durch und mischt neu, falls mitten im Raster eine Lücke entstünde. Ein Klick
+  öffnet das Bild groß. Ohne JavaScript gilt die Reihenfolge aus dem Front Matter
+  und der Klick öffnet die große Bilddatei direkt.
 
 ## Lokale Entwicklung
 
@@ -144,10 +151,19 @@ hugo new content blog/mein-beitrag/index.md
 
 ### Serie vs. Galerie
 
-`content/niederrhein.md` ist eine laufende Serie: eigener Text, feste Reihenfolge,
-eigene Seite. Die Blöcke in `data/gallery.yaml` sind lose Sammlungen nach Motiv.
+`content/niederrhein.md` ist eine laufende Serie mit eigenem Text und eigener
+Seite, die Bilder erscheinen dort in zufälliger Reihenfolge. Die Blöcke in
+`data/gallery.yaml` sind lose Sammlungen nach Motiv.
 Auf der Startseite steht die Serie oben und wird angeteasert, die Galerien folgen
-darunter.
+darunter. Der Teaser zeigt die ersten vier Bilder aus dem Front Matter.
+
+```yaml
+shuffle: true            # Reihenfolge bei jedem Besuch mischen
+photos:
+  - image: "niederrhein/dscf0435.jpg"
+    size: large          # optional: zwei Spalten, zwei Zeilen
+    alt: "…"
+```
 
 ### Ausrüstungsseite pflegen
 
