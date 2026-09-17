@@ -495,7 +495,7 @@ footer {
 /* The current page, and the section a page lives in, as an inverted label:
    clearly marked in both colour schemes without a colour of its own. */
 .header-menu .is-current a {
-  padding: 0.1em 0.4em;
+  padding: 0.25em 0.6em;
   border-radius: 4px;
   background: var(--content-primary);
   color: var(--background);
