@@ -100,6 +100,21 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   öffnet das Bild groß. Ohne JavaScript gilt die Reihenfolge aus dem Front Matter
   und der Klick öffnet die große Bilddatei direkt.
 
+- **`layouts/partials/hooks/body_end.html`** und **`assets/js/to-top.js`** — der
+  runde „nach oben"-Button unten rechts, über den `body_end`-Hook des Themes auf
+  jeder Seite. Er erscheint, sobald der Seitenkopf aus dem Bild gescrollt ist,
+  und ersetzt den englischen Textlink des Themes (`hideBackToTop` in `hugo.toml`).
+
+- **Deutsche Oberflächentexte.** Das Theme hat keine Übersetzungsdateien, einige
+  Texte stehen fest in den Vorlagen. Übersetzt sind sie in Kopien, die bei einem
+  Theme-Update mit dem Original verglichen werden sollten:
+  - `layouts/_default/single.html` — Lesezeit („2 Min. Lesezeit") und Inhaltsverzeichnis
+  - `layouts/partials/head.html` — Seitentitel der 404-Seite
+  - `layouts/404.html` — die 404-Seite selbst
+
+  Fußzeile (`footerContent`), Brotkrumen (`[params.breadcrumbs]`) und der Titel
+  der Schlagwort-Übersicht (`content/tags/_index.md`) sind ohne Kopie einstellbar.
+
 ## Lokale Entwicklung
 
 Voraussetzung ist Hugo **extended** sowie Go (für das Umami-Hugo-Modul).

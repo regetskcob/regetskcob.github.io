@@ -67,7 +67,7 @@ singleDateFormat = ":date_long"
 [params.breadcrumbs]
 enabled = true
 showCurrentPage = false
-home = "Home"
+home = "Start"
 
 # Social icons
 [[params.social]]
