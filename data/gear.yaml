@@ -6,7 +6,7 @@
 # template does not need to change.
 #
 # Per block, optional:
-#   description   One sentence under the heading.
+#   description   A short line or two under the heading.
 #   image / alt   A photo under the list; the file lives in assets/gear/.
 #
 # Per entry:
@@ -17,7 +17,7 @@
 
 groups:
   - title: "Kameras"
-    description: "Zwei Bodys, beide gleich eingerichtet, damit ich mich beim Wechsel nicht umgewöhnen muss."
+    description: "Zwei Bodys, gleich eingerichtet, damit ich mich beim Wechsel nicht umgewöhnen muss. Die L-Griffe sind Arca-kompatibel und gehen direkt auf die Stative weiter unten, ohne dass eine eigene Schnellwechselplatte übersteht, hängen bleibt oder die Kamera auf dem Tisch kippeln lässt."
     items:
       - name: "Fujifilm X-T5"
         note: "Seit September 2026 die Hauptkamera. Mit SmallRig L-Bracket Grip 4260 und rotem, konkavem JJC-Softauslöser."
@@ -55,12 +55,10 @@ groups:
       - name: "DJI Mic Mini"
         note: "Erste Generation, hängt ohne Umwege direkt an der Pocket 4."
 
-  - title: "Stative und Halterungen"
+  - title: "Stative"
     items:
       - name: "Diverse Stative von 20 bis 150 cm"
         note: "SmallRig, C-Rope, Joby und K&F, je nachdem wie weit der Weg ist."
-      - name: "Arca-L-Griffe an beiden Bodys"
-        note: "Früher hatte ich an jeder Kamera eine eigene Schnellwechselplatte. Die stehen über, bleiben hängen und lassen die Kamera auf dem Tisch kippeln. Seit alles Arca ist, ist das erledigt."
 
   - title: "Tasche und Kleinkram"
     image: "rucksack.jpg"
