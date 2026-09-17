@@ -108,10 +108,6 @@ name = "Blog"
 url = "/blog"
 
 [[params.menu]]
-name = "Bibliothek"
-url = "/library"
-
-[[params.menu]]
 name = "Über"
 url = "/about"
 

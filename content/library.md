@@ -2,6 +2,9 @@
 title: Bibliothek
 description: „Gelesen und für gut befunden.“
 hidePagination: true
+# Hidden for now: drafts are not built. Set to false and restore the menu
+# entry in hugo.toml to bring the page back.
+draft: true
 ---
 
 Nachfolgend habe ich euch einige Bücher zusammengestellt, welche mich in den letzten Jahren begleitet haben.

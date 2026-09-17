@@ -28,7 +28,7 @@ Umami ist in der [Datenschutzerklärung](content/legal.md) benannt.
 content/          Inhalte (Markdown, Beiträge als Page Bundles mit ihren Bildern)
   blog/           Blogbeiträge, erreichbar unter /blog/
   about.md        Über mich
-  library.md      Bibliothek / Buchempfehlungen
+  library.md      Bibliothek / Buchempfehlungen, vorerst als Entwurf ausgeblendet
   legal.md        Impressum & Datenschutz
   niederrhein.md  Foto-Langzeitserie (Text und Bildfolge im Front Matter)
   ausruestung.md  Fotoausrüstung (Text hier, Liste in data/gear.yaml)
