@@ -48,6 +48,14 @@ homeCollectionLimit = 5
 # Heading above the photo gallery; the images come from data/gallery.yaml
 galleryTitle = 'Fotografie'
 
+# Footer, replacing the theme's English credit line. The legal page moved out
+# of the main menu and is linked here, where people look for it.
+footerContent = "[Impressum](/legal/#impressum) · [Datenschutz](/legal/#datenschutzerklärung) · Gebaut mit [Hugo](https://gohugo.io) und [typo](https://github.com/tomfran/typo)"
+
+# The theme's "back to top" text link is replaced by the floating button in
+# layouts/partials/hooks/body_end.html, which works on every page.
+hideBackToTop = true
+
 # Lists parameters
 paginationSize = 25
 listSummaries = true
@@ -107,9 +115,6 @@ url = "/library"
 name = "Über"
 url = "/about"
 
-[[params.menu]]
-name = "Rechtliches"
-url = "/legal"
 
 # Syntax highlighting is styled by the theme's syntax-highlighting.css
 # (theme sets markup.highlight.noClasses = false), so no style is set here.

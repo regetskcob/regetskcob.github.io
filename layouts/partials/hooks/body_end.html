@@ -1,0 +1,18 @@
+{{/*
+  Floating "back to top" button, injected on every page through the theme's
+  body_end hook. It stays hidden until the page header has scrolled out of
+  view. Replaces the theme's text link at the end of single pages, which is
+  switched off with hideBackToTop in hugo.toml.
+
+  The href is a fallback: "#top" scrolls to the start of the document even
+  without an element of that id.
+*/}}
+<a href="#top" class="to-top" aria-label="Nach oben" title="Nach oben">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+    <path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+</a>
+{{- with resources.Get "js/to-top.js" }}
+<script>{{ (. | minify).Content | safeJS }}</script>
+{{- end }}

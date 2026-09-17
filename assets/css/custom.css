@@ -411,3 +411,56 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* --- Footer --- */
+
+/* The footer carries the legal links now and may wrap on phones, which the
+   theme's fixed max-height would clip. */
+footer {
+  max-height: none;
+  padding: 0 var(--main-padding) 1rem;
+  text-align: center;
+}
+
+/* --- Back to top --- */
+
+/* Hidden until the header scrolls away; visibility keeps it out of the tab
+   order while it is not shown. Without JavaScript it simply never appears. */
+.to-top {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--code-border);
+  border-radius: 50%;
+  background: var(--background);
+  color: var(--content-primary);
+  /* On the light theme the button shares the page colour, so the shadow is
+     what sets it apart; on dark the border does that job. */
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.22);
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.5rem);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.to-top:hover {
+  background: var(--code-background);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .to-top {
+    transition: none;
+  }
+}
