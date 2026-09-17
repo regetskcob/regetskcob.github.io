@@ -1,19 +1,18 @@
-# Fotografischer Tech-Stack, gerendert von layouts/_default/gear.html auf
-# content/setup.md.
+# Photographic gear, rendered by layouts/_default/gear.html on content/gear.md.
 #
-# Aufbau wie bei data/gallery.yaml: benannte Blöcke, die in der Reihenfolge
-# dieser Datei untereinander erscheinen. Ein neuer Block kommt dazu, indem er
-# unten angehängt wird — das Template muss dafür nicht angefasst werden.
+# Same shape as data/gallery.yaml: named blocks that appear top to bottom in the
+# order of this file. A new block is added by appending it at the bottom; the
+# template does not need to change.
 #
-# Pro Block optional:
-#   description   Ein Satz unter der Überschrift.
-#   image / alt   Ein Foto unter der Liste, Datei liegt unter assets/gear/.
+# Per block, optional:
+#   description   One sentence under the heading.
+#   image / alt   A photo under the list; the file lives in assets/gear/.
 #
-# Pro Eintrag:
-#   name    Pflicht. Die Bezeichnung, wie sie in der Zeile steht.
-#   note    Optional. Warum es im Rucksack liegt, in einem Satz.
+# Per entry:
+#   name    Required. The label as it appears in the row.
+#   note    Optional. Why it is in the bag, in one sentence.
 #
-# Bewusst ohne Links: keine Shop-Verweise, keine Affiliate-Links.
+# Deliberately without links: no shop references, no affiliate links.
 
 groups:
   - title: "Kameras"

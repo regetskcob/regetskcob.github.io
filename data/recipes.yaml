@@ -1,15 +1,18 @@
-# Die JPEG-Rezepte der C-Slots, gerendert von layouts/_default/recipes.html
-# auf content/rezepte.md. Stand der Rezeptkarte vom 17.09.2026.
+# The JPEG recipes of the C slots, rendered by layouts/_default/recipes.html on
+# content/rezepte.md. Values as of the recipe card dated 2026-09-17.
 #
-# Zwei Ebenen: "basics" steht als Basis über allen Rezepten (Autofokus,
-# Auto-ISO-Bänke, was immer eingestellt bleibt), darunter je C-Slot nur noch die
-# Bildparameter. Was für alle drei Rezepte gilt, gehört nach oben und nicht in
-# jede einzelne Tabelle.
+# Two levels: "basics" sits above all recipes (autofocus, auto ISO banks,
+# settings that stay put), and each C slot below lists only its image
+# parameters. Anything that applies to all three recipes belongs at the top,
+# not in every single table.
 #
-# Pro Zeile unter "settings" entweder
-#   value           gilt für beide Bodys, die Tabelle bleibt zweispaltig, oder
-#   xt30 und xt5    Werte je Body, dann rendert die Tabelle drei Spalten.
-# Sobald eine einzige Zeile aufgeteilt ist, wird die ganze Tabelle dreispaltig.
+# Each row under "settings" carries either
+#   value           applies to both bodies, the table stays two columns, or
+#   xt30 and xt5    one value per body, the table renders three columns.
+# As soon as a single row is split, the whole table becomes three columns.
+#
+# Labels follow the camera's German menu wording and must be identical across
+# recipes, so the same setting reads the same in every table.
 
 bodies:
   xt30: "X-T30 (X-Trans IV)"
@@ -20,10 +23,10 @@ closing: >-
   C1 ist die Serie, C2 ist die Serie in alt, C3 ist die Arbeit. Alles andere
   wird nicht unterwegs erfunden, sondern zuhause.
 
-# Die Basis über allen Rezepten. Jeder Block hat ein "kind":
-#   table   Einstellung und Wert, wie bei den Rezepten
-#   banks   die Auto-ISO-Bänke mit eigener Spaltenaufteilung
-#   list    einfache Aufzählung
+# The basics above all recipes. Every block has a "kind":
+#   table   setting and value, like the recipes
+#   banks   the auto ISO banks with their own columns
+#   list    a plain list
 basics:
   - kind: "table"
     title: "Autofokus"
@@ -83,8 +86,9 @@ basics:
     notes:
       - title: "Warum die X-T5 höher steht"
         text: >-
-          Die X-T5-Werte sind die X-T30-Werte, eine Blendenstufe nach oben
-          gezogen. Der neuere Sensor verträgt das. Wird eine Bank in der Praxis
+          Die Maximalwerte der X-T5 liegen eine Blendenstufe über denen der
+          X-T30, bei A2 startet sie außerdem auf ihrer Basis-ISO 125. Der neuere
+          Sensor verträgt das. Wird eine Bank in der Praxis
           zu laut, ist sie eine Stufe zu hoch und nicht das Rezept schuld.
 
   - kind: "list"
@@ -129,7 +133,7 @@ recipes:
       - label: "Rauschreduktion"
         xt30: "0"
         xt5: "−2"
-      - label: "Clarity"
+      - label: "Klarheit"
         value: "0"
       - label: "Körnung"
         value: "aus"
@@ -142,7 +146,7 @@ recipes:
         text: >-
           40 MP an X-Trans V zeichnen von Haus aus härter und sauberer.
           Schärfe −1 und Rauschreduktion −2 gleichen das wieder aus. Dieselben
-          Zahlen wie an der X-T30 wirken am größeren Sensor überschärft.
+          Zahlen wie an der X-T30 wirken an der X-T5 überschärft.
 
   - slot: "C2"
     name: "Nostalgic Niederrhein."
@@ -155,7 +159,7 @@ recipes:
         value: "R +4 / B −5"
       - label: "Körnung"
         value: "schwach, klein"
-      - label: "Clarity"
+      - label: "Klarheit"
         value: "−2"
       - label: "Schärfe"
         xt30: "−1"
@@ -180,7 +184,7 @@ recipes:
         value: "DR200"
       - label: "Ton Lichter"
         value: "−1"
-      - label: "Schattier. Ton"
+      - label: "Ton Schatten"
         value: "0"
       - label: "Farbe"
         value: "0"
@@ -188,13 +192,13 @@ recipes:
         value: "−1"
       - label: "Rauschreduktion"
         value: "−2"
-      - label: "Clarity"
+      - label: "Klarheit"
         value: "0"
       - label: "Körnung"
         value: "aus"
       - label: "Weißabgleich"
         value: "Eigene Einstellung 1"
-      - label: "WA verschieben"
+      - label: "WA-Shift"
         value: "0 / 0"
     notes:
       - title: "Ohne gemessenen Weißabgleich ist das nur ein halbes Rezept"

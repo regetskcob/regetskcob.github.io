@@ -9,8 +9,8 @@ draußen, C2 als nostalgischere Variante davon, C3 für Menschen und Innenräume
 Das spart mir das Nachdenken, wenn ich zwischen den Bodys wechsle.
 
 Ein paar Werte unterscheiden sich trotzdem zwischen den beiden Kameras. Der
-größere Sensor der X-T5 zeichnet von Haus aus härter, deshalb stehen Schärfe
-und Rauschreduktion dort niedriger. Wo das der Fall ist, steht es in der
+Sensor der X-T5 löst mit 40 statt 26 MP höher auf und zeichnet von Haus aus
+härter, deshalb stehen Schärfe und Rauschreduktion dort niedriger. Wo das der Fall ist, steht es in der
 Tabelle.
 
 Die Werte sind kein Geheimtipp und nichts, was ihr eins zu eins übernehmen
