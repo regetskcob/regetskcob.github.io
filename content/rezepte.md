@@ -10,11 +10,11 @@ Das spart mir das Nachdenken, wenn ich zwischen den Bodys wechsle.
 
 Ein paar Werte unterscheiden sich trotzdem zwischen den beiden Kameras. Der
 Sensor der X-T5 löst mit 40 statt 26 MP höher auf und zeichnet von Haus aus
-härter, deshalb stehen Schärfe und Rauschreduktion dort niedriger. Wo das der Fall ist, steht es in der
-Tabelle.
+härter, deshalb stehen Schärfe und Rauschreduktion dort niedriger. Wo das der
+Fall ist, steht es in der Tabelle.
 
-Die Werte sind kein Geheimtipp und nichts, was ihr eins zu eins übernehmen
-müsst. Ein Rezept ist immer auf ein Licht und eine Gegend hin gebaut, und hier
+Übernehmen dürft ihr die Werte gerne, eins zu eins passen werden sie bei euch
+aber selten. Ein Rezept ist immer auf ein Licht und eine Gegend hin gebaut, und hier
 draußen ist das Licht meistens flach und der Himmel selten wirklich blau. Nehmt
 es als Startpunkt und dreht daran, bis es zu eurer Gegend passt.
 

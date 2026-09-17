@@ -12,10 +12,11 @@ Ab und zu werde ich gefragt, womit ich eigentlich fotografiere. Die Liste steht
 unten, vorweg aber der Teil, der mir wichtiger ist als die Namen auf den
 Gehäusen.
 
-Fotografie ist bei mir Hobby. Ich nehme keine Aufträge an, also muss hier auch
-nichts doppelt vorhanden sein und nichts die letzten fünf Prozent Leistung
-herausholen. Gekauft wird, was ein konkretes Problem löst, und das darf
-gebraucht sein. Das 16-80er ist über rebuy hier gelandet und liegt seitdem fast
+Fotografie ist bei mir ein Hobby, und das soll sie auch bleiben. Fotografiere
+ich für Freunde oder Bekannte, dann als Freundschaftsdienst. Entsprechend muss
+hier nichts aus Sicherheitsgründen doppelt vorhanden sein, und nichts muss die
+letzten fünf Prozent Leistung herausholen. Gekauft wird, was ein konkretes
+Problem löst, und das darf gerne gebraucht sein. Das 16-80er ist über rebuy hier gelandet und liegt seitdem fast
 durchgehend auf der Kamera.
 
 Ich fotografiere JPEG plus RAW, arbeite aber mit dem JPEG weiter. In den

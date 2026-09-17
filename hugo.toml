@@ -84,7 +84,7 @@ name = "Start"
 url = "/"
 
 [[params.menu]]
-name = "Niederrhein"
+name = "Niederrhein."
 url = "/niederrhein"
 
 [[params.menu]]

@@ -1,5 +1,6 @@
 # The JPEG recipes of the C slots, rendered by layouts/_default/recipes.html on
-# content/rezepte.md. Values as of the recipe card dated 2026-09-17.
+# content/rezepte.md. Values as of the recipe card dated 2026-09-17, except the
+# A1 minimum ISO, lowered to each body's base ISO afterwards (160 / 125).
 #
 # Two levels: "basics" sits above all recipes (autofocus, auto ISO banks,
 # settings that stay put), and each C slot below lists only its image
@@ -20,8 +21,9 @@ bodies:
   shared: "Beide Bodys"
 
 closing: >-
-  C1 ist die Serie, C2 ist die Serie in alt, C3 ist die Arbeit. Alles andere
-  wird nicht unterwegs erfunden, sondern zuhause.
+  Kurz gesagt: C1 ist die Serie, C2 ihre ältere Schwester und C3 der
+  Freundschaftsdienst, wenn Freunde oder Bekannte fragen. Neue Ideen probiere
+  ich zuhause aus, draußen bleibt es bei diesen dreien.
 
 # The basics above all recipes. Every block has a "kind":
 #   table   setting and value, like the recipes
@@ -32,8 +34,8 @@ basics:
     title: "Autofokus"
     intro: >-
       Auf beiden Bodys gleich aufgesetzt. Greift die Verfolgung einmal nicht,
-      gehe ich kurz auf Einzelfeld, nehme das Motiv auf und wieder zurück. Im
-      Menü suche ich unterwegs nicht nach der Ursache.
+      gehe ich kurz auf Einzelfeld, nehme das Motiv auf und wieder zurück. Nach
+      der Ursache suche ich später in Ruhe am Schreibtisch.
     rows:
       - label: "AF-Modus"
         value: "Weit / Verfolgung"
@@ -48,7 +50,7 @@ basics:
       - label: "Gesichts- und Augenerkennung"
         value: "an"
     notes:
-      - title: "Warum diese drei Zahlen"
+      - title: "Tracking 4, Speed 1, Mitte"
         text: >-
           Tracking 4 hält am Motiv fest, auch wenn kurz ein Halm oder ein
           Zaunpfahl davorsteht. Speed 1 reagiert zügig auf Tempowechsel, also
@@ -60,19 +62,19 @@ basics:
   - kind: "banks"
     title: "Auto-ISO-Bänke"
     intro: >-
-      Aufsteigend nach Maximal-ISO sortiert, so weiß ich im Dunkeln, in welche
-      Richtung ich drehe. Getrennt wird nach Situation und nicht nach Objektiv:
-      die Brennweite deckt die AUTO-Mindestverschlusszeit ohnehin ab, über die
-      Bank entscheiden Licht und Bewegung.
+      Aufsteigend nach Maximal-ISO sortiert, so weiß ich auch im Dunkeln, in
+      welche Richtung ich drehen muss. Aufgeteilt ist nach Situation, da die
+      AUTO-Mindestverschlusszeit die Brennweite ohnehin berücksichtigt. Über die
+      Bank entscheiden also Licht und Bewegung.
     banks:
       - bank: "A1"
         purpose: "Ruhiges Motiv, gutes Licht. Landschaft, Architektur."
-        xt30: "640 · max 1600"
-        xt5: "640 · max 3200"
+        xt30: "160 · max 1600"
+        xt5: "125 · max 3200"
         time: "AUTO"
         recipes: "C1 · C2"
       - bank: "A2"
-        purpose: "Wenig Licht, Menschen. Innenräume, Veranstaltungen."
+        purpose: "Wenig Licht, Menschen. Innenräume, Feiern im Freundeskreis."
         xt30: "320 · max 3200"
         xt5: "125 · max 6400"
         time: "1/250 s"
@@ -84,12 +86,13 @@ basics:
         time: "1/500 s"
         recipes: "C1 · C3"
     notes:
-      - title: "Warum die X-T5 höher steht"
+      - title: "Mehr Spielraum an der X-T5"
         text: >-
           Die Maximalwerte der X-T5 liegen eine Blendenstufe über denen der
-          X-T30, bei A2 startet sie außerdem auf ihrer Basis-ISO 125. Der neuere
-          Sensor verträgt das. Wird eine Bank in der Praxis
-          zu laut, ist sie eine Stufe zu hoch und nicht das Rezept schuld.
+          X-T30, weil der neuere Sensor das verträgt. A1 startet an beiden Bodys
+          auf der Basis-ISO, also bei 160 an der X-T30 und 125 an der X-T5, und
+          an der X-T5 gilt das auch für A2. Rauscht eine Bank in der Praxis zu
+          stark, drehe ich an ihrem Maximum und lasse das Rezept in Ruhe.
 
   - kind: "list"
     title: "Was immer steht"
@@ -98,14 +101,15 @@ basics:
       - "Mechanischer Verschluss, elektronisch nur bewusst"
       - "Antrieb CL 5 B/s, Serie nur da, wo sie nötig ist"
       - "NR bei Langzeitbelichtung an"
-      - "Karten der X-T5 im Backup-Modus bei Terminen, sonst frei"
+      - "Karten der X-T5 im Backup-Modus, sobald ich für Freunde fotografiere"
     notes:
-      - title: "Was hier steht, wird nicht unterwegs geändert"
+      - title: "Geändert wird am Schreibtisch"
         tone: "warn"
         text: >-
-          Passt eine Einstellung im Einsatz nicht, notiere ich sie und passe sie
-          zuhause an. Sonst habe ich nach drei Terminen zwei Kameras, die
-          unterschiedlich denken.
+          Passt draußen eine Einstellung nicht, schreibe ich sie mir auf und
+          ändere sie erst zuhause, an beiden Kameras gleichzeitig. Wer unterwegs
+          daran dreht, hat nach drei Ausflügen zwei Bodys, die unterschiedlich
+          ticken.
 
 recipes:
   - slot: "C1"
@@ -142,7 +146,7 @@ recipes:
       - label: "Weißabgleich"
         value: "Auto"
     notes:
-      - title: "Warum die X-T5 anders steht"
+      - title: "Schärfe und Rauschen an der X-T5"
         text: >-
           40 MP an X-Trans V zeichnen von Haus aus härter und sauberer.
           Schärfe −1 und Rauschreduktion −2 gleichen das wieder aus. Dieselben
@@ -174,7 +178,8 @@ recipes:
   - slot: "C3"
     name: "Event"
     intro: >-
-      Für Menschen in Innenräumen. Pro Neg. Std hält die Hauttöne flach und
+      Für Menschen in Innenräumen, meistens auf Feiern bei Freunden und
+      Bekannten. Pro Neg. Std hält die Hauttöne flach und
       korrigierbar, DR200 rettet die Fenster im Hintergrund, und
       Rauschreduktion −2 lässt Struktur stehen statt Wachshaut.
     settings:
@@ -182,6 +187,8 @@ recipes:
         value: "Pro Neg. Std"
       - label: "Dynamikbereich"
         value: "DR200"
+      - label: "D-Bereichspriorität"
+        value: "nicht genutzt"
       - label: "Ton Lichter"
         value: "−1"
       - label: "Ton Schatten"
@@ -196,6 +203,8 @@ recipes:
         value: "0"
       - label: "Körnung"
         value: "aus"
+      - label: "Farbchrom-Effekt"
+        value: "nicht genutzt"
       - label: "Weißabgleich"
         value: "Eigene Einstellung 1"
       - label: "WA-Shift"

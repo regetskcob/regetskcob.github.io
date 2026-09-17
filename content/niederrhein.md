@@ -1,5 +1,5 @@
 ---
-title: "Niederrhein"
+title: "Niederrhein."
 description: "Eine Langzeitserie über die Gegend, in der ich wohne."
 layout: series
 teaser: "Eine Langzeitserie über die Gegend, in der ich wohne. Immer wieder dieselben Wege, zu verschiedenen Tages- und Jahreszeiten."
