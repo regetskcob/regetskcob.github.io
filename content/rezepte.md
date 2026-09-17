@@ -22,4 +22,4 @@ Was über allen drei Rezepten steht, habe ich vorangestellt: Autofokus,
 Auto-ISO-Bänke und die Einstellungen, die grundsätzlich so bleiben. Die
 Rezepttabellen darunter enthalten deshalb nur noch die Bildparameter.
 
-Meine Ausrüstung steht auf der [Gear-Seite](/gear).
+Womit ich fotografiere, zeigt die [Ausrüstungsseite](/ausruestung).

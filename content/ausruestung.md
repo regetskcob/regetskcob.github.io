@@ -1,7 +1,9 @@
 ---
-title: "Gear"
+title: "Ausrüstung"
 description: "Womit ich fotografiere und warum es genau diese Sachen geworden sind."
 layout: gear
+# The page lived at /gear/ before; keep shared links working.
+aliases: ["/gear/"]
 
 # Header photo from assets/gear/. Without "photo" the page renders without one.
 photo: "setup.jpg"
