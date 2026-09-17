@@ -1,0 +1,47 @@
+{{/*
+  Copy of themes/typo/layouts/partials/header.html (theme v3.0.2) with a working
+  active state for the menu. The theme compared the menu name with the lower-
+  cased page name ("Blog" vs "blog"), which never matched, so nothing was ever
+  highlighted. Diff against the theme file when updating typo.
+
+  A menu entry is active when its URL is the current page, or when the current
+  page lives below it, so a blog post highlights "Blog". The home entry only
+  matches the home page itself. The exact page gets aria-current="page", a
+  parent section aria-current="true".
+*/}}
+
+<div class="header">
+
+    {{ if or (not (.Param "hideHeader")) .IsHome }}
+
+    <h1 class="header-title">
+        <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
+    </h1>
+
+    <div class="header-menu">
+        {{ $here := .RelPermalink }}
+
+        {{ with site.Params.menu }}
+        {{ range . }}
+        {{/* "/blog" and "/blog/" both become "/blog/"; "/" stays "/". */}}
+        {{ $url := printf "%s/" (strings.TrimSuffix "/" .url) }}
+        {{ $current := "" }}
+        {{ if eq $here $url }}
+          {{ $current = "page" }}
+        {{ else if and (ne $url "/") (hasPrefix $here $url) }}
+          {{ $current = "true" }}
+        {{ end }}
+
+        <p class="small{{ with $current }} bold is-current{{ end }}">
+            <a href="{{ .url }}" {{ with $current }}aria-current="{{ . }}" {{ end }}{{ if and (isset . "newTab") .newTab
+                }}target="_blank" rel="noopener noreferrer" {{ end }}>
+                /{{.name }}
+            </a>
+        </p>
+        {{ end }}
+        {{ end }}
+    </div>
+
+    {{ end }}
+
+</div>

@@ -112,6 +112,12 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   - `layouts/partials/head.html` — Seitentitel der 404-Seite
   - `layouts/404.html` — die 404-Seite selbst
 
+- **`layouts/partials/header.html`** — Kopie des Theme-Headers mit funktionierender
+  Markierung der aktuellen Seite im Menü. Das Theme verglich den Menünamen mit dem
+  kleingeschriebenen Seitennamen und markierte deshalb nie etwas. Jetzt zählt die
+  Adresse: Beiträge unter `/blog/` markieren „Blog", der aktive Eintrag trägt
+  `aria-current`.
+
   Fußzeile (`footerContent`), Brotkrumen (`[params.breadcrumbs]`) und der Titel
   der Schlagwort-Übersicht (`content/tags/_index.md`) sind ohne Kopie einstellbar.
 
