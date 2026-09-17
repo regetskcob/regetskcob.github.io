@@ -5,6 +5,9 @@
 # Bank minimum ISOs must not drop below what the recipes' dynamic range needs:
 # DR200 from ISO 320 (X-T30) / 250 (X-T5), DR400 from 640 / 500.
 #
+# Each C slot stores exactly one bank: A1 in C1 and C2, A2 in C3. A3 is in no
+# slot and picked by hand with any recipe, so it has to cover DR400 as well.
+#
 # Two levels: "basics" sits above all recipes (autofocus, auto ISO banks,
 # settings that stay put), and each C slot below lists only its image
 # parameters. Anything that applies to all three recipes belongs at the top,
@@ -67,8 +70,9 @@ basics:
     intro: >-
       Aufsteigend nach Maximal-ISO sortiert, so weiß ich auch im Dunkeln, in
       welche Richtung ich drehen muss. Aufgeteilt ist nach Situation, da die
-      AUTO-Mindestverschlusszeit die Brennweite ohnehin berücksichtigt. Über die
-      Bank entscheiden also Licht und Bewegung.
+      AUTO-Mindestverschlusszeit die Brennweite ohnehin berücksichtigt. A1 und A2
+      sind fest in den Rezepten hinterlegt, A3 wähle ich von Hand, sobald sich
+      etwas bewegt, egal in welchem Rezept ich gerade bin.
     banks:
       - bank: "A1"
         purpose: "Ruhiges Motiv, gutes Licht. Landschaft, Architektur."
@@ -87,7 +91,7 @@ basics:
         xt30: "640 · max 6400"
         xt5: "640 · max 12800"
         time: "1/500 s"
-        recipes: "C1 · C3"
+        recipes: "von Hand"
     notes:
       - title: "Mehr Spielraum an der X-T5"
         text: >-
