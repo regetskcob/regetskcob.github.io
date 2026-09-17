@@ -6,7 +6,8 @@
   content/niederrhein.md, so there is one place to edit.
 */}}
 
-{{- with site.GetPage "/niederrhein" }}
+{{/* $ is the home page inside this partial, so bind the series page. */}}
+{{- with $series := site.GetPage "/niederrhein" }}
   {{- $shown := first 4 .Params.photos }}
 <section class="series-teaser">
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
@@ -16,17 +17,15 @@
 
   <div class="gallery-grid">
     {{- range $it := $shown }}
-      {{- $img := resources.Get (printf "gallery/%s" $it.image) -}}
-      {{- with $img }}
-        {{- $t := .Resize "400x webp q80" -}}
-        {{- $t2 := .Resize "800x webp q80" -}}
+      {{- with resources.Get (printf "gallery/%s" $it.image) }}
     <figure class="gallery-item">
-      <a href="{{ $.RelPermalink }}">
-        <img src="{{ $t.RelPermalink }}"
-             srcset="{{ $t.RelPermalink }} 400w, {{ $t2.RelPermalink }} 800w"
-             sizes="(max-width: 640px) 100vw, 370px"
-             width="{{ $t.Width }}" height="{{ $t.Height }}"
-             loading="lazy" decoding="async" alt="{{ $it.alt }}">
+      <a href="{{ $series.RelPermalink }}">
+        {{ partial "responsive-img.html" (dict
+             "img" .
+             "widths" (slice 400 800)
+             "quality" 80
+             "sizes" "(max-width: 640px) 100vw, 370px"
+             "alt" $it.alt) }}
       </a>
     </figure>
       {{- end }}

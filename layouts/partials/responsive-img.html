@@ -1,0 +1,45 @@
+{{/*
+  Responsive <img> for an image resource, shared by the galleries, the series,
+  the series teaser and the gear page.
+
+  Renders WebP renditions at the given widths, never upscaling. The largest
+  width the original can serve becomes the src and is always part of the
+  srcset — otherwise a browser does not know it exists and falls back to the
+  next smaller rendition.
+
+  Takes a dict:
+    img      image resource (required)
+    widths   rendition widths, ascending; the last one caps the src
+             (default 600 900 1400)
+    quality  WebP quality (default 82)
+    sizes    sizes attribute; must match the width the CSS actually displays
+             (default: full text column)
+    alt      alt text
+    loading  "lazy" (default) or "eager" for above-the-fold images
+*/}}
+{{- $img := .img -}}
+{{- $widths := .widths | default (slice 600 900 1400) -}}
+{{- $q := .quality | default 82 -}}
+{{- $sizes := .sizes | default "(max-width: 780px) 100vw, 780px" -}}
+{{- $cap := index $widths (sub (len $widths) 1) -}}
+
+{{- $srcset := slice -}}
+{{- range $w := $widths -}}
+  {{- if le $w $img.Width -}}
+    {{- $r := $img.Resize (printf "%dx webp q%d" $w $q) -}}
+    {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $main := $img.Resize (printf "%dx webp q%d" (cond (gt $img.Width $cap) $cap $img.Width) $q) -}}
+{{- $mainEntry := printf "%s %dw" $main.RelPermalink $main.Width -}}
+{{- if not (in $srcset $mainEntry) -}}
+  {{- $srcset = $srcset | append $mainEntry -}}
+{{- end -}}
+
+<img src="{{ $main.RelPermalink }}"
+     srcset="{{ delimit $srcset ", " }}"
+     sizes="{{ $sizes }}"
+     width="{{ $main.Width }}" height="{{ $main.Height }}"
+     loading="{{ .loading | default "lazy" }}" decoding="async"
+     alt="{{ .alt }}">

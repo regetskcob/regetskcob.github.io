@@ -54,30 +54,20 @@
 
     <div class="gallery-grid">
       {{- range $t := .tiles }}
-        {{/* Widths only — Resize keeps the aspect ratio. Never upscale. */}}
-        {{- $w := $t.img.Width -}}
-        {{- $srcset := slice -}}
-        {{- range $width := (slice 400 800 1200) -}}
-          {{- if le $width $w -}}
-            {{- $r := $t.img.Resize (printf "%dx webp q80" $width) -}}
-            {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
-          {{- end -}}
-        {{- end -}}
-        {{- $main := $t.img.Resize (printf "%dx webp q80" (cond (gt $w 1200) 1200 $w)) -}}
-        {{/* Die ausgelieferte Variante gehört selbst ins srcset, sonst kennt der
-             Browser sie nicht und greift auf die nächstkleinere zurück. */}}
-        {{- $mainEntry := printf "%s %dw" $main.RelPermalink $main.Width -}}
-        {{- if not (in $srcset $mainEntry) -}}{{- $srcset = $srcset | append $mainEntry -}}{{- end -}}
-        {{- $tile := printf `<img src="%s" srcset="%s" sizes="(max-width: 640px) 100vw, 370px" width="%d" height="%d" loading="lazy" decoding="async" alt="%s">`
-              $main.RelPermalink (delimit $srcset ", ") $main.Width $main.Height (or $t.alt $t.caption "" | plainify) -}}
+        {{- $tile := partial "responsive-img.html" (dict
+              "img" $t.img
+              "widths" (slice 400 800 1200)
+              "quality" 80
+              "sizes" "(max-width: 640px) 100vw, 370px"
+              "alt" (or $t.alt $t.caption "" | plainify)) -}}
 
       <figure class="gallery-item">
         {{- with $t.post }}
           {{- with site.GetPage (printf "/blog/%s" .) }}
-        <a href="{{ .RelPermalink }}" title="{{ .Title | plainify }}">{{ $tile | safeHTML }}</a>
+        <a href="{{ .RelPermalink }}" title="{{ .Title | plainify }}">{{ $tile }}</a>
           {{- end }}
         {{- else }}
-        {{ $tile | safeHTML }}
+        {{ $tile }}
         {{- end }}
         {{- with $t.caption }}
         <figcaption>{{ . }}</figcaption>

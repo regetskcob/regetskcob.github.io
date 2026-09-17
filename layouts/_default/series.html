@@ -17,29 +17,10 @@
 
   {{- with .Params.photos }}
   <div class="series-images">
-    {{/* Bind the item: inside "with $img" the dot is the image, not the entry. */}}
     {{- range $it := . }}
-      {{- $img := resources.Get (printf "gallery/%s" $it.image) -}}
-      {{- with $img }}
-        {{- $srcset := slice -}}
-        {{- range $w := (slice 600 900 1400) -}}
-          {{- if le $w $img.Width -}}
-            {{- $r := $img.Resize (printf "%dx webp q82" $w) -}}
-            {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
-          {{- end -}}
-        {{- end -}}
-        {{- $main := $img.Resize (printf "%dx webp q82" (cond (gt $img.Width 1400) 1400 $img.Width)) -}}
-        {{/* Die ausgelieferte Variante gehört selbst ins srcset, sonst kennt der
-             Browser sie nicht und greift auf die nächstkleinere zurück. */}}
-        {{- $mainEntry := printf "%s %dw" $main.RelPermalink $main.Width -}}
-        {{- if not (in $srcset $mainEntry) -}}{{- $srcset = $srcset | append $mainEntry -}}{{- end }}
+      {{- with resources.Get (printf "gallery/%s" $it.image) }}
     <figure class="series-item">
-      <img src="{{ $main.RelPermalink }}"
-           srcset="{{ delimit $srcset ", " }}"
-           sizes="(max-width: 780px) 100vw, 780px"
-           width="{{ $main.Width }}" height="{{ $main.Height }}"
-           loading="lazy" decoding="async"
-           alt="{{ $it.alt }}">
+      {{ partial "responsive-img.html" (dict "img" . "alt" $it.alt) }}
     </figure>
       {{- end }}
     {{- end }}

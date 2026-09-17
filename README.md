@@ -68,6 +68,11 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
 - **`layouts/index.html`** — Landing-Page statt der vollständigen Beitragsliste
   des Themes: Intro, Galerie und die neuesten Beiträge.
 
+- **`layouts/partials/responsive-img.html`** — gemeinsames `<img>` für Galerien,
+  Serie, Serien-Teaser und Gear-Seite: WebP-Varianten in festen Breiten, nie
+  hochskaliert, die größte ausgelieferte Variante steht immer mit im `srcset`.
+  `sizes` muss zur Breite passen, die das CSS tatsächlich anzeigt.
+
 - **`layouts/partials/gallery.html`** — Galerien, gespeist aus `data/gallery.yaml`.
 
 - **`layouts/_default/gear.html`** — Layout der Gear-Seite. Oben der Text aus
