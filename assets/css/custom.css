@@ -106,7 +106,7 @@
   font-size: 0.9em;
 }
 
-/* --- Setup / Tech-Stack --- */
+/* --- Gear page --- */
 
 .gear-intro {
   margin-bottom: 2.5rem;
@@ -127,6 +127,11 @@
   margin: 0;
 }
 
+.gear-item {
+  /* The theme indents every li for its bullets; this list has none. */
+  margin-left: 0;
+}
+
 .gear-item + .gear-item {
   margin-top: 0.9rem;
 }
@@ -144,7 +149,7 @@
   margin-top: 0.15rem;
 }
 
-/* --- Rezepte --- */
+/* --- Recipes page --- */
 
 .recipes-intro {
   margin-bottom: 2.5rem;
@@ -160,15 +165,18 @@
   margin-right: 0.6rem;
 }
 
-/* Das Theme zentriert Tabellen auf ihrer Eigenbreite; hier soll die Tabelle
-   die Spaltenbreite des Textes einnehmen. */
+/* The theme centres tables at their content width, and its reset makes every
+   table display:block, so width alone only stretches the border box while the
+   rows keep their content width. Restoring table layout lets the rows span the
+   text column; horizontal overflow is handled by the surrounding .table-outer. */
 .recipe-table {
+  display: table;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
 
-/* Werte rechtsbündig und in Mono, damit die Zahlen untereinander stehen. */
+/* Values right-aligned and monospaced so the numbers line up. */
 .recipe-table th + th,
 .recipe-table td + td {
   text-align: right;
@@ -178,6 +186,22 @@
   font-family: var(--font-mono);
   font-size: 0.9em;
   white-space: nowrap;
+}
+
+/* On phones the two- and three-column recipe tables would otherwise need
+   sideways scrolling for values like "Set 6 (eigene Werte)". Letting values
+   wrap keeps them in view; the six-column bank table still scrolls. */
+@media screen and (max-width: 640px) {
+  .recipe-table td + td {
+    white-space: normal;
+  }
+
+  /* Long German compounds such as "D-Bereichspriorität" cannot wrap without
+     hyphenation and push a three-column table past the screen edge. */
+  .recipe-table th,
+  .recipe-table td {
+    hyphens: auto;
+  }
 }
 
 .recipe-note {
@@ -193,8 +217,8 @@
   margin-bottom: 0.2rem;
 }
 
-/* Hinweise, die man nicht überlesen sollte, liegen auf der Codefläche des
-   Themes statt auf einer eigenen Farbe. */
+/* Notes that must not be skimmed sit on the theme's code surface rather than
+   on a colour of their own. */
 .recipe-note-warn {
   background: var(--code-background);
   border-left-color: var(--content-secondary);
@@ -202,19 +226,6 @@
   border-radius: var(--code-border-radius);
 }
 
-.recipe-extras {
-  margin-top: 1.2rem;
-}
-
-.recipe-extras-title {
-  font-family: var(--font-mono);
-  font-size: 0.85em;
-  color: var(--content-secondary);
-}
-
-.recipe-extras ul {
-  margin-top: 0.3rem;
-}
 
 .recipes-closing {
   margin-top: 3.5rem;
@@ -223,7 +234,7 @@
   color: var(--content-secondary);
 }
 
-/* --- Basis über den Rezepten --- */
+/* --- Basics above the recipes --- */
 
 .basics {
   margin-bottom: 4rem;
@@ -241,8 +252,8 @@
   margin-top: 1rem;
 }
 
-/* Die Bank-Tabelle hat sechs Spalten und läuft auf dem Handy in die
-   horizontale Scrollfläche des Themes (.table-outer). */
+/* The bank table has six columns and scrolls horizontally on phones inside
+   the theme's .table-outer. */
 .bank-table {
   font-size: 0.9em;
 }
@@ -252,14 +263,18 @@
   font-weight: bold;
 }
 
-/* Hebt die nowrap-Regel der Wertespalten auf: der Zweck ist Fließtext. */
-.bank-purpose {
+/* Undoes the value-column styling for the purpose column (header and cells),
+   which is prose. The selector has to outrank ".recipe-table td + td" and
+   ".recipe-table th + th" to take effect. */
+.recipe-table .bank-purpose {
   white-space: normal;
   text-align: left;
   font-family: var(--font-body);
+  font-size: 1em;
+  min-width: 12rem;
 }
 
-/* --- Kopfbild der Gear-Seite --- */
+/* --- Gear page header photo --- */
 
 .gear-photo {
   margin: 0 0 2.5rem;
@@ -272,8 +287,8 @@
   border-radius: 6px;
 }
 
-/* Foto innerhalb eines Ausrüstungsblocks, etwas ruhiger gesetzt als das
-   Kopfbild: es illustriert den Block, führt ihn aber nicht an. */
+/* Photo inside a gear block, set quieter than the header photo: it
+   illustrates the block rather than leading it. */
 .gear-group-photo {
   margin: 1.5rem 0 0;
 }
@@ -285,8 +300,8 @@
   border-radius: 6px;
 }
 
-/* Hochformat schmaler und mittig: über die volle Textbreite gezogen füllt ein
-   Porträtbild sonst den halben Bildschirm. */
+/* Portrait shots narrower and centred: at full text width they would fill
+   half the screen. The template's sizes attribute matches this cap. */
 .gear-group-photo-portrait img {
   max-width: 420px;
   margin-left: auto;

@@ -1,6 +1,6 @@
 {{/*
-  Hinweise unter einer Tabelle, genutzt von den Basis-Blöcken und den Rezepten.
-  Erwartet die notes-Liste als Kontext. "tone: warn" hebt einen Hinweis hervor.
+  Notes under a table, used by both the basics blocks and the recipes.
+  Expects the notes list as context. "tone: warn" makes a note stand out.
 */}}
 {{- range $n := . }}
 <aside class="recipe-note{{ if eq $n.tone "warn" }} recipe-note-warn{{ end }}">

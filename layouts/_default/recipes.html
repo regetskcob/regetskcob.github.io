@@ -1,15 +1,15 @@
 {{/*
-  Die JPEG-Rezepte der C-Slots, gespeist aus data/recipes.yaml.
+  The JPEG recipes of the C slots, fed by data/recipes.yaml.
 
-  Aufbau der Seite: Text aus content/rezepte.md, darunter die Basis (Autofokus,
-  Auto-ISO-Bänke, Grundeinstellungen) und darunter je Rezept eine Karte. Was für
-  alle drei Rezepte gilt, steht oben und wird in den Rezepttabellen nicht
-  wiederholt.
+  Page layout: text from content/rezepte.md, then the basics (autofocus, auto
+  ISO banks, settings that stay put), then one card per recipe. Whatever
+  applies to all three recipes sits at the top and is not repeated in the
+  recipe tables.
 
-  Die Rezepttabelle wird dreispaltig, sobald eine einzige Zeile eigene Werte für
-  xt30 und xt5 trägt, sonst bleibt sie zweispaltig mit gemeinsamer Wertespalte.
-  Ein Rezept ohne "settings" wird übersprungen, so dass ein noch unfertiger
-  Block in der Datendatei die Seite nicht anschneidet.
+  A recipe table renders three columns as soon as a single row carries its own
+  values for xt30 and xt5, otherwise two columns with one shared value column.
+  A recipe without "settings" is skipped, so an unfinished block in the data
+  file does not leave a half-rendered card on the page.
 */}}
 {{ define "main" }}
 
@@ -51,7 +51,7 @@
           <thead>
             <tr>
               <th>Bank</th>
-              <th>Wofür</th>
+              <th class="bank-purpose">Wofür</th>
               <th>{{ $bodies.xt30 }}</th>
               <th>{{ $bodies.xt5 }}</th>
               <th>Min. Zeit</th>
@@ -90,7 +90,7 @@
   {{- range $r := site.Data.recipes.recipes }}
   {{- with $r.settings }}
 
-    {{/* Erst prüfen, ob irgendeine Zeile body-eigene Werte hat. */}}
+    {{/* First check whether any row carries per-body values. */}}
     {{- $split := false -}}
     {{- range $s := . -}}
       {{- if or (isset $s "xt30") (isset $s "xt5") -}}{{- $split = true -}}{{- end -}}
@@ -98,8 +98,8 @@
 
   <section class="recipe">
     <h2>
-      {{- with $r.slot }}<span class="recipe-slot">{{ . }}</span>{{ end -}}
-      {{ $r.name }}
+      {{- with $r.slot }}<span class="recipe-slot">{{ . }}</span> {{ end -}}
+      {{ $r.name -}}
     </h2>
     {{- with $r.intro }}<p class="recipe-intro">{{ . }}</p>{{ end }}
 
@@ -107,7 +107,7 @@
       <table class="recipe-table">
         <thead>
           <tr>
-            <th>{{ or $r.settings_title "Parameter" }}</th>
+            <th>{{ or $r.settings_title "Einstellung" }}</th>
             {{- if $split }}
             <th>{{ $bodies.xt30 }}</th>
             <th>{{ $bodies.xt5 }}</th>
