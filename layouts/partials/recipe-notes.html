@@ -1,0 +1,10 @@
+{{/*
+  Hinweise unter einer Tabelle, genutzt von den Basis-Blöcken und den Rezepten.
+  Erwartet die notes-Liste als Kontext. "tone: warn" hebt einen Hinweis hervor.
+*/}}
+{{- range $n := . }}
+<aside class="recipe-note{{ if eq $n.tone "warn" }} recipe-note-warn{{ end }}">
+  {{- with $n.title }}<strong>{{ . }}</strong>{{ end }}
+  {{ $n.text }}
+</aside>
+{{- end }}

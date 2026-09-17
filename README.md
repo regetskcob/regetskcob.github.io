@@ -31,11 +31,16 @@ content/          Inhalte (Markdown, Beiträge als Page Bundles mit ihren Bilder
   library.md      Bibliothek / Buchempfehlungen
   legal.md        Impressum & Datenschutz
   niederrhein.md  Foto-Langzeitserie (Text und Bildfolge im Front Matter)
+  gear.md         Fotografischer Tech-Stack (Text hier, Ausrüstung in data/gear.yaml)
+  rezepte.md      JPEG-Rezepte (Text hier, Werte in data/recipes.yaml)
 data/
   gallery.yaml    Kuratierte Bildauswahl für die Galerien auf der Startseite
+  gear.yaml       Ausrüstungsliste für die Gear-Seite
+  recipes.yaml    JPEG-Rezepte der C-Slots für die Rezepte-Seite
 layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen
 assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
 assets/gallery/   Optionale Galerie-Bilder ohne zugehörigen Beitrag
+assets/gear/      Kopfbild der Gear-Seite
 themes/typo/      Theme als Git-Submodule (nicht direkt bearbeiten)
 static/           Unverarbeitete Dateien (Favicons)
 hugo.toml         Zentrale Konfiguration
@@ -64,6 +69,19 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   des Themes: Intro, Galerie und die neuesten Beiträge.
 
 - **`layouts/partials/gallery.html`** — Galerien, gespeist aus `data/gallery.yaml`.
+
+- **`layouts/_default/gear.html`** — Layout der Gear-Seite. Oben der Text aus
+  `content/gear.md`, darunter die Blöcke aus `data/gear.yaml` in deren Reihenfolge.
+  Einträge ohne `note` rendern nur ihren Namen. Das Kopfbild kommt aus dem Front
+  Matter (`photo` als Dateiname unter `assets/gear/`, `photo_alt` als
+  Beschreibung) und wird wie bei der Serie in WebP-Varianten ausgeliefert. Ohne
+  `photo` rendert die Seite ohne Bild.
+
+- **`layouts/_default/recipes.html`** — Layout der Rezepte-Seite: Text aus
+  `content/rezepte.md`, darunter die Basis-Blöcke und je Rezept eine Karte aus
+  `data/recipes.yaml`. Ein Rezept ohne `settings` wird übersprungen.
+  `layouts/partials/recipe-notes.html` rendert die Hinweise unter einer Tabelle
+  und wird von beiden Ebenen genutzt.
 
 - **`layouts/_default/series.html`** — Layout für eine Foto-Serie. Anders als die
   Galerien ein einspaltiger Ablauf in fester Reihenfolge, weil bei einer Serie die
@@ -125,6 +143,88 @@ hugo new content blog/mein-beitrag/index.md
 eigene Seite. Die Blöcke in `data/gallery.yaml` sind lose Sammlungen nach Motiv.
 Auf der Startseite steht die Serie oben und wird angeteasert, die Galerien folgen
 darunter.
+
+### Gear-Seite pflegen
+
+Das Kopfbild liegt unter `assets/gear/` und wird im Front Matter von
+`content/gear.md` über `photo` und `photo_alt` gesetzt. Wie bei den Galerien
+gilt: vorher auf 2000 px lange Kante bringen und die Metadaten entfernen, das
+Repository ist öffentlich.
+
+Die Ausrüstung steht in `data/gear.yaml`, aufgeteilt in benannte Blöcke, die in
+der Reihenfolge der Datei untereinander gerendert werden. Ein neues Thema kommt
+dazu, indem unten ein weiterer Block angehängt wird. `description` am Block und
+`note` am Eintrag sind optional, bewusst ohne Links. Ein Block kann zusätzlich
+ein eigenes Foto tragen (`image` als Dateiname unter `assets/gear/`, `alt` als
+Beschreibung), das unter der Liste steht.
+
+```yaml
+groups:
+  - title: Kameras
+    description: Zwei Bodys, beide mit L-Griff.
+    items:
+      - name: Fujifilm X-T5
+        note: Seit September 2026 die Hauptkamera.
+      - name: Fujifilm X-T30   # ohne "note": nur der Name
+
+  - title: Tasche und Kleinkram
+    image: rucksack.jpg      # optionales Foto unter der Liste
+    alt: Der gepackte Rucksack auf einem Feldweg
+    items:
+      - name: Lowepro Whistler BP 450 AW II
+```
+
+### Rezepte pflegen
+
+`data/recipes.yaml` hat zwei Ebenen. `basics` steht als Basis über allen
+Rezepten, darunter folgt je C-Slot nur noch das Bildrezept. Was für alle drei
+Rezepte gilt, gehört nach oben und nicht in jede einzelne Tabelle.
+
+Ein Basis-Block wird über sein `kind` gerendert:
+
+| `kind` | Rendert | Erwartet |
+| --- | --- | --- |
+| `table` | Einstellung und Wert | `rows` mit `label`/`value` |
+| `banks` | Auto-ISO-Bänke, sechsspaltig | `banks` mit `bank`, `purpose`, `xt30`, `xt5`, `time`, `recipes` |
+| `list` | Aufzählung | `items` |
+
+Jeder Block und jedes Rezept kann `notes` tragen (`tone: warn` hebt einen
+Hinweis hervor). `closing` am Dateiende steht unter allen Rezepten.
+
+In den Rezepten trägt eine Zeile entweder `value` (gilt für beide Bodys) oder
+`xt30` und `xt5`. Sobald eine einzige Zeile aufgeteilt ist, rendert die ganze
+Tabelle dreispaltig mit den Spaltenüberschriften aus `bodies`.
+`settings_title` benennt die erste Spalte um, etwa für eine Abweichungstabelle.
+
+```yaml
+bodies:
+  xt30: X-T30 (X-Trans IV)
+  xt5: X-T5 (X-Trans V)
+  shared: Beide Bodys
+
+basics:
+  - kind: table
+    title: Autofokus
+    rows:
+      - label: AF-Modus
+        value: Weit / Verfolgung
+
+recipes:
+  - slot: C1
+    name: Niederrhein.
+    settings:
+      - label: Dynamikbereich
+        value: DR400          # gleich auf beiden Bodys
+      - label: Schärfe
+        xt30: "0"             # eigene Werte je Body
+        xt5: "−1"
+    notes:
+      - title: Warum die X-T5 anders steht
+        text: 40 MP zeichnen von Haus aus härter.
+```
+
+Quelle der Werte sind die Rezept- und die Settingkarte. Ändert sich etwas an
+der Kamera, wird hier gepflegt und nicht in den Rezepttabellen doppelt.
 
 ### Galerie pflegen
 

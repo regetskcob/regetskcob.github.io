@@ -1,0 +1,96 @@
+{{/*
+  Der fotografische Tech-Stack, gespeist aus data/gear.yaml.
+
+  Optional ein Kopfbild aus dem Front Matter (photo, photo_alt), darunter der
+  Seitentext aus content/gear.md und dann die Blöcke der Datendatei in deren
+  Reihenfolge. Ein Eintrag ohne "note" rendert nur seinen
+  Namen, damit für Selbsterklärendes keine Füllsätze erfunden werden müssen.
+*/}}
+{{ define "main" }}
+
+<article class="gear">
+  <h1>{{ .Title }}</h1>
+
+  {{/* Kopfbild aus assets/gear/, in WebP-Varianten wie bei der Serie. */}}
+  {{- with .Params.photo }}
+  {{- $img := resources.Get (printf "gear/%s" .) -}}
+  {{- with $img }}
+    {{- $srcset := slice -}}
+    {{- range $w := (slice 600 900 1400) -}}
+      {{- if le $w $img.Width -}}
+        {{- $r := $img.Resize (printf "%dx webp q82" $w) -}}
+        {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $main := $img.Resize (printf "%dx webp q82" (cond (gt $img.Width 1400) 1400 $img.Width)) -}}
+    {{/* Die ausgelieferte Variante gehört selbst ins srcset, sonst kennt der
+         Browser sie nicht und greift auf die nächstkleinere zurück. */}}
+    {{- $mainEntry := printf "%s %dw" $main.RelPermalink $main.Width -}}
+    {{- if not (in $srcset $mainEntry) -}}{{- $srcset = $srcset | append $mainEntry -}}{{- end }}
+  <figure class="gear-photo">
+    <img src="{{ $main.RelPermalink }}"
+         srcset="{{ delimit $srcset ", " }}"
+         sizes="(max-width: 780px) 100vw, 780px"
+         width="{{ $main.Width }}" height="{{ $main.Height }}"
+         loading="eager" decoding="async"
+         alt="{{ $.Params.photo_alt }}">
+  </figure>
+  {{- end }}
+  {{- end }}
+
+  <div class="gear-intro">
+    {{ .Content }}
+  </div>
+
+  {{- with site.Data.gear.groups }}
+  {{- range $g := . }}
+  {{- with $g.items }}
+  <section class="gear-group">
+    {{- with $g.title }}<h2>{{ . }}</h2>{{ end }}
+    {{- with $g.description }}<p class="gear-description">{{ . }}</p>{{ end }}
+
+    <ul class="gear-list">
+      {{- range $it := . }}
+      <li class="gear-item">
+        <span class="gear-name">{{ $it.name }}</span>
+        {{- with $it.note }}
+        <span class="gear-note">{{ . }}</span>
+        {{- end }}
+      </li>
+      {{- end }}
+    </ul>
+
+    {{/* Optionales Foto zum Block, Datei unter assets/gear/. */}}
+    {{- with $g.image }}
+    {{- $gimg := resources.Get (printf "gear/%s" .) -}}
+    {{- with $gimg }}
+      {{- $set := slice -}}
+      {{- range $w := (slice 600 900 1400) -}}
+        {{- if le $w $gimg.Width -}}
+          {{- $r := $gimg.Resize (printf "%dx webp q82" $w) -}}
+          {{- $set = $set | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $m := $gimg.Resize (printf "%dx webp q82" (cond (gt $gimg.Width 1400) 1400 $gimg.Width)) -}}
+      {{- $mEntry := printf "%s %dw" $m.RelPermalink $m.Width -}}
+      {{- if not (in $set $mEntry) -}}{{- $set = $set | append $mEntry -}}{{- end }}
+    {{/* Hochformate bekommen eine eigene Klasse: über die volle Textbreite
+         gezogen würden sie den halben Bildschirm füllen. */}}
+    <figure class="gear-group-photo{{ if gt $m.Height $m.Width }} gear-group-photo-portrait{{ end }}">
+      <img src="{{ $m.RelPermalink }}"
+           srcset="{{ delimit $set ", " }}"
+           sizes="(max-width: 780px) 100vw, 780px"
+           width="{{ $m.Width }}" height="{{ $m.Height }}"
+           loading="lazy" decoding="async"
+           alt="{{ $g.alt }}">
+    </figure>
+    {{- end }}
+    {{- end }}
+  </section>
+  {{- end }}
+  {{- end }}
+  {{- end }}
+
+</article>
+
+{{ end }}

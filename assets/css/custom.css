@@ -105,3 +105,190 @@
   font-family: var(--font-mono);
   font-size: 0.9em;
 }
+
+/* --- Setup / Tech-Stack --- */
+
+.gear-intro {
+  margin-bottom: 2.5rem;
+}
+
+.gear-group + .gear-group {
+  margin-top: 2.5rem;
+}
+
+.gear-description {
+  color: var(--content-secondary);
+  margin-top: -0.5rem;
+}
+
+.gear-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.gear-item + .gear-item {
+  margin-top: 0.9rem;
+}
+
+.gear-name {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+/* The reason it is in the bag, set quieter than the name itself. */
+.gear-note {
+  display: block;
+  color: var(--content-secondary);
+  margin-top: 0.15rem;
+}
+
+/* --- Rezepte --- */
+
+.recipes-intro {
+  margin-bottom: 2.5rem;
+}
+
+.recipe + .recipe {
+  margin-top: 3.5rem;
+}
+
+.recipe-slot {
+  font-family: var(--font-mono);
+  color: var(--content-secondary);
+  margin-right: 0.6rem;
+}
+
+/* Das Theme zentriert Tabellen auf ihrer Eigenbreite; hier soll die Tabelle
+   die Spaltenbreite des Textes einnehmen. */
+.recipe-table {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Werte rechtsbündig und in Mono, damit die Zahlen untereinander stehen. */
+.recipe-table th + th,
+.recipe-table td + td {
+  text-align: right;
+}
+
+.recipe-table td + td {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.recipe-note {
+  margin-top: 1.2rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--code-border);
+  color: var(--content-secondary);
+}
+
+.recipe-note strong {
+  display: block;
+  color: var(--content-primary);
+  margin-bottom: 0.2rem;
+}
+
+/* Hinweise, die man nicht überlesen sollte, liegen auf der Codefläche des
+   Themes statt auf einer eigenen Farbe. */
+.recipe-note-warn {
+  background: var(--code-background);
+  border-left-color: var(--content-secondary);
+  padding: 0.8rem 1rem;
+  border-radius: var(--code-border-radius);
+}
+
+.recipe-extras {
+  margin-top: 1.2rem;
+}
+
+.recipe-extras-title {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--content-secondary);
+}
+
+.recipe-extras ul {
+  margin-top: 0.3rem;
+}
+
+.recipes-closing {
+  margin-top: 3.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--code-border);
+  color: var(--content-secondary);
+}
+
+/* --- Basis über den Rezepten --- */
+
+.basics {
+  margin-bottom: 4rem;
+}
+
+.basics-block + .basics-block {
+  margin-top: 2.5rem;
+}
+
+.basics-intro {
+  color: var(--content-secondary);
+}
+
+.basics-list {
+  margin-top: 1rem;
+}
+
+/* Die Bank-Tabelle hat sechs Spalten und läuft auf dem Handy in die
+   horizontale Scrollfläche des Themes (.table-outer). */
+.bank-table {
+  font-size: 0.9em;
+}
+
+.bank-name {
+  font-family: var(--font-mono);
+  font-weight: bold;
+}
+
+/* Hebt die nowrap-Regel der Wertespalten auf: der Zweck ist Fließtext. */
+.bank-purpose {
+  white-space: normal;
+  text-align: left;
+  font-family: var(--font-body);
+}
+
+/* --- Kopfbild der Gear-Seite --- */
+
+.gear-photo {
+  margin: 0 0 2.5rem;
+}
+
+.gear-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Foto innerhalb eines Ausrüstungsblocks, etwas ruhiger gesetzt als das
+   Kopfbild: es illustriert den Block, führt ihn aber nicht an. */
+.gear-group-photo {
+  margin: 1.5rem 0 0;
+}
+
+.gear-group-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Hochformat schmaler und mittig: über die volle Textbreite gezogen füllt ein
+   Porträtbild sonst den halben Bildschirm. */
+.gear-group-photo-portrait img {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}

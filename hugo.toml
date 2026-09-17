@@ -88,6 +88,14 @@ name = "Niederrhein"
 url = "/niederrhein"
 
 [[params.menu]]
+name = "Gear"
+url = "/gear"
+
+[[params.menu]]
+name = "Rezepte"
+url = "/rezepte"
+
+[[params.menu]]
 name = "Blog"
 url = "/blog"
 

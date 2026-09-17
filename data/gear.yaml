@@ -1,0 +1,86 @@
+# Fotografischer Tech-Stack, gerendert von layouts/_default/gear.html auf
+# content/setup.md.
+#
+# Aufbau wie bei data/gallery.yaml: benannte Blöcke, die in der Reihenfolge
+# dieser Datei untereinander erscheinen. Ein neuer Block kommt dazu, indem er
+# unten angehängt wird — das Template muss dafür nicht angefasst werden.
+#
+# Pro Block optional:
+#   description   Ein Satz unter der Überschrift.
+#   image / alt   Ein Foto unter der Liste, Datei liegt unter assets/gear/.
+#
+# Pro Eintrag:
+#   name    Pflicht. Die Bezeichnung, wie sie in der Zeile steht.
+#   note    Optional. Warum es im Rucksack liegt, in einem Satz.
+#
+# Bewusst ohne Links: keine Shop-Verweise, keine Affiliate-Links.
+
+groups:
+  - title: "Kameras"
+    description: "Zwei Bodys, beide mit L-Griff und rotem Softauslöser."
+    items:
+      - name: "Fujifilm X-T5"
+        note: "Seit September 2026 die Hauptkamera. Mit SmallRig L-Bracket Grip 4260."
+      - name: "Fujifilm X-T30"
+        note: "Bleibt als Zweitbody im Einsatz, mit SmallRig L-Griff 5664."
+      - name: "JJC Softauslöser, rot und konkav"
+        note: "An beiden Bodys derselbe, damit sich der Auslösepunkt gleich anfühlt."
+
+  - title: "Objektive"
+    items:
+      - name: "XF 16-80mm f/4 R OIS WR"
+        note: "Das Immerdrauf. Gebraucht gekauft, deckt fast alles ab, was ich draußen brauche."
+      - name: "XF 70-300mm f/4-5.6 R LM OIS WR"
+        note: "Für Wild, Schafe und alles, was mich nicht näher ranlässt."
+      - name: "XF 56mm f/1.2 R"
+        note: "Die Version von 2014, ohne Wetterschutz. Für Portraits und Abende mit wenig Licht."
+
+  - title: "Filter"
+    description: "Alles auf 72 mm gebracht, damit ein Satz für alle Objektive reicht."
+    items:
+      - name: "K&F 72-mm-Set: VND, CPL, UV"
+      - name: "Step-up-Ringe 62→72 und 67→72 mm"
+        note: "Der pragmatische Teil: ein Filtersatz statt drei."
+
+  - title: "Aus der Luft"
+    items:
+      - name: "DJI Mini 3 Pro"
+        note: "Für die Luftbilder rund um Kalkar. Mit K&F-Filterset (CPL, ND8, ND16) und SOLKIN 0.65x Weitwinkelvorsatz."
+      - name: "Yuneec H520e mit Wärmebildoptik"
+        note: "Im Frühjahr für die Kitzrettung unterwegs, nicht für Bilder."
+      - name: "EU-Kompetenznachweis A1/A3 und Fernpilotenzeugnis A2"
+
+  - title: "Bewegtbild"
+    items:
+      - name: "DJI Osmo Pocket 4"
+        note: "Mit SmallRig-Filterset und -Käfig. Passt in die Jackentasche und läuft nebenher mit."
+      - name: "DJI Mic Mini"
+        note: "Erste Generation, hängt ohne Umwege direkt an der Pocket 4."
+
+  - title: "Stative und Halterungen"
+    items:
+      - name: "Diverse Stative von 20 bis 150 cm"
+        note: "SmallRig, C-Rope, Joby und K&F, je nachdem wie weit der Weg ist."
+      - name: "Arca-L-Griffe an beiden Bodys"
+        note: "Früher hatte ich an jeder Kamera eine eigene Schnellwechselplatte. Die stehen über, bleiben hängen und lassen die Kamera auf dem Tisch kippeln. Seit alles Arca ist, ist das erledigt."
+
+  - title: "Tasche und Kleinkram"
+    image: "rucksack.jpg"
+    alt: "Der Fotorucksack steht im Gegenlicht auf einer nassen Wiese, seitlich das Stativ angeschnallt, dahinter Nebel über den Feldern und die aufgehende Sonne"
+    items:
+      - name: "Lowepro Whistler BP 450 AW II"
+        note: "Wasserfest, robust und vielseitig. Es passt wörtlich alles rein, auch das Stativ seitlich."
+      - name: "Calibrite ColorChecker Passport Photo 2"
+        note: "Meine erste Graukarte nach 20 Jahren Fotografie."
+      - name: "Leica Sofort 2"
+        note: "Nutze ich fast nur als Sofortdrucker, wenn jemand ein Bild mitnehmen soll."
+
+  - title: "Rechner und Software"
+    items:
+      - name: "MacBook Pro 14\" M2 Pro"
+      - name: "LaCie Rugged, 4 TB"
+        note: "Die Zwischenstation beim Sichern: von der SD-Karte auf die Platte, von dort der Import in Apple Fotos."
+      - name: "Apple Fotos"
+        note: "Verwaltung. Läuft über alle Geräte hinweg, ohne dass ich etwas dafür tun muss."
+      - name: "Photomator"
+        note: "Bearbeitung. Bewusst kein Adobe-Abo, weil ich das für ein Hobby nicht ausgeben will."

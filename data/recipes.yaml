@@ -1,0 +1,205 @@
+# Die JPEG-Rezepte der C-Slots, gerendert von layouts/_default/recipes.html
+# auf content/rezepte.md. Stand der Rezeptkarte vom 17.09.2026.
+#
+# Zwei Ebenen: "basics" steht als Basis über allen Rezepten (Autofokus,
+# Auto-ISO-Bänke, was immer eingestellt bleibt), darunter je C-Slot nur noch die
+# Bildparameter. Was für alle drei Rezepte gilt, gehört nach oben und nicht in
+# jede einzelne Tabelle.
+#
+# Pro Zeile unter "settings" entweder
+#   value           gilt für beide Bodys, die Tabelle bleibt zweispaltig, oder
+#   xt30 und xt5    Werte je Body, dann rendert die Tabelle drei Spalten.
+# Sobald eine einzige Zeile aufgeteilt ist, wird die ganze Tabelle dreispaltig.
+
+bodies:
+  xt30: "X-T30 (X-Trans IV)"
+  xt5: "X-T5 (X-Trans V)"
+  shared: "Beide Bodys"
+
+closing: >-
+  C1 ist die Serie, C2 ist die Serie in alt, C3 ist die Arbeit. Alles andere
+  wird nicht unterwegs erfunden, sondern zuhause.
+
+# Die Basis über allen Rezepten. Jeder Block hat ein "kind":
+#   table   Einstellung und Wert, wie bei den Rezepten
+#   banks   die Auto-ISO-Bänke mit eigener Spaltenaufteilung
+#   list    einfache Aufzählung
+basics:
+  - kind: "table"
+    title: "Autofokus"
+    intro: >-
+      Auf beiden Bodys gleich aufgesetzt. Greift die Verfolgung einmal nicht,
+      gehe ich kurz auf Einzelfeld, nehme das Motiv auf und wieder zurück. Im
+      Menü suche ich unterwegs nicht nach der Ursache.
+    rows:
+      - label: "AF-Modus"
+        value: "Weit / Verfolgung"
+      - label: "AF-C Custom"
+        value: "Set 6 (eigene Werte)"
+      - label: "Tracking-Empfindlichkeit"
+        value: "4"
+      - label: "Speed-Tracking"
+        value: "1"
+      - label: "Zonenbereichswechsel"
+        value: "Mitte"
+      - label: "Gesichts- und Augenerkennung"
+        value: "an"
+    notes:
+      - title: "Warum diese drei Zahlen"
+        text: >-
+          Tracking 4 hält am Motiv fest, auch wenn kurz ein Halm oder ein
+          Zaunpfahl davorsteht. Speed 1 reagiert zügig auf Tempowechsel, also
+          auf Tiere, Maschinen und Leute, die losgehen. Zonenbereichswechsel
+          Mitte fängt das Motiv erst in der Bildmitte ein und wandert dann mit,
+          das passt mir besser als „Auto“, das schon beim Aufnehmen der Kamera
+          anfängt zu suchen.
+
+  - kind: "banks"
+    title: "Auto-ISO-Bänke"
+    intro: >-
+      Aufsteigend nach Maximal-ISO sortiert, so weiß ich im Dunkeln, in welche
+      Richtung ich drehe. Getrennt wird nach Situation und nicht nach Objektiv:
+      die Brennweite deckt die AUTO-Mindestverschlusszeit ohnehin ab, über die
+      Bank entscheiden Licht und Bewegung.
+    banks:
+      - bank: "A1"
+        purpose: "Ruhiges Motiv, gutes Licht. Landschaft, Architektur."
+        xt30: "640 · max 1600"
+        xt5: "640 · max 3200"
+        time: "AUTO"
+        recipes: "C1 · C2"
+      - bank: "A2"
+        purpose: "Wenig Licht, Menschen. Innenräume, Veranstaltungen."
+        xt30: "320 · max 3200"
+        xt5: "125 · max 6400"
+        time: "1/250 s"
+        recipes: "C3"
+      - bank: "A3"
+        purpose: "Bewegung, Tiere, Tele."
+        xt30: "640 · max 6400"
+        xt5: "640 · max 12800"
+        time: "1/500 s"
+        recipes: "C1 · C3"
+    notes:
+      - title: "Warum die X-T5 höher steht"
+        text: >-
+          Die X-T5-Werte sind die X-T30-Werte, eine Blendenstufe nach oben
+          gezogen. Der neuere Sensor verträgt das. Wird eine Bank in der Praxis
+          zu laut, ist sie eine Stufe zu hoch und nicht das Rezept schuld.
+
+  - kind: "list"
+    title: "Was immer steht"
+    items:
+      - "Fine + RAW komprimiert, L 3:2"
+      - "Mechanischer Verschluss, elektronisch nur bewusst"
+      - "Antrieb CL 5 B/s, Serie nur da, wo sie nötig ist"
+      - "NR bei Langzeitbelichtung an"
+      - "Karten der X-T5 im Backup-Modus bei Terminen, sonst frei"
+    notes:
+      - title: "Was hier steht, wird nicht unterwegs geändert"
+        tone: "warn"
+        text: >-
+          Passt eine Einstellung im Einsatz nicht, notiere ich sie und passe sie
+          zuhause an. Sonst habe ich nach drei Terminen zwei Kameras, die
+          unterschiedlich denken.
+
+recipes:
+  - slot: "C1"
+    name: "Niederrhein."
+    intro: >-
+      Die Basis der Serie. Aus Online-Rezepten abgeleitet und über die Jahre so
+      lange auf die Gegend hier zugeschnitten, bis die Felder und der Dunst so
+      aussehen, wie ich sie in Erinnerung habe.
+    settings:
+      - label: "Filmsimulation"
+        value: "Classic Chrome"
+      - label: "Dynamikbereich"
+        value: "DR400"
+      - label: "D-Bereichspriorität"
+        value: "aus"
+      - label: "Ton Lichter"
+        value: "0"
+      - label: "Ton Schatten"
+        value: "+1"
+      - label: "Farbe"
+        value: "−1"
+      - label: "Schärfe"
+        xt30: "0"
+        xt5: "−1"
+      - label: "Rauschreduktion"
+        xt30: "0"
+        xt5: "−2"
+      - label: "Clarity"
+        value: "0"
+      - label: "Körnung"
+        value: "aus"
+      - label: "Farbchrom-Effekt"
+        value: "aus"
+      - label: "Weißabgleich"
+        value: "Auto"
+    notes:
+      - title: "Warum die X-T5 anders steht"
+        text: >-
+          40 MP an X-Trans V zeichnen von Haus aus härter und sauberer.
+          Schärfe −1 und Rauschreduktion −2 gleichen das wieder aus. Dieselben
+          Zahlen wie an der X-T30 wirken am größeren Sensor überschärft.
+
+  - slot: "C2"
+    name: "Nostalgic Niederrhein."
+    settings_title: "Abweichung zu C1"
+    intro: >-
+      Dieselbe Basis, dieselbe Handschrift, nur nostalgischer. Alle hier nicht
+      genannten Werte bleiben exakt wie bei C1.
+    settings:
+      - label: "WA-Shift (wärmer)"
+        value: "R +4 / B −5"
+      - label: "Körnung"
+        value: "schwach, klein"
+      - label: "Clarity"
+        value: "−2"
+      - label: "Schärfe"
+        xt30: "−1"
+        xt5: "−2"
+    notes:
+      - title: "Kein Stimmungsschalter"
+        text: >-
+          C2 ist für Motive, die ohnehin alt sind: Backstein, Kopfsteinpflaster,
+          Hofstellen, verwitterte Türen. Nicht für „heute ist mir melancholisch“,
+          sonst fällt die Serie auseinander.
+
+  - slot: "C3"
+    name: "Event"
+    intro: >-
+      Für Menschen in Innenräumen. Pro Neg. Std hält die Hauttöne flach und
+      korrigierbar, DR200 rettet die Fenster im Hintergrund, und
+      Rauschreduktion −2 lässt Struktur stehen statt Wachshaut.
+    settings:
+      - label: "Filmsimulation"
+        value: "Pro Neg. Std"
+      - label: "Dynamikbereich"
+        value: "DR200"
+      - label: "Ton Lichter"
+        value: "−1"
+      - label: "Schattier. Ton"
+        value: "0"
+      - label: "Farbe"
+        value: "0"
+      - label: "Schärfe"
+        value: "−1"
+      - label: "Rauschreduktion"
+        value: "−2"
+      - label: "Clarity"
+        value: "0"
+      - label: "Körnung"
+        value: "aus"
+      - label: "Weißabgleich"
+        value: "Eigene Einstellung 1"
+      - label: "WA verschieben"
+        value: "0 / 0"
+    notes:
+      - title: "Ohne gemessenen Weißabgleich ist das nur ein halbes Rezept"
+        tone: "warn"
+        text: >-
+          „Eigene Einstellung 1“ ist der Platzhalter für den Wert, den ihr vor
+          Ort messt. Ohne diese Messung stimmt der Rest der Zahlen zwar, die
+          Farbe aber nicht.

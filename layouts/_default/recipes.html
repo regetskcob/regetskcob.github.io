@@ -1,0 +1,146 @@
+{{/*
+  Die JPEG-Rezepte der C-Slots, gespeist aus data/recipes.yaml.
+
+  Aufbau der Seite: Text aus content/rezepte.md, darunter die Basis (Autofokus,
+  Auto-ISO-Bänke, Grundeinstellungen) und darunter je Rezept eine Karte. Was für
+  alle drei Rezepte gilt, steht oben und wird in den Rezepttabellen nicht
+  wiederholt.
+
+  Die Rezepttabelle wird dreispaltig, sobald eine einzige Zeile eigene Werte für
+  xt30 und xt5 trägt, sonst bleibt sie zweispaltig mit gemeinsamer Wertespalte.
+  Ein Rezept ohne "settings" wird übersprungen, so dass ein noch unfertiger
+  Block in der Datendatei die Seite nicht anschneidet.
+*/}}
+{{ define "main" }}
+
+{{- $bodies := site.Data.recipes.bodies }}
+
+<article class="recipes">
+  <h1>{{ .Title }}</h1>
+
+  <div class="recipes-intro">
+    {{ .Content }}
+  </div>
+
+  {{- with site.Data.recipes.basics }}
+  <section class="basics">
+    <h2>Basis</h2>
+
+    {{- range $b := . }}
+    <div class="basics-block">
+      {{- with $b.title }}<h3>{{ . }}</h3>{{ end }}
+      {{- with $b.intro }}<p class="basics-intro">{{ . }}</p>{{ end }}
+
+      {{- if eq $b.kind "table" }}
+      <div class="table-outer">
+        <table class="recipe-table">
+          <thead>
+            <tr><th>Einstellung</th><th>Wert</th></tr>
+          </thead>
+          <tbody>
+            {{- range $r := $b.rows }}
+            <tr><td>{{ $r.label }}</td><td>{{ $r.value }}</td></tr>
+            {{- end }}
+          </tbody>
+        </table>
+      </div>
+
+      {{- else if eq $b.kind "banks" }}
+      <div class="table-outer">
+        <table class="recipe-table bank-table">
+          <thead>
+            <tr>
+              <th>Bank</th>
+              <th>Wofür</th>
+              <th>{{ $bodies.xt30 }}</th>
+              <th>{{ $bodies.xt5 }}</th>
+              <th>Min. Zeit</th>
+              <th>Rezept</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{- range $k := $b.banks }}
+            <tr>
+              <td class="bank-name">{{ $k.bank }}</td>
+              <td class="bank-purpose">{{ $k.purpose }}</td>
+              <td>{{ $k.xt30 }}</td>
+              <td>{{ $k.xt5 }}</td>
+              <td>{{ $k.time }}</td>
+              <td>{{ $k.recipes }}</td>
+            </tr>
+            {{- end }}
+          </tbody>
+        </table>
+      </div>
+
+      {{- else if eq $b.kind "list" }}
+      <ul class="basics-list">
+        {{- range $b.items }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
+      {{- end }}
+
+      {{- with $b.notes }}{{ partial "recipe-notes.html" . }}{{ end }}
+    </div>
+    {{- end }}
+  </section>
+  {{- end }}
+
+  {{- range $r := site.Data.recipes.recipes }}
+  {{- with $r.settings }}
+
+    {{/* Erst prüfen, ob irgendeine Zeile body-eigene Werte hat. */}}
+    {{- $split := false -}}
+    {{- range $s := . -}}
+      {{- if or (isset $s "xt30") (isset $s "xt5") -}}{{- $split = true -}}{{- end -}}
+    {{- end }}
+
+  <section class="recipe">
+    <h2>
+      {{- with $r.slot }}<span class="recipe-slot">{{ . }}</span>{{ end -}}
+      {{ $r.name }}
+    </h2>
+    {{- with $r.intro }}<p class="recipe-intro">{{ . }}</p>{{ end }}
+
+    <div class="table-outer">
+      <table class="recipe-table">
+        <thead>
+          <tr>
+            <th>{{ or $r.settings_title "Parameter" }}</th>
+            {{- if $split }}
+            <th>{{ $bodies.xt30 }}</th>
+            <th>{{ $bodies.xt5 }}</th>
+            {{- else }}
+            <th>{{ $bodies.shared }}</th>
+            {{- end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{- range $s := . }}
+          <tr>
+            <td>{{ $s.label }}</td>
+            {{- if $split }}
+            <td>{{ or $s.xt30 $s.value }}</td>
+            <td>{{ or $s.xt5 $s.value }}</td>
+            {{- else }}
+            <td>{{ $s.value }}</td>
+            {{- end }}
+          </tr>
+          {{- end }}
+        </tbody>
+      </table>
+    </div>
+
+    {{- with $r.notes }}{{ partial "recipe-notes.html" . }}{{ end }}
+  </section>
+  {{- end }}
+  {{- end }}
+
+  {{- with site.Data.recipes.closing }}
+  <p class="recipes-closing">{{ . }}</p>
+  {{- end }}
+
+</article>
+
+{{ end }}
