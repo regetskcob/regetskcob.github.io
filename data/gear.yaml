@@ -71,11 +71,11 @@ groups:
 
   - title: "Immer dabei"
     beside: true
-    description: "Keine Kamera, sondern eine kleine Tasche mit allem, was man unterwegs so brauchen könnte."
     image: "immer-dabei.jpg"
     alt: "Geöffnete Organizer-Tasche auf einer Holzplatte: Powerbank, Ladegerät, Travelrouter, Netzwerkadapter und aufgerollte Kabel in den Fächern, dazu eine Taschenlampe, ein rotes Taschenmesser, ein Multitool im Netzbeutel und Stifte unter einem Gummiband"
     items:
       - name: "tomtoc Tech-Tasche"
+        note: "Klein, und darin alles, was man unterwegs so brauchen könnte. Kommt auch mit, wenn die Kamera zu Hause bleibt."
       - name: "Ladegerät und Powerbank"
       - name: "Ladekabel jeder erdenklichen Art und diverse Adapter"
       - name: "UniFi Travel Router"
