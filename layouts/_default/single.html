@@ -3,9 +3,10 @@
   hard-coded English strings translated: the reading time and the table of
   contents heading. The theme has no i18n files. A post written in another
   language than the site sets "inLanguage" in front matter, which becomes the
-  lang of the article. The tags sit inside the header, and posts
-  (not pages like Über) mark it .post-intro, so the grey card in custom.css
-  holds title, summary, date and tags together.
+  lang of the article. The author line is left out, there is one author.
+  The tags sit inside the header, and posts (not pages like Über) mark it
+  .post-intro, so the grey card in custom.css holds title, summary, date
+  and tags together.
   Diff against the theme file when updating typo.
 */}}
 {{ define "main" }}
@@ -26,16 +27,14 @@
         <p class="single-summary">{{ . | markdownify }}</p>
         {{- end }}
    
-        {{- /* Date, Reading Time and Author */}}
-        {{ if or (or (.Param "author") (.Param "authorAvatarPath")) (or .Date (.Param "readTime")) }}
+        {{- /* Date and Reading Time. No author line: there is one author, and
+               the name is in <meta name="author"> and the JSON-LD. */}}
+        {{ if or (.Param "authorAvatarPath") (or .Date (.Param "readTime")) }}
         <div class="single-subsummary">
           {{ with $.Param "authorAvatarPath" }}
             <img src="{{ . }}" alt="Author Avatar" />
           {{ end }}
           <div>
-            {{ with .Param "author" }}
-            <p class="author"> {{- .}} </p>
-            {{ end }}
             <p class="single-date">
             {{- with .Date }}
               {{- $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
