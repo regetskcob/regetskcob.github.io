@@ -1,5 +1,5 @@
-baseURL = 'https://regetskcob.github.io'
-languageCode = 'de-de'
+baseURL = 'https://www.regetskcob.de/'
+languageCode = 'de-DE'
 defaultContentLanguage = 'de'
 title = 'regetskcob'
 theme = 'typo'
@@ -26,7 +26,14 @@ tag = 'tags'
 
 [params]
 # Meta description
-description = "Eine wilde Mischung aus Natur, Fotografie und Technik."
+description = "Landschaftsfotografie vom Niederrhein und Projekte zwischen Technik und Natur: KNX im Eigenheim, Messwerte in Grafana, ein selbstgebauter Astro-Tracker."
+
+# <title> of the home page; the site title is appended as on every other page
+homeTitle = "Fotografie und Technik am Niederrhein"
+
+# Open Graph image for pages that have no image of their own, cropped by
+# layouts/partials/head/og-image.html. Path is relative to assets/.
+ogImage = "gallery/niederrhein/20190727-dscf0435.jpg"
 
 # Appearance settings
 colorPalette = 'default'

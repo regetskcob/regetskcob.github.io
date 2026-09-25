@@ -3,7 +3,7 @@
 Quellcode meiner persönlichen Website — Blog rund um Natur, Fotografie und Technik,
 der schrittweise zu einer Landing-/Portfolio-Seite ausgebaut wird.
 
-Live: <https://regetskcob.github.io>
+Live: <https://www.regetskcob.de>
 
 ## Tech-Stack
 
@@ -63,7 +63,14 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
 - **`layouts/partials/head/og-image.html`** — liefert das Vorschaubild fürs Teilen
   als absolute URL, zugeschnitten auf 1200×630. Reihenfolge: das in `cover` bzw.
   `featured_image` benannte Bild, sonst das erste Bild des Beitrags, sonst
-  `assets/images/og-image.*` als seitenweiter Rückfall (noch nicht angelegt).
+  das unter `ogImage` in `hugo.toml` eingetragene Foto als seitenweiter Rückfall.
+
+- **`layouts/partials/seo/`** — Titel, Description und JSON-LD für Suchmaschinen
+  und Link-Vorschauen. Im `<title>` und in `og:title` fällt das Emoji-Präfix der
+  Beiträge weg („📚 | Facilitation“ → „Facilitation – Buchrezension“), auf der
+  Seite selbst bleibt es stehen. `seoTitle` im Front Matter überschreibt den
+  Titel. Die Description kommt aus `description`, sonst aus `summary`.
+  Schlagwort-Seiten sind `noindex` und stehen nicht in der Sitemap.
 
 - **`layouts/index.html`** — Landing-Page statt der vollständigen Beitragsliste
   des Themes: Intro, Galerie und die neuesten Beiträge.
