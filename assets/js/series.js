@@ -9,6 +9,41 @@
   const setupShuffle = (grid) => {
     const tiles = Array.from(grid.children);
 
+    // Galleries without hand-picked large tiles would be a plain field of
+    // equal cells. With data-feature, a few landscape tiles, about one in six
+    // and at least one, show at 2x2; which ones changes with every visit. A
+    // promoted photo gets the "sizes" of a two-column tile, so the browser
+    // loads a sharp enough rendition.
+    const LARGE_SIZES =
+      "(max-width: 640px) 100vw, (max-width: 1250px) 54vw, 700px";
+    const landscapes = tiles.filter((t) => t.classList.length === 1);
+    const featured =
+      grid.hasAttribute("data-feature") &&
+      landscapes.length > 0 &&
+      !tiles.some((t) => t.classList.contains("is-large"));
+    const featureCount = Math.max(1, Math.floor(tiles.length / 6));
+    const smallSizes = new Map(
+      landscapes.map((t) => [t, t.querySelector("img")?.getAttribute("sizes")])
+    );
+    const pickLarge = (count) => {
+      const pool = landscapes.slice();
+      const picked = new Set();
+      const n = Math.min(pool.length, Math.max(1, count));
+      while (picked.size < n)
+        picked.add(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
+      return picked;
+    };
+    const applyLarge = (picked) => {
+      landscapes.forEach((t) => {
+        const on = picked.has(t);
+        t.classList.toggle("is-large", on);
+        t.querySelector("img")?.setAttribute(
+          "sizes",
+          on ? LARGE_SIZES : smallSizes.get(t)
+        );
+      });
+    };
+
     // Fisher-Yates.
     const shuffle = () => {
       const order = tiles.slice();
@@ -37,9 +72,9 @@
     // Only a single-cell tile can close the gap a spanning tile leaves beside
     // it, so singles are held back while spanning tiles outnumber them.
     //
-    // Returns the resulting order and how many cells it leaves empty above the
+    // Returns the resulting order, how many cells it leaves empty above the
     // last row, whether skipped or never reached, e.g. beside a large tile at
-    // the very end. Empty cells in the last row are the natural ragged end.
+    // the very end (holes), and how many stay empty in the last row (tail).
     const arrange = (order, cols) => {
       const taken = new Set();
       const free = (r, c) => c < cols && !taken.has(`${r}:${c}`);
@@ -91,27 +126,43 @@
           const key = `${r}:${c}`;
           if (!taken.has(key) || skipped.has(key)) holes++;
         }
-      return { ordered, holes };
+      let tail = 0;
+      for (let c = 0; c < cols; c++) if (!taken.has(`${lastRow}:${c}`)) tail++;
+      return { ordered, holes, tail };
     };
 
     // The simulation knows before anything is shown whether an order leaves
-    // holes mid-grid. If it does, another shuffle is tried; a clean one almost
-    // always comes up within the first attempts. Should the content make holes
-    // unavoidable, the attempt with the fewest wins.
+    // holes mid-grid or a ragged last row. If it does, another shuffle is
+    // tried; a clean one usually comes up within the first attempts. Holes
+    // mid-grid weigh far more than a short last row. Should the content make
+    // both unavoidable, the attempt with the lowest score wins.
+    //
+    // In a featured grid (see below) each attempt also re-picks which
+    // landscape tiles show at 2x2, and one more or fewer than planned, since
+    // the number of cells they add decides whether the rows can come out even.
     //
     // The winning order is kept, so a later change in column count starts
     // from the same sequence instead of reshuffling the whole page.
+    const score = (r) => r.holes * 100 + r.tail;
     let base = shuffle();
     const layout = (cols) => {
+      let large = featured ? pickLarge(featureCount) : null;
+      if (large) applyLarge(large);
       let best = arrange(base, cols);
-      for (let attempt = 0; best.holes > 0 && attempt < 20; attempt++) {
+      for (let attempt = 0; score(best) > 0 && attempt < 60; attempt++) {
+        const tryLarge = featured
+          ? pickLarge(featureCount + Math.floor(Math.random() * 3) - 1)
+          : null;
+        if (tryLarge) applyLarge(tryLarge);
         const order = shuffle();
         const result = arrange(order, cols);
-        if (result.holes < best.holes) {
+        if (score(result) < score(best)) {
           best = result;
           base = order;
+          large = tryLarge;
         }
       }
+      if (large) applyLarge(large);
       best.ordered.forEach((tile) => grid.appendChild(tile));
     };
 

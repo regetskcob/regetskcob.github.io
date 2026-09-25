@@ -319,15 +319,17 @@
   margin-left: 0;
 }
 
-/* The series teaser on the home page carries six photos and shows as many as
-   fill whole rows: four on two columns, six on three, four on four. The
+/* The series teaser on the home page carries all series photos, shuffled,
+   and shows as many as fill whole rows: four on two columns, six on three,
+   four on four. The
    breakpoints are those of the grid's own container queries. */
 .series-teaser .series-tile:nth-child(n + 5) {
   display: none;
 }
 
 @container (min-width: 600px) and (max-width: 999.98px) {
-  .series-teaser .series-tile:nth-child(n + 5) {
+  .series-teaser .series-tile:nth-child(5),
+  .series-teaser .series-tile:nth-child(6) {
     display: block;
   }
 }
@@ -435,6 +437,11 @@
 
 /* Tiles have fixed proportions, so the photo covers its cell. Crops stay small
    because the row unit matches the common 3:2 and 4:5 camera formats. */
+/* Tiles that link to a page (the series teaser) are no zoom target. */
+.series-tile a:not([data-lightbox]) {
+  cursor: pointer;
+}
+
 .series-tile img {
   display: block;
   width: 100%;

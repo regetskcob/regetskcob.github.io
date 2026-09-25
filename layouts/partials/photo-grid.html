@@ -15,17 +15,23 @@
     items    list of dicts: img (image resource), alt, size, href
     shuffle  true to randomise the order on every visit (assets/js/series.js)
     narrow   true to stay within the text column instead of breaking out
+    uniform  true to give every tile the same 3:2 cell, ignoring portrait,
+             panorama and "size: large" (the series teaser counts on it)
+    feature  true to let series.js promote a few random landscape tiles to
+             2x2 on every visit, unless the items mark large ones themselves
   A tile with "href" links there (e.g. the series page). Otherwise it links to
   a large rendition of its photo, which series.js opens in a lightbox; the
   page includes partials/photo-grid-script.html once, after its last grid.
 */}}
 <div class="series-gallery{{ if .narrow }} is-narrow{{ end }}">
-  <div class="series-grid"{{ if .shuffle }} data-shuffle{{ end }}>
+  <div class="series-grid"{{ if .shuffle }} data-shuffle{{ end }}{{ if .feature }} data-feature{{ end }}>
   {{- range $it := .items }}
     {{- $img := $it.img }}
     {{- $ratio := div (float $img.Width) $img.Height }}
     {{- $shape := "" }}
-    {{- if eq ($it.size | default "") "large" }}
+    {{- if $.uniform }}
+      {{- /* every tile one cell */}}
+    {{- else if eq ($it.size | default "") "large" }}
       {{- $shape = "is-large" }}
     {{- else if lt $ratio 1.0 }}
       {{- $shape = "is-portrait" }}

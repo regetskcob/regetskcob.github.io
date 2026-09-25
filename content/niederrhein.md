@@ -4,8 +4,8 @@ description: "Eine Langzeitserie über die Gegend, in der ich wohne."
 layout: series
 teaser: "Eine Langzeitserie über die Gegend, in der ich wohne. Immer wieder dieselben Wege, zu verschiedenen Tages- und Jahreszeiten."
 
-# Shuffled on every visit. Without JavaScript, and for the home page teaser
-# (first six entries), the order below applies.
+# Shuffled on every visit, here and in the home page teaser, which picks a
+# different handful each time. Without JavaScript the order below applies.
 shuffle: true
 
 # Per photo: image and alt are required. `size: large` makes a tile span two

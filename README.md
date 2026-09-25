@@ -192,9 +192,9 @@ hugo new content blog/mein-beitrag/index.md
 Seite, die Bilder erscheinen dort in zufälliger Reihenfolge. Die Blöcke in
 `data/gallery.yaml` sind lose Sammlungen nach Motiv.
 Auf der Startseite steht die Serie oben und wird angeteasert, die Galerien folgen
-darunter. Der Teaser trägt die ersten sechs Bilder aus dem Front Matter und
-zeigt davon so viele, wie volle Reihen ergeben: vier bei zwei Spalten, sechs
-bei drei, vier bei vier. Die Galerien mischen ihre Reihenfolge bei jedem Besuch.
+darunter. Der Teaser trägt alle Bilder der Serie, gemischt bei jedem Besuch
+und einheitlich im Querformat beschnitten, und zeigt davon so viele, wie volle
+Reihen ergeben: vier bei zwei Spalten, sechs bei drei, vier bei vier. Die Galerien mischen ihre Reihenfolge bei jedem Besuch.
 
 ```yaml
 shuffle: true            # Reihenfolge bei jedem Besuch mischen
@@ -297,8 +297,11 @@ Ein Eintrag mit `post` und `image` holt das Foto direkt aus dem Page Bundle des
 Beitrags und verlinkt die Kachel dorthin — so liegt kein Bild doppelt im
 Repository. Ein Eintrag mit nur `image` liest stattdessen aus `assets/gallery/`.
 Fehlende Dateien werden übersprungen und lassen den Build nicht scheitern.
-Mit `size: large` belegt ein Bild zwei mal zwei Felder, Hoch- und Panoramaformate
-erkennt das Raster selbst. Bildunterschriften gibt es im Raster nicht, die
+Hoch- und Panoramaformate erkennt das Raster selbst. Bei jedem Besuch werden
+außerdem einige zufällige Querformate groß gezeigt, etwa eins von sechs, jeweils
+über zwei mal zwei Felder. Wer das für einen Block lieber selbst festlegt,
+setzt an den gewünschten Bildern `size: large`; dann wählt das Skript dort nichts
+mehr aus. Bildunterschriften gibt es im Raster nicht, die
 Beschreibung gehört in `alt`.
 
 ```yaml

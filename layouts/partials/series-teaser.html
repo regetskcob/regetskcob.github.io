@@ -3,15 +3,19 @@
 
   A series is work in progress with an idea behind it, so it gets the position
   and the headline; the galleries below are collections. Pulls its text from
-  content/niederrhein.md, so there is one place to edit. Its first six photos
-  use the shared photo grid, kept to the text column, and link to the series
-  page; the CSS shows as
-  many of them as fill whole rows (4, 6 or 4 at 2, 3 or 4 columns).
+  content/niederrhein.md, so there is one place to edit.
+
+  It carries all photos of the series in the shared photo grid, kept to the
+  text column, shuffled on every visit and cut to a uniform 3:2 cell. The
+  CSS shows only as many as fill whole rows (4, 6 or 4 at 2, 3 or 4
+  columns); hidden tiles are display: none, so their lazy images are never
+  fetched. Without JavaScript the first photos of the front matter show.
+  The tiles link to the series page.
 */}}
 
 {{/* $ is the home page inside this partial, so bind the series page. */}}
 {{- with $series := site.GetPage "/niederrhein" }}
-  {{- $shown := first 6 .Params.photos }}
+  {{- $shown := .Params.photos }}
 <section class="series-teaser">
   <h2 class="home-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{- with .Params.teaser }}
@@ -24,7 +28,7 @@
       {{- $items = $items | append (dict "img" . "alt" $it.alt "href" $series.RelPermalink) }}
     {{- end }}
   {{- end }}
-  {{ partial "photo-grid.html" (dict "items" $items "narrow" true) }}
+  {{ partial "photo-grid.html" (dict "items" $items "narrow" true "shuffle" true "uniform" true) }}
 
   <p class="series-more"><a href="{{ .RelPermalink }}">Zur Serie →</a></p>
 </section>
