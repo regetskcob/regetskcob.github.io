@@ -1,9 +1,9 @@
 ---
-title: 📚 | FUJIFILM X-PHOTPGRAPHERS
-title_plain: '| FUJIFILM X-PHOTPGRAPHERS'
+title: 📚 | FUJIFILM X-PHOTOGRAPHERS
+title_plain: '| FUJIFILM X-PHOTOGRAPHERS'
 date: 2020-04-22T13:30:00+0000
 lastmod: 2024-11-17T15:07:36+0000
-slug: fujifilm-x-photpgraphers
+slug: fujifilm-x-photographers
 draft: false
 type: post
 author: Daniel Bocksteger
@@ -17,7 +17,7 @@ featured_image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jp
 cover: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 seo:
   image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
-aliases: ["/posts/fujifilm-x-photpgraphers/"]
+aliases: ["/posts/fujifilm-x-photpgraphers/", "/blog/fujifilm-x-photpgraphers/"]
 
 ---
 
