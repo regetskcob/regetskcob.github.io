@@ -1,5 +1,31 @@
 /* Overrides the theme's empty custom.css. Loaded after the theme's own styles. */
 
+/* --- Heading levels ---
+   Only one h1 per page, so the header's site name is a <p> outside the home
+   page, and the home sections are h2. These keep the sizes they had as h1
+   (and the gallery blocks theirs as h2). */
+
+/* Beats ".header p", which styles the menu entries. */
+.header p.header-title {
+  font-family: inherit;
+  font-size: 2.6em;
+  line-height: 1.2;
+  color: var(--primary);
+  margin: 0;
+}
+
+.home-heading {
+  margin-top: var(--h1-margin-top);
+  margin-bottom: var(--h1-margin-bottom);
+  font-size: var(--h1-font-size);
+}
+
+.gallery-title {
+  margin-top: var(--h2-margin-top);
+  margin-bottom: var(--h2-margin-bottom);
+  font-size: var(--h2-font-size);
+}
+
 /* --- Home gallery --- */
 
 .gallery-section {
@@ -194,7 +220,7 @@
   margin-top: 3rem;
 }
 
-.series-teaser h1 a {
+.series-teaser h2 a {
   text-decoration: none;
   border-bottom: none;
 }

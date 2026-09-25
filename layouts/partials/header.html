@@ -8,15 +8,25 @@
   page lives below it, so a blog post highlights "Blog". The home entry only
   matches the home page itself. The exact page gets aria-current="page", a
   parent section aria-current="true".
+
+  The site name is the h1 only on the home page. Everywhere else the page
+  has its own h1 (post or section title), and a second one in the header
+  would compete with it.
 */}}
 
 <div class="header">
 
     {{ if or (not (.Param "hideHeader")) .IsHome }}
 
+    {{ if .IsHome }}
     <h1 class="header-title">
         <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
     </h1>
+    {{ else }}
+    <p class="header-title">
+        <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
+    </p>
+    {{ end }}
 
     <div class="header-menu">
         {{ $here := .RelPermalink }}

@@ -23,13 +23,13 @@ aliases: ["/posts/c-in-a-nutshell/"]
 
 Die Programmiersprache **C** ist einer der Veteranen der Computer-Geschichte. Mit „C in a Nutshell“ möchte ich euch heute ein Buch des O’Reilly Verlages vorstellen, welches sich als umfassendes Referenz- und Nachschlagewerk versteht.
 
-# Das Buch
+## Das Buch
 
 Auf insgesamt ~ 800 Seiten warten 22 Kapitel und ein enorm Hilfreicher Index auf euch, welche _beinahe_ auf alle wichtigen und weniger wichtigen details der Sprache **C** eingehen.
 
 Die mir vorliegende zweite Auflage des Buches wurde Anfang 2016 veröffentlicht.
 
-## Im Detail
+### Im Detail
 
 Die besagten 22 Kapitel sind unterteilt in drei Abschnitte.
 
@@ -39,13 +39,13 @@ Die besagten 22 Kapitel sind unterteilt in drei Abschnitte.
 
 Besonders die Abschnitte 1. und 2. sind für Einsteiger in die Sprache unumgänglich. Aber auch für Fortgeschrittene auf diesem Gebiet warten hier mit großer Wahrscheinlichkeit Themen, die noch unbekannt sind.
 
-### Teil I
+#### Teil I
 
 Wie bereits kurz angerissen geht _Teil I_ des Buches auf alle wichtigen Spracheigenschaften von **C** ein, um euch den Ein- oder Umstieg zu erleichtern. Begonnen bei grundlegenden Themen wie Quellcode-Dateien und Kommentaren, geht es schnell weiter zu Datentypen und sog. Literalen (engl. Literals), bevor ihr euch mit dem Konvertieren von Datentypen auseinander setzen müsst.
 
 Auch fortgeschrittenere und durchaus anspruchsvolle Themen wie Pointer, dynamisches Speicher Management oder Multithreading werden hier neben Funktionen, Variablen und Strukturen im weiteren Verlauf behandelt.
 
-### Teil II
+#### Teil II
 
  _Teil II_ wartet mit fast 300 Seiten auf und hat es sich zum Ziel gesetzt, euch die C Standard Bibliothek so gut es geht strukturiert und vollständig als Referenz- und Nachschlagewerk zur Verfügung zu stellen.
 
@@ -55,13 +55,13 @@ Auch fortgeschrittenere und durchaus anspruchsvolle Themen wie Pointer, dynamisc
 
 Ihr bekommt zuerst an die Hand gegeben, wie die Header-Dateien der Standard Bibliothek einzubinden sind und dann einen Überblick über die wichtigsten und meist genutzten Methoden der Sammlung, bevor die Autoren euch in Kapitel 18 nahezu jede erdenkliche Methode der Standardbibliothek im detail und oft mit einem kurzen Fallbeispiel und Quellcode erläutern.
 
-### Teil III
+#### Teil III
 
 Im abschließenden _Teil III_ des Buches werdet ihr an die Arbeit mit dem **GCC Compiler** , **make** und auch an die Arbeit mit Eclipse als C-IDE heran geführt.
 
 Grundsätzlich lässt sich sagen, dass ihr hier lernt, die gelernten Dinge in einem bestimmten Kontext anzuwenden und wie aus eurem Code dann ein Programm wird.
 
-# Fazit
+## Fazit
 
 Zu einem Preis von 37,99 € erhaltet ihr das Buch hier in Deutschland bei Amazon. Ich kann es jedem, der sich ein wenig mit einer der Muttersprachen aller Programmiersprachen auseinander setzen möchte, ans Herz legen, um zu verstehen, wie zum Beispiel Speichernahe Programmierung mit C abläuft.
 

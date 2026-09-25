@@ -10,7 +10,7 @@
 {{- with $series := site.GetPage "/niederrhein" }}
   {{- $shown := first 4 .Params.photos }}
 <section class="series-teaser">
-  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  <h2 class="home-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{- with .Params.teaser }}
   <p class="series-teaser-text">{{ . }}</p>
   {{- end }}

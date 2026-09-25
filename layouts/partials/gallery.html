@@ -44,12 +44,12 @@
 {{- with $blocks }}
 <section class="gallery-section">
   {{- with site.Params.galleryTitle }}
-  <h1>{{ . }}</h1>
+  <h2 class="home-heading">{{ . }}</h2>
   {{- end }}
 
   {{- range . }}
   <div class="gallery-block">
-    {{- with .title }}<h2>{{ . }}</h2>{{ end }}
+    {{- with .title }}<h3 class="gallery-title">{{ . }}</h3>{{ end }}
     {{- with .description }}<p class="gallery-description">{{ . }}</p>{{ end }}
 
     <div class="gallery-grid">

@@ -2,6 +2,9 @@
   Home page. Replaces the theme's home layout, which renders the full paginated
   post list, with a landing page: intro, gallery, and only the latest posts.
 
+  The site name in the header is the page's only h1; the sections below are
+  h2 with the class home-heading, which keeps their former h1 size.
+
   Sections for projects and a proper hero still have to be added — see the
   placeholder below.
 */}}
@@ -12,7 +15,7 @@
 {{/* Intro */}}
 {{ if or site.Params.homeIntroTitle site.Params.homeIntroContent }}
 <div class="intro">
-  {{ with site.Params.homeIntroTitle }}<h1>{{ . }}</h1>{{ end }}
+  {{ with site.Params.homeIntroTitle }}<h2 class="home-heading">{{ . }}</h2>{{ end }}
   {{ with site.Params.homeIntroContent }}<p>{{ . | markdownify }}</p>{{ end }}
 </div>
 {{ end }}
@@ -43,7 +46,7 @@
   {{ $limit := site.Params.homeCollectionLimit | default 5 }}
   {{ with first $limit $pages }}
 <div class="list-container">
-  <h1>{{ site.Params.homeCollectionTitle | default "Beiträge" }}</h1>
+  <h2 class="home-heading">{{ site.Params.homeCollectionTitle | default "Beiträge" }}</h2>
   {{ range . }}
     {{ partial "post-entry.html" . }}
   {{ end }}
