@@ -5,7 +5,7 @@
   - title and description come from partials/seo/, see there
   - tag pages are kept out of the index, they only repeat post lists; all
     other pages allow large image previews
-  - JSON-LD from partials/seo/jsonld.html
+  - JSON-LD from partials/seo/jsonld.html, and a meta author tag
   Diff against the theme file when updating typo.
 */}}
 <meta charset="utf-8">
@@ -35,6 +35,11 @@
 {{- else -}}
 {{/* Lets Google show photos large in Discover and image results. */}}
 <meta name="robots" content="max-image-preview:large">
+{{- end }}
+
+{{/* LinkedIn's link preview reads the author from here, not from JSON-LD. */}}
+{{ with site.Params.authorName -}}
+<meta name="author" content="{{ . }}">
 {{- end }}
 
 {{ if .Param "fediverse" }}

@@ -28,6 +28,10 @@ tag = 'tags'
 # Meta description
 description = "Landschaftsfotografie vom Niederrhein und Projekte zwischen Technik und Natur: KNX im Eigenheim, Messwerte in Grafana, ein selbstgebauter Astro-Tracker."
 
+# Author for <meta name="author"> and the JSON-LD. Not "author": the theme
+# prints .Param "author" as a byline, which would then appear on every page.
+authorName = "Daniel Bocksteger"
+
 # <title> of the home page; the site title is appended as on every other page
 homeTitle = "Fotografie und Technik am Niederrhein"
 

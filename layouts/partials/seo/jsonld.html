@@ -9,7 +9,7 @@
 */}}
 {{- $person := dict
     "@type" "Person"
-    "name" "Daniel Bocksteger"
+    "name" site.Params.authorName
     "alternateName" "@regetskcob"
     "url" (absURL "/about/")
     "sameAs" (apply site.Params.social "index" "." "url")
