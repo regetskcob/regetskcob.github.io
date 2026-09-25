@@ -43,6 +43,24 @@
     {{- end }}
   {{- end }}
 
+  {{/* Photos of the gear in use (inUse in data/gear.yaml), in the grid and
+       lightbox of the galleries, in file order. Missing files are skipped. */}}
+  {{- with site.Data.gear.inUse }}
+    {{- $items := slice }}
+    {{- range $it := .items }}
+      {{- with resources.Get (printf "gear/einsatz/%s" $it.image) }}
+        {{- $items = $items | append (dict "img" . "alt" $it.alt "size" $it.size) }}
+      {{- end }}
+    {{- end }}
+    {{- with $items }}
+  <section class="gear-in-use">
+    {{- with $.Site.Data.gear.inUse.title }}<h2>{{ . }}</h2>{{ end }}
+    {{ partial "photo-grid.html" (dict "items" . "page" $) }}
+  </section>
+    {{ partial "photo-grid-script.html" $ }}
+    {{- end }}
+  {{- end }}
+
 </article>
 
 {{ end }}

@@ -544,6 +544,10 @@
   }
 }
 
+.gear-in-use {
+  margin-top: 3rem;
+}
+
 .gear-description {
   color: var(--content-secondary);
   margin-top: -0.5rem;

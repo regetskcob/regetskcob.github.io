@@ -67,7 +67,11 @@ groups:
     alt: "Der Fotorucksack steht im Gegenlicht auf einer nassen Wiese, seitlich das Stativ angeschnallt, dahinter Nebel über den Feldern und die aufgehende Sonne"
     items:
       - name: "Lowepro Whistler BP 450 AW II"
-        note: "Wasserfest, robust und vielseitig. Es passt wörtlich alles rein, auch das Stativ seitlich."
+        note: "Robust und vielseitig. Es passt wörtlich alles rein."
+      - name: "Wasserfest, dazu eine integrierte Regenhülle"
+      - name: "Kamerazugang über den Rücken, die Tragefläche bleibt aus dem Matsch"
+      - name: "Wasserdicht getrenntes Frontfach für Stative und Multiklemmen"
+      - name: "Seitlich Platz für ein Stativ"
 
   - title: "Immer dabei"
     beside: true
@@ -101,3 +105,25 @@ groups:
         note: "Meine erste Graukarte nach 20 Jahren Fotografie."
       - name: "Leica Sofort 2"
         note: "Nutze ich fast nur als Sofortdrucker, wenn jemand ein Bild mitnehmen soll."
+
+# Photos of the gear in use, a grid under the blocks with the lightbox of the
+# galleries (partials/photo-grid.html). Files live in assets/gear/einsatz/,
+# shown in the order of this list.
+inUse:
+  title: "Im Einsatz"
+  items:
+    - image: "iphone-20260914-075215.jpg"
+      alt: "Blick über den Lenker eines E-Bikes auf einen Radweg im Morgennebel, links die tief stehende Sonne zwischen den Bäumen, am Lenker ein Handyhalter und das DJI Mic Mini an einer Klemme neben der Schaltung"
+    - image: "xt30-20260914-080303.jpg"
+      alt: "Stativkopf im Gras, daran über einen Gelenkarm ein Funkmikrofon mit Windschutz"
+    - image: "xt5-20260923-080602.jpg"
+      alt: "DJI Osmo Pocket mit angestecktem Funkmikrofon auf einem Ministativ auf einem Acker im Gegenlicht"
+    - image: "iphone-20260923-074815.jpg"
+      alt: "Fernsteuerung der Drohne im Vordergrund, dahinter auf dem Acker die Osmo Pocket auf einem Ministativ, am Horizont geht die Sonne im Dunst auf"
+    - image: "xt5-20260923-075623.jpg"
+      size: "large"
+      alt: "Die DJI Mini 3 Pro in der Luft vor blauem Himmel"
+    - image: "iphone-20260920-182530.jpg"
+      alt: "Die Fujifilm X-T5 in der Hand, dahinter ein frisch bearbeiteter Acker und Wolken im Abendlicht"
+    - image: "iphone-20260918-184452.jpg"
+      alt: "Die X-T5 auf einem Holztisch neben der orangefarbenen LaCie-Festplatte und einem MacBook, auf dessen Bildschirm der Import der Fotos läuft"
