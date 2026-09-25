@@ -24,7 +24,7 @@ aliases: ["/posts/basiswissen-softwaretest/"]
 >   
 > Java Magazin 3/2014 zur 5. Auflage
 
-Wie ich schon zu Basiswissen - Usability und User Experience **(LINK!!!)** schrieb, bilden die Bücher aus der Serie _Basiswissen_ einen wichtigen Grundstock an Informationen und Wissen, die zur Zertifizierung aber auch für den täglichen Arbeitsalltag nützlich sind.
+Wie ich schon zu [Basiswissen - Usability und User Experience](/blog/basiswissen-usability-und-user-experience/) schrieb, bilden die Bücher aus der Serie _Basiswissen_ einen wichtigen Grundstock an Informationen und Wissen, die zur Zertifizierung aber auch für den täglichen Arbeitsalltag nützlich sind.
 
 Als Teamleiter für mobile Softwarelösungen verantworte ich auch die Sicherung der Qualität von Produkten, die wir entwicklen und ausliefern.   
 So begab es sich, dass wir gemeinsam mit den Testern unseres Desktop-Teams eine gemeinsame ISTQB Schulung einberaumt haben.
