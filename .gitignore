@@ -12,3 +12,6 @@ hugo.darwin
 
 # Local scratch space for drafts and material not (yet) published
 /_archive/
+
+# Local Claude Code settings (preview server config)
+/.claude/
