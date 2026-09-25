@@ -1,8 +1,8 @@
 {{- /*
   Copy of themes/typo/layouts/partials/opengraph.html (theme v3.0.2). Changes:
   og:title and og:description come from partials/seo/ like <title> and the
-  meta description, so link previews lose the emoji prefix as well, and a
-  Twitter/X card is added. Diff against the theme file when updating typo.
+  meta description, so link previews lose the emoji prefix as well. Added:
+  a Twitter/X card, and size and alt text of the preview image. Diff against the theme file when updating typo.
 
   Original source: https://github.com/gohugoio/hugo/blob/61c39ae63b62667d965c2ff96d085f4eda59bcb2/tpl/tplimpl/embedded/templates/opengraph.html
 */ -}}
@@ -46,10 +46,19 @@
   <meta property="og:type" content="website">
 {{- end }}
 
+{{- /* Size and alt text let platforms lay out the preview before they
+       have fetched the image. The fallback below is always 1200x630. */ -}}
+{{- $imageAlt := partial "seo/title.html" . }}
 {{- with partial "_funcs/get-page-images" . }}
   {{- range . | first 6 }}
     <meta property="og:image" content="{{ .Permalink }}">
+    {{- if and .Width .Height }}
+    <meta property="og:image:width" content="{{ .Width }}">
+    <meta property="og:image:height" content="{{ .Height }}">
+    {{- end }}
+    <meta property="og:image:alt" content="{{ $imageAlt }}">
   {{- end }}
+  <meta name="twitter:image:alt" content="{{ $imageAlt }}">
 {{- else }}
 
   {{- /*
@@ -64,6 +73,10 @@
       {{- $ogImageStr := printf "%s" . }}
       {{- with $ogImageStr }}
         <meta property="og:image" content="{{ . }}">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="{{ $imageAlt }}">
+        <meta name="twitter:image:alt" content="{{ $imageAlt }}">
       {{- end }}
     {{- end }}
   {{- end }}

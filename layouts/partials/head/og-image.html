@@ -13,7 +13,9 @@
   Facebook, LinkedIn, Slack and WhatsApp expect.
 */}}
 
-{{- $spec := "1200x630 webp q85 smart" -}}
+{{- /* JPEG, not WebP: LinkedIn and some messengers skip WebP previews, and
+     WhatsApp only shows images below about 300 KB. */ -}}
+{{- $spec := "1200x630 jpg q75 smart" -}}
 {{- $og := "" -}}
 
 {{/* Only raster images can be cropped; skip SVG and animated GIF. */}}

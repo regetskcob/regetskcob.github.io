@@ -64,7 +64,9 @@ footerContent = "[Impressum](/legal/#impressum) · [Datenschutz](/legal/#datensc
 hideBackToTop = true
 
 # Lists parameters
-paginationSize = 25
+# All posts on one page. With two pages, /blog/page/2/ had the title and
+# canonical link of /blog/, so search engines treated it as a duplicate.
+paginationSize = 100
 listSummaries = true
 listDateFormat = "02.01.2006"
 singleDateFormat = ":date_long"

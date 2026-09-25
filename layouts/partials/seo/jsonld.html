@@ -3,7 +3,9 @@
 
   The home page describes the site and its author, so Google can show
   "regetskcob" as the site name and connect the social profiles. Posts are
-  BlogPostings with author, dates and image. Other pages carry none.
+  BlogPostings with author, dates and image. Every page below the home page
+  gets a BreadcrumbList matching the visible breadcrumbs, so Google can show
+  "Start › Blog" instead of the bare URL.
 */}}
 {{- $person := dict
     "@type" "Person"
@@ -47,5 +49,16 @@
   -}}
   {{- with .Params.tags }}{{ $data = merge $data (dict "keywords" (delimit . ", ")) }}{{ end -}}
   {{- with $image }}{{ $data = merge $data (dict "image" .) }}{{ end -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- end -}}
+
+{{- if and (not .IsHome) (not (in (slice "term" "taxonomy") .Kind)) -}}
+  {{- $items := slice -}}
+  {{- range $i, $p := .Ancestors.Reverse -}}
+    {{- $name := cond $p.IsHome (site.Params.breadcrumbs.home | default site.Title) $p.Title -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "name" $name "item" $p.Permalink) -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" (partial "seo/title.html" .) "item" .Permalink) -}}
+  {{- $data := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- end -}}
