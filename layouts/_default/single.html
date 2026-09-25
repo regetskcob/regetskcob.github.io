@@ -72,7 +72,7 @@
         
         <h1 class="single-title">{{ .Title }}</h1>
         {{- with .Param "summary" }}
-        <p class="single-summary">{{ . | markdownify }}</p>
+        <p class="single-summary" data-pagefind-meta="summary">{{ . | markdownify }}</p>
         {{- end }}
 
         {{- /* Table of Contents. Posts get one on their own once their outline

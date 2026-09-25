@@ -22,7 +22,13 @@
   <div class="blog-search" role="search">
     <pagefind-input placeholder="Blog durchsuchen"></pagefind-input>
     <pagefind-summary></pagefind-summary>
-    <pagefind-results show-images hide-sub-results></pagefind-results>
+    {{- /* Results show the post's summary instead of Pagefind's excerpt,
+           which started mid-sentence and repeated title and cover alt.
+           The template lives in assets/: Pagefind's {{ }} syntax would
+           otherwise be read by Hugo. */}}
+    <pagefind-results show-images hide-sub-results>
+      {{ (resources.Get "search/result-template.html").Content | safeHTML }}
+    </pagefind-results>
   </div>
   <script type="module">
     // Pagefind 1.5.2 labels the clear button before it knows the page

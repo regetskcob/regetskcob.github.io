@@ -239,6 +239,18 @@
   margin: 0 0 1.25rem;
 }
 
+/* Results show the post summary (assets/search/result-template.html). Pagefind
+   cuts the line after one row; the summary gets two. Pagefind's rules carry
+   three ID-level :is(*, #\#) prefixes to win against page styles, so this
+   uses the same prefix plus one class more. */
+:is(*, #\#):is(*, #\#):is(*, #\#) .blog-search .pf-result-excerpt {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
 /* Pagefind resets its elements with "all: initial", which drops the
    inherited color-scheme; the theme's light-dark() colours then always
    resolve to light. Giving it back keeps the search dark in dark mode. */

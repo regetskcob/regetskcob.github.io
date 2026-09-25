@@ -1,0 +1,28 @@
+<script type="text/pagefind-template">
+  <li class="pf-result">
+    <div class="pf-result-card">
+      {{#if and(options.show_images, meta.image)}}
+      <img class="pf-result-image" src="{{ meta.image | resolveUrl(meta.url | default(url)) }}" alt="{{ meta.image_alt | default(meta.title) }}">
+      {{/if}}
+      <div class="pf-result-content">
+        <p class="pf-result-title">
+          <a class="pf-result-link" href="{{ meta.url | default(url) | safeUrl }}">{{ meta.title }}</a>
+        </p>
+        {{#if meta.summary}}
+        <p class="pf-result-excerpt">{{ meta.summary }}</p>
+        {{/if}}
+      </div>
+    </div>
+  </li>
+</script>
+<script type="text/pagefind-template" data-template="placeholder">
+  <li class="pf-result" aria-hidden="true">
+    <div class="pf-result-card">
+      <div class="pf-skeleton pf-skeleton-image"></div>
+      <div class="pf-result-content">
+        <p class="pf-result-title pf-skeleton pf-skeleton-title"></p>
+        <p class="pf-result-excerpt pf-skeleton pf-skeleton-excerpt"></p>
+      </div>
+    </div>
+  </li>
+</script>
