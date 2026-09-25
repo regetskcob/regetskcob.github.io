@@ -1,0 +1,28 @@
+{{/*
+  Section lists; in practice the blog (/blog/). Replaces the theme's
+  _default/list.html: the breadcrumbs and the "Tags" branch are gone (tags
+  have layouts/taxonomy.html now), and the blog opens with a row of its
+  topics, the eight tags with their post counts, before the list of posts.
+*/}}
+{{ define "main" }}
+<div class="list-container">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{- if eq .Section "blog" }}
+  {{- with site.Taxonomies.tags }}
+  <nav class="topic-row" aria-label="Themen">
+    {{- range .ByCount }}
+    <a href="{{ .Page.RelPermalink }}">#{{ .Page.Title }} <span class="tag-count">{{ .Count }}</span></a>
+    {{- end }}
+  </nav>
+  {{- end }}
+  {{- end }}
+
+  {{- $paginator := .Paginate .Pages (site.Params.paginationSize | default 25) }}
+  {{- range $paginator.Pages }}
+    {{ partial "post-entry.html" . }}
+  {{- end }}
+  {{ partial "pagination-controls.html" $paginator }}
+</div>
+{{ end }}

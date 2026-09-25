@@ -186,6 +186,33 @@
   color: var(--content-secondary);
 }
 
+/* Topics above the blog list: the tags in the same quiet look as in the
+   post header, with their post counts, wrapping as a row. */
+.topic-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin: 0 0 2rem;
+  font-size: 0.9em;
+}
+
+.topic-row a {
+  color: var(--content-secondary);
+  text-decoration-color: var(--code-border);
+  text-underline-offset: 0.2em;
+  white-space: nowrap;
+}
+
+.topic-row a:hover {
+  color: var(--content-primary);
+  text-decoration-color: currentColor;
+}
+
+.topic-row .tag-count {
+  margin-left: 0.15rem;
+  font-size: 0.85em;
+}
+
 /* --- Home gallery --- */
 
 .gallery-section {
