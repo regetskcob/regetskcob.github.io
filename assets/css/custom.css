@@ -26,6 +26,17 @@
   font-size: var(--h2-font-size);
 }
 
+/* Tagline under the site name: serif like the name, quieter than the menu.
+   Sized in em like .header-title (2.6em), so both lines keep the same width
+   at any base size: 0.768em makes the tagline as wide as "regetskcob".
+   Retune it when the tagline or the site name changes. */
+.header p.header-subtitle {
+  font-family: inherit;
+  font-size: 0.768em;
+  color: var(--content-secondary);
+  margin: 0.15rem 0 0.9rem;
+}
+
 /* --- Home gallery --- */
 
 .gallery-section {
