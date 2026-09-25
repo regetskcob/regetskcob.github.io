@@ -66,6 +66,32 @@
   margin-bottom: 2rem;
 }
 
+/* Cover on top of the card, edge to edge: the negative margins cancel the
+   card padding. Height capped, so portrait and square covers are cropped
+   instead of pushing the title down. */
+.post-intro .post-cover {
+  margin: -1.5rem -1.5rem 1.25rem;
+}
+
+.post-intro .post-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 22rem;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+@media screen and (max-width: 640px) {
+  .post-intro .post-cover {
+    margin: -1rem -1.1rem 1rem;
+  }
+
+  .post-intro .post-cover img {
+    max-height: 15rem;
+  }
+}
+
 /* Balanced lines instead of a lone last word ("Teil / I"). */
 .post-intro .single-title {
   margin-top: 0;
