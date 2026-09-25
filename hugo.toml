@@ -51,8 +51,6 @@ Ich bin Daniel, online als @regetskcob unterwegs. Beruflich entwickle ich Softwa
 Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür und Berichte aus Projekten, die zwischen Technik und Natur entstehen. KNX im Eigenheim, Messwerte in Grafana, ein selbstgebauter Astro-Tracker.
 """
 
-# Heading above the photo gallery; the images come from data/gallery.yaml
-galleryTitle = 'Fotografie'
 
 # Footer, replacing the theme's English credit line. The legal page moved out
 # of the main menu and is linked here, where people look for it. The trailing

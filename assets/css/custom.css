@@ -20,12 +20,6 @@
   font-size: var(--h1-font-size);
 }
 
-.gallery-title {
-  margin-top: var(--h2-margin-top);
-  margin-bottom: var(--h2-margin-bottom);
-  font-size: var(--h2-font-size);
-}
-
 /* On phones, a long word in a heading is wider than the column and was
    broken at the last letter that fit: "Datenschutzerkläru / ng",
    "OpenAstroTracke / r", "PHOTOGRAPHER / S". Hyphenation splits it at a
@@ -345,9 +339,22 @@
   margin-top: 3rem;
 }
 
-/* One block per theme; blocks stack down the page. */
+/* One block per theme; blocks stack down the page. A block, title and
+   description included, takes the wide gallery width, so the heading lines
+   up with the photos below it; the grid inside then just fills the block. */
+.gallery-block {
+  --gallery-width: max(100%, min(80vw, 1400px));
+  width: var(--gallery-width);
+  margin-left: calc((100% - var(--gallery-width)) / 2);
+}
+
+.gallery-block .series-gallery {
+  width: 100%;
+  margin-left: 0;
+}
+
 .gallery-block + .gallery-block {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 .gallery-description {

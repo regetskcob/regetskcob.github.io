@@ -5,7 +5,9 @@
   theme is added by appending a block to that file, no template change needed.
   Each block uses the shared photo grid (partials/photo-grid.html): two to four
   columns, breaking out of the text column, a random order on every visit and
-  a lightbox on click. "size: large" on an item makes it span 2x2.
+  a lightbox on click. "size: large" on an item makes it span 2x2. Each block,
+  title and description included, uses the wide gallery width; its title is
+  an h2 like the series teaser's, the blocks sit on the same level.
 
   An item with "post" + "image" pulls the file out of that blog post's page
   bundle and links the tile to the post instead of the lightbox; an item with
@@ -41,13 +43,9 @@
 
 {{- with $blocks }}
 <section class="gallery-section">
-  {{- with site.Params.galleryTitle }}
-  <h2 class="home-heading">{{ . }}</h2>
-  {{- end }}
-
   {{- range . }}
   <div class="gallery-block">
-    {{- with .title }}<h3 class="gallery-title">{{ . }}</h3>{{ end }}
+    {{- with .title }}<h2 class="home-heading">{{ . }}</h2>{{ end }}
     {{- with .description }}<p class="gallery-description">{{ . }}</p>{{ end }}
 
     {{ partial "photo-grid.html" (dict "items" .items "shuffle" true) }}
