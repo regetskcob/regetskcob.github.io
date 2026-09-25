@@ -1,0 +1,11 @@
+{{/*
+  Preloads the fonts that show above the fold on every page: Literata Light
+  for the text, Literata SemiBold for the site name and headings, Monaspace
+  for the menu. The browser fetches them with the HTML instead of after the
+  stylesheet, so text renders sooner and does not jump from the fallback
+  font. All three are served from this site (static/fonts in the theme), no
+  third party is involved. crossorigin is required for font preloads.
+*/}}
+<link rel="preload" href="{{ "fonts/Literata/Literata-Light.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/Literata/Literata-SemiBold.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/Monaspace/MonaspaceArgon-Regular.woff" | relURL }}" as="font" type="font/woff" crossorigin>
