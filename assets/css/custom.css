@@ -76,8 +76,28 @@
   margin-bottom: 0;
 }
 
+/* Tags as quiet metadata: smaller and grey, so the summary above leads. */
 .post-intro .single-tags {
   margin-top: 0.75rem;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+/* A tag never breaks inside itself ("#Astro- / Fotografie"). */
+.post-intro .single-tags span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.post-intro .single-tags a {
+  color: var(--content-secondary);
+  text-decoration-color: var(--code-border);
+  text-underline-offset: 0.2em;
+}
+
+.post-intro .single-tags a:hover {
+  color: var(--content-primary);
+  text-decoration-color: currentColor;
 }
 
 @media screen and (max-width: 640px) {
