@@ -51,6 +51,56 @@
   margin: 0.15rem 0 0.9rem;
 }
 
+/* --- Post list thumbnails ---
+   Posts with a cover image show it in 4:3 right before the title, where
+   the eye starts reading the line; on the far right it was hard to tell
+   which post it belonged to. On phones the thumbnail is smaller. */
+
+.post-line .line-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.line-thumb {
+  flex: none;
+  align-self: flex-start;
+  margin-right: 1rem;
+  border: none;
+}
+
+.line-thumb img {
+  display: block;
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.post-line.has-thumb {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .post-line {
+    margin-bottom: 1.25rem;
+  }
+
+  /* The date column took a third of the width and squeezed the title;
+     on phones the list goes without it. */
+  .post-line .line-date {
+    display: none;
+  }
+
+  .line-thumb {
+    margin-right: 0.75rem;
+  }
+
+  .line-thumb img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
 /* --- Home gallery --- */
 
 .gallery-section {

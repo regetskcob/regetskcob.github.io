@@ -1,0 +1,51 @@
+{{/*
+  Copy of themes/typo/layouts/partials/post-entry.html (theme v3.0.2) with a
+  thumbnail between date and title for posts that name an image in front matter
+  (cover, or featured_image from the Ghost export). Posts without one keep
+  the plain line. Only an explicitly chosen image is used: the first image
+  of a bundle can be anything, a table or a screenshot.
+
+  The thumbnail repeats the title link, so it is hidden from screen readers
+  and skipped by the keyboard; alt stays empty for the same reason.
+  Diff against the theme file when updating typo.
+*/}}
+{{- $thumb := "" -}}
+{{- with or .Params.cover .Params.featured_image -}}
+  {{- with $.Resources.Get (strings.TrimPrefix "./" .) -}}
+    {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}
+      {{- $thumb = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="post-line{{ with $thumb }} has-thumb{{ end }}">
+
+    {{ $dateFormat := .Site.Params.listDateFormat | default "2 Jan 2006" }}
+
+    {{ if .Parent.Param "showListDate" | default true }}
+        <p class="line-date">{{ .Date | time.Format $dateFormat }} </p>
+    {{ end }}
+
+    {{- with $thumb }}
+    {{- $s := .Fill "120x90 webp q75 smart" }}
+    {{- $l := .Fill "240x180 webp q75 smart" }}
+    <a class="line-thumb" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 120w, {{ $l.RelPermalink }} 240w"
+             sizes="(max-width: 640px) 80px, 120px" width="120" height="90"
+             loading="lazy" decoding="async" alt="">
+    </a>
+    {{- end }}
+
+    <div class="line-text">
+        <p class="line-title">
+            <a href="{{ .RelPermalink }}">
+                {{ .Title }}
+            </a>
+        </p>
+
+        {{ if .Site.Params.listSummaries }}
+        <p class="line-summary"> {{ .Summary }} </p>
+        {{ end }}
+    </div>
+
+</div>
