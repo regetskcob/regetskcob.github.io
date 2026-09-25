@@ -31,12 +31,37 @@
     </pagefind-results>
   </div>
   <script type="module">
+    const box = document.querySelector(".blog-search");
+
     // Pagefind 1.5.2 labels the clear button before it knows the page
     // language and stays on "Clear"; the rest of the UI is German.
     customElements.whenDefined("pagefind-input").then(() => {
-      document.querySelectorAll(".blog-search .pf-input-clear")
+      box.querySelectorAll(".pf-input-clear")
         .forEach((b) => { b.textContent = "Löschen"; });
     });
+
+    // Pagefind marks the search terms only in its own excerpt, not in
+    // metadata like the summary the results show. Mark them there as the
+    // results render; Pagefind's CSS styles <mark> inside the result.
+    const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const markTerms = () => {
+      const query = box.querySelector("pagefind-input input")?.value ?? "";
+      const words = query.trim().split(/\s+/).filter((w) => w.length > 1);
+      if (!words.length) return;
+      const pattern = new RegExp(`(${words.map(escape).join("|")})`, "gi");
+      box.querySelectorAll(".pf-result-excerpt:not([data-marked])").forEach((p) => {
+        p.dataset.marked = "";
+        const parts = p.textContent.split(pattern);
+        if (parts.length < 2) return;
+        p.replaceChildren(...parts.map((part, i) => {
+          if (i % 2 === 0) return part;
+          const mark = document.createElement("mark");
+          mark.textContent = part;
+          return mark;
+        }));
+      });
+    };
+    new MutationObserver(markTerms).observe(box, { childList: true, subtree: true });
   </script>
 
   {{- with site.Taxonomies.tags }}
