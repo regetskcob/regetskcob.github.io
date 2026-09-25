@@ -91,10 +91,6 @@ url = "https://www.instagram.com/regetskcob/"
 name = "github"
 url = "https://github.com/regetskcob"
 
-[[params.social]]
-name = "medium"
-url = "https://medium.com/@regetskcob"
-
 # Main menu pages
 [[params.menu]]
 name = "Start"
