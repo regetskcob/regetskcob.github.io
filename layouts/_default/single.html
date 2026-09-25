@@ -3,7 +3,8 @@
   hard-coded English strings translated: the reading time and the table of
   contents heading. The theme has no i18n files. A post written in another
   language than the site sets "inLanguage" in front matter, which becomes the
-  lang of the article. The author line is left out, there is one author.
+  lang of the article. The author line is left out, there is one author,
+  and pages like Über show no date.
   The tags sit inside the header, and posts (not pages like Über) mark it
   .post-intro, so the grey card in custom.css holds title, summary, date
   and tags together.
@@ -19,7 +20,8 @@
 
 <div {{ if .Param "autonumber" }} class="autonumber" {{ end }}>
   <article{{ with .Params.inLanguage }} lang="{{ . }}"{{ end }}>
-    <header class="single-intro-container{{ if and .IsPage (eq .Section "blog") }} post-intro{{ end }}">
+    {{- $isPost := and .IsPage (eq .Section "blog") }}
+    <header class="single-intro-container{{ if $isPost }} post-intro{{ end }}">
         {{- /* Title and Summary */}}
         
         <h1 class="single-title">{{ .Title }}</h1>
@@ -27,9 +29,11 @@
         <p class="single-summary">{{ . | markdownify }}</p>
         {{- end }}
    
-        {{- /* Date and Reading Time. No author line: there is one author, and
-               the name is in <meta name="author"> and the JSON-LD. */}}
-        {{ if or (.Param "authorAvatarPath") (or .Date (.Param "readTime")) }}
+        {{- /* Date and Reading Time, in posts only: on pages like Über a date
+               reads as "outdated" rather than informing. No author line:
+               there is one author, and the name is in <meta name="author">
+               and the JSON-LD. */}}
+        {{ if and $isPost (or (.Param "authorAvatarPath") (or .Date (.Param "readTime"))) }}
         <div class="single-subsummary">
           {{ with $.Param "authorAvatarPath" }}
             <img src="{{ . }}" alt="Author Avatar" />
