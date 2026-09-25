@@ -4,6 +4,11 @@
   cased page name ("Blog" vs "blog"), which never matched, so nothing was ever
   highlighted. Diff against the theme file when updating typo.
 
+  The menu comes in groups (photography, then writing and about; "group" in
+  hugo.toml), each its own block so a group wraps as a whole on phones,
+  with a wider gap between the groups. Entries carry no slash and no
+  underline; the active one is marked by a line below it.
+
   A menu entry is active when its URL is the current page, or when the current
   page lives below it, so a blog post highlights "Blog". The home entry only
   matches the home page itself. The exact page gets aria-current="page", a
@@ -36,29 +41,40 @@
     <p class="header-subtitle">{{ . }}</p>
     {{ end }}
 
-    <div class="header-menu">
+    <nav class="header-menu" aria-label="Hauptmenü">
         {{ $here := .RelPermalink }}
 
-        {{ with site.Params.menu }}
-        {{ range . }}
-        {{/* "/blog" and "/blog/" both become "/blog/"; "/" stays "/". */}}
-        {{ $url := printf "%s/" (strings.TrimSuffix "/" .url) }}
-        {{ $current := "" }}
-        {{ if eq $here $url }}
-          {{ $current = "page" }}
-        {{ else if and (ne $url "/") (hasPrefix $here $url) }}
-          {{ $current = "true" }}
+        {{/* Collect the entries per group, in the order they first appear. */}}
+        {{ $order := slice }}
+        {{ $groups := dict }}
+        {{ range site.Params.menu }}
+          {{ $g := .group | default "main" }}
+          {{ if not (in $order $g) }}{{ $order = $order | append $g }}{{ end }}
+          {{ $groups = merge $groups (dict $g ((index $groups $g) | default slice | append .)) }}
         {{ end }}
 
-        <p class="small{{ with $current }} bold is-current{{ end }}">
-            <a href="{{ .url }}" {{ with $current }}aria-current="{{ . }}" {{ end }}{{ if and (isset . "newTab") .newTab
-                }}target="_blank" rel="noopener noreferrer" {{ end }}>
-                /{{.name }}
-            </a>
-        </p>
+        {{ range $g := $order }}
+        <div class="menu-group">
+          {{ range index $groups $g }}
+          {{/* "/blog" and "/blog/" both become "/blog/"; "/" stays "/". */}}
+          {{ $url := printf "%s/" (strings.TrimSuffix "/" .url) }}
+          {{ $current := "" }}
+          {{ if eq $here $url }}
+            {{ $current = "page" }}
+          {{ else if and (ne $url "/") (hasPrefix $here $url) }}
+            {{ $current = "true" }}
+          {{ end }}
+
+          <p class="small{{ with $current }} is-current{{ end }}">
+              <a href="{{ .url }}" {{ with $current }}aria-current="{{ . }}" {{ end }}{{ if and (isset . "newTab") .newTab
+                  }}target="_blank" rel="noopener noreferrer" {{ end }}>
+                  {{ .name }}
+              </a>
+          </p>
+          {{ end }}
+        </div>
         {{ end }}
-        {{ end }}
-    </div>
+    </nav>
 
     {{ end }}
 

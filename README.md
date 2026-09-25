@@ -123,7 +123,10 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   Markierung der aktuellen Seite im Menü. Das Theme verglich den Menünamen mit dem
   kleingeschriebenen Seitennamen und markierte deshalb nie etwas. Jetzt zählt die
   Adresse: Beiträge unter `/blog/` markieren „Blog", der aktive Eintrag trägt
-  `aria-current`.
+  `aria-current`. Das Menü ist in Gruppen geteilt (`group` an den Einträgen in
+  `hugo.toml`: Fotografie, dann Blog und Über), die auf dem Handy jeweils als
+  eigene Zeile umbrechen. Einen Eintrag „Start“ gibt es nicht, der Seitenname
+  führt zur Startseite.
 
   Fußzeile (`footerContent`), Brotkrumen (`[params.breadcrumbs]`) und der Titel
   der Schlagwort-Übersicht (`content/tags/_index.md`) sind ohne Kopie einstellbar.

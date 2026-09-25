@@ -101,30 +101,33 @@ url = "https://www.instagram.com/regetskcob/"
 name = "github"
 url = "https://github.com/regetskcob"
 
-# Main menu pages
-[[params.menu]]
-name = "Start"
-url = "/"
-
+# Main menu pages, in two groups: the photography pages, then writing and
+# about. A new "group" starts with a wider gap (layouts/partials/header.html).
+# No "Start": the site name above the menu links home.
 [[params.menu]]
 name = "Niederrhein."
 url = "/niederrhein"
+group = "foto"
 
 [[params.menu]]
 name = "Ausrüstung"
 url = "/ausruestung"
+group = "foto"
 
 [[params.menu]]
 name = "Rezepte"
 url = "/rezepte"
+group = "foto"
 
 [[params.menu]]
 name = "Blog"
 url = "/blog"
+group = "text"
 
 [[params.menu]]
 name = "Über"
 url = "/about"
+group = "text"
 
 
 # Syntax highlighting is styled by the theme's syntax-highlighting.css

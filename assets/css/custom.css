@@ -833,16 +833,69 @@ footer a[href^="/legal/"]:hover {
   font-size: 0.95rem;
 }
 
+/* Groups side by side with a wide gap, entries within a group with a
+   narrower one. The theme's per-entry right margin is replaced by gaps. */
 .header-menu {
-  gap: 0.35rem 0;
+  gap: 0.5rem 2rem;
 }
 
-/* The current page, and the section a page lives in, as an inverted label:
-   clearly marked in both colour schemes without a colour of its own. */
+/* On wider screens the menu sits on a grey bar, like the cards below, so it
+   reads as navigation at a glance. */
+.header .header-menu {
+  background: var(--code-background);
+  border: 1px solid var(--code-border);
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+}
+
+.header-menu .menu-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+}
+
+.header .header-menu p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* On phones the bar goes: the two groups stand as two plain lines, which
+   is enough to read as navigation there, and the grey stays with the cards
+   below. Tighter gaps keep each group on one line. */
+@media screen and (max-width: 640px) {
+  .header .header-menu {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    row-gap: 0.4rem;
+  }
+
+  .header-menu .menu-group {
+    column-gap: 0.9rem;
+  }
+}
+
+/* Entries keep an underline, so they read as links, but a faint one: the
+   text colour at 35 %, which shows in light and dark mode alike (the
+   border colour nearly vanishes on the dark background). Hovering and the
+   current page draw it in full. */
+.header-menu a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+
+.header-menu a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* The current page, and the section a page lives in: a line under the
+   entry in the text colour, visible in both colour schemes without being
+   heavier than the site name above. */
 .header-menu .is-current a {
-  padding: 0.25em 0.6em;
-  border-radius: 4px;
-  background: var(--content-primary);
-  color: var(--background);
-  text-decoration: none;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
 }
