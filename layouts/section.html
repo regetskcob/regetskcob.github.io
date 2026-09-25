@@ -1,8 +1,15 @@
 {{/*
   Section lists; in practice the blog (/blog/). Replaces the theme's
   _default/list.html: the breadcrumbs and the "Tags" branch are gone (tags
-  have layouts/taxonomy.html now), and the blog opens with a row of its
-  topics, the eight tags with their post counts, before the list of posts.
+  have layouts/taxonomy.html now), and the blog opens with a search field
+  and a row of its topics, the eight tags with their post counts, before
+  the list of posts.
+
+  The search is Pagefind's Component UI: the deploy workflow indexes the
+  built site after Hugo and writes /pagefind/. Everything runs in the
+  browser from this domain; its script and styles load on this page only,
+  the index itself only once someone types. Under "hugo server" there is no
+  /pagefind/, so the field simply does not appear.
 */}}
 {{ define "main" }}
 <div class="list-container">
@@ -10,6 +17,22 @@
   {{ .Content }}
 
   {{- if eq .Section "blog" }}
+  <link rel="stylesheet" href="{{ "pagefind/pagefind-component-ui.css" | relURL }}">
+  <script src="{{ "pagefind/pagefind-component-ui.js" | relURL }}" type="module"></script>
+  <div class="blog-search" role="search">
+    <pagefind-input placeholder="Blog durchsuchen"></pagefind-input>
+    <pagefind-summary></pagefind-summary>
+    <pagefind-results show-images hide-sub-results></pagefind-results>
+  </div>
+  <script type="module">
+    // Pagefind 1.5.2 labels the clear button before it knows the page
+    // language and stays on "Clear"; the rest of the UI is German.
+    customElements.whenDefined("pagefind-input").then(() => {
+      document.querySelectorAll(".blog-search .pf-input-clear")
+        .forEach((b) => { b.textContent = "Löschen"; });
+    });
+  </script>
+
   {{- with site.Taxonomies.tags }}
   <nav class="topic-row" aria-label="Themen">
     {{- range .ByCount }}

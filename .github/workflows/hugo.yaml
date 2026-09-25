@@ -19,7 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # Go is required: the site pulls hugomods/umami-analytics as a Hugo module.
-      # Dart Sass and Node are not — the project has no .scss and no package.json.
+      # Dart Sass is not, the project has no .scss. Node, preinstalled on the
+      # runner, runs Pagefind for the search index.
       GO_VERSION: 1.25.3
       HUGO_VERSION: 0.154.5
       TZ: Europe/Berlin
@@ -65,6 +66,8 @@ jobs:
             --gc \
             --minify \
             --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Build the search index
+        run: npx -y pagefind@1.5.2 --site public
       - name: Cache save
         id: cache-save
         uses: actions/cache/save@v6

@@ -5,6 +5,7 @@
   language than the site sets "inLanguage" in front matter, which becomes the
   lang of the article. The author line is left out, there is one author,
   and pages like Über show neither a date nor the previous/next links.
+  Posts are marked for the Pagefind search index.
   Long posts get a table of contents on their own, inside the header card;
   see the rule there.
   The tags sit inside the header, and posts (not pages like Über) mark it
@@ -20,9 +21,25 @@
 {{ partial "breadcrumbs.html" . }}
 {{ end }}
 
+{{- $isPost := and .IsPage (eq .Section "blog") }}
+
+{{- /* Search: only posts go into the Pagefind index (built after Hugo in
+       the deploy workflow), with their cover as the result thumbnail. */}}
+{{- $searchImage := "" }}
+{{- if $isPost }}
+  {{- with or .Params.cover .Params.featured_image }}
+    {{- with $.Resources.Get (strings.TrimPrefix "./" .) }}
+      {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}
+        {{- $searchImage = (.Fill "240x180 webp q75 smart").RelPermalink }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
 <div {{ if .Param "autonumber" }} class="autonumber" {{ end }}>
-  <article{{ with .Params.inLanguage }} lang="{{ . }}"{{ end }}>
-    {{- $isPost := and .IsPage (eq .Section "blog") }}
+  <article{{ with .Params.inLanguage }} lang="{{ . }}"{{ end }}
+    {{- if $isPost }} data-pagefind-body{{ end }}
+    {{- with $searchImage }} data-pagefind-meta="image:{{ . }}"{{ end }}>
     <header class="single-intro-container{{ if $isPost }} post-intro{{ end }}">
         {{- /* Title and Summary */}}
         
@@ -45,7 +62,7 @@
         {{- $showToc := cond (isset .Params "toc") (.Param "toc") $autoToc }}
 
         {{- if $showToc }}
-          <aside class="toc">
+          <aside class="toc" data-pagefind-ignore>
             <p><strong>Inhalt</strong></p>
             {{ .TableOfContents }}
           </aside>
@@ -80,7 +97,7 @@
         {{- if .Param "showTags" }}
           {{- $taxonomy := "tags" }}
           {{- with .Param $taxonomy }}    
-            <div class="single-tags">
+            <div class="single-tags" data-pagefind-ignore>
                 {{- range $index, $tag := . }}
                 {{- with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
                     <span>
