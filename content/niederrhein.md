@@ -5,7 +5,7 @@ layout: series
 teaser: "Eine Langzeitserie über die Gegend, in der ich wohne. Immer wieder dieselben Wege, zu verschiedenen Tages- und Jahreszeiten."
 
 # Shuffled on every visit. Without JavaScript, and for the home page teaser
-# (first four entries), the order below applies.
+# (first six entries), the order below applies.
 shuffle: true
 
 # Per photo: image and alt are required. `size: large` makes a tile span two
@@ -42,6 +42,22 @@ photos:
     alt: "Baumkronen im frischen Frühlingsgrün, dahinter ein Kirchturm im Dunst unter rosa Himmel"
   - image: "niederrhein/img-6242.jpg"
     alt: "Abgeernteter Acker im klaren Morgenlicht, eine Baumreihe am Horizont, Gräser und Zaunpfähle im Vordergrund"
+  - image: "niederrhein/dscf5860.jpg"
+    alt: "Frisch gepflügter Acker, dahinter ein Nebelband über einer Baumreihe im warmen Morgenlicht"
+  - image: "niederrhein/dscf5861.jpg"
+    alt: "Dunkler Acker im Morgenlicht, links eine rot leuchtende Hecke, im Hintergrund Nebel zwischen kahlen Bäumen"
+  - image: "niederrhein/dscf5863.jpg"
+    alt: "Die Sonne steht als heller Fleck im Dunst über einer Baumreihe, davor ein dunkler Acker mit Grasbüschel"
+  - image: "niederrhein/dscf5867.jpg"
+    alt: "Hochsitz am Ufer eines Gewässers, Raureif auf der Wiese, kahle Bäume im Morgendunst"
+  - image: "niederrhein/img-0075.jpg"
+    alt: "Waldweg im Nebel, Buchen mit Herbstlaub säumen die Fahrbahn"
+  - image: "niederrhein/img-2449.jpg"
+    alt: "Wiese im Morgendunst, links eine Kopfweide über einem Trampelpfad, die Sonne steht flach hinter den Bäumen"
+  - image: "niederrhein/img-6167.jpg"
+    alt: "Frisch gefurchter Acker, dahinter steht eine tief hängende Nebelwand über dem Horizont"
+  - image: "niederrhein/niers-01.jpg"
+    alt: "Die Niers im Morgennebel, die Sonne spiegelt sich im Wasser, Weiden säumen das Ufer"
 ---
 
 Der Niederrhein ist keine Gegend, die sich aufdrängt. Es gibt keine Berge, keine
