@@ -8,6 +8,8 @@
 # Per block, optional:
 #   description   A short line or two under the heading.
 #   image / alt   A photo under the list; the file lives in assets/gear/.
+#   beside        true places the block next to the one before it, two
+#                 columns on wider screens, photos aligned at the bottom.
 #
 # Per entry:
 #   name    Required. The label as it appears in the row.
@@ -71,6 +73,21 @@ groups:
       - name: "Leica Sofort 2"
         note: "Nutze ich fast nur als Sofortdrucker, wenn jemand ein Bild mitnehmen soll."
 
+  - title: "Immer dabei"
+    beside: true
+    description: "Keine Kamera, sondern eine kleine Tasche mit allem, was man unterwegs so brauchen könnte."
+    image: "immer-dabei.jpg"
+    alt: "Geöffnete Organizer-Tasche auf einer Holzplatte: Powerbank, Ladegerät, Travelrouter, Netzwerkadapter und aufgerollte Kabel in den Fächern, dazu eine Taschenlampe, ein rotes Taschenmesser, ein Multitool im Netzbeutel und Stifte unter einem Gummiband"
+    items:
+      - name: "Ladegerät und Powerbank"
+      - name: "Ladekabel jeder erdenklichen Art und diverse Adapter"
+      - name: "UniFi Travel Router"
+      - name: "SSD, SD-Karten und USB-Sticks"
+      - name: "Ein paar Wera Kraftform Micro"
+      - name: "Multitool und Taschenmesser"
+      - name: "Taschenlampe"
+      - name: "Rotring-Druckbleistift und Apple Pencil"
+
   - title: "Rechner und Software"
     items:
       - name: "MacBook Pro 14\" M2 Pro"
@@ -80,14 +97,3 @@ groups:
         note: "Verwaltung. Läuft über alle Geräte hinweg, ohne dass ich etwas dafür tun muss."
       - name: "Photomator"
         note: "Bearbeitung. Bewusst kein Adobe-Abo, weil ich das für ein Hobby nicht ausgeben will."
-
-  - title: "Immer dabei"
-    description: "Keine Kamera, sondern eine kleine Tasche mit allem, was man unterwegs so brauchen könnte."
-    image: "immer-dabei.jpg"
-    alt: "Geöffnete Organizer-Tasche auf einer Holzplatte: Powerbank, Ladegerät, Travelrouter, Netzwerkadapter und aufgerollte Kabel in den Fächern, dazu eine Taschenlampe, ein rotes Taschenmesser, ein Multitool im Netzbeutel und Stifte unter einem Gummiband"
-    items:
-      - name: "Ladegerät und Powerbank"
-      - name: "Ladekabel jeder erdenklichen Art"
-      - name: "UniFi Travel Router"
-      - name: "Multitool und Taschenmesser"
-      - name: "Taschenlampe"

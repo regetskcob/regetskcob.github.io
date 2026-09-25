@@ -4,7 +4,8 @@
   An optional header photo from front matter (photo, photo_alt), then the page
   text from content/ausruestung.md, then the blocks of the data file in their
   order. An entry without "note" renders its name only, so self-explanatory
-  items do not need invented filler sentences.
+  items do not need invented filler sentences. A block itself is rendered by
+  partials/gear-group.html; "beside: true" pairs it with the one before.
 */}}
 {{ define "main" }}
 
@@ -24,41 +25,20 @@
     {{ .Content }}
   </div>
 
-  {{- range $g := site.Data.gear.groups }}
-  {{- with $g.items }}
-  <section class="gear-group">
-    {{- with $g.title }}<h2>{{ . }}</h2>{{ end }}
-    {{- with $g.description }}<p class="gear-description">{{ . }}</p>{{ end }}
-
-    <ul class="gear-list">
-      {{- range $it := . }}
-      <li class="gear-item">
-        <span class="gear-name">{{ $it.name }}</span>
-        {{- with $it.note }}
-        <span class="gear-note">{{ . }}</span>
-        {{- end }}
-      </li>
-      {{- end }}
-    </ul>
-
-    {{/* Optional photo for the block, file under assets/gear/. */}}
-    {{- with $g.image }}
-      {{- with $gimg := resources.Get (printf "gear/%s" .) }}
-        {{/* Portrait shots get their own class because at full text width they
-             would fill half the screen. The CSS caps them at 420px, and sizes
-             has to say the same or the browser fetches a needlessly large file. */}}
-        {{- $portrait := gt $gimg.Height $gimg.Width }}
-    <figure class="gear-group-photo{{ if $portrait }} gear-group-photo-portrait{{ end }}">
-      {{ partial "responsive-img.html" (dict
-           "img" $gimg
-           "alt" $g.alt
-           "sizes" (cond $portrait "(max-width: 420px) 100vw, 420px" "(max-width: 780px) 100vw, 780px")
-           "page" $) }}
-    </figure>
-      {{- end }}
+  {{/* Blocks in file order. A block with "beside: true" joins the one before
+       it in a row of two columns on wider screens (see custom.css); on
+       phones the row stacks like any other blocks. Meant for pairs. */}}
+  {{- $groups := site.Data.gear.groups }}
+  {{- range $i, $g := $groups }}
+    {{- $next := dict }}
+    {{- if lt (add $i 1) (len $groups) }}{{ $next = index $groups (add $i 1) }}{{ end }}
+    {{- if and (not $g.beside) $next.beside }}
+  <div class="gear-row">
     {{- end }}
-  </section>
-  {{- end }}
+    {{- partial "gear-group.html" (dict "g" $g "page" $) }}
+    {{- if and $g.beside (gt $i 0) }}
+  </div>
+    {{- end }}
   {{- end }}
 
 </article>

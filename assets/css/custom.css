@@ -519,8 +519,35 @@
   margin-bottom: 2.5rem;
 }
 
-.gear-group + .gear-group {
+.gear-group + .gear-group,
+.gear-group + .gear-row,
+.gear-row + .gear-group {
   margin-top: 2.5rem;
+}
+
+/* Two blocks side by side ("beside: true" in data/gear.yaml). Each block is
+   a column whose photo is pushed to the bottom, so both photos end on one
+   line even when the lists differ in length. Phones keep them stacked. */
+@media (min-width: 700px) {
+  .gear-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .gear-row > .gear-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gear-row > .gear-group + .gear-group {
+    margin-top: 0;
+  }
+
+  .gear-row .gear-group-photo {
+    margin-top: auto;
+    padding-top: 1.5rem;
+  }
 }
 
 .gear-description {
