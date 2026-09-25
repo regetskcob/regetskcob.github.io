@@ -81,7 +81,7 @@
       </ul>
       {{- end }}
 
-      {{- with $b.notes }}{{ partial "recipe-notes.html" . }}{{ end }}
+      {{- with $b.notes }}{{ partial "recipe-notes.html" (dict "notes" . "level" 4) }}{{ end }}
     </div>
     {{- end }}
   </section>
@@ -132,7 +132,7 @@
       </table>
     </div>
 
-    {{- with $r.notes }}{{ partial "recipe-notes.html" . }}{{ end }}
+    {{- with $r.notes }}{{ partial "recipe-notes.html" (dict "notes" . "level" 3) }}{{ end }}
   </section>
   {{- end }}
   {{- end }}

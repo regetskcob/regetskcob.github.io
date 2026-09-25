@@ -19,6 +19,10 @@
 #   xt30 and xt5    one value per body, the table renders three columns.
 # As soon as a single row is split, the whole table becomes three columns.
 #
+# "notes" under a table explain its values and render as a small heading
+# with a paragraph. "tone: warn" turns a note into a highlighted box instead;
+# keep that for what must not be overlooked, or the boxes stop standing out.
+#
 # Labels follow the camera's German menu wording and must be identical across
 # recipes, so the same setting reads the same in every table.
 

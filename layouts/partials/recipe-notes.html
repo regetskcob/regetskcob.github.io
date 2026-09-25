@@ -1,10 +1,27 @@
 {{/*
   Notes under a table, used by both the basics blocks and the recipes.
-  Expects the notes list as context. "tone: warn" makes a note stand out.
+  Takes a dict: "notes", the list from data/recipes.yaml, and "level", the
+  heading level for the explanations (4 under the basics' h3, 3 under a
+  recipe's h2).
+
+  A note is normally an explanation of the values above: it reads as content,
+  a small heading and a paragraph. Only "tone: warn" makes it a highlighted
+  box, kept for what must not be skimmed; used sparingly, the box still
+  stands out.
 */}}
-{{- range $n := . }}
-<aside class="recipe-note{{ if eq $n.tone "warn" }} recipe-note-warn{{ end }}">
+{{- $level := .level | default 4 }}
+{{- range $n := .notes }}
+{{- if eq $n.tone "warn" }}
+<aside class="recipe-note">
   {{- with $n.title }}<strong>{{ . }}</strong>{{ end }}
   {{ $n.text }}
 </aside>
+{{- else }}
+<div class="recipe-explain">
+  {{- with $n.title }}
+  {{- if eq $level 3 }}<h3>{{ . }}</h3>{{ else }}<h4>{{ . }}</h4>{{ end }}
+  {{- end }}
+  <p>{{ $n.text }}</p>
+</div>
+{{- end }}
 {{- end }}
