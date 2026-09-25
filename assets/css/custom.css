@@ -574,6 +574,24 @@ footer {
   text-align: center;
 }
 
+/* Two lines, legal links above the credit line (a <br> from footerContent
+   in hugo.toml); the line height gives them room. */
+footer p {
+  line-height: 2.4;
+}
+
+/* Impressum and Datenschutz: needed, but not what the footer is about. */
+footer a[href^="/legal/"] {
+  color: var(--content-secondary);
+  text-decoration-color: var(--code-border);
+  text-underline-offset: 0.2em;
+}
+
+footer a[href^="/legal/"]:hover {
+  color: var(--content-primary);
+  text-decoration-color: currentColor;
+}
+
 /* --- Back to top --- */
 
 /* Hidden until the header scrolls away; visibility keeps it out of the tab
