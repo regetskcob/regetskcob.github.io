@@ -75,9 +75,11 @@ listSummaries = true
 singleDateFormat = ":date_long"
 
 
-# Breadcrumbs
+# Breadcrumbs, switched off: below "Start" there is only one level, and the
+# menu already marks the section. The JSON-LD has no BreadcrumbList either,
+# since structured data should only describe what the page shows.
 [params.breadcrumbs]
-enabled = true
+enabled = false
 showCurrentPage = false
 home = "Start"
 
