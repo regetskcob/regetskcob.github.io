@@ -1,0 +1,12 @@
+{{/*
+  Lightbox and shuffle for the photo grids on a page (partials/photo-grid.html).
+  Included once, inline and right after the last grid, so the shuffle runs
+  before the first paint instead of visibly rearranging tiles on screen.
+*/}}
+<dialog class="series-lightbox" aria-label="Bildansicht">
+  <img alt="">
+  <button type="button" class="series-lightbox-close" aria-label="Schließen">×</button>
+</dialog>
+{{- with resources.Get "js/series.js" }}
+<script>{{ (. | minify).Content | safeJS }}</script>
+{{- end }}

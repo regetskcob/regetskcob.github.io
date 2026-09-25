@@ -1,11 +1,12 @@
-// Photo series page: a random order on every visit and a lightweight lightbox.
-// Both are progressive enhancements. Without JavaScript the tiles keep their
-// front matter order and each one links straight to the large rendition.
+// Photo grids (partials/photo-grid.html), on the series page and the home
+// page: a random order on every visit and a lightweight lightbox. Both are
+// progressive enhancements. Without JavaScript the tiles keep their data file
+// order and each one links straight to its large rendition or its page.
 (() => {
-  const grid = document.querySelector(".series-grid");
-  if (!grid) return;
+  const grids = document.querySelectorAll(".series-grid");
+  if (!grids.length) return;
 
-  if (grid.hasAttribute("data-shuffle")) {
+  const setupShuffle = (grid) => {
     const tiles = Array.from(grid.children);
 
     // Fisher-Yates.
@@ -129,14 +130,20 @@
         layout(cols);
       }
     }).observe(grid);
-  }
+  };
+
+  grids.forEach((grid) => {
+    if (grid.hasAttribute("data-shuffle")) setupShuffle(grid);
+  });
 
   const dialog = document.querySelector(".series-lightbox");
   if (!dialog || typeof dialog.showModal !== "function") return;
   const photo = dialog.querySelector("img");
 
-  grid.addEventListener("click", (event) => {
-    const link = event.target.closest("a");
+  // One lightbox for all grids. Only tiles that link to their photo open it;
+  // tiles linking to a page (the series teaser) navigate as usual.
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest(".series-grid a[data-lightbox]");
     // Leave modified clicks alone, so "open in new tab" keeps working.
     if (!link || event.metaKey || event.ctrlKey || event.shiftKey) return;
     event.preventDefault();

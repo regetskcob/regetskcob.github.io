@@ -1,43 +1,41 @@
 {{/*
-  Photo galleries, driven by data/gallery.yaml.
+  Photo galleries on the home page, driven by data/gallery.yaml.
 
   Renders one titled block per entry under "galleries", in file order, so a new
-  theme is added by appending a block to that file — no template change needed.
+  theme is added by appending a block to that file, no template change needed.
+  Each block uses the shared photo grid (partials/photo-grid.html): two to four
+  columns, breaking out of the text column, a random order on every visit and
+  a lightbox on click. "size: large" on an item makes it span 2x2.
 
-  Within a block, an item with "post" + "image" pulls the file out of that blog
-  post's page bundle and links the tile to the post; an item with only "image"
-  reads assets/gallery/<image>. Missing files are skipped rather than failing
-  the build, so a typo in the data file does not take the home page down.
-
-  Images keep their own aspect ratio and flow into a masonry column layout:
-  cropping everything to a uniform tile would cut roughly half the height off
-  the portrait shots.
-
-  "alt" describes the image for screen readers and is expected on every item.
-  "caption" is separate and optional: it renders visibly under the tile, so it
-  is only worth setting where there is something to add beyond the description.
+  An item with "post" + "image" pulls the file out of that blog post's page
+  bundle and links the tile to the post instead of the lightbox; an item with
+  only "image" reads assets/gallery/<image>. Missing files are skipped rather
+  than failing the build, so a typo in the data file does not take the home
+  page down. "alt" describes the image and is expected on every item.
 */}}
 
 {{- $blocks := slice -}}
 
 {{/* $ is the template root inside range, so bind items explicitly. */}}
 {{- range $g := site.Data.gallery.galleries -}}
-  {{- $tiles := slice -}}
+  {{- $items := slice -}}
   {{- range $it := $g.items -}}
     {{- $img := "" -}}
+    {{- $href := "" -}}
     {{- with $it.post -}}
       {{- with site.GetPage (printf "/blog/%s" .) -}}
         {{- $img = .Resources.Get $it.image -}}
+        {{- $href = .RelPermalink -}}
       {{- end -}}
     {{- else -}}
       {{- $img = resources.Get (printf "gallery/%s" $it.image) -}}
     {{- end -}}
     {{- with $img -}}
-      {{- $tiles = $tiles | append (dict "img" . "alt" $it.alt "caption" $it.caption "post" $it.post) -}}
+      {{- $items = $items | append (dict "img" . "alt" $it.alt "size" $it.size "href" $href) -}}
     {{- end -}}
   {{- end -}}
-  {{- with $tiles -}}
-    {{- $blocks = $blocks | append (dict "title" $g.title "description" $g.description "tiles" .) -}}
+  {{- with $items -}}
+    {{- $blocks = $blocks | append (dict "title" $g.title "description" $g.description "items" .) -}}
   {{- end -}}
 {{- end -}}
 
@@ -52,29 +50,7 @@
     {{- with .title }}<h3 class="gallery-title">{{ . }}</h3>{{ end }}
     {{- with .description }}<p class="gallery-description">{{ . }}</p>{{ end }}
 
-    <div class="gallery-grid">
-      {{- range $t := .tiles }}
-        {{- $tile := partial "responsive-img.html" (dict
-              "img" $t.img
-              "widths" (slice 400 800 1200)
-              "quality" 80
-              "sizes" "(max-width: 640px) 100vw, 370px"
-              "alt" (or $t.alt $t.caption "" | plainify)) -}}
-
-      <figure class="gallery-item">
-        {{- with $t.post }}
-          {{- with site.GetPage (printf "/blog/%s" .) }}
-        <a href="{{ .RelPermalink }}" title="{{ .Title | plainify }}">{{ $tile }}</a>
-          {{- end }}
-        {{- else }}
-        {{ $tile }}
-        {{- end }}
-        {{- with $t.caption }}
-        <figcaption>{{ . }}</figcaption>
-        {{- end }}
-      </figure>
-      {{- end }}
-    </div>
+    {{ partial "photo-grid.html" (dict "items" .items "shuffle" true) }}
   </div>
   {{- end }}
 </section>

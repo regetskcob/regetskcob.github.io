@@ -1,6 +1,7 @@
 {{/*
   Home page. Replaces the theme's home layout, which renders the full paginated
-  post list, with a landing page: intro, gallery, and only the latest posts.
+  post list, with a landing page about the photography: intro, the series
+  teaser and the galleries. Posts live at /blog/, linked from the menu.
 
   The site name in the header is the page's only h1; the sections below are
   h2 with the class home-heading, which keeps their former h1 size.
@@ -43,19 +44,7 @@
 
 {{/* TODO: projects section — needs content under content/projects/ first. */}}
 
-{{/* Latest posts, not the full archive: that lives at /blog/ now. */}}
-{{ with site.Params.homeCollection }}
-  {{ $pages := where site.RegularPages "Section" . }}
-  {{ $limit := site.Params.homeCollectionLimit | default 5 }}
-  {{ with first $limit $pages }}
-<div class="list-container">
-  <h2 class="home-heading">{{ site.Params.homeCollectionTitle | default "Beiträge" }}</h2>
-  {{ range . }}
-    {{ partial "post-entry.html" . }}
-  {{ end }}
-  <p class="all-posts-link"><a href="/blog/">Alle Beiträge →</a></p>
-</div>
-  {{ end }}
-{{ end }}
+{{/* Lightbox and shuffle for the grids above, once, after the last one. */}}
+{{ partial "photo-grid-script.html" . }}
 
 {{ end }}

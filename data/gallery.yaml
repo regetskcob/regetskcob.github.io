@@ -1,15 +1,15 @@
 # Photo galleries shown on the home page.
 #
-# Each block renders as its own titled section, in the order listed here — to
-# add a new theme, append another block at the bottom.
+# Each block renders as its own titled section, in the order listed here; to
+# add a new theme, append another block at the bottom. Within a block the
+# photos appear in a random order on every visit, in the same grid as the
+# Niederrhein. series (layouts/partials/photo-grid.html).
 #
-# "alt" describes the image for screen readers and belongs on every item.
-# "caption" is optional and separate: it renders visibly under the tile, so set
-# it only where there is something to add beyond the description.
-#
-# An item either points at an image inside a blog post's page bundle
-# (post + image; the tile then links to that post), or at a standalone file in
-# assets/gallery/ (image only).
+# Per item: "image" is a file under assets/gallery/, or, together with "post",
+# a file in that blog post's page bundle (the tile then links to the post).
+# "alt" describes the photo for screen readers and belongs on every item.
+# "size: large" makes a photo span two columns and two rows; portraits and
+# panoramas are detected on their own.
 #
 # Source files were resized to 2000px on the long edge and stripped of all
 # metadata before being added — the originals carried GPS coordinates and this

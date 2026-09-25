@@ -73,14 +73,16 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   Schlagwort-Seiten sind `noindex` und stehen nicht in der Sitemap.
 
 - **`layouts/index.html`** — Landing-Page statt der vollständigen Beitragsliste
-  des Themes: Intro, Galerie und die neuesten Beiträge.
+  des Themes, ganz auf die Fotografie ausgerichtet: Intro, Serien-Teaser und
+  Galerien. Die Beiträge stehen unter `/blog/`, erreichbar über das Menü.
 
 - **`layouts/partials/responsive-img.html`** — gemeinsames `<img>` für Galerien,
   Serie, Serien-Teaser und Ausrüstungsseite: WebP-Varianten in festen Breiten, nie
   hochskaliert, die größte ausgelieferte Variante steht immer mit im `srcset`.
   `sizes` muss zur Breite passen, die das CSS tatsächlich anzeigt.
 
-- **`layouts/partials/gallery.html`** — Galerien, gespeist aus `data/gallery.yaml`.
+- **`layouts/partials/gallery.html`** — Galerien, gespeist aus `data/gallery.yaml`,
+  im selben Raster wie die Serie (`layouts/partials/photo-grid.html`).
 
 - **`layouts/_default/gear.html`** — Layout der Ausrüstungsseite. Oben der Text aus
   `content/ausruestung.md`, darunter die Blöcke aus `data/gear.yaml` in deren Reihenfolge.
@@ -95,14 +97,18 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   `layouts/partials/recipe-notes.html` rendert die Hinweise unter einer Tabelle
   und wird von beiden Ebenen genutzt.
 
-- **`layouts/_default/series.html`** und **`assets/js/series.js`** — Layout für eine
-  Foto-Serie: ein gemischtes Raster, das aus der Textspalte ausbricht und bis zu
+- **`layouts/_default/series.html`**, **`layouts/partials/photo-grid.html`** und
+  **`assets/js/series.js`** — Layout für eine Foto-Serie und das Raster, das
+  auch die Galerien und der Serien-Teaser auf der Startseite nutzen: ein
+  gemischtes Raster, das aus der Textspalte ausbricht und bis zu
   80 % der Seitenbreite nutzt, mit zwei, drei oder vier Spalten je nach Breite.
   Hochformate belegen zwei Zeilen, Panoramen zwei Spalten, mit `size: large`
   markierte Bilder zwei mal zwei. Die Bildliste steht im Front Matter unter
   `photos` (nicht `images`, das ist bei Hugo für OpenGraph reserviert).
 
-  Das Skript mischt die Reihenfolge bei jedem Besuch, rechnet die Anordnung vorab
+  Der Serien-Teaser bleibt mit `narrow` in der Textspalte. Das Skript
+  (`layouts/partials/photo-grid-script.html` bindet es einmal pro Seite ein)
+  bedient alle Raster einer Seite. Es mischt die Reihenfolge bei jedem Besuch, rechnet die Anordnung vorab
   durch und mischt neu, falls mitten im Raster eine Lücke entstünde. Ein Klick
   öffnet das Bild groß. Ohne JavaScript gilt die Reihenfolge aus dem Front Matter
   und der Klick öffnet die große Bilddatei direkt.
@@ -186,7 +192,9 @@ hugo new content blog/mein-beitrag/index.md
 Seite, die Bilder erscheinen dort in zufälliger Reihenfolge. Die Blöcke in
 `data/gallery.yaml` sind lose Sammlungen nach Motiv.
 Auf der Startseite steht die Serie oben und wird angeteasert, die Galerien folgen
-darunter. Der Teaser zeigt die ersten vier Bilder aus dem Front Matter.
+darunter. Der Teaser trägt die ersten sechs Bilder aus dem Front Matter und
+zeigt davon so viele, wie volle Reihen ergeben: vier bei zwei Spalten, sechs
+bei drei, vier bei vier. Die Galerien mischen ihre Reihenfolge bei jedem Besuch.
 
 ```yaml
 shuffle: true            # Reihenfolge bei jedem Besuch mischen
@@ -289,6 +297,9 @@ Ein Eintrag mit `post` und `image` holt das Foto direkt aus dem Page Bundle des
 Beitrags und verlinkt die Kachel dorthin — so liegt kein Bild doppelt im
 Repository. Ein Eintrag mit nur `image` liest stattdessen aus `assets/gallery/`.
 Fehlende Dateien werden übersprungen und lassen den Build nicht scheitern.
+Mit `size: large` belegt ein Bild zwei mal zwei Felder, Hoch- und Panoramaformate
+erkennt das Raster selbst. Bildunterschriften gibt es im Raster nicht, die
+Beschreibung gehört in `alt`.
 
 ```yaml
 galleries:
@@ -297,10 +308,11 @@ galleries:
     items:
       - post: uedemer-feld-hohe-muehle
         image: dscf3638.jpg
-        caption: Uedemer Feld an der Hohen Mühle
+        alt: Weites Feld am Uedemer Feld im Gegenlicht
+        size: large
 
   - title: Wald                 # weiterer Block, einfach anhängen
     items:
       - image: winterwald.jpg   # ohne "post": aus assets/gallery/
-        caption: Erster Schnee
+        alt: Verschneiter Waldweg zwischen Fichten
 ```

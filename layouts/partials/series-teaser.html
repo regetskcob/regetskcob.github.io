@@ -3,34 +3,28 @@
 
   A series is work in progress with an idea behind it, so it gets the position
   and the headline; the galleries below are collections. Pulls its text from
-  content/niederrhein.md, so there is one place to edit.
+  content/niederrhein.md, so there is one place to edit. Its first six photos
+  use the shared photo grid, kept to the text column, and link to the series
+  page; the CSS shows as
+  many of them as fill whole rows (4, 6 or 4 at 2, 3 or 4 columns).
 */}}
 
 {{/* $ is the home page inside this partial, so bind the series page. */}}
 {{- with $series := site.GetPage "/niederrhein" }}
-  {{- $shown := first 4 .Params.photos }}
+  {{- $shown := first 6 .Params.photos }}
 <section class="series-teaser">
   <h2 class="home-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{- with .Params.teaser }}
   <p class="series-teaser-text">{{ . }}</p>
   {{- end }}
 
-  <div class="gallery-grid">
-    {{- range $it := $shown }}
-      {{- with resources.Get (printf "gallery/%s" $it.image) }}
-    <figure class="gallery-item">
-      <a href="{{ $series.RelPermalink }}">
-        {{ partial "responsive-img.html" (dict
-             "img" .
-             "widths" (slice 400 800)
-             "quality" 80
-             "sizes" "(max-width: 640px) 100vw, 370px"
-             "alt" $it.alt) }}
-      </a>
-    </figure>
-      {{- end }}
+  {{- $items := slice }}
+  {{- range $it := $shown }}
+    {{- with resources.Get (printf "gallery/%s" $it.image) }}
+      {{- $items = $items | append (dict "img" . "alt" $it.alt "href" $series.RelPermalink) }}
     {{- end }}
-  </div>
+  {{- end }}
+  {{ partial "photo-grid.html" (dict "items" $items "narrow" true) }}
 
   <p class="series-more"><a href="{{ .RelPermalink }}">Zur Serie →</a></p>
 </section>

@@ -1,0 +1,60 @@
+{{/*
+  A photo grid, shared by the series page and the galleries on the home page.
+
+  Breaks out of the text column to up to 80% of the viewport and runs two,
+  three or four columns depending on its width. One row is a 3:2 landscape at
+  single-column width. Tile shapes:
+    landscape   1 column  x 1 row   (default)
+    portrait    1 column  x 2 rows  detected from the image, so a portrait sits
+                                    next to two stacked landscapes
+    wide        2 columns x 1 row   detected for panoramas, ratio 1.9 and up
+    large       2 columns x 2 rows  set with "size: large" on the item
+  The grid packs densely, so smaller tiles fill the gaps a large one leaves.
+
+  Takes a dict:
+    items    list of dicts: img (image resource), alt, size, href
+    shuffle  true to randomise the order on every visit (assets/js/series.js)
+    narrow   true to stay within the text column instead of breaking out
+  A tile with "href" links there (e.g. the series page). Otherwise it links to
+  a large rendition of its photo, which series.js opens in a lightbox; the
+  page includes partials/photo-grid-script.html once, after its last grid.
+*/}}
+<div class="series-gallery{{ if .narrow }} is-narrow{{ end }}">
+  <div class="series-grid"{{ if .shuffle }} data-shuffle{{ end }}>
+  {{- range $it := .items }}
+    {{- $img := $it.img }}
+    {{- $ratio := div (float $img.Width) $img.Height }}
+    {{- $shape := "" }}
+    {{- if eq ($it.size | default "") "large" }}
+      {{- $shape = "is-large" }}
+    {{- else if lt $ratio 1.0 }}
+      {{- $shape = "is-portrait" }}
+    {{- else if ge $ratio 1.9 }}
+      {{- $shape = "is-wide" }}
+    {{- end }}
+
+    {{/* Rendered tile widths: half the phone screen on two columns, about
+         a third of 80vw on three, and at most 350px once the capped
+         gallery runs four. Two-column tiles are twice that. */}}
+    {{- $sizes := "(max-width: 640px) 50vw, (max-width: 1250px) 27vw, 350px" }}
+    {{- if in (slice "is-large" "is-wide") $shape }}
+      {{- $sizes = "(max-width: 640px) 100vw, (max-width: 1250px) 54vw, 700px" }}
+    {{- end }}
+
+    <figure class="{{ trim (printf "series-tile %s" $shape) " " }}">
+      {{- if $it.href }}
+      <a href="{{ $it.href }}">
+      {{- else }}
+      {{- $full := $img.Fit "2000x2000 webp q85" }}
+      <a href="{{ $full.RelPermalink }}" data-lightbox>
+      {{- end }}
+        {{ partial "responsive-img.html" (dict
+             "img" $img
+             "widths" (slice 400 800 1200 1600)
+             "sizes" $sizes
+             "alt" $it.alt) }}
+      </a>
+    </figure>
+  {{- end }}
+  </div>
+</div>
