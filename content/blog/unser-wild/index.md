@@ -14,6 +14,7 @@ summary: „Wer dieses Buch gelesen und die Porträts unserer wilden Mitbewohner
   sollen.“
 featured_image: ./DSCF4594.jpeg
 cover: ./DSCF4594.jpeg
+coverAlt: "Das Buch „Unser Wild“ mit Hirschsilhouetten auf dem Umschlag, daneben weiße Hortensienblüten"
 seo:
   image: ./DSCF4594.jpeg
 aliases: ["/posts/unser-wild/"]

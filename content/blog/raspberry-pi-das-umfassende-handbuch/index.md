@@ -16,6 +16,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./IMG_4275.jpeg
 cover: ./IMG_4275.jpeg
+coverAlt: "Das Buch „Raspberry Pi“ von Kofler, Kühnast und Scherbeck auf einem Holztisch"
 seo:
   image: ./IMG_4275.jpeg
 aliases: ["/posts/raspberry-pi-das-umfassende-handbuch/"]

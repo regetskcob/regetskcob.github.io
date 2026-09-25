@@ -11,6 +11,7 @@ reading_time: 3
 summary: "Vom Monreberg in Altkalkar reicht der Blick weit über den Niederrhein. Abendbilder aus dem Frühjahr 2020, als Home-Office und Abstand den Alltag bestimmten."
 featured_image: ./dscf2916.jpg
 cover: ./dscf2916.jpg
+coverAlt: "Dunstiger Abendhimmel über den Baumkronen am Niederrhein, am Horizont die Silhouette eines Kirchturms"
 seo:
   image: ./dscf2916.jpg
 aliases: ["/posts/abendausklang-mit-blick-ueber-den-niederrhein/"]

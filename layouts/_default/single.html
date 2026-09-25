@@ -41,12 +41,18 @@
   <article{{ with .Params.inLanguage }} lang="{{ . }}"{{ end }}
     {{- if $isPost }} data-pagefind-body{{ end }}
     {{- with $searchImage }} data-pagefind-meta="image:{{ . }}"{{ end }}>
+    {{- /* The thumbnail's alt text for the search results. An element of its
+           own: the attribute form above splits at commas, which alt texts
+           contain. */}}
+    {{- if and $searchImage .Params.coverAlt }}
+    <span data-pagefind-meta="image_alt" hidden>{{ .Params.coverAlt }}</span>
+    {{- end }}
     <header class="single-intro-container{{ if $isPost }} post-intro{{ end }}">
         {{- /* Cover image on top of the card, for posts whose cover does not
                appear in the text anyway (most book reviews). Edge to edge,
                height capped so portrait covers do not push the title down;
-               loaded eagerly, it is the first thing on the page. alt stays
-               empty: the title right below says what the post is about. */}}
+               loaded eagerly, it is the first thing on the page. Its alt text
+               is "coverAlt" from front matter. */}}
         {{- if $isPost }}
           {{- with or .Params.cover .Params.featured_image }}
             {{- $name := strings.TrimPrefix "./" . }}
@@ -54,7 +60,7 @@
               {{- with $.Resources.Get $name }}
                 {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}
         <figure class="post-cover">
-          {{ partial "responsive-img.html" (dict "img" . "widths" (slice 800 1600) "sizes" "(max-width: 780px) 100vw, 780px" "loading" "eager" "alt" "") }}
+          {{ partial "responsive-img.html" (dict "img" . "widths" (slice 800 1600) "sizes" "(max-width: 780px) 100vw, 780px" "loading" "eager" "alt" ($.Params.coverAlt | default "")) }}
         </figure>
                 {{- end }}
               {{- end }}

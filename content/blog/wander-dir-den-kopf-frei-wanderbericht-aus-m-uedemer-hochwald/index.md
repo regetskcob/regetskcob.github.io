@@ -11,6 +11,7 @@ reading_time: 9
 summary: "Ein Rundgang in Bildern durch den Uedemer Hochwald zwischen Uedem und Marienbaum, mit Tipps zu Parkplätzen und Orientierung und ein paar Bitten an Besucher."
 featured_image: ./dscf2292.jpg
 cover: ./dscf2292.jpg
+coverAlt: "Blick von oben auf die eigenen Füße in hellen Turnschuhen auf einem nassen, laubbedeckten Waldweg"
 seo:
   image: ./dscf2292.jpg
 aliases: ["/posts/wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald/"]

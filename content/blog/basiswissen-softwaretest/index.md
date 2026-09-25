@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_6232.jpg
 cover: ./img_6232.jpg
+coverAlt: "Das Buch „Basiswissen Softwaretest“ mit rotem Einband auf einem Holztisch"
 seo:
   image: ./img_6232.jpg
 aliases: ["/posts/basiswissen-softwaretest/"]

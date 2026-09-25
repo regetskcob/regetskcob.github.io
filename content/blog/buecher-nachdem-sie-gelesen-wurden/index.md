@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_4867.jpg
 cover: ./img_4867.jpg
+coverAlt: "Ein orangefarbenes Buch voller Klebezettel, daneben Textmarker, Fineliner und Post-its auf einem Holztisch"
 seo:
   image: ./img_4867.jpg
 aliases: ["/posts/buecher-nachdem-sie-gelesen-wurden/"]

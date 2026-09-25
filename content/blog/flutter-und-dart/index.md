@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_5223.jpg
 cover: ./img_5223.jpg
+coverAlt: "Das Buch „Flutter und Dart“ von Marc Marburger auf grauem Steinboden"
 seo:
   image: ./img_5223.jpg
 aliases: ["/posts/flutter-und-dart/"]

@@ -12,6 +12,7 @@ summary: Im April war ich mit meiner Fujifilm X-T30 in Uedem an der Hohen Mühle
   und am Uedemer Feld, die Aufnahmen lagen lange auf der SD-Karte, nun sind sie hier.
 featured_image: ./dscf3640.jpg
 cover: ./dscf3640.jpg
+coverAlt: "Weites grünes Feld am Uedemer Feld im Gegenlicht, links die tief stehende Sonne neben einem Strommast"
 seo:
   image: ./dscf3640.jpg
 aliases: ["/posts/uedemer-feld-hohe-muehle/"]

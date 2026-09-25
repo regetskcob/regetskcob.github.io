@@ -11,6 +11,7 @@ reading_time: 1
 summary: "Die ersten 80 Seiten zeigen, wie viel Glück in Kleinigkeiten steckt. Danach verliert das Buch zwischen Rezepten und Einrichtungstipps leider seinen roten Faden."
 featured_image: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
 cover: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
+coverAlt: "Schwarzweißbild: Das Buch „hygge“ mit glitzernden Lichtpunkten auf dem Umschlag, über einer Siedlung in die Höhe gehalten"
 seo:
   image: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
 aliases: ["/posts/hygge-das-grosse-glueck-liegt-in-den-kleinen-dingen/"]

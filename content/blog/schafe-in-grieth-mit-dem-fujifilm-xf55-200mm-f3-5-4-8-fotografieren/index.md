@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./9d1e9aa3-5302-429c-9e88-fe83af30d4e1.jpg
 cover: ./9d1e9aa3-5302-429c-9e88-fe83af30d4e1.jpg
+coverAlt: "Schafe grasen auf dem Deich bei Grieth, vorne ein Weidezaun, darüber blassblauer Himmel"
 seo:
   image: ./9d1e9aa3-5302-429c-9e88-fe83af30d4e1.jpg
 aliases: ["/posts/schafe-in-grieth-mit-dem-fujifilm-xf55-200mm-f3-5-4-8-fotografieren/"]

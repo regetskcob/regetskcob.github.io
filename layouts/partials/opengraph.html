@@ -48,7 +48,9 @@
 
 {{- /* Size and alt text let platforms lay out the preview before they
        have fetched the image. The fallback below is always 1200x630. */ -}}
-{{- $imageAlt := partial "seo/title.html" . }}
+{{- /* The cover's own description where front matter has one (coverAlt),
+       else the page title. */ -}}
+{{- $imageAlt := .Params.coverAlt | default (partial "seo/title.html" .) }}
 {{- with partial "_funcs/get-page-images" . }}
   {{- range . | first 6 }}
     <meta property="og:image" content="{{ .Permalink }}">

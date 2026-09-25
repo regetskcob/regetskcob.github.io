@@ -11,6 +11,7 @@ reading_time: 1
 summary: "Ein liegender Stamm im Uedemer Hochwald, auf dem ich gerne sitze, und der Blick nach oben in die Kronen, der zu jeder Jahreszeit anders aussieht."
 featured_image: ./img_4639.jpg
 cover: ./img_4639.jpg
+coverAlt: "Blick senkrecht nach oben in die Kronen hoher Buchen, das Laub leuchtet hellgrün gegen den Himmel"
 seo:
   image: ./img_4639.jpg
 aliases: ["/posts/die-ruhe-der-natur/"]

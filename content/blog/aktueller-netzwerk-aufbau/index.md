@@ -15,6 +15,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./IMG_3831.jpeg
 cover: ./IMG_3831.jpeg
+coverAlt: "Geöffneter Netzwerkschrank mit Patchpanel, Switch und bunten Netzwerkkabeln, darunter Router, Steckdosenleisten und Netzteile"
 seo:
   image: ./IMG_3831.jpeg
 aliases: ["/posts/aktueller-netzwerk-aufbau/"]

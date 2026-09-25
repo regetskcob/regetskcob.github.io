@@ -17,6 +17,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./IMG_0218.jpeg
 cover: ./IMG_0218.jpeg
+coverAlt: "Buchcover „TypeScript. Ein praktischer Einstieg“ von Josh Goldberg mit einem gezeichneten gelben Sittich auf einem Ast"
 seo:
   image: ./IMG_0218.jpeg
 aliases: ["/posts/typescript-skalierbare-javascript-applikationen-entwickeln/"]

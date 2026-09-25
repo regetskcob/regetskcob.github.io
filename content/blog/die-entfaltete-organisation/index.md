@@ -11,6 +11,7 @@ reading_time: 3
 summary: Mit Inner Work die Zukunft gestalten.
 featured_image: ./img_6213.jpg
 cover: ./img_6213.jpg
+coverAlt: "Das Buch „Die entfaltete Organisation“ mit weißem Umschlag und bunten Formen auf einem Holztisch"
 seo:
   image: ./img_6213.jpg
 aliases: ["/posts/die-entfaltete-organisation/"]

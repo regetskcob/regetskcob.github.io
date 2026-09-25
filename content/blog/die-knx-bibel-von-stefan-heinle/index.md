@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./IMG_4274.jpeg
 cover: ./IMG_4274.jpeg
+coverAlt: "Das Buch „Heimautomation mit KNX, DALI, 1-Wire und Co.“ von Stefan Heinle auf einem Holztisch"
 seo:
   image: ./IMG_4274.jpeg
 aliases: ["/posts/die-knx-bibel-von-stefan-heinle/"]

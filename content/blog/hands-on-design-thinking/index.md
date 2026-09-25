@@ -17,6 +17,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./cover-hands-on-design-thinking.jpg
 cover: ./cover-hands-on-design-thinking.jpg
+coverAlt: "Schwarzweißbild: Das Buch „Hands on Design Thinking“ mit gezeichneten Karteikarten auf dem Umschlag, über einer Siedlung in die Höhe gehalten"
 seo:
   image: ./cover-hands-on-design-thinking.jpg
 aliases: ["/posts/hands-on-design-thinking/"]

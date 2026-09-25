@@ -15,6 +15,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_5225.jpg
 cover: ./img_5225.jpg
+coverAlt: "Das Buch „JavaScript“ von Philip Ackermann in der dritten Auflage auf grauem Steinboden"
 seo:
   image: ./img_5225.jpg
 aliases: ["/posts/javascript-das-umfassende-handbuch/"]

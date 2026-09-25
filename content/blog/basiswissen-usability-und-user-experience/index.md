@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_6233.jpg
 cover: ./img_6233.jpg
+coverAlt: "Das Buch „Basiswissen Usability und User Experience“ mit grünem Einband auf violettem Untergrund"
 seo:
   image: ./img_6233.jpg
 aliases: ["/posts/basiswissen-usability-und-user-experience/"]

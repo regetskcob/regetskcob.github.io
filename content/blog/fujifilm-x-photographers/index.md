@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 cover: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
+coverAlt: "Schwarzweißbild: Der Bildband „FUJIFILM X-Photographers“ mit drei Porträts auf dem Umschlag, über einer Landschaft in die Höhe gehalten"
 seo:
   image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 aliases: ["/posts/fujifilm-x-photpgraphers/", "/blog/fujifilm-x-photpgraphers/"]

@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./dscf8828.jpeg
 cover: ./dscf8828.jpeg
+coverAlt: "Das Buch „Collaborative UX Design“, vor blauem Himmel über den Dächern einer Siedlung in die Höhe gehalten"
 seo:
   image: ./dscf8828.jpeg
 aliases: ["/posts/collaborative-ux-design/"]

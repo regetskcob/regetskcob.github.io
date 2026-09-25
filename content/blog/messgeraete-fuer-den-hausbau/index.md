@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_3134.jpg
 cover: ./img_3134.jpg
+coverAlt: "Ein Spannungsprüfer mit leuchtenden Anzeigen an einer Klemme im Verteilerkasten, dahinter KNX-Aktoren"
 seo:
   image: ./img_3134.jpg
 aliases: ["/posts/messgeraete-fuer-den-hausbau/"]

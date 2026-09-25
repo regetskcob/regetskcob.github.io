@@ -14,6 +14,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./bildschirmfoto-2022-11-11-um-21.40.32.png
 cover: ./bildschirmfoto-2022-11-11-um-21.40.32.png
+coverAlt: "Der Titelschriftzug „C in a Nutshell“ mit dem Zusatz „The Definitive Reference“ in Weiß auf violettem Grund"
 seo:
   image: ./bildschirmfoto-2022-11-11-um-21.40.32.png
 aliases: ["/posts/c-in-a-nutshell/"]
