@@ -9,7 +9,7 @@
 #   description   A short line or two under the heading.
 #   image / alt   A photo under the list; the file lives in assets/gear/.
 #   beside        true places the block next to the one before it, two
-#                 columns on wider screens, photos aligned at the bottom.
+#                 columns on wider screens, photos right under the headings.
 #
 # Per entry:
 #   name    Required. The label as it appears in the row.
@@ -62,16 +62,12 @@ groups:
       - name: "Diverse Stative von 20 bis 150 cm"
         note: "SmallRig, C-Rope, Joby und K&F, je nachdem wie weit der Weg ist."
 
-  - title: "Tasche und Kleinkram"
+  - title: "Rucksack"
     image: "rucksack.jpg"
     alt: "Der Fotorucksack steht im Gegenlicht auf einer nassen Wiese, seitlich das Stativ angeschnallt, dahinter Nebel über den Feldern und die aufgehende Sonne"
     items:
       - name: "Lowepro Whistler BP 450 AW II"
         note: "Wasserfest, robust und vielseitig. Es passt wörtlich alles rein, auch das Stativ seitlich."
-      - name: "Calibrite ColorChecker Passport Photo 2"
-        note: "Meine erste Graukarte nach 20 Jahren Fotografie."
-      - name: "Leica Sofort 2"
-        note: "Nutze ich fast nur als Sofortdrucker, wenn jemand ein Bild mitnehmen soll."
 
   - title: "Immer dabei"
     beside: true
@@ -79,6 +75,7 @@ groups:
     image: "immer-dabei.jpg"
     alt: "Geöffnete Organizer-Tasche auf einer Holzplatte: Powerbank, Ladegerät, Travelrouter, Netzwerkadapter und aufgerollte Kabel in den Fächern, dazu eine Taschenlampe, ein rotes Taschenmesser, ein Multitool im Netzbeutel und Stifte unter einem Gummiband"
     items:
+      - name: "tomtoc Tech-Tasche"
       - name: "Ladegerät und Powerbank"
       - name: "Ladekabel jeder erdenklichen Art und diverse Adapter"
       - name: "UniFi Travel Router"
@@ -97,3 +94,10 @@ groups:
         note: "Verwaltung. Läuft über alle Geräte hinweg, ohne dass ich etwas dafür tun muss."
       - name: "Photomator"
         note: "Bearbeitung. Bewusst kein Adobe-Abo, weil ich das für ein Hobby nicht ausgeben will."
+
+  - title: "Hilfsmittel"
+    items:
+      - name: "Calibrite ColorChecker Passport Photo 2"
+        note: "Meine erste Graukarte nach 20 Jahren Fotografie."
+      - name: "Leica Sofort 2"
+        note: "Nutze ich fast nur als Sofortdrucker, wenn jemand ein Bild mitnehmen soll."

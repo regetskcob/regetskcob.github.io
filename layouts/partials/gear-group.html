@@ -1,13 +1,19 @@
 {{/*
   One block of the gear page (data/gear.yaml): heading, description, list and
-  an optional photo from assets/gear/. Takes a dict with "g" (the block) and
-  "page" (the gear page, for the image rights in the structured data).
+  an optional photo from assets/gear/. Takes a dict with "g" (the block),
+  "page" (the gear page, for the image rights in the structured data) and
+  "inRow" (true when gear.html pairs the block with another one).
+
+  A block on its own ends with its photo. A block in a row shows it right
+  under the heading instead, so both photos of the pair start on one line
+  and lead into their lists.
 */}}
 {{- $g := .g }}
-{{- $page := .page }}
+{{- $photo := dict "g" $g "page" .page }}
 {{- with $g.items }}
   <section class="gear-group">
     {{- with $g.title }}<h2>{{ . }}</h2>{{ end }}
+    {{- if $.inRow }}{{ partial "inline/gear-photo.html" $photo }}{{ end }}
     {{- with $g.description }}<p class="gear-description">{{ . }}</p>{{ end }}
 
     <ul class="gear-list">
@@ -20,22 +26,25 @@
       </li>
       {{- end }}
     </ul>
+    {{- if not $.inRow }}{{ partial "inline/gear-photo.html" $photo }}{{ end }}
+  </section>
+{{- end }}
 
-    {{/* Optional photo for the block, file under assets/gear/. */}}
-    {{- with $g.image }}
-      {{- with $gimg := resources.Get (printf "gear/%s" .) }}
-        {{/* Portrait shots get their own class because at full text width they
+{{- define "partials/inline/gear-photo.html" }}
+  {{- /* Optional photo for the block, file under assets/gear/. */}}
+  {{- with .g.image }}
+    {{- with $gimg := resources.Get (printf "gear/%s" .) }}
+      {{- /* Portrait shots get their own class because at full text width they
              would fill half the screen. The CSS caps them at 420px, and sizes
              has to say the same or the browser fetches a needlessly large file. */}}
-        {{- $portrait := gt $gimg.Height $gimg.Width }}
+      {{- $portrait := gt $gimg.Height $gimg.Width }}
     <figure class="gear-group-photo{{ if $portrait }} gear-group-photo-portrait{{ end }}">
       {{ partial "responsive-img.html" (dict
            "img" $gimg
-           "alt" $g.alt
+           "alt" $.g.alt
            "sizes" (cond $portrait "(max-width: 420px) 100vw, 420px" "(max-width: 780px) 100vw, 780px")
-           "page" $page) }}
+           "page" $.page) }}
     </figure>
-      {{- end }}
     {{- end }}
-  </section>
+  {{- end }}
 {{- end }}

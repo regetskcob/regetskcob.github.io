@@ -27,15 +27,17 @@
 
   {{/* Blocks in file order. A block with "beside: true" joins the one before
        it in a row of two columns on wider screens (see custom.css); on
-       phones the row stacks like any other blocks. Meant for pairs. */}}
+       phones the row stacks like any other blocks. Meant for pairs. Blocks
+       in a row show their photo right under the heading. */}}
   {{- $groups := site.Data.gear.groups }}
   {{- range $i, $g := $groups }}
     {{- $next := dict }}
     {{- if lt (add $i 1) (len $groups) }}{{ $next = index $groups (add $i 1) }}{{ end }}
-    {{- if and (not $g.beside) $next.beside }}
+    {{- $opens := and (not $g.beside) $next.beside }}
+    {{- if $opens }}
   <div class="gear-row">
     {{- end }}
-    {{- partial "gear-group.html" (dict "g" $g "page" $) }}
+    {{- partial "gear-group.html" (dict "g" $g "page" $ "inRow" (or $opens (and $g.beside (gt $i 0)))) }}
     {{- if and $g.beside (gt $i 0) }}
   </div>
     {{- end }}
