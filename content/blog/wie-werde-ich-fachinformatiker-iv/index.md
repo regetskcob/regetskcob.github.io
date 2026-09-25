@@ -74,7 +74,7 @@ Besonders beliebt sind hier die Themengebiete Projektmanagement, Rechnungswesen 
 
 Aber selbst aufgeben wie die folgende könnten euch über den Weg laufen:
 
-![‍ | Wie werde ich Fachinformatiker - IV](./img_1575.jpg)
+![Tabelle zur Aufgabe. 2012: 1.300 Kunden gesamt, davon Note 1: 78, Note 2: 234, Note 3: 468, Note 4: 312, Note 5: 156, Note 6: 52. 2013: 1.700 Kunden gesamt, davon Note 1: 110, Note 2: 332, Note 3: 663, Note 4: 357, Note 5: 179, Note 6: 59.](./img_1575.jpg)
 
 **Aufgabe** Ermitteln Sie, um viel Prozent die Anzahl der Kunden 2013 im Vergleich zum Vorjahr gestiegen ist, die mindestens die Note 3 vergeben hat.
 

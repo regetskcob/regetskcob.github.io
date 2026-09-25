@@ -22,7 +22,7 @@ aliases: ["/posts/node-red-das-umfassende-handbuch/"]
 
 ---
 
-Bereits zuvor habe ich [hier](https://regetskcob.github.io/rezensionen/messwert-visualisierung-mit-nodered-influxdb-und-grafana-i/) etwas zu Node-RED geschrieben, um KNX Telegramme in eine InfluxDB zu überführen und per Grafana zu visualisieren. Heute soll‘s um das umfassende Handbuch von Udo Brandes und dem Rheinwerk Verlag gehen.
+Bereits zuvor habe ich [hier](/blog/i-messwert-visualisierung-mit-nodered-influxdb-und-grafana/) etwas zu Node-RED geschrieben, um KNX Telegramme in eine InfluxDB zu überführen und per Grafana zu visualisieren. Heute soll‘s um das umfassende Handbuch von Udo Brandes und dem Rheinwerk Verlag gehen.
 
 * * *
 

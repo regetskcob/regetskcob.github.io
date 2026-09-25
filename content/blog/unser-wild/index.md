@@ -22,7 +22,7 @@ aliases: ["/posts/unser-wild/"]
 
 Unter anderem einleitenden Worte findet [Sepp Forcher](https://de.wikipedia.org/wiki/Sepp_Forcher) im Vorwort zum Buch und bringt damit meine Gedanken zu diesem Werk auf den Punkt.
 
-![Unser Wild](./IMG_4458.jpeg)
+![Buchseite aus Unser Wild auf grünem Papier: das Geleitwort von Sepp Forcher](./IMG_4458.jpeg)
 
 Dieses grandiose Buch bestehend aus Texten von [Werner Meisinger](https://www.beneventopublishing.com/benevento/autor/meisinger-werner/), Fotografien von [Christoph Burgstaller](https://www.instagram.com/christophburgstaller/), Umschlaggestaltung, Layout und Satz von [Melanie Kraxner](https://www.melaniekraxner.com/projekte/unserwild) und Illustrationen von [Stefanie Hödlmoser](https://stefaniehoedlmoser.com/) transformiert diese Bausteine in ein wirklich einzigartiges Produkt. 
 
@@ -34,11 +34,11 @@ Das Buch ist nach einem sehr klar strukturierten Schema aufgebaut. Nachdem die e
 
 Diese Wildtierkunde-Kapitel sind immer ähnlich aufgebaut. Das Kapitel wird von einer ansprechenden, minimalistisch gestalteten Illustration, dem Titel und einigen prägnanten Fotografischen oder Tierkundlichen Highlights eingeleitet. Darauf folgt ein Portrait in Schwarzweiß sowie ein Steckbrief. Daran schließen dann wissenswerte Informationen in Texten sowie Aufnahmen aus der freien Wildbahn an, um einen Eindruck von Habitat und Habitus zu bekommen.
 
-![Unser Wild](./IMG_4459.jpeg)
+![Aufgeschlagenes Buch am Kapitelbeginn Rotwild, links ein gezeichneter röhrender Hirsch, rechts eine grüne Seite mit Einleitungstext](./IMG_4459.jpeg)
 
-![Unser Wild](./IMG_4460.jpeg)
+![Doppelseite mit Porträt und Steckbrief: Schwarzweißfoto eines Rothirschs im Schnee, daneben Geweihzeichnung und Verbreitungskarte](./IMG_4460.jpeg)
 
-![Unser Wild](./IMG_4461.jpeg)
+![Doppelseite Rotwild in Bildern: Rothirsche an einem blühenden Hang](./IMG_4461.jpeg)
 
 Im Schlusswort geht Fotograf und Berufsjäger Christoph Burgstaller nochmal sehr intensiv darauf ein, wie die Fotografie als „Jagd auf ein Bild“ und die Jagd als solche zusammen in Einklang spielen, wie beiden voneinander profitieren kann. Und er appelliert an die gesamte Gesellschaft, die Augen vor dem Wandel in unseren Wildtier-Populationen nicht zu verschließen. 
 

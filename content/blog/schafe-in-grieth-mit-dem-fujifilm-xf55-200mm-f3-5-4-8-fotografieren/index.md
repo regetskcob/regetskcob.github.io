@@ -22,4 +22,4 @@ aliases: ["/posts/schafe-in-grieth-mit-dem-fujifilm-xf55-200mm-f3-5-4-8-fotograf
 
 Dennoch hatte ich Glück und konnte an einer Wiese relativ nah an eine Schafherde heran, wollte allerdings auch nicht zu weit auf die Wiese laufen, um zu vermeiden das Gras unnötig platt zu treten oder die Schafe aufzuscheuchen.
 
-![Schafe in Grieth mit dem FUJIFILM XF55-200mm f3.5-4.8 fotografieren](./dscf2746.jpg)![Schafe in Grieth mit dem FUJIFILM XF55-200mm f3.5-4.8 fotografieren](./dscf2742.jpg)
+![Schafherde grast auf dem Deich bei Grieth im warmen Abendlicht, vorne ein Weidezaun](./dscf2746.jpg)![Schafe verteilt auf dem grünen Deichhang in der Abendsonne, dahinter blassblauer Himmel](./dscf2742.jpg)

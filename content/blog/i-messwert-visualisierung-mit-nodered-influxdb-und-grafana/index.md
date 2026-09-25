@@ -31,7 +31,7 @@ Vorbereitend für die nachfolgenden Schritte müssen wir eine SD Karte für den 
 
 Ich hatte hier früher den balenaEtcher im Einsatz, doch durch das direkte Treffen der nötigen Einstellungen, gerade jetzt wo es den pi-Defaultuser nicht mehr gibt, ist der Imager direkt für den Raspberry das bessere Werkzeug.
 
-![I: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-09-18-um-15.34.14.png)![I: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-09-18-um-15.34.10.png)![I: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-09-18-um-15.35.26.png)![I: Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana](./bildschirmfoto-2022-09-18-um-15.35.42.png)
+![Startbildschirm des Raspberry Pi Imager 1.7.3 mit ausgewähltem Raspberry Pi OS Lite (64-Bit)](./bildschirmfoto-2022-09-18-um-15.34.14.png)![Betriebssystem-Auswahl im Raspberry Pi Imager, Raspberry Pi OS Lite (64-Bit) ist markiert](./bildschirmfoto-2022-09-18-um-15.34.10.png)![Erweiterte Optionen im Raspberry Pi Imager: Hostname grafana.local, SSH aktiviert mit Passwort-Authentifizierung](./bildschirmfoto-2022-09-18-um-15.35.26.png)![Erweiterte Optionen im Raspberry Pi Imager: Benutzername grafana mit Passwort, WLAN-Einrichtung mit SSID und Passwort](./bildschirmfoto-2022-09-18-um-15.35.42.png)
 
 Mit diesem Setup ist die SD Karte, erst im Raspberry Pi eingesetzt, sofort einsatzfähig. Nach dem ersten Start solltet ihr direkt erstmal die Pakete aktualisieren und ein Upgrade durchführen.
     
@@ -107,4 +107,4 @@ Ihr erreicht eure Grafana-Installation `http://<ipaddresse>:3000`.
 * * *
 
 **Fortsetzung!**  
-Den zweiten Teil der Anleitung findet ihr [hier](https://regetskcob.github.io/rezensionen/messwert-visualisierung-mit-nodered-influxdb-und-grafana-ii/).
+Den zweiten Teil der Anleitung findet ihr [hier](/blog/ii-messwert-visualisierung-mit-nodered-influxdb-und-grafana/).

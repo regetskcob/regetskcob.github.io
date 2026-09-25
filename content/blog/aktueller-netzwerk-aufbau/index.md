@@ -44,7 +44,7 @@ In den letzten zwei Jahren sieht sich kaum etwas in unserem Haus mehr Veränderu
   * Die Daten unserer Heizung (Luft-Wärme-Pumpe mit Solarthemrie-Unterstützung) sollen per Modbus ausgelesen und visualisiert werden.
   * Aktuell hat unser Haus nur eine Tag-/Nacht-Umschaltung. Ich werde über den Winterurlaub auch eine Sommer-/Winter-Umschaltung implementieren, um abhängig davon Zeitschaltungen und Automationen steuern zu können.
 
-![‍ | Aktueller Netzwerk-Aufbau](./IMG_3634.jpeg)
+![Aufgegrabene Baugrube, im Erdreich liegen ein blaues und ein oranges Leerrohr, darüber ein loses weißes Kabel](./IMG_3634.jpeg)
 
 #### Deutsche Glasfaser - 3 Wochen Ausfall, weil sich keiner kümmert.
 

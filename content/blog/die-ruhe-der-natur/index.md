@@ -23,6 +23,6 @@ Insbesondere der Blick nach oben eröffnet immer wieder einen neuen Blickwinkel.
 
 Im Hochwald sitze ich häufig hier auf dem Stamm, mit Blick in die Weite der Naturwaldzelle.
 
-![Die Ruhe der Natur](./img_4636.jpg)__Bitte entschuldigt die Bildqualität. Selbst schuld, wer hier das iPhone statt der eingepackten X-T30 von FUJI nimmt.__
+![Herbstlicher Buchenwald im Uedemer Hochwald, der Boden ist mit rotbraunem Laub bedeckt, vorne ein liegender Baumstamm mit abgestelltem Rucksack](./img_4636.jpg)__Bitte entschuldigt die Bildqualität. Selbst schuld, wer hier das iPhone statt der eingepackten X-T30 von FUJI nimmt.__
 
 Was ich immer wieder merke, es hilft, die Kamera nicht zu sehr zu verstecken. Künftig möchte ich hier mehr drauf achten, mit bedacht, aber fokussiert, zur DSLR Kamera zu greifen, statt einfach nur mit dem iPhone zu knipsen.
