@@ -3,7 +3,10 @@
   hard-coded English strings translated: the reading time and the table of
   contents heading. The theme has no i18n files. A post written in another
   language than the site sets "inLanguage" in front matter, which becomes the
-  lang of the article. Diff against the theme file when updating typo.
+  lang of the article. The tags sit inside the header, and posts
+  (not pages like Über) mark it .post-intro, so the grey card in custom.css
+  holds title, summary, date and tags together.
+  Diff against the theme file when updating typo.
 */}}
 {{ define "main" }}
 
@@ -15,7 +18,7 @@
 
 <div {{ if .Param "autonumber" }} class="autonumber" {{ end }}>
   <article{{ with .Params.inLanguage }} lang="{{ . }}"{{ end }}>
-    <header class="single-intro-container">
+    <header class="single-intro-container{{ if and .IsPage (eq .Section "blog") }} post-intro{{ end }}">
         {{- /* Title and Summary */}}
         
         <h1 class="single-title">{{ .Title }}</h1>
@@ -48,23 +51,23 @@
           </div>
         </div>
         {{- end}}
-        
+
+        {{- if .Param "showTags" }}
+          {{- $taxonomy := "tags" }}
+          {{- with .Param $taxonomy }}    
+            <div class="single-tags">
+                {{- range $index, $tag := . }}
+                {{- with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                    <span>
+                      <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+                    </span>
+                {{- end }}
+                {{- end }}
+            </div>
+          {{- end }}
+        {{- end }}
     </header>
     
-    {{- if .Param "showTags" }}
-      {{- $taxonomy := "tags" }}
-      {{- with .Param $taxonomy }}    
-        <div class="single-tags">
-            {{- range $index, $tag := . }}
-            {{- with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                <span>
-                  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
-                </span>
-            {{- end }}
-            {{- end }}
-        </div>
-      {{- end }}
-    {{- end }}
     
     {{- /* Table of Contents */}}
     

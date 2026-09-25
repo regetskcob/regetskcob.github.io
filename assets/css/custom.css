@@ -51,6 +51,41 @@
   margin: 0.15rem 0 0.9rem;
 }
 
+/* --- Post header ---
+   In posts, title, summary, author, date and tags sit on a light grey
+   card, set off from the article text below. Pages like Über keep the
+   plain header. The grey is the theme's code background,
+   so it follows light and dark mode like the code blocks do. */
+
+.post-intro {
+  background: var(--code-background);
+  border: 1px solid var(--code-border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Balanced lines instead of a lone last word ("Teil / I"). */
+.post-intro .single-title {
+  margin-top: 0;
+  text-wrap: balance;
+}
+
+.post-intro > :last-child {
+  margin-bottom: 0;
+}
+
+.post-intro .single-tags {
+  margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 640px) {
+  .post-intro {
+    padding: 1rem 1.1rem;
+  }
+}
+
 /* --- Post list thumbnails ---
    A column on the left holds the cover image in 4:3, then the title.
    Posts without a cover keep the column empty, so the titles line up in
