@@ -53,11 +53,13 @@ Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür
 
 
 # Footer, replacing the theme's English credit line. The legal page moved out
-# of the main menu and is linked here, where people look for it. The trailing
-# backslash is a markdown line break: the credit line goes below the links.
+# of the main menu and is linked here, where people look for it, together with
+# the image rights and the copyright line. The trailing backslashes are
+# markdown line breaks: one line each.
 # A literal string ('''), so TOML leaves the backslash alone.
 footerContent = '''
-[Impressum](/legal/#impressum) · [Datenschutz](/legal/#datenschutzerklärung)\
+[Impressum](/legal/#impressum) · [Datenschutz](/legal/#datenschutzerklärung) · [Bildrechte](/legal/#bildrechte)\
+© Daniel Bocksteger, alle Rechte vorbehalten\
 Mit ❤️ am Niederrhein gebaut mit [Hugo](https://gohugo.io) und [typo](https://github.com/tomfran/typo)
 '''
 

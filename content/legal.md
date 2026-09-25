@@ -56,9 +56,15 @@ Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf dies
 
 Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
 
-### Urheberrecht
+## Bildrechte {#bildrechte}
 
-Die von mir erstellten Inhalte und Werke auf diesen Seiten, insbesondere die Fotografien, unterliegen dem deutschen Urheberrecht. Eine Vervielfältigung, Bearbeitung oder Verbreitung außerhalb der Grenzen des Urheberrechts bedarf meiner schriftlichen Zustimmung.
+Alle Fotos und Texte auf dieser Seite sind von mir, sofern nicht anders angegeben, und unterliegen dem deutschen Urheberrecht. Ohne meine vorherige schriftliche Zustimmung dürfen sie weder kopiert noch bearbeitet, veröffentlicht oder weitergegeben werden. Das gilt auch für Ausschnitte und für soziale Netzwerke.
+
+Möchtest du ein Foto verwenden, schreib mir gerne an die im Impressum genannte E-Mail-Adresse. Nenn mir kurz das Bild und wofür du es nutzen möchtest, dann klären wir alles Weitere.
+
+### Nutzungsvorbehalt für Text und Data Mining
+
+Die Nutzung der Inhalte dieser Seite für Text und Data Mining behalte ich mir nach § 44b Abs. 3 UrhG ausdrücklich vor. Das automatisierte Auslesen, um Inhalte auszuwerten oder damit KI-Modelle zu trainieren, ist ohne meine Zustimmung nicht gestattet. Der Vorbehalt ist zusätzlich maschinenlesbar hinterlegt, in der robots.txt und in den Metadaten jeder Seite.
 
 [1]:	https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection "GitHub Pages"
 [2]:	https://umami.is/privacy "Umami"
