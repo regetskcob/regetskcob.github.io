@@ -18,7 +18,7 @@ E-Mail: regetskcob@icloud.com
 
 Verantwortlich für den Inhalt nach § 18 Abs. 2 Medienstaatsvertrag (MStV): Daniel Bocksteger, Anschrift wie oben.
 
-## Datenschutzerklärung
+## Datenschutz&shy;erklärung {#datenschutzerklärung}
 
 ### Verantwortlicher
 

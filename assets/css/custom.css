@@ -26,6 +26,20 @@
   font-size: var(--h2-font-size);
 }
 
+/* On phones, a long word in a heading is wider than the column and was
+   broken at the last letter that fit: "Datenschutzerkläru / ng",
+   "OpenAstroTracke / r", "PHOTOGRAPHER / S". Hyphenation splits it at a
+   syllable instead; the page is lang="de-DE", so the browser uses German
+   rules. Short words stay whole. Where the syllable is not the best break,
+   a soft hyphen in the heading picks it (see content/legal.md). */
+@media screen and (max-width: 640px) {
+  h1, h2, h3, h4 {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphenate-limit-chars: 10 4 4;
+  }
+}
+
 /* Tagline under the site name: serif like the name, quieter than the menu.
    Sized in em like .header-title (2.6em), so both lines keep the same width
    at any base size: 0.768em makes the tagline as wide as "regetskcob".
