@@ -4,7 +4,7 @@
   contents heading. The theme has no i18n files. A post written in another
   language than the site sets "inLanguage" in front matter, which becomes the
   lang of the article. The author line is left out, there is one author,
-  and pages like Über show no date.
+  and pages like Über show neither a date nor the previous/next links.
   The tags sit inside the header, and posts (not pages like Über) mark it
   .post-intro, so the grey card in custom.css holds title, summary, date
   and tags together.
@@ -110,7 +110,9 @@
 
   {{/* Next prev controls */}}
 
-  {{ if not (.Param "hidePagination") }}
+  {{/* Previous/next post, in posts only: between pages like Über and the
+       Impressum it pointed at arbitrary neighbours ("Rechtliches"). */}}
+  {{ if and $isPost (not (.Param "hidePagination")) }}
   {{ partial "pagination-single.html" . }}
   {{ end }}
 
