@@ -72,7 +72,6 @@ hideBackToTop = true
 # canonical link of /blog/, so search engines treated it as a duplicate.
 paginationSize = 100
 listSummaries = true
-listDateFormat = "02.01.2006"
 singleDateFormat = ":date_long"
 
 

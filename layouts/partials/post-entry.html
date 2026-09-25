@@ -2,7 +2,9 @@
   Copy of themes/typo/layouts/partials/post-entry.html (theme v3.0.2) with a
   thumbnail column on the left for posts that name an image in front matter
   (cover, or featured_image from the Ghost export). Posts without one get an
-  empty slot of the same width, so dates and titles line up in every row.
+  empty slot of the same width, so the titles line up in every row. The
+  theme's date column is left out: the date stands in the post itself, and
+  in the list it took width from the titles.
   Only an explicitly chosen image is used: the first image of a bundle can
   be anything, a table or a screenshot.
 
@@ -32,12 +34,6 @@
     {{- else }}
     <span class="line-thumb" aria-hidden="true"></span>
     {{- end }}
-
-    {{ $dateFormat := .Site.Params.listDateFormat | default "2 Jan 2006" }}
-
-    {{ if .Parent.Param "showListDate" | default true }}
-        <p class="line-date">{{ .Date | time.Format $dateFormat }} </p>
-    {{ end }}
 
     <div class="line-text">
         <p class="line-title">

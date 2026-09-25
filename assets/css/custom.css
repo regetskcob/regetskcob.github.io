@@ -52,9 +52,9 @@
 }
 
 /* --- Post list thumbnails ---
-   A column on the left holds the cover image in 4:3, then date and title
-   as before. Posts without a cover keep the column empty, so dates and
-   titles line up in every row. On phones the thumbnail is smaller. */
+   A column on the left holds the cover image in 4:3, then the title.
+   Posts without a cover keep the column empty, so the titles line up in
+   every row. On phones the thumbnail is smaller. */
 
 .post-line .line-text {
   flex: 1;
@@ -65,7 +65,7 @@
   flex: none;
   align-self: flex-start;
   width: 120px;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   border: none;
 }
 
@@ -84,12 +84,6 @@
 @media screen and (max-width: 640px) {
   .post-line {
     margin-bottom: 1.25rem;
-  }
-
-  /* The date column took a third of the width and squeezed the title;
-     on phones the list goes without it. */
-  .post-line .line-date {
-    display: none;
   }
 
   .line-thumb {
