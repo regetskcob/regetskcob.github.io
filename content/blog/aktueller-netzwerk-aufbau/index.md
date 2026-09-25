@@ -18,7 +18,7 @@ cover: ./IMG_3831.jpeg
 seo:
   image: ./IMG_3831.jpeg
 aliases: ["/posts/aktueller-netzwerk-aufbau/"]
-
+tags: ["Smarthome"]
 ---
 
 In den letzten zwei Jahren sieht sich kaum etwas in unserem Haus mehr Veränderung ausgesetzt als der Netzwerkschrank. Inzwischen haben wir einen Stand erreicht, der alle alltäglichen Anforderungen abdeckt, ein paar Reserven für künftige Veränderungen bietet und trotzdem alle Anwendungen sparsam unterbringt.
@@ -46,7 +46,7 @@ In den letzten zwei Jahren sieht sich kaum etwas in unserem Haus mehr Veränderu
 
 ![Aufgegrabene Baugrube, im Erdreich liegen ein blaues und ein oranges Leerrohr, darüber ein loses weißes Kabel](./IMG_3634.jpeg)
 
-#### Deutsche Glasfaser - 3 Wochen Ausfall, weil sich keiner kümmert.
+### Deutsche Glasfaser - 3 Wochen Ausfall, weil sich keiner kümmert.
 
   * Vor etwa 2,5 Jahren wurde unser Glasfaser-Anschluss hergestellt. Das beauftragte Subunternehmen konnte das eigentliche Leerrohr nich finden und hat die 0,5cm Schutzrohre vom Verteilerpunkt zur Mehrsparteneinführung durchgeschossen.
   * Am 12.11. wurde durch ein Fremdunternehmen dieser sowie der benachbarte Glasfaser-Anschluss mit einem Bagger gekappt 

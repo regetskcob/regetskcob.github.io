@@ -19,7 +19,7 @@ cover: ./IMG_4275.jpeg
 seo:
   image: ./IMG_4275.jpeg
 aliases: ["/posts/raspberry-pi-das-umfassende-handbuch/"]
-
+tags: ["Bücher", "Smarthome"]
 ---
 
 Für mich macht das Buch einzigartig, dass es quasi von der Geburtsstunde des Raspberry Pi, über das Betriebssystem, an den diversen Software Paketen und möglichen Programmiersprachen vorbei, letzten Endes diverse Elektrotechnik- und Software-Bastelprojekte behandelt.
@@ -34,7 +34,7 @@ Als Zielgruppe des Buches würde ich jeden definieren, der sich vorstellen kann 
 
 Der Umfang des Buches macht eines bereits von Außen - aber auch immer wieder im Text - klar. Den Projekten, die ihr mit dem Pi umsetzt, sind nahezu keine Grenzen gesetzt. Am Ende kratzt selbst dieses umfangreiche Werk mehr oder minder nur an der Oberfläche der Möglichkeiten, um euch diese Welt zu eröffnen, euch zu motivieren selbst loszulegen.
 
-### Webseite zum Buch
+## Webseite zum Buch
 
 [Hier](https://pi-buch.info/) findet ihr den Blog der Autoren, die aktiv das Geschehen rund um den Raspberry Pi begleiten, zu Auflagen informieren und Unmengen an zusätzlichem Wissen liefern.
 
@@ -44,7 +44,7 @@ Ich besaß das Buch vor einigen Jahren bereits in einer der ersten Auflagen, sei
 
 So zu sehen in beigefügtem Auszug vom Blog-Artikel der Autoren zur neuen Auflage. (8. Auflage, Stand April 2024)
 
-#### ****Highlights der 8. Auflage****
+### Highlights der 8. Auflage
 
   * aktualisiert im Hinblick auf die neuen Modelle Raspberry Pi 5, Raspberry Pi Zero 2 und Raspberry Pico W
   * berücksichtigt Raspberry Pi OS »Bookworm«

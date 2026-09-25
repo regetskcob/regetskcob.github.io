@@ -8,10 +8,8 @@ draft: false
 readTime: true
 autonumber: false
 math: false
-tags: ["SmartHome", "Heimautomatisierung", "DIY", "Eigenheim"]
-showTags: true
 aliases: ["/posts/der-grosse-gartenplaner/"]
-
+tags: ["Bücher", "Natur"]
 ---
 
 Letzteres besonders, um geplante Projekte so lange zu verbessern, bis sowohl Plan als auch Umsetzung den eigenen Ansprüchen genügen.

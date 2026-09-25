@@ -20,7 +20,7 @@ cover: ./IMG_4480.jpeg
 seo:
   image: ./IMG_4480.jpeg
 aliases: ["/posts/home-assistant-das-umfassende-handbuch/"]
-
+tags: ["Bücher", "Smarthome"]
 ---
 
 Auf 626 Seiten führt Brandes den Leser von den Grundlagen bis hin zu fortgeschrittenen Themen der Heimautomation. Das Buch beginnt mit der Einrichtung und dem ersten Start von Home Assistant, wobei das Webinterface ausführlich erläutert wird. Anschließend werden die Administration, die Integration von Geräten, Diensten und Entitäten sowie die Erstellung von Automatisierungen mit Szenen, Skripten und Vorlagen behandelt. Besonderes Augenmerk legt der Autor auf die Gestaltung von Dashboards, den sicheren externen Zugriff sowie die Einbindung von Medien- und Sprachdiensten. Neu in dieser Auflage sind ein Ausblick auf den Matter-Standard zur Heimautomation und die Einrichtung einer Home-Assistant-Installation auf Proxmox.

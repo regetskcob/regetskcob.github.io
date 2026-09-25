@@ -13,7 +13,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 aliases: ["/posts/zentraler-wohnhaus-alarm-mit-knx/"]
-
+tags: ["Smarthome"]
 ---
 
 In manch vorigem Artikel war es bereits Thema, wir haben erst kürzlich unser Einfamilienhaus mit KNX bezogen, seit dem ist das Bus-System das "Dauerbrenner-Projekt" bei mir.

@@ -17,14 +17,14 @@ cover: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 seo:
   image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 aliases: ["/posts/fujifilm-x-photpgraphers/", "/blog/fujifilm-x-photpgraphers/"]
-
+tags: ["Bücher", "Fotografie"]
 ---
 
 Beim stöbern durch den [Blog von Martin Hülle](http://www.martin-huelle.de/shop/fujifilm-x-photographers) bin ich auf folgende [Unterseite](http://www.martin-huelle.de/shop/fujifilm-x-photographers) gestolpert, ob der man das Buch _FUJIFILM X-PHOTOGRAPHERS_ kaufen konnte.
 
 Dabei handelt es sich um einen Bildband kombiniert mit einer Sammlung aus Abenteuern, Geschichten aus dem Arbeitsalltag der Fotografen und detailreichen Einblicken in das Equipment, mit dem die Profis arbeiten.
 
-### Kapitel
+## Kapitel
 
 Das Buch ist auf sechs Kapitel aufgeteilt und begleitet sechs Fotografen mit dem (GF)X-System von FUJIFILM bei ihrer Arbeit und auf ihren Abenteuern.
 
@@ -35,7 +35,7 @@ Das Buch ist auf sechs Kapitel aufgeteilt und begleitet sechs Fotografen mit dem
   * **V. Bertram Solcher** Blick hinter die Kulissen im Klinkalltag | [Instagram](https://www.instagram.com/bertramsolcher/)
   * **VI. Christian Ahrens** Die Kunst der Corporate-Fotografie | [Instagram](https://www.instagram.com/industriefotograf_c.ahrens/)
 
-### Gesamteindruck
+## Gesamteindruck
 
 Der Bildband von den sechs Fotografen ist in vielerlei Hinsicht eine tolle Ergänzung für mich als Hobby Fotografen, denn das Buch zeigt Profis beim Einsatz der Werkzeuge, die ich selbst einsetze. Es werden Vor- und Nachteile von Herangehensweisen und der Technik aufgeführt, Einsatzgebiete für bestimmte Objektive erläutert und die eine oder andere Kamera in ihren Reglern und Knöpfen im Detail erklärt.
 

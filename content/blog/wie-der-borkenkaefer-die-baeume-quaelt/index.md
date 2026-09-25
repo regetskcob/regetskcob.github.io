@@ -14,7 +14,7 @@ cover: ./dscf2510.jpg
 seo:
   image: ./dscf2510.jpg
 aliases: ["/posts/wie-der-borkenkaefer-die-baeume-quaelt/"]
-
+tags: ["Natur", "Fotografie"]
 ---
 
 Wenn man aktuell durch die Wälder spaziert und sich die Polter am Wegesrand genau ansieht, findet man häufig Bilder wie diese vor.

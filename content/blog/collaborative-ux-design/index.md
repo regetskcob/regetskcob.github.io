@@ -17,7 +17,7 @@ cover: ./dscf8828.jpeg
 seo:
   image: ./dscf8828.jpeg
 aliases: ["/posts/collaborative-ux-design/"]
-
+tags: ["Bücher", "Softwareentwicklung"]
 ---
 
 Jeder kennt die Abläufe in kleineren Software-Unternehmen. Jemand - zumeist der Chef oder ein Kunde - hat eine Idee oder eine Anforderung und die Entwickler setzen das um, was gefordert wird.

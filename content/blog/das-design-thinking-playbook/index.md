@@ -17,7 +17,7 @@ cover: ./bildschirmfoto-2022-11-11-um-21.33.45.png
 seo:
   image: ./bildschirmfoto-2022-11-11-um-21.33.45.png
 aliases: ["/posts/das-design-thinking-playbook/"]
-
+tags: ["Bücher", "Arbeitswelt"]
 ---
 
 Mit traditionellen, aktuellen und zukünftigen Erfolgsfaktoren möchte euch „Das Design Thinking Playbook“ zur neuen großen Innovation begleiten und euch entsprechend den Weg dahin ebnen.

@@ -1,0 +1,21 @@
+{{/*
+  The tag overview (/tags/). The theme's list.html only renders tag lines
+  when the page is titled "Tags", so under the German "Schlagwörter" it fell
+  back to post lines, empty thumbnail column included. This lists the tags
+  most used first, each with its number of posts.
+*/}}
+{{ define "main" }}
+<div class="list-container">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <ul class="tag-overview">
+    {{- range .Data.Terms.ByCount }}
+    <li>
+      <a href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}</a>
+      <span class="tag-count">{{ .Count }} {{ cond (eq .Count 1) "Beitrag" "Beiträge" }}</span>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

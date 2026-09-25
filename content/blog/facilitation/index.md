@@ -17,7 +17,7 @@ cover: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 seo:
   image: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 aliases: ["/posts/facilitation/"]
-
+tags: ["Bücher", "Arbeitswelt"]
 ---
 
 Facilitation, Facilitator:in, Facilitative Leadership - All diese Begriffe hatte ich vor einiger Zeit nicht ein einziges Mal in 28 Jahren gehört. Zufällig stieß ich auf das Buch beim Vahlen Verlag und war schon vom Begleittext begeistert.

@@ -15,7 +15,7 @@ author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.
 seo:
   image: https://regetskcob.github.io/content/images/wp-content/uploads/2022/12/img_1575.jpg
 aliases: ["/posts/wie-werde-ich-fachinformatiker-iv/"]
-
+tags: ["Ausbildung"]
 ---
 
 _Nach den ersten 1,5 Jahren der Ausbildung zum Fachinformatiker wartet auf euch die sogenannte Zwischenprüfung. Mit diesem Artikel – dem vorletzten unserer Artikelserie – möchten wir euch die Angst nehmen, die so mancher Lehrer verbreitet und euch seelisch etwas besser auf die Prüfung vorbereiten._

@@ -15,7 +15,7 @@ cover: ./dscf2973.jpeg
 seo:
   image: ./dscf2973.jpeg
 aliases: ["/posts/freiheit-verantwortung-fuer-intelligente-organisationen/"]
-
+tags: ["Bücher", "Arbeitswelt"]
 ---
 
 Der Autor _Mark Lambertz_ schreibt in seinem Buch darüber, was es bedarf um lebensfähige Systeme zu erschaffen. Dabei geht er auf Unternehmensstrukturen, Kommunikationswege, Ressourcen und Puffer ein und betont zum Beispiel, dass ein Untennehmen **immer** Komplexität ‚verwaltet‘.

@@ -13,7 +13,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 aliases: ["/posts/wie-werde-ich-fachinformatiker-i/"]
-
+tags: ["Ausbildung"]
 ---
 
 Es mag Leser:innen geben, die mir schon länger folgen, die kennen die nun folgende Artikelreihe. Auf einem meiner alten Blogs gab es Sie bereits, nun habe ich Sie aus dem backup gekramt, auf Aktualität geprüft und werde sie in den kommenden Wochen hier veröffentlichen, um hoffentlich weiteren Schülern einen Eindruck von der Ausbildung zum Fachinformatiker zu vermitteln.

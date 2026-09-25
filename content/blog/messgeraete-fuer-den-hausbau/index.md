@@ -17,7 +17,7 @@ cover: ./img_3134.jpg
 seo:
   image: ./img_3134.jpg
 aliases: ["/posts/messgeraete-fuer-den-hausbau/"]
-
+tags: ["Smarthome"]
 ---
 
 Wie schon mehrfach thematisiert, wir haben in den Monaten zwischen Februar 2021 bis Juli 2022 überwiegend in Eigenleistung unser Eigenheim gebaut. Die Elektro-Installation (Smarthome mit KNX) habe ich zu großen Teilen in Eigenleistung (in fachkundiger Betreuung) geplant und umgesetzt.

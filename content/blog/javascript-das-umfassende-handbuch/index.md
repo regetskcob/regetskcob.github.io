@@ -18,7 +18,7 @@ cover: ./img_5225.jpg
 seo:
   image: ./img_5225.jpg
 aliases: ["/posts/javascript-das-umfassende-handbuch/"]
-
+tags: ["Bücher", "Softwareentwicklung"]
 ---
 
 Inhaltlich möchte ich garnicht viel beschrieben/sagen, ich denke jeder, der sich dieses Handbuch kauft, weiß was JavaScript ist und möchte lernen es einzusetzen. Exakt für diese Zielgruppe ist das Buch. Von der Geschichte JavaScripts über das Basiswissen bis hin zu diversen ergänzenden Komponenten, APIs und weiteren Kniffen erwartet euch hier der Rundumschlag über die Möglichkeiten der Sprache.

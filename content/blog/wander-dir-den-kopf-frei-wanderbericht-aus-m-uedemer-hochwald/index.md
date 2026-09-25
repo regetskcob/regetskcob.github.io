@@ -14,7 +14,7 @@ cover: ./dscf2292.jpg
 seo:
   image: ./dscf2292.jpg
 aliases: ["/posts/wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald/"]
-
+tags: ["Fotografie", "Natur"]
 ---
 
 Nach 20 Minuten Autofahrt ist man in einer neuen Welt. Sicherlich gibt es näher an Goch auch tolle Natur, in der man spazieren oder wandern könnte. Der Uedemer Hochwald hat es mir allerdings aufgrund der Dimensionen und des Höhenprofils besonders angetan.
@@ -33,7 +33,7 @@ Für mich ist der Hochwald ein toller Ort, um am Wochenende die Beine zu vertret
 
 Ich möchte an dieser Stelle direkt zu Beginn betonen, was ich auch im Artikel zum Monreberg gesagt habe. Bitte hinterlasst keinen Müll um Wald und geht mit der Natur respektvoll um. Trampelt nicht ‚wie bekloppt‘ einfach wild durch den Wald sondern nutzt die Wege. Lasst euren Müll nicht liegen. Schreit nicht im Wald herum und scheucht damit Wild auf. Leint eure Hunde an.
 
-#### Orientierung
+### Orientierung
 
 Auf meinen ersten Fußmärschen durch den Uedemer Hochwald hatte ich durchaus Angst, mich in dem großen Gelände zu verirren. Zuerst habe ich die App Topo GPS zur Orientierung eingesetzt. Inzwischen plane und orientiere ich mich allerdings komplett mit der Komoot App.
 

@@ -14,7 +14,7 @@ cover: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
 seo:
   image: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
 aliases: ["/posts/hygge-das-grosse-glueck-liegt-in-den-kleinen-dingen/"]
-
+tags: ["Bücher"]
 ---
 
 Das wichtigste ist mit dem Titel des Buches bereits gesagt. Am einfachsten erreicht man ein _hyggeliges_ Leben, wenn man den positiven Fokus auf die vielen Kleinigkeiten im Leben legt.

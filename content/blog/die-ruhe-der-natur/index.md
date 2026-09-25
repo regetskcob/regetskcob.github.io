@@ -14,7 +14,7 @@ cover: ./img_4639.jpg
 seo:
   image: ./img_4639.jpg
 aliases: ["/posts/die-ruhe-der-natur/"]
-
+tags: ["Natur"]
 ---
 
 Gerne suche ich mir im Wald - _hier in der Region oft im Uedemer Hochwald_ - einen Platz zum verweilen, um die Ruhe und Stille des Waldes zu genießen, aber auch in der Stille den Geräuschen der Natur zu lauschen.

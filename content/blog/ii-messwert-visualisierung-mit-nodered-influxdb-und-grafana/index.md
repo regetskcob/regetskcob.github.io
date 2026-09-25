@@ -17,7 +17,7 @@ cover: ./bildschirmfoto-2022-10-31-um-20.16.15.png
 seo:
   image: ./bildschirmfoto-2022-10-31-um-20.16.15.png
 aliases: ["/posts/ii-messwert-visualisierung-mit-nodered-influxdb-und-grafana/"]
-
+tags: ["Smarthome"]
 ---
 
 Im [ersten Teil dieser Anleitung](/blog/i-messwert-visualisierung-mit-nodered-influxdb-und-grafana/) haben wir NodeRED, InfluxDB und Grafana installiert. Als erstes könnt ihr Grafana und InfluxDB einmal aufrufen (URLs im ersten Teil) und dort jeweils einen Account anlegen.
@@ -42,13 +42,13 @@ Als erstes installieren wir die zusätzlichen Pakete für die KNX und InfluxDB A
 
 ![Node-RED-Editor mit dem KNX-Flow, im geöffneten Hauptmenü ist Palette verwalten markiert](./bildschirmfoto-2022-10-27-um-21.32.39.png)![Palette verwalten in Node-RED, Suche nach knx, das installierte KNX-Paket ist markiert](./bildschirmfoto-2022-10-27-um-21.41.39.png)![Palette verwalten in Node-RED, Suche nach influx, das installierte Paket node-red-contrib-influxdb ist markiert](./bildschirmfoto-2022-10-27-um-21.32.19.png)
 
-#### Verbindung zum KNX Bus
+### Verbindung zum KNX Bus
 
 Da wir die Werte vom KNX Bus in unsere InfluxDB schreiben wollen um diese zu visualisieren benötigen wir einen Knoten, der die Schnittstelle zum Bus bereitstellt. Dieser ist der 'KNX Device'-Knoten. Dort konfiguriert ihr die Schnittstelle mit IP-Adresse eures KNX-IP-Gateways, dessen Port und importiert eine CVS der Gruppenadressen aus eurem ETS-Projekt.
 
 ![Eigenschaften des KNX-Device-Nodes in Node-RED, das Stift-Symbol zum Bearbeiten des Gateways ist markiert](./bildschirmfoto-2022-10-27-um-21.30.58.png)![Konfiguration des KNX/IP-Gateways in Node-RED mit Port 3671 und Tunnel UDP, der Abschnitt Import der ETS-Gruppenadressliste ist markiert](./bildschirmfoto-2022-10-27-um-21.25.35.png)
 
-#### Verbindung zur InfluxDB
+### Verbindung zur InfluxDB
 
 Um NodeRED nun mit der InfluxDB zu koppeln benötigen wir einen sog. API Token. Diesen erstellen wir mit Lese & Schreib-Berechtigung und weisen ihm den KNX Bucket zu.
 
@@ -58,17 +58,17 @@ Diesen Token könnt ihr nun kopieren und in den Einstellungen des InfluxDB Knote
 
 ![Konfiguration des InfluxDB-Nodes in Node-RED: Version 2.0, URL http://localhost:8086, das Feld für den Token ist markiert](./bildschirmfoto-2022-10-27-um-21.31.41.png)
 
-#### Aufbereitung der Daten für die InfluxDB
+### Aufbereitung der Daten für die InfluxDB
 
 Nun, wo ein- und ausgehende Schnittstelle konfiguriert sind können wir die eingehenden Daten für die Speicherung aufbereiten.
 
 ![Prepare-Funktion auf die Struktur der KNX Telegramme.](./bildschirmfoto-2022-10-27-um-21.30.45.png)Prepare - Vorbereitung der Struktur![Entfernen nicht benötigter Informationen zur Speicherung, Verschieben der nötigen Informationen in die richtigen Bereiche.](./bildschirmfoto-2022-10-27-um-21.31.13.png)Filter - Auf nötige Informationen beschränken
 
-#### Alles verknüpfen
+### Alles verknüpfen
 
 Im letzten Schritt können die eingesetzten Knoten miteinander verknüpft werden. Zusätzlich habe ich bei mir zwei Debug-Knoten für die Telegramm-Pakete eingefügt, die den Zustand (das Format) der Nachricht zur Fehlersuche ausgeben.
 
-### Daten mit Grafana auslesen
+## Daten mit Grafana auslesen
 
 ![Grafana-Menü Configuration, der Eintrag Data sources ist ausgewählt](./bildschirmfoto-2022-10-31-um-20.21.18.png)
 

@@ -17,7 +17,7 @@ cover: ./IMG_4274.jpeg
 seo:
   image: ./IMG_4274.jpeg
 aliases: ["/posts/die-knx-bibel-von-stefan-heinle/"]
-
+tags: ["Bücher", "Smarthome"]
 ---
 
 > Wer heute ein Haus ohne intelligente Gebäudetechnik baut, errichtet einen Altbau.  
@@ -33,7 +33,7 @@ Es hat sich definitiv wortwörtlich bezahlt gemacht, dass ich mich bereits so fr
 
 Der Umfang des Buches ist der Wahnsinn. Ganz egal ob ihr Grundlagen der Elektrotechnik nachholen wollt, Schaltzeichen zu verstehen versucht oder ob ihr die Verkabelung eures KNX BUS planen mögt. Euch wird unter die Arme gegriffen. Auch Themen wie die Lichtsteuerung oder die Einrichtung eines Linux Heimservers sind Teil des Buches.
 
-### Aber von vorne.
+## Aber von vorne.
 
 Wer träumt nicht davon, dass der Briefkasten einem sagt „Hey, du hast Post!“ oder die Rollläden selber dafür sorgen, das Sonnenenergie das Haus erwärmt, aber dennoch keinen blendet? Auch eine „Notbeleuchtung“ für den nächtlichen Weg zum Bad ist ein denkbar sinnvolles Szenario.
 
@@ -66,7 +66,7 @@ Danach geht es wie bereits geschrieben unter vielem anderem noch an diese Themen
   * Energiesparen mit Smart Metering und dem Smart Home
   * Geldwerte Tipps zum Einkauf, der Arbeit mit den Gewerken u.v.m.
 
-### Webseite
+## Webseite
 
 [Hier](https://www.heimautomation-buch.de) findet ihr außerdem die Webseite zum Buch. In der ersten Auflage warb Autor Stefan Heinle damit, regelmäßige Ergänzungen oder weitergehende Inhalte bereitstellen zu wollen, schnell entwickelte sich die Seite leider eher zu einer „Einladung“ für die Beratungsanfrage. Inzwischen vergrößern sich auch die Update-Zyklen für das Buch, Neues wird erst nach einer halben Ewigkeit (in der Technikwelt leider fatal!) ergänzt.
 

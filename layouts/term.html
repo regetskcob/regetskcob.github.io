@@ -1,0 +1,14 @@
+{{/*
+  A single tag (/tags/natur/): its posts in the same lines as the blog list,
+  thumbnails included. Needed on its own because term pages would otherwise
+  fall back to taxonomy.html, the tag overview.
+*/}}
+{{ define "main" }}
+<div class="list-container">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{- range .Pages }}
+    {{ partial "post-entry.html" . }}
+  {{- end }}
+</div>
+{{ end }}

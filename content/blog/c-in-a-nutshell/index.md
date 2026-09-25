@@ -17,7 +17,7 @@ cover: ./bildschirmfoto-2022-11-11-um-21.40.32.png
 seo:
   image: ./bildschirmfoto-2022-11-11-um-21.40.32.png
 aliases: ["/posts/c-in-a-nutshell/"]
-
+tags: ["Bücher", "Softwareentwicklung"]
 ---
 
 Die Programmiersprache **C** ist einer der Veteranen der Computer-Geschichte. Mit „C in a Nutshell“ möchte ich euch heute ein Buch des O’Reilly Verlages vorstellen, welches sich als umfassendes Referenz- und Nachschlagewerk versteht.

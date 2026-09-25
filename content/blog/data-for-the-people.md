@@ -8,10 +8,8 @@ draft: false
 readTime: true
 autonumber: false
 math: false
-tags: ["Roman", "Daten", "Datenschutz", "Datenhoheit"]
-showTags: true
 aliases: ["/posts/data-for-the-people/"]
-
+tags: ["Bücher", "Gesellschaft"]
 ---
 
 Basierend auf beruflichen und privaten Recherchen und Forschungen von Andreas Weigend veranschaulicht er, wozu Daten verwendet werden, wie man dem Datenfluss seiner selbst etwas Einheit gebieten kann und zeigt ganz klare Anwendungsfälle auf, für die Daten herangezogen werden.

@@ -13,7 +13,7 @@ author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am N
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 aliases: ["/posts/wie-werde-ich-fachinformatiker-iii/"]
-
+tags: ["Ausbildung"]
 ---
 
 _Wer eine Ausbildung zum Fachinformatiker machen möchte, der muss zwangsläufig auch den Unterricht in der Berufsschule besuchen. Wie genau der Unterricht abläuft, möchten wir euch an einem konkreten Beispiel unserer eigenen Ausbildung näher erklären._

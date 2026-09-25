@@ -14,7 +14,7 @@ cover: ./dscf2916.jpg
 seo:
   image: ./dscf2916.jpg
 aliases: ["/posts/abendausklang-mit-blick-ueber-den-niederrhein/"]
-
+tags: ["Fotografie", "Natur"]
 ---
 
 Aktuell leben die meisten von uns in Ausnahmesituationen. Soziale Kontakte müssen auf ein Minimum zurückgefahren werden. Gottesdienste finden selbst an Ostern nicht statt. Meine Freundin und ich arbeiten seit drei Wochen beide im Home-Office, unsere Eltern, Freunde und Kollegen sehen und hören wir nur noch per Video-Telefonie.

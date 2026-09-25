@@ -17,18 +17,18 @@ cover: ./img_5223.jpg
 seo:
   image: ./img_5223.jpg
 aliases: ["/posts/flutter-und-dart/"]
-
+tags: ["Bücher", "Softwareentwicklung"]
 ---
 
 Über eine ganze Weile war ich sehr davon überzeugt, dass native App-Entwicklung der einzige vernünftige Weg sei, Apps zu entwickeln. MonoTouch, Xamarin oder auch Progressive-Web-Apps waren und sind bis heute nicht wirklich mein Fall. Mit Flutter hat Google aber etwas geschaffen, dass zusammen mit Dart als Programmiersprache eine Alternative für mich darstellt.
 
-#### Warum?
+## Warum?
 
 Weil Dart - für mich - sehr viele Konzepte moderner Programmiersprachen bedient, die man inzwischen bspw. auch von Swift oder Java gewohnt ist, Flutter aber parallel über die beinhalteten Werkzeuge sicherstellt, dass jeweils möglichst nativ-wirkende Apps kompiliert werden.
 
 Konkreter noch, Flutter wird zu nativen Apps kompiliert. Dennoch besteht eine andere Außenwirkung, da Flutter nicht, wie bspw. Xamarin, krampfhaft versucht native UIControls einzubetten, sondern ein vollständig eigenes Rendering betreibt. Man kann sich somit an das native Look&Feel annähern, aber es wird nie identisch. Vorteil: Die Abhängigkeit zu betriebssystem-eigenen UIControls wird aufgelöst und damit flexibler.
 
-#### Zum Buch
+## Zum Buch
 
 Marc Marburger als Autor hat sich für das Buch inhaltlich einiges vorgenommen, werden gleich mehrere Beispiel-Apps entwickelt, die unter Anderem (Cloud-)Datenbanken anbinden, Eigenheiten für Barrierefreiheit und Unit-Testing thematisieren. Auch das Deployment zu den Endkunden kommt zur Sprache.
 

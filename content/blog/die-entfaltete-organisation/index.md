@@ -14,7 +14,7 @@ cover: ./img_6213.jpg
 seo:
   image: ./img_6213.jpg
 aliases: ["/posts/die-entfaltete-organisation/"]
-
+tags: ["Bücher", "Arbeitswelt"]
 ---
 
 Die entfaltete Organisation von Frédéric Laloux ist ein wegweisendes Werk, das sich mit der Zukunft der Arbeit und der Organisationsentwicklung befasst. Der Autor beschreibt in seinem Buch eine neue Art von Organisationen, die weit über die traditionellen hierarchischen Modelle hinausgehen. Laloux führt den Begriff der „entfalteten Organisation“ ein, die durch Selbstführung, Sinnhaftigkeit und evolutionären Zweck geprägt ist. In diesem innovativen Modell kommen die Mitarbeitenden nicht mehr als bloße Rädchen im Getriebe vor, sondern als eigenständige Akteure, die Verantwortung übernehmen und aktiv zur Weiterentwicklung der Organisation beitragen.

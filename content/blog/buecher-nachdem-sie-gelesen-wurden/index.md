@@ -17,7 +17,7 @@ cover: ./img_4867.jpg
 seo:
   image: ./img_4867.jpg
 aliases: ["/posts/buecher-nachdem-sie-gelesen-wurden/"]
-
+tags: ["Bücher"]
 ---
 
 Meine Freundin hält mich manchmal für verrückt, denn meine Bücher haben, nachdem ich Sie zum ersten Mal gelesen habe, immer die selbe Optik.
@@ -26,6 +26,6 @@ Eigentlich sind die Utensilien beim Lesen immer die selben. Eine Hand voll Post-
 
 Für gewöhnlich markiere ich am oberen Buchrand Kapitel, die für meine alltägliche Arbeit Relevanz haben, sodass ich Sie schnell wieder finden und etwas nachschlagen kann. Am rechten Buchrand markiere ich hingegen konkrete Textpassagen, die Im Gedächtnis bleiben sollten und die ich für Diskussionen/Gespräche zum entsprechenden Thema für nützlich halte, um einen bestimmten Standpunkt zu vertreten oder Argumente für/gegen ein Thema zu liefern.
 
-### Warum?
+## Warum?
 
 Ich habe mir diese Vorgehensweise angewöhnt, da es dass künftige Lesen der Bücher deutlich effizienter macht. Nützliche Stellen sind schnell aufzufinden, „unnötige“ Kapitel müssen nicht erneut betrachtet werden.

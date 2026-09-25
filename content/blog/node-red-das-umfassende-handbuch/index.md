@@ -19,7 +19,7 @@ cover: ./IMG_4265.jpeg
 seo:
   image: ./IMG_4265.jpeg
 aliases: ["/posts/node-red-das-umfassende-handbuch/"]
-
+tags: ["Bücher", "Smarthome"]
 ---
 
 Bereits zuvor habe ich [hier](/blog/i-messwert-visualisierung-mit-nodered-influxdb-und-grafana/) etwas zu Node-RED geschrieben, um KNX Telegramme in eine InfluxDB zu überführen und per Grafana zu visualisieren. Heute soll‘s um das umfassende Handbuch von Udo Brandes und dem Rheinwerk Verlag gehen.

@@ -8,10 +8,8 @@ draft: false
 readTime: true
 autonumber: false
 math: false
-tags: ["SmartHome", "Heimautomatisierung", "DIY", "Eigenheim"]
-showTags: true
 aliases: ["/posts/smarthome-hacks/"]
-
+tags: ["Bücher", "Smarthome"]
 ---
 
 Diese und viele weitere Fragen beantwortet Prof. Peter A. Henning in seinem Buch „SmartHome Hacks“ welches im O’Reilly Verlag erschienen ist.
@@ -19,7 +17,7 @@ Am Beispiel von unzähligen praktischen Projekten in Kombination mit dem Raspber
 
 Begonnen wird von Herrn Henning damit, euch auf rechtliche Themen aufmerksam zu machen, klar zu stellen wieso ‚Komplett Systeme‘ wie das RWE SmartHome nicht unbedingt das Gelbe vom Ei sind oder auf welche technischen Details ihr achten müsst.
 
-### Rechtliche Themengebiete ?!
+## Rechtliche Themengebiete ?!
 
 > Ganz genau. Es  ist in der NAV (Verordnung über allgemeine Bedingungen für den Netzanschluss und dessen Nutzung für die Elektrizitätsversorgung in Niederspannung) festgelegt, dass die Errichtung, Wartung und Veränderung elektrischer Anlagen ausschließlich Elektroinstallateuren zu überlasen ist. Dass sich da kaum jemand dran hält, sieht man alleine daran, wie viele Steckdosen und Schalter im Baumarkt Tag für Tag verkauft werden.
 

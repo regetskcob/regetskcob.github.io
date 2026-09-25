@@ -10,10 +10,8 @@ draft: false
 readTime: true
 autonumber: false
 math: false
-tags: ["Ghost", "Hugo"]
-showTags: true
 aliases: ["/posts/ghost2hugo/"]
-
+tags: ["Softwareentwicklung"]
 ---
 
 Hi, 

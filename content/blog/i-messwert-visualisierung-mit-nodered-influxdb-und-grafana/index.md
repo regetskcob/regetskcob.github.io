@@ -17,7 +17,7 @@ cover: ./bildschirmfoto-2022-09-18-um-14.57.29.png
 seo:
   image: ./bildschirmfoto-2022-09-18-um-14.57.29.png
 aliases: ["/posts/i-messwert-visualisierung-mit-nodered-influxdb-und-grafana/"]
-
+tags: ["Smarthome"]
 ---
 
 Mit einem "smarten Zuhause" besitzt man nicht nur Flexibilität und individuelle Steuerungsmöglichkeiten, sondern man besitzt auch eine Unmenge von Informationen über das Haus, welches durchgehend zahlreiche Messwerte und Zustände erfassen kann.

@@ -17,7 +17,7 @@ cover: ./IMG_4276.jpeg
 seo:
   image: ./IMG_4276.jpeg
 aliases: ["/posts/wild-wald-genuss-vom-kochen-und-jagen/"]
-
+tags: ["Bücher", "Natur"]
 ---
 
 **Vielseitig** Das ist unsere Natur, die Zutaten für die Rezepte im Buch aber auch das Buch selbst. Begonnen bei diversem „Basiswissen“ zu Natur, Kräutern, Wild und jeglichem Brauchtum. Vorbei an diversen ausgefeilten Rezepten, die das Wild in den Mittelpunkt setzen, endend bei weiteren Rezepten zu Soßen, Desserts, Getränken und Beilagen die sich mit den Rezepten ergänzen.   
