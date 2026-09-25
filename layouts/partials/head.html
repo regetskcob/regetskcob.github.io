@@ -6,6 +6,7 @@
   - tag pages are kept out of the index, they only repeat post lists; all
     other pages allow large image previews
   - JSON-LD from partials/seo/jsonld.html, and a meta author tag
+  - the text and data mining reservation (TDMRep meta tags)
   Diff against the theme file when updating typo.
 */}}
 <meta charset="utf-8">
@@ -36,6 +37,12 @@
 {{/* Lets Google show photos large in Discover and image results. */}}
 <meta name="robots" content="max-image-preview:large">
 {{- end }}
+
+{{/* Text and data mining reservation (§ 44b Abs. 3 UrhG) in the W3C TDMRep
+     form, pointing to the image rights on the legal page. The robots.txt
+     keeps AI training crawlers out as well. */}}
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="{{ "legal/#bildrechte" | absURL }}">
 
 {{/* LinkedIn's link preview reads the author from here, not from JSON-LD. */}}
 {{ with site.Params.authorName -}}
