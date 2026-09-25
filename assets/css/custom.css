@@ -147,6 +147,33 @@
   }
 }
 
+/* --- Home intro card ---
+   The greeting and the social icons on the same grey card as the post
+   header, on the home page only. */
+
+.intro-card {
+  background: var(--code-background);
+  border: 1px solid var(--code-border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.intro-card .home-heading {
+  margin-top: 0;
+}
+
+.intro-card .social-icons {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .intro-card {
+    padding: 1rem 1.1rem;
+  }
+}
+
 /* --- Post list thumbnails ---
    A column on the left holds the cover image in 4:3, then the title.
    Posts without a cover keep the column empty, so the titles line up in

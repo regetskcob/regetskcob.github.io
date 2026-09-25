@@ -12,15 +12,17 @@
 
 {{ .Content }}
 
-{{/* Intro */}}
+{{/* Intro and social icons on a card like the post header, on this page
+     only. The intro text is markdown with several paragraphs, so it goes
+     into a div: paragraphs inside a <p> are invalid HTML. */}}
+<section class="intro-card">
 {{ if or site.Params.homeIntroTitle site.Params.homeIntroContent }}
 <div class="intro">
   {{ with site.Params.homeIntroTitle }}<h2 class="home-heading">{{ . }}</h2>{{ end }}
-  {{ with site.Params.homeIntroContent }}<p>{{ . | markdownify }}</p>{{ end }}
+  {{ with site.Params.homeIntroContent }}<div>{{ . | markdownify }}</div>{{ end }}
 </div>
 {{ end }}
 
-{{/* Social icons */}}
 {{ with site.Params.social }}
 <div class="social-icons">
   {{- range . }}
@@ -31,6 +33,7 @@
   {{- end }}
 </div>
 {{ end }}
+</section>
 
 {{/* Ongoing series first, then the loose galleries below it. */}}
 {{ partial "series-teaser.html" . }}
