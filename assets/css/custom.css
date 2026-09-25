@@ -474,12 +474,14 @@
 }
 
 /* Notes that must not be skimmed sit on the theme's code surface rather than
-   on a colour of their own. */
+   on a colour of their own: a card like the post header, with an even thin
+   border instead of the left bar, which curved at the rounded corners and
+   read like a shadow. */
 .recipe-note-warn {
   background: var(--code-background);
-  border-left-color: var(--content-secondary);
+  border: 1px solid var(--code-border);
   padding: 0.8rem 1rem;
-  border-radius: var(--code-border-radius);
+  border-radius: 6px;
 }
 
 
