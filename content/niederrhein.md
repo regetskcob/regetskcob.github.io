@@ -80,6 +80,18 @@ photos:
     alt: "Frisch geeggter Acker, durch Zweige am Bildrand fotografiert, hinten Wald und ein Windrad"
   - image: "niederrhein/xt5-20260920-182717.jpg"
     alt: "Feldweg zwischen einem frisch bestellten Acker und einer Waldkante im Abendlicht, darüber Wolken"
+  - image: "niederrhein/xt5-20260920-175622.jpg"
+    alt: "Frisch bestellter Acker im Abendlicht, vorne unscharfes Laub, am Horizont eine Baumreihe unter Wolken"
+  - image: "niederrhein/xt5-20260920-180055.jpg"
+    alt: "Eine Birne hängt zwischen dunklen Blättern im Birnbaum, dahinter heller Himmel"
+  - image: "niederrhein/xt5-20260920-180115.jpg"
+    alt: "Mehrere Birnen hängen in der Krone eines Birnbaums, einige unscharf im Vordergrund"
+  - image: "niederrhein/xt5-20260920-180836.jpg"
+    alt: "Ein Zweig mit ersten herbstlich verfärbten Blättern vor unscharfem Laub voller heller Lichtpunkte"
+  - image: "niederrhein/xt5-20260920-181147.jpg"
+    alt: "Junge Keimlinge in dunkler, frisch bearbeiteter Erde, aus Bodenhöhe fotografiert"
+  - image: "niederrhein/xt5-20260920-181919.jpg"
+    alt: "Junge Saat auf einem Acker aus Bodenhöhe, der Hintergrund verschwimmt im warmen Abendlicht"
 ---
 
 Der Niederrhein ist keine Gegend, die sich aufdrängt. Es gibt keine Berge, keine
