@@ -76,6 +76,21 @@
   margin-bottom: 0;
 }
 
+/* Table of contents inside the card, between summary and date: a touch
+   smaller than the text, so it reads as part of the header. */
+.post-intro .toc {
+  font-size: 0.9em;
+  margin: 1rem 0 0.75rem;
+}
+
+.post-intro .toc p {
+  margin: 0 0 0.2rem;
+}
+
+.post-intro .toc ul {
+  padding-left: 1.2rem;
+}
+
 /* Tags as quiet metadata: smaller and grey, so the summary above leads. */
 .post-intro .single-tags {
   margin-top: 0.75rem;
@@ -150,6 +165,25 @@
     width: 80px;
     height: 60px;
   }
+}
+
+/* --- Tag overview --- */
+
+.tag-overview {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  margin-left: 0;
+}
+
+.tag-overview li {
+  margin-bottom: 0.4rem;
+}
+
+.tag-count {
+  margin-left: 0.4rem;
+  font-size: 0.85em;
+  color: var(--content-secondary);
 }
 
 /* --- Home gallery --- */

@@ -5,6 +5,8 @@
   language than the site sets "inLanguage" in front matter, which becomes the
   lang of the article. The author line is left out, there is one author,
   and pages like Über show neither a date nor the previous/next links.
+  Long posts get a table of contents on their own, inside the header card;
+  see the rule there.
   The tags sit inside the header, and posts (not pages like Über) mark it
   .post-intro, so the grey card in custom.css holds title, summary, date
   and tags together.
@@ -27,6 +29,26 @@
         <h1 class="single-title">{{ .Title }}</h1>
         {{- with .Param "summary" }}
         <p class="single-summary">{{ . | markdownify }}</p>
+        {{- end }}
+
+        {{- /* Table of Contents. Posts get one on their own once their outline
+               is deep enough to need it: at least four headings on levels 2
+               and 3, with at least one level 3 among them. "toc: true" or
+               "toc: false" in front matter overrides the rule either way. In
+               posts it sits in the header card, between summary and date. */}}
+        {{- $h2 := 0 }}
+        {{- $h3 := 0 }}
+        {{- range .Fragments.HeadingsMap }}
+          {{- if eq .Level 2 }}{{ $h2 = add $h2 1 }}{{ else if eq .Level 3 }}{{ $h3 = add $h3 1 }}{{ end }}
+        {{- end }}
+        {{- $autoToc := and $isPost (ge (add $h2 $h3) 4) (ge $h3 1) }}
+        {{- $showToc := cond (isset .Params "toc") (.Param "toc") $autoToc }}
+
+        {{- if $showToc }}
+          <aside class="toc">
+            <p><strong>Inhalt</strong></p>
+            {{ .TableOfContents }}
+          </aside>
         {{- end }}
    
         {{- /* Date and Reading Time, in posts only: on pages like Über a date
@@ -71,15 +93,6 @@
         {{- end }}
     </header>
     
-    
-    {{- /* Table of Contents */}}
-    
-    {{- if .Param "toc" }}
-      <aside class="toc">
-        <p><strong>Inhalt</strong></p>
-        {{ .TableOfContents }}
-      </aside>
-    {{- end }}
     
     {{- /* Page content */}}
     
