@@ -11,10 +11,10 @@ reading_time: 1
 tags: ["OpenAstroTech", "OpenAstroTracker", "OAT", "Astronomie", "Astro-Fotografie", "Fotografie", "Astro Tracker"]
 showTags: true
 summary: In den kommenden Wochen möchte ich mir einen OpenAstroTracker bauen. Ich werden den Bau in dieser Artikelserie begleiten und auch auf Astro-Fotografie als solche näher eingehen. 
-featured_image: ./parts.jpg
-cover: ./parts.jpg
+featured_image: ./parts.jpeg
+cover: ./parts.jpeg
 seo:
-  image: ./parts.jpg
+  image: ./parts.jpeg
 aliases: ["/posts/bau-des-openastrotracker-teil-i/"]
 
 ---
