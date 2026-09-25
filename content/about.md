@@ -2,7 +2,7 @@
 title: Über mich
 date: 2020-04-05T15:07:57+0000
 lastmod: 2025-03-30T12:48:14+0000
-description: Wer schreibt hier eigentlich?
+description: "Daniel Bocksteger, Softwareentwickler, Fotograf und Jäger am Niederrhein: wer hier schreibt und worum es in diesem Blog geht."
 ---
 
 Hi,

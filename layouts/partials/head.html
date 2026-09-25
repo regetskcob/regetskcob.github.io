@@ -1,7 +1,10 @@
 {{/*
-  Copy of themes/typo/layouts/partials/head.html (theme v3.0.2). The only change
-  is a German title for the 404 page, which Hugo names "404 Page not found".
-  It borrows the line from Germany's Next Topmodel, fitting for a photo site.
+  Copy of themes/typo/layouts/partials/head.html (theme v3.0.2). Changes:
+  - a German title for the 404 page, which Hugo names "404 Page not found".
+    It borrows the line from Germany's Next Topmodel, fitting for a photo site.
+  - title and description come from partials/seo/, see there
+  - tag pages are kept out of the index, they only repeat post lists
+  - JSON-LD from partials/seo/jsonld.html
   Diff against the theme file when updating typo.
 */}}
 <meta charset="utf-8">
@@ -22,10 +25,12 @@
 {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
 
-{{- if .IsHome -}}
-<meta name="description" content="{{ site.Params.Description }}"/>
-{{- else -}}
-<meta name="description" content="{{ .Params.Description }}"/>
+{{ with partial "seo/description.html" . -}}
+<meta name="description" content="{{ . }}"/>
+{{- end }}
+
+{{ if in (slice "term" "taxonomy") .Kind -}}
+<meta name="robots" content="noindex, follow">
 {{- end }}
 
 {{ if .Param "fediverse" }}
@@ -33,18 +38,17 @@
 {{ end }}
 
 <title>
-    {{ if .IsHome }}
-    {{ site.Title }}
-    {{ else if eq .Kind "404" }}
+    {{- if eq .Kind "404" -}}
     {{ printf "404 - Heute habe ich leider kein Foto für dich | %s" site.Title }}
-    {{ else }}
-    {{ printf "%s | %s" .Title site.Title }}
-    {{ end }}
+    {{- else -}}
+    {{ printf "%s | %s" (partial "seo/title.html" .) site.Title }}
+    {{- end -}}
 </title>
 
 <link rel="canonical" href="{{ .Permalink }}"/>
 
 {{ template "partials/opengraph.html" . }}
+{{ partial "seo/jsonld.html" . }}
 
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

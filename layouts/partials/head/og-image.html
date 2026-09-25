@@ -9,8 +9,8 @@
 
   Order: the image named in front matter (cover / featured_image, carried over from
   the Ghost export), else the first image of the page bundle, else the site-wide
-  fallback. All are cropped to 1200x630, the ratio Facebook, LinkedIn, Slack and
-  WhatsApp expect.
+  fallback (ogImage in hugo.toml). All are cropped to 1200x630, the ratio
+  Facebook, LinkedIn, Slack and WhatsApp expect.
 */}}
 
 {{- $spec := "1200x630 webp q85 smart" -}}
@@ -54,7 +54,7 @@
 {{- end -}}
 
 {{- if not $og -}}
-  {{- with resources.GetMatch "images/og-image.{png,jpg,jpeg,webp}" -}}
+  {{- with site.Params.ogImage | default "images/og-image.jpg" | resources.Get -}}
     {{- with .Fill $spec -}}
       {{- $og = .Permalink -}}
     {{- end -}}

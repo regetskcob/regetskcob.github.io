@@ -1,0 +1,21 @@
+{{/*
+  Page title for search results and link previews, without the site name.
+
+  Post titles carry an emoji category in front ("📚 | Facilitation"). That is
+  kept on the page itself, but in <title> and og:title it only takes up space,
+  so everything up to the first "|" is dropped when it contains no letters or
+  digits. Posts marked 📚 are book reviews and say so, because that is what
+  people search for. "seoTitle" in front matter overrides all of this.
+*/}}
+{{- $t := "" -}}
+{{- if .IsHome -}}
+  {{- $t = site.Params.homeTitle | default site.Title -}}
+{{- else if .Params.seoTitle -}}
+  {{- $t = .Params.seoTitle -}}
+{{- else -}}
+  {{- $t = replaceRE `^[^\p{L}\p{N}|]*\|\s*` "" .Title -}}
+  {{- if and (ne $t .Title) (strings.Contains (index (split .Title "|") 0) "📚") -}}
+    {{- $t = printf "%s – Buchrezension" $t -}}
+  {{- end -}}
+{{- end -}}
+{{- return $t -}}

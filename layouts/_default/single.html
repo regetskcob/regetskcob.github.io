@@ -1,8 +1,9 @@
 {{/*
   Copy of themes/typo/layouts/_default/single.html (theme v3.0.2) with the two
   hard-coded English strings translated: the reading time and the table of
-  contents heading. The theme has no i18n files. Diff against the theme file
-  when updating typo.
+  contents heading. The theme has no i18n files. A post written in another
+  language than the site sets "inLanguage" in front matter, which becomes the
+  lang of the article. Diff against the theme file when updating typo.
 */}}
 {{ define "main" }}
 
@@ -13,7 +14,7 @@
 {{ end }}
 
 <div {{ if .Param "autonumber" }} class="autonumber" {{ end }}>
-  <article>
+  <article{{ with .Params.inLanguage }} lang="{{ . }}"{{ end }}>
     <header class="single-intro-container">
         {{- /* Title and Summary */}}
         

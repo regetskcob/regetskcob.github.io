@@ -3,7 +3,9 @@ title: "👨🏻‍💻 | Simplifying migration from Ghost to Hugo"
 title_plain: "Simplifying migration from Ghost to Hugo"
 date: "2025-11-02T00:40:04-07:00"
 summary: "I created a simple python script to convert Ghost backup-files into Hugo markdowns."
-description: "Migration from Ghost to Hugo"
+description: "A simple Python script that converts a Ghost backup file into Hugo markdown posts, for anyone moving a blog from Ghost to a static site."
+# The site is German; this post is not. Sets lang on the article and in JSON-LD.
+inLanguage: en
 draft: false
 readTime: true
 autonumber: false

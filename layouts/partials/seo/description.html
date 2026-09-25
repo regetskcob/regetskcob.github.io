@@ -1,0 +1,25 @@
+{{/*
+  Meta description, shared by <meta name="description"> and og:description.
+
+  Pages with a "description" use it, posts fall back to their "summary" (every
+  post imported from Ghost has one), tag pages get a generic line. Cut to the
+  roughly 160 characters Google shows. Some Ghost summaries were cut off mid-
+  markdown ("[Unterseite](http://www.martin…", an unclosed "_"), which
+  markdownify cannot render, so leftover link syntax and emphasis marks are
+  removed by hand.
+*/}}
+{{- $d := "" -}}
+{{- if .IsHome -}}
+  {{- $d = site.Params.description -}}
+{{- else -}}
+  {{- $d = or .Description .Params.summary -}}
+  {{- if and (not $d) (eq .Kind "term") -}}
+    {{- $d = printf "Alle Beiträge zum Thema %s." .Title -}}
+  {{- else if and (not $d) (eq .Kind "taxonomy") -}}
+    {{- $d = "Alle Schlagwörter der Beiträge im Überblick." -}}
+  {{- end -}}
+{{- end -}}
+{{- $d = $d | markdownify | plainify | htmlUnescape -}}
+{{- $d = $d | replaceRE `\[([^\]]*)\]\([^)]*\)?` "$1" | replaceRE `[_*]` "" -}}
+{{- $d = $d | strings.TrimSpace | truncate 160 -}}
+{{- return $d -}}

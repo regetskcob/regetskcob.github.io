@@ -1,0 +1,51 @@
+{{/*
+  Structured data (schema.org JSON-LD) for search engines.
+
+  The home page describes the site and its author, so Google can show
+  "regetskcob" as the site name and connect the social profiles. Posts are
+  BlogPostings with author, dates and image. Other pages carry none.
+*/}}
+{{- $person := dict
+    "@type" "Person"
+    "name" "Daniel Bocksteger"
+    "alternateName" "@regetskcob"
+    "url" (absURL "/about/")
+    "sameAs" (apply site.Params.social "index" "." "url")
+-}}
+
+{{- if .IsHome -}}
+  {{- $data := dict
+      "@context" "https://schema.org"
+      "@type" "WebSite"
+      "name" site.Title
+      "alternateName" (slice "@regetskcob" (partial "seo/title.html" .))
+      "url" site.Home.Permalink
+      "description" (partial "seo/description.html" .)
+      "inLanguage" site.Language.LanguageCode
+      "author" $person
+  -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+
+{{- else if and .IsPage (eq .Section "blog") -}}
+  {{- $image := "" -}}
+  {{- with partial "_funcs/get-page-images" . -}}
+    {{- $image = (index . 0).Permalink -}}
+  {{- else -}}
+    {{- $image = partial "head/og-image.html" . | printf "%s" -}}
+  {{- end -}}
+  {{- $data := dict
+      "@context" "https://schema.org"
+      "@type" "BlogPosting"
+      "headline" (partial "seo/title.html" .)
+      "description" (partial "seo/description.html" .)
+      "url" .Permalink
+      "mainEntityOfPage" .Permalink
+      "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+      "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+      "inLanguage" (.Params.inLanguage | default site.Language.LanguageCode)
+      "author" $person
+  -}}
+  {{- with .Params.tags }}{{ $data = merge $data (dict "keywords" (delimit . ", ")) }}{{ end -}}
+  {{- with $image }}{{ $data = merge $data (dict "image" .) }}{{ end -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- end -}}
