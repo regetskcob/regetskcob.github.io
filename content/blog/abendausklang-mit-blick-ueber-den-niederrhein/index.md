@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 3
-summary: Aktuell leben die meisten von uns in Ausnahmesituationen. Soziale Kontakte
-  müssen auf ein Minimum zurückgefahren werden. Corona bestimmt unseren Alltag.
+summary: "Vom Monreberg in Altkalkar reicht der Blick weit über den Niederrhein. Abendbilder aus dem Frühjahr 2020, als Home-Office und Abstand den Alltag bestimmten."
 featured_image: ./dscf2916.jpg
 cover: ./dscf2916.jpg
 seo:

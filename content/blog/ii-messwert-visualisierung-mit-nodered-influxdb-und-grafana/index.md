@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 5
-summary: Im [ersten Teil dieser Anleitung](/blog/i-messwert-visualisierung-mit-nodered-influxdb-und-grafana/)
-  haben wir NodeRED, In…
+summary: "Im zweiten Teil verbinden wir die Systeme: ein Bucket in InfluxDB, ein Flow in NodeRED, der KNX-Telegramme mitschreibt, und die Datenquelle in Grafana."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

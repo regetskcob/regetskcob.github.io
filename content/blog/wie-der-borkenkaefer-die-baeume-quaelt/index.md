@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 1
-summary: Wenn man aktuell durch die Wälder spaziert und sich die Polter am Wegesrand
-  genau ansieht, findet man häufig Bilder wie diese vor.
+summary: "Auf den Poltern am Wegesrand sieht man gerade oft, was der Borkenkäfer anrichtet. Seine Larven fressen Gänge durch den Bast, bis der Baum verdurstet."
 featured_image: ./dscf2510.jpg
 cover: ./dscf2510.jpg
 seo:

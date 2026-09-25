@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 3
-summary: Wie schon mehrfach thematisiert, wir haben in den Monaten zwischen Februar
-  2021 bis Juli 2022 überwiegend in Eigenleistung unser Eigenheim gebaut. Die Elektr…
+summary: "Duspol, Multimeter und Leitungssucher haben mich durch die gesamte Elektro-Installation unseres Hauses begleitet. Hier stelle ich die drei Messgeräte vor."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

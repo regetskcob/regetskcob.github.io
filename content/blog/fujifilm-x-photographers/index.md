@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 2
-summary: Beim stöbern durch den [Blog von Martin Hülle](http://www.martin-huelle.de/shop/fujifilm-x-photographers)
-  bin ich auf folgende [Unterseite](http://www.martin…
+summary: "Sechs Fotografen, ein Kamerasystem: Der Bildband begleitet Profis mit ihren X- und GFX-Kameras und zeigt, wie sie im Alltag mit der Technik arbeiten."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

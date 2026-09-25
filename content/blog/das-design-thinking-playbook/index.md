@@ -8,9 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 1
-summary: Mit traditionellen, aktuellen und zukünftigen Erfolgsfaktoren möchte
-  euch „Das Design Thinking Playbook“ zur neuen großen Innovation begleiten und euch
-  entsp…
+summary: "Auf rund 300 Seiten führen Lewrick, Link und Leifer durch die traditionellen, aktuellen und zukünftigen Erfolgsfaktoren des Design Thinking."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

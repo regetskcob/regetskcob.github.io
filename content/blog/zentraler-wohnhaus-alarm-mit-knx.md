@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 2
-summary: In manch vorigem Artikel war es bereits Thema, wir haben erst kürzlich
-  unser Einfamilienhaus mit KNX bezogen, seit dem ist das Bus-System das "Dauerbrenner-P…
+summary: "Ein Schalter am Nachttisch weckt das ganze Haus. So haben wir unseren Alarm über eine zentrale KNX-Gruppenadresse gelöst, und so lässt er sich noch erweitern."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 4
-summary: _Wer eine Ausbildung zum Fachinformatiker machen möchte, der muss zwangsläufig
-  auch den Unterricht in der Berufsschule besuchen. Wie genau der Unterricht abl…
+summary: "Wie läuft Blockunterricht eigentlich ab? Am Beispiel unserer Ausbildung beschreibe ich, wie der Unterricht an den Berufsschulen in Moers organisiert war."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

@@ -8,9 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 9
-summary: Nach 20 Minuten Autofahrt ist man in einer neuen Welt. Sicherlich gibt
-  es näher an Goch auch tolle Natur, in der man spazieren oder wandern könnte. Der
-  Uedemer Hochwald verschlingt den Besucher bereits nach den ersten Metern.
+summary: "Ein Rundgang in Bildern durch den Uedemer Hochwald zwischen Uedem und Marienbaum, mit Tipps zu Parkplätzen und Orientierung und ein paar Bitten an Besucher."
 featured_image: ./dscf2292.jpg
 cover: ./dscf2292.jpg
 seo:

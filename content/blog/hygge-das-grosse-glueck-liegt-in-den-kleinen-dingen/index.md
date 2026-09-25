@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 1
-summary: Das wichtigste ist mit dem Titel des Buches bereits gesagt. Am einfachsten
-  erreicht man ein hyggeliges Leben, wenn man den Fokus auf die vielen kleinen glücklichen Momente im leben richtet.
+summary: "Die ersten 80 Seiten zeigen, wie viel Glück in Kleinigkeiten steckt. Danach verliert das Buch zwischen Rezepten und Einrichtungstipps leider seinen roten Faden."
 featured_image: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
 cover: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
 seo:

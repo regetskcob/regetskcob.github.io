@@ -8,9 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 5
-summary: _Ihr seid nach drei Jahren so gut wie am Ende der Ausbildung angelangt,
-  somit hin wird es Zeit für die Abschlussprüfung. Zusätzlich ist dies auch der letzte
-  …
+summary: "Im letzten Teil der Serie geht es um die Abschlussprüfung mit schriftlichem Teil, Projektdokumentation und Präsentation, und darum, wie ihr sie meistert."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

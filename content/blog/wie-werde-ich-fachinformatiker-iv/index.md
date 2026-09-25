@@ -8,9 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 4
-summary: _Nach den ersten 1,5 Jahren der Ausbildung zum Fachinformatiker wartet
-  auf euch die sogenannte Zwischenprüfung. Mit diesem Artikel – dem vorletzten unserer
-  A…
+summary: "Die Zwischenprüfung ist selten so schwer, wie manche Lehrer sie ankündigen. Was euch nach 1,5 Jahren erwartet und wie ihr euch vorbereitet, steht in Teil IV."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 4
-summary: Mit einem "smarten Zuhause" besitzt man nicht nur Flexibilität und individuelle
-  Steuerungsmöglichkeiten, sondern man besitzt auch eine Unmenge von Informatio…
+summary: "Im ersten Teil wird ein Raspberry Pi zur Messwert-Zentrale fürs Smarthome. Ich richte das System ein und installiere InfluxDB, NodeRED und Grafana."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

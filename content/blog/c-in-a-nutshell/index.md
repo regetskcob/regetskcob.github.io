@@ -8,8 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 2
-summary: Die Programmiersprache **C** ist einer der Veteranen der Computer-Geschichte.
-  Mit „C in a Nutshell“ möchte ich euch heute ein Buch des O’Reilly Verlages vors…
+summary: "Rund 800 Seiten, 22 Kapitel und ein hilfreicher Index: Das Buch aus dem O’Reilly Verlag ist ein Nachschlagewerk zu C für Einsteiger wie für Fortgeschrittene."
 author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
   Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg

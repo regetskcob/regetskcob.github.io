@@ -8,7 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 1
-summary: Gerne suche ich mir im Wald - hier in der Region oft im Uedemer Hochwald - einen Platz zum verweilen, um die Ruhe und Stille des Waldes zu genießen.
+summary: "Ein liegender Stamm im Uedemer Hochwald, auf dem ich gerne sitze, und der Blick nach oben in die Kronen, der zu jeder Jahreszeit anders aussieht."
 featured_image: ./img_4639.jpg
 cover: ./img_4639.jpg
 seo:
