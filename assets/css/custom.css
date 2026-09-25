@@ -251,6 +251,13 @@
   line-clamp: 2;
 }
 
+/* Pagefind marks terms at weight 500. Literata ships Light (300) and
+   SemiBold (700) only, and for 500 the browser picks Light, so the mark
+   was merely darker. SemiBold makes it stand out. */
+:is(*, #\#):is(*, #\#):is(*, #\#) .blog-search .pf-result-excerpt mark {
+  font-weight: 700;
+}
+
 /* Pagefind resets its elements with "all: initial", which drops the
    inherited color-scheme; the theme's light-dark() colours then always
    resolve to light. Giving it back keeps the search dark in dark mode. */
