@@ -31,4 +31,4 @@ Man geht davon aus, dass auf ein Borkenkäferweibchen innerhalb von einem Jahr e
 
 ![Baumstamm mit Fraßspuren unter abgeplatzter Rinde, dahinter unscharf der Wald](./dscf2577.jpg)FUJIFILM X-T30 mit dem XF16mm f2.8
 
-Beim bayrischen Staatsministerium für Ernährung, Landwirtschaft und Forsten findet ihr [hier](http://www.lwf.bayern.de/mam/cms04/waldschutz/dateien/fb_borkenkaefer_fichte_bf.pdf) ein Info-Blatt zum Borkenkäfer.
+Beim bayrischen Staatsministerium für Ernährung, Landwirtschaft und Forsten findet ihr [hier](http://www.wbv-reisbach.de/wp-content/uploads/2017/07/fb_borkenkaefer_fichte_bf.pdf) ein Info-Blatt zum Borkenkäfer.

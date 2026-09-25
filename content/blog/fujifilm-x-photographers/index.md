@@ -2,7 +2,7 @@
 title: 📚 | FUJIFILM X-PHOTOGRAPHERS
 title_plain: '| FUJIFILM X-PHOTOGRAPHERS'
 date: 2020-04-22T13:30:00+0000
-lastmod: 2024-11-17T15:07:36+0000
+lastmod: 2026-09-25T09:55:00+0000
 slug: fujifilm-x-photographers
 draft: false
 type: post
@@ -20,7 +20,7 @@ aliases: ["/posts/fujifilm-x-photpgraphers/", "/blog/fujifilm-x-photpgraphers/"]
 tags: ["Bücher", "Fotografie"]
 ---
 
-Beim stöbern durch den [Blog von Martin Hülle](http://www.martin-huelle.de/shop/fujifilm-x-photographers) bin ich auf folgende [Unterseite](http://www.martin-huelle.de/shop/fujifilm-x-photographers) gestolpert, ob der man das Buch _FUJIFILM X-PHOTOGRAPHERS_ kaufen konnte.
+Beim stöbern durch den [Blog von Martin Hülle](https://www.martin-huelle.de/blog/) bin ich auf folgende [Unterseite](https://www.martin-huelle.de/buecher) gestolpert, auf der man das Buch _FUJIFILM X-PHOTOGRAPHERS_ kaufen konnte. Leider ist das Buch inzwischen ausverkauft und nur noch gebraucht zu bekommen, zum Beispiel [hier](https://www.booklooker.de/Bücher/Martin-Hülle+Hülle-Martin-Thorsten-Rother-und-Christian-Ahrens-Fujifilm-X-PHOTOGRAPHERS-Vom/id/A02SdsA201ZZs?pid=8&pid=8&gad_source=1).
 
 Dabei handelt es sich um einen Bildband kombiniert mit einer Sammlung aus Abenteuern, Geschichten aus dem Arbeitsalltag der Fotografen und detailreichen Einblicken in das Equipment, mit dem die Profis arbeiten.
 
