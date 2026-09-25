@@ -6,6 +6,9 @@
 
   The href is a fallback: "#top" scrolls to the start of the document even
   without an element of that id.
+
+  Also emits the image rights of the photos on the page as structured data
+  (partials/seo/image-objects.html), now that all of them have rendered.
 */}}
 <a href="#top" class="to-top" aria-label="Nach oben" title="Nach oben">
   <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
@@ -16,3 +19,4 @@
 {{- with resources.Get "js/to-top.js" }}
 <script>{{ (. | minify).Content | safeJS }}</script>
 {{- end }}
+{{ partial "seo/image-objects.html" . }}

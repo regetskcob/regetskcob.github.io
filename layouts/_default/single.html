@@ -60,7 +60,7 @@
               {{- with $.Resources.Get $name }}
                 {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}
         <figure class="post-cover">
-          {{ partial "responsive-img.html" (dict "img" . "widths" (slice 800 1600) "sizes" "(max-width: 780px) 100vw, 780px" "loading" "eager" "alt" ($.Params.coverAlt | default "")) }}
+          {{ partial "responsive-img.html" (dict "img" . "widths" (slice 800 1600) "sizes" "(max-width: 780px) 100vw, 780px" "loading" "eager" "alt" ($.Params.coverAlt | default "") "page" $) }}
         </figure>
                 {{- end }}
               {{- end }}

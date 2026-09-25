@@ -49,7 +49,7 @@
     {{- with .title }}<h2 class="home-heading">{{ . }}</h2>{{ end }}
     {{- with .description }}<p class="gallery-description">{{ . }}</p>{{ end }}
 
-    {{ partial "photo-grid.html" (dict "items" .items "shuffle" true "feature" true) }}
+    {{ partial "photo-grid.html" (dict "items" .items "shuffle" true "feature" true "page" $) }}
   </div>
   {{- end }}
 </section>

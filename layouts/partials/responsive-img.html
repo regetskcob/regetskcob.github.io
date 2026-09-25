@@ -16,6 +16,8 @@
              (default: full text column)
     alt      alt text
     loading  "lazy" (default) or "eager" for above-the-fold images
+    page     the page it appears on; registers the photo for the image rights
+             in the structured data (partials/seo/add-image.html)
 */}}
 {{- $img := .img -}}
 {{- $widths := .widths | default (slice 600 900 1400) -}}
@@ -43,3 +45,4 @@
      width="{{ $main.Width }}" height="{{ $main.Height }}"
      loading="{{ .loading | default "lazy" }}" decoding="async"
      alt="{{ .alt }}">
+{{- with .page }}{{ partial "seo/add-image.html" (dict "page" . "img" $main "alt" $.alt) }}{{ end -}}

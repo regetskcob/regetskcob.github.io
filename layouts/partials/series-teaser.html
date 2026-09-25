@@ -28,7 +28,7 @@
       {{- $items = $items | append (dict "img" . "alt" $it.alt "href" $series.RelPermalink) }}
     {{- end }}
   {{- end }}
-  {{ partial "photo-grid.html" (dict "items" $items "narrow" true "shuffle" true "uniform" true) }}
+  {{ partial "photo-grid.html" (dict "items" $items "narrow" true "shuffle" true "uniform" true "page" $) }}
 
   <p class="series-more"><a href="{{ .RelPermalink }}">Zur Serie →</a></p>
 </section>

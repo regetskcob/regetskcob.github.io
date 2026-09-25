@@ -72,6 +72,7 @@
              sizes="{{ $sizes }}"
              width="{{ $fallback.Width }}" height="{{ $fallback.Height }}">
       </div>
+      {{- partial "seo/add-image.html" (dict "page" $.Page "img" $fallback "alt" $.Text) -}}
     {{- else -}}
       <div class="img-container"{{ with .Width }} style="--w: {{ . }}; --h: {{ $img.Height }};"{{ end }}>
         <img loading="lazy" decoding="async" alt="{{ $.Text }}" src="{{ .RelPermalink }}">

@@ -15,7 +15,7 @@
   {{- with .Params.photo }}
     {{- with resources.Get (printf "gear/%s" .) }}
   <figure class="gear-photo">
-    {{ partial "responsive-img.html" (dict "img" . "alt" $.Params.photo_alt "loading" "eager") }}
+    {{ partial "responsive-img.html" (dict "img" . "alt" $.Params.photo_alt "loading" "eager" "page" $) }}
   </figure>
     {{- end }}
   {{- end }}
@@ -52,7 +52,8 @@
       {{ partial "responsive-img.html" (dict
            "img" $gimg
            "alt" $g.alt
-           "sizes" (cond $portrait "(max-width: 420px) 100vw, 420px" "(max-width: 780px) 100vw, 780px")) }}
+           "sizes" (cond $portrait "(max-width: 420px) 100vw, 420px" "(max-width: 780px) 100vw, 780px")
+           "page" $) }}
     </figure>
       {{- end }}
     {{- end }}

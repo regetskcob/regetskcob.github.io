@@ -1,0 +1,13 @@
+{{/*
+  Registers a photo shown on a page for the image rights in its structured
+  data (partials/seo/image-objects.html, emitted at the end of the body).
+
+  Takes a dict:
+    page  the page the photo appears on
+    img   the image resource as delivered (the rendition in the img src), so
+          the URL matches what search engines see on the page
+    alt   its description
+*/}}
+{{- with .page -}}
+  {{- .Store.Add "imageObjects" (slice (dict "url" ($.img.Permalink) "alt" ($.alt | default ""))) -}}
+{{- end -}}

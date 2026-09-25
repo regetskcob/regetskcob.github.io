@@ -22,7 +22,7 @@
         {{- $items = $items | append (dict "img" . "alt" $it.alt "size" $it.size) }}
       {{- end }}
     {{- end }}
-    {{ partial "photo-grid.html" (dict "items" $items "shuffle" $.Params.shuffle) }}
+    {{ partial "photo-grid.html" (dict "items" $items "shuffle" $.Params.shuffle "page" $) }}
     {{ partial "photo-grid-script.html" . }}
   {{- end }}
 
