@@ -1,9 +1,10 @@
 {{/*
   Copy of themes/typo/layouts/partials/post-entry.html (theme v3.0.2) with a
-  thumbnail between date and title for posts that name an image in front matter
-  (cover, or featured_image from the Ghost export). Posts without one keep
-  the plain line. Only an explicitly chosen image is used: the first image
-  of a bundle can be anything, a table or a screenshot.
+  thumbnail column on the left for posts that name an image in front matter
+  (cover, or featured_image from the Ghost export). Posts without one get an
+  empty slot of the same width, so dates and titles line up in every row.
+  Only an explicitly chosen image is used: the first image of a bundle can
+  be anything, a table or a screenshot.
 
   The thumbnail repeats the title link, so it is hidden from screen readers
   and skipped by the keyboard; alt stays empty for the same reason.
@@ -20,12 +21,6 @@
 
 <div class="post-line{{ with $thumb }} has-thumb{{ end }}">
 
-    {{ $dateFormat := .Site.Params.listDateFormat | default "2 Jan 2006" }}
-
-    {{ if .Parent.Param "showListDate" | default true }}
-        <p class="line-date">{{ .Date | time.Format $dateFormat }} </p>
-    {{ end }}
-
     {{- with $thumb }}
     {{- $s := .Fill "120x90 webp q75 smart" }}
     {{- $l := .Fill "240x180 webp q75 smart" }}
@@ -34,7 +29,15 @@
              sizes="(max-width: 640px) 80px, 120px" width="120" height="90"
              loading="lazy" decoding="async" alt="">
     </a>
+    {{- else }}
+    <span class="line-thumb" aria-hidden="true"></span>
     {{- end }}
+
+    {{ $dateFormat := .Site.Params.listDateFormat | default "2 Jan 2006" }}
+
+    {{ if .Parent.Param "showListDate" | default true }}
+        <p class="line-date">{{ .Date | time.Format $dateFormat }} </p>
+    {{ end }}
 
     <div class="line-text">
         <p class="line-title">

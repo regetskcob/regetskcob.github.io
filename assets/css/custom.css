@@ -52,9 +52,9 @@
 }
 
 /* --- Post list thumbnails ---
-   Posts with a cover image show it in 4:3 right before the title, where
-   the eye starts reading the line; on the far right it was hard to tell
-   which post it belonged to. On phones the thumbnail is smaller. */
+   A column on the left holds the cover image in 4:3, then date and title
+   as before. Posts without a cover keep the column empty, so dates and
+   titles line up in every row. On phones the thumbnail is smaller. */
 
 .post-line .line-text {
   flex: 1;
@@ -64,7 +64,8 @@
 .line-thumb {
   flex: none;
   align-self: flex-start;
-  margin-right: 1rem;
+  width: 120px;
+  margin-right: 0.5rem;
   border: none;
 }
 
@@ -92,6 +93,7 @@
   }
 
   .line-thumb {
+    width: 80px;
     margin-right: 0.75rem;
   }
 
