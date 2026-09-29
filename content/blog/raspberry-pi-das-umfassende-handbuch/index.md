@@ -11,8 +11,7 @@ reading_time: 2
 summary: Das deutschsprachige Referenzwerk, aktualisiert in der 8. Auflage, für
   den Raspberry Pi 5. Mit dem Autorenteam aus Michael Kofler, Charly Kühnast und Christoph
   Scherbeck steht geballte Kompetenz hinter dem Buch.
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
+author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./IMG_4275.jpeg
 cover: ./IMG_4275.jpeg

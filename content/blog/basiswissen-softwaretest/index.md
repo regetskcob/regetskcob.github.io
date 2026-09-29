@@ -9,8 +9,7 @@ type: post
 author: Daniel Bocksteger
 reading_time: 1
 summary: "Eigentlich zur ISTQB-Schulung gelesen, hat sich das Buch auch für Entwickler und Produktverantwortliche gelohnt. Testarten, Abläufe und Prozesse im Überblick."
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
+author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_6232.jpg
 cover: ./img_6232.jpg

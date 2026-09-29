@@ -9,8 +9,7 @@ type: post
 author: Daniel Bocksteger
 reading_time: 2
 summary: "Ein Schalter am Nachttisch weckt das ganze Haus. So haben wir unseren Alarm über eine zentrale KNX-Gruppenadresse gelöst, und so lässt er sich noch erweitern."
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
+author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 aliases: ["/posts/zentraler-wohnhaus-alarm-mit-knx/"]
 tags: ["Smarthome"]

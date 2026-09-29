@@ -9,8 +9,7 @@ type: post
 author: Daniel Bocksteger
 reading_time: 2
 summary: "Sechs Fotografen, ein Kamerasystem: Der Bildband begleitet Profis mit ihren X- und GFX-Kameras und zeigt, wie sie im Alltag mit der Technik arbeiten."
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
+author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 cover: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg

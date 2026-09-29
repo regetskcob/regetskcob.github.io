@@ -9,8 +9,7 @@ type: post
 author: Daniel Bocksteger
 reading_time: 4
 summary: "Die Zwischenprüfung ist selten so schwer, wie manche Lehrer sie ankündigen. Was euch nach 1,5 Jahren erwartet und wie ihr euch vorbereitet, steht in Teil IV."
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
+author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 seo:
   image: https://regetskcob.github.io/content/images/wp-content/uploads/2022/12/img_1575.jpg

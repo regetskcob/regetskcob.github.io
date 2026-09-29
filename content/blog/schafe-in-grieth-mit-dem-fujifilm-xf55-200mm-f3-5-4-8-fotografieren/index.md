@@ -9,8 +9,7 @@ type: post
 author: Daniel Bocksteger
 reading_time: 1
 summary: Anfang April habe ich versucht, gemeinsam mit meiner Freundin über den Deich in Grieth zu spazieren. Versucht, ja. Leider ist der Deich nur in sehr kleinen Teilen begehbar und überwiegend für Fußgänger gesperrt.
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
+author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./9d1e9aa3-5302-429c-9e88-fe83af30d4e1.jpg
 cover: ./9d1e9aa3-5302-429c-9e88-fe83af30d4e1.jpg

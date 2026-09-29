@@ -9,8 +9,7 @@ type: post
 author: Daniel Bocksteger
 reading_time: 3
 summary: "Zum Auftakt ein Überblick über die Ausbildung zum Fachinformatiker: was ihr im Betrieb lernt, wie die Berufsschule läuft und welche Richtungen es gibt."
-author_bio: Mein Name ist Daniel Bocksteger, geboren wurde ich 1995 in Goch am Niederrhein.
-  Seit Sommer 2022 wohne ich mit meiner Partnerin in Kalkar in unserem Eigenheim.
+author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 aliases: ["/posts/wie-werde-ich-fachinformatiker-i/"]
 tags: ["Ausbildung"]
