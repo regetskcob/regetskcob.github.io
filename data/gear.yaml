@@ -13,9 +13,14 @@
 #
 # Per entry:
 #   name    Required. The label as it appears in the row.
-#   note    Optional. Why it is in the bag, in one sentence.
+#   note       Optional. Why it is in the bag, in one sentence.
+#   post       Optional. Slug of a blog post about this item (the folder name
+#              under content/blog/), shown as a link under the note. A slug
+#              that does not resolve fails the build, so renamed posts do not
+#              leave dead links behind.
+#   postLabel  Optional. Text of that link, "Mehr dazu im Blog" if omitted.
 #
-# Deliberately without links: no shop references, no affiliate links.
+# Links go to our own posts only: no shop references, no affiliate links.
 
 groups:
   - title: "Kameras"
@@ -23,8 +28,10 @@ groups:
     items:
       - name: "Fujifilm X-T5"
         note: "Seit September 2026 die Hauptkamera. Mit SmallRig L-Bracket Grip 4260 und rotem, konkavem JJC-Softauslöser."
+        post: "die-x-t5-einrichten"
+        postLabel: "So habe ich sie eingerichtet"
       - name: "Fujifilm X-T30"
-        note: "Bleibt als Zweitbody dabei, mit SmallRig L-Griff 5664 und demselben JJC-Softauslöser."
+        note: "Begleitet mich seit April 2019 und bleibt als Zweitbody dabei. Mit SmallRig L-Griff 5664 und demselben JJC-Softauslöser."
 
   - title: "Objektive"
     items:

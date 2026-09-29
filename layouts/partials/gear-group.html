@@ -23,6 +23,13 @@
         {{- with $it.note }}
         <span class="gear-note">{{ . }}</span>
         {{- end }}
+        {{- with $it.post }}
+          {{- with site.GetPage (printf "/blog/%s" .) }}
+        <a class="gear-post" href="{{ .RelPermalink }}">{{ $it.postLabel | default "Mehr dazu im Blog" }} →</a>
+          {{- else }}
+            {{- errorf "data/gear.yaml: %q links to post %q, which does not exist" $it.name . }}
+          {{- end }}
+        {{- end }}
       </li>
       {{- end }}
     </ul>

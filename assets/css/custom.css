@@ -581,6 +581,21 @@
   margin-top: 0.15rem;
 }
 
+/* Link to a post about the item, under the note. Quiet like the note, with
+   the underline so it still reads as a link. */
+.gear-post {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.9em;
+  color: var(--content-secondary);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.gear-post:hover {
+  color: var(--content-primary);
+}
+
 /* --- Recipes page --- */
 
 .recipes-intro {
