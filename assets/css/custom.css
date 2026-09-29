@@ -305,6 +305,110 @@ figure.img-portrait + p:empty + h2 {
   }
 }
 
+/* --- Series navigation under a post (partials/series-nav.html) --- */
+
+/* The theme keeps 5rem below the post text; before the series box that
+   reads as a gap, so it shrinks there. */
+.single-content:has(+ .series-nav) {
+  margin-bottom: 3rem;
+}
+
+.series-nav {
+  margin-top: 0;
+  /* 40px narrower than the text, so the box sits slightly indented. */
+  margin-inline: 20px;
+  /* Series posts have no post pagination, which used to keep the footer at
+     a distance; the box keeps it there itself. */
+  margin-bottom: 4rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--content-secondary);
+  border-radius: 5px;
+}
+
+.series-nav-title {
+  margin: 0 0 0.75rem;
+  font-size: 0.85em;
+  color: var(--content-secondary);
+}
+
+.series-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  justify-content: space-between;
+}
+
+.series-nav-links a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.series-nav-links a:hover span:last-child {
+  text-decoration: underline;
+}
+
+.series-nav-next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.series-nav-dir {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  color: var(--content-secondary);
+}
+
+/* --- Series label (partials/series-label.html) ---
+   Marks a part of a series above the post title and under the title in the
+   post lists; links to the series overview. */
+
+.series-label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--content-secondary);
+  border-radius: 3px;
+  color: var(--content-secondary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.series-label:hover {
+  color: var(--content-primary);
+  border-color: var(--content-primary);
+}
+
+.post-intro .series-label {
+  margin-bottom: 0.6rem;
+}
+
+.line-text .series-label {
+  margin-top: 0.3rem;
+}
+
+/* --- Series overview (layouts/series/term.html) ---
+   The parts as numbered lines like the blog list; the number comes from
+   the order, so the list itself carries no markers. */
+
+.series-parts {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.series-parts li {
+  margin-left: 0;
+}
+
+.series-parts .line-summary {
+  margin: 0.25rem 0 0;
+  color: var(--content-secondary);
+  font-size: 0.9em;
+}
+
 /* --- Tag overview --- */
 
 .tag-overview {

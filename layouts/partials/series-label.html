@@ -1,0 +1,13 @@
+{{/*
+  Small label that marks a post as part of a series, e.g. "Serie · Teil 2/5",
+  linking to the series overview. Used in the post header and in the post
+  lists (partials/post-entry.html). Renders nothing outside a series.
+*/}}
+{{- with partial "series-position.html" . }}
+  {{- $text := printf "Serie · Teil %d/%d" (add .index 1) .total }}
+  {{- with .overview }}
+<a class="series-label" href="{{ .RelPermalink }}" title="Zur Übersicht der Serie „{{ .Title }}“">{{ $text }}</a>
+  {{- else }}
+<span class="series-label">{{ $text }}</span>
+  {{- end }}
+{{- end }}

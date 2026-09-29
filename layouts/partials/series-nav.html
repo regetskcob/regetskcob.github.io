@@ -1,0 +1,37 @@
+{{/*
+  Navigation within a post series, under the post text. A post joins a series
+  with "series" in front matter (the series name, shown as is) and names
+  itself in it with "seriesLabel" (e.g. "Teil II: Voraussetzungen"). All posts
+  with the same series are ordered by date; this post links its neighbours.
+  The position comes from partials/series-position.html.
+*/}}
+{{- with partial "series-position.html" . }}
+  {{- $index := .index }}
+  {{- $parts := .parts }}
+<nav class="series-nav" aria-label="Serie {{ .name }}" data-pagefind-ignore>
+  <p class="series-nav-title">
+    {{- with .overview -}}
+    Serie <a href="{{ .RelPermalink }}">„{{ .Title }}“</a>
+    {{- else -}}
+    Serie „{{ .name }}“
+    {{- end }} · Teil {{ add $index 1 }} von {{ .total }}</p>
+  <div class="series-nav-links">
+    {{- if gt $index 0 }}
+      {{- with index $parts (sub $index 1) }}
+    <a class="series-nav-prev" href="{{ .RelPermalink }}" rel="prev">
+      <span class="series-nav-dir">← Vorheriger Teil</span>
+      <span>{{ .Params.seriesLabel | default .Title }}</span>
+    </a>
+      {{- end }}
+    {{- end }}
+    {{- if lt (add $index 1) .total }}
+      {{- with index $parts (add $index 1) }}
+    <a class="series-nav-next" href="{{ .RelPermalink }}" rel="next">
+      <span class="series-nav-dir">Nächster Teil →</span>
+      <span>{{ .Params.seriesLabel | default .Title }}</span>
+    </a>
+      {{- end }}
+    {{- end }}
+  </div>
+</nav>
+{{- end }}

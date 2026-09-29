@@ -77,6 +77,8 @@
         {{- /* "hideTitle: true" in front matter keeps the h1 for screen
                readers and search engines, but out of sight: for pages whose
                first element already says what they are (the about page). */}}
+        {{- /* Posts in a series say so above their title (partials/series-label.html). */}}
+        {{- if $isPost }}{{ partial "series-label.html" . }}{{ end }}
         <h1 class="single-title{{ if .Params.hideTitle }} visually-hidden{{ end }}">{{ .Title }}</h1>
         {{- with .Param "summary" }}
         <p class="single-summary" data-pagefind-meta="summary">{{ . | markdownify }}</p>
@@ -150,6 +152,9 @@
     <div class="single-content">
       {{ .Content }}
     </div>
+
+    {{- /* Previous and next part, for posts in a series (partials/series-nav.html). */}}
+    {{ partial "series-nav.html" . }}
   </article>
   
   {{- /* Comments */}}
@@ -175,8 +180,9 @@
   {{/* Next prev controls */}}
 
   {{/* Previous/next post, in posts only: between pages like Über and the
-       Impressum it pointed at arbitrary neighbours ("Rechtliches"). */}}
-  {{ if and $isPost (not (.Param "hidePagination")) }}
+       Impressum it pointed at arbitrary neighbours ("Rechtliches"). Posts in
+       a series leave it out, their series navigation already leads on. */}}
+  {{ if and $isPost (not (.Param "hidePagination")) (not .Params.series) }}
   {{ partial "pagination-single.html" . }}
   {{ end }}
 

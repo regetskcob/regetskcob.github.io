@@ -16,7 +16,7 @@ Angefangen hat es mit einer Ausbildung zum Fachinformatiker für Anwendungsentwi
 bis 2015.
 Wie die abläuft, von der Bewerbung bis zur Abschlussprüfung, beschreibe ich in
 der fünfteiligen Serie
-[Wie werde ich Fachinformatiker](/blog/wie-werde-ich-fachinformatiker-i/).
+[Wie werde ich Fachinformatiker](/series/wie-werde-ich-fachinformatiker/).
 Seitdem entwickle ich Software, viele Jahre davon native iOS-Apps mit
 Objective-C und Swift. Heute arbeite ich überwiegend mit Flutter, für Web und
 App.

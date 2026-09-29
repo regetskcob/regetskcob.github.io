@@ -1,0 +1,40 @@
+{{/*
+  Overview of one post series (/series/<name>/): the intro from
+  content/series/<name>/_index.md, then the parts in reading order, oldest
+  first, in the lines of the blog list. Each line shows the part's
+  "seriesLabel" and its summary, which say more than the numbered titles.
+*/}}
+{{ define "main" }}
+<div class="list-container series-overview">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <ol class="series-parts">
+  {{- range $part := .Pages.ByDate }}
+    {{- $thumb := "" }}
+    {{- with or $part.Params.cover $part.Params.featured_image }}
+      {{- with $part.Resources.Get (strings.TrimPrefix "./" .) }}
+        {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}{{ $thumb = . }}{{ end }}
+      {{- end }}
+    {{- end }}
+    <li class="post-line{{ with $thumb }} has-thumb{{ end }}">
+      {{- with $thumb }}
+        {{- $s := .Fill "120x90 webp q75 smart" }}
+        {{- $l := .Fill "240x180 webp q75 smart" }}
+      <a class="line-thumb" href="{{ $part.RelPermalink }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 120w, {{ $l.RelPermalink }} 240w"
+             sizes="(max-width: 640px) 80px, 120px" width="120" height="90"
+             loading="lazy" decoding="async" alt="">
+      </a>
+      {{- end }}
+      <div class="line-text">
+        <p class="line-title"><a href="{{ $part.RelPermalink }}">{{ $part.Params.seriesLabel | default $part.Title }}</a></p>
+        {{- with $part.Params.summary }}
+        <p class="line-summary">{{ . }}</p>
+        {{- end }}
+      </div>
+    </li>
+  {{- end }}
+  </ol>
+</div>
+{{ end }}

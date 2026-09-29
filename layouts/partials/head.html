@@ -31,7 +31,9 @@
 <meta name="description" content="{{ . }}"/>
 {{- end }}
 
-{{ if in (slice "term" "taxonomy") .Kind -}}
+{{- /* Tag pages only repeat post lists. A series overview introduces its
+       parts in reading order and is worth finding, so it stays indexed. */}}
+{{ if and (in (slice "term" "taxonomy") .Kind) (not (and (eq .Kind "term") (eq .Data.Plural "series"))) -}}
 <meta name="robots" content="noindex, follow">
 {{- else -}}
 {{/* Lets Google show photos large in Discover and image results. */}}

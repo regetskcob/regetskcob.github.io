@@ -41,6 +41,8 @@
                 {{ .Title }}
             </a>
         </p>
+        {{- /* Parts of a series carry a small label under the title. */}}
+        {{ partial "series-label.html" . }}
 
         {{ if .Site.Params.listSummaries }}
         <p class="line-summary"> {{ .Summary }} </p>

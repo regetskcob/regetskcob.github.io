@@ -15,6 +15,9 @@ enableRobotsTXT = true
 
 [taxonomies]
 tag = 'tags'
+# Post series ("series" in front matter): each gets an overview page under
+# /series/<name>/ (layouts/series/term.html), linked from its parts.
+series = 'series'
 
 [module]
   [[module.imports]]

@@ -1,0 +1,19 @@
+{{/*
+  All post series (/series/): each with its number of parts, linking to its
+  overview (layouts/series/term.html).
+*/}}
+{{ define "main" }}
+<div class="list-container">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <ul class="tag-overview">
+    {{- range .Data.Terms.Alphabetical }}
+    <li>
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+      <span class="tag-count">{{ .Count }} {{ cond (eq .Count 1) "Teil" "Teile" }}</span>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}
