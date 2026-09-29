@@ -8,7 +8,7 @@ draft: false
 type: post
 author: Daniel Bocksteger
 reading_time: 4
-summary: "Wie läuft Blockunterricht eigentlich ab? Am Beispiel unserer Ausbildung beschreibe ich, wie der Unterricht an den Berufsschulen in Moers organisiert war."
+summary: "Wie läuft Blockunterricht eigentlich ab? Am Beispiel meiner Ausbildung beschreibe ich, wie der Unterricht an den Berufsschulen in Moers organisiert war."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 cover: ./cover.jpg
@@ -20,7 +20,7 @@ aliases: ["/posts/wie-werde-ich-fachinformatiker-iii/"]
 tags: ["Ausbildung"]
 ---
 
-Wer eine Ausbildung zum Fachinformatiker machen möchte, muss zwangsläufig auch den Unterricht in der Berufsschule besuchen. Wie genau der Unterricht abläuft, möchten wir euch am Beispiel unserer eigenen Ausbildung erklären.
+Wer eine Ausbildung zum Fachinformatiker machen möchte, muss zwangsläufig auch den Unterricht in der Berufsschule besuchen. Wie genau der Unterricht abläuft, möchte ich euch am Beispiel meiner eigenen Ausbildung erklären.
 
 ## Teil III - Der Unterricht
 
@@ -32,7 +32,7 @@ Während des Schulblocks ist es vor allem der Firma überlassen, ob ihr nach ein
 
 **Die Berufsschule**
 
-Niklas und ich haben unsere Ausbildung in zwei unterschiedlichen Firmen im Kreis Kleve gemacht und sind beide in Moers zur Schule gegangen. Zwei Tage der Woche verbrachten wir an einer Schule für die wirtschaftlichen Themen und den allgemeinen Unterricht wie Deutsch, Wirtschaft oder Englisch (Mercator Berufskolleg Moers).
+Meine Ausbildung habe ich in einer Firma im Kreis Kleve gemacht, zur Berufsschule ging es nach Moers. Zwei Tage der Woche verbrachten wir an einer Schule für die wirtschaftlichen Themen und den allgemeinen Unterricht wie Deutsch, Wirtschaft oder Englisch (Mercator Berufskolleg Moers).
 
 Die restlichen drei Tage waren wir an einer Schule, die auf die technischen Themen spezialisiert war (Berufskolleg für Technik Moers). Dort hatten wir unter anderem die Fächer Sport, Religion, Programmierung und IuT, also Informations- und Telekommunikationstechnik.
 

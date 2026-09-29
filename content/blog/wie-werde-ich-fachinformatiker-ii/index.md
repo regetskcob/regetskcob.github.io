@@ -20,7 +20,7 @@ aliases: ["/posts/wie-werde-ich-fachinformatiker-ii/"]
 tags: ["Ausbildung"]
 ---
 
-Ihr habt euch im letzten Artikel also einen Überblick über die Ausbildung zum Fachinformatiker verschafft? Prima, dann stellen wir als Nächstes die wichtigsten Voraussetzungen vor, die an euch gestellt werden, sei es, um einen Ausbildungsplatz zu bekommen, oder während der Ausbildung.
+Ihr habt euch im letzten Artikel also einen Überblick über die Ausbildung zum Fachinformatiker verschafft? Prima, dann stelle ich als Nächstes die wichtigsten Voraussetzungen vor, die an euch gestellt werden, sei es, um einen Ausbildungsplatz zu bekommen, oder während der Ausbildung.
 
 ## Teil II - Was ist nötig für einen Ausbildungsplatz als Fachinformatiker?
 

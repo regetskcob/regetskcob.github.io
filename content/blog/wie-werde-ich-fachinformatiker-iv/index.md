@@ -22,7 +22,7 @@ aliases: ["/posts/wie-werde-ich-fachinformatiker-iv/"]
 tags: ["Ausbildung"]
 ---
 
-Nach den ersten 1,5 Jahren der Ausbildung zum Fachinformatiker wartet die sogenannte Zwischenprüfung auf euch. Mit diesem Artikel, dem vorletzten unserer Serie, möchten wir euch die Angst nehmen, die so mancher Lehrer verbreitet, und euch etwas besser auf die Prüfung vorbereiten.
+Nach den ersten 1,5 Jahren der Ausbildung zum Fachinformatiker wartet die sogenannte Zwischenprüfung auf euch. Mit diesem Artikel, dem vorletzten der Serie, möchte ich euch die Angst nehmen, die so mancher Lehrer verbreitet, und euch etwas besser auf die Prüfung vorbereiten.
 
 ## Teil IV - Die Zwischenprüfung
 

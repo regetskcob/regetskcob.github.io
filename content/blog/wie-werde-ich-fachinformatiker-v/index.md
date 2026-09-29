@@ -20,7 +20,7 @@ aliases: ["/posts/wie-werde-ich-fachinformatiker-v/"]
 tags: ["Ausbildung"]
 ---
 
-Nach drei Jahren seid ihr so gut wie am Ende der Ausbildung angelangt, also wird es Zeit für die Abschlussprüfung. Dies ist auch der letzte Artikel unserer Serie „Wie werde ich Fachinformatiker“, denn mit bestandener Abschlussprüfung seid ihr Fachinformatiker. Mit diesem letzten Artikel möchten wir euch auf den Ablauf der Abschlussprüfung und ihre Bestandteile vorbereiten.
+Nach drei Jahren seid ihr so gut wie am Ende der Ausbildung angelangt, also wird es Zeit für die Abschlussprüfung. Dies ist auch der letzte Artikel der Serie „Wie werde ich Fachinformatiker“, denn mit bestandener Abschlussprüfung seid ihr Fachinformatiker. Mit diesem letzten Artikel möchte ich euch auf den Ablauf der Abschlussprüfung und ihre Bestandteile vorbereiten.
 
 ## Teil V - Die Abschlussprüfung
 
@@ -80,8 +80,8 @@ Und viele mehr. Wichtig ist hier, dass ihr versteht, dass und wie ihr die Prüfe
 
 …, dass ihr euch mit eurem ganz eigenen Blick ein Bild von dem Beruf macht. Sucht euch eine Praktikumsstelle in der Nähe und holt euch Einblicke in den Beruf des Fachinformatikers bzw. Softwareentwicklers. Im Rahmen eines solchen Praktikums könnt ihr auch direkt zeigen, was ihr schon könnt.
 
-Denn die Entscheidung liegt am Ende bei euch. Ihr müsst für euch entscheiden, ob der Beruf etwas für euch ist. Fakt ist aber auch, dass hinter den „Nerds“, die die Programme auf eurem Computer womöglich mitentwickelt haben, mehr steckt als ein Kellerkind. Das, und die Anforderungen und Hürden vor und während der Ausbildung, wollten wir euch mit dieser Serie näherbringen, und wir hoffen sehr, dass es uns gelungen ist.
+Denn die Entscheidung liegt am Ende bei euch. Ihr müsst für euch entscheiden, ob der Beruf etwas für euch ist. Fakt ist aber auch, dass hinter den „Nerds“, die die Programme auf eurem Computer womöglich mitentwickelt haben, mehr steckt als ein Kellerkind. Das, und die Anforderungen und Hürden vor und während der Ausbildung, wollte ich euch mit dieser Serie näherbringen, und ich hoffe sehr, dass es mir gelungen ist.
 
 **Lesenswert**
 
-Unter [www.fachinformatiker-anwendungsentwicklung.net](https://web.archive.org/web/20160724052203/http://www.fachinformatiker-anwendungsentwicklung.net/) schreibt Stefan Macke als Dozent, Prüfer und Ausbilder ebenfalls über die Ausbildung, insbesondere über die Abschlussprüfung. Er stellt euch dort unter anderem einen Podcast, Vorlagen für Präsentation und Dokumentation und aktuelle Themen zusammen. Schaut mal vorbei 🙂
+Stefan Macke schreibt als Ausbilder und Prüfer ebenfalls über die Ausbildung, insbesondere über die Abschlussprüfung. Unter [it-berufe-podcast.de](https://it-berufe-podcast.de/) findet ihr seinen IT-Berufe-Podcast, dazu Hilfen für Projektdokumentation und Präsentation und vieles mehr rund um die Ausbildung. Schaut mal vorbei 🙂
