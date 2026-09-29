@@ -1,6 +1,6 @@
 ---
-title: 👨‍🎓 | Wie werde ich Fachinformatiker - I
-title_plain: Wie werde ich Fachinformatiker - I
+title: "👨‍🎓 | Die Ausbildung zum Fachinformatiker im Überblick"
+title_plain: "Die Ausbildung zum Fachinformatiker im Überblick"
 date: 2022-12-05T07:00:00+0000
 lastmod: 2026-09-29T14:00:00+0000
 slug: wie-werde-ich-fachinformatiker-i

@@ -1,6 +1,6 @@
 ---
-title: 👨‍🎓 | Wie werde ich Fachinformatiker - II
-title_plain: Wie werde ich Fachinformatiker - II
+title: "👨‍🎓 | Voraussetzungen für einen Ausbildungsplatz als Fachinformatiker"
+title_plain: "Voraussetzungen für einen Ausbildungsplatz als Fachinformatiker"
 date: 2022-12-12T10:30:00+0000
 lastmod: 2026-09-29T14:00:00+0000
 slug: wie-werde-ich-fachinformatiker-ii

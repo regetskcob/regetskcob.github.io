@@ -1,6 +1,6 @@
 ---
-title: 👨‍🎓 | Wie werde ich Fachinformatiker - III
-title_plain: Wie werde ich Fachinformatiker - III
+title: "👨‍🎓 | Blockunterricht in der Berufsschule"
+title_plain: "Blockunterricht in der Berufsschule"
 date: 2022-12-19T07:30:00+0000
 lastmod: 2026-09-29T14:00:00+0000
 slug: wie-werde-ich-fachinformatiker-iii

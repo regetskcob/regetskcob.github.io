@@ -1,6 +1,6 @@
 ---
-title: 👨‍🎓 | Wie werde ich Fachinformatiker - IV
-title_plain: Wie werde ich Fachinformatiker - IV
+title: "👨‍🎓 | Die Zwischenprüfung als Fachinformatiker"
+title_plain: "Die Zwischenprüfung als Fachinformatiker"
 date: 2022-12-26T22:45:00+0000
 lastmod: 2026-09-29T14:00:00+0000
 slug: wie-werde-ich-fachinformatiker-iv

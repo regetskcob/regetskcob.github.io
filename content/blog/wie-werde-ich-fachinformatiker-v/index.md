@@ -1,6 +1,6 @@
 ---
-title: 👨‍🎓 | Wie werde ich Fachinformatiker - V
-title_plain: Wie werde ich Fachinformatiker - V
+title: "👨‍🎓 | Die Abschlussprüfung als Fachinformatiker"
+title_plain: "Die Abschlussprüfung als Fachinformatiker"
 date: 2023-01-02T05:00:00+0000
 lastmod: 2026-09-29T14:00:00+0000
 slug: wie-werde-ich-fachinformatiker-v

@@ -1,7 +1,7 @@
 {{/*
   Where a page sits in its series ("series" in front matter). Returns a dict
   with name, parts (all posts of the series, oldest first), index (0-based),
-  total and overview (the series page, if Hugo has one), or nothing for a
+  total and overview (the series page Hugo made for it), or nothing for a
   page outside a series. Shared by the series label and the series navigation.
 */}}
 {{- $out := dict -}}
@@ -13,7 +13,7 @@
     {{- if eq $p.RelPermalink $.RelPermalink }}{{ $index = $i }}{{ end -}}
   {{- end -}}
   {{- if ge $index 0 -}}
-    {{- $out = dict "name" $name "parts" $parts "index" $index "total" (len $parts) "overview" (site.GetPage (printf "/series/%s" (urlize $name))) -}}
+    {{- $out = dict "name" $name "parts" $parts "index" $index "total" (len $parts) "overview" (index ($.GetTerms "series") 0) -}}
   {{- end -}}
 {{- end -}}
 {{- return $out -}}
