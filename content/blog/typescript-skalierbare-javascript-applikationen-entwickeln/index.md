@@ -13,6 +13,9 @@ summary: '"Programmieren in TypeScript: Skalierbare JavaScript-Applikationen ent
   an JavaScript-Entwickler richtet, die ihre Kenntnisse erweitern und robuste, skalierbare
   Anwendungen mit TypeScript erstellen möchten.'
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
+cover: ./cover.jpg
+coverCredit: "Cover: O’Reilly / dpunkt.verlag"
+coverAlt: "Buchcover von „Programmieren in TypeScript“ von Boris Cherny, zwei gezeichnete Guanakos, auf hellem Grund"
 aliases: ["/posts/typescript-skalierbare-javascript-applikationen-entwickeln/"]
 tags: ["Bücher", "Softwareentwicklung"]
 ---

@@ -10,11 +10,12 @@ author: Daniel Bocksteger
 reading_time: 2
 summary: "Rund 800 Seiten, 22 Kapitel und ein hilfreicher Index: Das Buch aus dem O’Reilly Verlag ist ein Nachschlagewerk zu C für Einsteiger wie für Fortgeschrittene."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./bildschirmfoto-2022-11-11-um-21.40.32.png
-cover: ./bildschirmfoto-2022-11-11-um-21.40.32.png
-coverAlt: "Der Titelschriftzug „C in a Nutshell“ mit dem Zusatz „The Definitive Reference“ in Weiß auf violettem Grund"
+featured_image: ./cover.jpg
+cover: ./cover.jpg
+coverCredit: "Cover: O’Reilly"
+coverAlt: "Buchcover von „C in a Nutshell“, zweite Auflage, von Peter Prinz und Tony Crawford, eine gezeichnete Kuh über dem Titel auf violettem Feld, auf hellem Grund"
 seo:
-  image: ./bildschirmfoto-2022-11-11-um-21.40.32.png
+  image: ./cover.jpg
 aliases: ["/posts/c-in-a-nutshell/"]
 tags: ["Bücher", "Softwareentwicklung"]
 ---

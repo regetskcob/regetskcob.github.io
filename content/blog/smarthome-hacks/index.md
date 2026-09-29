@@ -8,6 +8,9 @@ draft: false
 readTime: true
 autonumber: false
 math: false
+cover: ./cover.jpg
+coverCredit: "Cover: O’Reilly"
+coverAlt: "Buchcover von „SmartHome Hacks – Hausautomatisierung selber machen“ von Peter A. Henning, mit Kacheln für Wetter, Temperatur und ein Haus, auf hellem Grund"
 aliases: ["/posts/smarthome-hacks/"]
 tags: ["Bücher", "Smarthome"]
 ---

@@ -8,6 +8,9 @@ draft: false
 readTime: true
 autonumber: false
 math: false
+cover: ./cover.jpg
+coverCredit: "Cover: Verlag Eugen Ulmer"
+coverAlt: "Buchcover von „Der große Gartenplaner“, herausgegeben von Peter Wirth, grün mit Gartenskizzen und zwei CDs, auf hellem Grund"
 aliases: ["/posts/der-grosse-gartenplaner/"]
 tags: ["Bücher", "Natur"]
 ---

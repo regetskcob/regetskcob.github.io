@@ -8,6 +8,9 @@ draft: false
 readTime: true
 autonumber: false
 math: false
+cover: ./cover.jpg
+coverCredit: "Cover: Murmann Publishers"
+coverAlt: "Buchcover von „Data for the People“ von Andreas Weigend, dunkelgraue Großbuchstaben auf leuchtendem Gelb, auf hellem Grund"
 aliases: ["/posts/data-for-the-people/"]
 tags: ["Bücher", "Gesellschaft"]
 ---
