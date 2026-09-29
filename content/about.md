@@ -3,12 +3,12 @@ title: Über mich
 date: 2020-04-05T15:07:57+0000
 lastmod: 2026-09-29T12:00:00+0000
 description: "Daniel Bocksteger vom Niederrhein: Softwareentwickler, draußen mit der Kamera unterwegs und Jäger im heimischen Revier."
+# The photo and its caption open the page, so the title is only kept for
+# screen readers and search engines (layouts/_default/single.html).
+hideTitle: true
 ---
 
-![Daniel mit Kamera in der Hand und Rucksack auf einer Aussichtsplattform, dahinter schneebedeckte Berggipfel unter Wolken](about/portrait.jpg#small)
-
-Ich bin Daniel. Auf der Startseite steht die Kurzfassung, hier kommt die etwas
-längere.
+![Daniel lächelnd im Strickpullover mit Rucksack und Kamera in der Hand, dahinter schneebedeckte Berggipfel unter Wolken](about/portrait.jpg#portrait "Das bin ich.")
 
 ## Beruflich
 

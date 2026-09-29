@@ -4,7 +4,8 @@
   Overrides the theme's hook (themes/typo/layouts/_default/_markup/render-image.html),
   which serves originals untouched. Keeps the theme's DOM and class contract intact:
   figure > .img-container[--w/--h] > img[width][height], plus the img-<tag> classes
-  derived from the "image.jpg#tag" suffix.
+  derived from the "image.jpg#tag" suffix. "#portrait" is our own addition
+  for a small photo floated beside the text (see custom.css).
 
   Originals are resized to a srcset and converted to WebP. Non-raster formats (SVG,
   GIF) and remote images are passed through untouched.
@@ -41,6 +42,10 @@
 {{- $sizes := "(max-width: 780px) 100vw, 780px" -}}
 {{- if in $classes "img-full" -}}
   {{- $sizes = "100vw" -}}
+{{- end -}}
+{{/* "#portrait": a small photo floated beside the text (custom.css). */}}
+{{- if in $classes "img-portrait" -}}
+  {{- $sizes = "(max-width: 640px) 160px, 200px" -}}
 {{- end -}}
 
 <figure class="{{ $class }}">

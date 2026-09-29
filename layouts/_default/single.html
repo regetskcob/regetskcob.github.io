@@ -70,7 +70,10 @@
 
         {{- /* Title and Summary */}}
         
-        <h1 class="single-title">{{ .Title }}</h1>
+        {{- /* "hideTitle: true" in front matter keeps the h1 for screen
+               readers and search engines, but out of sight: for pages whose
+               first element already says what they are (the about page). */}}
+        <h1 class="single-title{{ if .Params.hideTitle }} visually-hidden{{ end }}">{{ .Title }}</h1>
         {{- with .Param "summary" }}
         <p class="single-summary" data-pagefind-meta="summary">{{ . | markdownify }}</p>
         {{- end }}

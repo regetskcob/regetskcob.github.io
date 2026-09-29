@@ -214,6 +214,77 @@
   }
 }
 
+/* Out of sight, still read by screen readers (hideTitle in front matter). */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- Portrait beside the text ("image.jpg#portrait") ---
+   A photo of the author floated left of the first section, small enough not
+   to take over the page, with its caption underneath. The heading right
+   after it sits beside the photo; every later heading starts below it. On
+   phones the column beside a floated photo would be too narrow to read, so
+   there it stands on its own above the text. */
+
+figure.img-portrait {
+  float: left;
+  width: 200px;
+  margin: 0.4rem 2rem 1rem 0;
+}
+
+figure.img-portrait .img-container {
+  max-height: none;
+}
+
+figure.img-portrait img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+figure.img-portrait figcaption {
+  margin: 0.4rem 0 0;
+  padding: 0;
+}
+
+figure.img-portrait ~ h2 {
+  clear: left;
+}
+
+/* Markdown wraps the image in a paragraph, and the browser moves the figure
+   out of it, leaving an empty <p> between figure and heading. */
+figure.img-portrait + p:empty {
+  display: none;
+}
+
+figure.img-portrait + h2,
+figure.img-portrait + p:empty + h2 {
+  clear: none;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 640px) {
+  figure.img-portrait {
+    float: none;
+    width: 160px;
+    margin: 0 0 1.5rem;
+  }
+
+  figure.img-portrait img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
 /* --- Tag overview --- */
 
 .tag-overview {
