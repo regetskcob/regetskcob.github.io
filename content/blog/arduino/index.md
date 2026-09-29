@@ -8,6 +8,9 @@ draft: false
 readTime: true
 autonumber: false
 math: false
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Ein aufgeschlagenes Buch mit Textzeilen und dem Schaltzeichen einer LED, darauf ein Arduino-Board, das über zwei Kabel mit einem Steckbrett verbunden ist, auf dem eine rote LED leuchtet"
 aliases: ["/posts/arduino/"]
 tags: ["Bücher", "Smarthome"]
 ---
