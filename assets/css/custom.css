@@ -1079,6 +1079,15 @@ footer a[href^="/legal/"]:hover {
   line-height: 1.6;
 }
 
+/* On wider screens the second group (Blog, Über) moves to the right end of
+   the bar, apart from the photography pages. Phones keep both groups left,
+   one per line (below). */
+@media screen and (min-width: 641px) {
+  .header-menu .menu-group:last-child {
+    margin-left: auto;
+  }
+}
+
 /* On phones the bar goes: the two groups stand as two plain lines, which
    is enough to read as navigation there, and the grey stays with the cards
    below. Tighter gaps keep each group on one line. */
