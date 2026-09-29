@@ -51,7 +51,7 @@ homeIntroTitle = 'Hi!'
 homeIntroContent = """
 Ich bin Daniel, online als @regetskcob unterwegs. Beruflich entwickle ich Software, überwiegend mit Flutter. Meine freie Zeit verbringe ich draußen, mit der Kamera am Niederrhein, im Wald und im Revier.
 
-Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür und Berichte aus Projekten, die zwischen Technik und Natur entstehen. KNX im Eigenheim, Messwerte in Grafana, ein selbstgebauter Astro-Tracker.
+Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür und den [Blog](/blog/) mit allem, was nebenher entsteht. Das sind Fotowalks wie [durch den Uedemer Hochwald](/blog/wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald/), Projekte zwischen Technik und Natur wie [der Alarm über KNX](/blog/zentraler-wohnhaus-alarm-mit-knx/) oder [ein selbstgebauter Astro-Tracker](/blog/bau-des-openastrotracker-teil-i/) und [Rezensionen](/tags/bücher/) zu den Büchern, die ich gelesen habe.
 """
 
 
