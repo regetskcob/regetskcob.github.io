@@ -1,24 +1,59 @@
 ---
 title: Über mich
 date: 2020-04-05T15:07:57+0000
-lastmod: 2025-03-30T12:48:14+0000
-description: "Daniel Bocksteger, Softwareentwickler, Fotograf und Jäger am Niederrhein: wer hier schreibt und worum es in diesem Blog geht."
+lastmod: 2026-09-29T12:00:00+0000
+description: "Daniel Bocksteger vom Niederrhein: Softwareentwickler, draußen mit der Kamera unterwegs und Jäger im heimischen Revier."
 ---
 
-Hi,
+![Daniel mit Kamera in der Hand und Rucksack auf einer Aussichtsplattform, dahinter schneebedeckte Berggipfel unter Wolken](about/portrait.jpg#small)
 
-schön, dass ich dich hier begrüßen darf! Es scheint, als würden dich Fotografie oder Software/Technologie interessieren. Das freut mich ungemein, denn genau darum dreht sich hier auf dem Blog sozusagen jede Zeile. ☺️
+Ich bin Daniel. Auf der Startseite steht die Kurzfassung, hier kommt die etwas
+längere.
 
-Ich bin Daniel, seit 2015 festangestellter Software-Entwickler und in meiner Freizeit beschäftige ich mich insbesondere mit der Fotografie und der Natur, die mich umgibt.
+## Beruflich
 
-Ansonsten kann ich über mich sagen, dass eine meiner größten Stärken zugleich auch meine größte Schwäche ist. Mir fällt es sehr leicht, mich in technische und logisch komplexe Themen oder Aufgabenstellungen „reinzufuchsen“, was soweit erstmal positiv ist. 
-Die „negative“ Seite ergibt sich daraus, dass ich mich parallel auch für viel zu viele Dinge interessiere und begeistern kann, was zum „Springen“ zwischen all diesen Themen führt, was den Fokus manchmal etwas verschwimmen lässt.
+Angefangen hat es mit einer Ausbildung zum Fachinformatiker für Anwendungsentwicklung von 2012
+bis 2015.
+Wie die abläuft, von der Bewerbung bis zur Abschlussprüfung, beschreibe ich in
+der fünfteiligen Serie
+[Wie werde ich Fachinformatiker](/blog/wie-werde-ich-fachinformatiker-i/).
+Seitdem entwickle ich Software, viele Jahre davon native iOS-Apps mit
+Objective-C und Swift. Heute arbeite ich überwiegend mit Flutter, für Web und
+App.
 
-Dabei liegt mein Fokus insbesondere auf den folgenden Themen:
+Was mich daran reizt, zieht sich auch durch die Freizeit: Ich will verstehen,
+warum etwas funktioniert. Aus einer kleinen Frage wird bei mir deshalb schnell
+ein kleines Projekt, sei es die KNX-Installation in unserem Haus, die ich selbst
+geplant und umgesetzt habe, oder ein Astro-Tracker aus dem 3D-Drucker. Die
+Kehrseite kenne ich auch: Es gibt deutlich mehr Themen, die mich interessieren,
+als Abende in der Woche.
 
-  * 👨🏻‍💻 | Software-Entwicklung (native iOS mit Objective-C & Swift, Cross-Platform mit Flutter)
-  * ⚡️ | Haus-Automatisierung mit KNX - In unserem Eigenheim habe ich die smarte Elektro-Installation komplett in Eigenleistung geplant und durchgeführt.
-  * 📸 | Fotografie mit Kamera & -Drohne
-  * 🥾 | Ich gehe gerne in den umliegenden Wäldern wandern und nehme die Kamera mit auf die Tour.
-  * 🦌 | Im April 2024 haben meine Partnerin und ich unsere Jagdschein-Prüfung nach 6 Monaten Unterricht und Jagdpraxis absolviert und engagieren uns seit dem im heimischen Hegering & Revier. In 2025 starten wir außerdem als zertifizierte UAV Fernpiloten in die Kitz-/Jungwildrettung.
-  * 📚 | Ich lese in meiner übrigen Freizeit am liebsten über die Fotografie und die Jagd. Aber auch Bücher zu Technologien stehen immer wieder auf der Leseliste.
+## Draußen
+
+Den Ausgleich finde ich draußen, zu Fuß im Wald oder mit dem Rad am Deich, und
+fast immer ist eine Kamera dabei. Fotografie ist für mich ein Hobby, seit 2019
+mit der X-T30, inzwischen auch mit der X-T5 und einer Drohne. Am liebsten
+fotografiere ich die Gegend vor der Haustür, und daraus ist die Serie
+[Niederrhein.](/niederrhein) entstanden.
+
+Seit April 2024 haben meine Partnerin und ich den Jagdschein und sind seitdem im
+heimischen Hegering und Revier aktiv. Im Frühjahr fliegen wir außerdem mit einer
+Wärmebilddrohne für die Kitzrettung, damit bei der Mahd keine Rehkitze ins
+Mähwerk geraten.
+
+Gelesen wird auch, meistens über Fotografie, Jagd oder Technik. Die Bücher
+stehen im Regal, die aktuellen liegen auf dem Schreibtisch und bei gutem Wetter
+mit mir auf dem Sitzsack im Gras.
+
+## Was ihr hier findet
+
+- [Niederrhein.](/niederrhein): die Fotoserie aus der Gegend
+- [Ausrüstung](/ausruestung) und [Rezepte](/rezepte): womit ich fotografiere und
+  wie die Kameras eingestellt sind
+- [Blog](/blog): Projektberichte zwischen Technik und Natur, dazu Rezensionen
+  der Bücher, die ich gelesen habe
+
+Austauschen könnt ihr euch mit mir gerne auf
+[Instagram](https://www.instagram.com/regetskcob/),
+[LinkedIn](https://www.linkedin.com/in/regetskcob/) oder
+[GitHub](https://github.com/regetskcob).
