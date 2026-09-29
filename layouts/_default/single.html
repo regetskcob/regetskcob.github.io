@@ -52,7 +52,8 @@
                appear in the text anyway (most book reviews). Edge to edge,
                height capped so portrait covers do not push the title down;
                loaded eagerly, it is the first thing on the page. Its alt text
-               is "coverAlt" from front matter. */}}
+               is "coverAlt" from front matter. "coverAI: true" marks a
+               generated cover with a small label on the image. */}}
         {{- if $isPost }}
           {{- with or .Params.cover .Params.featured_image }}
             {{- $name := strings.TrimPrefix "./" . }}
@@ -61,6 +62,9 @@
                 {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}
         <figure class="post-cover">
           {{ partial "responsive-img.html" (dict "img" . "widths" (slice 800 1600) "sizes" "(max-width: 780px) 100vw, 780px" "loading" "eager" "alt" ($.Params.coverAlt | default "") "page" $) }}
+          {{- if $.Params.coverAI }}
+          <figcaption class="post-cover-ai">KI-generiert</figcaption>
+          {{- end }}
         </figure>
                 {{- end }}
               {{- end }}

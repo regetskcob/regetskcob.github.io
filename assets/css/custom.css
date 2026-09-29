@@ -76,6 +76,26 @@
   border-radius: 5px 5px 0 0;
 }
 
+.post-intro .post-cover {
+  position: relative;
+}
+
+/* Label on generated covers ("coverAI: true"): small, in the corner, readable
+   on light and dark images alike. */
+.post-cover-ai {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  margin: 0;
+  padding: 0.15rem 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 640px) {
   .post-intro .post-cover {
     margin: -1rem -1.1rem 1rem;

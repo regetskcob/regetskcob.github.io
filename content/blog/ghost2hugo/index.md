@@ -6,7 +6,8 @@ lastmod: 2026-09-29T14:00:00+0000
 summary: "Ein kleines Python-Skript, das Ghost-Backups in Markdown-Dateien für Hugo umwandelt. Mit englischer Übersetzung am Ende."
 description: "Ein kleines Python-Skript, das ein Ghost-Backup in Markdown-Beiträge für Hugo umwandelt, für alle, die ihren Blog von Ghost auf eine statische Seite umziehen. Mit englischer Übersetzung."
 cover: ./cover.jpg
-coverAlt: "Abstrakte Grafik: Eine diffuse Wolke aus Punkten zieht sich durch einen schmalen Spalt und ordnet sich rechts zu einem Raster aus zwölf Dokumentkarten"
+coverAI: true
+coverAlt: "KI-generierte abstrakte Grafik: Eine diffuse Wolke aus Punkten zieht sich durch einen schmalen Spalt und ordnet sich rechts zu einem Raster aus zwölf Dokumentkarten"
 draft: false
 readTime: true
 autonumber: false

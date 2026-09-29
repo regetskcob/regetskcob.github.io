@@ -11,6 +11,9 @@ reading_time: 2
 summary: "Ein Schalter am Nachttisch weckt das ganze Haus. So haben wir unseren Alarm über eine zentrale KNX-Gruppenadresse gelöst, und so lässt er sich noch erweitern."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
+cover: ./cover.jpg
+coverAlt: "KI-generierte Grafik: Ein Haus bei Nacht, in dem alle Fenster und Außenleuchten brennen und die Rollläden oben sind, verbunden über eine grüne Busleitung mit einem einzelnen roten Schalter, von dem Signalringe ausgehen"
+coverAI: true
 aliases: ["/posts/zentraler-wohnhaus-alarm-mit-knx/"]
 tags: ["Smarthome"]
 ---
