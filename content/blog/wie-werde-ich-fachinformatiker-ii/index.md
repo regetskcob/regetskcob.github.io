@@ -1,8 +1,8 @@
 ---
 title: 👨‍🎓 | Wie werde ich Fachinformatiker - II
-title_plain: ‍ | Wie werde ich Fachinformatiker - II
+title_plain: Wie werde ich Fachinformatiker - II
 date: 2022-12-12T10:30:00+0000
-lastmod: 2024-11-17T14:46:35+0000
+lastmod: 2026-09-29T14:00:00+0000
 slug: wie-werde-ich-fachinformatiker-ii
 draft: false
 type: post
@@ -11,42 +11,47 @@ reading_time: 3
 summary: "Welcher Abschluss, welche Noten und welche Eigenschaften braucht es für einen Ausbildungsplatz? Teil II zeigt, worauf Betriebe bei Bewerbungen achten."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Eine Bewerbungsmappe mit drei Fortschrittsbalken und rotem Haken, daneben ein Netz aus fünf verbundenen Punkten als Team, darunter eine Leiste mit fünf Stationen, die zweite hervorgehoben"
+series: "Wie werde ich Fachinformatiker"
+seriesLabel: "Teil II: Voraussetzungen"
 aliases: ["/posts/wie-werde-ich-fachinformatiker-ii/"]
 tags: ["Ausbildung"]
 ---
 
-_Ihr habt euch also in unserem letzten Artikel einen Überblick über die Ausbildung zum Fachinformatiker verschaffen? Prima, dann möchten wir als nächstes die gröbsten Voraussetzungen vorstellen, welche an euch gestellt werden. Sei es, um einen Ausbildungsplatz zu erhalten, oder auch während der Ausbildung._
+Ihr habt euch im letzten Artikel also einen Überblick über die Ausbildung zum Fachinformatiker verschafft? Prima, dann stellen wir als Nächstes die wichtigsten Voraussetzungen vor, die an euch gestellt werden, sei es, um einen Ausbildungsplatz zu bekommen, oder während der Ausbildung.
 
 ## Teil II - Was ist nötig für einen Ausbildungsplatz als Fachinformatiker?
 
-Grundsätzlich sind die Voraussetzungen um einen Ausbildungsplatz im Beruf Fachinformatiker Anwendungsentwicklung oder Fachinformatiker Systemintegration zu erhalten sehr weit gefächert und nirgendwo strickt vorgeschrieben.
+Grundsätzlich sind die Voraussetzungen für einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung oder für Systemintegration sehr weit gefächert und nirgendwo strikt vorgeschrieben.
 
-Während unserer Ausbildung hatten wir in der Berufsschulklasse sowohl Studierte, Studienabbrecher, Abiturienten, Schüler mit mittlerer Reife und auch Hauptschulabsolventen. Es hängt hier vor allem von der suchenden Firma ab, welche Voraussetzungen sie an den Lehrling stellen wollen. Im Regelfall sieht man aber heute meistens die mittlere Reife oder ein (Fach)-Abitur als schulische Voraussetzung mit guten Noten in Mathematik, Englisch und Deutsch.
+In unserer Berufsschulklasse saßen Studierte, Studienabbrecher, Abiturienten, Schüler mit mittlerer Reife und auch Hauptschulabsolventen. Welche Voraussetzungen an den Azubi gestellt werden, hängt vor allem von der suchenden Firma ab. Im Regelfall sieht man heute aber meistens die mittlere Reife oder ein (Fach-)Abitur als schulische Voraussetzung, mit guten Noten in Mathematik, Englisch und Deutsch.
 
 **Aber warum genau Mathematik, Englisch und Deutsch?**
 
-Hier ist der Sinn besonders, auf Nummer sicher zu gehen, dass eine Grundlage logischen Verständnisses vorhanden ist, um Zusammenhänge möglichst schnell kombinieren und erkennen zu können. (Mathematik) Zusätzlich ist Englisch unumgänglich in den technischen Berufen, da die Dokumentationen zu Programmiersprachen und Programmen oftmals nur in internationaler Version vorliegen. Deutsch ist im Grunde nur relevant, wenn ihr in einem Betrieb arbeitet, in welchen Deutsch die Firmensprache ist. Wenn die Firmensprache Englisch ist, ist hier natürlich Englisch mehr gewichtet.
+Mathematik soll vor allem sicherstellen, dass eine Grundlage an logischem Verständnis vorhanden ist, um Zusammenhänge möglichst schnell zu erkennen und zu kombinieren. Englisch ist in den technischen Berufen unumgänglich, da die Dokumentationen zu Programmiersprachen und Programmen oft nur auf Englisch vorliegen. Deutsch ist im Grunde nur relevant, wenn ihr in einem Betrieb arbeitet, in dem Deutsch die Firmensprache ist. Ist die Firmensprache Englisch, wiegt natürlich Englisch schwerer.
 
 ### Charaktereigenschaften
 
- _Was macht das denn für einen Sinn? Ich möchte einen bestimmten Beruf erlernen und neben meinen Schulischen Fähigkeiten müssen auch noch bestimmte Bedingungen in Bezug auf meinen Charakter stimmen?_
+> Was soll das denn? Ich möchte einen bestimmten Beruf erlernen, und neben meinen schulischen Fähigkeiten muss auch noch mein Charakter passen?
 
-Das sag ich dir gerne. Erinnert dich an deine letzte Gruppenarbeit zurück. Warst du eine leitende Position in der Gruppe und hast koordiniert? Hast du dir Aufgaben zuteilen lassen und diese dann erledigt und wenn es nötig war geholfen? Oder hast du deine Aufgabe für dich abgeschottet vom Rest erledigt und dich um die andere Teile der Arbeit nicht gekümmert?
+Das sag ich dir gerne. Erinnere dich an deine letzte Gruppenarbeit. Hattest du eine leitende Position in der Gruppe und hast koordiniert? Hast du dir Aufgaben zuteilen lassen, diese erledigt und geholfen, wenn es nötig war? Oder hast du deine Aufgabe abgeschottet vom Rest erledigt und dich um die anderen Teile der Arbeit nicht gekümmert?
 
-Solange letzteres nicht auf dich zutrifft, wirst du vermutlich die erste wichtige Eigenschaft für die Arbeit als Fachinformatiker bzw. Software-Entwickler mitbringen. **Teamfähigkeit.** Nichts anderes als die Gruppenarbeit in der Schulzeit ist die Arbeit im Team in deinem späteren Job. Wenn da nicht alle an einem Strang ziehen, schadet das der Leistung des gesamten Teams, sogar der ganzen Firma!
+Solange Letzteres nicht auf dich zutrifft, bringst du vermutlich die erste wichtige Eigenschaft für die Arbeit als Fachinformatiker bzw. Softwareentwickler mit: **Teamfähigkeit.** Die Arbeit im Team in deinem späteren Job ist nichts anderes als die Gruppenarbeit in der Schulzeit. Wenn da nicht alle an einem Strang ziehen, schadet das der Leistung des gesamten Teams, sogar der ganzen Firma.
 
-Eine weitere wichtige Eigenschaft, die ihr gebündelt in eurer Person mitbringen solltet, ist Kommunikationsfähigkeit. Ihr müsst also dazu in der Lage sein, soziale Kontakte zu knüpfen und auch mit diesen Kontakten zu kommunizieren. Dabei ist besonders auch der Umgangston, den du an man an den Tag legt, sehr wichtig.
+Eine weitere wichtige Eigenschaft ist Kommunikationsfähigkeit. Ihr müsst also in der Lage sein, Kontakte zu knüpfen und mit diesen Kontakten auch zu kommunizieren. Besonders wichtig ist dabei der Umgangston, den man an den Tag legt.
 
-Etwas anderes, meiner Meinung nach sehr wichtiges, was man aber in kaum einer Stellenausschreibung ließt, ist die Fähigkeit sich in seine Kollegen oder auch Kunden hinein zu versetzen. Ihr müsst verstehen, wieso dem Kunden das Verhalten eurer Software so nicht gefolgt und welche Lösung für ihn gut wäre, genau wie ihr auch verstehen müsst, warum einem Arbeitskollegen eure Änderung am Quellcode nicht gefällt.
+Etwas anderes, meiner Meinung nach sehr Wichtiges, das man aber in kaum einer Stellenausschreibung liest, ist die Fähigkeit, sich in Kollegen oder Kunden hineinzuversetzen. Ihr müsst verstehen, warum dem Kunden das Verhalten eurer Software so nicht gefällt und welche Lösung für ihn gut wäre, genauso wie ihr verstehen müsst, warum einem Kollegen eure Änderung am Quellcode nicht gefällt.
 
 **Leseempfehlungen**
 
-  * [8 Eigenschaften die Software-Entwickler ausmachen](https://norberteder.com/diese-8-eigenschaften-solltest-du-als-softwareentwickler-haben/)
+  * [8 Eigenschaften, die Software-Entwickler ausmachen](https://norberteder.com/diese-8-eigenschaften-solltest-du-als-softwareentwickler-haben/)
 
-### **Zusammengefasst**
+### Zusammengefasst
 
-Zusammengefasst lässt sich denke ich sagen, dass eine gesunde Mischung aus all diesen Anforderungen die Chance auf einen Erfolg bei der Bewerbung deutlich erhöht. Auch wichtig ist vielleicht zu erwähnen, dass auch bspw. ein Defizit in Mathematik kein K.O. für euch bedeutet. Ihr müsst euch dann nur mit Hilfe der restlichen Fähigkeiten und Eigenschaften verkaufen.
+Ich denke, man kann sagen, dass eine gesunde Mischung aus all diesen Anforderungen die Chance auf eine erfolgreiche Bewerbung deutlich erhöht. Wichtig ist vielleicht auch, dass zum Beispiel ein Defizit in Mathematik kein K.-o.-Kriterium für euch ist. Ihr müsst euch dann nur mit den übrigen Fähigkeiten und Eigenschaften verkaufen.
 
-## Fortsetzung folgt…
+* * *
 
-Im nächsten Artikel geht es dann speziell um den Unterricht während den Berufsschul-Blöcken und darum, was mit Blöcken überhaupt gemeint ist.
+Wie der Unterricht während der Berufsschulblöcke abläuft und was mit Blöcken überhaupt gemeint ist, erklärt der dritte Teil.
