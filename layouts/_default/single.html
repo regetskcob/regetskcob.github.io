@@ -53,7 +53,8 @@
                height capped so portrait covers do not push the title down;
                loaded eagerly, it is the first thing on the page. Its alt text
                is "coverAlt" from front matter. "coverAI: true" marks a
-               generated cover with a small label on the image. */}}
+               generated cover with a small label on the image, "coverCredit"
+               names the source of a cover by someone else. */}}
         {{- if $isPost }}
           {{- with or .Params.cover .Params.featured_image }}
             {{- $name := strings.TrimPrefix "./" . }}
@@ -62,8 +63,11 @@
                 {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}
         <figure class="post-cover">
           {{ partial "responsive-img.html" (dict "img" . "widths" (slice 800 1600) "sizes" "(max-width: 780px) 100vw, 780px" "loading" "eager" "alt" ($.Params.coverAlt | default "") "page" $) }}
-          {{- if $.Params.coverAI }}
-          <figcaption class="post-cover-ai">KI-generiert</figcaption>
+          {{- /* A note in the corner: "KI-generiert" for generated covers
+                 ("coverAI: true"), or the source of a cover that is not
+                 mine ("coverCredit", e.g. "Cover: dpunkt.verlag"). */}}
+          {{- with or $.Params.coverCredit (cond ($.Params.coverAI | default false) "KI-generiert" "") }}
+          <figcaption class="post-cover-ai">{{ . }}</figcaption>
           {{- end }}
         </figure>
                 {{- end }}

@@ -60,6 +60,8 @@ Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich
 
 Alle Fotos und Texte auf dieser Seite sind von mir, sofern nicht anders angegeben, und unterliegen dem deutschen Urheberrecht. Ohne meine vorherige schriftliche Zustimmung dürfen sie weder kopiert noch bearbeitet, veröffentlicht oder weitergegeben werden. Das gilt auch für Ausschnitte und für soziale Netzwerke.
 
+Ausnahmen sind im jeweiligen Beitrag gekennzeichnet: Buchcover in Rezensionen stammen von den Verlagen, die Quelle steht auf dem Titelbild. Grafiken mit dem Hinweis „KI-generiert“ habe ich mit KI-Unterstützung erstellt.
+
 Möchtest du ein Foto verwenden, schreib mir gerne an die im Impressum genannte E-Mail-Adresse. Nenn mir kurz das Bild und wofür du es nutzen möchtest, dann klären wir alles Weitere.
 
 ### Nutzungsvorbehalt für Text und Data Mining
