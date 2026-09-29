@@ -12,6 +12,10 @@
     "url" (absURL "/about/")
     "sameAs" (apply site.Params.social "index" "." "url")
 -}}
+{{- /* The portrait from the about page, so search engines show the same face. */ -}}
+{{- with resources.Get "about/portrait.jpg" -}}
+  {{- $person = merge $person (dict "image" (.Fill "400x400 jpg q80").Permalink) -}}
+{{- end -}}
 
 {{- if .IsHome -}}
   {{- $data := dict

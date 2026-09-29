@@ -6,6 +6,8 @@ description: "Daniel Bocksteger vom Niederrhein: Softwareentwickler, draußen mi
 # The photo and its caption open the page, so the title is only kept for
 # screen readers and search engines (layouts/_default/single.html).
 hideTitle: true
+# Preview image when the page is shared (layouts/partials/head/og-image.html).
+ogImage: "about/portrait.jpg"
 ---
 
 ![Daniel lächelnd im Strickpullover mit Rucksack und Kamera in der Hand, dahinter schneebedeckte Berggipfel unter Wolken](about/portrait.jpg#portrait "Das bin ich.")

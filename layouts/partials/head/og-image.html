@@ -7,7 +7,8 @@
   Everything else — the home page, sections, and posts whose images are named
   plainly — lands here.
 
-  Order: the image named in front matter (cover / featured_image, carried over from
+  Order: "ogImage" from front matter (an assets path), the image named in front
+  matter (cover / featured_image, carried over from
   the Ghost export), else the first image of the page bundle, else the site-wide
   fallback (ogImage in hugo.toml). All are cropped to 1200x630, the ratio
   Facebook, LinkedIn, Slack and WhatsApp expect.
@@ -26,15 +27,28 @@
   {{- end -}}
 {{- end -}}
 
+{{/* A page without a bundle can name its own image in front matter:
+     "ogImage", a path under assets/ (the about page uses the portrait).
+     Smaller images are cropped to the same ratio without being upscaled.
+     Cropped from the top ("ogImageAnchor", default Top), since the smart crop
+     cut the head off the portrait. */}}
+{{- with .Params.ogImage -}}
+  {{- $anchor := $.Params.ogImageAnchor | default "Top" -}}
+  {{- with resources.Get . -}}
+    {{- $w := cond (lt .Width 1200) .Width 1200 -}}
+    {{- with .Fill (printf "%dx%d jpg q75 %s" $w (div (mul $w 630) 1200) $anchor) -}}
+      {{- $og = .Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{/* A series lists its photos in front matter; the first one represents it. */}}
-{{- with .Params.photos -}}
+{{- if not $og -}}{{- with .Params.photos -}}
   {{- with resources.Get (printf "gallery/%s" (index . 0).image) -}}
     {{- with .Fill $spec -}}
       {{- $og = .Permalink -}}
     {{- end -}}
   {{- end -}}
-{{- end -}}
-
+{{- end -}}{{- end -}}
 {{/* An explicit choice in front matter wins over bundle order. */}}
 {{- if not $og -}}{{- with or .Params.cover .Params.featured_image -}}
   {{- $named := $.Resources.Get (strings.TrimPrefix "./" .) -}}
