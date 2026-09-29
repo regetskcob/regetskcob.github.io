@@ -12,7 +12,6 @@ summary: Von der Installation, die Administration und die Grundlagen des Editors
   über das Erstellen und Verwalten von Dashboards bis hin zu JavaScript, MQTT und
   Mikrocontroller. Der Begriff „umfassend“ ist absolut ernst zu nehmen.
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./IMG_4265.jpeg
 cover: ./IMG_4265.jpeg
 coverAlt: "Das Buch „Node-RED“ von Udo Brandes auf einem Holztisch"

@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 3
 summary: "Duspol, Multimeter und Leitungssucher haben mich durch die gesamte Elektro-Installation unseres Hauses begleitet. Hier stelle ich die drei Messgeräte vor."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_3134.jpg
 cover: ./img_3134.jpg
 coverAlt: "Ein Spannungsprüfer mit leuchtenden Anzeigen an einer Klemme im Verteilerkasten, dahinter KNX-Aktoren"

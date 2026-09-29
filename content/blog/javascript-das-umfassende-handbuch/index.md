@@ -11,7 +11,6 @@ reading_time: 1
 summary: Umfassendes Wissen auf über 1250 Seiten. Muss man dazu noch viel sagen?
   Eigentlich nicht, einfach so stehen lassen möchte ich es aber auch nicht. 😊
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_5225.jpg
 cover: ./img_5225.jpg
 coverAlt: "Das Buch „JavaScript“ von Philip Ackermann in der dritten Auflage auf grauem Steinboden"

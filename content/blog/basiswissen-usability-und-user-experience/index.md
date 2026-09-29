@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 1
 summary: "Entlang des CPUX-F-Lehrplans aufgebaut, taugt das Buch zur Prüfungsvorbereitung und als Nachschlagewerk für alle, die nutzerfreundliche Produkte entwickeln."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_6233.jpg
 cover: ./img_6233.jpg
 coverAlt: "Das Buch „Basiswissen Usability und User Experience“ mit grünem Einband auf violettem Untergrund"

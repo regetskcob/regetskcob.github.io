@@ -13,7 +13,6 @@ summary: '"Home Assistant – Das umfassende Handbuch" von Udo Brandes, erschien
   ein detaillierter Leitfaden für den Aufbau eines individuellen Smart Homes mit Home
   Assistant.'
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./IMG_4480.jpeg
 cover: ./IMG_4480.jpeg
 coverAlt: "Das Buch „Home Assistant“ von Udo Brandes in der zweiten Auflage auf einem Holztisch"

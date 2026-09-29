@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 3
 summary: "Welcher Abschluss, welche Noten und welche Eigenschaften braucht es für einen Ausbildungsplatz? Teil II zeigt, worauf Betriebe bei Bewerbungen achten."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Eine Bewerbungsmappe mit drei Fortschrittsbalken und rotem Haken, daneben ein Netz aus fünf verbundenen Punkten als Team, darunter eine Leiste mit fünf Stationen, die zweite hervorgehoben"

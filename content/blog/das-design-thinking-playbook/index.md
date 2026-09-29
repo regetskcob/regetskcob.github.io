@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 1
 summary: "Auf rund 300 Seiten führen Lewrick, Link und Leifer durch die traditionellen, aktuellen und zukünftigen Erfolgsfaktoren des Design Thinking."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./bildschirmfoto-2022-11-11-um-21.33.45.png
 cover: ./bildschirmfoto-2022-11-11-um-21.33.45.png
 coverAlt: "Titelseite des „Design Thinking Playbook“ mit handgezeichneten Figuren, die auf Bauklötzen balancieren"

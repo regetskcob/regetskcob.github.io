@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 4
 summary: "Im ersten Teil wird ein Raspberry Pi zur Messwert-Zentrale fürs Smarthome. Ich richte das System ein und installiere InfluxDB, NodeRED und Grafana."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./bildschirmfoto-2022-09-18-um-14.57.29.png
 cover: ./bildschirmfoto-2022-09-18-um-14.57.29.png
 coverAlt: "Node-RED-Flow, in dem der KNX-Device-Node über Prepare und Filter in den InfluxDB-Node führt"

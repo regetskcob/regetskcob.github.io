@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 4
 summary: "Die Zwischenprüfung ist selten so schwer, wie manche Lehrer sie ankündigen. Was euch nach 1,5 Jahren erwartet und wie ihr euch vorbereitet, steht in Teil IV."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein Struktogramm mit Verzweigung und Schleife neben sechs Zeilen Multiple-Choice-Kästchen, darunter eine Leiste mit fünf Stationen, die vierte hervorgehoben"

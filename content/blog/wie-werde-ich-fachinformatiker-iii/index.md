@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 4
 summary: "Wie läuft Blockunterricht eigentlich ab? Am Beispiel meiner Ausbildung beschreibe ich, wie der Unterricht an den Berufsschulen in Moers organisiert war."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Zwölf Monatskarten, jede dritte rot als Schulblock, darunter ein gepunkteter Weg zwischen zwei Orten, darunter eine Leiste mit fünf Stationen, die dritte hervorgehoben"

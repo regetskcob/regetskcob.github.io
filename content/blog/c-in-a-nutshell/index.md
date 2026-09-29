@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 2
 summary: "Rund 800 Seiten, 22 Kapitel und ein hilfreicher Index: Das Buch aus dem O’Reilly Verlag ist ein Nachschlagewerk zu C für Einsteiger wie für Fortgeschrittene."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./bildschirmfoto-2022-11-11-um-21.40.32.png
 cover: ./bildschirmfoto-2022-11-11-um-21.40.32.png
 coverAlt: "Der Titelschriftzug „C in a Nutshell“ mit dem Zusatz „The Definitive Reference“ in Weiß auf violettem Grund"

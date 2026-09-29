@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 1
 summary: "Sieben Workshops, ein Projektteam und viele Methoden, um Feedback von Nutzern einzuholen. Seit ich das Buch habe, begleitet es mich durch den Arbeitsalltag."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./dscf8828.jpeg
 cover: ./dscf8828.jpeg
 coverAlt: "Das Buch „Collaborative UX Design“, vor blauem Himmel über den Dächern einer Siedlung in die Höhe gehalten"

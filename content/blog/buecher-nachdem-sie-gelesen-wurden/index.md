@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 1
 summary: "Nach dem ersten Lesen stecken in meinen Büchern immer Post-its, Markierungen und Notizen. Wie ich dabei vorgehe und warum sich das beim Nachschlagen auszahlt."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./img_4867.jpg
 cover: ./img_4867.jpg
 coverAlt: "Ein orangefarbenes Buch voller Klebezettel, daneben Textmarker, Fineliner und Post-its auf einem Holztisch"

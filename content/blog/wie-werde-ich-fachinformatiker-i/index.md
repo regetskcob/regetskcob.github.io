@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 3
 summary: "Zum Auftakt ein Überblick über die Ausbildung zum Fachinformatiker: was ihr im Betrieb lernt, wie die Berufsschule läuft und welche Richtungen es gibt."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Von einem Startpunkt aus kreuzen sich zwei Wege mehrmals und führen zu einem Laptop mit Code-Klammern für den Betrieb und zu einem Schulgebäude mit Säulen und Uhr für die Berufsschule, darunter eine Leiste mit fünf Stationen, die erste hervorgehoben"

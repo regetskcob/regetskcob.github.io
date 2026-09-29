@@ -10,7 +10,6 @@ author: Daniel Bocksteger
 reading_time: 5
 summary: "Im zweiten Teil verbinden wir die Systeme: ein Bucket in InfluxDB, ein Flow in NodeRED, der KNX-Telegramme mitschreibt, und die Datenquelle in Grafana."
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./bildschirmfoto-2022-10-31-um-20.16.15.png
 cover: ./bildschirmfoto-2022-10-31-um-20.16.15.png
 coverAlt: "Grafana-Dashboard „Außenbereich“ mit Kurven zu Helligkeit, Temperatur, Regen und Windgeschwindigkeit über mehrere Tage"

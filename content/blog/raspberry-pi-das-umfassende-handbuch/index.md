@@ -12,7 +12,6 @@ summary: Das deutschsprachige Referenzwerk, aktualisiert in der 8. Auflage, für
   den Raspberry Pi 5. Mit dem Autorenteam aus Michael Kofler, Charly Kühnast und Christoph
   Scherbeck steht geballte Kompetenz hinter dem Buch.
 author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-author_image: https://regetskcob.mymagic.page/content/images/2024/11/IMG_9656-1.jpeg
 featured_image: ./IMG_4275.jpeg
 cover: ./IMG_4275.jpeg
 coverAlt: "Das Buch „Raspberry Pi“ von Kofler, Kühnast und Scherbeck auf einem Holztisch"
