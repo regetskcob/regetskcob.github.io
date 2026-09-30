@@ -16,6 +16,10 @@ coverAlt: "Das Buch „Heimautomation mit KNX, DALI, 1-Wire und Co.“ von Stefa
 seo:
   image: ./IMG_4274.jpeg
 aliases: ["/posts/die-knx-bibel-von-stefan-heinle/"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
+  note: "Das war eine frühere Auflage, die aktuelle habe ich selbst gekauft."
 tags: ["Bücher", "Smarthome"]
 ---
 
@@ -74,5 +78,3 @@ Danach geht es wie bereits geschrieben unter vielem anderem noch an diese Themen
 Auch wenn ich sicher noch lange Zeit in diesem Buch verbringen werde, um das ganze Wissen aufzunehmen, kann ich es bereits jetzt nur empfehlen. Natürlich nur, wenn ihr technisch interessiert, nicht völlig auf den Kopf gefallen seid und vor allem, wenn ihr irgendwann plant euer Haus ’smart zu machen‘ oder direkt zu bauen.
 
 Für 49,90 € bietet Stefan Heinle euch [hier](https://www.rheinwerk-verlag.de/heimautomation-mit-knx-das-umfassende-handbuch/) beim Rheinwerk Verlag ein Buch, das es im wahrsten Sinne des Wortes in sich hat. Ich wünsche bereits jetzt schon viel Spaß mit dem Buch und hoffe, dass ihr ähnlich begeistert sein werdet. 
-
-Das Buch wurde mir in einer vorherigen Auflage kostenlos vom Rheinwerk Verlag zur Verfügung gestellt, um es zu bewerten. Derzeit besitze ich die aktuellste Auflage, diese habe ich selbst erworben.

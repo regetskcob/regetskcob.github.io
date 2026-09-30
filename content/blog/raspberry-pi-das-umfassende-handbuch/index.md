@@ -19,6 +19,9 @@ seo:
   image: ./IMG_4275.jpeg
 aliases: ["/posts/raspberry-pi-das-umfassende-handbuch/"]
 tags: ["Bücher", "Smarthome"]
+disclosure:
+  type: provided
+  note: "Das war eine frühere Auflage, die aktuelle habe ich selbst gekauft."
 ---
 
 Für mich macht das Buch einzigartig, dass es quasi von der Geburtsstunde des Raspberry Pi, über das Betriebssystem, an den diversen Software Paketen und möglichen Programmiersprachen vorbei, letzten Endes diverse Elektrotechnik- und Software-Bastelprojekte behandelt.

@@ -17,6 +17,8 @@ seo:
   image: ./img_5223.jpg
 aliases: ["/posts/flutter-und-dart/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
 ---
 
 Über eine ganze Weile war ich sehr davon überzeugt, dass native App-Entwicklung der einzige vernünftige Weg sei, Apps zu entwickeln. MonoTouch, Xamarin oder auch Progressive-Web-Apps waren und sind bis heute nicht wirklich mein Fall. Mit Flutter hat Google aber etwas geschaffen, dass zusammen mit Dart als Programmiersprache eine Alternative für mich darstellt.

@@ -12,6 +12,9 @@ cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein aufgeschlagenes Buch mit Textzeilen und dem Schaltzeichen einer LED, darauf ein Arduino-Board, das über zwei Kabel mit einem Steckbrett verbunden ist, auf dem eine rote LED leuchtet"
 aliases: ["/posts/arduino/"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 tags: ["Bücher", "Smarthome"]
 ---
 
@@ -34,5 +37,3 @@ In diesem Bereich des Buches sind euren Möglichkeiten keine Grenzen gesetzt. Ih
 
 ## Fazit
 Von mir gibt es für das Buch von Herrn Kappel eine klare Kaufempfehlung, da er meiner Meinung nach alle relevanten Themen beleuchtet und da, wo es nötig ist, auch alle Details genau erklärt.
-
-Dieses Buch wurde mir kostenlos vom Rheinwerk Verlag zur Verfügung gestellt, um es zu bewerten.

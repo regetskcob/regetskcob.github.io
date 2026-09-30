@@ -17,6 +17,8 @@ seo:
   image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 aliases: ["/posts/fujifilm-x-photpgraphers/", "/blog/fujifilm-x-photpgraphers/"]
 tags: ["Bücher", "Fotografie"]
+disclosure:
+  type: purchased
 ---
 
 Beim stöbern durch den [Blog von Martin Hülle](https://www.martin-huelle.de/blog/) bin ich auf folgende [Unterseite](https://www.martin-huelle.de/buecher) gestolpert, auf der man das Buch _FUJIFILM X-PHOTOGRAPHERS_ kaufen konnte. Leider ist das Buch inzwischen ausverkauft und nur noch gebraucht zu bekommen, zum Beispiel [hier](https://www.booklooker.de/Bücher/Martin-Hülle+Hülle-Martin-Thorsten-Rother-und-Christian-Ahrens-Fujifilm-X-PHOTOGRAPHERS-Vom/id/A02SdsA201ZZs).

@@ -20,6 +20,8 @@ seo:
   image: ./cover-hands-on-design-thinking.jpg
 aliases: ["/posts/hands-on-design-thinking/"]
 tags: ["Bücher", "Arbeitswelt"]
+disclosure:
+  type: provided
 ---
 
 Vermutlich ein Problem, mit dem sich jeder konfrontiert sieht, der in irgendeiner Form im Bereich der Entwicklung neuer Produkte und Dienstleistungen arbeitet. Mittlerweile ist die Vielfalt in jeder Produktsparte schier unvorstellbar groß, was zur Folge hat, dass es immer schwerer wird neue - innovative - Produkte zu entwickeln, die dem Endkunden echten Mehrwert liefern.

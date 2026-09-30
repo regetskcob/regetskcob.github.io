@@ -12,6 +12,9 @@ cover: ./cover.jpg
 coverCredit: "Cover: O’Reilly"
 coverAlt: "Buchcover von „SmartHome Hacks – Hausautomatisierung selber machen“ von Peter A. Henning, mit Kacheln für Wetter, Temperatur und ein Haus, auf hellem Grund"
 aliases: ["/posts/smarthome-hacks/"]
+disclosure:
+  type: provided
+  by: "von O’Reilly"
 tags: ["Bücher", "Smarthome"]
 ---
 
@@ -33,5 +36,3 @@ Zu guter letzt wartet im Buch auch noch ein Kapitel auf euch, in dem Peter  A. 
 ## Fazit
 Auf knapp 330 Seiten warten 13 Kapitel mit weit gefächertem Wissen darauf, von euch gelesen und angewendet zu werden. Bei einem Preis von gerade mal 32,90 € gibt es von mir eine klare Kaufempfehlung!
 Ergänzend zu diesem Buch solltet ihr euch vielleicht auch das umfassende Handbuch zur Heimautomation vom Rheinwerk Verlag ansehen.
-
-Dieses Buch wurde mir kostenlos von O’Reilly zur Verfügung gestellt, um es zu bewerten.

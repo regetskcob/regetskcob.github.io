@@ -18,6 +18,8 @@ seo:
   image: ./cover.jpg
 aliases: ["/posts/c-in-a-nutshell/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
 ---
 
 Die Programmiersprache **C** ist einer der Veteranen der Computer-Geschichte. Mit „C in a Nutshell“ möchte ich euch heute ein Buch des O’Reilly Verlages vorstellen, welches sich als umfassendes Referenz- und Nachschlagewerk versteht.

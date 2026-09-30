@@ -1,0 +1,36 @@
+{{/*
+  The transparency note under a review: how I came by the thing I review.
+  Set in front matter, the wording is the same everywhere:
+
+    disclosure:
+      type: provided          # provided = given to me free of charge
+                              # purchased = bought by myself
+                              # gift = given to me by someone privately
+      by: "vom Verlag X"      # who gave it, already in the dative
+                              # ("vom Rheinwerk Verlag", "von Freunden");
+                              # optional for provided ("vom Verlag"), for gift
+                              # left out the note just names no one
+      item: "Dieses Buch"     # optional, default "Dieses Buch"; for gear e.g.
+                              # "Dieses Objektiv" (the wording has to agree)
+      note: "…"               # optional, one more sentence
+
+  No "disclosure" in front matter, no note. Styled in custom.css (.disclosure).
+*/}}
+{{- with .Params.disclosure }}
+{{- $item := .item | default "Dieses Buch" }}
+<aside class="disclosure" data-pagefind-ignore>
+  <strong>Transparenz</strong>
+  <p>
+    {{- if eq .type "provided" -}}
+      {{ $item }} wurde mir {{ .by | default "vom Verlag" }} kostenlos zur Verfügung gestellt.
+    {{- else if eq .type "gift" -}}
+      {{ $item }} habe ich {{ with .by }}{{ . }} {{ end }}geschenkt bekommen.
+    {{- else if eq .type "purchased" -}}
+      {{ $item }} habe ich selbst gekauft.
+    {{- else -}}
+      {{ errorf "disclosure.type must be \"provided\", \"purchased\" or \"gift\", got %q in %s" .type $.Path }}
+    {{- end -}}
+    {{- with .note }} {{ . }}{{ end }}
+  </p>
+</aside>
+{{- end }}

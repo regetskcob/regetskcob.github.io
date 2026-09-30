@@ -18,6 +18,8 @@ coverCredit: "Cover: O’Reilly / dpunkt.verlag"
 coverAlt: "Buchcover von „Programmieren in TypeScript“ von Boris Cherny, zwei gezeichnete Guanakos, auf hellem Grund"
 aliases: ["/posts/typescript-skalierbare-javascript-applikationen-entwickeln/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
 ---
 
 Das Buch beginnt mit einer Einführung in die Grundlagen von TypeScript, einschließlich der verschiedenen Typen und Typ-Operatoren, und erläutert deren Anwendung. Anschließend werden fortgeschrittene Themen wie das ausgeklügelte Typsystem von TypeScript, effektive Fehlerbehandlung und die Entwicklung asynchroner Programme behandelt. Praktische Anleitungen zur Integration von TypeScript in Frontend- und Backend-Frameworks, zur Migration bestehender JavaScript-Projekte und zum Einsatz von TypeScript im Produktionsbetrieb runden das Werk ab.

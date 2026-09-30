@@ -13,6 +13,8 @@ coverCredit: "Cover: Murmann Publishers"
 coverAlt: "Buchcover von „Data for the People“ von Andreas Weigend, dunkelgraue Großbuchstaben auf leuchtendem Gelb, auf hellem Grund"
 aliases: ["/posts/data-for-the-people/"]
 tags: ["Bücher", "Gesellschaft"]
+disclosure:
+  type: provided
 ---
 
 Basierend auf beruflichen und privaten Recherchen und Forschungen von Andreas Weigend veranschaulicht er, wozu Daten verwendet werden, wie man dem Datenfluss seiner selbst etwas Einheit gebieten kann und zeigt ganz klare Anwendungsfälle auf, für die Daten herangezogen werden.

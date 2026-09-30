@@ -12,6 +12,9 @@ cover: ./cover.jpg
 coverCredit: "Cover: Verlag Eugen Ulmer"
 coverAlt: "Buchcover von „Der große Gartenplaner“, herausgegeben von Peter Wirth, grün mit Gartenskizzen und zwei CDs, auf hellem Grund"
 aliases: ["/posts/der-grosse-gartenplaner/"]
+disclosure:
+  type: provided
+  by: "vom Ulmer Verlag"
 tags: ["Bücher", "Natur"]
 ---
 
@@ -44,5 +47,3 @@ Dabei ist es ganz egal, ob es um die Kapillarsperre beim Teich oder das Fundamen
 
 ## Fazit
 Für nur 29,90 € erhaltet ihr mit dem großen neuen Gartenplaner beim Ulmer Verlag einen Ratgeber, der alle Themen, die euch im eigenen Garten begeben könnten, anreißt und nützliche Tipps gibt. Dass man auf 400 Seiten nicht erwarten darf, dass alle Themen bis ins letzte Detail behandelt werden, sollte jedem Leser klar sein.
-
-Dieses Buch wurde mir vom Ulmer Verlag kostenlos als Rezensionsexemplar bereitgestellt.

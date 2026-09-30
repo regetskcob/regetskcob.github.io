@@ -18,6 +18,8 @@ seo:
   image: ./cover.jpg
 aliases: ["/posts/das-design-thinking-playbook/"]
 tags: ["Bücher", "Arbeitswelt"]
+disclosure:
+  type: provided
 ---
 
 Mit traditionellen, aktuellen und zukünftigen Erfolgsfaktoren möchte euch „Das Design Thinking Playbook“ zur neuen großen Innovation begleiten und euch entsprechend den Weg dahin ebnen.

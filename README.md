@@ -81,6 +81,11 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   hochskaliert, die größte ausgelieferte Variante steht immer mit im `srcset`.
   `sizes` muss zur Breite passen, die das CSS tatsächlich anzeigt.
 
+- **`layouts/partials/disclosure.html`** — der Transparenz-Hinweis unter einer
+  Rezension (hellgrüne Box, immer gleicher Wortlaut). Gesteuert über `disclosure` im
+  Front Matter: `type: provided` (gestellt, dazu `by: "vom Rheinwerk Verlag"` im
+  Dativ), `type: purchased` (selbst gekauft) oder `type: gift` (Geschenk, `by: "von
+  Freunden"`); optional `item: "Dieses Objektiv"` und `note`. Ohne `disclosure` erscheint nichts.
 - **`layouts/partials/gallery.html`** — Galerien, gespeist aus `data/gallery.yaml`,
   im selben Raster wie die Serie (`layouts/partials/photo-grid.html`).
 

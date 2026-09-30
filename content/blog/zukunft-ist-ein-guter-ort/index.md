@@ -15,6 +15,8 @@ seo:
   image: ./fc69725a-01ae-48b0-9b80-524011009ca4-23010-000012bfb29fe23e.jpg
 aliases: ["/posts/zukunft-ist-ein-guter-ort/"]
 tags: ["Bücher", "Gesellschaft"]
+disclosure:
+  type: purchased
 ---
 
 Wenn _Sina Trinkwalder_ davon schreibt, was eine nachhaltige Gesellschaft ausmachen würde, ist es wie ein schöner Traum. Als würde man die aktuelle Welt durch die förmlich rosarote Brille sehen.

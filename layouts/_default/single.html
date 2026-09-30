@@ -7,6 +7,8 @@
   and pages like Über show neither a date nor the previous/next links.
   Posts are marked for the Pagefind search index, and show their cover on
   top of the header card unless the text already contains it.
+  A review says under its text how I came by the item (see the
+  disclosure partial).
   Long posts get a table of contents on their own, inside the header card;
   see the rule there.
   The tags sit inside the header, and posts (not pages like Über) mark it
@@ -156,6 +158,9 @@
     <div class="single-content">
       {{ .Content }}
     </div>
+
+    {{- /* How I came by what I review (partials/disclosure.html, "disclosure" in front matter). */}}
+    {{ partial "disclosure.html" . }}
 
     {{- /* Previous and next part, for posts in a series (partials/series-nav.html). */}}
     {{ partial "series-nav.html" . }}

@@ -877,6 +877,30 @@ a.series-label:hover {
   margin-bottom: 0.2rem;
 }
 
+/* Transparency note under a review (partials/disclosure.html): how I came by
+   the item. A pale green card, the one place on the site with that colour, so
+   it reads as the same note everywhere without shouting. Light and dark via
+   light-dark(), like the theme's own colours. */
+.disclosure {
+  --disclosure-bg: light-dark(rgb(232, 243, 232), rgb(34, 48, 38));
+  --disclosure-border: light-dark(rgb(190, 217, 192), rgb(58, 82, 64));
+  margin-top: 2.5rem;
+  background: var(--disclosure-bg);
+  border: 1px solid var(--disclosure-border);
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.disclosure strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.disclosure p {
+  margin: 0;
+}
+
 .recipes-closing {
   margin-top: 3.5rem;
   padding-top: 1.2rem;

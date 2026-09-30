@@ -17,6 +17,8 @@ seo:
   image: ./img_6232.jpg
 aliases: ["/posts/basiswissen-softwaretest/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
 ---
 
 > Wer sich (...) in das Thema Testen mit seinen Facetten einarbeiten möchte, der findet in dem vorliegenden Buch wertvolle Informationen.  

@@ -19,6 +19,8 @@ seo:
   image: ./DSCF4594.jpeg
 aliases: ["/posts/unser-wild/"]
 tags: ["Bücher", "Natur"]
+disclosure:
+  type: purchased
 ---
 
 Unter anderem einleitenden Worte findet [Sepp Forcher](https://de.wikipedia.org/wiki/Sepp_Forcher) im Vorwort zum Buch und bringt damit meine Gedanken zu diesem Werk auf den Punkt.

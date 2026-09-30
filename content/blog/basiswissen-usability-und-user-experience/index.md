@@ -17,6 +17,8 @@ seo:
   image: ./img_6233.jpg
 aliases: ["/posts/basiswissen-usability-und-user-experience/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
 ---
 
 > Systematisch und strukturiert vom Nutzungskontext zum gebrauchstauglichen Produkt
