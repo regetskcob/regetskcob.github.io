@@ -1,5 +1,15 @@
 /* Overrides the theme's empty custom.css. Loaded after the theme's own styles. */
 
+/* The theme's grey for secondary text (summary, date, tags, notes) is
+   #757575, 4.38:1 on the grey cards in light mode, just short of the 4.5:1
+   that WCAG AA asks for. A little darker clears it, on the cards and on the
+   white page alike. Dark mode was fine already. The palette file is
+   concatenated after this one and sets the same variable on :root, so the
+   selector is one step more specific. */
+html:root {
+  --content-secondary-light: rgb(106, 106, 106);
+}
+
 /* --- Heading levels ---
    Only one h1 per page, so the header's site name is a <p> outside the home
    page, and the home sections are h2. These keep the sizes they had as h1
