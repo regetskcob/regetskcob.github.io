@@ -19,6 +19,7 @@
              panorama and "size: large" (the series teaser counts on it)
     page     the page the grid is on, for the image rights in the structured
              data
+    title    name of the album, shown in the lightbox (series.js, lightbox.js)
     feature  true to let series.js promote a few random landscape tiles to
              2x2 on every visit, unless the items mark large ones themselves
   A tile with "href" links there (e.g. the series page). Otherwise it links to
@@ -26,7 +27,7 @@
   page includes partials/photo-grid-script.html once, after its last grid.
 */}}
 <div class="series-gallery{{ if .narrow }} is-narrow{{ end }}">
-  <div class="series-grid"{{ if .shuffle }} data-shuffle{{ end }}{{ if .feature }} data-feature{{ end }}>
+  <div class="series-grid"{{ with .title }} data-lightbox-title="{{ . }}"{{ end }}{{ if .shuffle }} data-shuffle{{ end }}{{ if .feature }} data-feature{{ end }}>
   {{- range $it := .items }}
     {{- $img := $it.img }}
     {{- $ratio := div (float $img.Width) $img.Height }}
@@ -54,7 +55,8 @@
       <a href="{{ $it.href }}">
       {{- else }}
       {{- $full := $img.Fit "2000x2000 webp q85" }}
-      <a href="{{ $full.RelPermalink }}" data-lightbox>
+      {{- $exif := partial "exif.html" $img }}
+      <a href="{{ $full.RelPermalink }}" data-lightbox{{ with $exif }} data-exif="{{ jsonify . | string }}"{{ end }}>
       {{- end }}
         {{ partial "responsive-img.html" (dict
              "img" $img

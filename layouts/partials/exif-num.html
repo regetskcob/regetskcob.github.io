@@ -1,0 +1,15 @@
+{{- /*
+  A number out of an EXIF value: a plain number, a fraction like 11/5 (what
+  Hugo's EXIF reader returns for rationals) or a string of either. Returns a
+  float.
+*/ -}}
+{{- $s := printf "%v" . | strings.TrimSpace -}}
+{{- $f := 0.0 -}}
+{{- if strings.Contains $s "/" -}}
+  {{- $p := split $s "/" -}}
+  {{- $d := float (index $p 1) -}}
+  {{- if ne $d 0.0 }}{{ $f = div (float (index $p 0)) $d }}{{ end -}}
+{{- else if $s -}}
+  {{- $f = float $s -}}
+{{- end -}}
+{{- return $f -}}

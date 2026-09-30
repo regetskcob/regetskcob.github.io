@@ -155,7 +155,9 @@
     
     {{- /* Page content */}}
     
-    <div class="single-content">
+    {{- /* The lightbox names the post; the emoji and pipe some titles start
+           with are left off. */}}
+    <div class="single-content" data-lightbox-title="{{ replaceRE `^[^\p{L}\p{N}]+` "" .Title }}">
       {{ .Content }}
     </div>
 

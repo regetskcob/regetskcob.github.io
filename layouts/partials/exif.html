@@ -1,0 +1,74 @@
+{{- /*
+  The shooting data of a photo for the lightbox: a list of {label, value}
+  rows in German, empty if there is nothing to show. Takes the image resource.
+
+  Two sources, the second wins: the EXIF in the file itself (only the fields
+  whitelisted under [imaging.exif] in hugo.toml reach the template, never GPS)
+  and data/exif.yaml, for photos exported without metadata: a map from the file
+  name (lower case, underscores as hyphens, no extension) to the same tag names,
+    dscf2072: {Make: FUJIFILM, Model: X-T5, FNumber: 2.8, ExposureTime: 0.004, ISO: 160}
+  scripts/extract-exif.sh writes that file from the original photos.
+*/ -}}
+{{- $img := . -}}
+{{- $t := dict -}}
+{{- with $img.Exif }}{{ with .Tags }}{{ $t = . }}{{ end }}{{ end -}}
+{{- /* The key: file name in lower case, underscores as hyphens, no extension. */ -}}
+{{- $key := replace (lower (strings.TrimSuffix (path.Ext $img.Name) (path.Base $img.Name))) "_" "-" -}}
+{{- with site.Data.exif }}{{ with index . $key }}{{ $t = . }}{{ end }}{{ end -}}
+
+{{- $rows := slice -}}
+
+{{- /* Camera: the maker is left out where the model already starts with it. */ -}}
+{{- $make := index $t "Make" | default "" -}}
+{{- $model := index $t "Model" | default "" -}}
+{{- $cam := $model -}}
+{{- if and $make $model -}}
+  {{- if not (strings.HasPrefix (lower $model) (lower $make)) }}{{ $cam = printf "%s %s" $make $model }}{{ end -}}
+{{- else if $make }}{{ $cam = $make }}{{ end -}}
+{{- with $cam }}{{ $rows = $rows | append (dict "label" "Kamera" "value" .) }}{{ end -}}
+
+{{- with index $t "LensModel" }}{{ $rows = $rows | append (dict "label" "Objektiv" "value" .) }}{{ end -}}
+
+{{- with index $t "FNumber" -}}
+  {{- $f := partial "exif-num.html" . -}}
+  {{- if gt $f 0.0 }}{{ $rows = $rows | append (dict "label" "Blende" "value" (printf "f/%s" (replace (printf "%.1f" $f) "." ","))) }}{{ end -}}
+{{- end -}}
+
+{{- /* Focal length, with the 35 mm equivalent where it differs. */ -}}
+{{- with index $t "FocalLength" -}}
+  {{- $f := partial "exif-num.html" . -}}
+  {{- if gt $f 0.0 -}}
+    {{- $v := printf "%s mm" (strings.TrimSuffix ",0" (replace (printf "%.1f" $f) "." ",")) -}}
+    {{- with index $t "FocalLengthIn35mmFormat" -}}
+      {{- $e := partial "exif-num.html" . -}}
+      {{- if and (gt $e 0.0) (gt (math.Abs (sub $e $f)) (mul $f 0.05)) }}{{ $v = printf "%s (KB-Äquivalent %d mm)" $v (int $e) }}{{ end -}}
+    {{- end -}}
+    {{- $rows = $rows | append (dict "label" "Brennweite" "value" $v) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with index $t "ExposureTime" -}}
+  {{- $f := partial "exif-num.html" . -}}
+  {{- if gt $f 0.0 -}}
+    {{- $v := "" -}}
+    {{- if lt $f 0.95 }}{{ $v = printf "1/%d s" (int (math.Round (div 1.0 $f))) }}
+    {{- else if eq $f (math.Floor $f) }}{{ $v = printf "%d s" (int $f) }}
+    {{- else }}{{ $v = printf "%s s" (replace (printf "%.1f" $f) "." ",") }}{{ end -}}
+    {{- $rows = $rows | append (dict "label" "Verschlusszeit" "value" $v) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $iso := index $t "ISO" | default (index $t "ISOSpeedRatings") | default (index $t "PhotographicSensitivity") -}}
+{{- with $iso -}}
+  {{- $f := partial "exif-num.html" . -}}
+  {{- if gt $f 0.0 }}{{ $rows = $rows | append (dict "label" "ISO" "value" (printf "%d" (int $f))) }}{{ end -}}
+{{- end -}}
+
+{{- /* Exposure compensation: only when there is one. */ -}}
+{{- $ev := index $t "ExposureCompensation" | default (index $t "ExposureBiasValue") -}}
+{{- with $ev -}}
+  {{- $f := partial "exif-num.html" . -}}
+  {{- if gt (math.Abs $f) 0.04 }}{{ $rows = $rows | append (dict "label" "Belichtungskorrektur" "value" (printf "%s EV" (replace (printf "%+.1f" $f) "." ","))) }}{{ end -}}
+{{- end -}}
+
+{{- return $rows -}}

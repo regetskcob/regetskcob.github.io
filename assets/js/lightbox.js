@@ -10,6 +10,42 @@
   const next = dialog.querySelector(".lightbox-next");
   const count = dialog.querySelector(".lightbox-count");
   const caption = dialog.querySelector(".lightbox-caption");
+  const title = dialog.querySelector(".lightbox-title");
+  const exifButton = dialog.querySelector(".lightbox-exif-toggle");
+  const exifPanel = dialog.querySelector(".lightbox-exif");
+  const exifList = exifPanel.querySelector("dl");
+
+  // The shooting data panel stays open while paging, and across visits.
+  let exifOpen = false;
+  try {
+    exifOpen = localStorage.getItem("lightbox-exif") === "1";
+  } catch (e) {}
+  const setExifOpen = (open) => {
+    exifOpen = open;
+    try {
+      localStorage.setItem("lightbox-exif", open ? "1" : "0");
+    } catch (e) {}
+    showExif();
+  };
+
+  // Rows come from the link, as JSON [{label, value}], see partials/exif.html.
+  // Photos without any have no button and no panel.
+  let exifRows = [];
+  const showExif = () => {
+    const has = exifRows.length > 0;
+    exifButton.style.visibility = has ? "visible" : "hidden";
+    exifButton.setAttribute("aria-pressed", String(has && exifOpen));
+    exifPanel.hidden = !(has && exifOpen);
+    exifList.replaceChildren(
+      ...exifRows.flatMap(({ label, value }) => {
+        const dt = document.createElement("dt");
+        const dd = document.createElement("dd");
+        dt.textContent = label;
+        dd.textContent = value;
+        return [dt, dd];
+      })
+    );
+  };
 
   // Tiles linking to a page (the series teaser) carry no data-lightbox and
   // navigate as usual.
@@ -23,6 +59,12 @@
     photo.src = link.href;
     photo.alt = link.querySelector("img")?.alt ?? "";
     caption.textContent = photo.alt;
+    try {
+      exifRows = JSON.parse(link.dataset.exif ?? "[]");
+    } catch (e) {
+      exifRows = [];
+    }
+    showExif();
     count.textContent = `${index + 1} / ${group.length}`;
     // Load the neighbours ahead, so paging does not wait for the photo.
     [index - 1, index + 1].forEach((n) => {
@@ -36,6 +78,7 @@
     if (!link || event.metaKey || event.ctrlKey || event.shiftKey) return;
     const container = link.closest(GROUPS) ?? document;
     group = Array.from(container.querySelectorAll("a[data-lightbox]"));
+    title.textContent = container.dataset?.lightboxTitle ?? "";
     event.preventDefault();
     const single = group.length < 2;
     prev.hidden = next.hidden = count.hidden = single;
@@ -43,9 +86,16 @@
     dialog.showModal();
   });
 
-  // A click anywhere in the open view closes it: photo or backdrop. The
-  // buttons page through instead.
-  dialog.addEventListener("click", () => dialog.close());
+  // A click on the photo or the empty space around it closes the view, and so
+  // does the close button. The text in the bars and the paging buttons do not.
+  dialog.addEventListener("click", (event) => {
+    if (event.target.closest(".lightbox-bar > *, .lightbox-exif") && !event.target.closest(".lightbox-close")) return;
+    dialog.close();
+  });
+  exifButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    setExifOpen(!exifOpen);
+  });
   [prev, next].forEach((button) =>
     button.addEventListener("click", (event) => {
       event.stopPropagation();
@@ -85,5 +135,7 @@
     if (dialog.open) return;
     photo.removeAttribute("src");
     caption.textContent = "";
+    title.textContent = "";
+    exifRows = [];
   });
 })();

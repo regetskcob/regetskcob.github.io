@@ -131,6 +131,14 @@ group = "text"
 # Syntax highlighting is styled by the theme's syntax-highlighting.css
 # (theme sets markup.highlight.noClasses = false), so no style is set here.
 
+# EXIF of the photos is read at build time for the lightbox (partials/exif.html).
+# Only the shooting data below is kept; the rest, above all the GPS position,
+# never leaves Hugo: the repository and the site are public.
+[imaging.exif]
+disableLatLong = true
+disableDate = true
+includeFields = '^(Make|Model|LensModel|FNumber|FocalLength|FocalLengthIn35mmFormat|ExposureTime|ISO|ISOSpeedRatings|PhotographicSensitivity|ExposureCompensation|ExposureBiasValue)$'
+
 [params.umami]
 enable = true
 websiteId = "c06c7f84-1748-4134-a2ab-c3e5b7b0fe5d"

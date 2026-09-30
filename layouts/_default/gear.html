@@ -55,7 +55,7 @@
     {{- with $items }}
   <section class="gear-in-use">
     {{- with $.Site.Data.gear.inUse.title }}<h2>{{ . }}</h2>{{ end }}
-    {{ partial "photo-grid.html" (dict "items" . "page" $) }}
+    {{ partial "photo-grid.html" (dict "items" . "title" $.Site.Data.gear.inUse.title "page" $) }}
   </section>
     {{ partial "photo-grid-script.html" $ }}
     {{- end }}
