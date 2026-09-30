@@ -5,6 +5,12 @@ title = 'regetskcob'
 theme = 'typo'
 enableRobotsTXT = true
 
+# Hugo gives a page 60 seconds by default. On a build without a warm image cache
+# (a runner after many new photos) the WebP renditions of a page with many
+# images take longer, and the build stops with "timed out rendering the page
+# content". 10 minutes per page is far more than needed and only ever a ceiling.
+timeout = '10m'
+
 # Don't publish original bundle images: the custom render-image hook emits
 # resized WebP renditions, so the originals would only bloat the Pages artifact.
 [[cascade]]
