@@ -1,0 +1,5 @@
+# Display names for the lightbox's EXIF panel (partials/exif.html), for models
+# whose name in the file is a code. Key: the "Model" tag; value: the full name,
+# maker included. Everything else is shown as "Make Model" from the file.
+FC3582: "DJI Mini 3 Pro"
+ILCE-5100: "Sony α5100"

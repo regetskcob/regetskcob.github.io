@@ -37,6 +37,9 @@ data/
   gallery.yaml    Kuratierte Bildauswahl für die Galerien auf der Startseite
   gear.yaml       Ausrüstungsliste für die Ausrüstungsseite
   recipes.yaml    JPEG-Rezepte der C-Slots für die Rezepte-Seite
+  cameras.yaml    Anzeigenamen für Kameras, die in der Datei nur ein Code sind (Drohne)
+  exif.yaml       Aufnahmedaten für Fotos ohne EXIF, optional (scripts/extract-exif.sh)
+scripts/          Hilfsskripte für Fotos (import-photo.sh, extract-exif.sh)
 layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen
 assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
 assets/gallery/   Optionale Galerie-Bilder ohne zugehörigen Beitrag
@@ -208,6 +211,27 @@ photos:
     size: large          # optional: zwei Spalten, zwei Zeilen
     alt: "…"
 ```
+
+### Fotos aufnehmen und EXIF
+
+**Das Repository ist öffentlich, jede Datei steht samt Metadaten im Git-Verlauf.**
+Originale tragen GPS-Koordinaten, Seriennummern und Besitzernamen. Fotos deshalb nie
+direkt hineinkopieren, sondern mit dem Skript, es kopiert die Datei und schreibt nur
+die Aufnahmedaten zurück, die die Lightbox zeigt (Kamera, Objektiv, Blende,
+Brennweite, Zeit, ISO, Belichtungskorrektur), dazu Orientierung und Farbprofil:
+
+```bash
+scripts/import-photo.sh ~/Pictures/blog/Allgäu/DSCF0473.jpeg assets/gallery/allgaeu/dscf0473.jpg
+```
+
+Dateinamen klein geschrieben, `_` als `-`, ohne Leerzeichen (`dscf0473.jpg`), lange
+Kameranamen der DJI-App auf `dji-JJJJMMTT-HHMMSS` gekürzt. Länge der langen Kante: 2000 px.
+
+Die Lightbox liest die Aufnahmedaten beim Build aus der Datei (`partials/exif.html`).
+In `hugo.toml` legt `[imaging.exif]` eine Whitelist fest und schaltet GPS und Datum ab,
+es kann also nichts Weiteres auf die Seite gelangen. Fotos ohne Daten zeigen keinen
+EXIF-Knopf. Für Fotos, die ohne Metadaten exportiert wurden, kann `data/exif.yaml`
+die Werte liefern, `scripts/extract-exif.sh <Ordner mit Originalen>` schreibt sie.
 
 ### Ausrüstungsseite pflegen
 

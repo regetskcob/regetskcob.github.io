@@ -25,6 +25,8 @@
 {{- if and $make $model -}}
   {{- if not (strings.HasPrefix (lower $model) (lower $make)) }}{{ $cam = printf "%s %s" $make $model }}{{ end -}}
 {{- else if $make }}{{ $cam = $make }}{{ end -}}
+{{- /* Models that are only a code in the file get a proper name (data/cameras.yaml). */ -}}
+{{- with site.Data.cameras }}{{ with index . ($model | string) }}{{ $cam = . }}{{ end }}{{ end -}}
 {{- with $cam }}{{ $rows = $rows | append (dict "label" "Kamera" "value" .) }}{{ end -}}
 
 {{- with index $t "LensModel" }}{{ $rows = $rows | append (dict "label" "Objektiv" "value" .) }}{{ end -}}
