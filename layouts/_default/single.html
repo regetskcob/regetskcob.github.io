@@ -162,6 +162,9 @@
     {{- /* How I came by what I review (partials/disclosure.html, "disclosure" in front matter). */}}
     {{ partial "disclosure.html" . }}
 
+    {{- /* The lightbox for the images in the text (see the image render hook). */}}
+    {{- if strings.Contains .Content "data-lightbox" }}{{ partial "lightbox.html" . }}{{ end }}
+
     {{- /* Previous and next part, for posts in a series (partials/series-nav.html). */}}
     {{ partial "series-nav.html" . }}
   </article>

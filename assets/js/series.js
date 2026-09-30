@@ -1,7 +1,8 @@
 // Photo grids (partials/photo-grid.html), on the series page and the home
-// page: a random order on every visit and a lightweight lightbox. Both are
+// page: a random order on every visit and a few promoted tiles. Both are
 // progressive enhancements. Without JavaScript the tiles keep their data file
-// order and each one links straight to its large rendition or its page.
+// order and each one links straight to its large rendition or its page. The
+// lightbox they open is in lightbox.js.
 (() => {
   const grids = document.querySelectorAll(".series-grid");
   if (!grids.length) return;
@@ -186,31 +187,4 @@
   grids.forEach((grid) => {
     if (grid.hasAttribute("data-shuffle")) setupShuffle(grid);
   });
-
-  const dialog = document.querySelector(".series-lightbox");
-  if (!dialog || typeof dialog.showModal !== "function") return;
-  const photo = dialog.querySelector("img");
-
-  // One lightbox for all grids. Only tiles that link to their photo open it;
-  // tiles linking to a page (the series teaser) navigate as usual.
-  document.addEventListener("click", (event) => {
-    const link = event.target.closest(".series-grid a[data-lightbox]");
-    // Leave modified clicks alone, so "open in new tab" keeps working.
-    if (!link || event.metaKey || event.ctrlKey || event.shiftKey) return;
-    event.preventDefault();
-    photo.src = link.href;
-    photo.alt = link.querySelector("img")?.alt ?? "";
-    dialog.showModal();
-  });
-
-  // A click anywhere in the open view closes it: photo, button or backdrop.
-  dialog.addEventListener("click", () => dialog.close());
-
-  // Modal dialogs close on Escape natively, but browsers may skip that when
-  // the dialog was not opened by a direct user gesture. Closing an already
-  // closed dialog is a no-op, so handling it here as well is safe.
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && dialog.open) dialog.close();
-  });
-  dialog.addEventListener("close", () => photo.removeAttribute("src"));
 })();

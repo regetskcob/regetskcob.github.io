@@ -647,43 +647,158 @@ a.series-label:hover {
 
 /* Lightbox */
 
-.series-lightbox {
+.lightbox {
+  /* The dark chip behind buttons, count and caption: they must stay legible
+     when a light part of the page shows through the backdrop. */
+  --lightbox-chip: rgb(0 0 0 / 0.72);
   padding: 0;
   border: none;
   background: transparent;
-  max-width: 95vw;
-  max-height: 95vh;
+  /* A fixed frame, not one that follows the photo: portrait and landscape
+     photos change in turn while paging, and the buttons must stay put. */
+  /* On a wide screen the frame is no wider than a 3:2 photo that fills its
+     height, so the buttons stay near the photo instead of in the far
+     corners of the window. */
+  width: min(95vw, calc(1.5 * (95vh - 10.6rem)));
+  width: min(95vw, calc(1.5 * (95dvh - 10.6rem)));
+  height: 95vh;
+  height: 95dvh;
+  max-width: none;
+  max-height: none;
+  /* A strip above the photo for the count and the close button, one below
+     for the paging buttons. */
+  box-sizing: border-box;
+  padding-block: 3.6rem;
   overflow: visible;
   cursor: zoom-out;
 }
 
-.series-lightbox::backdrop {
+.lightbox[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox::backdrop {
   background: rgb(0 0 0 / 0.88);
 }
 
-/* Both dimensions auto with max limits keep the photo's own aspect ratio. */
-.series-lightbox img {
+/* Photo and caption form one column, centred in the frame, so the caption
+   sits right under the photo whatever its format. The photo leaves room for
+   two lines of caption and the strips with the buttons; it keeps its own
+   aspect ratio and is never scaled up beyond its own size. */
+.lightbox-figure {
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox img {
   display: block;
   width: auto;
   height: auto;
-  max-width: 95vw;
-  max-height: 95vh;
-  border-radius: 4px;
+  max-width: 100%;
+  max-height: calc(95vh - 7.2rem - 3.4rem);
+  max-height: calc(95dvh - 7.2rem - 3.4rem);
 }
 
-.series-lightbox-close {
+.lightbox-close {
   position: absolute;
   top: 0.5rem;
-  right: 0.5rem;
-  width: 2.2rem;
-  height: 2.2rem;
-  border: none;
+  right: 1.5rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 0.55);
   border-radius: 50%;
-  background: rgb(0 0 0 / 0.55);
+  background: var(--lightbox-chip);
   color: #fff;
-  font-size: 1.4rem;
-  line-height: 1;
   cursor: pointer;
+}
+
+/* Paging buttons: round like the close button, in the strip below the photo,
+   a little in from the left and right edge of the frame.
+   The count and the close button sit in the strip above the photo, inset
+   like the arrows, level with each other. */
+.lightbox-nav {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 0.55);
+  border-radius: 50%;
+  background: var(--lightbox-chip);
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox-nav:hover,
+.lightbox-close:hover {
+  background: rgb(0 0 0 / 0.85);
+  border-color: rgb(255 255 255 / 0.85);
+}
+
+.lightbox-prev {
+  left: 1.5rem;
+}
+
+.lightbox-next {
+  right: 1.5rem;
+}
+
+.lightbox-count {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0.15rem 0.7rem;
+  border-radius: 1rem;
+  background: var(--lightbox-chip);
+  border: 1px solid rgb(255 255 255 / 0.55);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+/* The alt text under the photo, at most two lines. */
+.lightbox-caption {
+  margin: 0.7rem 0 0;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  background: var(--lightbox-chip);
+  max-width: 50rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.lightbox-nav[hidden],
+.lightbox-count[hidden] {
+  display: none;
+}
+
+/* Images in a post open in the lightbox, like the tiles of a gallery. */
+figure a[data-lightbox] {
+  display: block;
+  cursor: zoom-in;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 /* --- Series teaser on the home page --- */
