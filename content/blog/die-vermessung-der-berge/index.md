@@ -10,9 +10,9 @@ autonumber: false
 math: false
 cover: ./cover.jpg
 coverAlt: "Das Buch „Die Vermessung der Berge“ von Blandine Pluchet liegt auf einem hellen Holztisch, auf dem Cover eine beschriftete Bergzeichnung mit Gletscher und Bergsee, oben ein rosa Lesebändchen"
-# Wie kam das Buch zu mir? gestellt: type: provided, by: "vom …"; gekauft: type: purchased
-# disclosure:
-#   type: purchased
+disclosure:
+  type: purchased
+  note: "Es war ein gebrauchtes Exemplar von medimops."
 tags: ["Bücher", "Natur"]
 ---
 

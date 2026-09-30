@@ -10,9 +10,9 @@ autonumber: false
 math: false
 cover: ./cover.jpg
 coverAlt: "Das Taschenbuch „Photographer's Guide to the Fujifilm X10“ von Alexander S. White liegt schräg auf einem hellen Holztisch, auf dem weißen Cover die Kamera und zwei Beispielfotos"
-# Wie kam das Buch zu mir? gestellt: type: provided, by: "vom …"; gekauft: type: purchased
-# disclosure:
-#   type: purchased
+disclosure:
+  type: purchased
+  note: "Es war ein gebrauchtes Exemplar von medimops."
 tags: ["Bücher", "Fotografie"]
 ---
 
