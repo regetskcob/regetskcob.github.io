@@ -14,7 +14,7 @@
 {{- with .pages }}
 {{- $series := $.series }}
 <details class="soon-box" id="in-arbeit" open>
-  <summary class="soon-heading">In Arbeit<span class="soon-hint">{{ if eq (len .) 1 }}Dieser Beitrag erscheint als Nächstes{{ else }}Diese Beiträge erscheinen als Nächstes{{ end }}</span></summary>
+  <summary class="soon-heading"><span class="soon-title">In Arbeit</span><span class="soon-hint">{{ if eq (len .) 1 }}Dieser Beitrag erscheint als Nächstes{{ else }}Diese Beiträge erscheinen als Nächstes{{ end }}</span></summary>
   {{- range . }}
   {{- $page := . }}
   {{- $thumb := "" }}

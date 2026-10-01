@@ -458,8 +458,7 @@ a.series-label:hover {
 
 .soon-heading {
   margin: 0 0 0.9rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.95rem;
   line-height: 1.4;
   color: var(--content-secondary);
   cursor: pointer;
@@ -497,10 +496,12 @@ a.series-label:hover {
   margin-bottom: 0;
 }
 
+.soon-title {
+  font-weight: 700;
+}
+
 .soon-hint {
   margin-left: 0.8rem;
-  font-family: var(--font-body);
-  font-size: 1.15em;
 }
 
 @media (prefers-reduced-motion: reduce) {
