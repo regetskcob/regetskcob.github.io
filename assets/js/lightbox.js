@@ -80,10 +80,19 @@
     group = Array.from(container.querySelectorAll("a[data-lightbox]"));
     title.textContent = container.dataset?.lightboxTitle ?? "";
     event.preventDefault();
+    // A selection from before would show through the backdrop.
+    window.getSelection()?.removeAllRanges();
     const single = group.length < 2;
     prev.hidden = next.hidden = count.hidden = single;
     show(group.indexOf(link));
     dialog.showModal();
+  });
+
+  // A second click in quick succession selects a word in most browsers, even
+  // where user-select is off in some of them; the default of a double or
+  // triple click in the open view is not wanted.
+  dialog.addEventListener("mousedown", (event) => {
+    if (event.detail > 1) event.preventDefault();
   });
 
   // A click on the photo or the empty space around it closes the view, and so

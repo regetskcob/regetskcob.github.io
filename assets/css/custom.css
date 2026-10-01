@@ -803,6 +803,21 @@ a.series-label:hover {
     transparent calc(var(--fade-solid) + var(--lightbox-fade));
 }
 
+/* Nothing in the lightbox can be selected. Fast clicks on the paging buttons are
+   double and triple clicks, and the browser answered with a text selection
+   that tinted the photo and the caption (and reached into the page behind).
+   The photo cannot be dragged away either. */
+.lightbox,
+.lightbox * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.lightbox img {
+  -webkit-user-drag: none;
+}
+
 .lightbox[open] {
   display: flex;
   align-items: center;
