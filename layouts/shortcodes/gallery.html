@@ -1,0 +1,38 @@
+{{- /*
+  A group of three or more images in a post as a photo grid, the same grid as
+  the galleries (partials/photo-grid.html): breaks out of the text column, runs
+  two to four columns, portraits take two rows. Used in a post as
+    {{< gallery >}}
+    ![Alt text](./one.jpg)
+    ![Alt text](./two.jpg)
+    ![Alt text](./three.jpg)
+    {{< /gallery >}}
+  The images are those of the post's own folder (no remote ones), in the order
+  written. A click opens the lightbox with this gallery's photos to page
+  through, titled like the post (assets/js/lightbox.js, partials/photo-grid.html).
+  Two images that belong together stay with {{< images >}}. Without
+  JavaScript each tile links to the large rendition.
+
+  Optional switches, all off by default:
+    {{< gallery shuffle=true feature=true large=2 portrait=true >}}
+  "shuffle" mixes the order on every visit, "feature" lets a few landscape
+  tiles show at double size ("large" says how many, otherwise one in six;
+  "portrait" makes one of them a portrait) (assets/js/series.js, same as the galleries on the
+  home page). The post then loads series.js (layouts/_default/single.html);
+  the lightbox pages in the order on screen.
+*/ -}}
+{{- $page := .Page -}}
+{{- $items := slice -}}
+{{- range findRE `!\[[^\]]*\]\(\./[^)]+\)` .Inner -}}
+  {{- $m := findRESubmatch `!\[([^\]]*)\]\(\./([^)]+)\)` . -}}
+  {{- $alt := index (index $m 0) 1 -}}
+  {{- $name := index (index $m 0) 2 -}}
+  {{- with $page.Resources.Get $name -}}
+    {{- $items = $items | append (dict "img" . "alt" $alt) -}}
+  {{- else -}}
+    {{- errorf "gallery shortcode in %s: no image %q in the post's folder" $page.File.Path $name -}}
+  {{- end -}}
+{{- end -}}
+{{- $shuffle := eq (printf "%v" (.Get "shuffle")) "true" -}}
+{{- $feature := eq (printf "%v" (.Get "feature")) "true" -}}
+{{- partial "photo-grid.html" (dict "items" $items "title" (replaceRE `^[^\p{L}\p{N}]+` "" $page.Title) "page" $page "shuffle" $shuffle "feature" $feature "featureCount" (int (.Get "large")) "featurePortrait" (eq (printf "%v" (.Get "portrait")) "true")) -}}

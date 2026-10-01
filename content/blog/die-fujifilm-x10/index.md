@@ -26,7 +26,19 @@ Eingesteckt habe ich sie zum Spazierengehen und auf Dienstreisen. Sie ist klein 
 
 Von oben fällt außerdem das Bedienkonzept ins Auge: Belichtungskorrekturrad, Moduswahlrad und ein roter Auslöser, alles direkt unter den Fingern.
 
+{{< gallery shuffle=true feature=true >}}
 ![Die X10 von oben: rechts Belichtungskorrekturrad, Moduswahlrad und ein roter Auslöseknopf, links der Schriftzug Fujifilm X10 neben dem Blitzschuh](./img-0926.jpg)
+![Schräger Blick auf die X10 in der Lederhalbtasche mit ausgefahrenem Zoomobjektiv](./img-0927.jpg)
+![Die X10 von vorn flach auf grauem Grund: das Objektiv in der Mitte, rechts Sucherfenster und Blitz, an den Ösen Gurtschlaufen aus Leder](./img-0928.jpg)
+![Die Fujifilm X10 an einem dicken geflochtenen Seilgurt in Olivgrün mit Steckschnalle und Lederdetails auf hellem Holz](./img-4656.jpg)
+![Die X10 von oben neben dem Akku, einer SD-Karte mit 64 GB und dem Objektivdeckel auf hellem Grund](./img-4702.jpg)
+![Die Rückseite der X10 in der Halbtasche auf hellem Stein im Sonnenlicht, auf dem Display eine Blüte, darum der Seilgurt](./img-5730.jpg)
+![Die X10 in der Hand, das Display zeigt die Wiese, im Hintergrund die echte Wiese mit Kopfweiden](./img-1240.jpg)
+![Draufsicht auf die X10 in der Hand vor einer Wiese, links Sucherfenster und Schriftzug, rechts Wählrad und roter Auslöseknopf](./img-1241.jpg)
+![Die X10 hängt am Gurt vor dem Bauch, darunter ein Asphaltweg mit Herbstlaub, unten die Füße in braunen Schnürschuhen](./img-1242.jpg)
+![Die X10 von der Seite am Zaunpfahl, das Objektiv ist ausgefahren, dahinter weiches rosa Abendlicht](./dscf5725.jpg)
+![Nahaufnahme der X10 mit der Aufschrift „Fujinon Aspherical Lens“ am Objektiv, der Zaunpfahl liegt im Gegenlicht dahinter](./dscf5727.jpg)
+{{< /gallery >}}
 
 Bei gutem Licht macht sie ordentliche Bilder:
 
@@ -38,9 +50,20 @@ Wer nah ran geht, bekommt dank Makromodus auch Details, wie das Eis auf einem Bu
 
 Und sie hat mich auf Reisen begleitet, zum Beispiel ins Allgäu:
 
+{{< gallery shuffle=true feature=true large=2 portrait=true >}}
+![Die X10 liegt auf einem Holztisch, dahinter eine Almhütte mit Fensterläden, eine Bergwiese und schneebedeckte Gipfel](./img-3644.jpg)
 ![Blick über einen Schotterweg auf eine Almhütte mit Blumenkästen, dahinter ein grüner Hang und schneebedeckte Gipfel](./x10-huette-allgaeu.jpg)
-
 ![Ein Gebirgsbach fließt über Felsen durch einen Wald, die Aufnahme zeigt das Wasser leicht verwischt](./x10-bach-allgaeu.jpg)
+![Ein Schuttstrom mit Bachlauf und Schneeresten zieht sich zwischen Wiese und Tannen den Hang hinauf, darüber felsige, teils verschneite Gipfel](./x10-allgaeu-schuttstrom.jpg)
+![Ein hölzerner Brunnentrog im Vordergrund, dahinter ein Geröllbach mit Felsbrocken und ein grüner Talhang unter schneebedeckten Gipfeln](./x10-allgaeu-brunnentrog.jpg)
+![Ein Kiesweg führt durch eine grüne Almwiese am Hang entlang, hinten zwei kleine Wanderer und Hütten am Waldrand, darüber Wolken](./x10-allgaeu-kiesweg.jpg)
+![Ein dunkles Holzhaus am Hang inmitten grüner Wiesen, dahinter dichter Nadelwald und ein Berg unter Wolken](./x10-allgaeu-holzhaus.jpg)
+![Ein schneebedeckter Gipfel unter dunklen Wolken, davor ein dunkler Nadelwald am Hang](./x10-allgaeu-gipfel.jpg)
+![Ein Kiesweg führt durch eine grüne Almwiese ins Tal, darüber felsige Berge mit Schneeresten und Wolken](./x10-allgaeu-talweg.jpg)
+![Weite grüne Almlandschaft mit einem Bachlauf im Vordergrund, einer Hütte in der Mitte und Nadelwald vor schneebedeckten Gipfeln](./x10-allgaeu-alm.jpg)
+![Die Wand einer Almhütte mit Holzschindeln, Fensterläden und Blumenkästen, dahinter ein grüner Hang und schneebedeckte Berge](./x10-allgaeu-almhuette.jpg)
+{{< /gallery >}}
+
 
 Auch in der Stadt macht sie bei Sonne eine gute Figur:
 
@@ -76,29 +99,3 @@ Trotz der englischen Sprache habe ich mich mit dem Buch gut in der Kamera zurech
 
 Umso besser ist es, mit dem Buch nicht nur die Bedienung zu lernen, sondern auch Kniffe und versteckte Optionen zu finden. Denn online gibt es zur X10, außer meist völlig überteuerten Angeboten, nicht viel.
 
-<!--
-Bilder, die schon im Ordner liegen (Alt-Texte vorbereitet). Zum Einbauen die
-Zeile an die Stelle im Text setzen und aus dem Kommentar nehmen.
-
-Am Zaun im Abendlicht (X-T30)
-![Die X10 von der Seite am Zaunpfahl, das Objektiv ist ausgefahren, dahinter weiches rosa Abendlicht](./dscf5725.jpg)
-![Nahaufnahme der X10 mit der Aufschrift „Fujinon Aspherical Lens“ am Objektiv, der Zaunpfahl liegt im Gegenlicht dahinter](./dscf5727.jpg)
-
-Die Kamera im Detail
-![Schräger Blick auf die X10 in der Lederhalbtasche mit ausgefahrenem Zoomobjektiv](./img-0927.jpg)
-![Die X10 von vorn flach auf grauem Grund: das Objektiv in der Mitte, rechts Sucherfenster und Blitz, an den Ösen Gurtschlaufen aus Leder](./img-0928.jpg)
-
-In der Benutzung
-![Die X10 in der Hand, das Display zeigt die Wiese, im Hintergrund die echte Wiese mit Kopfweiden](./img-1240.jpg)
-![Draufsicht auf die X10 in der Hand vor einer Wiese, links Sucherfenster und Schriftzug, rechts Wählrad und roter Auslöseknopf](./img-1241.jpg)
-![Die X10 hängt am Gurt vor dem Bauch, darunter ein Asphaltweg mit Herbstlaub, unten die Füße in braunen Schnürschuhen](./img-1242.jpg)
-
-Unterwegs im Allgäu
-![Die X10 mit aufgerolltem Seilgurt auf einem Holztisch vor einer Hüttenwand mit zusammengeklappten Gartenstühlen](./img-3643.jpg)
-![Die X10 liegt auf einem Holztisch, dahinter eine Almhütte mit Fensterläden, eine Bergwiese und schneebedeckte Gipfel](./img-3644.jpg)
-
-Zubehör (img-4830: X10 auf dem Buch)
-![Die Fujifilm X10 an einem dicken geflochtenen Seilgurt in Olivgrün mit Steckschnalle und Lederdetails auf hellem Holz](./img-4656.jpg)
-![Die X10 von oben neben dem Akku, einer SD-Karte mit 64 GB und dem Objektivdeckel auf hellem Grund](./img-4702.jpg)
-![Die Rückseite der X10 in der Halbtasche auf hellem Stein im Sonnenlicht, auf dem Display eine Blüte, darum der Seilgurt](./img-5730.jpg)
--->

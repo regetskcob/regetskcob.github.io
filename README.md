@@ -286,6 +286,39 @@ behalten ihren Alt-Text und öffnen die Lightbox:
 {{< /images >}}
 ```
 
+### Drei oder mehr Bilder als Galerie
+
+Stehen in einem Beitrag drei oder mehr Bilder zusammen, kommen sie mit dem Shortcode `gallery`
+in dasselbe Raster wie die Galerien (`layouts/shortcodes/gallery.html`, nutzt
+`partials/photo-grid.html`): aus der Textspalte ausbrechend, zwei bis vier Spalten, Hochformate
+über zwei Zeilen. Die Bilder liegen im Ordner des Beitrags, die Reihenfolge ist die geschriebene.
+Ein Klick öffnet die Lightbox mit den Bildern dieser Galerie zum Blättern, betitelt wie der
+Beitrag. Ein fehlendes Bild bricht den Build mit einer Fehlermeldung ab.
+
+```markdown
+{{< gallery >}}
+![Alt text of the first image](./one.jpg)
+![Alt text of the second image](./two.jpg)
+![Alt text of the third image](./three.jpg)
+{{< /gallery >}}
+```
+
+Zwei zusammengehörige Bilder bleiben beim Shortcode `images` (siehe oben).
+
+Optionale Schalter, alle standardmäßig aus (dasselbe Mischen wie bei den Galerien auf der
+Startseite, `assets/js/series.js`, das der Beitrag dann zusätzlich lädt):
+
+```markdown
+{{< gallery shuffle=true feature=true large=2 portrait=true >}}
+```
+
+- `shuffle=true` mischt die Reihenfolge bei jedem Besuch (die Lightbox blättert in der
+  Reihenfolge auf dem Bildschirm).
+- `feature=true` zeigt ein paar Bilder doppelt groß, bei jedem Besuch andere; `large=2` legt
+  die Zahl fest (sonst eins von sechs), `portrait=true` macht eines davon zu einem Hochformat.
+  Ein großes Querformat ist 2×2 Felder, ein großes Hochformat 2×4 (3:4 wie das Foto, sonst
+  würde es zu einem Querformat beschnitten).
+
 ### Vorschau auf Beiträge in Arbeit
 
 Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter

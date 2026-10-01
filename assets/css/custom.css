@@ -864,6 +864,13 @@ a.series-label:hover {
   grid-row: span 2;
 }
 
+/* A portrait promoted by series.js ("feature"): 3:4 like the photo, two
+   columns by four rows. After .is-portrait, which it overrides. */
+.series-tile.is-large-portrait {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
 .series-tile a {
   display: block;
   height: 100%;

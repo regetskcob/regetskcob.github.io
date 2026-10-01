@@ -18,26 +18,43 @@
     const LARGE_SIZES =
       "(max-width: 640px) 100vw, (max-width: 1250px) 54vw, 700px";
     const landscapes = tiles.filter((t) => t.classList.length === 1);
+    // With data-feature-portrait one of the promoted tiles is a portrait (in a
+    // 2x2 cell it is cropped to a square). data-feature-count sets how many
+    // tiles are promoted, instead of one in six.
+    const portraits = grid.hasAttribute("data-feature-portrait")
+      ? tiles.filter((t) => t.classList.contains("is-portrait"))
+      : [];
+    const candidates = landscapes.concat(portraits);
     const featured =
       grid.hasAttribute("data-feature") &&
       landscapes.length > 0 &&
       !tiles.some((t) => t.classList.contains("is-large"));
-    const featureCount = Math.max(1, Math.floor(tiles.length / 6));
+    const wanted = parseInt(grid.getAttribute("data-feature-count"), 10);
+    const featureCount = wanted > 0 ? wanted : Math.max(1, Math.floor(tiles.length / 6));
     const smallSizes = new Map(
-      landscapes.map((t) => [t, t.querySelector("img")?.getAttribute("sizes")])
+      candidates.map((t) => [t, t.querySelector("img")?.getAttribute("sizes")])
     );
     const pickLarge = (count) => {
-      const pool = landscapes.slice();
       const picked = new Set();
-      const n = Math.min(pool.length, Math.max(1, count));
-      while (picked.size < n)
+      const n = Math.max(1, count);
+      // One portrait first, if the gallery asks for one and there is room.
+      if (portraits.length && n > 1)
+        picked.add(portraits[Math.floor(Math.random() * portraits.length)]);
+      const pool = landscapes.slice();
+      while (picked.size < Math.min(n, pool.length + picked.size))
         picked.add(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
       return picked;
     };
     const applyLarge = (picked) => {
-      landscapes.forEach((t) => {
+      candidates.forEach((t) => {
         const on = picked.has(t);
-        t.classList.toggle("is-large", on);
+        // A portrait keeps its shape when promoted: two columns wide and four
+        // rows high, which is the 3:4 of the photo. In the 2x2 cell of a
+        // landscape it would be cropped to a landscape.
+        t.classList.toggle(
+          t.classList.contains("is-portrait") ? "is-large-portrait" : "is-large",
+          on
+        );
         t.querySelector("img")?.setAttribute(
           "sizes",
           on ? LARGE_SIZES : smallSizes.get(t)
@@ -56,6 +73,7 @@
     };
 
     const shapeOf = (tile) => {
+      if (tile.classList.contains("is-large-portrait")) return { w: 2, h: 4 };
       if (tile.classList.contains("is-large")) return { w: 2, h: 2 };
       if (tile.classList.contains("is-portrait")) return { w: 1, h: 2 };
       if (tile.classList.contains("is-wide")) return { w: 2, h: 1 };
@@ -141,6 +159,7 @@
     // In a featured grid (see below) each attempt also re-picks which
     // landscape tiles show at 2x2, and one more or fewer than planned, since
     // the number of cells they add decides whether the rows can come out even.
+    // A gallery that names its count (data-feature-count) keeps exactly that.
     //
     // The winning order is kept, so a later change in column count starts
     // from the same sequence instead of reshuffling the whole page.
@@ -152,7 +171,7 @@
       let best = arrange(base, cols);
       for (let attempt = 0; score(best) > 0 && attempt < 60; attempt++) {
         const tryLarge = featured
-          ? pickLarge(featureCount + Math.floor(Math.random() * 3) - 1)
+          ? pickLarge(featureCount + (wanted > 0 ? 0 : Math.floor(Math.random() * 3) - 1))
           : null;
         if (tryLarge) applyLarge(tryLarge);
         const order = shuffle();

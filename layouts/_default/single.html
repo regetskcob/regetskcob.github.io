@@ -184,6 +184,13 @@
 
     {{- /* The lightbox for the images in the text (see the image render hook). */}}
     {{- if strings.Contains .Content "data-lightbox" }}{{ partial "lightbox.html" . }}{{ end }}
+    {{- /* A gallery in the text that shuffles or features tiles needs the grid script
+           (the shortcode "gallery" with shuffle=true or feature=true). */}}
+    {{- if or (strings.Contains .Content "data-shuffle") (strings.Contains .Content "data-feature") }}
+      {{- with resources.Get "js/series.js" }}
+    <script>{{ (. | minify).Content | safeJS }}</script>
+      {{- end }}
+    {{- end }}
 
     {{- /* Previous and next part, for posts in a series (partials/series-nav.html). */}}
     {{ partial "series-nav.html" . }}

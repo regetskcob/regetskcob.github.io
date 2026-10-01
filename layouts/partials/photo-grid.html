@@ -22,12 +22,14 @@
     title    name of the album, shown in the lightbox (series.js, lightbox.js)
     feature  true to let series.js promote a few random landscape tiles to
              2x2 on every visit, unless the items mark large ones themselves
+    featureCount     how many tiles to promote (default one in six)
+    featurePortrait  true to make one of the promoted tiles a portrait
   A tile with "href" links there (e.g. the series page). Otherwise it links to
   a large rendition of its photo, which series.js opens in a lightbox; the
   page includes partials/photo-grid-script.html once, after its last grid.
 */}}
 <div class="series-gallery{{ if .narrow }} is-narrow{{ end }}">
-  <div class="series-grid"{{ with .title }} data-lightbox-title="{{ . }}"{{ end }}{{ if .shuffle }} data-shuffle{{ end }}{{ if .feature }} data-feature{{ end }}>
+  <div class="series-grid"{{ with .title }} data-lightbox-title="{{ . }}"{{ end }}{{ if .shuffle }} data-shuffle{{ end }}{{ if .feature }} data-feature{{ end }}{{ with .featureCount }} data-feature-count="{{ . }}"{{ end }}{{ if .featurePortrait }} data-feature-portrait{{ end }}>
   {{- range $it := .items }}
     {{- $img := $it.img }}
     {{- $ratio := div (float $img.Width) $img.Height }}

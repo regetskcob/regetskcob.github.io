@@ -28,11 +28,11 @@ Das Buch ist nach einem sehr klar strukturierten Schema aufgebaut. Nachdem die e
 
 Diese Wildtierkunde-Kapitel sind immer ähnlich aufgebaut. Das Kapitel wird von einer ansprechenden, minimalistisch gestalteten Illustration, dem Titel und einigen prägnanten Fotografischen oder Tierkundlichen Highlights eingeleitet. Darauf folgt ein Portrait in Schwarzweiß sowie ein Steckbrief. Daran schließen dann wissenswerte Informationen in Texten sowie Aufnahmen aus der freien Wildbahn an, um einen Eindruck von Habitat und Habitus zu bekommen.
 
+{{< gallery >}}
 ![Aufgeschlagenes Buch am Kapitelbeginn Rotwild, links ein gezeichneter röhrender Hirsch, rechts eine grüne Seite mit Einleitungstext](./IMG_4459.jpeg)
-
 ![Doppelseite mit Porträt und Steckbrief: Schwarzweißfoto eines Rothirschs im Schnee, daneben Geweihzeichnung und Verbreitungskarte](./IMG_4460.jpeg)
-
 ![Doppelseite Rotwild in Bildern: Rothirsche an einem blühenden Hang](./IMG_4461.jpeg)
+{{< /gallery >}}
 
 Im Schlusswort geht Fotograf und Berufsjäger Christoph Burgstaller nochmal sehr intensiv darauf ein, wie die Fotografie als „Jagd auf ein Bild“ und die Jagd als solche zusammen in Einklang spielen, wie beiden voneinander profitieren kann. Und er appelliert an die gesamte Gesellschaft, die Augen vor dem Wandel in unseren Wildtier-Populationen nicht zu verschließen. 
 
