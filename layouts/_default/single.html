@@ -184,9 +184,9 @@
 
     {{- /* The lightbox for the images in the text (see the image render hook). */}}
     {{- if strings.Contains .Content "data-lightbox" }}{{ partial "lightbox.html" . }}{{ end }}
-    {{- /* A gallery in the text that shuffles or features tiles needs the grid script
-           (the shortcode "gallery" with shuffle=true or feature=true). */}}
-    {{- if or (strings.Contains .Content "data-shuffle") (strings.Contains .Content "data-feature") }}
+    {{- /* A gallery in the text promotes large tiles and may shuffle: it needs the
+           grid script (the shortcode "gallery", partials/photo-grid.html). */}}
+    {{- if strings.Contains .Content "series-grid" }}
       {{- with resources.Get "js/series.js" }}
     <script>{{ (. | minify).Content | safeJS }}</script>
       {{- end }}

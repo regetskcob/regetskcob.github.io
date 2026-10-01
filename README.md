@@ -305,19 +305,24 @@ Beitrag. Ein fehlendes Bild bricht den Build mit einer Fehlermeldung ab.
 
 Zwei zusammengehörige Bilder bleiben beim Shortcode `images` (siehe oben).
 
-Optionale Schalter, alle standardmäßig aus (dasselbe Mischen wie bei den Galerien auf der
-Startseite, `assets/js/series.js`, das der Beitrag dann zusätzlich lädt):
+Die Reihenfolge bleibt wie geschrieben; mit `shuffle=true` wird sie bei jedem Besuch gemischt
+(`{{< gallery shuffle=true >}}`, die Lightbox blättert in der Reihenfolge auf dem Bildschirm).
+Die großen Kacheln kommen wie in allen Galerien nach einer Regel, siehe „Große Kacheln in
+Galerien“ unten.
 
-```markdown
-{{< gallery shuffle=true feature=true large=2 portrait=true >}}
-```
+### Große Kacheln in Galerien
 
-- `shuffle=true` mischt die Reihenfolge bei jedem Besuch (die Lightbox blättert in der
-  Reihenfolge auf dem Bildschirm).
-- `feature=true` zeigt ein paar Bilder doppelt groß, bei jedem Besuch andere; `large=2` legt
-  die Zahl fest (sonst eins von sechs), `portrait=true` macht eines davon zu einem Hochformat.
-  Ein großes Querformat ist 2×2 Felder, ein großes Hochformat 2×4 (3:4 wie das Foto, sonst
-  würde es zu einem Querformat beschnitten).
+Für alle Raster (Niederrhein-Serie, Startseiten-Galerien, „Im Einsatz“ der Ausrüstungsseite,
+Galerien in Beiträgen) zeigt `assets/js/series.js` **je sieben Bilder eine große Kachel**,
+abwechselnd quer und hoch, **quer zuerst**: bis 6 Bilder keine, 7 bis 13 eine (quer), 14 bis 20
+zwei (quer und hoch), und so weiter. Ein großes Querformat belegt 2×2 Felder, ein großes
+Hochformat 2×4 (3:4 wie das Foto, in 2×2 würde es zu einem Querformat beschnitten); das
+Hochformat nimmt mehr als doppelt so viel Platz und kommt deshalb erst ab 14 Bildern. Gibt es
+keine Bilder der gewünschten Form, springt die andere ein. Welche Bilder es sind, wechselt bei
+jedem Besuch, die Anzahl nicht. Mit `size: large` von Hand markierte Bilder bleiben groß, zählen
+mit und die Regel ergänzt nur bis zur Zahl, die sie verlangt. Der Serien-Teaser auf der
+Startseite (einheitliche 3:2-Zellen) ist ausgenommen. Ohne JavaScript gibt es keine großen
+Kacheln.
 
 ### Vorschau auf Beiträge in Arbeit
 
@@ -494,10 +499,9 @@ Beitrags und verlinkt die Kachel dorthin — so liegt kein Bild doppelt im
 Repository. Ein Eintrag mit nur `image` liest stattdessen aus `assets/gallery/`.
 Fehlende Dateien werden übersprungen und lassen den Build nicht scheitern.
 Hoch- und Panoramaformate erkennt das Raster selbst. Bei jedem Besuch werden
-außerdem einige zufällige Querformate groß gezeigt, etwa eins von sechs, jeweils
-über zwei mal zwei Felder. Wer das für einen Block lieber selbst festlegt,
-setzt an den gewünschten Bildern `size: large`; dann wählt das Skript dort nichts
-mehr aus. Bildunterschriften gibt es im Raster nicht, die
+außerdem einige Bilder groß gezeigt, eins je sieben, abwechselnd quer und hoch (siehe
+„Große Kacheln in Galerien“). Wer Bilder lieber selbst festlegt, setzt an ihnen
+`size: large`; die Regel ergänzt dann nur noch bis zur verlangten Zahl. Bildunterschriften gibt es im Raster nicht, die
 Beschreibung gehört in `alt`.
 
 ```yaml

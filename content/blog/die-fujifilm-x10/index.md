@@ -26,7 +26,7 @@ Eingesteckt habe ich sie zum Spazierengehen und auf Dienstreisen. Sie ist klein 
 
 Von oben fällt außerdem das Bedienkonzept ins Auge: Belichtungskorrekturrad, Moduswahlrad und ein roter Auslöser, alles direkt unter den Fingern.
 
-{{< gallery shuffle=true feature=true >}}
+{{< gallery shuffle=true >}}
 ![Die X10 von oben: rechts Belichtungskorrekturrad, Moduswahlrad und ein roter Auslöseknopf, links der Schriftzug Fujifilm X10 neben dem Blitzschuh](./img-0926.jpg)
 ![Schräger Blick auf die X10 in der Lederhalbtasche mit ausgefahrenem Zoomobjektiv](./img-0927.jpg)
 ![Die X10 von vorn flach auf grauem Grund: das Objektiv in der Mitte, rechts Sucherfenster und Blitz, an den Ösen Gurtschlaufen aus Leder](./img-0928.jpg)
@@ -50,7 +50,7 @@ Wer nah ran geht, bekommt dank Makromodus auch Details, wie das Eis auf einem Bu
 
 Und sie hat mich auf Reisen begleitet, zum Beispiel ins Allgäu:
 
-{{< gallery shuffle=true feature=true large=2 portrait=true >}}
+{{< gallery shuffle=true >}}
 ![Die X10 liegt auf einem Holztisch, dahinter eine Almhütte mit Fensterläden, eine Bergwiese und schneebedeckte Gipfel](./img-3644.jpg)
 ![Blick über einen Schotterweg auf eine Almhütte mit Blumenkästen, dahinter ein grüner Hang und schneebedeckte Gipfel](./x10-huette-allgaeu.jpg)
 ![Ein Gebirgsbach fließt über Felsen durch einen Wald, die Aufnahme zeigt das Wasser leicht verwischt](./x10-bach-allgaeu.jpg)

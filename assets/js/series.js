@@ -1,5 +1,6 @@
-// Photo grids (partials/photo-grid.html), on the series page and the home
-// page: a random order on every visit and a few promoted tiles. Both are
+// Photo grids (partials/photo-grid.html), on the series page, the home page,
+// the gear page and in posts: an optional random order on every visit and the
+// promoted (large) tiles, one for every seven photos. Both are
 // progressive enhancements. Without JavaScript the tiles keep their data file
 // order and each one links straight to its large rendition or its page. The
 // lightbox they open is in lightbox.js.
@@ -7,42 +8,43 @@
   const grids = document.querySelectorAll(".series-grid");
   if (!grids.length) return;
 
-  const setupShuffle = (grid) => {
+  const setupGrid = (grid) => {
     const tiles = Array.from(grid.children);
+    const shuffleOn = grid.hasAttribute("data-shuffle");
+    const uniform = grid.hasAttribute("data-uniform");
 
-    // Galleries without hand-picked large tiles would be a plain field of
-    // equal cells. With data-feature, a few landscape tiles, about one in six
-    // and at least one, show at 2x2; which ones changes with every visit. A
-    // promoted photo gets the "sizes" of a two-column tile, so the browser
-    // loads a sharp enough rendition.
+    // Large tiles for every gallery, by one rule: one for every seven photos,
+    // alternating landscape and portrait, landscape first (a large portrait
+    // takes more than twice the room of a large landscape, so it only comes
+    // in once there are enough photos around it). Which photos it is changes
+    // with every visit, the number does not. Tiles marked "size: large" by
+    // hand in the data file count as landscape ones and stay; the rule only
+    // adds up to the number it asks for. A promoted photo gets the "sizes" of
+    // a two-column tile, so the browser loads a sharp enough rendition.
     const LARGE_SIZES =
       "(max-width: 640px) 100vw, (max-width: 1250px) 54vw, 700px";
-    const landscapes = tiles.filter((t) => t.classList.length === 1);
-    // With data-feature-portrait one of the promoted tiles is a portrait (in a
-    // 2x2 cell it is cropped to a square). data-feature-count sets how many
-    // tiles are promoted, instead of one in six.
-    const portraits = grid.hasAttribute("data-feature-portrait")
-      ? tiles.filter((t) => t.classList.contains("is-portrait"))
-      : [];
+    const landscapes = uniform ? [] : tiles.filter((t) => t.classList.length === 1);
+    const portraits = uniform ? [] : tiles.filter((t) => t.classList.contains("is-portrait"));
     const candidates = landscapes.concat(portraits);
-    const featured =
-      grid.hasAttribute("data-feature") &&
-      landscapes.length > 0 &&
-      !tiles.some((t) => t.classList.contains("is-large"));
-    const wanted = parseInt(grid.getAttribute("data-feature-count"), 10);
-    const featureCount = wanted > 0 ? wanted : Math.max(1, Math.floor(tiles.length / 6));
+    const handPicked = tiles.filter((t) => t.classList.contains("is-large")).length;
+    const slots = [];
+    for (let k = handPicked; k < Math.floor(tiles.length / 7); k++)
+      slots.push(k % 2 === 0 ? "landscape" : "portrait");
+    const featured = !uniform && slots.length > 0 && candidates.length > 0;
+    // Nothing to shuffle and nothing to promote: leave the grid as it is.
+    if (!shuffleOn && !featured) return;
+
     const smallSizes = new Map(
       candidates.map((t) => [t, t.querySelector("img")?.getAttribute("sizes")])
     );
-    const pickLarge = (count) => {
+    const pickLarge = () => {
       const picked = new Set();
-      const n = Math.max(1, count);
-      // One portrait first, if the gallery asks for one and there is room.
-      if (portraits.length && n > 1)
-        picked.add(portraits[Math.floor(Math.random() * portraits.length)]);
-      const pool = landscapes.slice();
-      while (picked.size < Math.min(n, pool.length + picked.size))
-        picked.add(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
+      const pools = { landscape: landscapes.slice(), portrait: portraits.slice() };
+      slots.forEach((type) => {
+        // Without a photo of the wanted shape, the other one stands in.
+        const pool = pools[type].length ? pools[type] : pools[type === "portrait" ? "landscape" : "portrait"];
+        if (pool.length) picked.add(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
+      });
       return picked;
     };
     const applyLarge = (picked) => {
@@ -156,25 +158,22 @@
     // mid-grid weigh far more than a short last row. Should the content make
     // both unavoidable, the attempt with the lowest score wins.
     //
-    // In a featured grid (see below) each attempt also re-picks which
-    // landscape tiles show at 2x2, and one more or fewer than planned, since
-    // the number of cells they add decides whether the rows can come out even.
-    // A gallery that names its count (data-feature-count) keeps exactly that.
+    // In a grid with promoted tiles each attempt also re-picks which photos
+    // they are, so a layout without holes is found more easily.
     //
     // The winning order is kept, so a later change in column count starts
     // from the same sequence instead of reshuffling the whole page.
     const score = (r) => r.holes * 100 + r.tail;
-    let base = shuffle();
+    let base = shuffleOn ? shuffle() : tiles.slice();
     const layout = (cols) => {
-      let large = featured ? pickLarge(featureCount) : null;
+      let large = featured ? pickLarge() : null;
       if (large) applyLarge(large);
       let best = arrange(base, cols);
       for (let attempt = 0; score(best) > 0 && attempt < 60; attempt++) {
-        const tryLarge = featured
-          ? pickLarge(featureCount + (wanted > 0 ? 0 : Math.floor(Math.random() * 3) - 1))
-          : null;
+        const tryLarge = featured ? pickLarge() : null;
         if (tryLarge) applyLarge(tryLarge);
-        const order = shuffle();
+        // Without shuffle the order stays; only the promoted photos change.
+        const order = shuffleOn ? shuffle() : base;
         const result = arrange(order, cols);
         if (score(result) < score(best)) {
           best = result;
@@ -203,7 +202,5 @@
     }).observe(grid);
   };
 
-  grids.forEach((grid) => {
-    if (grid.hasAttribute("data-shuffle")) setupShuffle(grid);
-  });
+  grids.forEach(setupGrid);
 })();
