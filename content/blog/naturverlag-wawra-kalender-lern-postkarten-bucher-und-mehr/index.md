@@ -9,21 +9,19 @@ tags: ["Natur"]
 
 Vor einer Weile bin ich auf den Naturverlag-Wawra aufmerksam geworden, als ich Postkarten mit Motiven aus der Natur gesucht habe. Gefunden habe ich einen kleinen Verlag, der mit viel Liebe zum Detail seine Produkte gestaltet und wertvolles Lernmaterial insbesondere für Kinder produziert.
 
-<!-- Bild fehlt im Backup: IMG_4432.jpeg -->
-
-<!-- Bild fehlt im Backup: IMG_4436.jpeg (alt: Postkarten) -->
+![Postkarte „Lautlos durch die Nacht“ mit Eulen vor Vollmond, auf einem Holztisch](./img_4432.jpg)
 
 *Eulen-Postkarte*
 
 Wie schon erwähnt, über die Postkarten bin ich überhaupt erst auf den Verlag gestoßen. Die abwechlungsreichen und lehrreichen Motive empfand ich als sehr willkommene Abwechslung in der ansonsten oft sehr eintönigen Postkarten-Auswahl.
 
-<!-- Bild fehlt im Backup: IMG_4431.jpeg (alt: Dr. Clardy) -->
+![Wawra Naturkalender, Januar-Seite „Klirrende Kälte, wärmendes Fell“ mit Feldhase, darunter Spurenkarten zum Heraustrennen](./img_4431.jpg)
 
 *Kalenderseite im Wawra Naturkalender*
 
 Insbesondere die Kalender im A2 Format sind mit viel Liebe zum Detail gestaltet. Im unteren Drittel konnen auf jeder Hauptseite Lernkarten herausgelöst werden und...
 
-<!-- Bild fehlt im Backup: IMG_4436.jpeg (alt: Detailseite im Kalender) -->
+![Rückseite der Januar-Seite im Naturkalender mit Text, Zeichnungen und Kalenderblatt](./img_4436.jpg)
 
 *Kalenderseite im Wawra Naturkalender*
 
@@ -31,7 +29,7 @@ Insbesondere die Kalender im A2 Format sind mit viel Liebe zum Detail gestaltet.
 
 > 🛒 Unterstütze den Blog Selbstverständlich lassen sich alle genannten Artikel direkt über den Verlag beziehen. Falls du meinen Blog etwas unterstützen möchtest, würde ich mich aber freuen, wenn du dich vorab unter diesem Affiliate-Link bei Amazon umsiehst.
 
-<!-- Bild fehlt im Backup: IMG_4429--3-.jpeg -->
+![Zwei laminierte Natur-Tafeln: „Dem Fuchs auf der Spur“ und „Das Reh ist nicht die Frau vom Hirsch“](./img_4429-3.jpg)
 
 ## Natur-Tafeln
 
@@ -41,7 +39,7 @@ Mehr bzw. weitere Details im Vergleich zu den Postkarten oder dem Kalender finde
 
 Einlaminiert ergeben sie die perfekten Platz-Deckchen, um Kindern die Natur auch am Essenstisch näher zu bringen. Gerade durch die liebevoll gestalteten Zeichnungen prägen sich die Tiere, Insekten und Pflanzen so schon im Kindesalter ein.
 
-<!-- Bild fehlt im Backup: IMG_4434.jpeg -->
+![Aufgeschlagenes Naturbuch mit Zeichnungen von Eichhörnchen, Specht, Kreuzschnabel und Zapfen](./img_4434.jpg)
 
 ## Wawra's Naturbuch
 
@@ -49,7 +47,7 @@ Wiederrum noch mehr Details finden sich im Naturbuch. Hier werden insbesondere Z
 
 > 💡 Ich habe vom Verlag die Info bekommen, dass angedacht ist noch einen weiteren Band des Naturbuches zu veröffentlichen, welcher insbesondere die Pflanzenwelt näher behandeln wird.
 
-<!-- Bild fehlt im Backup: IMG_4433.jpeg (alt: Naturfächer) -->
+![Wawra’s Naturfächer „Wer hat am Zapfen gezupft?“, aufgefächert auf einem Holztisch](./img_4433.jpg)
 
 *Wawra's Naturfächer*
 

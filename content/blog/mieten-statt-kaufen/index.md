@@ -31,15 +31,15 @@ Als meine Eltern dann in der Mietwoche noch erzählten, dass Sie zum Drachenfels
 
 Eine Auswahl der daraus resultierten Bilder habe ich euch angehängt.
 
-<!-- Bild fehlt im Backup: 656879ad-cd5b-4406-a1d9-c164d7b41149.jpg -->
+![Schloss Drachenburg mit Türmen zwischen hohen Bäumen, darüber Wolkenhimmel](./656879ad-cd5b-4406-a1d9-c164d7b41149.jpg)
 
-<!-- Bild fehlt im Backup: b88383fe-68ca-4bcb-948b-63df82cc3dad.jpg -->
+![Weite Landschaft mit Wäldern und Feldern, am Horizont eine weiße Radarkuppel unter Wolken](./b88383fe-68ca-4bcb-948b-63df82cc3dad.jpg)
 
-<!-- Bild fehlt im Backup: e5190c3c-50ff-4129-b391-4147e33e689a.jpg -->
+![Blick vom Drachenfels auf den Rhein mit einer bewaldeten Insel, links die Stadt, darüber Quellwolken](./e5190c3c-50ff-4129-b391-4147e33e689a.jpg)
 
 <!-- Bild fehlt im Backup: a8b3ce50-c76b-481a-9def-82c21e64ed02.jpg -->
 
-<!-- Bild fehlt im Backup: 37e24078-8132-4d9d-b792-759baddb2eaf.jpg -->
+![Steinerne Buhne und Kiesinsel mit Sträuchern im dunkelgrünen Rhein, aus der Höhe fotografiert](./37e24078-8132-4d9d-b792-759baddb2eaf.jpg)
 
 <!-- Bild fehlt im Backup: ff089c77-58a5-4181-9571-122a58533e2e.jpg -->
 
@@ -47,6 +47,6 @@ Eine Auswahl der daraus resultierten Bilder habe ich euch angehängt.
 
 Auch an einer meiner Lieblingslocations in der Nähe habe ich das 50-140 ausprobiert. Leider habe ich das Fokussieren bei Nacht (ca. 22:30 Uhr) etwas verkackt, weshalb die Bilder nicht so scharf wurden, wie erhofft.
 
-<!-- Bild fehlt im Backup: 0d8b7340-5bd0-4912-87a6-b585545d42f0.jpg -->
+![Beleuchtete Windmühle in der Dämmerung im Wald, rechts ein Strommast mit Leitungen unter dunklen Wolken](./0d8b7340-5bd0-4912-87a6-b585545d42f0.jpg)
 
-<!-- Bild fehlt im Backup: b814c463-68e0-4222-81b9-fe344c63cd5b.jpg -->
+![Abendhimmel in Rosa und Blau über der Ebene, in der Ferne Windräder und Lichter](./b814c463-68e0-4222-81b9-fe344c63cd5b.jpg)
