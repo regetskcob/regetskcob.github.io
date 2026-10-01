@@ -93,10 +93,7 @@ showCurrentPage = false
 home = "Start"
 
 # Social icons
-[[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/regetskcob/"
-
+# Order of the icons in the home page intro.
 [[params.social]]
 name = "instagram"
 url = "https://www.instagram.com/regetskcob/"
@@ -104,6 +101,10 @@ url = "https://www.instagram.com/regetskcob/"
 [[params.social]]
 name = "github"
 url = "https://github.com/regetskcob"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/regetskcob/"
 
 # Main menu pages, in two groups: the photography pages, then writing and
 # about. A new "group" starts with a wider gap (layouts/partials/header.html).
