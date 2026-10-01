@@ -447,6 +447,15 @@ a.series-label:hover {
   border-radius: 6px;
 }
 
+/* Where there is room, the box reaches out by its own padding and border, so
+   that its covers and titles line up with those of the list below. On a
+   narrow screen there is no margin to reach into. */
+@media (min-width: 640px) {
+  .soon-box {
+    margin-inline: calc(-1rem - 1px);
+  }
+}
+
 .soon-heading {
   margin: 0 0 0.9rem;
   font-family: var(--font-mono);

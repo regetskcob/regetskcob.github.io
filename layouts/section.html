@@ -3,7 +3,7 @@
   _default/list.html: the breadcrumbs and the "Tags" branch are gone (tags
   have layouts/taxonomy.html now), and the blog opens with a search field
   and a row of its topics, the eight tags with their post counts, before
-  the list of posts.
+  the list of posts. Posts in the works come between search and topics.
 
   The search is Pagefind's Component UI: the deploy workflow indexes the
   built site after Hugo and writes /pagefind/. Everything runs in the
@@ -15,6 +15,8 @@
 <div class="list-container">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+
+  {{- $paginator := .Paginate .Pages (site.Params.paginationSize | default 25) }}
 
   {{- if eq .Section "blog" }}
   <link rel="stylesheet" href="{{ "pagefind/pagefind-component-ui.css" | relURL }}">
@@ -64,6 +66,13 @@
     new MutationObserver(markTerms).observe(box, { childList: true, subtree: true });
   </script>
 
+  {{- /* Previews of posts that are not out yet, between the search and the
+         topics, on the first page: the blog's "soon" list in
+         content/blog/_index.md (partials/soon-box.html). */}}
+  {{- if eq $paginator.PageNumber 1 }}
+    {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
+  {{- end }}
+
   {{- with site.Taxonomies.tags }}
   <nav class="topic-row" aria-label="Themen">
     {{- range .ByCount }}
@@ -73,12 +82,6 @@
   {{- end }}
   {{- end }}
 
-  {{- $paginator := .Paginate .Pages (site.Params.paginationSize | default 25) }}
-  {{- /* Previews of posts that are not out yet, above the list: the blog's
-         "soon" list in content/blog/_index.md (partials/soon-box.html). */}}
-  {{- if and (eq .Section "blog") (eq $paginator.PageNumber 1) }}
-    {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
-  {{- end }}
   {{- range $paginator.Pages }}
     {{ partial "post-entry.html" . }}
   {{- end }}
