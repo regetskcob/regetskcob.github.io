@@ -41,9 +41,9 @@ data/
   cameras.yaml    Anzeigenamen für Kameras, die in der Datei nur ein Code sind (Drohne)
   exif.yaml       Aufnahmedaten für Fotos ohne EXIF, optional (scripts/extract-exif.sh)
 scripts/          Hilfsskripte für Fotos (import-photo.sh, extract-exif.sh)
-layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen
+layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen, dazu Shortcodes (images, gallery, address)
 assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
-assets/js/        Lightbox (lightbox.js), Raster-Mischen (series.js), Nach-oben-Knopf (to-top.js)
+assets/js/        Lightbox (lightbox.js), Raster mit Mischen und großen Kacheln (series.js), Nach-oben-Knopf (to-top.js)
 assets/gallery/   Fotos der Galerien und der Serie, nach Motiv in Ordnern
 assets/gear/      Titelbild der Ausrüstungsseite, Blockfotos, einsatz/ (Foto-Raster „Im Einsatz“)
 themes/typo/      Theme als Git-Submodule (nicht direkt bearbeiten)
@@ -125,13 +125,16 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   gemischtes Raster, das aus der Textspalte ausbricht und bis zu
   80 % der Seitenbreite nutzt, mit zwei, drei oder vier Spalten je nach Breite.
   Hochformate belegen zwei Zeilen, Panoramen zwei Spalten, mit `size: large`
-  markierte Bilder zwei mal zwei. Die Bildliste steht im Front Matter unter
+  markierte Bilder zwei mal zwei; dazu kommen große Kacheln nach einer Regel (siehe
+  „Große Kacheln in Galerien“). Die Bildliste steht im Front Matter unter
   `photos` (nicht `images`, das ist bei Hugo für OpenGraph reserviert).
 
   Der Serien-Teaser bleibt mit `narrow` in der Textspalte. Das Skript
   (`layouts/partials/photo-grid-script.html` bindet es einmal pro Seite ein)
-  bedient alle Raster einer Seite. Es mischt die Reihenfolge bei jedem Besuch, rechnet die Anordnung vorab
-  durch und mischt neu, falls mitten im Raster eine Lücke entstünde. Ein Klick
+  bedient alle Raster einer Seite: Es wählt die großen Kacheln, mischt auf Wunsch die
+  Reihenfolge bei jedem Besuch (`data-shuffle`, die Galerien der Startseite und die Serie
+  tun das, Galerien in Beiträgen nur mit `shuffle=true`), rechnet die Anordnung vorab
+  durch und probiert eine neue, falls mitten im Raster eine Lücke entstünde. Ein Klick
   öffnet das Bild in der Lightbox (siehe unten). Ohne JavaScript gilt die Reihenfolge
   aus dem Front Matter und der Klick öffnet die große Bilddatei direkt.
 
@@ -145,7 +148,8 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   Ausrüstungsseite und deren Blockfotos (diese öffnen jeweils einzeln, mit dem Titel des
   Blocks). Zwei Leisten am Fensterrand (oben Zähler, Albumname oder
   Beitragstitel und Schließen, unten Vor/Zurück und der Alt-Text), Pfeiltasten und
-  Wischen; geblättert wird innerhalb des Rasters oder des Beitrags. Die Leisten sind leicht
+  Wischen; geblättert wird innerhalb des Rasters, der Galerie oder des Beitrags (die Einzelbilder
+  eines Beitrags; eine Galerie im Beitrag blättert für sich). Die Leisten sind leicht
   durchscheinend und laufen mit weichem Verlauf aus, der Verlauf liegt hinter dem Foto.
   Ein Klick auf das Foto zoomt auf 100 % (ein Bildpunkt pro CSS-Pixel des 2000-px-Fotos),
   der nächste zoomt zurück; im Zoom lässt sich das Foto mit der Maus ziehen oder per Touch

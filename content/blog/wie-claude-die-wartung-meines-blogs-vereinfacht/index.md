@@ -78,9 +78,7 @@ Kommentarfunktion und Amazon-Links sind raus, KI-Crawler wurden ausgesperrt, die
 
 ## Wo ich nachkorrigieren musste
 
-Ganz ohne Gegenlesen geht es nicht, und das ist keine Floskel. Bei meinem Artikel über die X-T5 hatte Claude aus meinen Karteikarten Aussagen abgeleitet, die so nicht stimmten: 
-
-Was auf den Karten als Plan stand, las sich im Text, als hätte ich es längst so eingestellt. Auch bei den JPEG-Rezepten steckten ein paar falsche Fakten, etwa dass ein Rezept in einem Slot gespeichert sei, das ich in Wahrheit von Hand wähle. Diese Fehler fielen mir erst beim Lesen auf, und ich habe sie korrigieren lassen oder es nach Komplexität selbst korrigiert, statt die Korrektur zu erklären.
+Ganz ohne Gegenlesen geht es nicht, und das ist keine Floskel. Bei meinem Artikel über die X-T5 hatte Claude aus meinen Karteikarten Aussagen abgeleitet, die so nicht stimmten: Was auf den Karten als Plan stand, las sich im Text, als hätte ich es längst so eingestellt. Auch bei den JPEG-Rezepten steckten ein paar falsche Fakten, etwa dass ein Rezept in einem Slot gespeichert sei, das ich in Wahrheit von Hand wähle. Diese Fehler fielen mir erst beim Lesen auf, und ich habe sie korrigieren lassen oder es nach Komplexität selbst korrigiert, statt die Korrektur zu erklären.
 
 Das ist der Punkt, an dem ich die Arbeitsteilung sehe: Claude kennt den Code und die Konventionen sehr gut, aber nicht die Inhalte, meine Kamera oder meinen Alltag. Alles, was als meine Erfahrung im Text steht, lese ich deshalb selbst gegen oder formuliere es gleich selbst. Bei Code und Konfiguration reicht mir meist der Blick auf die Vorschau, bei Fakten über mich nicht.
 
