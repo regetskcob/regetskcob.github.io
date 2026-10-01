@@ -424,6 +424,12 @@ a.series-label:hover {
   white-space: nowrap;
 }
 
+/* In the post header, inline between the date and the reading time. */
+.single-date .updated-label {
+  margin: 0;
+  vertical-align: 0.05em;
+}
+
 .line-text .series-label + .updated-label {
   margin-left: 0.4rem;
 }

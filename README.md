@@ -462,7 +462,8 @@ disclosure:
 
 **Label „kürzlich aktualisiert“**
 
-In der Blog-Liste, in den Tag-Listen und auf der Serienübersicht trägt ein Beitrag das Label
+In der Blog-Liste, in den Tag-Listen, auf der Serienübersicht und im Beitragskopf (zwischen
+Datum und Lesezeit) trägt ein Beitrag das Label
 „kürzlich aktualisiert“ (dezent grün wie die Transparenz-Box), wenn er **älter als vier Wochen** ist, aber sein `lastmod`
 **in den letzten vier Wochen** liegt (jeweils vom Tag des Builds gerechnet). Ein neuer
 Beitrag braucht es nicht, einer mit altem `lastmod` auch nicht. Beim Überarbeiten also

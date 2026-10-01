@@ -5,6 +5,8 @@
   language than the site sets "inLanguage" in front matter, which becomes the
   lang of the article. The author line is left out, there is one author,
   and pages like Über show neither a date nor the previous/next links.
+  Between the date and the reading time a post that was changed recently
+  carries the label "kürzlich aktualisiert" (partials/updated-label.html).
   Posts are marked for the Pagefind search index, and show their cover on
   top of the header card unless the text already contains it.
   A review says under its text how I came by the item (see the
@@ -125,6 +127,13 @@
               {{- $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
               {{- $dateHuman := . | time.Format (default ":date_long" $.Site.Params.singleDateFormat) }}
               <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+            {{- end }}
+
+            {{- /* "kürzlich aktualisiert" between date and reading time, when it
+                   applies (partials/updated-label.html). */}}
+            {{- with partial "updated-label.html" . | strings.TrimSpace | safeHTML }}
+              {{ if $.Date }}&nbsp; · &nbsp;{{ end }}
+              {{- . }}
             {{- end }}
         
             {{- if .Param "readTime" }}
