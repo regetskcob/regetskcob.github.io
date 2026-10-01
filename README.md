@@ -378,3 +378,154 @@ galleries:
       - image: winterwald.jpg   # ohne "post": aus assets/gallery/
         alt: Verschneiter Waldweg zwischen Fichten
 ```
+
+## Front Matter
+
+Übersicht der Felder, die dieser Blog im Front Matter kennt und auswertet. „Gelesen von“
+nennt die Stelle im Code, damit sich nachprüfen lässt, was ein Feld bewirkt. Felder,
+die nirgends stehen, tun nichts. Hugos eigene Felder (`title`, `date`, `slug`, `aliases`,
+`draft`, `tags`, `lastmod`, `build`) sind mit ihrer Bedeutung für diese Seite aufgeführt.
+
+### Beiträge (`content/blog/<ordner>/index.md`)
+
+Jeder Beitrag ist ein Ordner mit `index.md` und seinen Bildern. Neue Beiträge tragen
+so viel wie das Beispiel; alles andere ist optional.
+
+```yaml
+---
+title: "📚 | Die Vermessung der Berge"   # Emoji-Kategorie | Titel
+date: "2026-09-30T20:00:00+02:00"
+slug: "die-vermessung-der-berge"
+summary: "Ein bis zwei Sätze, die in Liste, Suche und Link-Vorschau stehen."
+draft: false
+cover: ./cover.jpg
+coverAlt: "Beschreibung des Covers für Screenreader"
+disclosure:                               # nur bei Rezensionen, siehe unten
+  type: purchased
+tags: ["Bücher", "Natur"]
+---
+```
+
+**Grunddaten**
+
+| Feld | Wirkung | Gelesen von |
+| --- | --- | --- |
+| `title` | Titel der Seite, mit Emoji-Kategorie vorn: `📚 \| …` Buch, `📸 \| …` Foto, … In `<title>` und Link-Vorschau fällt `Emoji \|` weg, bei 📚 kommt „– Buchrezension“ dazu. | `partials/seo/title.html` |
+| `seoTitle` | Überschreibt den Titel für `<title>` und Link-Vorschau. | `partials/seo/title.html` |
+| `date` | Veröffentlichungsdatum, wird angezeigt und sortiert. **Liegt es in der Zukunft, baut Hugo den Beitrag nicht.** | Hugo, `single.html` |
+| `lastmod` | Datum der letzten Überarbeitung, nur für RSS, Strukturdaten und Link-Vorschau, nicht sichtbar. | `rss.xml`, `seo/jsonld.html`, `opengraph.html` |
+| `slug` | Letzter Teil der URL: `/blog/<slug>/`. | Hugo |
+| `aliases` | Alte URLs, die auf den Beitrag weiterleiten (`["/posts/…/"]`). | Hugo |
+| `summary` | Kurztext unter dem Titel, in der Blog-Liste, in den Suchergebnissen und als Meta-Description. | `single.html`, `seo/description.html` |
+| `tags` | Themen, z. B. `["Bücher", "Smarthome"]`. Bestimmen die Themen-Zeile im Blog und die Tag-Seiten. | Hugo, `section.html` |
+| `draft` | `true`: Der Beitrag wird nirgends gebaut oder angezeigt. | Hugo |
+
+**Titelbild**
+
+| Feld | Wirkung |
+| --- | --- |
+| `cover` | Bild im Beitragsordner (`./cover.jpg`). Steht oben im Beitrag, außer der Text enthält es selbst, ist Vorschaubild in den Listen und Link-Vorschau. Ohne `cover` gilt `featured_image` (aus dem Ghost-Export), sonst gibt es keins. |
+| `coverAlt` | Alt-Text des Covers, steht in den Suchergebnissen und im Beitrag. Pflicht, wenn es ein Cover gibt. |
+| `coverCredit` | Quelle bei einem fremden Cover, klein auf dem Bild, z. B. `"Cover: dpunkt.verlag"`. |
+| `coverAI` | `true` markiert ein KI-generiertes Cover mit „KI-generiert“ auf dem Bild. |
+
+**Anzeige im Beitrag**
+
+| Feld | Wirkung |
+| --- | --- |
+| `readTime` | Lesezeit unter dem Titel. Im Blog standardmäßig an (`cascade` in `content/blog/_index.md`). |
+| `showTags` | Tags in der Kopf-Karte. Im Blog standardmäßig an. |
+| `toc` | `true` oder `false` erzwingt das Inhaltsverzeichnis oder blendet es aus. Ohne Angabe erscheint es bei mindestens vier Überschriften der Ebenen 2 und 3, darunter eine der Ebene 3. |
+| `autonumber` | `true` nummeriert die Überschriften (Theme). |
+| `math` | `true` lädt KaTeX für Formeln (Theme). |
+| `inLanguage` | Sprache des Beitrags (`"en"`), wenn sie von der Seite abweicht. Setzt `lang` am Artikel. |
+| `hidePagination` | `true` blendet „Vorheriger/Nächster Beitrag“ aus. Beiträge einer Serie zeigen sie ohnehin nicht. |
+
+**Rezensionen: Transparenz-Hinweis (`disclosure`)**
+
+Die grüne Box „Transparenz“ unter dem Text, immer im gleichen Wortlaut (`partials/disclosure.html`).
+Ohne `disclosure` erscheint keine Box.
+
+```yaml
+disclosure:
+  type: provided        # provided = gestellt, purchased = gekauft, gift = Geschenk
+  by: "vom Verlag"      # wer es gestellt oder geschenkt hat, im Dativ; bei provided: "vom Verlag"
+  item: "Dieses Objektiv"  # optional, Standard "Dieses Buch"
+  note: "Es war ein gebrauchtes Exemplar von medimops."   # optional, ein Zusatzsatz
+```
+
+| `type` | Text |
+| --- | --- |
+| `provided` | „Dieses Buch wurde mir vom Verlag kostenlos zur Verfügung gestellt.“ |
+| `purchased` | „Dieses Buch habe ich selbst gekauft.“ |
+| `gift` | „Dieses Buch habe ich von Freunden geschenkt bekommen.“ (mit `by: "von Freunden"`) |
+
+**Serie**
+
+| Feld | Wirkung |
+| --- | --- |
+| `series` | Name der Serie, genau wie der Titel in `content/series/<name>/_index.md`. Setzt Label „Serie · Teil 2/5“, Navigation zwischen den Teilen und die Serienseite. |
+| `seriesLabel` | Titel des Teils auf der Serienseite („Teil II: Voraussetzungen“). |
+
+**Vorschau „In Arbeit“**
+
+Der Beitrag steht als Kasten im Blog, ohne eigene Seite (Details unter „Vorschau auf Beiträge in Arbeit“).
+
+```yaml
+draft: false
+build:
+  render: never
+  list: never
+soon: Oktober        # oder true, dann nur "demnächst"
+```
+
+Dazu der Ordnername in `content/blog/_index.md` unter `soon`. Zum Veröffentlichen alles drei entfernen.
+
+**Nur für die Link-Vorschau**
+
+| Feld | Wirkung |
+| --- | --- |
+| `ogImage` | Pfad unter `assets/` für Seiten ohne Bildordner (die Über-mich-Seite nimmt das Porträt). Ohne Angabe: `cover`, `featured_image`, erstes Bild des Ordners, sonst das Bild aus `hugo.toml`. |
+| `ogImageAnchor` | Zuschnitt des Bildes (`Top`, `Center`, …), Standard `Top`. |
+
+**Reste aus dem Ghost-Export (ohne Wirkung)**
+
+`title_plain`, `type` (Hugos Layout-Typ, hier ohne Wirkung), `author`, `author_bio`,
+`reading_time` und `seo` (mit `image` usw.). Sie stehen noch in älteren Beiträgen,
+schaden nicht und müssen in neuen nicht gesetzt werden. `featured_image` wird nur als
+Ersatz für `cover` gelesen (siehe oben). Der Autor kommt aus `authorName` in `hugo.toml`.
+
+### Seiten (`content/*.md`)
+
+Seiten wie Über mich, Impressum, Ausrüstung, Rezepte und die Niederrhein-Serie haben kein
+Datum in der Anzeige, kein Titelbild oben und kein Vorher/Nachher.
+
+| Feld | Wirkung |
+| --- | --- |
+| `title` | Seitentitel und `<title>`. |
+| `description` | Meta-Description. Seiten haben kein `summary`. |
+| `layout` | Vorlage: `series` (Fotoserie, `niederrhein.md`), `gear` (Ausrüstung), `recipes` (Rezepte). Ohne Angabe die normale Seite. |
+| `hideTitle` | `true` hält die Überschrift für Screenreader und Suche, blendet sie aber aus (Über mich). |
+| `aliases` | Alte URLs, die weiterleiten. |
+| `ogImage`, `ogImageAnchor` | Bild für die Link-Vorschau, siehe oben. |
+
+Zusätzlich je nach Layout:
+
+| Layout | Felder |
+| --- | --- |
+| `series` | `teaser` (Text auf der Startseite), `shuffle: true` (zufällige Reihenfolge), `photos:` (Liste mit `image`, `alt`, optional `size: large`) |
+| `gear` | `photo` und `photo_alt` (Kopfbild unter `assets/gear/`), Daten in `data/gear.yaml` |
+| `recipes` | Daten in `data/recipes.yaml` |
+
+### Serienseiten (`content/series/<name>/_index.md`)
+
+`title` (Name der Serie, wie in `series` der Beiträge) und `description`. Der Text darunter
+steht auf der Serienseite über der Teileliste.
+
+### Blog-Index (`content/blog/_index.md`)
+
+| Feld | Wirkung |
+| --- | --- |
+| `soon` | Ordnernamen der Beiträge, die als Vorschau „In Arbeit“ gezeigt werden. |
+| `cascade` | Standardwerte für alle Beiträge: `showTags` und `readTime` stehen auf `true`. Ein Beitrag überschreibt sie mit seinem eigenen Wert. |
+| `aliases` | `["/posts/"]` leitet die alte Blog-Adresse weiter. |
