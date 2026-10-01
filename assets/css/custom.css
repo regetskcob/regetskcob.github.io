@@ -614,6 +614,12 @@ a.series-label:hover {
   margin: 1.4rem 0 0;
 }
 
+/* Under "Zuletzt erschienen" the label "kürzlich neu erschienen" would say the
+   same twice. */
+.latest-home .new-label {
+  display: none;
+}
+
 .latest-heading {
   margin: 0 0 0.9rem;
   font-size: 0.9em;
