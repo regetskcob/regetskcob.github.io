@@ -413,7 +413,7 @@ tags: ["Bücher", "Natur"]
 | `title` | Titel der Seite, mit Emoji-Kategorie vorn: `📚 \| …` Buch, `📸 \| …` Foto, … In `<title>` und Link-Vorschau fällt `Emoji \|` weg, bei 📚 kommt „– Buchrezension“ dazu. | `partials/seo/title.html` |
 | `seoTitle` | Überschreibt den Titel für `<title>` und Link-Vorschau. | `partials/seo/title.html` |
 | `date` | Veröffentlichungsdatum, wird angezeigt und sortiert. **Liegt es in der Zukunft, baut Hugo den Beitrag nicht.** | Hugo, `single.html` |
-| `lastmod` | Datum der letzten Überarbeitung, nur für RSS, Strukturdaten und Link-Vorschau, nicht sichtbar. | `rss.xml`, `seo/jsonld.html`, `opengraph.html` |
+| `lastmod` | Datum der letzten inhaltlichen Überarbeitung, von Hand zu setzen. Wirkt auf RSS, Strukturdaten und Link-Vorschau und löst das Label „kürzlich aktualisiert“ aus (siehe unten). Ohne Angabe gilt das `date`. | `rss.xml`, `seo/jsonld.html`, `opengraph.html`, `partials/updated-label.html` |
 | `slug` | Nur nötig, wenn die URL vom Ordnernamen abweichen soll. Sonst ist der Ordnername der letzte Teil der URL: `/blog/<ordner>/`. | Hugo |
 | `aliases` | Alte URLs, die auf den Beitrag weiterleiten (`["/posts/…/"]`). | Hugo |
 | `summary` | Kurztext unter dem Titel, in der Blog-Liste, in den Suchergebnissen und als Meta-Description. | `single.html`, `seo/description.html` |
@@ -459,6 +459,23 @@ disclosure:
 | `provided` | „Dieses Buch wurde mir vom Verlag kostenlos zur Verfügung gestellt.“ |
 | `purchased` | „Dieses Buch habe ich selbst gekauft.“ |
 | `gift` | „Dieses Buch habe ich von Freunden geschenkt bekommen.“ (mit `by: "von Freunden"`) |
+
+**Label „kürzlich aktualisiert“**
+
+In der Blog-Liste, in den Tag-Listen und auf der Serienübersicht trägt ein Beitrag das Label
+„● kürzlich aktualisiert“, wenn er **älter als vier Wochen** ist, aber sein `lastmod`
+**in den letzten vier Wochen** liegt (jeweils vom Tag des Builds gerechnet). Ein neuer
+Beitrag braucht es nicht, einer mit altem `lastmod` auch nicht. Beim Überarbeiten also
+`lastmod` auf das heutige Datum setzen:
+
+```yaml
+date: 2023-06-09T14:00:00+0000
+lastmod: 2026-10-01T09:30:00+0200
+```
+
+Bewusst zählt nur das `lastmod` im Front Matter, nicht der Git-Verlauf: Ein Commit, der nur
+den Kopf aufräumt, soll keinen Beitrag als aktualisiert markieren. Das Label ist so aktuell
+wie der letzte Build, die Seite baut nur bei einem Push neu.
 
 **Serie**
 

@@ -3,6 +3,8 @@
   content/series/<name>/_index.md, then the parts in reading order, oldest
   first, in the lines of the blog list. Each line shows the part's
   "seriesLabel" and its summary, which say more than the numbered titles.
+  A part changed within the last four weeks carries the label "kürzlich
+  aktualisiert" (partials/updated-label.html).
   Below the parts the box "In Arbeit" lists parts that are announced but not
   published yet.
 */}}
@@ -31,6 +33,7 @@
       {{- end }}
       <div class="line-text">
         <p class="line-title"><a href="{{ $part.RelPermalink }}">{{ $part.Params.seriesLabel | default $part.Title }}</a></p>
+        {{ partial "updated-label.html" $part }}
         {{- with $part.Params.summary }}
         <p class="line-summary">{{ . }}</p>
         {{- end }}

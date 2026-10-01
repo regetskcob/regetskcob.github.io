@@ -1,0 +1,17 @@
+{{/*
+  Small label "kürzlich aktualisiert" for a post in a list (partials/
+  post-entry.html and the series overview). It shows for a post that is older
+  than four weeks but was changed within the last four weeks, counted from the
+  day the site is built: a post that is new anyway needs no label, and one
+  that was changed long ago does not either.
+
+  "Changed" is the post's "lastmod" in front matter, set by hand when the text
+  was revised; without it Hugo takes the date, so nothing shows. The git
+  history is not used on purpose: a commit that only tidies the front matter
+  would otherwise mark every post. The label is as current as the last build,
+  the site is only rebuilt on a push.
+*/}}
+{{- $limit := now.AddDate 0 0 -28 -}}
+{{- if and (.Date.Before $limit) (not (.Lastmod.Before $limit)) }}
+<span class="updated-label" title="Aktualisiert am {{ .Lastmod | time.Format ":date_long" }}">kürzlich aktualisiert</span>
+{{- end }}

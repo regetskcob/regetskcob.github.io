@@ -399,6 +399,37 @@ a.series-label:hover {
   margin-top: 0.3rem;
 }
 
+/* "kürzlich aktualisiert" (partials/updated-label.html): the series label's
+   shape, a filled dot in front instead of a frame colour of its own, so it
+   reads as a note and not as a second kind of series. */
+.updated-label {
+  display: inline-block;
+  margin: 0.3rem 0 0 0;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--content-secondary);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--content-secondary);
+  white-space: nowrap;
+}
+
+.updated-label::before {
+  content: "";
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.1em;
+}
+
+.line-text .series-label + .updated-label {
+  margin-left: 0.4rem;
+}
+
 /* --- Previews of posts in the works ("In Arbeit", partials/soon-box.html) ---
    A box like the cards on the site, but with a dashed border, and inside the
    lines of the post list with a muted cover and a muted title: no link, no
