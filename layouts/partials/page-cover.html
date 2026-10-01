@@ -13,6 +13,7 @@
     photo: "gear/setup.jpg"   # a path under assets/
     photo_alt: "…"            # alt text, also the lightbox caption
 
+  "coverAI: true" or "coverCredit" put a note in the photo's top right corner.
   Under the title stands the line of partials/page-meta.html (the label
   "kürzlich aktualisiert", the reading time) when it applies.
   Without "photo", or if the file is missing, the page shows its plain h1 with
@@ -29,6 +30,11 @@
     <a href="{{ (.Fit "2000x2000 webp q85").RelPermalink }}" data-lightbox>
       {{ partial "responsive-img.html" (dict "img" . "alt" $page.Params.photo_alt "loading" "eager" "page" $page) }}
     </a>
+    {{- /* The note in the corner, as on the cover of a post: "Cover KI-generiert"
+           ("coverAI: true") or a source ("coverCredit"). */}}
+    {{- with or $page.Params.coverCredit (cond ($page.Params.coverAI | default false) "Cover KI-generiert" "") }}
+    <figcaption class="post-cover-ai">{{ . }}</figcaption>
+    {{- end }}
   </figure>
   {{- $meta := partial "page-meta.html" (dict "page" $page "words" $.words) | strings.TrimSpace | safeHTML }}
   <div class="page-cover-bar{{ if $meta }} has-meta{{ end }}">

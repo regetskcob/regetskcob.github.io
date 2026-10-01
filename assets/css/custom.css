@@ -1319,6 +1319,13 @@ figure a[data-lightbox] {
   height: auto;
 }
 
+/* The bar covers the lower edge, so the note ("Cover KI-generiert") goes to
+   the top right corner. */
+.page-cover .post-cover-ai {
+  top: 0.6rem;
+  bottom: auto;
+}
+
 /* The bar: the title and, when there is one, the line below it. */
 .page-cover-bar {
   --lightbox-alpha: 0.65;

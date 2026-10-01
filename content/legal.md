@@ -3,6 +3,10 @@ title: Rechtliches
 date: 2020-04-05T16:31:43+0000
 lastmod: 2026-09-08T20:00:00+0000
 description: Impressum und Datenschutzerklärung
+# Cover: a generated graphic (assets/covers/legal.jpg, source legal.svg) with the title on a bar.
+photo: "covers/legal.jpg"
+photo_alt: "Ein Dokument mit Paragraphenzeichen neben einem Schild mit Schlüsselloch, flach gezeichnet auf hellem Grund"
+coverAI: true
 ---
 
 ## Impressum
@@ -60,7 +64,7 @@ Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich
 
 Alle Fotos und Texte auf dieser Seite sind von mir, sofern nicht anders angegeben, und unterliegen dem deutschen Urheberrecht. Ohne meine vorherige schriftliche Zustimmung dürfen sie weder kopiert noch bearbeitet, veröffentlicht oder weitergegeben werden. Das gilt auch für Ausschnitte und für soziale Netzwerke.
 
-Ausnahmen sind im jeweiligen Beitrag gekennzeichnet: Buchcover in Rezensionen stammen von den Verlagen, die Quelle steht auf dem Titelbild. Grafiken mit dem Hinweis „KI-generiert“ habe ich mit KI-Unterstützung erstellt.
+Ausnahmen sind im jeweiligen Beitrag gekennzeichnet: Buchcover in Rezensionen stammen von den Verlagen, die Quelle steht auf dem Titelbild. Titelbilder mit dem Hinweis „Cover KI-generiert“ habe ich mit KI-Unterstützung erstellt. Das gilt nur für das jeweilige Titelbild, nicht für die Fotos und Texte der Seite.
 
 Möchtest du ein Foto verwenden, schreib mir gerne an die im Impressum genannte E-Mail-Adresse. Nenn mir kurz das Bild und wofür du es nutzen möchtest, dann klären wir alles Weitere.
 

@@ -472,7 +472,7 @@ tags: ["Bücher", "Natur"]
 | `cover` | Bild im Beitragsordner (`./cover.jpg`). Steht oben im Beitrag, außer der Text enthält es selbst, ist Vorschaubild in den Listen und Link-Vorschau. Ohne `cover` gibt es kein Titelbild. |
 | `coverAlt` | Alt-Text des Covers, steht in den Suchergebnissen und im Beitrag. Pflicht, wenn es ein Cover gibt. |
 | `coverCredit` | Quelle bei einem fremden Cover, klein auf dem Bild, z. B. `"Cover: dpunkt.verlag"`. |
-| `coverAI` | `true` markiert ein KI-generiertes Cover mit „KI-generiert“ auf dem Bild. |
+| `coverAI` | `true` markiert ein KI-generiertes Cover mit „Cover KI-generiert“ auf dem Bild. Das Wort „Cover“ steht dabei, damit niemand das Label auf die ganze Seite bezieht. |
 
 **Anzeige im Beitrag**
 
@@ -572,9 +572,9 @@ Zusätzlich je nach Layout:
 | `gear` | Daten in `data/gear.yaml`; Titelbild optional (siehe unten) |
 | `recipes` | Daten in `data/recipes.yaml`; Titelbild optional (siehe unten) |
 
-**Titelbild einer Seite (`series`, `gear`, `recipes`)**
+**Titelbild einer Seite (`series`, `gear`, `recipes` und gewöhnliche Seiten wie Rechtliches)**
 
-Die drei Layouts können ein Titelbild bekommen, mit dem Seitentitel auf einem leicht
+Die Layouts und jede gewöhnliche Seite können ein Titelbild bekommen, mit dem Seitentitel auf einem leicht
 durchscheinenden Balken am unteren Bildrand (derselbe Balken wie in der Lightbox, mit
 weichem Verlauf). Ein Klick öffnet das Bild in der Lightbox. Ohne `photo` steht die
 Seite wie bisher mit der normalen Überschrift da (`partials/page-cover.html`).
@@ -583,6 +583,10 @@ Seite wie bisher mit der normalen Überschrift da (`partials/page-cover.html`).
 photo: "gear/setup.jpg"   # Pfad unter assets/
 photo_alt: "Die Fotoausrüstung auf einer Eichenplatte: …"   # auch die Bildunterschrift in der Lightbox
 ```
+
+Ein generiertes Titelbild trägt zusätzlich `coverAI: true` (Label „Cover KI-generiert“ oben rechts auf dem
+Bild, siehe oben), ein fremdes `coverCredit`. Das Titelbild der Rechtlichen Seite liegt als
+JPEG und als SVG-Quelle unter `assets/covers/` (`legal.svg` erklärt im Kopf, wie es gerendert wird).
 
 Unter dem Titel steht bei Bedarf eine Zeile (auf dem Cover im Balken, ohne Cover unter der
 Überschrift), `partials/page-meta.html`:

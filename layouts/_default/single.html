@@ -51,6 +51,13 @@
     {{- if and $searchImage .Params.coverAlt }}
     <span data-pagefind-meta="image_alt" hidden>{{ .Params.coverAlt }}</span>
     {{- end }}
+    {{- /* A page (not a post) with a "photo" in front matter opens with the page
+           cover, the photo with the title on a bar (partials/page-cover.html),
+           and has no header of its own. */}}
+    {{- $coverPage := and (not $isPost) .Params.photo }}
+    {{- if $coverPage }}
+    {{ partial "page-cover.html" (dict "page" . "lightbox" true) }}
+    {{- else }}
     <header class="single-intro-container{{ if $isPost }} post-intro{{ end }}">
         {{- /* Cover image on top of the card, for posts whose cover does not
                appear in the text anyway (most book reviews). Edge to edge,
@@ -67,10 +74,11 @@
                 {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}
         <figure class="post-cover">
           {{ partial "responsive-img.html" (dict "img" . "widths" (slice 800 1600) "sizes" "(max-width: 780px) 100vw, 780px" "loading" "eager" "alt" ($.Params.coverAlt | default "") "page" $) }}
-          {{- /* A note in the corner: "KI-generiert" for generated covers
+          {{- /* A note in the corner: "Cover KI-generiert" for generated covers
                  ("coverAI: true"), or the source of a cover that is not
-                 mine ("coverCredit", e.g. "Cover: dpunkt.verlag"). */}}
-          {{- with or $.Params.coverCredit (cond ($.Params.coverAI | default false) "KI-generiert" "") }}
+                 mine ("coverCredit", e.g. "Cover: dpunkt.verlag"). It says
+                 "Cover" so that nobody takes it for the whole page. */}}
+          {{- with or $.Params.coverCredit (cond ($.Params.coverAI | default false) "Cover KI-generiert" "") }}
           <figcaption class="post-cover-ai">{{ . }}</figcaption>
           {{- end }}
         </figure>
@@ -160,6 +168,7 @@
           {{- end }}
         {{- end }}
     </header>
+    {{- end }}
     
     
     {{- /* Page content */}}
