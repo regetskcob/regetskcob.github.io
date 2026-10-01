@@ -9,6 +9,9 @@
   between them. The EXIF button next to the count opens a bar on the left
   with the shooting data of the photo (partials/exif.html); photos without
   any have no button.
+  A click on the photo zooms to its full size (one image pixel per CSS pixel),
+  where it can be dragged or scrolled; a second click zooms out again. A click
+  beside the photo, the close button or Escape closes the view.
   Without JavaScript the links simply open the large photo.
   Include it once per page: the photo grid script brings it along
   (partials/photo-grid-script.html), so does the page cover when it is the
@@ -27,7 +30,7 @@
       </svg>
     </button>
   </div>
-  <img alt="">
+  <div class="lightbox-stage"><img alt=""></div>
   <aside class="lightbox-exif" id="lightbox-exif" aria-label="Aufnahmedaten" hidden>
     <dl></dl>
   </aside>

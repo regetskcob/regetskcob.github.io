@@ -21,13 +21,6 @@
 <div class="intro">
   {{ with site.Params.homeIntroTitle }}<h2 class="home-heading">{{ . }}</h2>{{ end }}
   {{ with site.Params.homeIntroContent }}<div>{{ . | markdownify }}</div>{{ end }}
-{{- /* One line about the posts in the works, linking to the box "In Arbeit" at
-       the top of the blog list (partials/soon-box.html). The emoji and the
-       pipe the titles start with are left off. */}}
-{{- with partial "soon-pages.html" "" }}
-<p class="soon-home"><a href="{{ "blog/#in-arbeit" | relURL }}">Demnächst im Blog:
-  {{- range $i, $p := . }}{{ if $i }} ·{{ end }} {{ replaceRE `^[^\p{L}\p{N}]+` "" $p.Title }}{{ end }} →</a></p>
-{{- end }}
 </div>
 {{ end }}
 
@@ -41,6 +34,34 @@
   {{- end }}
 </div>
 {{ end }}
+
+{{- /* Below the icons, the news in two columns on a wide screen: the latest
+       post on the left, the ones in the works on the right. */}}
+<div class="home-news">
+{{- /* The latest post that is out, as a row like in the blog list
+       (partials/post-entry.html), above the line about the posts in the works.
+       Posts held back with build.list "never" are not in RegularPages, so a
+       preview cannot show up here. */}}
+{{- range first 1 (site.GetPage "/blog").RegularPages.ByPublishDate.Reverse }}
+<div class="latest-home">
+  <h3 class="latest-heading">Zuletzt erschienen</h3>
+  {{ partial "post-entry.html" . }}
+</div>
+{{- end }}
+{{- /* One line about the posts in the works, linking to the box "In Arbeit" at
+       the top of the blog list (partials/soon-box.html). The emoji and the
+       pipe the titles start with are left off. */}}
+{{- with partial "soon-pages.html" "" }}
+<div class="latest-home soon-home">
+  <h3 class="latest-heading">Demnächst im Blog</h3>
+  <ul class="soon-home-list">
+    {{- range . }}
+    <li><a href="{{ "blog/#in-arbeit" | relURL }}">{{ replaceRE `^[^\p{L}\p{N}]+` "" .Title }}</a></li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}
+</div>
 </section>
 
 {{/* Ongoing series first, then the loose galleries below it. */}}

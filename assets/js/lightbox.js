@@ -2,6 +2,8 @@
 // the images in posts. Links marked data-lightbox open it. The photos of one
 // group, a grid or a post, can be paged through with the buttons, the arrow
 // keys or a swipe; the order is the one on screen, shuffled grids included.
+// A click on the photo zooms to its full size and back; a click beside it,
+// the close button or Escape closes.
 (() => {
   const dialog = document.querySelector(".lightbox");
   if (!dialog || typeof dialog.showModal !== "function") return;
@@ -14,6 +16,7 @@
   const exifButton = dialog.querySelector(".lightbox-exif-toggle");
   const exifPanel = dialog.querySelector(".lightbox-exif");
   const exifList = exifPanel.querySelector("dl");
+  const stage = dialog.querySelector(".lightbox-stage");
 
   // The shooting data panel stays open while paging, and across visits.
   let exifOpen = false;
@@ -53,7 +56,38 @@
   let group = [];
   let index = 0;
 
+  // Zoom: one click on the photo shows it at its full size, in a stage that
+  // scrolls and can be dragged; the next click goes back. Photos that are not
+  // larger than the view cannot be zoomed.
+  let zoomed = false;
+  const updateZoomable = () => {
+    if (zoomed) return;
+    dialog.classList.toggle("zoomable", photo.naturalWidth > photo.clientWidth + 2);
+  };
+  const zoomOut = () => {
+    zoomed = false;
+    dialog.classList.remove("zoomed");
+    photo.style.removeProperty("width");
+    updateZoomable();
+  };
+  const zoomIn = (event) => {
+    if (!dialog.classList.contains("zoomable")) return;
+    // The spot that was clicked ends up in the middle of the window.
+    const box = photo.getBoundingClientRect();
+    const fx = (event.clientX - box.left) / box.width;
+    const fy = (event.clientY - box.top) / box.height;
+    zoomed = true;
+    dialog.classList.add("zoomed");
+    photo.style.width = `${photo.naturalWidth}px`;
+    const bar = parseFloat(getComputedStyle(stage).paddingTop) || 0;
+    stage.scrollLeft = fx * photo.offsetWidth - stage.clientWidth / 2;
+    stage.scrollTop = fy * photo.offsetHeight + bar - stage.clientHeight / 2;
+  };
+  photo.addEventListener("load", updateZoomable);
+  window.addEventListener("resize", updateZoomable);
+
   const show = (i) => {
+    zoomOut();
     index = (i + group.length) % group.length;
     const link = group[index];
     photo.src = link.href;
@@ -95,9 +129,49 @@
     if (event.detail > 1) event.preventDefault();
   });
 
-  // A click on the photo or the empty space around it closes the view, and so
-  // does the close button. The text in the bars and the paging buttons do not.
+  // A mouse drag in the zoomed view moves the photo; touch scrolls the stage
+  // by itself. The pointer is only captured once the mouse really moves, so a
+  // plain click still reaches the photo.
+  let drag = null;
+  let dragged = false;
+  stage.addEventListener("pointerdown", (event) => {
+    dragged = false;
+    if (!zoomed || event.pointerType !== "mouse" || event.button !== 0) return;
+    drag = { x: event.clientX, y: event.clientY, left: stage.scrollLeft, top: stage.scrollTop };
+  });
+  stage.addEventListener("pointermove", (event) => {
+    if (!drag) return;
+    const dx = event.clientX - drag.x;
+    const dy = event.clientY - drag.y;
+    if (!dragged && Math.abs(dx) + Math.abs(dy) > 5) {
+      dragged = true;
+      stage.setPointerCapture(event.pointerId);
+    }
+    if (dragged) {
+      stage.scrollLeft = drag.left - dx;
+      stage.scrollTop = drag.top - dy;
+    }
+  });
+  const endDrag = () => {
+    drag = null;
+  };
+  stage.addEventListener("pointerup", endDrag);
+  stage.addEventListener("pointercancel", endDrag);
+
+  // A click on the photo zooms in and out; a click on the empty space around
+  // it closes the view, and so does the close button. The text in the bars and
+  // the paging buttons do not.
   dialog.addEventListener("click", (event) => {
+    // The end of a drag is not a click.
+    if (dragged) {
+      dragged = false;
+      return;
+    }
+    if (event.target === photo) {
+      if (zoomed) zoomOut();
+      else zoomIn(event);
+      return;
+    }
     if (event.target.closest(".lightbox-bar > *, .lightbox-exif") && !event.target.closest(".lightbox-close")) return;
     dialog.close();
   });
@@ -130,7 +204,7 @@
     startY = event.changedTouches[0].clientY;
   }, { passive: true });
   dialog.addEventListener("touchend", (event) => {
-    if (group.length < 2) return;
+    if (group.length < 2 || zoomed) return;
     const dx = event.changedTouches[0].clientX - startX;
     const dy = event.changedTouches[0].clientY - startY;
     if (Math.abs(dx) > 50 && Math.abs(dx) > 2 * Math.abs(dy)) {
@@ -142,6 +216,7 @@
   // between must keep its photo.
   dialog.addEventListener("close", () => {
     if (dialog.open) return;
+    zoomOut();
     photo.removeAttribute("src");
     caption.textContent = "";
     title.textContent = "";
