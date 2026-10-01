@@ -263,8 +263,8 @@ behalten ihren Alt-Text und öffnen die Lightbox:
 
 ```markdown
 {{< images >}}
-![Alt-Text links](./links.jpg)
-![Alt-Text rechts](./rechts.jpg)
+![Alt text of the left image](./left.jpg)
+![Alt text of the right image](./right.jpg)
 {{< /images >}}
 ```
 
@@ -322,7 +322,7 @@ die Werte liefern, `scripts/extract-exif.sh <Ordner mit Originalen>` schreibt si
 
 Die Anschrift (Straße, PLZ, Ort) steht **nicht im öffentlichen Repository**, sondern in
 `data/legal_private.yaml`. Die Datei steht in der `.gitignore`; in `content/legal.md` setzt der
-Shortcode `{{< anschrift >}}` sie ein:
+Shortcode `{{< address >}}` sie ein:
 
 ```yaml
 street: "Straße und Hausnummer"
@@ -331,7 +331,7 @@ city: "Ort"
 ```
 
 - **Lokal:** die Datei einmal im eigenen Checkout anlegen. Ohne sie zeigt der Vorschau-Server
-  „[Anschrift: data/legal_private.yaml fehlt]“, ein Produktions-Build bricht ab: ein Impressum
+  „[Address: data/legal_private.yaml is missing]“, ein Produktions-Build bricht ab: ein Impressum
   ohne Anschrift soll nie online gehen.
 - **Deploy:** der Workflow schreibt die Datei vor dem Build aus dem GitHub-Secret `LEGAL_PRIVATE`
   (der YAML-Text der Datei). Ändert sich die Anschrift, das Secret neu setzen:

@@ -4,17 +4,17 @@
   repository, which is public: it is in .gitignore, and the deploy workflow
   writes it from the secret LEGAL_PRIVATE. On the live site the address is
   split into small spans (partials/obfuscate.html) and marked data-nosnippet, so search
-  engines do not quote it. Used in content/legal.md as {{< anschrift >}}.
+  engines do not quote it. Used in content/legal.md as {{< address >}}.
 
   A production build without the file fails: a legal notice without an address
   must never go live. The preview server shows a note instead.
 */ -}}
 {{- with site.Data.legal_private -}}
-<span class="anschrift" data-nosnippet>{{ partial "obfuscate.html" .street }}<br>{{ partial "obfuscate.html" (printf "%s %s" (string .zip) .city) }}</span>
+<span class="address" data-nosnippet>{{ partial "obfuscate.html" .street }}<br>{{ partial "obfuscate.html" (printf "%s %s" (string .zip) .city) }}</span>
 {{- else -}}
   {{- if hugo.IsProduction -}}
     {{- errorf "data/legal_private.yaml is missing: the legal notice needs the address (see README, \"Anschrift im Impressum\")" -}}
   {{- else -}}
-<span class="anschrift">[Anschrift: data/legal_private.yaml fehlt]</span>
+<span class="address">[Address: data/legal_private.yaml is missing]</span>
   {{- end -}}
 {{- end -}}

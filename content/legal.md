@@ -19,7 +19,7 @@ sitemap:
 Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):
 
 Daniel Bocksteger  
-{{< anschrift >}}  
+{{< address >}}  
 Deutschland
 
 E-Mail: regetskcob@icloud.com
