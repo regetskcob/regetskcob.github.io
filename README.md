@@ -257,15 +257,15 @@ photos:
 
 ### Zwei Bilder nebeneinander
 
-Zwei zusammengehörige Bilder in einem Beitrag stehen mit dem Shortcode `bilder` in zwei Spalten
+Zwei zusammengehörige Bilder in einem Beitrag stehen mit dem Shortcode `images` in zwei Spalten
 (auf dem Handy untereinander). Die Bilder laufen durch denselben Render-Hook wie alle anderen,
 behalten ihren Alt-Text und öffnen die Lightbox:
 
 ```markdown
-{{< bilder >}}
+{{< images >}}
 ![Alt-Text links](./links.jpg)
 ![Alt-Text rechts](./rechts.jpg)
-{{< /bilder >}}
+{{< /images >}}
 ```
 
 ### Vorschau auf Beiträge in Arbeit

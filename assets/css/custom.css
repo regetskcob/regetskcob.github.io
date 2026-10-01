@@ -1297,7 +1297,7 @@ figure a[data-lightbox] {
   min-width: 12rem;
 }
 
-/* --- Two images side by side (shortcode "bilder") ---
+/* --- Two images side by side (shortcode "images") ---
    A row of two columns inside a post's text. The figures lose the margins the
    theme gives them, the empty paragraphs the renderer leaves between them
    would become cells of their own. On a phone the images stack. */
