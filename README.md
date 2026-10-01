@@ -80,8 +80,13 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   Schlagwort-Seiten sind `noindex` und stehen nicht in der Sitemap.
 
 - **`layouts/index.html`** — Landing-Page statt der vollständigen Beitragsliste
-  des Themes, ganz auf die Fotografie ausgerichtet: Intro, Serien-Teaser und
-  Galerien. Die Beiträge stehen unter `/blog/`, erreichbar über das Menü.
+  des Themes, ganz auf die Fotografie ausgerichtet: Intro mit Social-Icons, darunter
+  „Zuletzt erschienen“ (der neueste veröffentlichte Beitrag als Zeile wie in der
+  Blog-Liste, mit Cover und Zusammenfassung, Entwürfe zählen nicht) und „Demnächst im
+  Blog“ (die Titel aus der Vorschau „In Arbeit“ als Stichpunkte). Ab 820 px Breite stehen
+  beide nebeneinander; darunter fehlt „Demnächst“, es braucht am Handy zu viel Platz.
+  Dann folgen Serien-Teaser und Galerien. Die Beiträge stehen unter `/blog/`,
+  erreichbar über das Menü.
 
 - **`layouts/partials/responsive-img.html`** — gemeinsames `<img>` für Galerien,
   Serie, Serien-Teaser und Ausrüstungsseite: WebP-Varianten in festen Breiten, nie
@@ -136,24 +141,29 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   und ersetzt den englischen Textlink des Themes (`hideBackToTop` in `hugo.toml`).
 
 - **Lightbox** — `layouts/partials/lightbox.html` und `assets/js/lightbox.js`. Ein Dialog
-  für alle Fotos der Seite: Raster, Serie, Beitragsbilder und das Titelbild der
-  Ausrüstungsseite. Zwei Leisten am Fensterrand (oben Zähler, Albumname oder
+  für alle Fotos der Seite: Raster, Serie, Beitragsbilder, das Titelbild der
+  Ausrüstungsseite und deren Blockfotos (diese öffnen jeweils einzeln, mit dem Titel des
+  Blocks). Zwei Leisten am Fensterrand (oben Zähler, Albumname oder
   Beitragstitel und Schließen, unten Vor/Zurück und der Alt-Text), Pfeiltasten und
   Wischen; geblättert wird innerhalb des Rasters oder des Beitrags. Die Leisten sind leicht
   durchscheinend und laufen mit weichem Verlauf aus, der Verlauf liegt hinter dem Foto.
+  Ein Klick auf das Foto zoomt auf 100 % (ein Bildpunkt pro CSS-Pixel des 2000-px-Fotos),
+  der nächste zoomt zurück; im Zoom lässt sich das Foto mit der Maus ziehen oder per Touch
+  und Scrollen verschieben, Wischen zum Blättern ist dort aus. Geschlossen wird mit dem
+  X, per Klick neben das Foto oder mit Escape. Zu kleine Fotos zoomen nicht.
   Ein Knopf „EXIF“ blendet links einen Balken mit Kamera, Objektiv, Blende, Brennweite,
   Zeit, ISO und Belichtungskorrektur ein. Wo sie herkommen und warum nie GPS dabei
   ist, steht unter „Fotos aufnehmen und EXIF“. Das Skript wird einmal pro Seite
   eingebunden (`photo-grid-script.html` bringt es mit, sonst `lightbox.html` selbst).
 
 - **Vorschau „In Arbeit“** — `layouts/partials/soon-pages.html` und `soon-box.html`:
-  Kasten über der Blog-Liste und auf Serienseiten, eine Zeile im Intro der Startseite.
+  Kasten über der Blog-Liste und auf Serienseiten, ein Stichpunktblock im Intro der Startseite.
   Siehe „Vorschau auf Beiträge in Arbeit“.
 
-- **Label „kürzlich aktualisiert“** — `layouts/partials/updated-label.html`, in
-  Blog-Liste, Tag-Listen, Serienübersicht, im Beitragskopf und unter dem Titel einer
-  Seite mit Titelbild (`page-meta.html`). Siehe „Label ‚kürzlich aktualisiert‘“ unter
-  „Front Matter“.
+- **Labels „kürzlich neu erschienen“, „kürzlich aktualisiert“ und „Entwurf“** —
+  `layouts/partials/updated-label.html`, in Blog-Liste, Tag-Listen, Serienübersicht, im
+  Beitragskopf und unter dem Titel einer Seite mit Titelbild (`page-meta.html`). Siehe
+  „Labels am Beitrag“ unter „Front Matter“.
 
 - **Konfiguration in `hugo.toml`**, die nicht selbsterklärend ist:
   `timeout = '10m'` (Hugo gibt einer Seite sonst 60 Sekunden; ein Build mit kaltem
@@ -199,6 +209,14 @@ Entwicklungsserver starten — die Seite liegt dann auf <http://localhost:1313>:
 ```bash
 hugo server --disableFastRender
 ```
+
+Mit `-D` baut der Server auch Beiträge mit `draft: true`: Sie stehen in der Blog-Übersicht,
+sind abrufbar und tragen das Label „Entwurf“. Die Vorschau in Claude Code startet genau so
+(`.claude/launch.json`, lokal und nicht im Repository). Der echte Build kennt keine
+Entwürfe, das Label kann dort nie erscheinen.
+
+In einem neuen Git-Worktree ist das Theme-Submodul nicht ausgecheckt, der Server liefert
+dann leere Seiten. Abhilfe: `git submodule update --init`, danach den Server neu starten.
 
 Produktions-Build wie in der CI erzeugen:
 
@@ -273,7 +291,7 @@ behalten ihren Alt-Text und öffnen die Lightbox:
 Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter
 Kasten „In Arbeit“ zwischen Suche und Themen (Titel, Cover, Zusammenfassung, nicht
 verlinkt; ab 768 px Breite aufgeklappt, darunter eingeklappt mit Hinweistext, der Link
-`#in-arbeit` klappt ihn auf), eine Zeile „Demnächst im Blog: …“ im Intro der Startseite, und bei Beiträgen
+`#in-arbeit` klappt ihn auf), einen Block „Demnächst im Blog“ im Intro der Startseite (ab 820 px Breite), und bei Beiträgen
 einer Serie ein Kasten unter den Teilen auf der Serienseite. Die Vorschau hat keine
 eigene Seite und taucht in RSS, Sitemap, Suche, Tags und Serienzählung nicht auf.
 
@@ -296,7 +314,8 @@ soon:
 Zum Veröffentlichen den `build`-Block, `soon` und den Namen in `_index.md` entfernen.
 Zusammenfassung (`summary`) und Cover (`cover`) werden angezeigt; bei Serienteilen
 `series` und `seriesLabel` setzen. Wer einen Beitrag lieber ganz verstecken will,
-lässt `draft: true`, dann erscheint er nirgends.
+lässt `draft: true`, dann erscheint er nirgends (lokal mit `hugo server -D` schon, mit
+Label „Entwurf“).
 
 ### Fotos aufnehmen und EXIF
 
@@ -504,13 +523,13 @@ tags: ["Bücher", "Natur"]
 | `aliases` | Alte URLs, die auf den Beitrag weiterleiten (`["/posts/…/"]`). | Hugo |
 | `summary` | Kurztext unter dem Titel, in der Blog-Liste, in den Suchergebnissen und als Meta-Description. | `single.html`, `seo/description.html` |
 | `tags` | Themen, z. B. `["Bücher", "Smarthome"]`. Bestimmen die Themen-Zeile im Blog und die Tag-Seiten. | Hugo, `section.html` |
-| `draft` | `true`: Der Beitrag wird nirgends gebaut oder angezeigt. Ohne Angabe gilt `false`. | Hugo |
+| `draft` | `true`: Der Beitrag wird nirgends gebaut oder angezeigt, nur `hugo server -D` zeigt ihn lokal, mit Label „Entwurf“. Ohne Angabe gilt `false`. | Hugo, `updated-label.html` |
 
 **Titelbild**
 
 | Feld | Wirkung |
 | --- | --- |
-| `cover` | Bild im Beitragsordner (`./cover.jpg`). Steht oben im Beitrag, außer der Text enthält es selbst, ist Vorschaubild in den Listen und Link-Vorschau. Ohne `cover` gibt es kein Titelbild. |
+| `cover` | Bild im Beitragsordner (`./cover.jpg`). Steht oben im Beitrag, außer der Text enthält es selbst (die Prüfung sucht den Dateinamen im Text, `buch-cover.jpg` im Text unterdrückt also auch `cover.jpg`: andere Bilder anders benennen), ist Vorschaubild in den Listen und Link-Vorschau. Ohne `cover` gibt es kein Titelbild. |
 | `coverAlt` | Alt-Text des Covers, steht in den Suchergebnissen und im Beitrag. Pflicht, wenn es ein Cover gibt. |
 | `coverCredit` | Quelle bei einem fremden Cover, klein auf dem Bild, z. B. `"Cover: dpunkt.verlag"`. |
 | `coverAI` | `true` markiert ein KI-generiertes Cover mit „Cover KI-generiert“ auf dem Bild. Das Wort „Cover“ steht dabei, damit niemand das Label auf die ganze Seite bezieht. |
@@ -548,11 +567,26 @@ disclosure:
 | `purchased` | „Dieses Buch habe ich selbst gekauft.“ |
 | `gift` | „Dieses Buch habe ich von Freunden geschenkt bekommen.“ (mit `by: "von Freunden"`) |
 
+**Labels am Beitrag**
+
+Drei Labels aus `updated-label.html`, jeweils in der Blog-Liste, den Tag-Listen, der
+Serienübersicht und im Beitragskopf:
+
+- **„kürzlich neu erschienen“** (grün): Der Beitrag ist höchstens **14 Tage** alt (`date`) und
+  gehört zu den **fünf neuesten** veröffentlichten Beiträgen, damit nach einer Welle von
+  Beiträgen nicht die halbe Liste markiert ist. Es hängt nur am Datum, nichts wird im
+  Browser gespeichert. Entwürfe und Seiten außerhalb des Blogs haben es nie.
+- **„kürzlich aktualisiert“** (blau): siehe unten. Ein Beitrag trägt nie beide, denn ein
+  neuer Beitrag ist nach der Regel nicht „aktualisiert“.
+- **„Entwurf“** (gestrichelt): nur lokal bei `hugo server -D`.
+
+Beide Datumslabels sind so aktuell wie der letzte Build, die Seite baut nur bei einem Push neu.
+
 **Label „kürzlich aktualisiert“**
 
 In der Blog-Liste, in den Tag-Listen, auf der Serienübersicht und im Beitragskopf (zwischen
 Datum und Lesezeit) trägt ein Beitrag das Label
-„kürzlich aktualisiert“ (dezent grün wie die Transparenz-Box), wenn er **älter als vier Wochen** ist, aber sein `lastmod`
+„kürzlich aktualisiert“ (dezent blau), wenn er **älter als vier Wochen** ist, aber sein `lastmod`
 **in den letzten vier Wochen** liegt (jeweils vom Tag des Builds gerechnet). Ein neuer
 Beitrag braucht es nicht, einer mit altem `lastmod` auch nicht. Beim Überarbeiten also
 `lastmod` auf das heutige Datum setzen:
