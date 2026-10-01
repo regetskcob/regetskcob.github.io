@@ -1,0 +1,20 @@
+{{- /*
+  The thumbnail of a post in a list (the blog list, the series overview, the
+  "In Arbeit" box): the cover in the proportions it has, 2:1, cut from the
+  centre. That is the miniature of the cover on the post's own page: the
+  generated covers and the books on paper are 2:1, and a photo is cut to about
+  2:1 there as well (the header card, object-fit: cover). Nothing of a 2:1
+  cover is lost, and the book keeps the size it has in the cover. A 4:3
+  thumbnail cut the sides off, and "smart" crop chose a different window for
+  every image; the whole 2:1 image in a 4:3 box made the books tiny.
+  The box is 180x90 (112x56 on phones).
+  Takes a dict: "img", the cover resource, and "href", the link of the post;
+  without "href" the thumbnail is not a link (the previews have no page).
+*/ -}}
+{{- $s := .img.Fill "180x90 webp q75 Center" }}
+{{- $l := .img.Fill "360x180 webp q75 Center" }}
+{{- if .href }}<a class="line-thumb" href="{{ .href }}" tabindex="-1" aria-hidden="true">{{ else }}<span class="line-thumb" aria-hidden="true">{{ end }}
+  <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 180w, {{ $l.RelPermalink }} 360w"
+       sizes="(max-width: 640px) 112px, 180px" width="180" height="90"
+       loading="lazy" decoding="async" alt="">
+{{- if .href }}</a>{{ else }}</span>{{ end }}

@@ -207,7 +207,7 @@ html:root {
 }
 
 /* --- Post list thumbnails ---
-   A column on the left holds the cover image in 4:3, then the title.
+   A column on the left holds the cover image in 2:1, like the covers, then the title.
    Posts without a cover keep the column empty, so the titles line up in
    every row. On phones the thumbnail is smaller. */
 
@@ -219,18 +219,22 @@ html:root {
 .line-thumb {
   flex: none;
   align-self: flex-start;
-  width: 120px;
+  display: block;
+  width: 180px;
+  height: 90px;
   margin-right: 1rem;
   border: none;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .line-thumb img {
   display: block;
-  width: 120px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 4px;
 }
+
 
 .post-line.has-thumb {
   margin-bottom: 1rem;
@@ -242,13 +246,9 @@ html:root {
   }
 
   .line-thumb {
-    width: 80px;
+    width: 112px;
+    height: 56px;
     margin-right: 0.75rem;
-  }
-
-  .line-thumb img {
-    width: 80px;
-    height: 60px;
   }
 }
 
@@ -555,8 +555,8 @@ a.series-label:hover {
   --pf-input-height: 40px;
   --pf-result-title-font-size: 16px;
   --pf-result-excerpt-font-size: 14px;
-  --pf-image-width: 80px;
-  --pf-image-height: 60px;
+  --pf-image-width: 112px;
+  --pf-image-height: 56px;
   --pf-border-radius: 6px;
   margin: 0 0 1.25rem;
 }

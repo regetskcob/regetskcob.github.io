@@ -23,13 +23,7 @@
     {{- end }}
     <li class="post-line{{ with $thumb }} has-thumb{{ end }}">
       {{- with $thumb }}
-        {{- $s := .Fill "120x90 webp q75 Center" }}
-        {{- $l := .Fill "240x180 webp q75 Center" }}
-      <a class="line-thumb" href="{{ $part.RelPermalink }}" tabindex="-1" aria-hidden="true">
-        <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 120w, {{ $l.RelPermalink }} 240w"
-             sizes="(max-width: 640px) 80px, 120px" width="120" height="90"
-             loading="lazy" decoding="async" alt="">
-      </a>
+      {{ partial "list-thumb.html" (dict "img" . "href" $part.RelPermalink) }}
       {{- end }}
       <div class="line-text">
         <p class="line-title"><a href="{{ $part.RelPermalink }}">{{ $part.Params.seriesLabel | default $part.Title }}</a></p>
