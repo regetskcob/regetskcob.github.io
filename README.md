@@ -524,7 +524,7 @@ Zusätzlich je nach Layout:
 | Layout | Felder |
 | --- | --- |
 | `series` | `teaser` (Text auf der Startseite), `shuffle: true` (zufällige Reihenfolge), `photos:` (Liste mit `image`, `alt`, optional `size: large`) |
-| `gear` | `photo` und `photo_alt` (Kopfbild unter `assets/gear/`), Daten in `data/gear.yaml` |
+| `gear` | `photo` und `photo_alt` (Kopfbild unter `assets/gear/`, steht über der Überschrift und öffnet sich per Klick in der Lightbox), Daten in `data/gear.yaml` |
 | `recipes` | Daten in `data/recipes.yaml` |
 
 ### Serienseiten (`content/series/<name>/_index.md`)
