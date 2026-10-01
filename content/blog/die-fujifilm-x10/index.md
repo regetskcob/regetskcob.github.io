@@ -1,7 +1,7 @@
 ---
 title: "📸 | Die Fujifilm X10"
 date: "2026-09-30T20:00:00+02:00"
-summary: "Eine Kamera von 2011, gebraucht gekauft, beim Service wieder wie neu und lange Begleiter auf Spaziergängen, Reisen und am Ansitz. Dazu ein Wort zum Buch von Alexander S. White."
+summary: "Eine Kamera von 2011, gebraucht gekauft, nach einem Besuch beim Fujifilm Service in Kleve wieder wie neu und lange Begleiter auf Spaziergängen, Reisen und am Ansitz. Dazu ein Wort zum Buch von Alexander S. White."
 # Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite: nicht
 # rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
 # Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
@@ -22,9 +22,9 @@ Die Fujifilm X10 ist Baujahr 2011, und trotzdem habe ich sie eine ganze Weile be
 
 ## Erst zum Service
 
-Kurzerhand bin ich damit nach Kleve zu Fujifilm gefahren und habe sie zur Reinigung abgegeben. Eine Kamera aus 2011, wohlgemerkt. Ein paar Tage und Euro später hielt ich sie wieder in den Händen, und sie war optisch wie technisch so gut wie neu.
+Kurzerhand bin ich damit nach Kleve zum Fujifilm Service gefahren und habe sie zur Reinigung abgegeben. Eine Kamera aus 2011, wohlgemerkt. Ein paar Tage und Euro später hielt ich sie wieder in den Händen, und sie war optisch wie technisch so gut wie neu.
 
-Das war auch dem Vorbesitzer zu verdanken: Die X10 steckte offenbar immer in einer Lederhülle, und das sah man ihr an. Kein Kratzer, keine Delle, makellos. Nach dem Service war sie es auch innen wieder.
+Das war auch dem Vorbesitzer zu verdanken: Die X10 steckte offenbar immer in einer Lederhülle, und das sah man ihr an. Kein Kratzer, keine Delle, makellos. Nach dem Besuch beim Fujifilm Service war sie es auch innen wieder.
 
 ## Klein genug, um immer dabei zu sein
 
