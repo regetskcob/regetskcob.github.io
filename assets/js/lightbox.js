@@ -52,7 +52,7 @@
 
   // Tiles linking to a page (the series teaser) carry no data-lightbox and
   // navigate as usual.
-  const GROUPS = ".series-grid, .single-content, .page-cover-photo";
+  const GROUPS = ".series-grid, .single-content, .page-cover-photo, .gear-group-photo";
   let group = [];
   let index = 0;
 

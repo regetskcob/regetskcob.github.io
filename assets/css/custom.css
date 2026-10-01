@@ -1580,7 +1580,8 @@ figure a[data-lightbox] {
 
 /* Portrait shots narrower and centred: at full text width they would fill
    half the screen. The template's sizes attribute matches this cap. */
-.gear-group-photo-portrait img {
+.gear-group-photo-portrait a {
+  display: block;
   max-width: 420px;
   margin-left: auto;
   margin-right: auto;

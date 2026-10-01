@@ -28,7 +28,7 @@
        (partials/page-cover.html). Without a photo, the plain headline. The
        photo grid below brings the lightbox along, so the cover only does
        when there is no grid. */}}
-  {{ partial "page-cover.html" (dict "page" . "words" $words "lightbox" (not site.Data.gear.inUse)) }}
+  {{ partial "page-cover.html" (dict "page" . "words" $words "lightbox" false) }}
 
   <div class="gear-intro">
     {{ .Content }}
@@ -70,5 +70,9 @@
     {{- end }}
   {{- end }}
 </article>
+
+{{/* The lightbox for the cover and the photos of the blocks; the grid of the
+     photos in use brings its own. */}}
+{{- if not site.Data.gear.inUse }}{{ partial "lightbox.html" . }}{{ end }}
 
 {{ end }}

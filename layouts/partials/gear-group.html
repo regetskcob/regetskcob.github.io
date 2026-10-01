@@ -45,12 +45,17 @@
              would fill half the screen. The CSS caps them at 420px, and sizes
              has to say the same or the browser fetches a needlessly large file. */}}
       {{- $portrait := gt $gimg.Height $gimg.Width }}
-    <figure class="gear-group-photo{{ if $portrait }} gear-group-photo-portrait{{ end }}">
+    {{- /* A click opens it in the lightbox, on its own (each photo is its own
+           group, titled like the block). */}}
+    {{- $exif := partial "exif.html" $gimg }}
+    <figure class="gear-group-photo{{ if $portrait }} gear-group-photo-portrait{{ end }}"{{ with $.g.title }} data-lightbox-title="{{ . }}"{{ end }}>
+      <a href="{{ ($gimg.Fit "2000x2000 webp q85").RelPermalink }}" data-lightbox{{ with $exif }} data-exif="{{ jsonify . | string }}"{{ end }}>
       {{ partial "responsive-img.html" (dict
            "img" $gimg
            "alt" $.g.alt
            "sizes" (cond $portrait "(max-width: 420px) 100vw, 420px" "(max-width: 780px) 100vw, 780px")
            "page" $.page) }}
+      </a>
     </figure>
     {{- end }}
   {{- end }}
