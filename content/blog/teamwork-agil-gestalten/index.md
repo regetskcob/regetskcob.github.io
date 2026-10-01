@@ -4,6 +4,7 @@ date: 2021-05-02T11:05:00+0000
 lastmod: 2026-10-01T20:48:47+0000
 aliases: ["/posts/teamwork-agil-gestalten/"]
 tags: ["Bücher", "Arbeitswelt"]
+draft: true
 ---
 
 *Teamwork ist nicht immer gleich Teamwork. Team nicht immer Team.*

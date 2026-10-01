@@ -5,6 +5,7 @@ lastmod: 2026-10-01T20:48:47+0000
 summary: "Diese besondere Lese-Erfahrung, aber auch das Wissen, das Jean-Philippe Hagmann hier vermittelt, möchte ich allen ans Herz legen, die sich damit konfrontiert sehen Innovation bzw. innovative Produkte hervorzubringen."
 aliases: ["/posts/ein-meta-modell-fur-agile-innovation/"]
 tags: ["Bücher", "Arbeitswelt"]
+draft: true
 ---
 
 Viele Unternehmen tun sich schwer damit, Innovation hervorzubringen. Jean-Philippe Hagmann hat einen neuen, innovativen Weg gefunden, Wissen darüber zu vermitteln, wie man Innovation entwickelt. Im Buch geht es um eine Forscherin, die das "Noita Vonni"-Modell entdeckt; Das Planetensystem der Innovation, wenn man so will.

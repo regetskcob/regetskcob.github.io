@@ -4,6 +4,7 @@ date: 2020-04-15T06:30:00+0000
 lastmod: 2026-10-01T20:48:47+0000
 aliases: ["/posts/outside-project-freiheit-sehnsucht-abenteuer/"]
 tags: ["Bücher", "Natur", "Fotografie"]
+draft: true
 ---
 
 > Komm mit nach draußen!  

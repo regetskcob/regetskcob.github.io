@@ -4,6 +4,7 @@ date: 2020-04-13T11:45:27+0000
 lastmod: 2026-10-01T20:48:47+0000
 aliases: ["/posts/der-perfekte-moment/"]
 tags: ["Natur", "Fotografie"]
+draft: true
 ---
 
 Ich stehe auf der Niersbrücke an der Kalkarer Straße, den Blick in Richtung Kalbecker Forst gerichtet, das Wetter ist perfekt. Der Nebel steht über den Feldern und wabert über der Niers, die Sonne versetzt den Nebel und die Blätter der Bäume in einen goldenen Schimmer.

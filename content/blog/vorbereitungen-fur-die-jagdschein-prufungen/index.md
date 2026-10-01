@@ -4,6 +4,7 @@ date: 2024-11-17T16:41:47+0000
 lastmod: 2026-10-01T20:48:47+0000
 aliases: ["/posts/vorbereitungen-fur-die-jagdschein-prufungen/"]
 tags: ["Ausbildung"]
+draft: true
 ---
 
 Ähnlich wie bei meiner beruflichen Leidenschaft - der IT - habe ich auch die Vorbereitungen auf den Jagdschein äußerst ernst genommen. Ich kann buchstäblich behaupten, alle verfügbaren Materialien zur Vorbereitung mit einbezogen zu haben.

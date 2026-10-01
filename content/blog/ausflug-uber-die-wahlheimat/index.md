@@ -5,6 +5,7 @@ lastmod: 2026-10-01T20:48:47+0000
 summary: "Am Wochenende bin ich mal wieder im Uedemer Hochwald gewesen und auf dem Hinweg habe ich noch einen Abstecher auf den Monreberg in Kalkar gemacht."
 aliases: ["/posts/ausflug-uber-die-wahlheimat/"]
 tags: ["Fotografie"]
+draft: true
 ---
 
 Am Wochenende bin ich mal wieder im Uedemer Hochwald gewesen und auf dem Hinweg habe ich noch einen Abstecher auf den Monreberg in Kalkar gemacht.

@@ -5,6 +5,7 @@ lastmod: 2026-10-01T20:48:47+0000
 summary: "Als meine Eltern mich im August 2019 gefragt haben, ob ich mit zum Drachenfels kommen möchte, habe ich mich doppelt gefreut. Zum einen bin ich dort noch nie gewesen und hatte mich zuvor absichtlich nicht informiert, was mich erwarten würde."
 aliases: ["/posts/mit-fujifilm-am-drachenfels/"]
 tags: ["Natur", "Fotografie"]
+draft: true
 ---
 
 Als meine Eltern mich im August 2019 gefragt haben, ob ich mit zum Drachenfels kommen möchte, habe ich mich doppelt gefreut. Zum einen bin ich dort noch nie gewesen und hatte mich zuvor absichtlich nicht informiert, was mich erwarten würde.
