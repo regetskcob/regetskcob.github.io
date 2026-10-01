@@ -12,11 +12,23 @@
 {{ define "main" }}
 
 <article class="gear">
+  {{/* The words the page adds from data/gear.yaml (headings, descriptions,
+       names, notes, link texts), for the reading time in the cover. */}}
+  {{- $words := 0 }}
+  {{- range site.Data.gear.groups }}
+    {{- $words = add $words (countwords (printf "%s %s" .title (.description | default ""))) }}
+    {{- range .items }}
+      {{- $words = add $words (countwords (printf "%s %s" .name (.note | default ""))) }}
+      {{- if .post }}{{ $words = add $words (countwords (.postLabel | default "Mehr dazu im Blog")) }}{{ end }}
+    {{- end }}
+  {{- end }}
+  {{- with site.Data.gear.inUse }}{{ $words = add $words (countwords .title) }}{{ end }}
+
   {{/* The page cover: header photo with the headline on a bar, clickable
        (partials/page-cover.html). Without a photo, the plain headline. The
        photo grid below brings the lightbox along, so the cover only does
        when there is no grid. */}}
-  {{ partial "page-cover.html" (dict "page" . "lightbox" (not site.Data.gear.inUse)) }}
+  {{ partial "page-cover.html" (dict "page" . "words" $words "lightbox" (not site.Data.gear.inUse)) }}
 
   <div class="gear-intro">
     {{ .Content }}

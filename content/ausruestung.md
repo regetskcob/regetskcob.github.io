@@ -1,6 +1,8 @@
 ---
 title: "Ausrüstung"
 description: "Womit ich fotografiere und warum es genau diese Sachen geworden sind."
+lastmod: 2026-10-01T09:00:00+0200
+readTime: true
 layout: gear
 # The page lived at /gear/ before; keep shared links working.
 aliases: ["/gear/"]

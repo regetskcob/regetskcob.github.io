@@ -19,6 +19,14 @@ timeout = '10m'
   [cascade._target]
     path = '/blog/**'
 
+# A page's date comes from "date" or "publishDate" only. Hugo's default also
+# falls back to "lastmod", which hid a page without a date of its own as soon
+# as its lastmod lay in the future (Hugo does not build those): the gear page
+# vanished the moment its lastmod got a time later than "now". The lastmod
+# itself still defaults to the date, nothing changes for posts.
+[frontmatter]
+  date = ['date', 'publishDate']
+
 [taxonomies]
 tag = 'tags'
 # Post series ("series" in front matter): each gets an overview page under

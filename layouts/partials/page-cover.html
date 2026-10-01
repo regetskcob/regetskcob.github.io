@@ -5,6 +5,8 @@
   in the lightbox, on its own, not paged with other photos; the title lets
   the click through. Used by the gear page and the recipes page. Takes a dict:
     page      the page
+    words     optional: words the layout adds from data files, for the
+              reading time (partials/page-meta.html)
     lightbox  true to bring the lightbox along, false where the page loads it
               anyway (the gear page, through its photo grid)
   The page names its photo in front matter:
@@ -28,7 +30,7 @@
       {{ partial "responsive-img.html" (dict "img" . "alt" $page.Params.photo_alt "loading" "eager" "page" $page) }}
     </a>
   </figure>
-  {{- $meta := partial "page-meta.html" $page | strings.TrimSpace | safeHTML }}
+  {{- $meta := partial "page-meta.html" (dict "page" $page "words" $.words) | strings.TrimSpace | safeHTML }}
   <div class="page-cover-bar{{ if $meta }} has-meta{{ end }}">
     <h1 class="page-cover-title">{{ $page.Title }}</h1>
     {{ $meta }}
@@ -41,5 +43,5 @@
 {{- end }}
 {{- if not $shown }}
 <h1>{{ $page.Title }}</h1>
-{{ partial "page-meta.html" $page }}
+{{ partial "page-meta.html" (dict "page" $page "words" $.words) }}
 {{- end }}

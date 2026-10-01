@@ -3,20 +3,26 @@
   the label "kürzlich aktualisiert" when the page's "lastmod" lies within the
   last four weeks (partials/updated-label.html), and the reading time when the
   page asks for it with "readTime: true". Renders nothing when neither
-  applies. Takes the page.
+  applies. Takes a dict: "page", and optionally "words", the number of words
+  the layout adds from its data files.
 
   Pages have no date of their own that is shown, so the label rests on a
-  "lastmod" set by hand in front matter. The reading time counts only the
-  text in the page's Markdown, not what the layout adds from the data files,
-  so it stays off by default: on the gear and recipes pages it would be far
-  too low.
+  "lastmod" set by hand in front matter. Hugo's reading time counts only the
+  text in the page's Markdown, so a layout that adds text from data files (the
+  gear page) passes those words in: the minutes are the words of both over 212
+  per minute, rounded up, like Hugo's own. Without "words" a page that sets
+  "readTime: true" gets Hugo's number, which is only right for a page made of
+  its Markdown alone.
 */}}
-{{- $label := partial "updated-label.html" . | strings.TrimSpace | safeHTML }}
-{{- $time := .Params.readTime }}
+{{- $page := .page }}
+{{- $label := partial "updated-label.html" $page | strings.TrimSpace | safeHTML }}
+{{- $time := $page.Params.readTime }}
+{{- $minutes := $page.ReadingTime }}
+{{- with .words }}{{ $minutes = int (math.Max 1 (math.Ceil (div (add $page.WordCount .) 212.0))) }}{{ end }}
 {{- if or $label $time }}
 <p class="page-meta">
   {{- $label }}
   {{- if and $label $time }}&nbsp; · &nbsp;{{ end }}
-  {{- if $time }}{{ .ReadingTime }} Min. Lesezeit{{ end -}}
+  {{- if $time }}{{ $minutes }} Min. Lesezeit{{ end -}}
 </p>
 {{- end }}

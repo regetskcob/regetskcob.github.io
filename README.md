@@ -544,8 +544,8 @@ Unter dem Titel steht bei Bedarf eine Zeile (auf dem Cover im Balken, ohne Cover
 
 | Feld | Wirkung |
 | --- | --- |
-| `lastmod` | Von Hand gesetztes Datum der letzten Überarbeitung. Liegt es in den letzten vier Wochen, steht dort „kürzlich aktualisiert“. Seiten außerhalb des Blogs haben kein Alter, hier zählt nur das `lastmod`. |
-| `readTime` | `true` zeigt die Lesezeit. Standardmäßig aus: sie zählt nur den Markdown-Text der Seite, nicht, was die Vorlage aus den Datendateien ergänzt, und wäre auf der Ausrüstungs- und der Rezepte-Seite viel zu niedrig. |
+| `lastmod` | Von Hand gesetztes Datum der letzten Überarbeitung. Es darf auch in der Zukunft liegen: das `date` einer Seite kommt in `hugo.toml` nur aus `date` und `publishDate`, nicht mehr ersatzweise aus dem `lastmod`. Liegt es in den letzten vier Wochen, steht dort „kürzlich aktualisiert“. Seiten außerhalb des Blogs haben kein Alter, hier zählt nur das `lastmod`. |
+| `readTime` | `true` zeigt die Lesezeit. Standardmäßig aus: Hugo zählt nur den Markdown-Text der Seite, nicht, was die Vorlage aus den Datendateien ergänzt. Die Ausrüstungsseite zählt deshalb die Wörter aus `data/gear.yaml` mit (`words` an `partials/page-cover.html`), eine Seite aus ihrem Markdown allein bekommt Hugos Wert. Gerechnet wird mit 212 Wörtern pro Minute, aufgerundet. |
 
 ### Serienseiten (`content/series/<name>/_index.md`)
 
