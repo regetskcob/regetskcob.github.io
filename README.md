@@ -305,6 +305,33 @@ es kann also nichts Weiteres auf die Seite gelangen. Fotos ohne Daten zeigen kei
 EXIF-Knopf. Für Fotos, die ohne Metadaten exportiert wurden, kann `data/exif.yaml`
 die Werte liefern, `scripts/extract-exif.sh <Ordner mit Originalen>` schreibt sie.
 
+### Anschrift im Impressum
+
+Die Anschrift (Straße, PLZ, Ort) steht **nicht im öffentlichen Repository**, sondern in
+`data/legal_private.yaml`. Die Datei steht in der `.gitignore`; in `content/legal.md` setzt der
+Shortcode `{{< anschrift >}}` sie ein:
+
+```yaml
+street: "Straße und Hausnummer"
+zip: "12345"
+city: "Ort"
+```
+
+- **Lokal:** die Datei einmal im eigenen Checkout anlegen. Ohne sie zeigt der Vorschau-Server
+  „[Anschrift: data/legal_private.yaml fehlt]“, ein Produktions-Build bricht ab: ein Impressum
+  ohne Anschrift soll nie online gehen.
+- **Deploy:** der Workflow schreibt die Datei vor dem Build aus dem GitHub-Secret `LEGAL_PRIVATE`
+  (der YAML-Text der Datei). Ändert sich die Anschrift, das Secret neu setzen:
+  `gh secret set LEGAL_PRIVATE < data/legal_private.yaml`.
+- **Auf der Seite:** die Anschrift ist verschleiert (`partials/obfuscate.html`): drei Zeichen pro
+  `<span>`, und mit `data-nosnippet` markiert. Eine Suche im HTML nach dem Straßennamen findet sie nicht,
+  ein Browser, ein Screenreader und Kopieren funktionieren unverändert. Ein Parser, der den Text
+  zusammensetzt, oder ein Browser-Bot findet sie weiterhin: das ist eine Hürde, kein Schutz, und mehr
+  ist bei einer Pflichtangabe nicht möglich. (Zeichen als Entitäten zu schreiben bringt nichts, der
+  Minifizierer löst sie wieder auf.)
+- Die Seite hat `noindex` und keinen Sitemap-Eintrag (siehe Front Matter), steht aber im Menü.
+- Die Anschrift steht noch in der Git-Historie älterer Stände (Commits vor dieser Änderung).
+
 ### Ausrüstungsseite pflegen
 
 Das Titelbild liegt unter `assets/gear/` und wird im Front Matter von
@@ -485,6 +512,8 @@ tags: ["Bücher", "Natur"]
 | `math` | `true` lädt KaTeX für Formeln (Theme). |
 | `inLanguage` | Sprache des Beitrags (`"en"`), wenn sie von der Seite abweicht. Setzt `lang` am Artikel. |
 | `hidePagination` | `true` blendet „Vorheriger/Nächster Beitrag“ aus. Beiträge einer Serie zeigen sie ohnehin nicht. |
+| `noindex` | `true` setzt `<meta name="robots" content="noindex">`: Suchmaschinen führen die Seite nicht auf. Die Rechtliche Seite nutzt es (Tag-Seiten sind ohnehin `noindex`). |
+| `sitemap` | `sitemap:` mit `disable: true` lässt die Seite aus `sitemap.xml` weg (Hugo). |
 
 **Rezensionen: Transparenz-Hinweis (`disclosure`)**
 

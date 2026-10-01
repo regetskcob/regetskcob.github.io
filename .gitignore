@@ -13,5 +13,9 @@ hugo.darwin
 # Local scratch space for drafts and material not (yet) published
 /_archive/
 
+# The address of the legal notice: kept out of the public repository, the deploy
+# workflow writes it from a secret (README, "Anschrift im Impressum")
+/data/legal_private.yaml
+
 # Local Claude Code settings (preview server config)
 /.claude/

@@ -7,6 +7,11 @@ description: Impressum und Datenschutzerklärung
 photo: "covers/legal.jpg"
 photo_alt: "Ein Dokument mit Paragraphenzeichen neben einem Schild mit Schlüsselloch, flach gezeichnet auf hellem Grund"
 coverAI: true
+# The page stays reachable and in the menu, but out of search results and the
+# sitemap, so the address is not quoted there (the address itself is obfuscated).
+noindex: true
+sitemap:
+  disable: true
 ---
 
 ## Impressum
@@ -14,8 +19,7 @@ coverAI: true
 Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):
 
 Daniel Bocksteger  
-Kirchstraße 42  
-47546 Kalkar  
+{{< anschrift >}}  
 Deutschland
 
 E-Mail: regetskcob@icloud.com

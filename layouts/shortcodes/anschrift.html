@@ -1,0 +1,20 @@
+{{- /*
+  The postal address of the legal notice, street and town, from
+  data/legal_private.yaml (street, zip, city). That file is not in the
+  repository, which is public: it is in .gitignore, and the deploy workflow
+  writes it from the secret LEGAL_PRIVATE. On the live site the address is
+  split into small spans (partials/obfuscate.html) and marked data-nosnippet, so search
+  engines do not quote it. Used in content/legal.md as {{< anschrift >}}.
+
+  A production build without the file fails: a legal notice without an address
+  must never go live. The preview server shows a note instead.
+*/ -}}
+{{- with site.Data.legal_private -}}
+<span class="anschrift" data-nosnippet>{{ partial "obfuscate.html" .street }}<br>{{ partial "obfuscate.html" (printf "%s %s" (string .zip) .city) }}</span>
+{{- else -}}
+  {{- if hugo.IsProduction -}}
+    {{- errorf "data/legal_private.yaml is missing: the legal notice needs the address (see README, \"Anschrift im Impressum\")" -}}
+  {{- else -}}
+<span class="anschrift">[Anschrift: data/legal_private.yaml fehlt]</span>
+  {{- end -}}
+{{- end -}}

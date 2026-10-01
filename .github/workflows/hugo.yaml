@@ -60,6 +60,12 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+      - name: Private data for the legal notice
+        # The address stays out of the public repository: it lives in this
+        # secret as the YAML of data/legal_private.yaml (README).
+        env:
+          LEGAL_PRIVATE: ${{ secrets.LEGAL_PRIVATE }}
+        run: printf '%s\n' "$LEGAL_PRIVATE" > data/legal_private.yaml
       - name: Build the site
         run: |
           hugo \

@@ -1,0 +1,15 @@
+{{- /*
+  A text as HTML that reads the same in a browser and to a screen reader but
+  does not stand in the source as the plain words: three characters at a time
+  sit in a <span>. A script that searches the raw HTML for a street or a number
+  finds nothing; one that parses the page and joins the text finds it, as does
+  a browser, a screen reader and copy and paste. That is the point: nothing here
+  may need JavaScript or CSS tricks to be read, the legal notice has to stay
+  easy to recognise (§ 5 DDG). Numeric entities would not help: Hugo's minifier
+  turns them back into the characters. Takes a string.
+*/ -}}
+{{- range $i, $c := split . "" -}}
+  {{- if eq (mod $i 3) 0 }}{{ if $i }}</span>{{ end }}<span>{{ end -}}
+  {{- $c -}}
+{{- end -}}
+</span>
