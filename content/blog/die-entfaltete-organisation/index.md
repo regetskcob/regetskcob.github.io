@@ -1,19 +1,10 @@
 ---
 title: 📚 | Die entfaltete Organisation
-title_plain: '| Die entfaltete Organisation'
 date: 2023-05-01T19:42:35+0000
 lastmod: 2025-01-12T14:12:28+0000
-slug: die-entfaltete-organisation
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 3
 summary: Mit Inner Work die Zukunft gestalten.
-featured_image: ./img_6213.jpg
 cover: ./img_6213.jpg
 coverAlt: "Das Buch „Die entfaltete Organisation“ mit weißem Umschlag und bunten Formen auf einem Holztisch"
-seo:
-  image: ./img_6213.jpg
 aliases: ["/posts/die-entfaltete-organisation/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

@@ -1,15 +1,8 @@
 ---
 title: "👨‍🎓 | Blockunterricht in der Berufsschule"
-title_plain: "Blockunterricht in der Berufsschule"
 date: 2022-12-19T07:30:00+0000
 lastmod: 2026-09-29T14:00:00+0000
-slug: wie-werde-ich-fachinformatiker-iii
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 4
 summary: "Wie läuft Blockunterricht eigentlich ab? Am Beispiel meiner Ausbildung beschreibe ich, wie der Unterricht an den Berufsschulen in Moers organisiert war."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Zwölf Monatskarten, jede dritte rot als Schulblock, darunter ein gepunkteter Weg zwischen zwei Orten, darunter eine Leiste mit fünf Stationen, die dritte hervorgehoben"

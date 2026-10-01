@@ -1,21 +1,11 @@
 ---
 title: 📚 | JavaScript - Das umfassende Handbuch
-title_plain: '| JavaScript - Das umfassende Handbuch'
 date: 2023-01-30T13:00:00+0000
 lastmod: 2025-01-06T13:38:08+0000
-slug: javascript-das-umfassende-handbuch
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: Umfassendes Wissen auf über 1250 Seiten. Muss man dazu noch viel sagen?
   Eigentlich nicht, einfach so stehen lassen möchte ich es aber auch nicht. 😊
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./img_5225.jpg
 cover: ./img_5225.jpg
 coverAlt: "Das Buch „JavaScript“ von Philip Ackermann in der dritten Auflage auf grauem Steinboden"
-seo:
-  image: ./img_5225.jpg
 aliases: ["/posts/javascript-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

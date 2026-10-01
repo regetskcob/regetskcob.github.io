@@ -1,15 +1,8 @@
 ---
 title: "👨‍🎓 | Voraussetzungen für einen Ausbildungsplatz als Fachinformatiker"
-title_plain: "Voraussetzungen für einen Ausbildungsplatz als Fachinformatiker"
 date: 2022-12-12T10:30:00+0000
 lastmod: 2026-09-29T14:00:00+0000
-slug: wie-werde-ich-fachinformatiker-ii
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 3
 summary: "Welcher Abschluss, welche Noten und welche Eigenschaften braucht es für einen Ausbildungsplatz? Teil II zeigt, worauf Betriebe bei Bewerbungen achten."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Eine Bewerbungsmappe mit drei Fortschrittsbalken und rotem Haken, daneben ein Netz aus fünf verbundenen Punkten als Team, darunter eine Leiste mit fünf Stationen, die zweite hervorgehoben"

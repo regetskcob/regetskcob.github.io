@@ -1,6 +1,5 @@
 ---
 title: "👨🏻‍💻 | Den Umzug von Ghost zu Hugo vereinfachen"
-title_plain: "Den Umzug von Ghost zu Hugo vereinfachen"
 date: "2025-11-02T00:40:04-07:00"
 lastmod: 2026-09-29T14:00:00+0000
 summary: "Ein kleines Python-Skript, das Ghost-Backups in Markdown-Dateien für Hugo umwandelt. Mit englischer Übersetzung am Ende."
@@ -8,10 +7,6 @@ description: "Ein kleines Python-Skript, das ein Ghost-Backup in Markdown-Beitr�
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte abstrakte Grafik: Eine diffuse Wolke aus Punkten zieht sich durch einen schmalen Spalt und ordnet sich rechts zu einem Raster aus zwölf Dokumentkarten"
-draft: false
-readTime: true
-autonumber: false
-math: false
 aliases: ["/posts/ghost2hugo/"]
 tags: ["Softwareentwicklung"]
 ---

@@ -1,22 +1,13 @@
 ---
 title: 📚 | Facilitation
-title_plain: '| Facilitation'
 date: 2023-06-09T14:00:00+0000
 lastmod: 2025-01-06T13:34:59+0000
-slug: facilitation
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: Dieses Buch ist eine inspirierende Lektüre für die Mittagspause oder
   den Feierabend, könnte aber auch während der Arbeit gelesen werden. Die Illustrationen
   sind liebevoll gestaltet und perfekt auf den Inhalt zugeschnitten, sodass markante
   Informationen einprägsam visualisiert werden.
-featured_image: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 cover: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 coverAlt: "Das Buch „Facilitation“ mit weißem Umschlag und bunter Kritzelzeichnung auf einem Holztisch"
-seo:
-  image: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 aliases: ["/posts/facilitation/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

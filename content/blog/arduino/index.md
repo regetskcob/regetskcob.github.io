@@ -1,13 +1,7 @@
 ---
 title: "📚 | Arduino - Ein Einstieg"
-title_plain: "Arduino - Ein Einstieg"
 date: "2025-06-18T00:40:04-07:00"
-slug: "arduino"
 summary: "Als Leser dieses Blogs unterstelle ich einfach mal, dass ihr durchaus interessiert an aktuellen Themen wie SmartHome, Swift oder IoT seid. Um letzteres Thema kümmert sich das Buch, welches ich euch heute vorstellen möchte."
-draft: false
-readTime: true
-autonumber: false
-math: false
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein aufgeschlagenes Buch mit Textzeilen und dem Schaltzeichen einer LED, darauf ein Arduino-Board, das über zwei Kabel mit einem Steckbrett verbunden ist, auf dem eine rote LED leuchtet"

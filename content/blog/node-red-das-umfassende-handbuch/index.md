@@ -1,22 +1,12 @@
 ---
 title: 📚 | Node-RED - Das umfassende Handbuch
-title_plain: '| Node-RED - Das umfassende Handbuch'
 date: 2024-12-28T12:25:51+0000
 lastmod: 2025-01-06T14:09:53+0000
-slug: node-red-das-umfassende-handbuch
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 2
 summary: Von der Installation, die Administration und die Grundlagen des Editors,
   über das Erstellen und Verwalten von Dashboards bis hin zu JavaScript, MQTT und
   Mikrocontroller. Der Begriff „umfassend“ ist absolut ernst zu nehmen.
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./IMG_4265.jpeg
 cover: ./IMG_4265.jpeg
 coverAlt: "Das Buch „Node-RED“ von Udo Brandes auf einem Holztisch"
-seo:
-  image: ./IMG_4265.jpeg
 aliases: ["/posts/node-red-das-umfassende-handbuch/"]
 tags: ["Bücher", "Smarthome"]
 disclosure:

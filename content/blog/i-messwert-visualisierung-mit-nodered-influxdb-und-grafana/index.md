@@ -1,20 +1,10 @@
 ---
 title: "⚡️ | Raspberry Pi mit InfluxDB, NodeRED und Grafana aufsetzen"
-title_plain: "Raspberry Pi mit InfluxDB, NodeRED und Grafana aufsetzen"
 date: 2022-09-18T14:13:02+0000
 lastmod: 2026-09-29T15:00:00+0000
-slug: i-messwert-visualisierung-mit-nodered-influxdb-und-grafana
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 4
 summary: "Im ersten Teil wird ein Raspberry Pi zur Messwert-Zentrale fürs Smarthome. Ich richte das System ein und installiere InfluxDB, NodeRED und Grafana."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./bildschirmfoto-2022-09-18-um-14.57.29.png
 cover: ./bildschirmfoto-2022-09-18-um-14.57.29.png
 coverAlt: "Node-RED-Flow, in dem der KNX-Device-Node über Prepare und Filter in den InfluxDB-Node führt"
-seo:
-  image: ./bildschirmfoto-2022-09-18-um-14.57.29.png
 series: "Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana"
 seriesLabel: "Teil I: Installation"
 aliases: ["/posts/i-messwert-visualisierung-mit-nodered-influxdb-und-grafana/"]

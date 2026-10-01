@@ -1,20 +1,10 @@
 ---
 title: 📚 | Collaborative UX Design
-title_plain: '| Collaborative UX Design'
 date: 2020-06-05T19:06:00+0000
 lastmod: 2024-11-17T16:49:43+0000
-slug: collaborative-ux-design
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: "Sieben Workshops, ein Projektteam und viele Methoden, um Feedback von Nutzern einzuholen. Seit ich das Buch habe, begleitet es mich durch den Arbeitsalltag."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./dscf8828.jpeg
 cover: ./dscf8828.jpeg
 coverAlt: "Das Buch „Collaborative UX Design“, vor blauem Himmel über den Dächern einer Siedlung in die Höhe gehalten"
-seo:
-  image: ./dscf8828.jpeg
 aliases: ["/posts/collaborative-ux-design/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

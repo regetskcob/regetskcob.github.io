@@ -1,18 +1,9 @@
 ---
 title: 📚 | Zukunft ist ein guter Ort
-title_plain: '| Zukunft ist ein guter Ort'
 date: 2020-04-23
-slug: zukunft-ist-ein-guter-ort
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: "Sina Trinkwalder skizziert, wie eine nachhaltige Gesellschaft aussehen könnte, bis hin zu einer Politik aus Kompetenz-Kammern. Für mich eine Pflichtlektüre."
-featured_image: ./fc69725a-01ae-48b0-9b80-524011009ca4-23010-000012bfb29fe23e.jpg
 cover: ./fc69725a-01ae-48b0-9b80-524011009ca4-23010-000012bfb29fe23e.jpg
 coverAlt: "Schwarzweißbild: Das Buch „Zukunft ist ein guter Ort“ von Sina Trinkwalder, über einer Siedlung in die Höhe gehalten"
-seo:
-  image: ./fc69725a-01ae-48b0-9b80-524011009ca4-23010-000012bfb29fe23e.jpg
 aliases: ["/posts/zukunft-ist-ein-guter-ort/"]
 tags: ["Bücher", "Gesellschaft"]
 disclosure:

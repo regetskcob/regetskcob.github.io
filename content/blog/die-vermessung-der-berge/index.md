@@ -1,10 +1,7 @@
 ---
 title: "📚 | Die Vermessung der Berge"
-title_plain: "Die Vermessung der Berge"
 date: "2026-09-30T20:00:00+02:00"
-slug: "die-vermessung-der-berge"
 summary: "Blandine Pluchet nimmt die Leser:innen mit auf eine Wanderung zur Entdeckung der Weltgesetze."
-draft: false
 # Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite: nicht
 # rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
 # Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
@@ -13,9 +10,6 @@ build:
   render: never
   list: never
 soon: true
-readTime: true
-autonumber: false
-math: false
 cover: ./cover.jpg
 coverAlt: "Das Buch „Die Vermessung der Berge“ von Blandine Pluchet steht aufrecht vor einer Allgäuer Landschaft: dahinter ein Hof auf einer Wiese, dunkle Berge mit Schneeresten und Wolken, oben ragt ein rosa Lesebändchen heraus"
 disclosure:

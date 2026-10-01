@@ -1,15 +1,8 @@
 ---
 title: ⚡️ | Zentraler Wohnhaus-Alarm mit KNX
-title_plain: ️ | Zentraler Wohnhaus-Alarm mit KNX
 date: 2022-12-14T17:30:00+0000
 lastmod: 2024-11-17T15:04:08+0000
-slug: zentraler-wohnhaus-alarm-mit-knx
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 2
 summary: "Ein Schalter am Nachttisch weckt das ganze Haus. So haben wir unseren Alarm über eine zentrale KNX-Gruppenadresse gelöst, und so lässt er sich noch erweitern."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 cover: ./cover.jpg
 coverAlt: "KI-generierte Grafik: Ein Haus bei Nacht, in dem alle Fenster und Außenleuchten brennen und die Rollläden oben sind, verbunden über eine grüne Busleitung mit einem einzelnen roten Schalter, von dem Signalringe ausgehen"
 coverAI: true

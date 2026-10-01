@@ -1,20 +1,10 @@
 ---
 title: "⚡️ | KNX-Messwerte mit NodeRED in InfluxDB schreiben und in Grafana zeigen"
-title_plain: "KNX-Messwerte mit NodeRED in InfluxDB schreiben und in Grafana zeigen"
 date: 2022-10-31T19:32:44+0000
 lastmod: 2026-09-29T15:00:00+0000
-slug: ii-messwert-visualisierung-mit-nodered-influxdb-und-grafana
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 5
 summary: "Im zweiten Teil verbinden wir die Systeme: ein Bucket in InfluxDB, ein Flow in NodeRED, der KNX-Telegramme mitschreibt, und die Datenquelle in Grafana."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./bildschirmfoto-2022-10-31-um-20.16.15.png
 cover: ./bildschirmfoto-2022-10-31-um-20.16.15.png
 coverAlt: "Grafana-Dashboard „Außenbereich“ mit Kurven zu Helligkeit, Temperatur, Regen und Windgeschwindigkeit über mehrere Tage"
-seo:
-  image: ./bildschirmfoto-2022-10-31-um-20.16.15.png
 series: "Messwert-Visualisierung mit NodeRED, InfluxDB und Grafana"
 seriesLabel: "Teil II: Die Systeme verbinden"
 aliases: ["/posts/ii-messwert-visualisierung-mit-nodered-influxdb-und-grafana/"]

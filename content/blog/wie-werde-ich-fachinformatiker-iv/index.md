@@ -1,20 +1,11 @@
 ---
 title: "👨‍🎓 | Die Zwischenprüfung als Fachinformatiker"
-title_plain: "Die Zwischenprüfung als Fachinformatiker"
 date: 2022-12-26T22:45:00+0000
 lastmod: 2026-09-29T14:00:00+0000
-slug: wie-werde-ich-fachinformatiker-iv
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 4
 summary: "Die Zwischenprüfung ist selten so schwer, wie manche Lehrer sie ankündigen. Was euch nach 1,5 Jahren erwartet und wie ihr euch vorbereitet, steht in Teil IV."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein Struktogramm mit Verzweigung und Schleife neben sechs Zeilen Multiple-Choice-Kästchen, darunter eine Leiste mit fünf Stationen, die vierte hervorgehoben"
-seo:
-  image: ./cover.jpg
 series: "Wie werde ich Fachinformatiker"
 seriesLabel: "Teil IV: Die Zwischenprüfung"
 aliases: ["/posts/wie-werde-ich-fachinformatiker-iv/"]

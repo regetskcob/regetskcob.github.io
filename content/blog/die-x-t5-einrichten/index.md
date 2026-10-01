@@ -1,17 +1,9 @@
 ---
 title: 📸 | Die X-T5 einrichten
-title_plain: 'Die X-T5 einrichten'
 date: 2026-09-29T12:00:00+0000
-lastmod: 2026-09-29T12:00:00+0000
-slug: die-x-t5-einrichten
-draft: false
-type: post
-author: Daniel Bocksteger
 summary: Seit September ist die X-T5 meine Hauptkamera. Bevor sie zum ersten Mal richtig mitdurfte, habe ich sie so eingerichtet, dass sie sich wie die X-T30 bedienen lässt. Tasten, Autofokus, Auto-ISO, Rezepte und Weißabgleich, und warum das meiste davon auf Karteikarten stand.
 cover: ./x-t5-auf-ovp.jpg
 coverAlt: "Die Fujifilm X-T5 mit dem XF 16-80mm und rotem Softauslöser steht auf ihrem schwarzen Originalkarton vor einer hellen Wand"
-seo:
-  image: ./x-t5-auf-ovp.jpg
 tags: ["Fotografie"]
 ---
 

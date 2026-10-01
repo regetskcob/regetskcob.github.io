@@ -1,18 +1,8 @@
 ---
 title: 🔭 | Bau des OpenAstroTracker - Teil I
-title_plain: ️Bau des OpenAstroTracker - Teil I
 date: 2025-12-14T10:40:00+0000
-lastmod: 2025-12-14T10:40:00+0000
-slug: bau-des-openastrotracker-teil-i
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: In den kommenden Wochen möchte ich mir einen OpenAstroTracker bauen. Ich werde den Bau in dieser Artikelserie begleiten und auch auf Astro-Fotografie als solche näher eingehen. 
-featured_image: ./parts.jpeg
 cover: ./parts.jpeg
-seo:
-  image: ./parts.jpeg
 aliases: ["/posts/bau-des-openastrotracker-teil-i/"]
 tags: ["Fotografie"]
 ---

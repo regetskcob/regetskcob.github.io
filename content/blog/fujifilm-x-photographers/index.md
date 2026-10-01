@@ -1,20 +1,10 @@
 ---
 title: 📚 | FUJIFILM X-PHOTOGRAPHERS
-title_plain: '| FUJIFILM X-PHOTOGRAPHERS'
 date: 2020-04-22T13:30:00+0000
 lastmod: 2026-09-25T09:55:00+0000
-slug: fujifilm-x-photographers
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 2
 summary: "Sechs Fotografen, ein Kamerasystem: Der Bildband begleitet Profis mit ihren X- und GFX-Kameras und zeigt, wie sie im Alltag mit der Technik arbeiten."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 cover: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 coverAlt: "Schwarzweißbild: Der Bildband „FUJIFILM X-Photographers“ mit drei Porträts auf dem Umschlag, über einer Landschaft in die Höhe gehalten"
-seo:
-  image: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
 aliases: ["/posts/fujifilm-x-photpgraphers/", "/blog/fujifilm-x-photpgraphers/"]
 tags: ["Bücher", "Fotografie"]
 disclosure:

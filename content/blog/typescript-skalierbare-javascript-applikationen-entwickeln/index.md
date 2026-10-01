@@ -1,18 +1,11 @@
 ---
 title: 📚 | TypeScript - Skalierbare JavaScript-Applikationen entwickeln
-title_plain: '| TypeScript - Skalierbare JavaScript-Applikationen entwickeln'
 date: 2025-01-22T11:40:36+0000
 lastmod: 2025-01-22T11:42:06+0000
-slug: typescript-skalierbare-javascript-applikationen-entwickeln
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: '"Programmieren in TypeScript: Skalierbare JavaScript-Applikationen entwickeln"
   von Boris Cherny, erschienen im dpunkt.verlag, ist ein umfassendes Werk, das sich
   an JavaScript-Entwickler richtet, die ihre Kenntnisse erweitern und robuste, skalierbare
   Anwendungen mit TypeScript erstellen möchten.'
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 cover: ./cover.jpg
 coverCredit: "Cover: O’Reilly / dpunkt.verlag"
 coverAlt: "Buchcover von „Programmieren in TypeScript“ von Boris Cherny, zwei gezeichnete Guanakos, auf hellem Grund"

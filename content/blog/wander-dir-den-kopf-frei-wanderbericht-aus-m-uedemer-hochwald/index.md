@@ -1,19 +1,10 @@
 ---
 title: 📸 + 🥾 | Wander dir den Kopf frei! Wanderbericht aus’m Uedemer Hochwald.
-title_plain: +  | Wander dir den Kopf frei! Wanderbericht aus’m Uedemer Hochwald.
 date: 2020-06-13T13:52:53+0000
 lastmod: 2024-11-17T15:06:44+0000
-slug: wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 9
 summary: "Ein Rundgang in Bildern durch den Uedemer Hochwald zwischen Uedem und Marienbaum, mit Tipps zu Parkplätzen und Orientierung und ein paar Bitten an Besucher."
-featured_image: ./dscf2292.jpg
 cover: ./dscf2292.jpg
 coverAlt: "Blick von oben auf die eigenen Füße in hellen Turnschuhen auf einem nassen, laubbedeckten Waldweg"
-seo:
-  image: ./dscf2292.jpg
 aliases: ["/posts/wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald/"]
 tags: ["Fotografie", "Natur"]
 ---

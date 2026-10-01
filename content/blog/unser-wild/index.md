@@ -1,22 +1,13 @@
 ---
 title: 📚 | Unser Wild
-title_plain: '| Unser Wild'
 date: 2025-01-10T12:10:12+0000
 lastmod: 2025-01-10T12:12:05+0000
-slug: unser-wild
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 2
 summary: „Wer dieses Buch gelesen und die Porträts unserer wilden Mitbewohner
   gesehen hat, wird schnell von der Erkenntnis heimgesucht, dass wir dem großen Schatz,
   den uns die Natur hier anvertraut hat, mit Rücksicht, Bewunderung und Respekt begegnen
   sollen.“
-featured_image: ./DSCF4594.jpeg
 cover: ./DSCF4594.jpeg
 coverAlt: "Das Buch „Unser Wild“ mit Hirschsilhouetten auf dem Umschlag, daneben weiße Hortensienblüten"
-seo:
-  image: ./DSCF4594.jpeg
 aliases: ["/posts/unser-wild/"]
 tags: ["Bücher", "Natur"]
 disclosure:

@@ -1,20 +1,11 @@
 ---
 title: 📚 | Freiheit & Verantwortung für intelligente Organisationen
-title_plain: '| Freiheit & Verantwortung für intelligente Organisationen'
 date: 2020-04-21T08:18:00+0000
 lastmod: 2024-11-17T16:54:13+0000
-slug: freiheit-verantwortung-fuer-intelligente-organisationen
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: Mark Lambertz schreibt in seinem Buch darüber, was es bedarf
   um Unternehmen, im Sinne von lebensfähigen Systeme, aufzustellen.
-featured_image: ./dscf2973.jpeg
 cover: ./dscf2973.jpeg
 coverAlt: "Das Buch „Freiheit & Verantwortung für intelligente Organisationen“ mit bunten Markierungsreitern, vor blauem Himmel über einer Siedlung in die Höhe gehalten"
-seo:
-  image: ./dscf2973.jpeg
 aliases: ["/posts/freiheit-verantwortung-fuer-intelligente-organisationen/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

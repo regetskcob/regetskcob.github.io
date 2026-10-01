@@ -64,8 +64,8 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   Wirkung: die ausgelieferten Bilder schrumpfen von rund 71 MB auf 15 MB.
 
 - **`layouts/partials/head/og-image.html`** — liefert das Vorschaubild fürs Teilen
-  als absolute URL, zugeschnitten auf 1200×630. Reihenfolge: das in `cover` bzw.
-  `featured_image` benannte Bild, sonst das erste Bild des Beitrags, sonst
+  als absolute URL, zugeschnitten auf 1200×630. Reihenfolge: das in `cover`
+  benannte Bild, sonst das erste Bild des Beitrags, sonst
   das unter `ogImage` in `hugo.toml` eingetragene Foto als seitenweiter Rückfall.
 
 - **`layouts/partials/seo/`** — Titel, Description und JSON-LD für Suchmaschinen
@@ -223,7 +223,6 @@ eigene Seite und taucht in RSS, Sitemap, Suche, Tags und Serienzählung nicht au
 Im Front Matter des Beitrags (Vorlage in den Entwürfen):
 
 ```yaml
-draft: false
 build:
   render: never   # keine Seite bauen
   list: never     # in keiner Liste führen
@@ -385,6 +384,9 @@ galleries:
 nennt die Stelle im Code, damit sich nachprüfen lässt, was ein Feld bewirkt. Felder,
 die nirgends stehen, tun nichts. Hugos eigene Felder (`title`, `date`, `slug`, `aliases`,
 `draft`, `tags`, `lastmod`, `build`) sind mit ihrer Bedeutung für diese Seite aufgeführt.
+Was Hugo oder die Vorlagen ohnehin als Standard annehmen, steht nicht im Front Matter:
+kein `draft: false`, kein `slug` (der Ordnername ist die URL), kein `readTime: true`,
+kein `autonumber: false`, kein `lastmod` gleich dem `date`.
 
 ### Beiträge (`content/blog/<ordner>/index.md`)
 
@@ -395,9 +397,7 @@ so viel wie das Beispiel; alles andere ist optional.
 ---
 title: "📚 | Die Vermessung der Berge"   # Emoji-Kategorie | Titel
 date: "2026-09-30T20:00:00+02:00"
-slug: "die-vermessung-der-berge"
 summary: "Ein bis zwei Sätze, die in Liste, Suche und Link-Vorschau stehen."
-draft: false
 cover: ./cover.jpg
 coverAlt: "Beschreibung des Covers für Screenreader"
 disclosure:                               # nur bei Rezensionen, siehe unten
@@ -414,17 +414,17 @@ tags: ["Bücher", "Natur"]
 | `seoTitle` | Überschreibt den Titel für `<title>` und Link-Vorschau. | `partials/seo/title.html` |
 | `date` | Veröffentlichungsdatum, wird angezeigt und sortiert. **Liegt es in der Zukunft, baut Hugo den Beitrag nicht.** | Hugo, `single.html` |
 | `lastmod` | Datum der letzten Überarbeitung, nur für RSS, Strukturdaten und Link-Vorschau, nicht sichtbar. | `rss.xml`, `seo/jsonld.html`, `opengraph.html` |
-| `slug` | Letzter Teil der URL: `/blog/<slug>/`. | Hugo |
+| `slug` | Nur nötig, wenn die URL vom Ordnernamen abweichen soll. Sonst ist der Ordnername der letzte Teil der URL: `/blog/<ordner>/`. | Hugo |
 | `aliases` | Alte URLs, die auf den Beitrag weiterleiten (`["/posts/…/"]`). | Hugo |
 | `summary` | Kurztext unter dem Titel, in der Blog-Liste, in den Suchergebnissen und als Meta-Description. | `single.html`, `seo/description.html` |
 | `tags` | Themen, z. B. `["Bücher", "Smarthome"]`. Bestimmen die Themen-Zeile im Blog und die Tag-Seiten. | Hugo, `section.html` |
-| `draft` | `true`: Der Beitrag wird nirgends gebaut oder angezeigt. | Hugo |
+| `draft` | `true`: Der Beitrag wird nirgends gebaut oder angezeigt. Ohne Angabe gilt `false`. | Hugo |
 
 **Titelbild**
 
 | Feld | Wirkung |
 | --- | --- |
-| `cover` | Bild im Beitragsordner (`./cover.jpg`). Steht oben im Beitrag, außer der Text enthält es selbst, ist Vorschaubild in den Listen und Link-Vorschau. Ohne `cover` gilt `featured_image` (aus dem Ghost-Export), sonst gibt es keins. |
+| `cover` | Bild im Beitragsordner (`./cover.jpg`). Steht oben im Beitrag, außer der Text enthält es selbst, ist Vorschaubild in den Listen und Link-Vorschau. Ohne `cover` gibt es kein Titelbild. |
 | `coverAlt` | Alt-Text des Covers, steht in den Suchergebnissen und im Beitrag. Pflicht, wenn es ein Cover gibt. |
 | `coverCredit` | Quelle bei einem fremden Cover, klein auf dem Bild, z. B. `"Cover: dpunkt.verlag"`. |
 | `coverAI` | `true` markiert ein KI-generiertes Cover mit „KI-generiert“ auf dem Bild. |
@@ -472,7 +472,6 @@ disclosure:
 Der Beitrag steht als Kasten im Blog, ohne eigene Seite (Details unter „Vorschau auf Beiträge in Arbeit“).
 
 ```yaml
-draft: false
 build:
   render: never
   list: never
@@ -485,15 +484,8 @@ Dazu der Ordnername in `content/blog/_index.md` unter `soon`. Zum Veröffentlich
 
 | Feld | Wirkung |
 | --- | --- |
-| `ogImage` | Pfad unter `assets/` für Seiten ohne Bildordner (die Über-mich-Seite nimmt das Porträt). Ohne Angabe: `cover`, `featured_image`, erstes Bild des Ordners, sonst das Bild aus `hugo.toml`. |
+| `ogImage` | Pfad unter `assets/` für Seiten ohne Bildordner (die Über-mich-Seite nimmt das Porträt). Ohne Angabe: `cover`, erstes Bild des Ordners, sonst das Bild aus `hugo.toml`. |
 | `ogImageAnchor` | Zuschnitt des Bildes (`Top`, `Center`, …), Standard `Top`. |
-
-**Reste aus dem Ghost-Export (ohne Wirkung)**
-
-`title_plain`, `type` (Hugos Layout-Typ, hier ohne Wirkung), `author`, `author_bio`,
-`reading_time` und `seo` (mit `image` usw.). Sie stehen noch in älteren Beiträgen,
-schaden nicht und müssen in neuen nicht gesetzt werden. `featured_image` wird nur als
-Ersatz für `cover` gelesen (siehe oben). Der Autor kommt aus `authorName` in `hugo.toml`.
 
 ### Seiten (`content/*.md`)
 

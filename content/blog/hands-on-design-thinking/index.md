@@ -1,23 +1,13 @@
 ---
 title: 📚 | Hands on Design Thinking
-title_plain: '| Hands on Design Thinking'
 date: 2020-06-13T15:13:42+0000
 lastmod: 2025-01-06T14:01:30+0000
-slug: hands-on-design-thinking
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 3
 summary: Das Buch „Hands on Design Thinking“ hat es sich zum Ziel gesetzt, Leser:innen
   - ohne viel "Schi-Schi" und umso mehr Bezug zur Praxis - an die Methode heran zu
   führen und im Verlauf des Buches darauf vorzubereiten, Design Thinking in der Praxis
   einzusetzen.
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./cover-hands-on-design-thinking.jpg
 cover: ./cover-hands-on-design-thinking.jpg
 coverAlt: "Schwarzweißbild: Das Buch „Hands on Design Thinking“ mit gezeichneten Karteikarten auf dem Umschlag, über einer Siedlung in die Höhe gehalten"
-seo:
-  image: ./cover-hands-on-design-thinking.jpg
 aliases: ["/posts/hands-on-design-thinking/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

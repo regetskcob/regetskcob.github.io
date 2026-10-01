@@ -30,7 +30,7 @@
        the deploy workflow), with their cover as the result thumbnail. */}}
 {{- $searchImage := "" }}
 {{- if $isPost }}
-  {{- with or .Params.cover .Params.featured_image }}
+  {{- with .Params.cover }}
     {{- with $.Resources.Get (strings.TrimPrefix "./" .) }}
       {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}
         {{- $searchImage = (.Fill "240x180 webp q75 smart").RelPermalink }}
@@ -58,7 +58,7 @@
                generated cover with a small label on the image, "coverCredit"
                names the source of a cover by someone else. */}}
         {{- if $isPost }}
-          {{- with or .Params.cover .Params.featured_image }}
+          {{- with .Params.cover }}
             {{- $name := strings.TrimPrefix "./" . }}
             {{- if not (strings.Contains $.RawContent $name) }}
               {{- with $.Resources.Get $name }}

@@ -14,7 +14,7 @@
   <ol class="series-parts">
   {{- range $part := .Pages.ByDate }}
     {{- $thumb := "" }}
-    {{- with or $part.Params.cover $part.Params.featured_image }}
+    {{- with $part.Params.cover }}
       {{- with $part.Resources.Get (strings.TrimPrefix "./" .) }}
         {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}{{ $thumb = . }}{{ end }}
       {{- end }}

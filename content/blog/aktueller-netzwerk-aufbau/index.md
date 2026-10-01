@@ -1,21 +1,11 @@
 ---
 title: 👨🏻‍💻 | Aktueller Netzwerk-Aufbau
-title_plain: ‍ | Aktueller Netzwerk-Aufbau
 date: 2024-11-23T20:05:49+0000
 lastmod: 2025-01-06T14:48:30+0000
-slug: aktueller-netzwerk-aufbau
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 3
 summary: Die Netzwerk-Struktur von eine modernen Neubau. Chaotisch, unter stetigem
   Wandel.
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./IMG_3831.jpeg
 cover: ./IMG_3831.jpeg
 coverAlt: "Geöffneter Netzwerkschrank mit Patchpanel, Switch und bunten Netzwerkkabeln, darunter Router, Steckdosenleisten und Netzteile"
-seo:
-  image: ./IMG_3831.jpeg
 aliases: ["/posts/aktueller-netzwerk-aufbau/"]
 tags: ["Smarthome"]
 ---

@@ -15,7 +15,7 @@
   {{- range . }}
   {{- $page := . }}
   {{- $thumb := "" }}
-  {{- with or $page.Params.cover $page.Params.featured_image }}
+  {{- with $page.Params.cover }}
     {{- with $page.Resources.Get (strings.TrimPrefix "./" .) }}
       {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}{{ $thumb = . }}{{ end }}
     {{- end }}

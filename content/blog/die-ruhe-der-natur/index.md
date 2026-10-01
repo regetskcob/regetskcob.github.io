@@ -1,19 +1,10 @@
 ---
 title: 🌳 | Die Ruhe der Natur
-title_plain: '| Die Ruhe der Natur'
 date: 2023-01-08T12:16:31+0000
 lastmod: 2024-11-17T15:03:03+0000
-slug: die-ruhe-der-natur
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: "Ein liegender Stamm im Uedemer Hochwald, auf dem ich gerne sitze, und der Blick nach oben in die Kronen, der zu jeder Jahreszeit anders aussieht."
-featured_image: ./img_4639.jpg
 cover: ./img_4639.jpg
 coverAlt: "Blick senkrecht nach oben in die Kronen hoher Buchen, das Laub leuchtet hellgrün gegen den Himmel"
-seo:
-  image: ./img_4639.jpg
 aliases: ["/posts/die-ruhe-der-natur/"]
 tags: ["Natur"]
 ---

@@ -1,13 +1,7 @@
 ---
 title: "📚 | Der große Gartenplaner"
-title_plain: "Der große Gartenplaner"
 date: "2023-06-12T00:40:04-07:00"
-slug: "der-grosse-gartenplaner"
 summary: "Längst nicht jeder Besitzer von Wohnung oder Haus besitzt auch einen grünen Daumen. Genau so wenig lässt sich dieser ‚mal eben so‘ antrainieren. Nein, für die Gartenarbeit braucht es Geschick, Leidenschaft, Kreativität und Geduld."
-draft: false
-readTime: true
-autonumber: false
-math: false
 cover: ./cover.jpg
 coverCredit: "Cover: Verlag Eugen Ulmer"
 coverAlt: "Buchcover von „Der große Gartenplaner“, herausgegeben von Peter Wirth, grün mit Gartenskizzen und zwei CDs, auf hellem Grund"

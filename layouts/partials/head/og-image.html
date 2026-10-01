@@ -8,8 +8,7 @@
   plainly — lands here.
 
   Order: "ogImage" from front matter (an assets path), the image named in front
-  matter (cover / featured_image, carried over from
-  the Ghost export), else the first image of the page bundle, else the site-wide
+  matter ("cover"), else the first image of the page bundle, else the site-wide
   fallback (ogImage in hugo.toml). All are cropped to 1200x630, the ratio
   Facebook, LinkedIn, Slack and WhatsApp expect.
 */}}
@@ -50,7 +49,7 @@
   {{- end -}}
 {{- end -}}{{- end -}}
 {{/* An explicit choice in front matter wins over bundle order. */}}
-{{- if not $og -}}{{- with or .Params.cover .Params.featured_image -}}
+{{- if not $og -}}{{- with .Params.cover -}}
   {{- $named := $.Resources.Get (strings.TrimPrefix "./" .) -}}
   {{- with $named -}}
     {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}

@@ -1,20 +1,10 @@
 ---
 title: 📚 | Basiswissen - Usability und User Experience
-title_plain: '| Basiswissen - Usability und User Experience'
 date: 2023-05-12T12:30:00+0000
 lastmod: 2025-01-06T13:36:12+0000
-slug: basiswissen-usability-und-user-experience
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: "Entlang des CPUX-F-Lehrplans aufgebaut, taugt das Buch zur Prüfungsvorbereitung und als Nachschlagewerk für alle, die nutzerfreundliche Produkte entwickeln."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./img_6233.jpg
 cover: ./img_6233.jpg
 coverAlt: "Das Buch „Basiswissen Usability und User Experience“ mit grünem Einband auf violettem Untergrund"
-seo:
-  image: ./img_6233.jpg
 aliases: ["/posts/basiswissen-usability-und-user-experience/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

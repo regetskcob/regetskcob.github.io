@@ -1,22 +1,12 @@
 ---
 title: 📚 | Raspberry Pi - Das umfassende Handbuch
-title_plain: '| Raspberry Pi - Das umfassende Handbuch'
 date: 2025-01-01T21:23:08+0000
 lastmod: 2025-01-06T14:08:50+0000
-slug: raspberry-pi-das-umfassende-handbuch
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 2
 summary: Das deutschsprachige Referenzwerk, aktualisiert in der 8. Auflage, für
   den Raspberry Pi 5. Mit dem Autorenteam aus Michael Kofler, Charly Kühnast und Christoph
   Scherbeck steht geballte Kompetenz hinter dem Buch.
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./IMG_4275.jpeg
 cover: ./IMG_4275.jpeg
 coverAlt: "Das Buch „Raspberry Pi“ von Kofler, Kühnast und Scherbeck auf einem Holztisch"
-seo:
-  image: ./IMG_4275.jpeg
 aliases: ["/posts/raspberry-pi-das-umfassende-handbuch/"]
 tags: ["Bücher", "Smarthome"]
 disclosure:

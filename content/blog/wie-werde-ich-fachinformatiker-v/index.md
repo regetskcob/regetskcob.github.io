@@ -1,15 +1,8 @@
 ---
 title: "👨‍🎓 | Die Abschlussprüfung als Fachinformatiker"
-title_plain: "Die Abschlussprüfung als Fachinformatiker"
 date: 2023-01-02T05:00:00+0000
 lastmod: 2026-09-29T14:00:00+0000
-slug: wie-werde-ich-fachinformatiker-v
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 5
 summary: "Im letzten Teil der Serie geht es um die Abschlussprüfung mit schriftlichem Teil, Projektdokumentation und Präsentation, und darum, wie ihr sie meistert."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein Prüfungsbogen mit Stift, eine gebundene Projektdokumentation und eine Präsentationstafel mit steigenden Balken, darunter eine Leiste mit fünf Stationen, die letzte hervorgehoben und mit Zielflagge"

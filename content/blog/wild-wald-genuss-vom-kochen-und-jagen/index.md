@@ -1,22 +1,13 @@
 ---
 title: 📚 | Wild, Wald, Genuss - Vom Kochen und Jagen
-title_plain: '| Wild, Wald, Genuss - Vom Kochen und Jagen'
 date: 2025-01-01T21:55:35+0000
 lastmod: 2025-01-06T14:03:55+0000
-slug: wild-wald-genuss-vom-kochen-und-jagen
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 3
 summary: Dieses Buch ist eine Hommage an den Wald und die Natur! Mitten in der
   wunderschönen Landschaft des Hunsrück hat Spitzenkoch und Jäger Harald Rüssel in
   Rezepten, Bildern und Texten festgehalten, was seine Küche so kostbar und authentisch
   macht.
-featured_image: ./IMG_4276.jpeg
 cover: ./IMG_4276.jpeg
 coverAlt: "Das Buch „Wild, Wald, Genuss“ von Harald Rüssel auf einem Holztisch"
-seo:
-  image: ./IMG_4276.jpeg
 aliases: ["/posts/wild-wald-genuss-vom-kochen-und-jagen/"]
 tags: ["Bücher", "Natur"]
 disclosure:

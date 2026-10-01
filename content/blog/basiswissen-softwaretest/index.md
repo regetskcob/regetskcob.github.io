@@ -1,20 +1,10 @@
 ---
 title: 📚 | Basiswissen - Softwaretest
-title_plain: '| Basiswissen - Softwaretest'
 date: 2023-06-16T14:30:00+0000
 lastmod: 2024-11-17T16:26:55+0000
-slug: basiswissen-softwaretest
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: "Eigentlich zur ISTQB-Schulung gelesen, hat sich das Buch auch für Entwickler und Produktverantwortliche gelohnt. Testarten, Abläufe und Prozesse im Überblick."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./img_6232.jpg
 cover: ./img_6232.jpg
 coverAlt: "Das Buch „Basiswissen Softwaretest“ mit rotem Einband auf einem Holztisch"
-seo:
-  image: ./img_6232.jpg
 aliases: ["/posts/basiswissen-softwaretest/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

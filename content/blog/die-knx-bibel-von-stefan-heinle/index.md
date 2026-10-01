@@ -1,20 +1,10 @@
 ---
 title: 📚 + ⚡️ | Die "KNX Bibel" von Stefan Heinle
-title_plain: + ️ | Die "KNX Bibel" von Stefan Heinle
 date: 2017-05-02T19:04:00+0000
 lastmod: 2024-12-29T18:57:03+0000
-slug: die-knx-bibel-von-stefan-heinle
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 5
 summary: Original-Rezension von 2017, ergänzt und aktualisiert im Dezember 2024.
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./IMG_4274.jpeg
 cover: ./IMG_4274.jpeg
 coverAlt: "Das Buch „Heimautomation mit KNX, DALI, 1-Wire und Co.“ von Stefan Heinle auf einem Holztisch"
-seo:
-  image: ./IMG_4274.jpeg
 aliases: ["/posts/die-knx-bibel-von-stefan-heinle/"]
 disclosure:
   type: provided

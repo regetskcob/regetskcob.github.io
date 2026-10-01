@@ -1,18 +1,9 @@
 ---
 title: 🌳 | Wie der Borkenkäfer die Bäume quält
-title_plain: '| Wie der Borkenkäfer die Bäume quält'
 date: 2020-04-15T07:00:00+0000
 lastmod: 2025-01-31T11:22:32+0000
-slug: wie-der-borkenkaefer-die-baeume-quaelt
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: "Auf den Poltern am Wegesrand sieht man gerade oft, was der Borkenkäfer anrichtet. Seine Larven fressen Gänge durch den Bast, bis der Baum verdurstet."
-featured_image: ./dscf2510.jpg
 cover: ./dscf2510.jpg
-seo:
-  image: ./dscf2510.jpg
 aliases: ["/posts/wie-der-borkenkaefer-die-baeume-quaelt/"]
 tags: ["Natur", "Fotografie"]
 ---

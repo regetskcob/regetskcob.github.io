@@ -1,19 +1,10 @@
 ---
 title: 📸 | Abendausklang mit Blick über den Niederrhein
-title_plain: '| Abendausklang mit Blick über den Niederrhein'
 date: "2020-04-11"
 lastmod: "2025-12-09"
-slug: abendausklang-mit-blick-ueber-den-niederrhein
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 3
 summary: "Vom Monreberg in Altkalkar reicht der Blick weit über den Niederrhein. Abendbilder aus dem Frühjahr 2020, als Home-Office und Abstand den Alltag bestimmten."
-featured_image: ./dscf2916.jpg
 cover: ./dscf2916.jpg
 coverAlt: "Dunstiger Abendhimmel über den Baumkronen am Niederrhein, am Horizont die Silhouette eines Kirchturms"
-seo:
-  image: ./dscf2916.jpg
 aliases: ["/posts/abendausklang-mit-blick-ueber-den-niederrhein/"]
 tags: ["Fotografie", "Natur"]
 ---

@@ -1,7 +1,7 @@
 {{/*
   Copy of themes/typo/layouts/partials/post-entry.html (theme v3.0.2) with a
   thumbnail column on the left for posts that name an image in front matter
-  (cover, or featured_image from the Ghost export). Posts without one get an
+  ("cover"). Posts without one get an
   empty slot of the same width, so the titles line up in every row. The
   theme's date column is left out: the date stands in the post itself, and
   in the list it took width from the titles.
@@ -13,7 +13,7 @@
   Diff against the theme file when updating typo.
 */}}
 {{- $thumb := "" -}}
-{{- with or .Params.cover .Params.featured_image -}}
+{{- with .Params.cover -}}
   {{- with $.Resources.Get (strings.TrimPrefix "./" .) -}}
     {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}
       {{- $thumb = . -}}

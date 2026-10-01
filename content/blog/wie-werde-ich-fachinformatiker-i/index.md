@@ -1,15 +1,8 @@
 ---
 title: "👨‍🎓 | Die Ausbildung zum Fachinformatiker im Überblick"
-title_plain: "Die Ausbildung zum Fachinformatiker im Überblick"
 date: 2022-12-05T07:00:00+0000
 lastmod: 2026-09-29T14:00:00+0000
-slug: wie-werde-ich-fachinformatiker-i
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 3
 summary: "Zum Auftakt ein Überblick über die Ausbildung zum Fachinformatiker: was ihr im Betrieb lernt, wie die Berufsschule läuft und welche Richtungen es gibt."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Von einem Startpunkt aus kreuzen sich zwei Wege mehrmals und führen zu einem Laptop mit Code-Klammern für den Betrieb und zu einem Schulgebäude mit Säulen und Uhr für die Berufsschule, darunter eine Leiste mit fünf Stationen, die erste hervorgehoben"

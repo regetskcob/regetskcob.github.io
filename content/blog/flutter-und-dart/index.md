@@ -1,20 +1,10 @@
 ---
 title: 📚 | Flutter und Dart
-title_plain: '| Flutter und Dart'
 date: 2023-02-06T13:00:00+0000
 lastmod: 2025-01-06T13:37:35+0000
-slug: flutter-und-dart
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 2
 summary: "Lange war native Entwicklung für mich der einzig vernünftige Weg. Warum mich Flutter trotzdem überzeugt hat und was das Buch von Marc Marburger dazu beiträgt."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./img_5223.jpg
 cover: ./img_5223.jpg
 coverAlt: "Das Buch „Flutter und Dart“ von Marc Marburger auf grauem Steinboden"
-seo:
-  image: ./img_5223.jpg
 aliases: ["/posts/flutter-und-dart/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

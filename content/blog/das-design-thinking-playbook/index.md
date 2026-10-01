@@ -1,21 +1,11 @@
 ---
 title: 📚 | Das Design Thinking Playbook
-title_plain: '| Das Design Thinking Playbook'
 date: 2019-09-10T19:34:00+0000
 lastmod: 2024-11-17T15:09:10+0000
-slug: das-design-thinking-playbook
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 1
 summary: "Auf rund 300 Seiten führen Lewrick, Link und Leifer durch die traditionellen, aktuellen und zukünftigen Erfolgsfaktoren des Design Thinking."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./cover.jpg
 cover: ./cover.jpg
 coverCredit: "Cover: Vahlen"
 coverAlt: "Buchcover des „Design Thinking Playbook“ im Querformat mit handgezeichneten Figuren, die auf Bauklötzen balancieren, auf hellem Grund"
-seo:
-  image: ./cover.jpg
 aliases: ["/posts/das-design-thinking-playbook/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

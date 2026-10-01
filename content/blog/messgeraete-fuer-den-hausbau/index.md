@@ -1,20 +1,10 @@
 ---
 title: ⚡️ | Messgeräte für den Hausbau
-title_plain: ️ | Messgeräte für den Hausbau
 date: 2022-12-24T09:00:00+0000
 lastmod: 2024-11-17T15:03:54+0000
-slug: messgeraete-fuer-den-hausbau
-draft: false
-type: post
-author: Daniel Bocksteger
-reading_time: 3
 summary: "Duspol, Multimeter und Leitungssucher haben mich durch die gesamte Elektro-Installation unseres Hauses begleitet. Hier stelle ich die drei Messgeräte vor."
-author_bio: Daniel Bocksteger, Softwareentwickler vom Niederrhein und draußen gerne mit der Kamera unterwegs.
-featured_image: ./img_3134.jpg
 cover: ./img_3134.jpg
 coverAlt: "Ein Spannungsprüfer mit leuchtenden Anzeigen an einer Klemme im Verteilerkasten, dahinter KNX-Aktoren"
-seo:
-  image: ./img_3134.jpg
 aliases: ["/posts/messgeraete-fuer-den-hausbau/"]
 tags: ["Smarthome"]
 ---
