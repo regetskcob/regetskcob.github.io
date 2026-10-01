@@ -42,7 +42,7 @@
        (partials/post-entry.html), above the line about the posts in the works.
        Posts held back with build.list "never" are not in RegularPages, so a
        preview cannot show up here. */}}
-{{- range first 1 (site.GetPage "/blog").RegularPages.ByPublishDate.Reverse }}
+{{- range first 1 (where (site.GetPage "/blog").RegularPages "Draft" false).ByPublishDate.Reverse }}
 <div class="latest-home">
   <h3 class="latest-heading">Zuletzt erschienen</h3>
   {{ partial "post-entry.html" . }}

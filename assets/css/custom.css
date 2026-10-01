@@ -424,6 +424,26 @@ a.series-label:hover {
   white-space: nowrap;
 }
 
+/* "Entwurf" (same partial): a draft, only ever seen in the local preview.
+   Dashed like the previews of posts in the works. */
+.draft-label {
+  display: inline-block;
+  margin: 0.3rem 0.4rem 0 0;
+  padding: 0.1rem 0.45rem;
+  border: 1px dashed var(--content-secondary);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--content-primary);
+  white-space: nowrap;
+}
+
+.single-date .draft-label {
+  margin: 0;
+  vertical-align: 0.05em;
+}
+
 /* In the post header, inline between the date and the reading time. */
 .single-date .updated-label {
   margin: 0;

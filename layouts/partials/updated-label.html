@@ -13,7 +13,14 @@
   history is not used on purpose: a commit that only tidies the front matter
   would otherwise mark every post. The label is as current as the last build,
   the site is only rebuilt on a push.
+
+  The same place carries the label "Entwurf" for a draft. Drafts are only
+  built in the local preview (hugo server -D, see .claude/launch.json); the
+  live build never has one, so the label cannot show up on the site.
 */}}
+{{- if .Draft }}
+<span class="draft-label">Entwurf</span>
+{{- end }}
 {{- $limit := now.AddDate 0 0 -28 -}}
 {{- /* Only posts have an age that counts. A page like the gear page has no
        date of its own: Hugo takes its lastmod as the date, so there only the
