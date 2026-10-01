@@ -785,7 +785,8 @@ a.series-label:hover {
    the window edge; --fade-solid is how far the bar is solid (its height for
    the top and bottom bar, its width for the shooting data on the left). */
 .lightbox-bar,
-.lightbox-exif {
+.lightbox-exif,
+.page-cover-bar {
   --lightbox-fadeout:
     var(--lightbox-bar) var(--fade-solid),
     rgb(0 0 0 / calc(var(--lightbox-alpha) * 0.995)) calc(var(--fade-solid) + var(--lightbox-fade) * 0.083),
@@ -1296,17 +1297,88 @@ figure a[data-lightbox] {
   min-width: 12rem;
 }
 
-/* --- Gear page header photo --- */
+/* --- Page cover (partials/page-cover.html): gear and recipes pages ---
+   The photo with the headline on a bar across its lower edge, the bars of
+   the lightbox again (slightly see-through, fading out upwards). The bar lets
+   clicks through to the photo's link. */
 
-.gear-photo {
+.page-cover {
+  position: relative;
   margin: 0 0 1.5rem;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.gear-photo img {
+.page-cover-photo {
+  margin: 0;
+}
+
+.page-cover-photo img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 6px;
+}
+
+/* The bar: the title and, when there is one, the line below it. */
+.page-cover-bar {
+  --lightbox-alpha: 0.65;
+  --lightbox-bar: rgb(0 0 0 / var(--lightbox-alpha));
+  --lightbox-fade: 2.6rem;
+  /* The solid part is as high as the text with its padding, so the fade ends
+     exactly at the top of the bar and shows no edge there. */
+  --fade-solid: 3.7rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: var(--lightbox-fade) 1.6rem 1.3rem;
+  background: linear-gradient(to top, var(--lightbox-fadeout));
+  color: #fff;
+  pointer-events: none;
+}
+
+.page-cover-bar.has-meta {
+  --fade-solid: 5.8rem;
+}
+
+.page-cover-title {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* "kürzlich aktualisiert" and the reading time under the title of a page;
+   on the photo in a light tone. */
+.page-meta {
+  margin: 0.65rem 0 0;
+  font-size: 0.85rem;
+  color: var(--content-secondary);
+}
+
+.page-cover-bar .page-meta {
+  color: rgb(255 255 255 / 0.85);
+}
+
+.page-meta .updated-label {
+  margin: 0;
+  vertical-align: 0.05em;
+}
+
+@media (max-width: 640px) {
+  .page-cover-bar {
+    --lightbox-fade: 2rem;
+    --fade-solid: 3rem;
+    padding-inline: 1.2rem;
+    padding-bottom: 1.1rem;
+  }
+
+  .page-cover-bar.has-meta {
+    --fade-solid: 5rem;
+  }
+
+  .page-cover-title {
+    font-size: 1.6rem;
+  }
 }
 
 /* Photo inside a gear block, set quieter than the header photo: it

@@ -5,8 +5,8 @@ layout: gear
 # The page lived at /gear/ before; keep shared links working.
 aliases: ["/gear/"]
 
-# Header photo from assets/gear/. Without "photo" the page renders without one.
-photo: "setup.jpg"
+# Cover photo, a path under assets/, with the title on it. Without "photo" the page shows its plain title.
+photo: "gear/setup.jpg"
 photo_alt: "Die Fotoausrüstung auf einer Eichenplatte: zwei Fujifilm-Bodys mit Objektiven, eine DJI-Drohne, Osmo Pocket, Mikrofon, MacBook und eine Leica Sofort 2"
 ---
 

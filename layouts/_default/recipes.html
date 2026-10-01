@@ -1,7 +1,8 @@
 {{/*
   The JPEG recipes of the C slots, fed by data/recipes.yaml.
 
-  Page layout: text from content/rezepte.md, then the basics (autofocus, auto
+  Page layout: an optional cover photo with the title on it (photo, photo_alt in
+  front matter), text from content/rezepte.md, then the basics (autofocus, auto
   ISO banks, settings that stay put), then one card per recipe. Whatever
   applies to all three recipes sits at the top and is not repeated in the
   recipe tables.
@@ -16,7 +17,10 @@
 {{- $bodies := site.Data.recipes.bodies }}
 
 <article class="recipes">
-  <h1>{{ .Title }}</h1>
+  {{/* Optional page cover, as on the gear page: "photo" and "photo_alt" in
+       front matter (partials/page-cover.html). Without a photo, the plain
+       headline. */}}
+  {{ partial "page-cover.html" (dict "page" . "lightbox" true) }}
 
   <div class="recipes-intro">
     {{ .Content }}

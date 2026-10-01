@@ -5,6 +5,9 @@
   day the site is built: a post that is new anyway needs no label, and one
   that was changed long ago does not either.
 
+  A page outside the blog (the gear and recipes pages) shows the label on the
+  strength of its "lastmod" alone.
+
   "Changed" is the post's "lastmod" in front matter, set by hand when the text
   was revised; without it Hugo takes the date, so nothing shows. The git
   history is not used on purpose: a commit that only tidies the front matter
@@ -12,6 +15,10 @@
   the site is only rebuilt on a push.
 */}}
 {{- $limit := now.AddDate 0 0 -28 -}}
-{{- if and (.Date.Before $limit) (not (.Lastmod.Before $limit)) }}
+{{- /* Only posts have an age that counts. A page like the gear page has no
+       date of its own: Hugo takes its lastmod as the date, so there only the
+       lastmod counts. */ -}}
+{{- $old := or (ne .Section "blog") (.Date.Before $limit) -}}
+{{- if and $old (not (.Lastmod.Before $limit)) }}
 <span class="updated-label" title="Aktualisiert am {{ .Lastmod | time.Format ":date_long" }}">kürzlich aktualisiert</span>
 {{- end }}

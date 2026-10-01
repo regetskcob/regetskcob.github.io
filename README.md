@@ -524,8 +524,28 @@ Zusätzlich je nach Layout:
 | Layout | Felder |
 | --- | --- |
 | `series` | `teaser` (Text auf der Startseite), `shuffle: true` (zufällige Reihenfolge), `photos:` (Liste mit `image`, `alt`, optional `size: large`) |
-| `gear` | `photo` und `photo_alt` (Kopfbild unter `assets/gear/`, steht über der Überschrift und öffnet sich per Klick in der Lightbox), Daten in `data/gear.yaml` |
-| `recipes` | Daten in `data/recipes.yaml` |
+| `gear` | Daten in `data/gear.yaml`; Titelbild optional (siehe unten) |
+| `recipes` | Daten in `data/recipes.yaml`; Titelbild optional (siehe unten) |
+
+**Titelbild einer Seite (`gear`, `recipes`)**
+
+Beide Seiten können ein Titelbild bekommen, mit dem Seitentitel auf einem leicht
+durchscheinenden Balken am unteren Bildrand (derselbe Balken wie in der Lightbox, mit
+weichem Verlauf). Ein Klick öffnet das Bild in der Lightbox. Ohne `photo` steht die
+Seite wie bisher mit der normalen Überschrift da (`partials/page-cover.html`).
+
+```yaml
+photo: "gear/setup.jpg"   # Pfad unter assets/
+photo_alt: "Die Fotoausrüstung auf einer Eichenplatte: …"   # auch die Bildunterschrift in der Lightbox
+```
+
+Unter dem Titel steht bei Bedarf eine Zeile (auf dem Cover im Balken, ohne Cover unter der
+Überschrift), `partials/page-meta.html`:
+
+| Feld | Wirkung |
+| --- | --- |
+| `lastmod` | Von Hand gesetztes Datum der letzten Überarbeitung. Liegt es in den letzten vier Wochen, steht dort „kürzlich aktualisiert“. Seiten außerhalb des Blogs haben kein Alter, hier zählt nur das `lastmod`. |
+| `readTime` | `true` zeigt die Lesezeit. Standardmäßig aus: sie zählt nur den Markdown-Text der Seite, nicht, was die Vorlage aus den Datendateien ergänzt, und wäre auf der Ausrüstungs- und der Rezepte-Seite viel zu niedrig. |
 
 ### Serienseiten (`content/series/<name>/_index.md`)
 

@@ -2,7 +2,8 @@
   The photographic gear page, fed by data/gear.yaml.
 
   An optional header photo from front matter (photo, photo_alt) opens the page,
-  above the headline and clickable (lightbox), then the page
+  clickable (lightbox), with the headline on a bar across its lower edge
+  (partials/page-cover.html), then the page
   text from content/ausruestung.md, then the blocks of the data file in their
   order. An entry without "note" renders its name only, so self-explanatory
   items do not need invented filler sentences. A block itself is rendered by
@@ -11,22 +12,11 @@
 {{ define "main" }}
 
 <article class="gear">
-  {{/* Header photo from assets/gear/, above the headline. Above the fold, so it
-       loads eagerly. A click opens it in the lightbox, on its own: it is
-       not paged together with the photos further down. */}}
-  {{- $hasPhoto := false }}
-  {{- with .Params.photo }}
-    {{- with resources.Get (printf "gear/%s" .) }}
-      {{- $hasPhoto = true }}
-  <figure class="gear-photo" data-lightbox-title="{{ $.Title }}">
-    <a href="{{ (.Fit "2000x2000 webp q85").RelPermalink }}" data-lightbox>
-      {{ partial "responsive-img.html" (dict "img" . "alt" $.Params.photo_alt "loading" "eager" "page" $) }}
-    </a>
-  </figure>
-    {{- end }}
-  {{- end }}
-
-  <h1>{{ .Title }}</h1>
+  {{/* The page cover: header photo with the headline on a bar, clickable
+       (partials/page-cover.html). Without a photo, the plain headline. The
+       photo grid below brings the lightbox along, so the cover only does
+       when there is no grid. */}}
+  {{ partial "page-cover.html" (dict "page" . "lightbox" (not site.Data.gear.inUse)) }}
 
   <div class="gear-intro">
     {{ .Content }}
@@ -67,12 +57,6 @@
     {{ partial "photo-grid-script.html" $ }}
     {{- end }}
   {{- end }}
-  {{- /* The photo grid script brings the lightbox along; without a grid the
-         header photo needs it on its own. */}}
-  {{- if and $hasPhoto (not (site.Data.gear.inUse)) }}
-    {{ partial "lightbox.html" . }}
-  {{- end }}
-
 </article>
 
 {{ end }}

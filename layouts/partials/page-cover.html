@@ -1,0 +1,45 @@
+{{/*
+  The page cover of a page that has a photo of its own: the photo with the
+  page title (the h1) on a bar across its lower edge, like the bars of the
+  lightbox: slightly see-through, fading out upwards. A click opens the photo
+  in the lightbox, on its own, not paged with other photos; the title lets
+  the click through. Used by the gear page and the recipes page. Takes a dict:
+    page      the page
+    lightbox  true to bring the lightbox along, false where the page loads it
+              anyway (the gear page, through its photo grid)
+  The page names its photo in front matter:
+    photo: "gear/setup.jpg"   # a path under assets/
+    photo_alt: "…"            # alt text, also the lightbox caption
+
+  Under the title stands the line of partials/page-meta.html (the label
+  "kürzlich aktualisiert", the reading time) when it applies.
+  Without "photo", or if the file is missing, the page shows its plain h1 with
+  that line below it, so a page works with or without a cover. The photo is above the fold and
+  loads eagerly.
+*/}}
+{{- $page := .page }}
+{{- $shown := false }}
+{{- with $page.Params.photo }}
+  {{- with resources.Get . }}
+    {{- $shown = true }}
+<div class="page-cover">
+  <figure class="page-cover-photo" data-lightbox-title="{{ $page.Title }}">
+    <a href="{{ (.Fit "2000x2000 webp q85").RelPermalink }}" data-lightbox>
+      {{ partial "responsive-img.html" (dict "img" . "alt" $page.Params.photo_alt "loading" "eager" "page" $page) }}
+    </a>
+  </figure>
+  {{- $meta := partial "page-meta.html" $page | strings.TrimSpace | safeHTML }}
+  <div class="page-cover-bar{{ if $meta }} has-meta{{ end }}">
+    <h1 class="page-cover-title">{{ $page.Title }}</h1>
+    {{ $meta }}
+  </div>
+</div>
+{{- if $.lightbox }}
+{{ partial "lightbox.html" $page }}
+{{- end }}
+  {{- end }}
+{{- end }}
+{{- if not $shown }}
+<h1>{{ $page.Title }}</h1>
+{{ partial "page-meta.html" $page }}
+{{- end }}

@@ -1,0 +1,22 @@
+{{/*
+  The line under the title of a page with a cover (partials/page-cover.html):
+  the label "kürzlich aktualisiert" when the page's "lastmod" lies within the
+  last four weeks (partials/updated-label.html), and the reading time when the
+  page asks for it with "readTime: true". Renders nothing when neither
+  applies. Takes the page.
+
+  Pages have no date of their own that is shown, so the label rests on a
+  "lastmod" set by hand in front matter. The reading time counts only the
+  text in the page's Markdown, not what the layout adds from the data files,
+  so it stays off by default: on the gear and recipes pages it would be far
+  too low.
+*/}}
+{{- $label := partial "updated-label.html" . | strings.TrimSpace | safeHTML }}
+{{- $time := .Params.readTime }}
+{{- if or $label $time }}
+<p class="page-meta">
+  {{- $label }}
+  {{- if and $label $time }}&nbsp; · &nbsp;{{ end }}
+  {{- if $time }}{{ .ReadingTime }} Min. Lesezeit{{ end -}}
+</p>
+{{- end }}
