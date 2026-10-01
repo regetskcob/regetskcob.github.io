@@ -4,8 +4,8 @@
    the label "kürzlich aktualisiert". Light and dark via light-dark(), like the
    theme's own colours. */
 :root {
-  --note-green-bg: light-dark(rgb(232, 243, 232), rgb(34, 48, 38));
-  --note-green-border: light-dark(rgb(190, 217, 192), rgb(58, 82, 64));
+  --note-green-bg: light-dark(rgb(232, 243, 232), rgb(31, 64, 42));
+  --note-green-border: light-dark(rgb(190, 217, 192), rgb(62, 110, 78));
 }
 
 /* The theme's grey for secondary text (summary, date, tags, notes) is
