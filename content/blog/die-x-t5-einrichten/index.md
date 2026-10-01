@@ -140,9 +140,10 @@ Unter einem Festzelt habe ich noch etwas gelernt: Weiße PVC-Planen ziehen das L
 
 Die Trauung war dann die Generalprobe. Am Abend davor habe ich mir zwei Stunden genommen, um jemanden zu fotografieren, der sich bewegt, und dabei Augen-AF, Fokushebel und den Wechsel zwischen C1 und C3 geübt, statt noch einmal Menüs zu lesen. Am Abend danach habe ich mir zwei Sätze dazu notiert, was mir an Einstellungen gefehlt hat, und das am Samstag korrigiert, bevor es am Sonntag ins Zelt ging.
 
+{{< bilder >}}
 ![Frisch bestellter Acker im Abendlicht, vorne unscharfes Laub, am Horizont eine Baumreihe unter Wolken](gallery/niederrhein/xt5-20260920-175622.jpg)
-
 ![Die Fujifilm X-T5 mit dem XF 56mm und rotem Softauslöser in der Hand, dahinter ein frisch bearbeiteter Acker und Wolken im Abendlicht](./x-t5-am-acker.jpg)
+{{< /bilder >}}
 
 Nach dem Handwerkertag bin ich abends mit dem 56er noch eine ruhige Runde über die Felder gegangen. Keine Menschen, kein Weißabgleich, nur C1 und die Frage, ob die neue Kamera die Gegend so sieht wie die alte. Tut sie, mit etwas mehr Luft in den Schatten.
 

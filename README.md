@@ -255,6 +255,19 @@ photos:
     alt: "…"
 ```
 
+### Zwei Bilder nebeneinander
+
+Zwei zusammengehörige Bilder in einem Beitrag stehen mit dem Shortcode `bilder` in zwei Spalten
+(auf dem Handy untereinander). Die Bilder laufen durch denselben Render-Hook wie alle anderen,
+behalten ihren Alt-Text und öffnen die Lightbox:
+
+```markdown
+{{< bilder >}}
+![Alt-Text links](./links.jpg)
+![Alt-Text rechts](./rechts.jpg)
+{{< /bilder >}}
+```
+
 ### Vorschau auf Beiträge in Arbeit
 
 Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter

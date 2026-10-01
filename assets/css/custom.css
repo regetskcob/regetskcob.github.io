@@ -1297,6 +1297,33 @@ figure a[data-lightbox] {
   min-width: 12rem;
 }
 
+/* --- Two images side by side (shortcode "bilder") ---
+   A row of two columns inside a post's text. The figures lose the margins the
+   theme gives them, the empty paragraphs the renderer leaves between them
+   would become cells of their own. On a phone the images stack. */
+
+.image-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin: 1.5rem 0;
+}
+
+.image-row figure {
+  margin: 0;
+}
+
+.image-row > p:empty {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .image-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --- Page cover (partials/page-cover.html): gear and recipes pages ---
    The photo with the headline on a bar across its lower edge, the bars of
    the lightbox again (slightly see-through, fading out upwards). The bar lets

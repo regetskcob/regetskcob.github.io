@@ -1,0 +1,15 @@
+{{- /*
+  Images side by side in two columns, for two images that belong together.
+  Used in a post as
+    {{< bilder >}}
+    ![Alt text](./one.jpg)
+    ![Alt text](./two.jpg)
+    {{< /bilder >}}
+  The images go through the same render hook as any other (WebP variants, link
+  to the lightbox) and stay in the lightbox's row of the post. On a phone they
+  stack. The hook's "sizes" still say one full column, so a browser may load
+  the next larger variant than the half width needs.
+*/ -}}
+<div class="image-row">
+{{- .Inner | .Page.RenderString (dict "display" "inline") -}}
+</div>
