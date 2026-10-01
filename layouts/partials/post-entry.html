@@ -11,6 +11,11 @@
   The thumbnail repeats the title link, so it is hidden from screen readers
   and skipped by the keyboard; alt stays empty for the same reason.
   Diff against the theme file when updating typo.
+
+  The thumbnail is cut from the centre, not with Hugo's "smart" crop: the
+  covers are 2:1 with the subject in the middle, and the smart crop picked a
+  window of its own for every image, so a book sat left in one thumbnail, centred
+  in the next and cut off in a third.
 */}}
 {{- $thumb := "" -}}
 {{- with .Params.cover -}}
@@ -24,8 +29,8 @@
 <div class="post-line{{ with $thumb }} has-thumb{{ end }}">
 
     {{- with $thumb }}
-    {{- $s := .Fill "120x90 webp q75 smart" }}
-    {{- $l := .Fill "240x180 webp q75 smart" }}
+    {{- $s := .Fill "120x90 webp q75 Center" }}
+    {{- $l := .Fill "240x180 webp q75 Center" }}
     <a class="line-thumb" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
         <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 120w, {{ $l.RelPermalink }} 240w"
              sizes="(max-width: 640px) 80px, 120px" width="120" height="90"

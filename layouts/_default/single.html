@@ -35,7 +35,7 @@
   {{- with .Params.cover }}
     {{- with $.Resources.Get (strings.TrimPrefix "./" .) }}
       {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}
-        {{- $searchImage = (.Fill "240x180 webp q75 smart").RelPermalink }}
+        {{- $searchImage = (.Fill "240x180 webp q75 Center").RelPermalink }}
       {{- end }}
     {{- end }}
   {{- end }}

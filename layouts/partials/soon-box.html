@@ -24,8 +24,8 @@
   {{- with $page.Params.soon }}{{ if eq (printf "%T" .) "string" }}{{ $when = . }}{{ end }}{{ end }}
   <div class="post-line soon-line{{ with $thumb }} has-thumb{{ end }}">
     {{- with $thumb }}
-    {{- $s := .Fill "120x90 webp q75 smart" }}
-    {{- $l := .Fill "240x180 webp q75 smart" }}
+    {{- $s := .Fill "120x90 webp q75 Center" }}
+    {{- $l := .Fill "240x180 webp q75 Center" }}
     <span class="line-thumb" aria-hidden="true">
       <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 120w, {{ $l.RelPermalink }} 240w"
            sizes="(max-width: 640px) 80px, 120px" width="120" height="90"
