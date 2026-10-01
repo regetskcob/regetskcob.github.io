@@ -1,5 +1,13 @@
 /* Overrides the theme's empty custom.css. Loaded after the theme's own styles. */
 
+/* The pale green of notes about a post: the transparency box under a review and
+   the label "kürzlich aktualisiert". Light and dark via light-dark(), like the
+   theme's own colours. */
+:root {
+  --note-green-bg: light-dark(rgb(232, 243, 232), rgb(34, 48, 38));
+  --note-green-border: light-dark(rgb(190, 217, 192), rgb(58, 82, 64));
+}
+
 /* The theme's grey for secondary text (summary, date, tags, notes) is
    #757575, 4.38:1 on the grey cards in light mode, just short of the 4.5:1
    that WCAG AA asks for. A little darker clears it, on the cards and on the
@@ -400,30 +408,20 @@ a.series-label:hover {
 }
 
 /* "kürzlich aktualisiert" (partials/updated-label.html): the series label's
-   shape, a filled dot in front instead of a frame colour of its own, so it
-   reads as a note and not as a second kind of series. */
+   shape in the pale green of the transparency box, so a note about the
+   post's state reads differently from the series label. */
 .updated-label {
   display: inline-block;
   margin: 0.3rem 0 0 0;
   padding: 0.1rem 0.45rem;
-  border: 1px solid var(--content-secondary);
+  background: var(--note-green-bg);
+  border: 1px solid var(--note-green-border);
   border-radius: 3px;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   line-height: 1.4;
-  color: var(--content-secondary);
+  color: var(--content-primary);
   white-space: nowrap;
-}
-
-.updated-label::before {
-  content: "";
-  display: inline-block;
-  width: 0.4em;
-  height: 0.4em;
-  margin-right: 0.4em;
-  border-radius: 50%;
-  background: currentColor;
-  vertical-align: 0.1em;
 }
 
 .line-text .series-label + .updated-label {
@@ -1228,11 +1226,9 @@ figure a[data-lightbox] {
    it reads as the same note everywhere without shouting. Light and dark via
    light-dark(), like the theme's own colours. */
 .disclosure {
-  --disclosure-bg: light-dark(rgb(232, 243, 232), rgb(34, 48, 38));
-  --disclosure-border: light-dark(rgb(190, 217, 192), rgb(58, 82, 64));
   margin-top: 2.5rem;
-  background: var(--disclosure-bg);
-  border: 1px solid var(--disclosure-border);
+  background: var(--note-green-bg);
+  border: 1px solid var(--note-green-border);
   padding: 0.8rem 1rem;
   border-radius: 6px;
   font-size: 0.95em;
