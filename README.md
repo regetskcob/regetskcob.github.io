@@ -568,13 +568,13 @@ Zusätzlich je nach Layout:
 
 | Layout | Felder |
 | --- | --- |
-| `series` | `teaser` (Text auf der Startseite), `shuffle: true` (zufällige Reihenfolge), `photos:` (Liste mit `image`, `alt`, optional `size: large`) |
+| `series` | `teaser` (Text auf der Startseite), `shuffle: true` (zufällige Reihenfolge), `photos:` (Liste mit `image`, `alt`, optional `size: large`); Titelbild optional (siehe unten) |
 | `gear` | Daten in `data/gear.yaml`; Titelbild optional (siehe unten) |
 | `recipes` | Daten in `data/recipes.yaml`; Titelbild optional (siehe unten) |
 
-**Titelbild einer Seite (`gear`, `recipes`)**
+**Titelbild einer Seite (`series`, `gear`, `recipes`)**
 
-Beide Seiten können ein Titelbild bekommen, mit dem Seitentitel auf einem leicht
+Die drei Layouts können ein Titelbild bekommen, mit dem Seitentitel auf einem leicht
 durchscheinenden Balken am unteren Bildrand (derselbe Balken wie in der Lightbox, mit
 weichem Verlauf). Ein Klick öffnet das Bild in der Lightbox. Ohne `photo` steht die
 Seite wie bisher mit der normalen Überschrift da (`partials/page-cover.html`).

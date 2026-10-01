@@ -1,6 +1,7 @@
 {{/*
-  A photo series: an introductory text followed by the photos in the shared
-  photo grid (partials/photo-grid.html), with lightbox.
+  A photo series: an optional cover photo with the title on it, an introductory
+  text, then the photos in the shared photo grid (partials/photo-grid.html),
+  with lightbox.
 
   With `shuffle: true` in front matter the order is randomised on every visit.
   Without JavaScript the front matter order applies, and every tile links to a
@@ -9,7 +10,10 @@
 {{ define "main" }}
 
 <article class="series">
-  <h1>{{ .Title }}</h1>
+  {{/* Optional page cover with the title on a bar ("photo", "photo_alt" in
+       front matter, partials/page-cover.html); without a photo the plain
+       headline. The photo grid below brings the lightbox along. */}}
+  {{ partial "page-cover.html" (dict "page" . "lightbox" (not .Params.photos)) }}
 
   <div class="series-intro">
     {{ .Content }}

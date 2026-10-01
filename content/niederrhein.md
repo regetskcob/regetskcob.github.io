@@ -2,6 +2,9 @@
 title: "Niederrhein."
 description: "Eine Langzeitserie über die Gegend, in der ich wohne."
 layout: series
+# Cover: a photo of the series with the title on a bar (a path under assets/).
+photo: "gallery/niederrhein/dscf2916.jpg"
+photo_alt: "Baumkronen im frischen Frühlingsgrün, dahinter ein Kirchturm im Dunst unter rosa Himmel"
 teaser: "Eine Langzeitserie über die Gegend, in der ich wohne. Immer wieder dieselben Wege, zu verschiedenen Tages- und Jahreszeiten."
 
 # Shuffled on every visit, here and in the home page teaser, which picks a
