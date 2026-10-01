@@ -14,12 +14,26 @@
   would otherwise mark every post. The label is as current as the last build,
   the site is only rebuilt on a push.
 
-  The same place carries the label "Entwurf" for a draft. Drafts are only
+  The same place carries the label "kürzlich neu erschienen" (see below) and
+  the label "Entwurf" for a draft. Drafts are only
   built in the local preview (hugo server -D, see .claude/launch.json); the
   live build never has one, so the label cannot show up on the site.
 */}}
 {{- if .Draft }}
 <span class="draft-label">Entwurf</span>
+{{- end }}
+{{- /* "kürzlich neu erschienen": a post published within the last 14 days
+       that is also among the five newest, so a burst of posts does not
+       mark half of the list. Never together with "kürzlich aktualisiert":
+       a post that new is not "updated" (see below). Drafts and pages
+       outside the blog have none. */ -}}
+{{- if and (eq .Section "blog") (not .Draft) (not (.Date.Before (now.AddDate 0 0 -14))) }}
+  {{- $self := . }}
+  {{- range first 5 (where (site.GetPage "/blog").RegularPages "Draft" false).ByPublishDate.Reverse }}
+    {{- if eq .RelPermalink $self.RelPermalink }}
+<span class="new-label" title="Erschienen am {{ .Date | time.Format ":date_long" }}">kürzlich neu erschienen</span>
+    {{- end }}
+  {{- end }}
 {{- end }}
 {{- $limit := now.AddDate 0 0 -28 -}}
 {{- /* Only posts have an age that counts. A page like the gear page has no

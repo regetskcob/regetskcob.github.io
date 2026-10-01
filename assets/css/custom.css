@@ -1,11 +1,14 @@
 /* Overrides the theme's empty custom.css. Loaded after the theme's own styles. */
 
 /* The pale green of notes about a post: the transparency box under a review and
-   the label "kürzlich aktualisiert". Light and dark via light-dark(), like the
+   the label "kürzlich neu erschienen". Light and dark via light-dark(), like the
    theme's own colours. */
 :root {
   --note-green-bg: light-dark(rgb(232, 243, 232), rgb(31, 64, 42));
   --note-green-border: light-dark(rgb(190, 217, 192), rgb(62, 110, 78));
+  /* The pale blue of the label "kürzlich aktualisiert". */
+  --note-blue-bg: light-dark(rgb(228, 238, 249), rgb(30, 49, 77));
+  --note-blue-border: light-dark(rgb(183, 205, 232), rgb(63, 98, 148));
 }
 
 /* The theme's grey for secondary text (summary, date, tags, notes) is
@@ -408,14 +411,14 @@ a.series-label:hover {
 }
 
 /* "kürzlich aktualisiert" (partials/updated-label.html): the series label's
-   shape in the pale green of the transparency box, so a note about the
+   shape in pale blue, so a note about the
    post's state reads differently from the series label. */
 .updated-label {
   display: inline-block;
   margin: 0.3rem 0 0 0;
   padding: 0.1rem 0.45rem;
-  background: var(--note-green-bg);
-  border: 1px solid var(--note-green-border);
+  background: var(--note-blue-bg);
+  border: 1px solid var(--note-blue-border);
   border-radius: 3px;
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -444,13 +447,30 @@ a.series-label:hover {
   vertical-align: 0.05em;
 }
 
+/* "kürzlich neu erschienen" (same partial): the same shape in the pale green. */
+.new-label {
+  display: inline-block;
+  margin: 0.3rem 0 0 0;
+  padding: 0.1rem 0.45rem;
+  background: var(--note-green-bg);
+  border: 1px solid var(--note-green-border);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--content-primary);
+  white-space: nowrap;
+}
+
 /* In the post header, inline between the date and the reading time. */
-.single-date .updated-label {
+.single-date .updated-label,
+.single-date .new-label {
   margin: 0;
   vertical-align: 0.05em;
 }
 
-.line-text .series-label + .updated-label {
+.line-text .series-label + .updated-label,
+.line-text .series-label + .new-label {
   margin-left: 0.4rem;
 }
 
