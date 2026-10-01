@@ -1,0 +1,15 @@
+---
+title: "📚 | Der eigene Blick"
+date: 2020-10-03T12:53:09+0000
+lastmod: 2026-10-01T20:48:47+0000
+aliases: ["/posts/der-eigene-blick/"]
+tags: ["Bücher", "Fotografie"]
+---
+
+Aufnahmen, denen man ansieht, dass es ihre sind. Einheitlicher Stil in den Aufnahmen einer Serie. Transport von Gefühl & Stimmung mit den Aufnahmen.
+
+Diese und viele weitere Themenbereiche behandelt Robert Mertens im Rahmen vom Buch Der eigene Blick und nimmt den Leser damit auf eine Reise durch die Gefühlswelt von Bildern.
+
+Dabei begleitet euch Robert Mertens auf vielen Alltagsfragen eines Profi- aber auch Hobby-Fotografen, um zum Beispiel den roten Faden für eine Bildserie zu finden und zu halten, rät dazu öfter die Komfortzone zu verlassen und geht auch auf abstrakte und ruhige Bildkompositionen ein.
+
+Alles in allem ein Buch, dass euch in eurem fotografischen Stil nach vorne bringt und auch vielleicht etwas eingeschlafene Kreativitätssynapsen wieder weckt.
