@@ -462,6 +462,51 @@ a.series-label:hover {
   font-size: 0.72rem;
   line-height: 1.4;
   color: var(--content-secondary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+
+.soon-heading::-webkit-details-marker {
+  display: none;
+}
+
+/* The arrow shows that the box folds; the hint says what is inside while it
+   is closed. */
+.soon-heading::before {
+  content: "";
+  flex: none;
+  align-self: center;
+  margin-right: 0.8rem;
+  border-left: 0.6rem solid currentColor;
+  border-top: 0.38rem solid transparent;
+  border-bottom: 0.38rem solid transparent;
+  transition: transform 0.15s;
+}
+
+.soon-box[open] > .soon-heading::before {
+  transform: rotate(90deg);
+}
+
+.soon-box:not([open]) {
+  padding-bottom: 0.9rem;
+}
+
+.soon-box:not([open]) > .soon-heading {
+  margin-bottom: 0;
+}
+
+.soon-hint {
+  margin-left: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 1.15em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .soon-heading::before {
+    transition: none;
+  }
 }
 
 .soon-line .line-title {

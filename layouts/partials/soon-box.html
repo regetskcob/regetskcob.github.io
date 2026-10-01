@@ -7,11 +7,14 @@
   where a part shows its "seriesLabel" like the finished parts do).
   "soon" in a post's front matter may name the month ("soon: Oktober").
   Renders nothing without pages.
+  The box is a <details>: open by default, and a small script right behind it
+  closes it below 768px, where it would push the posts out of sight; a link
+  to #in-arbeit opens it again. Without script it stays open.
 */}}
 {{- with .pages }}
 {{- $series := $.series }}
-<aside class="soon-box" id="in-arbeit" aria-label="Beiträge in Arbeit">
-  <p class="soon-heading">In Arbeit</p>
+<details class="soon-box" id="in-arbeit" open>
+  <summary class="soon-heading">In Arbeit<span class="soon-hint">{{ if eq (len .) 1 }}Dieser Beitrag erscheint als Nächstes{{ else }}Diese Beiträge erscheinen als Nächstes{{ end }}</span></summary>
   {{- range . }}
   {{- $page := . }}
   {{- $thumb := "" }}
@@ -37,5 +40,17 @@
     </div>
   </div>
   {{- end }}
-</aside>
+</details>
+<script>
+  (function () {
+    var box = document.getElementById("in-arbeit");
+    var wide = matchMedia("(min-width: 768px)");
+    var sync = function () {
+      box.open = wide.matches || location.hash === "#in-arbeit";
+    };
+    sync();
+    wide.addEventListener("change", sync);
+    addEventListener("hashchange", sync);
+  })();
+</script>
 {{- end }}

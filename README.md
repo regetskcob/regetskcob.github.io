@@ -271,8 +271,9 @@ behalten ihren Alt-Text und öffnen die Lightbox:
 ### Vorschau auf Beiträge in Arbeit
 
 Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter
-Kasten „In Arbeit“ über der Beitragsliste (Titel, Cover, Zusammenfassung, nicht
-verlinkt), eine Zeile „Demnächst im Blog: …“ im Intro der Startseite, und bei Beiträgen
+Kasten „In Arbeit“ zwischen Suche und Themen (Titel, Cover, Zusammenfassung, nicht
+verlinkt; ab 768 px Breite aufgeklappt, darunter eingeklappt mit Hinweistext, der Link
+`#in-arbeit` klappt ihn auf), eine Zeile „Demnächst im Blog: …“ im Intro der Startseite, und bei Beiträgen
 einer Serie ein Kasten unter den Teilen auf der Serienseite. Die Vorschau hat keine
 eigene Seite und taucht in RSS, Sitemap, Suche, Tags und Serienzählung nicht auf.
 
