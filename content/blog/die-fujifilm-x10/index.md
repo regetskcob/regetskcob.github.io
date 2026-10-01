@@ -2,14 +2,6 @@
 title: "📸 | Die Fujifilm X10"
 date: "2026-09-30T20:00:00+02:00"
 summary: "Eine Kamera von 2011, gebraucht gekauft, nach einem Besuch beim Fujifilm Service in Kleve wieder wie neu und lange Begleiter auf Spaziergängen, Reisen und am Ansitz. Dazu ein Wort zum Buch von Alexander S. White."
-# Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite: nicht
-# rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
-# Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
-# Optional: soon: Oktober  ->  "demnächst · Oktober"
-build:
-  render: never
-  list: never
-soon: true
 cover: ./cover.jpg
 coverAlt: "Die Fujifilm X10 hängt an einem geflochtenen Seilgurt an einem Zaunpfahl mit Stacheldraht, dahinter verschwimmt das Abendrot"
 disclosure:

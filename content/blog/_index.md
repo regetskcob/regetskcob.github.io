@@ -6,7 +6,6 @@ aliases: ["/posts/"]
 # page): the folder names under content/blog/, see layouts/partials/soon-pages.html.
 soon:
   - die-vermessung-der-berge
-  - die-fujifilm-x10
   - wie-claude-die-wartung-meines-blogs-vereinfacht
   - waidwerk
 # Every post shows its tags and reading time in the header card.
