@@ -49,7 +49,51 @@ Zubehör
 ![Die Rückseite der X10 in der Halbtasche auf hellem Stein im Sonnenlicht, auf dem Display eine Blüte, darum der Seilgurt](./img-5730.jpg)
 -->
 
-<!-- Einstieg: worum es geht, warum dieses Buch, warum die X10. -->
+Die Fujifilm X10 ist Baujahr 2011, und trotzdem habe ich sie eine ganze Weile benutzt. Gekauft habe ich sie „günstig“ bei Kleinanzeigen, mit zwei Haken: Auf dem Sensor saßen Flecken, und im Sucher war es schmutzig. Bevor ich mir ein Buch dazu ins Regal gestellt habe, musste also erst einmal die Kamera in Ordnung kommen.
+
+## Erst zum Service
+
+Kurzerhand bin ich damit nach Kleve zu Fujifilm gefahren und habe sie zur Reinigung abgegeben. Eine Kamera aus 2011, wohlgemerkt. Ein paar Tage und Euro später hielt ich sie wieder in den Händen, und sie war optisch wie technisch so gut wie neu.
+
+Das war auch dem Vorbesitzer zu verdanken: Die X10 steckte offenbar immer in einer Lederhülle, und das sah man ihr an. Kein Kratzer, keine Delle, makellos. Nach dem Service war sie es auch innen wieder.
+
+## Klein genug, um immer dabei zu sein
+
+Eingesteckt habe ich sie zum Spazierengehen und auf Dienstreisen. Sie ist klein und liegt gut in der Hand, und die 12 Megapixel waren für das Jahr, aus dem die Kamera kommt, durchaus ansehnlich. Gerade bei Licht, das einfach da ist, macht sie ordentliche Bilder:
+
+![Ein einzelner kahler Baum steht auf einem grünen Feld unter blauem Himmel mit feinen Schleierwolken](./x10-baum-im-feld.jpg)
+
+Wer nah ran geht, bekommt dank Makromodus auch Details, wie das Eis auf einem Buchenblatt:
+
+![Nahaufnahme eines Blattes, dessen Adern und Fläche von feinem Raureif überzogen sind](./x10-makro-frost.jpg)
+
+Und sie hat mich auf Reisen begleitet, zum Beispiel ins Allgäu:
+
+![Blick über einen Schotterweg auf eine Almhütte mit Blumenkästen, dahinter ein grüner Hang und schneebedeckte Gipfel](./x10-huette-allgaeu.jpg)
+
+![Ein Gebirgsbach fließt über Felsen durch einen Wald, die Aufnahme zeigt das Wasser leicht verwischt](./x10-bach-allgaeu.jpg)
+
+Auch in der Stadt macht sie bei Sonne eine gute Figur:
+
+![Der Turm des Hamburger Rathauses mit grünem Kupferdach vor wolkenlosem blauem Himmel](./x10-rathaus-hamburg.jpg)
+
+## Am Ansitz an ihre Grenzen gestoßen
+
+Zwei-, dreimal war die X10 auch mit auf dem Ansitz. Das war leider nicht ihre Welt: Sensor und Objektiv sind nicht gut gegen die Dunkelheit gewappnet. Wenn es früh am Morgen hell genug ist, geht noch etwas:
+
+![Morgendämmerung über einer Wiese, aus der Nebel aufsteigt, hinter einem Weidezaun eine dunkle Baumgruppe vor rosa Himmel](./x10-ansitz-nebel.jpg)
+
+Eine Viertelstunde früher sieht das schon anders aus. Bei 1/10 Sekunde und ISO 800 bleibt vom Bild nicht viel mehr als eine Ahnung:
+
+![Dunkle Wiese in der Dämmerung mit Nebelband über dem Boden und einem Streifen Abendrot am Horizont, das Bild ist grob und verrauscht](./x10-ansitz-dunkel.jpg)
+
+Bei ISO 1600 geht es drinnen noch, wenn eine Lichterkette hilft und das Motiv nicht zu weit weg ist:
+
+![Eine Filzmaus mit roter Mütze und rotem Strickpulli hängt im Weihnachtsbaum, im Hintergrund unscharfe Lichter](./x10-maus-weihnachtsbaum.jpg)
+
+## Der Abschied
+
+Verkauft habe ich die X10 im Rahmen der Anschaffung der X-T5, und zwar gewinnbringend, an mbp.com. Ein kleiner Trost, wenn man eine Kamera hergibt, die man gern mochte.
 
 ## Inhalt
 
