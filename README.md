@@ -12,7 +12,8 @@ Live: <https://www.regetskcob.de>
 | Static Site Generator | [Hugo](https://gohugo.io) (extended), v0.154.5 | Schnelle Builds, Bildverarbeitung out of the box |
 | Theme | [typo](https://github.com/tomfran/typo) v3.0.2 von Francesco Tomaselli (MIT) | Minimalistisch, typografie-orientiert; eingebunden als Git-Submodule unter `themes/typo` |
 | Hosting | [GitHub Pages](https://pages.github.com) | Statisches Hosting direkt am Repo |
-| CI/CD | GitHub Actions (`.github/workflows/hugo.yaml`) | Build und Deploy bei jedem Push auf `main` |
+| CI/CD | GitHub Actions (`.github/workflows/hugo.yaml`) | Build und Deploy bei jedem Push auf `main`; der Bild-Cache wird zwischen den Läufen gespeichert |
+| Suche | [Pagefind](https://pagefind.app) 1.5.2 | Läuft im Workflow nach dem Hugo-Build und indexiert die fertige Seite; im Browser, ohne externen Dienst |
 
 ### Eingebundene Dritt-Dienste
 
@@ -42,8 +43,9 @@ data/
 scripts/          Hilfsskripte für Fotos (import-photo.sh, extract-exif.sh)
 layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen
 assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
-assets/gallery/   Optionale Galerie-Bilder ohne zugehörigen Beitrag
-assets/gear/      Kopfbild der Ausrüstungsseite
+assets/js/        Lightbox (lightbox.js), Raster-Mischen (series.js), Nach-oben-Knopf (to-top.js)
+assets/gallery/   Fotos der Galerien und der Serie, nach Motiv in Ordnern
+assets/gear/      Titelbild der Ausrüstungsseite, Blockfotos, einsatz/ (Foto-Raster „Im Einsatz“)
 themes/typo/      Theme als Git-Submodule (nicht direkt bearbeiten)
 static/           Unverarbeitete Dateien (Favicons)
 hugo.toml         Zentrale Konfiguration
@@ -58,6 +60,8 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   Themes, der Originale unverändert ausliefert. Stattdessen entstehen WebP-Varianten
   in 480/800/1200/1600 px inklusive `srcset`/`sizes`. Das DOM und die Klassen des
   Themes (`img-small`, `img-full`, `img-light`, `img-dark`) bleiben erhalten.
+  In Beiträgen ist das Bild zusätzlich ein Link auf eine 2000-px-Variante, die die
+  Lightbox öffnet (außer dem kleinen `#portrait`-Foto).
 
   In `hugo.toml` sorgt dazu eine `cascade`-Regel mit `build.publishResources = false`
   dafür, dass die Original-Dateien nicht zusätzlich ins Deploy-Artefakt wandern.
@@ -89,19 +93,24 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   Front Matter: `type: provided` (gestellt, dazu `by: "vom Rheinwerk Verlag"` im
   Dativ), `type: purchased` (selbst gekauft) oder `type: gift` (Geschenk, `by: "von
   Freunden"`); optional `item: "Dieses Objektiv"` und `note`. Ohne `disclosure` erscheint nichts.
+
 - **`layouts/partials/gallery.html`** — Galerien, gespeist aus `data/gallery.yaml`,
   im selben Raster wie die Serie (`layouts/partials/photo-grid.html`).
 
-- **`layouts/_default/gear.html`** — Layout der Ausrüstungsseite. Oben der Text aus
-  `content/ausruestung.md`, darunter die Blöcke aus `data/gear.yaml` in deren Reihenfolge.
-  Einträge ohne `note` rendern nur ihren Namen. Das Kopfbild kommt aus dem Front
-  Matter (`photo` als Dateiname unter `assets/gear/`, `photo_alt` als
-  Beschreibung) und wird wie bei der Serie in WebP-Varianten ausgeliefert. Ohne
-  `photo` rendert die Seite ohne Bild.
+- **`layouts/_default/gear.html`** — Layout der Ausrüstungsseite. Oben das Titelbild
+  mit dem Seitentitel auf einem Balken (`layouts/partials/page-cover.html`), dann der
+  Text aus `content/ausruestung.md`, darunter die Blöcke aus `data/gear.yaml` in deren
+  Reihenfolge. Einträge ohne `note` rendern nur ihren Namen. Das Titelbild kommt aus dem
+  Front Matter (`photo` als Pfad unter `assets/`, `photo_alt`), öffnet sich per Klick in
+  der Lightbox und trägt unter dem Titel „kürzlich aktualisiert“ und die Lesezeit, in
+  die die Wörter aus der Datendatei eingerechnet sind. Ohne `photo` steht die normale
+  Überschrift da, siehe „Titelbild einer Seite“ unter „Front Matter“.
 
 - **`layouts/_default/recipes.html`** — Layout der Rezepte-Seite: Text aus
   `content/rezepte.md`, darunter die Basis-Blöcke und je Rezept eine Karte aus
-  `data/recipes.yaml`. Ein Rezept ohne `settings` wird übersprungen.
+  `data/recipes.yaml`. Ein Rezept ohne `settings` wird übersprungen. Wie die
+  Ausrüstungsseite nimmt sie ein Titelbild mit Titel-Balken an, sobald `photo` und
+  `photo_alt` im Front Matter stehen.
   `layouts/partials/recipe-notes.html` rendert die Hinweise unter einer Tabelle
   und wird von beiden Ebenen genutzt.
 
@@ -118,13 +127,39 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   (`layouts/partials/photo-grid-script.html` bindet es einmal pro Seite ein)
   bedient alle Raster einer Seite. Es mischt die Reihenfolge bei jedem Besuch, rechnet die Anordnung vorab
   durch und mischt neu, falls mitten im Raster eine Lücke entstünde. Ein Klick
-  öffnet das Bild groß. Ohne JavaScript gilt die Reihenfolge aus dem Front Matter
-  und der Klick öffnet die große Bilddatei direkt.
+  öffnet das Bild in der Lightbox (siehe unten). Ohne JavaScript gilt die Reihenfolge
+  aus dem Front Matter und der Klick öffnet die große Bilddatei direkt.
 
 - **`layouts/partials/hooks/body_end.html`** und **`assets/js/to-top.js`** — der
   runde „nach oben"-Button unten rechts, über den `body_end`-Hook des Themes auf
   jeder Seite. Er erscheint, sobald der Seitenkopf aus dem Bild gescrollt ist,
   und ersetzt den englischen Textlink des Themes (`hideBackToTop` in `hugo.toml`).
+
+- **Lightbox** — `layouts/partials/lightbox.html` und `assets/js/lightbox.js`. Ein Dialog
+  für alle Fotos der Seite: Raster, Serie, Beitragsbilder und das Titelbild der
+  Ausrüstungsseite. Zwei Leisten am Fensterrand (oben Zähler, Albumname oder
+  Beitragstitel und Schließen, unten Vor/Zurück und der Alt-Text), Pfeiltasten und
+  Wischen; geblättert wird innerhalb des Rasters oder des Beitrags. Die Leisten sind leicht
+  durchscheinend und laufen mit weichem Verlauf aus, der Verlauf liegt hinter dem Foto.
+  Ein Knopf „EXIF“ blendet links einen Balken mit Kamera, Objektiv, Blende, Brennweite,
+  Zeit, ISO und Belichtungskorrektur ein. Wo sie herkommen und warum nie GPS dabei
+  ist, steht unter „Fotos aufnehmen und EXIF“. Das Skript wird einmal pro Seite
+  eingebunden (`photo-grid-script.html` bringt es mit, sonst `lightbox.html` selbst).
+
+- **Vorschau „In Arbeit“** — `layouts/partials/soon-pages.html` und `soon-box.html`:
+  Kasten über der Blog-Liste und auf Serienseiten, eine Zeile im Intro der Startseite.
+  Siehe „Vorschau auf Beiträge in Arbeit“.
+
+- **Label „kürzlich aktualisiert“** — `layouts/partials/updated-label.html`, in
+  Blog-Liste, Tag-Listen, Serienübersicht, im Beitragskopf und unter dem Titel einer
+  Seite mit Titelbild (`page-meta.html`). Siehe „Label ‚kürzlich aktualisiert‘“ unter
+  „Front Matter“.
+
+- **Konfiguration in `hugo.toml`**, die nicht selbsterklärend ist:
+  `timeout = '10m'` (Hugo gibt einer Seite sonst 60 Sekunden; ein Build mit kaltem
+  Bild-Cache auf dem Runner brauchte länger und brach ab), `[frontmatter]` (das `date`
+  einer Seite nie ersatzweise aus dem `lastmod`) und `[imaging.exif]` (Whitelist der
+  EXIF-Felder, GPS und Datum aus).
 
 - **Deutsche Oberflächentexte.** Das Theme hat keine Übersetzungsdateien, einige
   Texte stehen fest in den Vorlagen. Übersetzt sind sie in Kopien, die bei einem
@@ -171,6 +206,14 @@ Produktions-Build wie in der CI erzeugen:
 hugo --gc --minify
 ```
 
+Der erste Build nach neuen oder ersetzten Fotos braucht mehrere Minuten, weil Hugo alle
+WebP-Varianten erzeugt (lokal rund vier, auf dem Runner mit kaltem Cache gut zehn Minuten).
+Danach liegen sie im Cache, ein Build dauert Sekunden.
+
+Mit `hugo server` ohne `--disableFastRender` rendert der Server nur die geänderten Seiten und
+zeigt nach einem Fehler oder mehreren Änderungen schnell hintereinander gelegentlich einen
+veralteten Stand. Dann hilft ein Neustart des Servers.
+
 Theme auf eine neue Version heben:
 
 ```bash
@@ -180,7 +223,7 @@ git -C themes/typo fetch --tags && git -C themes/typo checkout v3.0.2
 ## Inhalte pflegen
 
 Beiträge sind [Page Bundles](https://gohugo.io/content-management/page-bundles/):
-ein Ordner unter `content/posts/` mit einer `index.md` und den zugehörigen Bildern
+ein Ordner unter `content/blog/` mit einer `index.md` und den zugehörigen Bildern
 daneben. Im Markdown werden sie relativ referenziert, die Größenanpassung übernimmt
 der Render-Hook:
 
@@ -264,10 +307,12 @@ die Werte liefern, `scripts/extract-exif.sh <Ordner mit Originalen>` schreibt si
 
 ### Ausrüstungsseite pflegen
 
-Das Kopfbild liegt unter `assets/gear/` und wird im Front Matter von
-`content/ausruestung.md` über `photo` und `photo_alt` gesetzt. Wie bei den Galerien
-gilt: vorher auf 2000 px lange Kante bringen und die Metadaten entfernen, das
-Repository ist öffentlich.
+Das Titelbild liegt unter `assets/gear/` und wird im Front Matter von
+`content/ausruestung.md` über `photo` (Pfad unter `assets/`, also `gear/setup.jpg`) und
+`photo_alt` gesetzt, mit dem Seitentitel auf einem Balken am Bildrand. Wie bei den
+Galerien gilt: mit `scripts/import-photo.sh` ins Repository bringen (2000 px lange
+Kante, Metadaten entfernt), es ist öffentlich. Wird die Ausrüstung überarbeitet, das
+`lastmod` auf das heutige Datum setzen, dann steht vier Wochen lang „kürzlich aktualisiert“ da.
 
 Die Ausrüstung steht in `data/gear.yaml`, aufgeteilt in benannte Blöcke, die in
 der Reihenfolge der Datei untereinander gerendert werden. Ein neues Thema kommt
