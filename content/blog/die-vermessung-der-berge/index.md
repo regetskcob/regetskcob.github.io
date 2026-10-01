@@ -4,7 +4,15 @@ title_plain: "Die Vermessung der Berge"
 date: "2026-09-30T20:00:00+02:00"
 slug: "die-vermessung-der-berge"
 summary: "Blandine Pluchet nimmt die Leser:innen mit auf eine Wanderung zur Entdeckung der Weltgesetze."
-draft: true
+draft: false
+# Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite: nicht
+# rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
+# Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
+# Optional: soon: Oktober  ->  "demnächst · Oktober"
+build:
+  render: never
+  list: never
+soon: true
 readTime: true
 autonumber: false
 math: false

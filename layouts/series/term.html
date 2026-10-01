@@ -3,6 +3,8 @@
   content/series/<name>/_index.md, then the parts in reading order, oldest
   first, in the lines of the blog list. Each line shows the part's
   "seriesLabel" and its summary, which say more than the numbered titles.
+  Below the parts the box "In Arbeit" lists parts that are announced but not
+  published yet.
 */}}
 {{ define "main" }}
 <div class="list-container series-overview">
@@ -36,5 +38,8 @@
     </li>
   {{- end }}
   </ol>
+
+  {{- /* Parts of this series that are not out yet (partials/soon-box.html). */}}
+  {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" $.Title) "series" true) }}
 </div>
 {{ end }}

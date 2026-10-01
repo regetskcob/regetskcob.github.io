@@ -74,6 +74,11 @@
   {{- end }}
 
   {{- $paginator := .Paginate .Pages (site.Params.paginationSize | default 25) }}
+  {{- /* Previews of posts that are not out yet, above the list: the blog's
+         "soon" list in content/blog/_index.md (partials/soon-box.html). */}}
+  {{- if and (eq .Section "blog") (eq $paginator.PageNumber 1) }}
+    {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
+  {{- end }}
   {{- range $paginator.Pages }}
     {{ partial "post-entry.html" . }}
   {{- end }}

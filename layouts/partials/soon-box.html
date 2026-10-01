@@ -1,0 +1,47 @@
+{{/*
+  The box "In Arbeit" with the previews of posts that are not out yet: cover,
+  title and summary in the lines of the blog list, but not linked, there is
+  no page behind them (see partials/soon-pages.html). The box has a dashed
+  border and a muted cover to set it apart from the finished posts.
+  Takes a dict: "pages", the previews, and "series" (true on a series page,
+  where a part shows its "seriesLabel" like the finished parts do).
+  "soon" in a post's front matter may name the month ("soon: Oktober").
+  Renders nothing without pages.
+*/}}
+{{- with .pages }}
+{{- $series := $.series }}
+<aside class="soon-box" id="in-arbeit" aria-label="Beiträge in Arbeit">
+  <p class="soon-heading">In Arbeit</p>
+  {{- range . }}
+  {{- $page := . }}
+  {{- $thumb := "" }}
+  {{- with or $page.Params.cover $page.Params.featured_image }}
+    {{- with $page.Resources.Get (strings.TrimPrefix "./" .) }}
+      {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}{{ $thumb = . }}{{ end }}
+    {{- end }}
+  {{- end }}
+  {{- $when := "" }}
+  {{- with $page.Params.soon }}{{ if eq (printf "%T" .) "string" }}{{ $when = . }}{{ end }}{{ end }}
+  <div class="post-line soon-line{{ with $thumb }} has-thumb{{ end }}">
+    {{- with $thumb }}
+    {{- $s := .Fill "120x90 webp q75 smart" }}
+    {{- $l := .Fill "240x180 webp q75 smart" }}
+    <span class="line-thumb" aria-hidden="true">
+      <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 120w, {{ $l.RelPermalink }} 240w"
+           sizes="(max-width: 640px) 80px, 120px" width="120" height="90"
+           loading="lazy" decoding="async" alt="">
+    </span>
+    {{- else }}
+    <span class="line-thumb" aria-hidden="true"></span>
+    {{- end }}
+    <div class="line-text">
+      <p class="line-title">{{ if $series }}{{ $page.Params.seriesLabel | default $page.Title }}{{ else }}{{ $page.Title }}{{ end }}</p>
+      <span class="soon-label">demnächst{{ with $when }} · {{ . }}{{ end }}</span>
+      {{- with $page.Params.summary }}
+      <p class="line-summary">{{ . }}</p>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</aside>
+{{- end }}

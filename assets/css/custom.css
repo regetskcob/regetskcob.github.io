@@ -399,6 +399,67 @@ a.series-label:hover {
   margin-top: 0.3rem;
 }
 
+/* --- Previews of posts in the works ("In Arbeit", partials/soon-box.html) ---
+   A box like the cards on the site, but with a dashed border, and inside the
+   lines of the post list with a muted cover and a muted title: no link, no
+   page behind it. A line in the home page's intro points to it. */
+
+.soon-box {
+  margin: 0 0 2rem;
+  padding: 0.9rem 1rem 0.2rem;
+  background: var(--code-background);
+  border: 1px dashed color-mix(in srgb, var(--content-secondary) 55%, transparent);
+  border-radius: 6px;
+}
+
+.soon-heading {
+  margin: 0 0 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--content-secondary);
+}
+
+.soon-line .line-title {
+  color: var(--content-secondary);
+}
+
+.soon-line .line-thumb img {
+  filter: grayscale(0.6);
+  opacity: 0.8;
+}
+
+.soon-label {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 0.1rem 0.45rem;
+  border: 1px dashed var(--content-secondary);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--content-secondary);
+  white-space: nowrap;
+}
+
+.soon-box .soon-line:last-child {
+  margin-bottom: 0.9rem;
+}
+
+.soon-home {
+  margin: 1rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
+.soon-home a {
+  color: var(--content-secondary);
+}
+
+.soon-home a:hover {
+  color: var(--content-primary);
+}
+
 /* --- Series overview (layouts/series/term.html) ---
    The parts as numbered lines like the blog list; the number comes from
    the order, so the list itself carries no markers. */

@@ -212,6 +212,36 @@ photos:
     alt: "…"
 ```
 
+### Vorschau auf Beiträge in Arbeit
+
+Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter
+Kasten „In Arbeit“ über der Beitragsliste (Titel, Cover, Zusammenfassung, nicht
+verlinkt), eine Zeile „Demnächst im Blog: …“ im Intro der Startseite, und bei Beiträgen
+einer Serie ein Kasten unter den Teilen auf der Serienseite. Die Vorschau hat keine
+eigene Seite und taucht in RSS, Sitemap, Suche, Tags und Serienzählung nicht auf.
+
+Im Front Matter des Beitrags (Vorlage in den Entwürfen):
+
+```yaml
+draft: false
+build:
+  render: never   # keine Seite bauen
+  list: never     # in keiner Liste führen
+soon: true        # oder soon: Oktober  ->  "demnächst · Oktober"
+```
+
+Und der Ordnername unter `soon` in `content/blog/_index.md`:
+
+```yaml
+soon:
+  - die-vermessung-der-berge
+```
+
+Zum Veröffentlichen den `build`-Block, `soon` und den Namen in `_index.md` entfernen.
+Zusammenfassung (`summary`) und Cover (`cover`) werden angezeigt; bei Serienteilen
+`series` und `seriesLabel` setzen. Wer einen Beitrag lieber ganz verstecken will,
+lässt `draft: true`, dann erscheint er nirgends.
+
 ### Fotos aufnehmen und EXIF
 
 **Das Repository ist öffentlich, jede Datei steht samt Metadaten im Git-Verlauf.**

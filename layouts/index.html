@@ -21,6 +21,13 @@
 <div class="intro">
   {{ with site.Params.homeIntroTitle }}<h2 class="home-heading">{{ . }}</h2>{{ end }}
   {{ with site.Params.homeIntroContent }}<div>{{ . | markdownify }}</div>{{ end }}
+{{- /* One line about the posts in the works, linking to the box "In Arbeit" at
+       the top of the blog list (partials/soon-box.html). The emoji and the
+       pipe the titles start with are left off. */}}
+{{- with partial "soon-pages.html" "" }}
+<p class="soon-home"><a href="{{ "blog/#in-arbeit" | relURL }}">Demnächst im Blog:
+  {{- range $i, $p := . }}{{ if $i }} ·{{ end }} {{ replaceRE `^[^\p{L}\p{N}]+` "" $p.Title }}{{ end }} →</a></p>
+{{- end }}
 </div>
 {{ end }}
 
