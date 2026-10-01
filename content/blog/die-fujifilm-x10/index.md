@@ -30,7 +30,9 @@ Das war auch dem Vorbesitzer zu verdanken: Die X10 steckte offenbar immer in ein
 
 ![Die Fujifilm X10 mit schwarzer Lederhalbtasche und aufgesetztem Objektivdeckel vor grauem Hintergrund, dahinter der Seilgurt](./img-0921.jpg)
 
-Eingesteckt habe ich sie zum Spazierengehen und auf Dienstreisen. Sie ist klein und liegt gut in der Hand, und die 12 Megapixel waren für das Jahr, aus dem die Kamera kommt, durchaus ansehnlich. Von oben fällt sofort das Bedienkonzept ins Auge: Belichtungskorrekturrad, Moduswahlrad und ein roter Auslöser, alles direkt unter den Fingern.
+Eingesteckt habe ich sie zum Spazierengehen und auf Dienstreisen. Sie ist klein und liegt gut in der Hand, und die 12 Megapixel waren für das Jahr, aus dem die Kamera kommt, durchaus ansehnlich. Fasziniert hat mich neben der Kompaktheit vor allem eines: Eingeschaltet wird die X10 durch Drehen am Objektiv. Der Zoomring fährt das Objektiv aus und schaltet die Kamera ein, ein Handgriff, und sie ist bereit. Ein Kniff an Innovation, den ich bei heutigen Kameras schmerzlich vermisse, etwa an einer X100. Auch wenn ich keine habe, es würde sich anbieten!
+
+Von oben fällt außerdem das Bedienkonzept ins Auge: Belichtungskorrekturrad, Moduswahlrad und ein roter Auslöser, alles direkt unter den Fingern.
 
 ![Die X10 von oben: rechts Belichtungskorrekturrad, Moduswahlrad und ein roter Auslöseknopf, links der Schriftzug Fujifilm X10 neben dem Blitzschuh](./img-0926.jpg)
 
@@ -70,13 +72,17 @@ Bei ISO 1600 geht es drinnen noch, wenn eine Lichterkette hilft und das Motiv ni
 
 Verkauft habe ich die X10 im Rahmen der Anschaffung der X-T5, und zwar gewinnbringend, an mbp.com. Ein kleiner Trost, wenn man eine Kamera hergibt, die man gern mochte.
 
-## Und das Buch dazu
+---
+
+## Handbuch für eine 15 Jahre alte Kamera
 
 Zur Kamera gibt es ein eigenes Buch: „Photographer's Guide to the Fujifilm X10“ von Alexander S. White, ein englischsprachiges Taschenbuch, das sich ganz dieser einen Kamera widmet. Mein Exemplar habe ich gebraucht bei medimops gekauft.
 
-![Das Taschenbuch „Photographer's Guide to the Fujifilm X10“ von Alexander S. White liegt schräg auf einem hellen Holztisch, auf dem weißen Cover die Kamera und zwei Beispielfotos](./buch-cover.jpg)
+![Das Taschenbuch „Photographer's Guide to the Fujifilm X10“ von Alexander S. White liegt schräg auf einem hellen Holztisch, auf dem weißen Cover die Kamera und zwei Beispielfotos](./taschenbuch.jpg)
 
-<!-- Offen: ein, zwei Sätze zu Inhalt und Einschätzung des Buches (Aufbau, für wen, was es über das Handbuch hinaus bringt). Dafür fehlen mir die Eindrücke. -->
+Trotz der englischen Sprache habe ich mich mit dem Buch gut in der Kamera zurechtgefunden. Den Menüs sieht man an, dass sie die Vorfahren der heutigen Menüs in X-T30 und X-T5 sind. Die meisten Dinge waren damals aber noch völlig anders oder gar nicht vorhanden: Filmsimulationen und Custom Settings sind nur ein Schatten dessen, was heute möglich ist, und auch Sensor, ISO-Verhalten und Verschlusszeiten sind weit von heutigen Standards entfernt.
+
+Umso besser ist es, mit dem Buch nicht nur die Bedienung zu lernen, sondern auch Kniffe und versteckte Optionen zu finden. Denn online gibt es zur X10, außer meist völlig überteuerten Angeboten, nicht viel.
 
 <!--
 Bilder, die schon im Ordner liegen (Alt-Texte vorbereitet). Zum Einbauen die
