@@ -7,6 +7,7 @@ aliases: ["/posts/"]
 soon:
   - die-vermessung-der-berge
   - photographers-guide-to-the-fujifilm-x10
+  - wie-claude-die-wartung-meines-blogs-vereinfacht
 # Every post shows its tags and reading time in the header card.
 cascade:
   showTags: true
