@@ -12,11 +12,9 @@ build:
   render: never
   list: never
 soon: November
-# Cover wird generiert. Wenn es da ist: Datei als cover.jpg in diesen Ordner
-# legen und die drei Zeilen einkommentieren.
-# cover: ./cover.jpg
-# coverAI: true
-# coverAlt: "…"
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Links ein dunkles Terminalfenster mit einer Liste von Commits an einer senkrechten Linie, rechts ein Browserfenster mit einer Blogseite aus Titelzeile und sechs Bildkacheln, dazwischen eine gepunktete Spur, die in einem orangefarbenen Punkt endet"
 tags: ["Softwareentwicklung"]
 ---
 
