@@ -18,4 +18,8 @@
     {{- $t = printf "%s – Buchrezension" $t -}}
   {{- end -}}
 {{- end -}}
+{{- /* Later pages of the blog list say which page they are. */ -}}
+{{- if and (eq .Kind "section") (eq .Section "blog") -}}
+  {{- with .Paginator }}{{ if gt .PageNumber 1 }}{{ $t = printf "%s – Seite %d" $t .PageNumber }}{{ end }}{{ end -}}
+{{- end -}}
 {{- return $t -}}

@@ -1809,3 +1809,14 @@ footer a[href^="/legal/"]:hover {
   text-decoration-color: currentColor;
   text-decoration-thickness: 2px;
 }
+
+/* Blog list: a heading per year of publication. */
+.year-heading {
+  margin: 2.25rem 0 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid var(--code-border);
+}
+.year-heading:first-of-type {
+  margin-top: 1.5rem;
+}

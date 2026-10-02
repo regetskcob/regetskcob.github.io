@@ -63,7 +63,21 @@
     {{- end -}}
 </title>
 
-<link rel="canonical" href="{{ .Permalink }}"/>
+{{- /* Page 2 and up of the blog list is its own page: own canonical, and the
+       neighbours as prev/next. */}}
+{{- $canonical := .Permalink }}
+{{- if and (eq .Kind "section") (eq .Section "blog") }}
+  {{- with .Paginator }}
+    {{- if gt .PageNumber 1 }}{{ $canonical = .URL | absURL }}{{ end }}
+    {{- if .HasPrev }}
+<link rel="prev" href="{{ .Prev.URL | absURL }}"/>
+    {{- end }}
+    {{- if .HasNext }}
+<link rel="next" href="{{ .Next.URL | absURL }}"/>
+    {{- end }}
+  {{- end }}
+{{- end }}
+<link rel="canonical" href="{{ $canonical }}"/>
 
 {{ template "partials/opengraph.html" . }}
 {{ partial "seo/jsonld.html" . }}

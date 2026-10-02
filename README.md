@@ -191,6 +191,14 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   eigene Zeile umbrechen. Einen Eintrag „Start“ gibt es nicht, der Seitenname
   führt zur Startseite.
 
+- **`layouts/section.html`, `layouts/partials/pagination-controls.html`** — Blog-Liste mit
+  15 Beiträgen je Seite (`[pagination] pagerSize` in `hugo.toml`) und einer Überschrift je
+  Veröffentlichungsjahr. Jede Seite beginnt mit dem Jahr ihres ersten Beitrags, ein Jahr kann
+  also auf der nächsten Seite wieder auftauchen. Ab Seite 2 haben die Seiten einen eigenen
+  `<title>` („Blog – Seite 2“, `seo/title.html`) und einen eigenen Canonical-Link samt
+  `prev`/`next` (`head.html`), damit Suchmaschinen sie nicht für Kopien von `/blog/` halten.
+  Der Umblätterer sagt „Neuere“ und „Ältere“ statt „prev“ und „next“ des Themes.
+
   Fußzeile (`footerContent`), Brotkrumen (`[params.breadcrumbs]`) und der Titel
   der Schlagwort-Übersicht (`content/tags/_index.md`) sind ohne Kopie einstellbar.
 

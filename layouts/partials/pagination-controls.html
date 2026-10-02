@@ -1,0 +1,22 @@
+{{- /*
+  Pager under the blog list. Replaces the theme's partial, which says
+  "prev" and "next". The list runs newest first, so the previous page holds
+  newer posts and the next page older ones.
+*/ -}}
+{{ if gt .TotalPages 1 }}
+<nav class="pagination" aria-label="Seiten">
+    <div class="pagination-control">
+        {{ if .HasPrev }}
+        <a href="{{ .Prev.URL | absURL }}" rel="prev">Neuere</a>
+        {{ end }}
+    </div>
+    <div class="page-number">
+        <p>{{ .PageNumber }}/{{ .TotalPages }}</p>
+    </div>
+    <div class="pagination-control">
+        {{ if .HasNext }}
+        <a href="{{ .Next.URL | absURL }}" rel="next">Ältere</a>
+        {{ end }}
+    </div>
+</nav>
+{{ end }}

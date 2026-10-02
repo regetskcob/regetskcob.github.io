@@ -16,7 +16,7 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 
-  {{- $paginator := .Paginate .Pages (site.Params.paginationSize | default 25) }}
+  {{- $paginator := .Paginate .Pages }}
 
   {{- if eq .Section "blog" }}
   <link rel="stylesheet" href="{{ "pagefind/pagefind-component-ui.css" | relURL }}">
@@ -82,7 +82,16 @@
   {{- end }}
   {{- end }}
 
+  {{- /* The list runs newest first. A heading with the year of publication
+         opens every year, and each page opens with the year of its first
+         post, so a page never starts without one. */}}
+  {{- $year := "" }}
   {{- range $paginator.Pages }}
+    {{- $y := .Date.Format "2006" }}
+    {{- if ne $y $year }}
+    <h2 class="year-heading">{{ $y }}</h2>
+    {{- $year = $y }}
+    {{- end }}
     {{ partial "post-entry.html" . }}
   {{- end }}
   {{ partial "pagination-controls.html" $paginator }}
