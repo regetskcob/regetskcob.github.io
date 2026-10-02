@@ -23,8 +23,6 @@ Ich habe mir von einem Holzhändler ein Angebot für folgendes Material machen l
 
 Warum nicht beim Holzfachhandel direkt vor Ort? Weil der lediglich die MDF Platte auf Lager hatte und auch eine Bestellung nicht ohne weiteres möglich war bei der kleinen Menge…
 
-Interessant fände ich, wo ihr euer Holz bezieht. Schreibt es mir gern in die Kommentare.
-
 Darüber hinaus habe ich mir folgende Materialien online bestellt oder im Baumarkt gekauft
 
 - 10x 80 mm M8 Senkkopfschraube
