@@ -3,6 +3,9 @@ title: "📚 | Die neuen Traumhäuser"
 date: 2017-04-26T07:34:08+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Neun innovative Häuser mit Grundrissen und Details: ein Buch, das beim Planen inspiriert, auch für das bestehende Zuhause."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Die neuen Traumhäuser“ von Sabine Reeh mit einem Holzhaus mit Gründach, im Vordergrund ein Kind auf einem Netz"
+coverCredit: "Cover: DVA"
 tags: ["Bücher"]
 disclosure:
   type: provided
