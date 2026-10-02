@@ -1,7 +1,6 @@
 ---
 title: "📚 | Apps für iOS 10 mit Swift programmieren"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-19T10:19:54+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Matt Neuburgs Buch führt in vier Teilen durch die App-Programmierung für iOS 10 mit Swift, von Views und View Controllern bis zu Netzwerk und Threads."
 tags: ["Bücher", "Softwareentwicklung"]

@@ -1,7 +1,6 @@
 ---
 title: "📚 | Functional Swift"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-08-22T17:33:37+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Eidhof, Kugler und Swierstra erklären funktionale Programmierung mit Swift, ein Buch für alle, die die Grundlagen der Sprache beherrschen."
 tags: ["Bücher", "Softwareentwicklung"]

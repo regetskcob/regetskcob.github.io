@@ -1,7 +1,6 @@
 ---
 title: "📚 | OpenCV 3 Computer Vision Application Programming Cookbook"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-27T08:20:28+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das OpenCV 3 Cookbook sammelt praxisnahe Rezepte zu Bildern, Objekterkennung und Objektverfolgung."
 tags: ["Bücher", "Softwareentwicklung"]

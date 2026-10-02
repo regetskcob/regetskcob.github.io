@@ -1,7 +1,6 @@
 ---
 title: "💻 | Gedanken beisammen halten dank MindNode"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-11-23T13:35:30+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Warum ich mich für MindNode entschieden habe, um Gedanken zu ordnen: reduziert, anpassbar und mit iCloud-Sync zwischen Mac und iPhone."
 tags: ["Softwareentwicklung"]

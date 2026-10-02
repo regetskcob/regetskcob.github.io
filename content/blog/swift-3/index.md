@@ -1,7 +1,6 @@
 ---
 title: "📚 | Swift 3"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-01-14T22:03:32+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Michael Koflers Swift 3 ist für mich das deutsche Standardwerk zur Sprache, für Ein- wie Umsteiger."
 tags: ["Bücher", "Softwareentwicklung"]

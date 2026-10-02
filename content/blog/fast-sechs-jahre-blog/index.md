@@ -1,7 +1,6 @@
 ---
 title: "📝 | Fast sechs Jahre Blog"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-05-02T09:38:29+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Rückblick auf fast sechs Jahre Bloggen und warum ich das Blog in der bisherigen Form beende."
 draft: true

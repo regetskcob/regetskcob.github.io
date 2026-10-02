@@ -1,7 +1,6 @@
 ---
 title: "📚 | Effektives Arbeiten mit Legacy Code"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-26T09:51:29+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Michael C. Feathers erklärt auf rund 430 Seiten, wie man mit historisch gewachsenem Code arbeitet und Änderungen absichert."
 tags: ["Bücher", "Softwareentwicklung"]

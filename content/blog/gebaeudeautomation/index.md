@@ -1,7 +1,6 @@
 ---
 title: "📚 | Gebäudeautomation"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-02-20T20:47:48+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Merz, Hansemann und Hübner erklären Gebäudeautomation mit KNX, LonWorks und BACnet, samt Sicherheit und praxisnahen Beispielen."
 tags: ["Bücher", "Smarthome"]

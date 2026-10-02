@@ -1,7 +1,6 @@
 ---
 title: "💻 | Bugfixes ausliefern, während die nächste Version in Arbeit ist"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-10-21T09:18:46+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Wie sich Bugfixes ausliefern lassen, wenn die nächste Version noch in der Entwicklung ist: Lösungsvorschläge mit Branches in Git."
 tags: ["Softwareentwicklung"]

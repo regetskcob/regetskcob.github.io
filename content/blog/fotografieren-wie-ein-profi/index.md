@@ -1,7 +1,6 @@
 ---
 title: "📚 | Fotografieren wie ein Profi"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-06-22T13:57:33+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Björn Göttlicher begleitet bei seinen Projekten und zeigt, wie aus Schnappschüssen gute Fotos werden."
 tags: ["Bücher", "Fotografie"]

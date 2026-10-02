@@ -1,7 +1,6 @@
 ---
 title: "📚 | App-Design"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2022-11-11T20:43:45+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Jan Semlers App-Design behandelt auf rund 480 Seiten alles von der Idee bis zu Usability und Barrierefreiheit, was eine gute App ausmacht."
 tags: ["Bücher", "Softwareentwicklung"]

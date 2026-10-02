@@ -1,7 +1,6 @@
 ---
 title: "📚 | Great Code Vol. 1"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-05-09T06:59:10+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Randall Hyde erklärt, wie Maschinen arbeiten, damit man besseren Code schreibt. Ein Basiswerk für jedes Bücherregal."
 tags: ["Bücher", "Softwareentwicklung"]

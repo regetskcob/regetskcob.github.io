@@ -1,7 +1,6 @@
 ---
 title: "📚 | Great Code Vol. 2"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-05-09T06:59:14+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Randall Hyde zeigt im zweiten Band, wie sich Code schreiben lässt, der später möglichst wenig optimiert werden muss."
 tags: ["Bücher", "Softwareentwicklung"]

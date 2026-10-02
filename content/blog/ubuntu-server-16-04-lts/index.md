@@ -1,7 +1,6 @@
 ---
 title: "📚 | Ubuntu Server 16.04 LTS"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-03-29T11:52:15+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das Administrationshandbuch von Kühnast und van Soest zu Ubuntu Server: von der Installation über DNS und Mailserver bis zu Backup und Monitoring."
 tags: ["Bücher", "Softwareentwicklung"]

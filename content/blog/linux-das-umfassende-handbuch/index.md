@@ -1,7 +1,6 @@
 ---
 title: "📚 | Linux - Das umfassende Handbuch"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-07-10T13:40:20+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Der Kofler gehört für mich in jede Ausbildung und in jedes Büro: ein Linux-Handbuch, das ein weites Spektrum abdeckt."
 tags: ["Bücher", "Softwareentwicklung", "Ausbildung"]

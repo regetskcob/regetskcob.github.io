@@ -1,7 +1,6 @@
 ---
 title: "📚 | WordPress 4 komplett"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-19T10:12:49+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Tim Schürmanns WordPress 4 komplett begleitet auf rund 850 Seiten von der Installation bis zu eigenen Themes."
 tags: ["Bücher", "Softwareentwicklung"]

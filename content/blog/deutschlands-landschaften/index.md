@@ -1,7 +1,6 @@
 ---
 title: "📚 | Deutschlands Landschaften"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-07-10T05:54:42+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Mark Robertz porträtiert 16 deutsche Nationalparks in einem Bildband, der Lust macht, die Landschaften selbst zu erkunden."
 tags: ["Bücher", "Fotografie", "Natur"]

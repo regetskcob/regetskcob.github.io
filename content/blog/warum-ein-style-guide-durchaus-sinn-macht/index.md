@@ -1,7 +1,6 @@
 ---
 title: "💻 | Warum ein Style Guide durchaus Sinn macht"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-11-22T14:10:15+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Warum ein Style Guide in Entwicklerteams Sinn macht: einheitlicher Code ist leichter zu lesen, zu übernehmen und neuen Kollegen zu erklären."
 tags: ["Softwareentwicklung"]

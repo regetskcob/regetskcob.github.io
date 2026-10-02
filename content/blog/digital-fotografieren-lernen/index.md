@@ -1,7 +1,6 @@
 ---
 title: "📚 | Digital fotografieren lernen"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-05-31T20:26:41+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Dietmar Spehrs Einsteigerbuch erklärt ISO, Blende und Verschlusszeit auf über 400 Seiten und macht Lust auf bessere Bilder."
 tags: ["Bücher", "Fotografie"]

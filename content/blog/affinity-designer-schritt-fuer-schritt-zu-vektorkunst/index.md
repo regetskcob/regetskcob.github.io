@@ -1,7 +1,6 @@
 ---
 title: "📚 | Affinity Designer - Schritt für Schritt zu Vektorkunst, Illustration und Screendesign"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-28T07:08:10+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das Rheinwerk-Buch führt auf über 270 Seiten in zehn Kapiteln durch Affinity Designer, für Einsteiger wie Fortgeschrittene, am Mac wie am Windows-PC."
 tags: ["Bücher"]

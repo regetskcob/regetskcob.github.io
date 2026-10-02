@@ -1,7 +1,6 @@
 ---
 title: "📚 | Einstieg in die fortgeschrittene Mathematik"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-11-23T09:07:24+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Fachbücher des Hanser Verlags zur Mathematik, die ich für den Einstieg in die grafische Programmierung angeschafft habe."
 tags: ["Bücher", "Softwareentwicklung"]

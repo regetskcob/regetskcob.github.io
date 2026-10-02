@@ -1,7 +1,6 @@
 ---
 title: "📚 | Affinity Designer Workbook"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-10T09:18:25+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das Workbook der Serif Labs führt mit kleinen Aufgaben durch Affinity Designer, samt Tastenkürzel-Merkblättern."
 tags: ["Bücher"]

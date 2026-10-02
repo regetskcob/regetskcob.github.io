@@ -1,7 +1,6 @@
 ---
 title: "📚 | Handbuch IT-Management"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-05-02T06:55:29+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das Handbuch IT-Management bündelt in der 6. Auflage Konzepte, Methoden und Arbeitshilfen von 15 Autoren."
 tags: ["Bücher", "Arbeitswelt"]

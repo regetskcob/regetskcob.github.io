@@ -1,7 +1,6 @@
 ---
 title: "📚 | High Performance iOS Apps"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-12T10:23:19+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Gaurav Vaish zeigt, wie sich Performance und Stabilität von iOS-Apps messen und verbessern lassen."
 tags: ["Bücher", "Softwareentwicklung"]

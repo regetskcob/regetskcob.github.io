@@ -1,7 +1,6 @@
 ---
 title: "📚 | Das kollegial geführte Unternehmen"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-06-07T06:02:37+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Oestereich und Schröder zeigen, wie sich Unternehmen kollegial führen lassen und wie man den Ansatz im eigenen Betrieb zur Sprache bringt."
 tags: ["Bücher", "Arbeitswelt"]

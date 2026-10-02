@@ -1,7 +1,6 @@
 ---
 title: "📚 | iOS Application Development with OpenCV 3"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-26T08:15:43+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Joseph Howse zeigt, wie sich OpenCV 3 in iOS-Apps einsetzen lässt, von der Einrichtung bis zur Gesichtserkennung."
 tags: ["Bücher", "Softwareentwicklung"]

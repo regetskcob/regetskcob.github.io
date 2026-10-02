@@ -1,7 +1,6 @@
 ---
 title: "👨‍🎓 | Fettnäpfchen beim Start in einen neuen Job"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-01-15T10:34:55+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Wie man beim Start in einen neuen Job nicht gleich ins Fettnäpfchen tritt: sich selbst beobachten, sich zurückhalten und Kritik mit Gespür anbringen."
 tags: ["Ausbildung", "Arbeitswelt"]

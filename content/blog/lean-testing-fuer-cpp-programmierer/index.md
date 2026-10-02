@@ -1,7 +1,6 @@
 ---
 title: "📚 | Lean-Testing für C++ Programmierer"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-26T17:56:27+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Spillner und Breymann bringen C++-Programmierern auf gut 240 Seiten das Testen von Software und die passenden Werkzeuge bei."
 tags: ["Bücher", "Softwareentwicklung"]

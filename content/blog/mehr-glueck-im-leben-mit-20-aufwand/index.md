@@ -1,7 +1,6 @@
 ---
 title: "📚 | Mehr Glück im Leben mit 20 % Aufwand"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-06-08T06:34:28+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Marcus Börner, Gründer von reBuy, beschreibt, wie sich mit wenig Aufwand mehr Glück im Leben finden lässt."
 tags: ["Bücher", "Gesellschaft"]

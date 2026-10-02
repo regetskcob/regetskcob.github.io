@@ -1,7 +1,6 @@
 ---
 title: "📚 | Infografik"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-11-05T12:45:44+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Raimar Heber erklärt, wie Infografiken entstehen, von den Grundlagen bis zu interaktiven Umsetzungen für Print, Web und App."
 tags: ["Bücher"]

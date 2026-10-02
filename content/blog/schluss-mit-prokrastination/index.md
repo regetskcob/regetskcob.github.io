@@ -1,7 +1,6 @@
 ---
 title: "📚 | Schluss mit Prokrastination"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-05-09T08:38:50+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Wie man aufhört zu verschieben und anfängt zu leben: ein Ratgeber mit Übungen gegen das ständige Aufschieben."
 tags: ["Bücher", "Arbeitswelt"]

@@ -1,7 +1,6 @@
 ---
 title: "📚 | Storytelling"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2016-11-07T14:33:13+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Pia Kleine Wieskamp und elf Experten zeigen, wie sich Geschichten in Marketing und Kommunikation einsetzen lassen."
 tags: ["Bücher", "Arbeitswelt"]

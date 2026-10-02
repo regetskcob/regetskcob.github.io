@@ -1,7 +1,6 @@
 ---
 title: "📚 | Die neuen Traumhäuser"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-26T07:34:08+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Neun innovative Häuser mit Grundrissen und Details: ein Buch, das beim Planen inspiriert, auch für das bestehende Zuhause."
 tags: ["Bücher"]

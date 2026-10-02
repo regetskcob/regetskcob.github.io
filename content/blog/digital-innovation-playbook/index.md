@@ -1,7 +1,6 @@
 ---
 title: "📚 | Digital Innovation Playbook"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-05-08T08:41:02+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Ein Werkzeugkasten in fünf Abschnitten, mit dem sich neue Produkte entwickeln und testen lassen, bevor sie auf den Markt kommen."
 tags: ["Bücher", "Arbeitswelt"]

@@ -1,7 +1,6 @@
 ---
 title: "📚 | Zebra ist schwarz und weiß - und trotzdem glücklich"
-# Datum unbekannt (Ulysses-Blatt ohne Datum), beim Sichten setzen
-date: 2026-10-02T06:41:45+0000
+date: 2017-04-19T10:14:38+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Kazim Akboga zeigt mit Zeichnungen und kurzen Texten, wie sich die Menschheit positiver sehen lässt."
 tags: ["Bücher"]
