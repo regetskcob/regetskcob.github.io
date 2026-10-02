@@ -24,5 +24,3 @@ Der modulare Aufbau des Buches ermöglicht es, sowohl Einsteigern als auch erfah
 Ein besonderes Highlight ist das Bonuskapitel, das die Nutzung von Storybook zur Erstellung von Komponenten-Dokumentationen beschreibt. Dieses Kapitel kann kostenlos heruntergeladen werden und bietet wertvolle Einblicke in die effiziente Entwicklung und Dokumentation von Angular-Komponenten.
 
 Insgesamt bietet das Buch eine tiefgehende und praxisorientierte Darstellung des Angular-Frameworks und ist somit eine klare Empfehlung für alle, die professionelle Webanwendungen entwickeln möchten.
-
-> 🛒 Unterstütze den Blog Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das beschriebene Buch über diesen Affiliate-Link bei Amazon erwerben würdest.

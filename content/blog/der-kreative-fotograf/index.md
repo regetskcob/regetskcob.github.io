@@ -20,9 +20,3 @@ Heidi und Robert Mertens zeigen euch verschiedenste Techniken in Text und Bild, 
 Von der Abstraktion, über verschiedenste Farb- und Bewegungskonstellationen und auch der Einschränkung durch Hardware- oder Umgebungsfaktoren lernt ihr viele Techniken kennen und seht die erreichbaren Ergebnisse.
 
 Leider muss ich ehrlich resümieren, dass viele der gezeigten Aufnahmen eher wie Schnappschüsse wirken, nicht wie kreative Arbeiten. Es gibt auch gute Bilder, aber viele lassen doch hinterfragen, wo die min text beschriebenen Methoden zur Kreativitätsfindung haben Einsatz finden dürfen.
-
----
-
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über folgenden Affiliate-Link bei Amazon erwerben würdest.
-
-[Zum Produkt auf Amazon](https://amzn.to/2Gsnw7L)

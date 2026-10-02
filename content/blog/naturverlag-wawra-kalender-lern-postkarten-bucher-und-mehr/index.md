@@ -29,8 +29,6 @@ Insbesondere die Kalender im A2 Format sind mit viel Liebe zum Detail gestaltet.
 
 ... auf der jeweils nächsten Seite werden viele spannende Details zum aktuellen Monat, den Tieren und der Natur beschrieben. Außerdem gibt es Verweise zu Seiten im Arbeitsbuch, das dem Kalender beiliegt.Die zweite Seite beinhaltet außerdem auch das Kalenderblatt mit Kästchen für jeden Tag. An manchen Tagen sind Hinweise notiert, bspw. zu Lauschen, welche Vögel nach dem Winter schon wieder singen.
 
-> 🛒 Unterstütze den Blog Selbstverständlich lassen sich alle genannten Artikel direkt über den Verlag beziehen. Falls du meinen Blog etwas unterstützen möchtest, würde ich mich aber freuen, wenn du dich vorab unter diesem Affiliate-Link bei Amazon umsiehst.
-
 ![Zwei laminierte Natur-Tafeln: „Dem Fuchs auf der Spur“ und „Das Reh ist nicht die Frau vom Hirsch“](./img_4429-3.jpg)
 
 ## Natur-Tafeln

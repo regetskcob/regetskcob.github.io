@@ -26,7 +26,3 @@ Die Geschichten und Bilder, die *Peter Wohllebens Buch* das Leben des Waldes ein
 ## Fazit
 
 Ich möchte das Buch von *Peter Wohlleben* allen, die sich intensiver mit der Wald auseinander setzen möchten, ans Herz legen.  
-  
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über folgenden Affiliate-Link bei Amazon erwerben würdest.
-
-[Zum Produkt bei Amazon](https://amzn.to/34ur1m8)

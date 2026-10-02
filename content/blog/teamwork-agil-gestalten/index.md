@@ -36,17 +36,3 @@ Mir hat das Buch sehr geholfen, meine Rolle als Teamleiter besser zu verstehen u
 <!-- Bild fehlt im Backup: img_4879.jpg -->
 
 Von den Autoren des Buches gibt es, ebenfalls beim Hanser Verlag, den [Agilitäts Navigator](https://www.hanser-kundencenter.de/fachbuch/artikel/9783446459984), der euch wie ein Kompass die Richtung bei der Implementierung agiler Arbeitsweisen vorschlägt. Er stellt eine tolle Ergänzung zum Buch dar, auf die ich künftig noch näher eingehen möchte.
-
-#### Unterstütze den Blog
-
-[<!-- Bild fehlt im Backup: q?_encoding=UTF8&ASIN=3446462090&Format=_SL160_&ID=AsinImage&MarketPlace=DE&ServiceVersion=20070822&WS=1&tag=regetskcob03-21&language=de_DE -->](https://www.amazon.de/Teamwork-agil-gestalten-Das-Mitmachbuch/dp/3446462090?keywords=teamwork+agil+gestalten&qid=1670358938&sprefix=teamwork+agil+%2Caps%2C68&sr=8-1&linkCode=li2&tag=regetskcob03-21&linkId=b4a167c3a1f8711302ce0ae00f660880&language=de_DE&ref_=as_li_ss_il)
-
-<!-- Bild fehlt im Backup: ir?t=regetskcob03-21&language=de_DE&l=li2&o=3&a=3446462090 -->
-
-[<!-- Bild fehlt im Backup: q?_encoding=UTF8&ASIN=3446459987&Format=_SL160_&ID=AsinImage&MarketPlace=DE&ServiceVersion=20070822&WS=1&tag=regetskcob03-21&language=de_DE -->](https://www.amazon.de/Agilit%C3%A4ts-Navigator-Karten-f%C3%BCr-kreative-Workshops/dp/3446459987?crid=3PFX3RX1NUKH7&keywords=agilit%C3%A4t+navigator&qid=1670359690&sprefix=agilit%C3%A4ts%2Caps%2C79&sr=8-1&linkCode=li2&tag=regetskcob03-21&linkId=3f8329a9feca5a26e9366808b0ca0869&language=de_DE&ref_=as_li_ss_il)
-
-<!-- Bild fehlt im Backup: ir?t=regetskcob03-21&language=de_DE&l=li2&o=3&a=3446459987 -->
-
-Indem du das Buch oder den Navigator über diesen Affiliate-Link erwirbst unterstützt du mich und damit die Inhalte hier auf dem Blog.
-
-Von den generierten Einnahmen bezahle ich die Domain-Adresse, das Wordpress.com-Hosting und andere zum Betrieb notwendige Dinge.

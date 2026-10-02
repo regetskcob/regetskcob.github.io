@@ -36,8 +36,6 @@ Beim Aufstieg zum Schloss Drachenfells und zur Aussichtsplattform habe ich immer
 
 *Das Steinberger Grand Hotel Petersberg am Petersberg. FUJIFILM X-T30 mit dem XF50-140mm f2.8 + 1.4x - 70mm*
 
-> 🛒 Unterstütze den Blog Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das beschriebene Objektiv im FujiFilm-Store über diesen Affiliate-Link bei Amazon erwerben würdest.
-
 Auf den nächsten Metern war das Grand Hotel immer wieder zu sehen. manchmal mit freier Sicht, manchmal durch die Bäume und Büschen hindurch.
 
 ![Das Grand Hotel auf dem Petersberg, kaum sichtbar durch herbstlich braunes Laub](./dscf1006.jpg)
@@ -116,8 +114,6 @@ Dreht man sich nach rechts schaut man in Richtung vom Bonner Umland und Bonn. Au
 ![Der Rhein mit Inseln, links Baumwipfel](./dscf0970.jpg)
 ![Buhne und Kiesinsel im Rhein von oben](./dscf0980.jpg)
 {{< /gallery >}}
-
-> 🛒 Unterstütze den Blog Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das beschriebene Objektiv über diesen Affiliate-Link bei Amazon erwerben würdest. Der Link führt zum Amazon-FujiFilm-Store.
 
 Durch einen Busch hindurch ist mir am gegenüberliegenden Berg eine Windwurffläche ins Auge gefallen.
 

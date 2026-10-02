@@ -49,6 +49,4 @@ Hagmann schreibt klar und motivierend. Er verzichtet auf Fachjargon, ohne dabei 
 
 *„Luther für Innovatoren“* ist mehr als ein Buch über Innovation – es ist ein Weckruf. Es fordert uns heraus, mutiger und konsequenter zu sein, wenn es darum geht, eingefahrene Strukturen zu hinterfragen und Neues zu schaffen. Für Produktmanager, die oft in der Schnittstelle zwischen strategischer Vision und operativer Umsetzung agieren, liefert das Buch wertvolle Impulse, um Innovation nicht nur als Buzzword zu verstehen, sondern als tiefgreifenden Prozess zu gestalten.
 
-> 🛒 Unterstütze den Blog Falls du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das beschriebene Buch als Taschenbuch oder als gebundenes Exemplar über diese beiden Affilitae-Links erwerben würdest.
-
 Wer bereit ist, über den Tellerrand der eigenen Branche hinauszublicken und von einem Reformer wie Luther zu lernen, wird dieses Buch als inspirierenden Begleiter schätzen. Es zeigt, dass Innovation kein Zufall ist, sondern eine bewusste Entscheidung – und manchmal auch ein Akt des Mutes.

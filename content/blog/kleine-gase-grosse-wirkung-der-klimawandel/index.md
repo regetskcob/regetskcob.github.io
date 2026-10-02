@@ -16,7 +16,3 @@ Die beiden Autoren beschreiben historische Daten so, dass sie auch für *Otto No
 ---
 
 Das Buch bündelt die notwendigen Informationen, die es bedarf um sich selbst einen *fundierten* Eindruck über die Hintergründe und Auswirkungen des Klimawandels zu verschaffen.  
-  
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über folgenden Affiliate-Link bei Amazon erwerben würdest.
-
-[Zum Produkt auf Amazon](https://amzn.to/2K0KpOj)

@@ -22,13 +22,3 @@ Zusätzlich zu den Videos habe ich eine Liste von Podcast Folgen mit und über F
 https://open.spotify.com/playlist/1bYvuFD4F1Wts9VEbwNTFB?si=6ea5eb160bcf4a51
 
 Auf meiner Leseliste für das kommende Jahr steht nun sein Buch, nachdem die obigen Talks förmlich "aufgesaugt" wurden. Ich möchte mehr über seine Denkweise verstehen.
-
-#### Unterstütze den Blog
-
-<!-- Bild fehlt im Backup: q?_encoding=UTF8&ASIN=386781208X&Format=_SL160_&ID=AsinImage&MarketPlace=DE&ServiceVersion=20070822&WS=1&tag=regetskcob03-21&language=de_DE -->
-
-<!-- Bild fehlt im Backup: ir?t=regetskcob03-21&language=de_DE&l=li2&o=3&a=386781208X -->
-
-Indem du das Buch über diesen Affiliate-Link erwirbst unterstützt du mich und damit die Inhalte hier auf dem Blog.
-
-Von den generierten Einnahmen bezahle ich die Domain-Adresse, das Wordpress.com-Hosting und andere zum Betrieb notwendige Dinge.

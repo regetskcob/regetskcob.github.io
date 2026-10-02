@@ -45,7 +45,3 @@ Die Bilder werden mit persönlichen Erinnerungen und Geschichten verbunden und m
 ---
 
 Ich freue mich immer wieder aufs neue nach einer Weiler erneut durch das Buch zu blättern, um Inspiration für meine eigenen Aufnahmen aufzunehmen. Ich kann den Bildband jedem, der sich für Deutschlands Landschaften und die Fotografie interessiert, empfehlen.  
-  
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über folgenden Affiliate-Link bei Amazon erwerben würdest.
-
-[Zum Produkt auf Amazon](https://amzn.to/2K1wur5)

@@ -20,7 +20,3 @@ Ohne euch zu viel vorwegnehmen zu wollen, ist meine persönliche Essenz des Buch
 ---
 
 Ich möchte das Buch jedem empfehlen, der sich damit auseinander setzen möchte, ob er das richtige für Sich tut.  
-  
-Wenn du meinen Blog unterstützen möchtest, würde ich mich freuen, wenn du das Buch über folgenden Affiliate-Link bei Amazon erwerben würdest.
-
-[Zum Produkt bei Amazon](https://amzn.to/3bcaIgs)

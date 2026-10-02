@@ -15,5 +15,3 @@ Im Juli '22 nach Kalkar umgezogen, war es schon die Wahlheimat zum ersten Mal au
 <!-- Bild fehlt im Backup: dji_fly_20221030_100630_360_1667120851235_photo_optimized-2.jpg (alt: Blick über Kalkar mit der Drohne.) -->
 
 *Flug mit der DJI Mavic Mini über Kalkar*
-
-> 🛒 Blog unterstützen Indem du eine Drohne über diesen Affiliate-Link erwirbst unterstützt du mich und damit die Inhalte hier auf dem Blog. Von den generierten Einnahmen bezahle ich die Domain, Hosting und andere zum Betrieb notwendige Dinge sowie neue Bücher oder Produkte zum Vorstellen.
