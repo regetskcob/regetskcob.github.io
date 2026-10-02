@@ -3,6 +3,8 @@ title: "📚 | 50 Arten, Nein zu sagen"
 date: 2023-01-24T13:30:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Wie sich ein Nein so verpacken lässt, dass das Gegenüber dankbar dafür ist, und welches Nein zu welchem Stakeholder passt. Ein kurzweiliges Buch für Product Owner."
+cover: ./cover.jpg
+coverAlt: "Das Buch „50 Arten, Nein zu sagen“ mit bunten Sprechblasen auf dem Cover liegt auf einem Holztisch"
 aliases: ["/posts/50-arten-nein-zu-sagen/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

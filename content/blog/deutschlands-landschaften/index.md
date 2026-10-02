@@ -3,6 +3,8 @@ title: "📚 | Deutschlands Landschaften"
 date: 2016-07-10T05:54:42+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Mark Robertz porträtiert 16 deutsche Nationalparks in einem Bildband, der Lust macht, die Landschaften selbst zu erkunden."
+cover: ./cover.jpg
+coverAlt: "Der Bildband „Deutschlands Landschaften fotografieren“ mit nebligem Wald auf dem Cover, vor einer Wohnsiedlung in der Abenddämmerung"
 tags: ["Bücher", "Fotografie", "Natur"]
 disclosure:
   type: provided

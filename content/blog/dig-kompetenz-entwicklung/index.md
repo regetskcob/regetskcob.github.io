@@ -3,6 +3,8 @@ title: "📚 | Dig. Kompetenzentwicklung"
 date: 2023-01-09T13:00:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "48 Autoren und 27 Praxisbeiträge: Das Handbuch des Hanser Verlags zeigt, wie Unternehmen die Digitalisierung in einer VUCA-Welt angehen können."
+cover: ./cover.jpg
+coverAlt: "Das „Handbuch Digitale Kompetenzentwicklung“ liegt auf einem Stapel Bücher auf einem Holztisch"
 aliases: ["/posts/dig-kompetenz-entwicklung/"]
 tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
 disclosure:

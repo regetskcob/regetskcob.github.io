@@ -3,6 +3,8 @@ title: "📚 | Agile Prozessoptimierung"
 date: 2023-05-22T08:30:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Olavarria und Buschow zeigen, wie sich zerfaserte Prozesse zwischen Vertrieb, Entwicklung und Support agil neu ordnen lassen. Mein Kritikpunkt: Die Maßnahmen setzen gleich im großen Maßstab an."
+cover: ./cover.jpg
+coverAlt: "Das Buch „Agile Prozessoptimierung“ von Marco Olavarria und Sabina Buschow mit gelbem Cover und Zahnrädern liegt auf einem Holztisch"
 aliases: ["/posts/agile-prozessoptimierung/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

@@ -3,6 +3,8 @@ title: "📚 | Praxisbuch kreative Naturfotografie"
 date: 2019-06-20T20:06:49+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Eigener Stil, Muster und Formen, Abstraktion, Langzeitbelichtung und kreative Nachbearbeitung als Werkzeugkasten für Naturfotografen."
+cover: ./cover.jpg
+coverAlt: "Das „Praxisbuch Kreative Naturfotografie“ mit Herbstlaub auf dem Cover liegt auf einem dunklen Holztisch"
 tags: ["Bücher", "Fotografie", "Natur"]
 disclosure:
   type: provided

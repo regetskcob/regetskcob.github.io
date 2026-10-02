@@ -3,6 +3,8 @@ title: "📚 | Der Himmel bei Nacht"
 date: 2019-07-02T11:28:10+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Ausrüstung, Fokussieren und Gestaltung bei Nacht, von der Milchstraße über Sternspuren bis zu Polarlichtern. Eine Empfehlung für Nachtaktive."
+cover: ./cover.jpg
+coverAlt: "Das Buch „Der Himmel bei Nacht“ mit Milchstraße über einem See auf dem Cover liegt auf einem dunklen Holztisch"
 tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided

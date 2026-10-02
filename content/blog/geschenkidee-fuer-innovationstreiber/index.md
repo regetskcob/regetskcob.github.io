@@ -3,6 +3,8 @@ title: "🎁 | Geschenkideen für Innovationstreiber"
 date: 2022-12-06T11:30:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Zwei Handbücher von Benno van Aerssen zu Innovation und digitaler Transformation, eine Geschenkidee für alle im Produktmanagement."
+cover: ./cover.jpg
+coverAlt: "Zwei Handbücher des Vahlen Verlags auf einem Holztisch: „Das große Handbuch Innovation“ und „Das große Handbuch Digitale Transformation“"
 aliases: ["/posts/geschenkidee-fuer-innovationstreiber/"]
 tags: ["Bücher", "Arbeitswelt"]
 ---

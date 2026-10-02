@@ -3,6 +3,8 @@ title: "📚 | Landschaftsfotografie erleben"
 date: 2019-07-02T11:28:25+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Raymond Clement stellt seine Arbeiten vor, mit Panorama-Aufklappseiten, die die Gedanken schweifen lassen. Eine tolle Inspirationsquelle."
+cover: ./cover.jpg
+coverAlt: "Das Buch „Landschaftsfotografie erleben“ liegt auf einem dunklen Holztisch"
 tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided

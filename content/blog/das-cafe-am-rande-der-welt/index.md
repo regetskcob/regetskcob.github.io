@@ -3,6 +3,8 @@ title: "📚 | Das Café am Rande der Welt"
 date: 2020-04-24T08:00:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "John Strelecky begleitet auf der Suche nach dem Sinn des Lebens. Meine Essenz daraus: sich nicht von den Leitbildern anderer beeinflussen lassen."
+cover: ./cover.jpg
+coverAlt: "Das Taschenbuch „Das Café am Rande der Welt“ von John Strelecky, vor blauem Himmel über Dächern in die Höhe gehalten"
 aliases: ["/posts/das-cafe-am-rande-der-welt/"]
 tags: ["Bücher"]
 ---

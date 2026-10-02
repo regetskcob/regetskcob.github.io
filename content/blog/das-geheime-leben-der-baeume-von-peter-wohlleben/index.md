@@ -3,6 +3,8 @@ title: "📚 | Das geheime Leben der Bäume von Peter Wohlleben"
 date: 2020-04-13T10:57:16+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Seit ich Wohllebens Buch gelesen habe, gehe ich mit anderem Blick durch den Wald. Eine Empfehlung für alle, die ihn besser verstehen wollen."
+cover: ./cover.jpg
+coverAlt: "Der Bildband „Das geheime Leben der Bäume“ von Peter Wohlleben mit einem einzelnen Baum im Abendlicht auf dem Cover, vor Dächern in die Höhe gehalten"
 aliases: ["/posts/das-geheime-leben-der-baeume-von-peter-wohlleben/"]
 tags: ["Bücher", "Natur"]
 disclosure:

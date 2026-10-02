@@ -3,6 +3,8 @@ title: "📚 | Node.js - Das umfassende Handbuch"
 date: 2023-05-05T14:30:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Sebastian Springers Handbuch auf Basis von Node.js 16 führt von der Runtime über Debugging bis zum automatisierten Testing."
+cover: ./cover.jpg
+coverAlt: "Das Handbuch „Node.js“ mit grünem Cover liegt auf einem Holztisch"
 aliases: ["/posts/node-js-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

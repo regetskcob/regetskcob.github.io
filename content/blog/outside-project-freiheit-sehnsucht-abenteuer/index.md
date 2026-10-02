@@ -3,6 +3,8 @@ title: "📚 | Outside Project - Freiheit, Sehnsucht, Abenteuer"
 date: 2020-04-15T06:30:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Ein Bildband, in dem acht Fotografinnen und Fotografen zeigen, wie viel Abenteuer auch vor der eigenen Haustür liegt."
+cover: ./cover.jpg
+coverAlt: "Der Bildband „Outside Project“ mit einer Person vor einem Bergsee auf dem Cover, vor Häusern in die Höhe gehalten"
 aliases: ["/posts/outside-project-freiheit-sehnsucht-abenteuer/"]
 tags: ["Bücher", "Natur", "Fotografie"]
 disclosure:

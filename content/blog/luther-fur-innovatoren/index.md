@@ -3,6 +3,8 @@ title: "📚 | Luther für Innovatoren"
 date: 2025-01-22T11:42:41+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Jean-Philippe Hagmann zieht Parallelen zwischen Luthers Reformen und dem, was Innovation heute braucht: den Mut, festgefahrene Überzeugungen zu hinterfragen."
+cover: ./cover.jpg
+coverAlt: "Das Buch „Luther für Innovatoren“ von Jean-Philippe Hagmann mit Porträtsilhouette auf dem Cover liegt auf einem Holztisch"
 aliases: ["/posts/luther-fur-innovatoren/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

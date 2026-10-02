@@ -3,6 +3,8 @@ title: "📚 | Guidebook für Software Engineers"
 date: 2024-12-31T23:00:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Gergely Orosz begleitet Software Engineers durch alle Karrierestufen. Die Idee, die eigene Entwicklung selbst in die Hand zu nehmen, kenne ich aus eigener Erfahrung."
+cover: ./cover.jpg
+coverAlt: "Das „Guidebook für Software Engineers“ liegt auf einem Holzbalken, dahinter ein nebliges Feld und kahle Bäume"
 aliases: ["/posts/guidebook-fur-software-engineers/"]
 tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
 disclosure:
