@@ -17,7 +17,7 @@ ogImage: "about/portrait.jpg"
 Angefangen hat es mit einer Ausbildung zum Fachinformatiker für Anwendungsentwicklung von 2012
 bis 2015.
 Wie die abläuft, von der Bewerbung bis zur Abschlussprüfung, beschreibe ich in
-der fünfteiligen Serie
+der sechsteiligen Serie
 [Wie werde ich Fachinformatiker](/series/wie-werde-ich-fachinformatiker/).
 Seitdem entwickle ich Software, viele Jahre davon native iOS-Apps mit
 Objective-C und Swift. Heute arbeite ich überwiegend mit Flutter, für Web und
