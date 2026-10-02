@@ -202,7 +202,7 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   im Blog öffnet dieselbe Liste, gefiltert: Die Überschrift „Blog“ und die Themen-Zeile bleiben, das
   Menü markiert „Blog“, der offene Tag steht fett in der Zeile (`.topic-row a.is-active`). Ein Klick
   darauf führt zurück nach `/blog/` und hebt den Filter auf. Auch die gefilterte Liste hat
-  Jahresüberschriften und 15 Beiträge je Seite, ab Seite 2 mit eigenem `<title>` und Canonical-Link.
+  Jahresüberschriften und 15 Beiträge je Seite; der Kasten „In Arbeit“ steht auch hier auf Seite 1. Ab Seite 2 mit eigenem `<title>` und Canonical-Link.
   Tag-Seiten bleiben `noindex`. Die Liste und der Umblätterer sind in `post-list.html` für Blog und
   Tags gemeinsam.
 
