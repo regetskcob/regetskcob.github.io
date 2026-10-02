@@ -10,7 +10,6 @@ tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
   by: "vom Vierfarben Verlag"
-draft: true
 ---
 
 > Fotografieren statt knipsen - so wird’s gemacht!

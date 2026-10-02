@@ -10,7 +10,6 @@ series: "Agile Homes GmbH"
 seriesLabel: "Teil I: Die Agile Homes GmbH"
 aliases: ["/posts/agile-baufirmen/"]
 tags: ["Arbeitswelt"]
-draft: true
 ---
 
 In den letzten Monaten und Jahren habe ich viele Bücher über agile Methoden und in den letzten Monaten einige davon bereits in meinen Arbeitsalltag versucht zu integrieren.

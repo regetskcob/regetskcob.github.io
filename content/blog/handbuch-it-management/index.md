@@ -10,7 +10,6 @@ tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "vom Hanser Verlag"
-draft: true
 ---
 
 Um so komplexer IT-Projekte werden, um so größer werden die teams und um so komplexer wird die Software. Dadurch, dass jeder Entwickler, auch trotz StyleGuides & Co., seinen eigenen Stil in den Code bringt und jeder glaubt, die beste Lösung für eine Problemstellung zu kennen, wird der Code beinahe zwangsläufig mit der zeit immer unstrukturierter, undurchschaubarer und eine Wartung immer schwerer möglich.

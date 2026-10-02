@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "von Packt"
-draft: true
 ---
 
 Wie ich bereits gestern kurz angerissen habe, gibt es zahlreiche Anwendungsfälle für OpenCV. Sei es in Desktop-Software, in mobilen Apps oder auf einem Raspberry-Pi, bspw. um Autos zu zählen.

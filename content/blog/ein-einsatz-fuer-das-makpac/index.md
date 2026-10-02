@@ -6,7 +6,6 @@ summary: "Ein selbstgebauter Einsatz für ein MakPac nach einem Festool-Bauplan,
 cover: ./cover.jpg
 coverAlt: "Selbstgebauter Holzeinsatz im MakPac mit Fächern für Werkzeug, Schraubendreher und Wasserwaage"
 tags: ["Holzwerken"]
-draft: true
 ---
 
 Direkt zu Beginn möchte ich euch etwas vorstellen, was das Heim- und Holzwerken in mir deutlich beflügelt hat. Ganz Typisch „Mann“ habe ich mir, nachdem wir eine Weile in unserer Wohnung gewohnt haben, einen Akkuschrauber von Makita gekauft. Der 10 Jahre alte Schrauber von meinem Vater läuft immer noch, also habe ich der Marke einfach vertraut.

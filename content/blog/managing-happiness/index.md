@@ -10,7 +10,6 @@ tags: ["Bücher", "Gesellschaft"]
 disclosure:
   type: provided
   by: "vom Redline Verlag"
-draft: true
 ---
 
 Der Mittelpunkt der meisten erwachsenen Menschen ist heut zu Tage die Arbeit. Danach folgen meist Familie, Hobbies und Freunde. Doch sind wir glücklich mit dem, was wir machen und mit dem, was wir bisher erreicht haben? Mit dem was wir besitzen?

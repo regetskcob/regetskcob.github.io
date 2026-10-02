@@ -9,7 +9,6 @@ tags: ["Holzwerken"]
 disclosure:
   type: purchased
   item: "Diese Oberfräse"
-draft: true
 ---
 
 Am Samstag habe ich meine neue Oberfräse von Makita, die RT0700, erhalten. Diese hatte ich in meiner Mittagspause am Freitag bestellt. Neben der Freude, dass diese bereits am Samstag kommt, machte sich bei Erhalt dann auch etwas Enttäuschung breit.

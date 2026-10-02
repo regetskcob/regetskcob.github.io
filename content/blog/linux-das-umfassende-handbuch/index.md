@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung", "Ausbildung"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
 So manch ein Schüler im Bereich Informatik kennt das sicherlich. Zuhause steht ein Windows-PC, auf der Arbeit ebenfalls und in der Schule heißt es plötzlich, setzt doch mal eine Linux VM auf. Jeder, der man eine Berufsschule- oder einen entsprechenden Studiengang besucht hat weiß, dass es jetzt die Sorte Schüler gibt, die in Nullkommanichts eine entsprechende VM laufen haben (oder bereits besaßen) und sich pudelwohl fühlen. Andere wiederrum wissen mit Linux nicht mal wirklich etwas anzufangen.

@@ -9,7 +9,6 @@ tags: ["Bücher"]
 disclosure:
   type: provided
   by: "vom Verlag"
-draft: true
 ---
 
 Bereits letztes Jahr hatte ich die 1. Auflage des großen Heimwerkerbuchs hier auf dem Blog vorgestellt und euch meine Meinung dazu mitgeteilt. Nun ist es in der 2 Auflage erschienen und ich möchte es mir nich nehmen lassen, euch das neue Buch erneut zu präsentieren.

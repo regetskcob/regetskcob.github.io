@@ -10,7 +10,6 @@ tags: ["Bücher", "Fotografie", "Natur"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
 Das Buch - geschrieben vom Autor Hans-Peter Schaub und in Zusammenarbeit mit NaturFoto entstanden - beschreibt sich selbst als Standardwerk zum Thema Naturfotografie.

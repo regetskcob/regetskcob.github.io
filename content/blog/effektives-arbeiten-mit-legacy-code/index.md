@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom mitp Verlag"
-draft: true
 ---
 
 Geschrieben von Michael C. Feathers und ins deutsche übersetzt bietet „Effektives Arbeiten mit Legacy Code“ einen Ratgeber für all die wenigen, die sich mit Bestandssystemen und ‚historisch gewachsenem‘ Code herum schlagen müssen.

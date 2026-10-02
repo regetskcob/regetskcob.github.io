@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"
-draft: true
 ---
 
 Heut zu tage wird alles, was nur irgend wie möglich ist, überwacht. Nicht ohne Grund hört man immer mal wieder vom „Überwachungsstaat“. Ähnlich ist das in Unternehmen, die immer und wenn möglich von über all aus erfahren möchten, ob aktuell alle Netzwerke und Komponenten online und betriebsbereit sind. Im Fehlerfall soll zeitnah reagiert werden, es werden also auch Event benötigt, wenn etwas nicht klappt.

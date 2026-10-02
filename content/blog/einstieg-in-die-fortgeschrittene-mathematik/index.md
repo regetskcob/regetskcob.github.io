@@ -9,7 +9,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom Hanser Verlag"
-draft: true
 ---
 
 Aus beruflichen Gründen habe ich mich mit einigen Büchern zur fortgeschrittenen Mathematik - unter anderem vom Hanser Verlag - eingedeckt, mit denen ich mich Stück für Stück an das Thema heran wagen möchte.

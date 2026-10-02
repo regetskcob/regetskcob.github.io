@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "von Packt"
-draft: true
 ---
 
 Die Themen Objekt- und Texterkennung sind in aktuellen Zeiten genau so Thema wie Augmented Reality und VR. Doch wie bekomme ich diese Funktionen in einer iOS App realisiert, ohne das Rad vollständig neu erfinden zu müssen? Ein Weg ist OpenCV.

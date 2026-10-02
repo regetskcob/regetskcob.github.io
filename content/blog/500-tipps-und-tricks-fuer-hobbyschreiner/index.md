@@ -9,7 +9,6 @@ tags: ["Bücher", "Holzwerken"]
 disclosure:
   type: provided
   by: "vom Ulmer Verlag"
-draft: true
 ---
 
 Besonders in den Anfängern des Heim- und Holzwerkens stellten sich – zumindest bei mir – bereits bei der kleinsten Frage oder Herausforderung die Nackenhaare auf und Fragezeichen sprießten nur so aus meinem Kopf.

@@ -10,7 +10,6 @@ tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
   by: "vom mitp Verlag"
-draft: true
 ---
 
 Stephan Wiesner kenne ich durch seine YouTube Videos und sein Buch „Nicht glauben, ausprobieren!“. Sein Landschaftsfotografie Buch wird meiner Erwartungshaltung aus dem anderen Buch sowie aus seinen Videos vollends gerecht.

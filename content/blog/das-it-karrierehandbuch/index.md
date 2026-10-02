@@ -10,7 +10,6 @@ tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "von O’Reilly"
-draft: true
 ---
 
 Ganz egal ob nach dem Schulabschluss, nach der Lehre oder nach etlichen Jahren in einem festen Job. Irgendwann steht jeder vor der Entscheidung (egal ob erneut oder zum ersten Mal), was er eigentlich im Leben erreichen möchte. Man muss Bewerbungen schreiben, Gehaltsverhandlungen meistern oder auch allgemeine Hürden im Job überstehen.

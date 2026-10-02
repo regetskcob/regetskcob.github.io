@@ -10,7 +10,6 @@ tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "vom Hanser Verlag"
-draft: true
 ---
 
 Ganz egal wo man ist oder was man sich ansieht, man ist umgeben von Geschichten. Dabei ist es ebenfalls vollkommen egal, ob es um wissenschaftliche, historische oder unterhaltsame Gesichten geht. Wir Menschen leben mit Geschichten und wachsen bereits als Kind mit ihnen auf.

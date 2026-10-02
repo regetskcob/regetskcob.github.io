@@ -7,7 +7,6 @@ cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein Versionsverlauf mit einer Hauptlinie und Release-Fahne, darüber ein langer Feature-Zweig, darunter ein kurzer roter Hotfix-Zweig, der wieder einmündet"
 tags: ["Softwareentwicklung"]
-draft: true
 ---
 
 Wer kenn das nicht, ihr habt einen Bug in eurer aktuellen Release-Version gemeldet bekommen und fixt diesen zeitnah. Dieser Bugfix kann aber nicht ausgeliefert werden, da andere Aufgaben und Anforderungen für die nächste Version noch mitten in der Entwicklung sind, also kein stabiler Stand existiert.

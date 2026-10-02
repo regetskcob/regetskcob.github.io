@@ -9,7 +9,6 @@ tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
   by: "vom Verlag"
-draft: true
 ---
 
 Entgegen zu vielen anderen Fotografie-Büchern endet hier der Tag nicht mit dem Sonnenuntergang, sondern fängt damit erst an.

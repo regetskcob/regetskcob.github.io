@@ -9,7 +9,6 @@ tags: ["Bücher", "Fotografie", "Natur"]
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"
-draft: true
 ---
 
 Als Buch aus einer Reihe von Büchern beim dpunkt Verlag, die allesamt von Daan Schoonhoven herausgegeben werden, erfüllt dieses Buch exakt die Erwartungshaltung, die andere Bücher der Reihe bereits geweckt hatten.

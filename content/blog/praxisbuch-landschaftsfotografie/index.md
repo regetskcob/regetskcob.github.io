@@ -9,7 +9,6 @@ tags: ["Bücher", "Fotografie", "Natur"]
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"
-draft: true
 ---
 
 Dieses Buch - Teil aus einer Reihe von Fotografier-Büchern, die alle von Daan Schoohoven als deutsche Übersetzung beim dpunkt Verlag erschienen sind - widmet sich ganz der Aufgabe, Leserinnen und Leser mit auf eine Reise in die Natur zu nehmen, eben Jenen die Augen zu öffnen und den Blick für das Besondere zu schulen.

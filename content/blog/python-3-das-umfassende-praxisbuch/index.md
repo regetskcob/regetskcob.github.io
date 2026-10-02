@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom mitp Verlag"
-draft: true
 ---
 
 Dass man mit Python mit einfachen Mitteln und wenig Aufwand viel erreichen kann, habe ich vor einiger Zeit bereits in meinem Artikel zum Auslesen eines 1-Wire Sensors demonstriert.

@@ -7,7 +7,6 @@ cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Eine Mindmap mit einem roten Knoten in der Mitte und sechs Ästen mit Knoten, an zwei davon kleine Unteräste"
 tags: ["Softwareentwicklung"]
-draft: true
 ---
 
 Kennt ihr auch dieses Problem? Ihr habt eine bahnbrechende Idee, aber allein das notieren der Stichpunkte, die euch zur Idee einfallen, ende in schierem Chaos. Sei es, weil ihr Stichpunkte löscht, an anderer Stelle aufführen wollt, oder weil einfach euer Blatt voll ist.

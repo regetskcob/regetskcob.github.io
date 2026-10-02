@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "von No Starch Press"
-draft: true
 ---
 
 Mit „Great Code Vol. 1“ erhaltet ihr ein Buch, dass euch wortwörtlich dabei helfen möchte, die Maschinen besser zu verstehen. Autor Randall Hyde betont, dass er **nie** in seiner ganzen Laufzeit für *tolle, große oder besonders beliebte* Unternehmen gearbeitet hat. Eher in kleinen Software-Schmiede. Er hat sich vieles selber beigebracht und über Zeiträume von über 20 Jahren zur Perfektion gebracht, wie er selber schreibt.

@@ -10,7 +10,6 @@ tags: ["Bücher"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
 Als die Serif Labs mit Affinity Photo und Affinity Designer ihre beiden Mac Apps (die es inzwischen auch für Windows gibt) vorgestellt haben, waren viele noch skeptisch. Erhältlich für jeweils **einmalig** 49,90 € im App Store, stellen die zwei Apps aber eine enorme Konkurrenz zu den Produkten von Adobe dar.

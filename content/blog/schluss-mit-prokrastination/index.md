@@ -10,7 +10,6 @@ tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "vom Redline Verlag"
-draft: true
 ---
 
 Ein Phänomen das sicherlich jeder kennt. Man hat Verpflichtungen zu erledigen, schiebt diese aber immer weiter auf. Wie man gegen dieses Verhalten, die sogenannte Prokrastination angeht und sich aus diesem Trott löst, beschrieben die drei Autoren Petr Ludwig, Petra Kubin und Gernot Bogner in ihrem Buch „Schluss mit Prokrastination“.

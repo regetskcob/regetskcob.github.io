@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "von objc.io"
-draft: true
 ---
 
 Vor nicht all zu langer Zeit habe ich euch mit Advanced Swift mein allererstes englischsprachiges Buch zu Swift vorgestellt. Es ging um fortgeschrittenere Themenkomplexe und auch viele praktische Tipps und Kniffe, wie Swift noch schöner und leichter anzuwenden ist.

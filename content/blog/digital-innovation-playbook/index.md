@@ -10,7 +10,6 @@ tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "von Murmann Publishers"
-draft: true
 ---
 
 Das Erfinden & Entwickeln neuer, innovativer Produkte wird in der heutigen Zeit immer schwerer. Viele Dinge und Ideen wurden inzwischen von anderen Menschen auf dem Planeten realisiert, oder es besteht kein (großer) Bedarf an der Idee oder dem Produkt.

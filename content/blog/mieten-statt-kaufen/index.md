@@ -7,10 +7,9 @@ cover: ./cover.jpg
 coverAlt: "Die X-T30 mit dem großen XF50-140mm auf einem Stativ im Wald, links eine Pappfigur mit Gearflix-Aufsteller"
 aliases: ["/posts/mieten-statt-kaufen/"]
 tags: ["Fotografie", "Natur"]
-draft: true
 ---
 
-Als Zuschauer der ersten Stunde von „Die Höhle der Löwen“ hatte ich auch in einer der letzten Staffeln das Startup [Gearflix](https.//www.gearflix.com) kennengelernt.
+Als Zuschauer der ersten Stunde von „Die Höhle der Löwen“ hatte ich auch in einer der letzten Staffeln das Startup [Gearflix](https://www.gearflix.com) kennengelernt.
 
 Aufbauend auf der Expertise eines lokalen Foto-Fachgeschäfts vermieten Peter und Marius Hamer mit Gearflix Fotografie-Equipment für jedermann. Von der Kamera, über zahlreiche Objektive und bis hin zu Drohnen bietet Gearflix ein Equipment-Portfolio an, bei dem nahezu jeder fündig werden kann.
 

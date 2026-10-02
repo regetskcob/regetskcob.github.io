@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "von O’Reilly"
-draft: true
 ---
 
 C++, oft genannt als *objektorientierter Nachfolger von C*, wird heut zu Tage immer öfter besonders unter Jungen Entwicklern als zu komplex, zu kompliziert und „einfach zu alt“ verhöhnt.

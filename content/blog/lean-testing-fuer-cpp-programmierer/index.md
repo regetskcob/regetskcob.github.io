@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"
-draft: true
 ---
 
 Das Ziel eines jeden Programmierers sollte es sein, möglichst fehlerfreien Code abzuliefern.  Doch wie erreicht man das? Wie kann man als Entwickler sicherstellen, dass der Code eine gute und Stabile Lösung für das geforderte Problem liefert, ohne **händisch** die gesamte Software zu testen?

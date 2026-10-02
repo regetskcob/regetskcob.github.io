@@ -10,7 +10,6 @@ tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "vom Vahlen Verlag"
-draft: true
 ---
 
 Die Art und Weise, wie die Menschheit heute Unternehmen (versucht) zu führen und zu leiten, ist im Wandel.

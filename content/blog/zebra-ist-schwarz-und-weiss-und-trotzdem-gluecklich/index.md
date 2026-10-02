@@ -10,7 +10,6 @@ tags: ["Bücher"]
 disclosure:
   type: provided
   by: "vom Ullstein Verlag"
-draft: true
 ---
 
 Am 27. März 2017 ist das Buch „Zebra ist schwarz und weiß - und trotzdem glücklich“ von Kazim Akgoba im Ullstein Verlag erschienen. Leider hat er die Veröffentlichung durch seinen Tod nicht mehr selber miterleben können.

@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"
-draft: true
 ---
 
 In jedem, aber vor allem in einem umfangreichen, Softwaresystem kommt es zu sogenannter Softwareevolution, welche exponentiell stärker ausfällt, um so mehr Entwickler involviert sind. Um diese Evolution unter Kontrolle zu halten - salopp gesagt Wildwuchs zu unterbinden - stellen euch Harry M. Sneed und Richard Seidl die nötigen Konzepte, Tipps und Tools vor.

@@ -10,7 +10,6 @@ tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
 Wer kennt das nicht, man kauft sich eine Kamera - ganz egal ob eine DSLR, Systemkamera oder eine DigiCam - und möchte mit den Bildern beispielsweise seine Hochzeitsreise festhalten. Oft sind wir danach aber von den Ergebnissen kaum begeistert.

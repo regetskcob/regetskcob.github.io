@@ -10,7 +10,6 @@ series: "Agile Homes GmbH"
 seriesLabel: "Teil II: Eine neue Baumaschine"
 aliases: ["/posts/anschaffung-und-einfuehrung-einer-neuen-baumaschine/"]
 tags: ["Arbeitswelt"]
-draft: true
 ---
 
 In der *Agile Homes GmbH* arbeiten 20 Mitarbeiter auf den Baustellen sowie fünf im Büro und der Chef. Die 20 Bauarbeiter sind aufgeteilt auf vier Baustellen-Teams, sodass das Unternehmen bis zu vier Baustellen gleichzeitig abwickeln und betreuen kann.

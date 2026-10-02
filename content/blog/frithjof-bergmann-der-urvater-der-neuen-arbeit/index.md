@@ -8,7 +8,6 @@ coverAI: true
 coverAlt: "KI-generierte Grafik: Ein Videofenster mit rotem Abspielknopf, daneben eine Tonspur mit Wellenform und ein gestricheltes Buch als Leseliste"
 aliases: ["/posts/frithjof-bergmann-der-urvater-der-neuen-arbeit/"]
 tags: ["Arbeitswelt"]
-draft: true
 ---
 
 Zum Jahresende bin ich, eher zufällig, über Frithjof Bergmann und einige seiner letzten deutschsprachigen Auftritte gestolpert. Mir war sein Name bis dato kein Begriff.

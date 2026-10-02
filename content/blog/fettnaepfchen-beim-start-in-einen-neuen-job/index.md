@@ -7,7 +7,6 @@ cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Eine Person tritt aus einer Tür und läuft auf einen Napf mit Fett zu, darüber ein rotes Ausrufezeichen"
 tags: ["Ausbildung", "Arbeitswelt"]
-draft: true
 ---
 
 Beim Start in einen neuen Beruf oder eine neue Arbeitsstelle, sollte man einige Dinge beachten, um nicht gleich zu Beginn den neuen Fettnäpfchen-Rekord aufzustellen.

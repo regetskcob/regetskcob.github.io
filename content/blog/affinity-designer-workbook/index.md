@@ -10,7 +10,6 @@ tags: ["Bücher"]
 disclosure:
   type: provided
   by: "vom Verlag"
-draft: true
 ---
 
 Seit dem die Serif Labs Affinity Designer (und auch Affinity Photo) vorgestellt haben, ist die Software in aller Munde. Man findet immer mehr Tutorials und Form von Video s oder in Textform, aber auch immer mehr Bücher, die die Software behandeln.

@@ -9,7 +9,6 @@ tags: ["Bücher", "Fotografie", "Natur"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
 Ganz egal ob eindrucksvolle Bilder vom Wattenmeer oder perfekt eingefangene Stimmung am Berchtesgadener Land. Mark Robertz ist für sein neues Buch quer durch Deutschland gereist und hat Bilder von den Nationalparks des Landes mit gebracht. Das daraus entstandene Buch "Deutschlands Landschaften" wartet mit vielen wunderschönen Bildern und Landschaften auf und macht bei Fotografen Lust auf mehr. Lust darauf, selber diese Landschaften zu erkunden.

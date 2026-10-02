@@ -10,7 +10,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "von No Starch Press"
-draft: true
 ---
 
 Heute möchte ich euch den Nachfolger von „Great Code Vol.1“ vorstellen. Im rahmen von „Great Code Vol. 2“ verspricht Randall Hyde euch sensibler dafür zu machen, Code zu schreiben, der möglichst wenig in der Zukunft optimiert werden muss.
