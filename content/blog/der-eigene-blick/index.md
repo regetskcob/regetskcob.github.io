@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Robert Mertens über den eigenen Stil, den roten Faden in Bildserien und Stimmung im Bild. Ein Buch, das den fotografischen Stil voranbringt."
 aliases: ["/posts/der-eigene-blick/"]
 tags: ["Bücher", "Fotografie"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 ---
 
 Aufnahmen, denen man ansieht, dass es ihre sind. Einheitlicher Stil in den Aufnahmen einer Serie. Transport von Gefühl & Stimmung mit den Aufnahmen.

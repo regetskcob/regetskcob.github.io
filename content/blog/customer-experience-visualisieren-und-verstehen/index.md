@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Jim Kalbach zeigt, wie sich Customer Journeys und Service Blueprints visualisieren lassen, um die Kundenerfahrung zu verstehen und zu verbessern."
 aliases: ["/posts/customer-experience-visualisieren-und-verstehen/"]
 tags: ["Bücher"]
+disclosure:
+  type: provided
+  by: "von O’Reilly"
 ---
 
 Customer Experience ist in aller Munde. Häufiger hört man noch User Experience, doch am Ende zahlt auch diese auf die Customer Experience ein.

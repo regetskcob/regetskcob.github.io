@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "94 Muster der Scrum Patterns Group für fast jede Phase eines Scrum-Projekts. Von mir eine klare Kaufempfehlung für alle, die mit Scrum arbeiten."
 aliases: ["/posts/scrum-ein-buch-uber-zusammenarbeit/"]
 tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
+disclosure:
+  type: provided
+  by: "vom Vahlen Verlag"
 ---
 
 Geschrieben von der „Scrum Patterns Group“ um Jeff Sutherland und James O. Copien, wartet das Buch mit der Essenz aus mehrjähriger Zusammenarbeit dutzender Autoren und Fach-Experten auf.

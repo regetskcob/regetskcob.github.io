@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Olavarria und Buschow zeigen, wie sich zerfaserte Prozesse zwischen Vertrieb, Entwicklung und Support agil neu ordnen lassen. Mein Kritikpunkt: Die Maßnahmen setzen gleich im großen Maßstab an."
 aliases: ["/posts/agile-prozessoptimierung/"]
 tags: ["Bücher", "Arbeitswelt"]
+disclosure:
+  type: provided
+  by: "vom Verlag"
 ---
 
 Ihr kennt das. Euer Unternehmen hat sich zum Ziel den Launch eines neuen Produktes gesetzt. Der Vertrieb weiß, was der Kunde will, die Entwicklung weiß, was der Vertrieb will, der Support weiß, was die Entwicklung erstellt hat und ausliefern wird. Der Kunde weiß, wie es zu benutzen ist. Schöne (Wunsch-)Vorstellung. 🤣

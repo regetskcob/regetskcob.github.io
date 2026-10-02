@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Sebastian Springers Handbuch auf Basis von Node.js 16 führt von der Runtime über Debugging bis zum automatisierten Testing."
 aliases: ["/posts/node-js-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 ---
 
 JavaScript hat in den letzten Jahren immer mehr an Beliebtheit und Fans gewonnen und die Community hat der Sprache dank zahlreicher weiterverbreiteter Frameworks zu zahlreichen Einsatzmöglichkeiten verholfen. Früher oft als "nicht ausgereift" abgetan, hat sich die Sprache heute einen festen Namen in allem Bereichen, die sich online abspielen, erarbeitet.

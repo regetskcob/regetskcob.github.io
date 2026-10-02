@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Wie sich ein Nein so verpacken lässt, dass das Gegenüber dankbar dafür ist, und welches Nein zu welchem Stakeholder passt. Ein kurzweiliges Buch für Product Owner."
 aliases: ["/posts/50-arten-nein-zu-sagen/"]
 tags: ["Bücher", "Arbeitswelt"]
+disclosure:
+  type: provided
+  by: "vom dpunkt Verlag"
 ---
 
 Nein - Ein Wort, das bei vielen verpönt ist. Doch ohne ein klares Nein funktioniert unsere (Arbeits-)Welt ab und an einfach nicht.

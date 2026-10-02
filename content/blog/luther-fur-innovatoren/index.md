@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Jean-Philippe Hagmann zieht Parallelen zwischen Luthers Reformen und dem, was Innovation heute braucht: den Mut, festgefahrene Überzeugungen zu hinterfragen."
 aliases: ["/posts/luther-fur-innovatoren/"]
 tags: ["Bücher", "Arbeitswelt"]
+disclosure:
+  type: provided
+  by: "vom Verlag"
 ---
 
 Als langjähriger Teamleiter und Produktmanager in der Softwareentwicklung habe ich gelernt, dass Innovation nicht nur das Ergebnis genialer Ideen ist, sondern vor allem das Produkt einer bewusst geschaffenen Kultur, die Wandel ermöglicht.

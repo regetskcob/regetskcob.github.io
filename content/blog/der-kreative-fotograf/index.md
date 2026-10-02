@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Heidi und Robert Mertens zeigen Techniken, die Kreativität in der Fotografie wecken sollen. Viele der gezeigten Aufnahmen wirken auf mich allerdings eher wie Schnappschüsse."
 aliases: ["/posts/der-kreative-fotograf/"]
 tags: ["Bücher", "Fotografie"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 ---
 
 Wie auch die anderen zwei Bücher von Heidi und Robert Mertens, die ich hier vor kurzen vorgestellt habe, behandelt auch dieses die (Wieder-)Findung der eigenen Kreativität.

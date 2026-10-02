@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Alois Summerer und Paul Maisberger liefern Werkzeuge aus der Praxis, um Teams agil zu gestalten, dazu zehn Interviews mit Professionals."
 aliases: ["/posts/teamwork-agil-gestalten/"]
 tags: ["Bücher", "Arbeitswelt"]
+disclosure:
+  type: provided
+  by: "vom Hanser Verlag"
 draft: true
 ---
 

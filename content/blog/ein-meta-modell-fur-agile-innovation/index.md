@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Jean-Philippe Hagmann erklärt Innovation als Geschichte mit eingestreuten Gedankennotizen. Ich habe mehrere Anläufe gebraucht, bis mich das Buch gepackt hat."
 aliases: ["/posts/ein-meta-modell-fur-agile-innovation/"]
 tags: ["Bücher", "Arbeitswelt"]
+disclosure:
+  type: provided
+  by: "vom Vahlen Verlag"
 draft: true
 ---
 

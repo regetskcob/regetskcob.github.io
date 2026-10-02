@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Jeff Langr führt in testgetriebene Entwicklung mit C++ ein. Ordentliches Testen heißt mehr, als ein bisschen zu klicken und zu schauen."
 aliases: ["/posts/sauberer-code-bessere-produkte/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
+  by: "vom dpunkt Verlag"
 ---
 
 Hier ein bisschen was eingeben, da ein bisschen klicken, dort eine Einstellung ändern und dann schauen, ob alles so aussieht, wie man es für richtig hält. So läuft ordentliches Testen von Software.

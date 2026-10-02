@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Jürgen Wolfs Handbuch führt mit 100 Workshops von der Bildverwaltung bis zu Ebenen und Farbkorrektur durch Capture One Pro 12. Für Einsteiger gut geeignet, nur der Schreibstil ist etwas fad."
 aliases: ["/posts/capture-one-pro-12-buch/"]
 tags: ["Bücher", "Fotografie"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 ---
 
 Jürgen Wolf - für mich bereits durch mehrere Fachbücher aus dem IT-Bereich bekannt - schreibt auch im Fotografie Bereich Bücher für den Rheinwerk Verlag. So gibt es neben Büchern zu Lightroom auch ein Werk über Capture One Pro 12 von ihm.

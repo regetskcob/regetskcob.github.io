@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Christian Clausen zeigt, wie sich Code mit höchstens fünf Zeilen je Methode refaktorieren lässt. Kurzweilig, praxisnah und mit einem Vorwort von Uncle Bob."
 aliases: ["/posts/five-lines-of-code/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 ---
 
 Mit fünf Zeilen je Funktion/Methode auskommen, das ist der Ansatz, den euch Christian Clausen mit seinem Buch vermittelt.

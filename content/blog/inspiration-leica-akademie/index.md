@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Ein Inspirationsbuch mit Bildern und Texten von Fotografen der Leica Akademie, das sich an alle richtet. Gestört haben mich die doppelten Texte auf Deutsch und Englisch und die Werbung für die Akademie."
 aliases: ["/posts/inspiration-leica-akademie/"]
 tags: ["Bücher", "Fotografie"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 ---
 
 Ich war zu Beginn, in Anbetracht des Buchtitels, skeptisch, ob sich nun das gesamte Buch ausschließlich an Fotografen mit dem Leica-System richtet.  

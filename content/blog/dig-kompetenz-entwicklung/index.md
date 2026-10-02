@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "48 Autoren und 27 Praxisbeiträge: Das Handbuch des Hanser Verlags zeigt, wie Unternehmen die Digitalisierung in einer VUCA-Welt angehen können."
 aliases: ["/posts/dig-kompetenz-entwicklung/"]
 tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
+disclosure:
+  type: provided
+  by: "vom Hanser Verlag"
 ---
 
 Digitalisierung ist in aller Munde. Vom Musikgeschäft, über den Malerbetrieb bis hin zum Schornsteinfeger, dem Finanzamt oder der städtischen Verwaltung, alle wollen und **müssen** sich digitalisieren, um mit dem schnellen Wandel um uns herum Schritt zu halten.

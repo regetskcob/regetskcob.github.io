@@ -5,6 +5,9 @@ lastmod: 2026-10-02T05:29:49+0000
 summary: "Sebastian Springers Handbuch erklärt React von Komponenten, Props und State bis zu Hooks, Redux und Zustand."
 aliases: ["/posts/react-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 ---
 
 Sebastian Springers Buch „React – Das umfassende Handbuch“ ist ein außergewöhnlich gut strukturiertes und tiefgehendes Werk, das sich an Webentwickler richtet, die React als Frontend-Bibliothek umfassend verstehen und effektiv einsetzen möchten.
