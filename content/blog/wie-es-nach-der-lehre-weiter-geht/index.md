@@ -1,8 +1,13 @@
 ---
-title: "👩🏼‍🎓 👨🏻‍🎓 | Wie es nach der Lehre weiter geht"
-date: 2017-02-08T20:20:00+0000
+title: "👨‍🎓 | Wie es nach der Lehre weiter geht"
+date: 2023-01-09T07:00:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Was kommt nach der Ausbildung? Am Beispiel des Azubis Max: im Betrieb bleiben, wechseln, studieren oder selbstständig werden."
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Eine Person am Anfang, von der vier gepunktete Wege zu vier Symbolen führen: Firmengebäude, Aktenkoffer, Doktorhut und Fahne, darunter eine Leiste mit sechs Stationen, die sechste hervorgehoben"
+series: "Wie werde ich Fachinformatiker"
+seriesLabel: "Teil VI: Wie es nach der Lehre weiter geht"
 aliases: ["/posts/wie-es-nach-der-lehre-weiter-geht/"]
 tags: ["Ausbildung", "Softwareentwicklung"]
 ---

@@ -395,6 +395,15 @@ es kann also nichts Weiteres auf die Seite gelangen. Fotos ohne Daten zeigen kei
 EXIF-Knopf. Für Fotos, die ohne Metadaten exportiert wurden, kann `data/exif.yaml`
 die Werte liefern, `scripts/extract-exif.sh <Ordner mit Originalen>` schreibt sie.
 
+### Generierte Cover
+
+Beiträge ohne passendes Foto (Serienteile, Technikthemen) bekommen eine flache Linien-Grafik im Stil der
+vorhandenen: Papierton `#f3efe6`, dunkle Linien `#2b2b29`, Rostrot `#b55229` als einzige Farbe, Grau für
+Nebensächliches. Bei Serien zeigt eine Punktreihe unten den Teil (`fachinformatiker-vi.svg`: sechs Punkte,
+der sechste hervorgehoben). Die Quellen liegen als SVG unter `assets/covers/` und erklären im Kopf, wie sie
+gerendert werden (macOS: `qlmanage`, dann `sips -c 1000 2000` und JPEG, Qualität 88). Im Front Matter
+stehen `cover: ./cover.jpg`, `coverAI: true` und ein `coverAlt`, das mit „KI-generierte Grafik:“ beginnt.
+
 ### Buchcover für Rezensionen
 
 Rezensionen (📚) tragen das Cover des Verlags: mittig auf einem Papierton (RGB 243 / 239 / 230),

@@ -3,6 +3,11 @@ title: "🏗 | Die Agile Homes GmbH"
 date: 2020-04-11T22:45:35+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Zum Auftakt der fiktiven Agile Homes GmbH: Anhand ihrer Projekte vergleiche ich künftig agile Methoden mit herkömmlichen Vorgehensweisen."
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Ein Haus im Holzrahmenbau unter einem Kran, daneben eine Aufgabentafel mit Haftnotizen in drei Spalten, darunter eine Leiste mit zwei Stationen, die erste hervorgehoben"
+series: "Agile Homes GmbH"
+seriesLabel: "Teil I: Die Agile Homes GmbH"
 aliases: ["/posts/agile-baufirmen/"]
 tags: ["Arbeitswelt"]
 draft: true

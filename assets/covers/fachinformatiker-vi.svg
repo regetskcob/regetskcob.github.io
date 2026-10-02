@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 -500 2000 2000">
+  <!-- Cover for "Wie es nach der Lehre weiter geht", part 6 of the series "Wie
+       werde ich Fachinformatiker": the way out of the apprenticeship forks
+       into four, stay with the company, the job market, studying, working
+       for yourself. Flat style of the other generated covers; the dots at the
+       bottom mark the part in the series. Render as agile-homes-1.svg:
+       qlmanage (size 2000), sips -c 1000 2000, JPEG (quality 88). -->
+  <rect x="0" y="-500" width="2000" height="2000" fill="#f3efe6"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the apprentice -->
+    <circle cx="640" cy="520" r="76" stroke="#b55229" stroke-width="3" opacity="0.35"/>
+    <circle cx="640" cy="520" r="52" stroke="#b55229" stroke-width="3" opacity="0.55"/>
+    <circle cx="640" cy="498" r="20" fill="#b55229" stroke="none"/>
+    <path d="M608 552 C608 522 672 522 672 552 Z" fill="#b55229" stroke="none"/>
+    <path d="M740 520 C 920 520, 1000 310, 1256 310" stroke="#9a9a94" stroke-width="3" stroke-dasharray="2 10"/><path d="M740 520 C 920 520, 1000 450, 1256 450" stroke="#9a9a94" stroke-width="3" stroke-dasharray="2 10"/><path d="M740 520 C 920 520, 1000 590, 1256 590" stroke="#9a9a94" stroke-width="3" stroke-dasharray="2 10"/><path d="M740 520 C 920 520, 1000 730, 1256 730" stroke="#9a9a94" stroke-width="3" stroke-dasharray="2 10"/>
+    <rect x="1260" y="255" width="140" height="110" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><rect x="1260" y="395" width="140" height="110" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><rect x="1260" y="535" width="140" height="110" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><rect x="1260" y="675" width="140" height="110" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+    <!-- stay with the company -->
+    <g stroke="#2b2b29" stroke-width="3">
+      <rect x="1298" y="276" width="64" height="68" fill="#f3efe6"/>
+      <rect x="1310" y="288" width="12" height="12"/><rect x="1338" y="288" width="12" height="12"/>
+      <rect x="1310" y="310" width="12" height="12"/><rect x="1338" y="310" width="12" height="12"/>
+      <rect x="1322" y="326" width="16" height="18" fill="#b55229"/>
+    </g>
+    <!-- the job market -->
+    <g stroke="#2b2b29" stroke-width="3">
+      <path d="M1316 430 V418 H1344 V430"/>
+      <rect x="1294" y="430" width="72" height="52" rx="6" fill="#f3efe6"/>
+      <path d="M1294 454 H1366"/>
+      <rect x="1324" y="448" width="12" height="12" rx="2" fill="#b55229"/>
+    </g>
+    <!-- studying -->
+    <g stroke="#2b2b29" stroke-width="3">
+      <path d="M1288 582 L1330 560 L1372 582 L1330 604 Z" fill="#f3efe6"/>
+      <path d="M1306 592 V614 Q1330 628 1354 614 V592"/>
+      <path d="M1372 582 V612"/>
+      <circle cx="1372" cy="616" r="5" fill="#b55229" stroke="none"/>
+    </g>
+    <!-- working for yourself -->
+    <g stroke="#2b2b29" stroke-width="3">
+      <path d="M1308 764 V696"/>
+      <path d="M1308 696 H1364 L1352 713 L1364 730  H1308 Z" fill="#b55229"/>
+    </g>
+    <!-- the part in the series -->
+    <path d="M880 900 H1120" stroke="#9a9a94" stroke-width="3"/>
+    <circle cx="880" cy="900" r="8" fill="#2b2b29" stroke="none"/><circle cx="928" cy="900" r="8" fill="#2b2b29" stroke="none"/><circle cx="976" cy="900" r="8" fill="#2b2b29" stroke="none"/><circle cx="1024" cy="900" r="8" fill="#2b2b29" stroke="none"/><circle cx="1072" cy="900" r="8" fill="#2b2b29" stroke="none"/>
+    <circle cx="1120" cy="900" r="11" fill="#b55229" stroke="none"/>
+    <circle cx="1120" cy="900" r="19" stroke="#b55229" stroke-width="2.5" opacity="0.5"/>
+  </g>
+</svg>

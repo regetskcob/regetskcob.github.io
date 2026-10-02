@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 -500 2000 2000">
+  <!-- Cover for "Anschaffung und Einführung einer neuen Baumaschine", part 2 of
+       the little series about the invented construction firm Agile Homes:
+       four teams (A to D) with a concrete mixer each; the old ones sag in the
+       heat, the new one of team B runs. Flat style of the other generated
+       covers. Render as agile-homes-1.svg: qlmanage (size 2000), then
+       sips -c 1000 2000 and conversion to JPEG (quality 88). -->
+  <defs>
+    <g id="mixer" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-62 150 H62" stroke="#2b2b29" stroke-width="3"/>
+      <circle cx="-44" cy="164" r="16" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+      <circle cx="44" cy="164" r="16" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+      <path d="M0 150 V92" stroke="#2b2b29" stroke-width="4"/>
+      <path d="M-30 150 L0 100 L30 150" fill="none" stroke="#9a9a94" stroke-width="3"/>
+      <g transform="rotate(-24 0 92)">
+        <path d="M-30 116 L-64 -4 A64 16 0 0 1 64 -4 L30 116 Z" class="drum" stroke="#2b2b29" stroke-width="3"/>
+        <ellipse cx="0" cy="-4" rx="64" ry="16" fill="#e4dfd2" stroke="#2b2b29" stroke-width="3"/>
+        <path d="M-44 40 H44 M-38 78 H38" stroke="#2b2b29" stroke-width="2.5" opacity="0.5"/>
+      </g>
+      <circle cx="74" cy="92" r="9" fill="none" stroke="#2b2b29" stroke-width="3"/>
+    </g>
+  </defs>
+  <rect x="0" y="-500" width="2000" height="2000" fill="#f3efe6"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M520 720 H1480" stroke="#9a9a94" stroke-width="3"/>
+    <!-- four teams, one machine each -->
+    <g transform="translate(640 500)"><use href="#mixer"/></g>
+    <g transform="translate(880 500)"><use href="#mixer"/></g>
+    <g transform="translate(1120 500)"><use href="#mixer"/></g>
+    <g transform="translate(1360 500)"><use href="#mixer"/></g>
+    <!-- heat over the old machines: A, C, D -->
+    <g stroke="#9a9a94" stroke-width="3">
+      <path d="M600 330 q10 -14 20 0 t20 0 t20 0 M590 304 q10 -14 20 0 t20 0 t20 0 M600 278 q10 -14 20 0 t20 0 t20 0"/>
+      <path d="M1080 330 q10 -14 20 0 t20 0 t20 0 M1070 304 q10 -14 20 0 t20 0 t20 0 M1080 278 q10 -14 20 0 t20 0 t20 0"/>
+      <path d="M1320 330 q10 -14 20 0 t20 0 t20 0 M1310 304 q10 -14 20 0 t20 0 t20 0 M1320 278 q10 -14 20 0 t20 0 t20 0"/>
+    </g>
+    <!-- the new machine of team B: a check mark instead of heat, and a glow -->
+    <circle cx="880" cy="540" r="124" stroke="#b55229" stroke-width="3" opacity="0.3"/>
+    <circle cx="880" cy="540" r="96" stroke="#b55229" stroke-width="3" opacity="0.5"/>
+    <path d="M846 300 L872 326 L918 270" stroke="#b55229" stroke-width="7"/>
+    <!-- team markers A to D -->
+    <g font-family="Georgia, 'Times New Roman', serif" font-size="34" text-anchor="middle">
+      <circle cx="640" cy="800" r="30" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><text x="640" y="812" fill="#2b2b29" stroke="none">A</text>
+      <circle cx="880" cy="800" r="30" fill="#b55229" stroke="#2b2b29" stroke-width="3"/><text x="880" y="812" fill="#faf9f4" stroke="none">B</text>
+      <circle cx="1120" cy="800" r="30" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><text x="1120" y="812" fill="#2b2b29" stroke="none">C</text>
+      <circle cx="1360" cy="800" r="30" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><text x="1360" y="812" fill="#2b2b29" stroke="none">D</text>
+    </g>
+    <!-- the part in the series -->
+    <path d="M960 900 H1040" stroke="#9a9a94" stroke-width="3"/>
+    <circle cx="960" cy="900" r="9" fill="#2b2b29" stroke="none"/>
+    <circle cx="1040" cy="900" r="11" fill="#b55229" stroke="none"/>
+    <circle cx="1040" cy="900" r="19" stroke="#b55229" stroke-width="2.5" opacity="0.5"/>
+  </g>
+  <style>.drum { fill: #faf9f4; }</style>
+</svg>
