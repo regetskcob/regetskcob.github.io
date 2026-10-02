@@ -7,6 +7,9 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Optimized C++“ von Kurt Guntheroth mit einer Antilope"
 coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Softwareentwicklung"]
+disclosure:
+  type: provided
+  by: "von O’Reilly"
 draft: true
 ---
 

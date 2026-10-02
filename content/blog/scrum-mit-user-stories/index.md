@@ -7,6 +7,9 @@ cover: ./cover.jpg
 coverAlt: "Das Buch „Scrum mit User Stories“ mit rot-gelbem Cover liegt auf einem Holztisch"
 aliases: ["/posts/scrum-mit-user-stories/"]
 tags: ["Bücher"]
+disclosure:
+  type: provided
+  by: "vom Hanser Verlag"
 draft: true
 ---
 

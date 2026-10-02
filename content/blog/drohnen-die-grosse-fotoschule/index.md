@@ -9,8 +9,10 @@ summary: "Sabrina Herrmann und Francis Markert erklären im Rheinwerk-Buch, wie 
 draft: true
 cover: ./cover.jpg
 coverAlt: "Das Buch „Drohnen – Die große Fotoschule“ von Sabrina Herrmann und Francis Markert liegt auf einem hellen Holztisch, auf dem Cover eine Drohne am blauen Himmel, Luftbilder eines Schiffswracks und eines Tulpenfelds sowie eine Fernsteuerung, am Rand drei rosa Haftmarker"
-# Noch offen: wie das Buch zu mir kam (gekauft, gestellt, Geschenk, ...), siehe README, "disclosure".
 tags: ["Bücher", "Fotografie"]
+disclosure:
+  type: provided
+  by: "vom Rheinwerk Verlag"
 ---
 
 <!-- Einstieg: worum es geht, warum dieses Buch. -->
