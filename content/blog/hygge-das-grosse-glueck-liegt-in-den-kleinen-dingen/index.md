@@ -3,8 +3,8 @@ title: 📚 | hygge - Das große Glück liegt in den kleinen Dingen
 date: 2020-04-18T08:45:00+0000
 lastmod: 2024-11-17T15:07:57+0000
 summary: "Die ersten 80 Seiten zeigen, wie viel Glück in Kleinigkeiten steckt. Danach verliert das Buch zwischen Rezepten und Einrichtungstipps leider seinen roten Faden."
-cover: ./ed88d328-90cd-4c2b-a81c-0430584c907a-23010-000012c01b902e0c.jpg
-coverAlt: "Schwarzweißbild: Das Buch „hygge“ mit glitzernden Lichtpunkten auf dem Umschlag, über einer Siedlung in die Höhe gehalten"
+cover: ./cover.jpg
+coverAlt: "Das Buch „hygge“ mit goldenen Lichtpunkten auf dunkelblauem Umschlag, vor blauem Himmel über einer Siedlung in die Höhe gehalten"
 aliases: ["/posts/hygge-das-grosse-glueck-liegt-in-den-kleinen-dingen/"]
 tags: ["Bücher"]
 disclosure:

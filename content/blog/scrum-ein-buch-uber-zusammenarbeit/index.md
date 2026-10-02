@@ -3,6 +3,9 @@ title: "📚 | Scrum - Ein Buch über Zusammenarbeit"
 date: 2023-05-15T08:30:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "94 Muster der Scrum Patterns Group für fast jede Phase eines Scrum-Projekts. Von mir eine klare Kaufempfehlung für alle, die mit Scrum arbeiten."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Scrum – Ein Buch über Zusammenarbeit“ der Scrum Patterns Group mit einem gelben Klebezettel"
+coverCredit: "Cover: Vahlen"
 aliases: ["/posts/scrum-ein-buch-uber-zusammenarbeit/"]
 tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
 disclosure:

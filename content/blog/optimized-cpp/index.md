@@ -3,6 +3,9 @@ title: "📚 | Optimized C++"
 date: 2026-10-01T20:48:47+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Kurt Guntheroth zeigt auf rund 370 Seiten, wie sich effizienter C++-Code schreiben lässt. Von mir eine klare Kaufempfehlung."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Optimized C++“ von Kurt Guntheroth mit einer Antilope"
+coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Softwareentwicklung"]
 draft: true
 ---

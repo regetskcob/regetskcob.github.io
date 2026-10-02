@@ -3,6 +3,9 @@ title: "📚 | Der kreative Fotograf"
 date: 2020-10-03T12:54:26+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Heidi und Robert Mertens zeigen Techniken, die Kreativität in der Fotografie wecken sollen. Viele der gezeigten Aufnahmen wirken auf mich allerdings eher wie Schnappschüsse."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Der kreative Fotograf“ von Heidi und Robert Mertens mit einer gezeichneten Glühbirne auf einer Wand"
+coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/der-kreative-fotograf/"]
 tags: ["Bücher", "Fotografie"]
 disclosure:

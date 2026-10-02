@@ -3,6 +3,9 @@ title: "📚 | Sauberer Code. Bessere Produkte."
 date: 2018-01-03T21:00:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Jeff Langr führt in testgetriebene Entwicklung mit C++ ein. Ordentliches Testen heißt mehr, als ein bisschen zu klicken und zu schauen."
+cover: ./cover.jpg
+coverAlt: "Cover der englischen Ausgabe „Modern C++ Programming with Test-Driven Development“ von Jeff Langr mit dem Kopf eines Crashtest-Dummys"
+coverCredit: "Cover: The Pragmatic Programmers"
 aliases: ["/posts/sauberer-code-bessere-produkte/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

@@ -3,6 +3,9 @@ title: "📚 | JavaScript - Das Handbuch für die Praxis"
 date: 2025-01-24T22:11:18+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "David Flanagans Standardwerk in der siebten Auflage, aktuell bis ES2020: von Klassen und Modulen bis zu Promises und async/await."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „JavaScript – Das Handbuch für die Praxis“ von David Flanagan mit einem Nashorn"
+coverCredit: "Cover: O’Reilly"
 aliases: ["/posts/javascript-das-handbuch-fur-die-praxis/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

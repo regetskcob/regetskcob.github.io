@@ -3,6 +3,9 @@ title: "📚 | Angular - Das große Praxisbuch"
 date: 2025-01-26T19:49:56+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Die vierte Auflage des Praxisbuchs von Malcher, Koppenhagen und Hoppe führt anhand eines Beispielprojekts durch Angular 15 und neuer, von Standalone Components bis NgRx und Tests."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Angular“ von Ferdinand Malcher, Danny Koppenhagen und Johannes Hoppe mit dem Angular-Logo"
+coverCredit: "Cover: dpunkt.verlag"
 aliases: ["/posts/angular-das-grosse-praxisbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

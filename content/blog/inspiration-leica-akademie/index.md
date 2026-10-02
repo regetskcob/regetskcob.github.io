@@ -3,6 +3,9 @@ title: "📚 | Inspiration Leica Akademie"
 date: 2020-10-03T12:51:59+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Ein Inspirationsbuch mit Bildern und Texten von Fotografen der Leica Akademie, das sich an alle richtet. Gestört haben mich die doppelten Texte auf Deutsch und Englisch und die Werbung für die Akademie."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Inspiration Leica Akademie“ mit einem roten Punkt auf schwarzem Grund"
+coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/inspiration-leica-akademie/"]
 tags: ["Bücher", "Fotografie"]
 disclosure:

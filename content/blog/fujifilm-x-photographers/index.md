@@ -3,8 +3,8 @@ title: 📚 | FUJIFILM X-PHOTOGRAPHERS
 date: 2020-04-22T13:30:00+0000
 lastmod: 2026-09-25T09:55:00+0000
 summary: "Sechs Fotografen, ein Kamerasystem: Der Bildband begleitet Profis mit ihren X- und GFX-Kameras und zeigt, wie sie im Alltag mit der Technik arbeiten."
-cover: ./96ac1774-b6f1-4ca4-82e0-c461fff4223e-23010-000012bf959639b8.jpg
-coverAlt: "Schwarzweißbild: Der Bildband „FUJIFILM X-Photographers“ mit drei Porträts auf dem Umschlag, über einer Landschaft in die Höhe gehalten"
+cover: ./cover.jpg
+coverAlt: "Der Bildband „FUJIFILM X-Photographers“ mit drei Porträts auf dem Umschlag, über einer Grünfläche in die Höhe gehalten"
 aliases: ["/posts/fujifilm-x-photpgraphers/", "/blog/fujifilm-x-photpgraphers/"]
 tags: ["Bücher", "Fotografie"]
 disclosure:

@@ -3,6 +3,9 @@ title: "📚 | Der eigene Blick"
 date: 2020-10-03T12:53:09+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Robert Mertens über den eigenen Stil, den roten Faden in Bildserien und Stimmung im Bild. Ein Buch, das den fotografischen Stil voranbringt."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Der eigene Blick“ von Robert Mertens: eine Person steht auf einem Felsen vor einer Höhle"
+coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/der-eigene-blick/"]
 tags: ["Bücher", "Fotografie"]
 disclosure:

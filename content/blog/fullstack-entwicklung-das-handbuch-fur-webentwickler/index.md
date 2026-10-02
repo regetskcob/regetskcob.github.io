@@ -3,6 +3,9 @@ title: "📚 | Fullstack-Entwicklung - Das Handbuch für Webentwickler"
 date: 2025-01-22T11:41:46+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Philip Ackermanns Handbuch (2. Auflage 2023, 807 Seiten) behandelt Frontend, Backend, Webarchitekturen, Webservices und Datenbanken."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Fullstack-Entwicklung“ von Philip Ackermann mit Code-Ausschnitten und einem Rechnerbildschirm"
+coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/fullstack-entwicklung-das-handbuch-fur-webentwickler/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:

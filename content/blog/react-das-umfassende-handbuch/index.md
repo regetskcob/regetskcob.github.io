@@ -3,6 +3,9 @@ title: "📚 | React - Das umfassende Handbuch"
 date: 2025-01-26T19:47:53+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Sebastian Springers Handbuch erklärt React von Komponenten, Props und State bis zu Hooks, Redux und Zustand."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „React – Das umfassende Handbuch“ von Sebastian Springer mit dem React-Logo"
+coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/react-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
