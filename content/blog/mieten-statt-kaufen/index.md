@@ -3,8 +3,8 @@ title: "📸 | Gearflix - Fototechnik mieten statt kaufen"
 date: 2021-04-11T16:55:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Gearflix vermietet Fotoequipment. Ich habe das XF50-140mm f2.8 mit 1.4x Konverter ausprobiert, am Drachenfels und nachts auf dem Monreberg."
-cover: ./0d8b7340-5bd0-4912-87a6-b585545d42f0.jpg
-coverAlt: "Beleuchtete Windmühle in der Dämmerung im Wald, rechts ein Strommast mit Leitungen unter dunklen Wolken"
+cover: ./3e38e475-f934-4297-96be-15706b45fe73.jpg
+coverAlt: "Schwarzweißbild: Die X-T30 mit dem großen XF50-140mm auf einem Stativ im Wald, links eine Pappfigur mit Gearflix-Aufsteller"
 aliases: ["/posts/mieten-statt-kaufen/"]
 tags: ["Fotografie", "Natur"]
 draft: true
@@ -20,7 +20,7 @@ Für den Urlaub habe ich mir zum Ausprobieren das FUJINON 50-140 f2.8 gemietet, 
 
 Zu Beginn war der Mietprozess etwas hakelig. Wenige Tage vor Mietbeginn erhielt ich die Mitteilung, dass der Tele-Konverter vergriffen sei. Zum Glück konnte eine nette Mitarbeiterin noch einen Tele-Konverter auftreiben, sodass mich zum Wunschtermin beides erreichte.
 
-<!-- Bild fehlt im Backup: d9c7732f-5713-4621-8861-394a2a86c056.jpg -->
+![Das FUJIFILM XF50-140mm f2.8 mit Gegenlichtblende und Tele-Konverter an der X-T30 auf einem Stativ im Wald, darunter ein Fotorucksack](./d9c7732f-5713-4621-8861-394a2a86c056.jpg)
 
 Die Proportionen sprechen für sich, das 50-140 mit einer Offenblende von
 
@@ -40,11 +40,11 @@ Eine Auswahl der daraus resultierten Bilder habe ich euch angehängt.
 
 ![Blick vom Drachenfels auf den Rhein mit einer bewaldeten Insel, links die Stadt, darüber Quellwolken](./e5190c3c-50ff-4129-b391-4147e33e689a.jpg)
 
-<!-- Bild fehlt im Backup: a8b3ce50-c76b-481a-9def-82c21e64ed02.jpg -->
+![Durch herbstlich gelbes Laub im Unschärfebereich ist ein Gebäude auf dem Petersberg zu erkennen](./a8b3ce50-c76b-481a-9def-82c21e64ed02.jpg)
 
 ![Steinerne Buhne und Kiesinsel mit Sträuchern im dunkelgrünen Rhein, aus der Höhe fotografiert](./37e24078-8132-4d9d-b792-759baddb2eaf.jpg)
 
-<!-- Bild fehlt im Backup: ff089c77-58a5-4181-9571-122a58533e2e.jpg -->
+![Blick vom Drachenfels über bewaldete Hänge mit der Drachenfelsbahn im Vordergrund und der Ebene am Horizont](./ff089c77-58a5-4181-9571-122a58533e2e.jpg)
 
 ## Monreberg
 
