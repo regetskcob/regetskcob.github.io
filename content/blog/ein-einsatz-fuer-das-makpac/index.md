@@ -16,5 +16,3 @@ Ich bin dann nach einigem Suchen bei einem Bauplan von Festool gelandet, der sic
 Leider habe ich den Bau meines Einsatzes nicht mit der Kamera begleitet, es gibt also weder Videos noch Bilder davon. Aber das Ergebnis möchte ich euch dennoch als Anregung vorstellen.
 
 Ich bin sehr zufrieden mit dem Einsatz. Mittlerweile gibt es allerdings schon wieder Werkzeuge, die entweder lose in den Fächern, oder anderen MakPacs herum fliegen, sodass ich auf kurz oder lang sicherlich noch mal wieder einen Einsatz bauen werde, dessen Bau ich dann mit der Kamera begleiten werde.
-
-Wie lagert und transportiert ihr euer Werkzeug? Auch in Eigenkonstruktionen? Oder wild gestapelt in einer Werkzeugtasche?

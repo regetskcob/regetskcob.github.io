@@ -39,4 +39,4 @@ Bei der Endkontrolle des zuerst fertiggestellten Bocks ist mir eine Schieflage e
 
 ### Als nächstes geplant
 
-Als nächster Arbeitsschritt steht das Abschleifen der Böcke an. Danach möchte ich mit dem Lochraster in der Tischplatte beginnen. Ob ich dies nun komplett mit den Bormax 2.0 machen werde, oder mir dafür noch eine Oberfräse anschaffe, weiß ich noch nicht sicher, ihr werdet es auf jeden Fall erfahren. Wozu würdet ihr mir raten?
+Als nächster Arbeitsschritt steht das Abschleifen der Böcke an. Danach möchte ich mit dem Lochraster in der Tischplatte beginnen. Ob ich dies nun komplett mit den Bormax 2.0 machen werde, oder mir dafür noch eine Oberfräse anschaffe, weiß ich noch nicht sicher, ihr werdet es auf jeden Fall erfahren.
