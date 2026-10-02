@@ -1,6 +1,6 @@
 ---
 title: "📚 | Das große Heimwerkerbuch (2. Auflage)"
-date: 2017-04-13T19:39:08+0000
+date: 2016-09-20T19:58:16+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Die 2. Auflage von Holger H. Schweizers Heimwerkerbuch bringt rund 130 Seiten mehr, mit Werkstoffen, Techniken und vielen Illustrationen."
 cover: ./cover.jpg

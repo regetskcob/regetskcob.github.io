@@ -1,6 +1,6 @@
 ---
 title: "📸 + 🥾 | Fotografieren im Uedemer Hochwald"
-date: 2019-07-14T19:49:00+0000
+date: 2019-05-11T14:44:20+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Parken, Orientierung, Wald und Wege im Uedemer Hochwald: ein Ausflugsziel für Wanderer und Fotografen."
 cover: ./05-11-2019-0718.jpg

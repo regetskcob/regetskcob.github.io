@@ -1,8 +1,8 @@
 ---
 title: "📚 | Der Bienenhirte"
-# Datum beim Veröffentlichen setzen. Der Rohtext unten ist vorformuliert: alles in [eckigen Klammern]
-# ist offen und gehört dir, die Fakten zum Buch stammen von der Verlagsseite.
-date: 2026-10-02T21:07:23+0000
+# Der Rohtext ist vorformuliert: alles in [eckigen Klammern] ist offen und gehört dir,
+# die Fakten zum Buch stammen von der Verlagsseite. Das Datum ist das Aufnahmedatum des Covers.
+date: 2018-07-01T15:00:36+0000
 summary: "Rini van Solingens Roman erzählt auf 126 Seiten, was ein Schäfer beim Wechsel zur Imkerei über das Führen selbstorganisierter Teams lernt."
 cover: ./cover.jpg
 coverAlt: "Das Buch „Der Bienenhirte“ von Rini van Solingen mit Wabenmuster auf dem Cover liegt schräg auf einem dunkelblauen Untergrund"

@@ -1,6 +1,6 @@
 ---
 title: "📚 | Praxisbuch Landschaftsfotografie"
-date: 2019-06-20T19:54:48+0000
+date: 2019-05-06T19:54:00+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Ein Band der Reihe von Daan Schoonhoven: Grundlagen, Bekleidungstipps, Focus-Stacking und Landschaften in Schwarz-Weiß, kurz und knackig."
 cover: ./cover.jpg
