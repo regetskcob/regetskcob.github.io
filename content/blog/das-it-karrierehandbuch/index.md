@@ -3,6 +3,9 @@ title: "📚 | Das IT-Karrierehandbuch"
 date: 2016-10-31T10:28:58+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Martina Diel begleitet durch Bewerbung, Gehaltsverhandlung und Karrierehürden in der IT-Branche."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Das IT-Karrierehandbuch“ von Martina Diel mit gezeichneten Fernrohren"
+coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided

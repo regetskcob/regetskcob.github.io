@@ -3,10 +3,13 @@ title: "📚 | Lean-Testing für C++ Programmierer"
 date: 2017-04-26T17:56:27+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Spillner und Breymann bringen C++-Programmierern auf gut 240 Seiten das Testen von Software und die passenden Werkzeuge bei."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Lean Testing für C++-Programmierer“ von Andreas Spillner und Ulrich Breymann"
+coverCredit: "Cover: dpunkt.verlag"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom dpunkt Verlag"
 draft: true
 ---
 

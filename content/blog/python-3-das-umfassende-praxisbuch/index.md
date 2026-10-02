@@ -3,6 +3,9 @@ title: "📚 | Python 3 - Das umfassende Praxisbuch"
 date: 2017-01-12T10:56:55+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Michael Weigends Python 3 ist mit rund 1.000 Seiten ein Praxisbuch für Einsteiger und Fortgeschrittene und jeden Cent wert."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Python 3“ von Michael Weigend mit Programmcode im Hintergrund"
+coverCredit: "Cover: mitp"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided

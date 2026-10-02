@@ -3,6 +3,9 @@ title: "📚 | Digital fotografieren lernen"
 date: 2017-05-31T20:26:41+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Dietmar Spehrs Einsteigerbuch erklärt ISO, Blende und Verschlusszeit auf über 400 Seiten und macht Lust auf bessere Bilder."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Digital fotografieren lernen“ von Dietmar Spehr mit Fotomotiven"
+coverCredit: "Cover: Vierfarben Verlag"
 tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided

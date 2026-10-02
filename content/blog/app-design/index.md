@@ -3,6 +3,9 @@ title: "📚 | App-Design"
 date: 2016-12-05T10:00:00+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Jan Semlers App-Design behandelt auf rund 480 Seiten alles von der Idee bis zu Usability und Barrierefreiheit, was eine gute App ausmacht."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „App-Design“ von Jan Semler mit einem gezeichneten Smartphone"
+coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided

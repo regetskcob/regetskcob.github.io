@@ -3,6 +3,9 @@ title: "📚 | Digital Innovation Playbook"
 date: 2017-05-08T08:41:02+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Ein Werkzeugkasten in fünf Abschnitten, mit dem sich neue Produkte entwickeln und testen lassen, bevor sie auf den Markt kommen."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Digital Innovation Playbook“ in Gelb mit Schriftzug"
+coverCredit: "Cover: Murmann Publishers"
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided

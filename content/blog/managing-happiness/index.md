@@ -1,8 +1,11 @@
 ---
-title: "📚 | Mehr Glück im Leben mit 20 % Aufwand"
+title: "📚 | Managing Happiness"
 date: 2017-06-08T06:34:28+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Marcus Börner, Gründer von reBuy, beschreibt, wie sich mit wenig Aufwand mehr Glück im Leben finden lässt."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Managing Happiness“ von Marcus Börner mit grünen Formeln und Symbolen"
+coverCredit: "Cover: Redline Verlag"
 tags: ["Bücher", "Gesellschaft"]
 disclosure:
   type: provided

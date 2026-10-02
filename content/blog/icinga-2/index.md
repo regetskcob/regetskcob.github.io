@@ -3,10 +3,13 @@ title: "📚 | Icinga 2"
 date: 2016-10-31T11:40:06+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Betz und Widhalm erklären Netzwerk-Monitoring mit Icinga 2. Das Buch deckt viel ab, wirkt bei den Konfigurationen aber stellenweise erschlagend."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Icinga 2“ von Lennart Betz und Thomas Widhalm mit einem Teleskop unter dem Sternenhimmel"
+coverCredit: "Cover: dpunkt.verlag"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom dpunkt Verlag"
 draft: true
 ---
 

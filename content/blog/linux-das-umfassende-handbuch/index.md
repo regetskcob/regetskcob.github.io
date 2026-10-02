@@ -3,10 +3,13 @@ title: "📚 | Linux - Das umfassende Handbuch"
 date: 2016-07-10T13:40:20+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Der Kofler gehört für mich in jede Ausbildung und in jedes Büro: ein Linux-Handbuch, das ein weites Spektrum abdeckt."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Linux – Das umfassende Handbuch“ von Michael Kofler mit zwei Pinguinen auf einer Eisscholle"
+coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Softwareentwicklung", "Ausbildung"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom Rheinwerk Verlag"
 draft: true
 ---
 

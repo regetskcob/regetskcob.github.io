@@ -3,10 +3,13 @@ title: "📚 | Naturfotografie - Die große Fotoschule"
 date: 2019-07-08T12:43:55+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Hans-Peter Schaub, von Beruf Biologe, erklärt Motivwahl und Technik der Naturfotografie so, dass man das Wieso, Weshalb, Warum erfährt."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Naturfotografie – Die große Fotoschule“ von Hans-Peter Schaub mit einer Collage aus Natur- und Tierfotos"
+coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Fotografie", "Natur"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom Rheinwerk Verlag"
 draft: true
 ---
 

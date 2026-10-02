@@ -3,6 +3,9 @@ title: "📚 | Affinity Designer Workbook"
 date: 2017-04-10T09:18:25+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das Workbook der Serif Labs führt mit kleinen Aufgaben durch Affinity Designer, samt Tastenkürzel-Merkblättern."
+cover: ./cover.jpg
+coverAlt: "Cover des „Affinity Designer Workbook“ mit einer Illustration der Großstadt-Skyline"
+coverCredit: "Cover: Serif Labs"
 tags: ["Bücher"]
 disclosure:
   type: provided

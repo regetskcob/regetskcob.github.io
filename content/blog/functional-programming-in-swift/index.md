@@ -1,12 +1,15 @@
 ---
-title: "📚 | Functional Swift"
+title: "📚 | Functional Programming in Swift"
 date: 2016-08-22T17:33:37+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Eidhof, Kugler und Swierstra erklären funktionale Programmierung mit Swift, ein Buch für alle, die die Grundlagen der Sprache beherrschen."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Functional Programming in Swift“ von Chris Eidhof, Florian Kugler und Wouter Swierstra mit einem roten Swift-Vogel"
+coverCredit: "Cover: objc.io"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "von objc.io"
 draft: true
 ---
 

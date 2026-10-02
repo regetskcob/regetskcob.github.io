@@ -3,6 +3,9 @@ title: "📚 | Affinity Designer - Schritt für Schritt zu Vektorkunst, Illustra
 date: 2017-04-28T07:08:10+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das Rheinwerk-Buch führt auf über 270 Seiten in zehn Kapiteln durch Affinity Designer, für Einsteiger wie Fortgeschrittene, am Mac wie am Windows-PC."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Affinity Designer“ von Anke Goldbach mit Grafikmotiven in einem Dreieck"
+coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher"]
 disclosure:
   type: provided

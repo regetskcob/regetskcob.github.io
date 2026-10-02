@@ -3,6 +3,9 @@ title: "📚 | Zebra ist schwarz und weiß - und trotzdem glücklich"
 date: 2017-04-19T10:14:38+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Kazim Akboga zeigt mit Zeichnungen und kurzen Texten, wie sich die Menschheit positiver sehen lässt."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Zebra ist schwarz und weiß – und trotzdem glücklich“ von Kazim Akboga mit dem Autor auf orangem Grund"
+coverCredit: "Cover: Ullstein"
 tags: ["Bücher"]
 disclosure:
   type: provided

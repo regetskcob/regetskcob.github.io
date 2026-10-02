@@ -1,12 +1,15 @@
 ---
-title: "📚 | Swift 3"
+title: "📚 | Swift - Das umfassende Handbuch"
 date: 2017-01-14T22:03:32+0000
 lastmod: 2026-10-02T06:41:45+0000
-summary: "Michael Koflers Swift 3 ist für mich das deutsche Standardwerk zur Sprache, für Ein- wie Umsteiger."
+summary: "Michael Koflers Swift-Handbuch ist für mich das deutsche Standardwerk zur Sprache, für Ein- wie Umsteiger."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Swift – Das umfassende Handbuch“ von Michael Kofler mit dem Swift-Logo auf blauen Kacheln"
+coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom Rheinwerk Verlag"
 draft: true
 ---
 

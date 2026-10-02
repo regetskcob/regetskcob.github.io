@@ -3,10 +3,13 @@ title: "📚 | Great Code Vol. 1"
 date: 2017-05-09T06:59:10+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Randall Hyde erklärt, wie Maschinen arbeiten, damit man besseren Code schreibt. Ein Basiswerk für jedes Bücherregal."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Great Code, Volume 1: Understanding the Machine“ von Randall Hyde mit einer Dampflokomotive"
+coverCredit: "Cover: No Starch Press"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "von No Starch Press"
 draft: true
 ---
 

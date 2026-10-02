@@ -3,10 +3,13 @@ title: "📚 | Gemeinsam großartige Teams schaffen"
 date: 2019-07-02T11:27:35+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Das Buch dreht sich allein um den Self-Selection-Prozess zur Teambildung. Gut geschrieben, aber eher etwas für größere Entwicklungsabteilungen."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Gemeinsam großartige Teams schaffen“ mit einer gezeichneten Gesprächsrunde"
+coverCredit: "Cover: Hanser"
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom Hanser Verlag"
 draft: true
 ---
 

@@ -400,7 +400,7 @@ die Werte liefern, `scripts/extract-exif.sh <Ordner mit Originalen>` schreibt si
 Rezensionen (📚) tragen das Cover des Verlags: mittig auf einem Papierton (RGB 243 / 239 / 230),
 2000 × 1000 Pixel, das Buch 670 Pixel hoch, mit weichem Schatten. So sehen alle Rezensionscover
 gleich aus, egal wie die Verlage ihre Bilder liefern. Das Skript macht daraus die `cover.jpg`
-im Beitragsordner (braucht Pillow, `pip install pillow`):
+im Beitragsordner (braucht Pillow, `pip install pillow`). Bilder, die einen eigenen Hintergrund mitbringen (Packshot auf Schwarz, Cover mit weißem Rand und eingebautem Schatten), schneidet `--trim` frei, nicht aber Cover, die selbst weiß sind:
 
 ```bash
 scripts/book-cover.py ~/Pictures/blog/books/cover/react.jpeg content/blog/react-das-umfassende-handbuch/cover.jpg

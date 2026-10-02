@@ -3,6 +3,9 @@ title: "📚 | iOS Application Development with OpenCV 3"
 date: 2017-04-26T08:15:43+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Joseph Howse zeigt, wie sich OpenCV 3 in iOS-Apps einsetzen lässt, von der Einrichtung bis zur Gesichtserkennung."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „iOS Application Development with OpenCV 3“ von Joseph Howse mit einer Bergblume"
+coverCredit: "Cover: Packt"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided

@@ -3,6 +3,9 @@ title: "📚 | Fotografieren wie ein Profi"
 date: 2016-06-22T13:57:33+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Björn Göttlicher begleitet bei seinen Projekten und zeigt, wie aus Schnappschüssen gute Fotos werden."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Fotografieren wie ein Profi“ von Björn Göttlicher mit einer Collage aus Porträts und Straßenszenen"
+coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided

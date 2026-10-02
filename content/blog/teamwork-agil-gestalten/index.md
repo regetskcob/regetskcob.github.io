@@ -3,6 +3,9 @@ title: "📚 | Teamwork agil gestalten"
 date: 2021-05-02T11:05:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Alois Summerer und Paul Maisberger liefern Werkzeuge aus der Praxis, um Teams agil zu gestalten, dazu zehn Interviews mit Professionals."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Teamwork agil gestalten“ von Alois Summerer und Paul Maisberger als Whiteboard"
+coverCredit: "Cover: Hanser"
 aliases: ["/posts/teamwork-agil-gestalten/"]
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:

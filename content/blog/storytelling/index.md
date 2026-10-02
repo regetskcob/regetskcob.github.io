@@ -1,8 +1,11 @@
 ---
-title: "📚 | Storytelling"
+title: "📚 | Storytelling - Digital, multimedial, artificial"
 date: 2016-11-07T14:33:13+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Pia Kleine Wieskamp und elf Experten zeigen, wie sich Geschichten in Marketing und Kommunikation einsetzen lassen."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Storytelling“ von Pia Kleine Wieskamp mit bunten Sprechblasen"
+coverCredit: "Cover: Hanser"
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided

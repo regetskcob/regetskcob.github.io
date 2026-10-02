@@ -3,10 +3,13 @@ title: "📚 | Das kollegial geführte Unternehmen"
 date: 2017-06-07T06:02:37+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Oestereich und Schröder zeigen, wie sich Unternehmen kollegial führen lassen und wie man den Ansatz im eigenen Betrieb zur Sprache bringt."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Das kollegial geführte Unternehmen“ von Bernd Oestereich und Claudia Schröder mit gezeichneten Personen in Kreisen"
+coverCredit: "Cover: Vahlen"
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom Vahlen Verlag"
 draft: true
 ---
 

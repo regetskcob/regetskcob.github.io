@@ -3,6 +3,9 @@ title: "📚 | Effektives Arbeiten mit Legacy Code"
 date: 2017-04-26T09:51:29+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Michael C. Feathers erklärt auf rund 430 Seiten, wie man mit historisch gewachsenem Code arbeitet und Änderungen absichert."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Effektives Arbeiten mit Legacy Code“ von Michael C. Feathers mit einem Hochhaus"
+coverCredit: "Cover: mitp"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided

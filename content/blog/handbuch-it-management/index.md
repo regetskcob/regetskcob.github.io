@@ -3,10 +3,13 @@ title: "📚 | Handbuch IT-Management"
 date: 2017-05-02T06:55:29+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das Handbuch IT-Management bündelt in der 6. Auflage Konzepte, Methoden und Arbeitshilfen von 15 Autoren."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Handbuch IT-Management“, herausgegeben von Ernst Tiemeyer, mit einem Rettungsring"
+coverCredit: "Cover: Hanser"
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom Hanser Verlag"
 draft: true
 ---
 

@@ -3,10 +3,13 @@ title: "📚 | Landschaftsfotografie Tutorial"
 date: 2019-06-20T19:35:01+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Stephan Wiesners Weiterbildungskurs zur Landschaftsfotografie: von Blende und ISO bis HDR, Panorama und Motivwahl."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Landschaftsfotografie Tutorial“ von Stephan Wiesner mit einer Fotografin im Morgenlicht"
+coverCredit: "Cover: mitp"
 tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom mitp Verlag"
 draft: true
 ---
 

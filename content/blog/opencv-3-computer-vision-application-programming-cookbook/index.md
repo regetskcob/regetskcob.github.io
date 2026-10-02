@@ -3,6 +3,9 @@ title: "📚 | OpenCV 3 Computer Vision Application Programming Cookbook"
 date: 2017-04-27T08:20:28+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Das OpenCV 3 Cookbook sammelt praxisnahe Rezepte zu Bildern, Objekterkennung und Objektverfolgung."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „OpenCV 3 Computer Vision Application Programming Cookbook“ in Grün"
+coverCredit: "Cover: Packt"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided

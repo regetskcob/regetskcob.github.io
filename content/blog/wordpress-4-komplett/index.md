@@ -3,6 +3,9 @@ title: "📚 | WordPress 4 komplett"
 date: 2017-04-19T10:12:49+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Tim Schürmanns WordPress 4 komplett begleitet auf rund 850 Seiten von der Installation bis zu eigenen Themes."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „WordPress 4 komplett“ von Tim Schürmann mit einem Wolf"
+coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided

@@ -3,10 +3,13 @@ title: "📚 | Great Code Vol. 2"
 date: 2017-05-09T06:59:14+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Randall Hyde zeigt im zweiten Band, wie sich Code schreiben lässt, der später möglichst wenig optimiert werden muss."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Great Code, Volume 2: Thinking Low-Level, Writing High-Level“ von Randall Hyde mit einem Schnellzug auf einer Brücke"
+coverCredit: "Cover: No Starch Press"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "von No Starch Press"
 draft: true
 ---
 

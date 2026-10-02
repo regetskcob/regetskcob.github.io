@@ -3,6 +3,9 @@ title: "📚 | High Performance iOS Apps"
 date: 2017-04-12T10:23:19+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Gaurav Vaish zeigt, wie sich Performance und Stabilität von iOS-Apps messen und verbessern lassen."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „High Performance iOS Apps“ von Gaurav Vaish mit einem Vogel"
+coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided

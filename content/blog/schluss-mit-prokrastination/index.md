@@ -3,10 +3,13 @@ title: "📚 | Schluss mit Prokrastination"
 date: 2017-05-09T08:38:50+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Wie man aufhört zu verschieben und anfängt zu leben: ein Ratgeber mit Übungen gegen das ständige Aufschieben."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Schluss mit Prokrastination“ mit rot-schwarzem Schriftzug"
+coverCredit: "Cover: Redline Verlag"
 tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom Redline Verlag"
 draft: true
 ---
 

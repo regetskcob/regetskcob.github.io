@@ -3,10 +3,13 @@ title: "📚 | Softwareevolution"
 date: 2017-01-13T22:34:33+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Sneed und Seidl zeigen, wie sich Wartung und Weiterentwicklung großer Softwaresysteme unter Kontrolle halten lassen."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Softwareevolution“ von Harry M. Sneed und Richard Seidl mit Gleisen"
+coverCredit: "Cover: dpunkt.verlag"
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom dpunkt Verlag"
 draft: true
 ---
 

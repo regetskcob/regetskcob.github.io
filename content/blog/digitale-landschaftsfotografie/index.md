@@ -3,10 +3,13 @@ title: "📚 | Digitale Landschaftsfotografie"
 date: 2019-07-02T11:27:43+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Grundlagen, Filter, Licht, Komposition und Nachbearbeitung: ein solider Einstieg in die digitale Landschaftsfotografie."
+cover: ./cover.jpg
+coverAlt: "Cover des Buches „Digitale Landschaftsfotografie“ von Michael Frye mit einem Baum vor Abendhimmel"
+coverCredit: "Cover: mitp"
 tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
-  by: "vom Verlag"
+  by: "vom mitp Verlag"
 draft: true
 ---
 
