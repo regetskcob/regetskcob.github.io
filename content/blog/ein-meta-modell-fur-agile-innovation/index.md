@@ -1,8 +1,8 @@
 ---
 title: "📚 | Ein Meta-Modell für agile Innovation"
 date: 2023-05-10T13:00:00+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Diese besondere Lese-Erfahrung, aber auch das Wissen, das Jean-Philippe Hagmann hier vermittelt, möchte ich allen ans Herz legen, die sich damit konfrontiert sehen Innovation bzw. innovative Produkte hervorzubringen."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Jean-Philippe Hagmann erklärt Innovation als Geschichte mit eingestreuten Gedankennotizen. Ich habe mehrere Anläufe gebraucht, bis mich das Buch gepackt hat."
 aliases: ["/posts/ein-meta-modell-fur-agile-innovation/"]
 tags: ["Bücher", "Arbeitswelt"]
 draft: true

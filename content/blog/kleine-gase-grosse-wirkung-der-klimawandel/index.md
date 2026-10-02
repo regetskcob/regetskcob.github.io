@@ -1,7 +1,8 @@
 ---
 title: "📚 | Kleine Gase - Große Wirkung | Der Klimawandel"
 date: 2020-04-16T12:00:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "David Nelles und Christian Serrer erklären die Grundlagen des Klimawandels verständlich und mit Infografiken, so gebündelt wie sonst nirgends."
 aliases: ["/posts/kleine-gase-grosse-wirkung-der-klimawandel/"]
 tags: ["Bücher"]
 ---

@@ -1,7 +1,8 @@
 ---
 title: "🎁 | Geschenkideen für Innovationstreiber"
 date: 2022-12-06T11:30:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Zwei Handbücher von Benno van Aerssen zu Innovation und digitaler Transformation, eine Geschenkidee für alle im Produktmanagement."
 aliases: ["/posts/geschenkidee-fuer-innovationstreiber/"]
 tags: ["Bücher", "Arbeitswelt"]
 ---

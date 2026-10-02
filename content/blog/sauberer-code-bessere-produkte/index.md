@@ -1,7 +1,8 @@
 ---
 title: "📚 | Sauberer Code. Bessere Produkte."
 date: 2018-01-03T21:00:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Jeff Langr führt in testgetriebene Entwicklung mit C++ ein. Ordentliches Testen heißt mehr, als ein bisschen zu klicken und zu schauen."
 aliases: ["/posts/sauberer-code-bessere-produkte/"]
 tags: ["Bücher", "Softwareentwicklung"]
 ---

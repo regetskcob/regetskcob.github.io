@@ -1,8 +1,8 @@
 ---
 title: "📚 | React - Das umfassende Handbuch"
 date: 2025-01-26T19:47:53+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Sebastian Springers Buch „React – Das umfassende Handbuch“ ist ein außergewöhnlich gut strukturiertes und tiefgehendes Werk, das sich an Webentwickler richtet, die React als Frontend-Bibliothek umfassend verstehen und effektiv einsetzen möchten."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Sebastian Springers Handbuch erklärt React von Komponenten, Props und State bis zu Hooks, Redux und Zustand."
 aliases: ["/posts/react-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
 ---

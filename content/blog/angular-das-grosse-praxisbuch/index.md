@@ -1,8 +1,8 @@
 ---
 title: "📚 | Angular - Das große Praxisbuch"
 date: 2025-01-26T19:49:56+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "\"Angular – Das große Praxisbuch\" aus dem dpunkt.verlag ist ein umfassendes Werk, das sich als unverzichtbare Ressource für Webentwickler etabliert hat, die mit dem Angular-Framework arbeiten möchten."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Die vierte Auflage des Praxisbuchs von Malcher, Koppenhagen und Hoppe führt anhand eines Beispielprojekts durch Angular 15 und neuer, von Standalone Components bis NgRx und Tests."
 aliases: ["/posts/angular-das-grosse-praxisbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
 ---

@@ -1,8 +1,10 @@
 ---
 title: "🎧 | Agile Rap"
 date: 2022-12-05T05:30:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Agile Rollen, Themen und Arbeitsweisen als Rap-Songs: eine Playlist von Adam Janosch, auf die mich ein Arbeitskollege gebracht hat."
 aliases: ["/posts/agile-rap/"]
+tags: ["Arbeitswelt"]
 draft: true
 ---
 

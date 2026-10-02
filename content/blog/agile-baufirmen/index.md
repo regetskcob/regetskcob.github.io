@@ -1,7 +1,8 @@
 ---
 title: "🏗 | Die Agile Homes GmbH"
 date: 2020-04-11T22:45:35+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Zum Auftakt der fiktiven Agile Homes GmbH: Anhand ihrer Projekte vergleiche ich künftig agile Methoden mit herkömmlichen Vorgehensweisen."
 aliases: ["/posts/agile-baufirmen/"]
 tags: ["Arbeitswelt"]
 draft: true

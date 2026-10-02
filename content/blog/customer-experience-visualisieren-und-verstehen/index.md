@@ -1,7 +1,8 @@
 ---
 title: "📚 | Customer Experience visualisieren und verstehen"
 date: 2022-12-12T15:30:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Jim Kalbach zeigt, wie sich Customer Journeys und Service Blueprints visualisieren lassen, um die Kundenerfahrung zu verstehen und zu verbessern."
 aliases: ["/posts/customer-experience-visualisieren-und-verstehen/"]
 tags: ["Bücher"]
 ---

@@ -1,7 +1,8 @@
 ---
 title: "📚 | Der kreative Fotograf"
 date: 2020-10-03T12:54:26+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Heidi und Robert Mertens zeigen Techniken, die Kreativität in der Fotografie wecken sollen. Viele der gezeigten Aufnahmen wirken auf mich allerdings eher wie Schnappschüsse."
 aliases: ["/posts/der-kreative-fotograf/"]
 tags: ["Bücher", "Fotografie"]
 ---

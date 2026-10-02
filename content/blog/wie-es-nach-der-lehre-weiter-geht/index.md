@@ -1,9 +1,10 @@
 ---
 title: "👩🏼‍🎓 👨🏻‍🎓 | Wie es nach der Lehre weiter geht"
 date: 2017-02-08T20:20:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Was kommt nach der Ausbildung? Am Beispiel des Azubis Max: im Betrieb bleiben, wechseln, studieren oder selbstständig werden."
 aliases: ["/posts/wie-es-nach-der-lehre-weiter-geht/"]
-tags: ["Bücher", "Softwareentwicklung", "Ausbildung"]
+tags: ["Ausbildung", "Softwareentwicklung"]
 ---
 
 Das Thema, über da sich heute schreiben möchte, ist sicherlich kein leichtes. Aus diesem Grund möchte ich in diesem Artikel um seinen Inhalt herum eine Geschichte aufbauen, die den Kern des ganzen widerspiegelt und das Verstehen hoffentlich erleichtert.

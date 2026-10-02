@@ -1,7 +1,8 @@
 ---
 title: "📸 | Der perfekte Moment"
 date: 2020-04-13T11:45:27+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Dieselbe Brücke über die Niers, zweimal fotografiert: im goldenen Nebel und Monate später klar und ruhig."
 aliases: ["/posts/der-perfekte-moment/"]
 tags: ["Natur", "Fotografie"]
 draft: true

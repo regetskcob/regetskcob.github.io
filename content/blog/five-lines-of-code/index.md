@@ -1,8 +1,8 @@
 ---
 title: "📚 | five lines of code"
 date: 2023-01-16T09:00:00+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Mit fünf Zeilen je Funktion/Methode auskommen, das ist der Ansatz, den euch Christian Clausen mit seinem Buch vermittelt."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Christian Clausen zeigt, wie sich Code mit höchstens fünf Zeilen je Methode refaktorieren lässt. Kurzweilig, praxisnah und mit einem Vorwort von Uncle Bob."
 aliases: ["/posts/five-lines-of-code/"]
 tags: ["Bücher", "Softwareentwicklung"]
 ---

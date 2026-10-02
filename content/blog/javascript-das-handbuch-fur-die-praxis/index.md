@@ -1,8 +1,8 @@
 ---
 title: "📚 | JavaScript - Das Handbuch für die Praxis"
 date: 2025-01-24T22:11:18+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "\"JavaScript – Das Handbuch für die Praxis\" von David Flanagan, veröffentlicht im dpunkt.verlag, gilt seit über 25 Jahren als unverzichtbares Standardwerk für JavaScript-Entwickler. Die aktuelle siebte Auflage wurde vollständig überarbeitet und deckt die JavaScript-Version ES2020 ab."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "David Flanagans Standardwerk in der siebten Auflage, aktuell bis ES2020: von Klassen und Modulen bis zu Promises und async/await."
 aliases: ["/posts/javascript-das-handbuch-fur-die-praxis/"]
 tags: ["Bücher", "Softwareentwicklung"]
 ---

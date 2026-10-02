@@ -1,9 +1,10 @@
 ---
 title: "🦌 | Vorbereitungen für die Jagdschein Prüfungen"
 date: 2024-11-17T16:41:47+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Wie ich mich mit Kurs, Büchern, App und Videos auf die Jagdschein-Prüfungen vorbereitet habe und was ich künftigen Jungjägern empfehle."
 aliases: ["/posts/vorbereitungen-fur-die-jagdschein-prufungen/"]
-tags: ["Ausbildung"]
+tags: ["Natur"]
 draft: true
 ---
 

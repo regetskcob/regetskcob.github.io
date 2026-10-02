@@ -1,7 +1,8 @@
 ---
 title: "📚 | Handbuch - Capture One Pro 12"
 date: 2020-07-10T15:22:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Jürgen Wolfs Handbuch führt mit 100 Workshops von der Bildverwaltung bis zu Ebenen und Farbkorrektur durch Capture One Pro 12. Für Einsteiger gut geeignet, nur der Schreibstil ist etwas fad."
 aliases: ["/posts/capture-one-pro-12-buch/"]
 tags: ["Bücher", "Fotografie"]
 ---

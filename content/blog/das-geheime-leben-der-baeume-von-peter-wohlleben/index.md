@@ -1,9 +1,12 @@
 ---
 title: "📚 | Das geheime Leben der Bäume von Peter Wohlleben"
 date: 2020-04-13T10:57:16+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Seit ich Wohllebens Buch gelesen habe, gehe ich mit anderem Blick durch den Wald. Eine Empfehlung für alle, die ihn besser verstehen wollen."
 aliases: ["/posts/das-geheime-leben-der-baeume-von-peter-wohlleben/"]
-tags: ["Bücher", "Natur", "Arbeitswelt"]
+tags: ["Bücher", "Natur"]
+disclosure:
+  type: purchased
 ---
 
 Seitdem ich mir das Buch *Das geheime Leben der Bäume* von *Peter Wohlleben* in einem örtlichem Buchhandel gekauft habe, gehe ich mit anderem Blick durch den Wald. Das Buch nimmt Leserinnen und Leser auf einen Spaziergang durch den Wald mit, auf dessen Weg spannende Geschichten und einzigartige Bilder den Weg kreuzen.

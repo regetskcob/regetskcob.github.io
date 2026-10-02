@@ -1,8 +1,8 @@
 ---
 title: "📸 + 🥾 | Mit dem FUJIFILM XF50-140mm f2.8 + 1.4x am Drachenfels"
 date: 2020-04-14T07:00:00+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Als meine Eltern mich im August 2019 gefragt haben, ob ich mit zum Drachenfels kommen möchte, habe ich mich doppelt gefreut. Zum einen bin ich dort noch nie gewesen und hatte mich zuvor absichtlich nicht informiert, was mich erwarten würde."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Ein Tagesausflug auf den Drachenfels mit dem gemieteten XF50-140mm f2.8 und 1.4x Konverter an der kleinen X-T30."
 aliases: ["/posts/mit-fujifilm-am-drachenfels/"]
 tags: ["Natur", "Fotografie"]
 draft: true

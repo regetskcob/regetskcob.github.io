@@ -1,7 +1,8 @@
 ---
 title: "🏗 | Anschaffung und Einführung einer neuen Baumaschine"
 date: 2020-04-12T19:50:15+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Bei der Agile Homes GmbH verliert die Betonmischmaschine in der Hitze an Leistung. Ein Team führt eine neue Maschine ein, die anderen drei sträuben sich bis heute."
 aliases: ["/posts/anschaffung-und-einfuehrung-einer-neuen-baumaschine/"]
 tags: ["Arbeitswelt"]
 draft: true

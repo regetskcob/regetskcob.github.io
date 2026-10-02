@@ -1,7 +1,8 @@
 ---
 title: "📚 | Das Café am Rande der Welt"
 date: 2020-04-24T08:00:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "John Strelecky begleitet auf der Suche nach dem Sinn des Lebens. Meine Essenz daraus: sich nicht von den Leitbildern anderer beeinflussen lassen."
 aliases: ["/posts/das-cafe-am-rande-der-welt/"]
 tags: ["Bücher"]
 ---

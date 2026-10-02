@@ -1,8 +1,8 @@
 ---
 title: "📚 | Node.js - Das umfassende Handbuch"
 date: 2023-05-05T14:30:00+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Ob zur Weiterbildung oder als Nachschlagewerk, dieses Buch gehört in das Bücherregal eines jeden Webentwicklers, oder jeder Webentwicklerin. Mit dem Wissen aus diesem Werk ist ein Application-Server mit Datenbankanbindung und ReST API im Nu erstellt."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Sebastian Springers Handbuch auf Basis von Node.js 16 führt von der Runtime über Debugging bis zum automatisierten Testing."
 aliases: ["/posts/node-js-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
 ---

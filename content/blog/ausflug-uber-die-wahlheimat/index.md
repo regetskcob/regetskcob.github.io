@@ -1,10 +1,10 @@
 ---
 title: "🚁 + 📸 | Ausflug über die Wahlheimat"
 date: 2022-10-31T20:00:29+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Am Wochenende bin ich mal wieder im Uedemer Hochwald gewesen und auf dem Hinweg habe ich noch einen Abstecher auf den Monreberg in Kalkar gemacht."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Mit der DJI Mavic Mini auf dem Monreberg: die Region aus einer Höhe, die ich so noch nicht kannte."
 aliases: ["/posts/ausflug-uber-die-wahlheimat/"]
-tags: ["Fotografie"]
+tags: ["Fotografie", "Natur"]
 draft: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: "📚 | Guidebook für Software Engineers"
 date: 2024-12-31T23:00:00+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Der Begleiter für alle Karrierestufen. Englische Originalauflage „The Software Engineer’s Guidebook“ von Gergely Orosz, übersetzt ins Deutsche von Jørgen W. Lang. Vom Autor des „The Pragmatic Engineer“-Newsletters."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Gergely Orosz begleitet Software Engineers durch alle Karrierestufen. Die Idee, die eigene Entwicklung selbst in die Hand zu nehmen, kenne ich aus eigener Erfahrung."
 aliases: ["/posts/guidebook-fur-software-engineers/"]
-tags: ["Bücher", "Softwareentwicklung", "Ausbildung", "Arbeitswelt"]
+tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
 ---
 
 Der Begleiter für alle Karrierestufen. Englische Originalauflage „The Software Engineer’s Guidebook“ von Gergely Orosz, übersetzt ins Deutsche von Jørgen W. Lang. Vom Autor des „The Pragmatic Engineer“-Newsletters.

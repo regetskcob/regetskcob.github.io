@@ -1,10 +1,10 @@
 ---
 title: "📚 | 50 Arten, Nein zu sagen"
 date: 2023-01-24T13:30:00+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Nein - Ein Wort, das bei vielen verpönt ist. Doch ohne ein klares Nein funktioniert unsere (Arbeits-)Welt ab und an einfach nicht."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Wie sich ein Nein so verpacken lässt, dass das Gegenüber dankbar dafür ist, und welches Nein zu welchem Stakeholder passt. Ein kurzweiliges Buch für Product Owner."
 aliases: ["/posts/50-arten-nein-zu-sagen/"]
-tags: ["Bücher", "Ausbildung", "Arbeitswelt"]
+tags: ["Bücher", "Arbeitswelt"]
 ---
 
 Nein - Ein Wort, das bei vielen verpönt ist. Doch ohne ein klares Nein funktioniert unsere (Arbeits-)Welt ab und an einfach nicht.

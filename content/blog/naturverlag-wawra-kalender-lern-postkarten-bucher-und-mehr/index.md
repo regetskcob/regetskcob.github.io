@@ -1,10 +1,12 @@
 ---
 title: "🌳 | Naturverlag-Wawra - Kalender, Lern- & Postkarten, Bücher und mehr"
 date: 2025-01-09T20:05:21+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Vor einer Weile bin ich auf den Naturverlag-Wawra aufmerksam geworden, als ich Postkarten mit Motiven aus der Natur gesucht habe. Gefunden habe ich einen kleinen Verlag, der mit viel Liebe zum Detail seine Produkte gestaltet und wertvolles Lernmaterial insbesondere für Kinder produziert."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Postkarten, Kalender, Natur-Tafeln, Naturbuch und Naturfächer: Lernmaterial rund um Wald und Tiere vom Naturverlag Wawra."
+cover: ./cover.jpg
+coverAlt: "Auf einem Holztisch ausgebreitet: Naturkalender mit Feldhase, Eulen-Postkarte, Natur-Tafeln, Naturbuch und Naturfächer des Naturverlags Wawra"
 aliases: ["/posts/naturverlag-wawra-kalender-lern-postkarten-bucher-und-mehr/"]
-tags: ["Natur"]
+tags: ["Natur", "Bücher"]
 ---
 
 Vor einer Weile bin ich auf den Naturverlag-Wawra aufmerksam geworden, als ich Postkarten mit Motiven aus der Natur gesucht habe. Gefunden habe ich einen kleinen Verlag, der mit viel Liebe zum Detail seine Produkte gestaltet und wertvolles Lernmaterial insbesondere für Kinder produziert.

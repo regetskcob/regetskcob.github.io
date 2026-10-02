@@ -1,9 +1,10 @@
 ---
 title: "🎬 🎧 | Frithjof Bergmann, der Urvater der neuen Arbeit"
 date: 2022-12-21T11:00:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Vier Talks und eine Podcast-Playlist zu Frithjof Bergmann und seinem „wirklich, wirklich wollen“. Sein Buch steht nun auf meiner Leseliste."
 aliases: ["/posts/frithjof-bergmann-der-urvater-der-neuen-arbeit/"]
-tags: ["Bücher"]
+tags: ["Arbeitswelt"]
 draft: true
 ---
 

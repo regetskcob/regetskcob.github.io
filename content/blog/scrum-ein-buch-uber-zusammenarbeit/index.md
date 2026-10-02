@@ -1,8 +1,8 @@
 ---
 title: "📚 | Scrum - Ein Buch über Zusammenarbeit"
 date: 2023-05-15T08:30:00+0000
-lastmod: 2026-10-01T20:48:47+0000
-summary: "Geschrieben von der „Scrum Patterns Group“ um Jeff Sutherland und James O. Copien, wartet das Buch mit der Essenz aus mehrjähriger Zusammenarbeit dutzender Autoren und Fach-Experten auf."
+lastmod: 2026-10-02T05:29:49+0000
+summary: "94 Muster der Scrum Patterns Group für fast jede Phase eines Scrum-Projekts. Von mir eine klare Kaufempfehlung für alle, die mit Scrum arbeiten."
 aliases: ["/posts/scrum-ein-buch-uber-zusammenarbeit/"]
 tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
 ---

@@ -1,9 +1,12 @@
 ---
 title: "📸 | Gearflix - Fototechnik mieten statt kaufen"
 date: 2021-04-11T16:55:00+0000
-lastmod: 2026-10-01T20:48:47+0000
+lastmod: 2026-10-02T05:29:49+0000
+summary: "Gearflix vermietet Fotoequipment. Ich habe das XF50-140mm f2.8 mit 1.4x Konverter ausprobiert, am Drachenfels und nachts auf dem Monreberg."
+cover: ./0d8b7340-5bd0-4912-87a6-b585545d42f0.jpg
+coverAlt: "Beleuchtete Windmühle in der Dämmerung im Wald, rechts ein Strommast mit Leitungen unter dunklen Wolken"
 aliases: ["/posts/mieten-statt-kaufen/"]
-tags: ["Fotografie"]
+tags: ["Fotografie", "Natur"]
 draft: true
 ---
 
