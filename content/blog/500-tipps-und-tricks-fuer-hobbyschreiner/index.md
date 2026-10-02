@@ -24,6 +24,6 @@ Im Verlaufe des Buches werdet ihr durch die Kapitel 1.) Die Werkstatt, 2.) D
 
 Besonders das erste Kapitel hat es mir dabei angetan, da hier neben vielen essentiellen Techniken und Methoden der Holzbearbeitung auch viele Werkstatthilfen Erwähnung finden, die alle mehr oder weniger schnell nachgebaut sind. Besonders dank der guten Bebilderung der gezeigten Projekte ist ein Nachbau sehr einfach und es fallen einem plötzlich Dinge ein die man braucht, die man vorher gar nicht kannte.
 
-Fazit
+## Fazit
 
 Für 29,90 € erhaltet ihr ein durchaus umfangreiches Nachschlagewerk, dass besonders in Werkstätten von Einsteigern in das Thema Holzbearbeitung nicht fehlen sollte. Dennoch sehe ich deutliche Ausbaufähigkeit im Umfang oder Potential für einen zweiten teil, da das Arbeiten mit elektrischen Sägen oder allgemein stationären Maschinen eher kurz ausfällt. Dennoch deckt das Buch einen Großteil von Holzbearbeitungstechniken ab und bietet darüber Hinaus einen wertvollen Fundus aus Hinweisen und ‚Profi‘-Kniffen, auf die man als leihe kaum kommt. Allein dies reicht mir für eine Kaufempfehlung, da es einfach einen erheblichen Mehrwert bietet.
