@@ -3,7 +3,7 @@ title: "🔨 | Holzbock bauen - Zapfenverbindungen und Lenkrollen"
 date: 2017-06-19T09:16:00+0000
 lastmod: 2026-10-02T06:52:46+0000
 summary: "Zapfenverbindungen für die Auflage, Lenkrollen am Fußgestell und am Ende ein vollständig montierter und verleimter Holzbock."
-cover: ./holzbock-fertig.jpg
+cover: ./cover.jpg
 coverAlt: "Der fertige Holzbock auf Lenkrollen in der Garage, auf der Auflage liegen zwei Ziegelsteine"
 series: "Holzbock bauen"
 seriesLabel: "Teil IV: Zapfenverbindungen und Lenkrollen"
@@ -24,7 +24,5 @@ Außerdem habe ich der Lenkrollen am Fußgestell montiert. Dazu habe ich zuerst 
 Detailaufnahme vom Makita 6347D Baujahr 2008
 
 Fazit des Tages war ein vollständig montierter und verleimter Holzbock, sowie ein fertig eingepasstes und verschraubtes Fußgestell inklusive Lenkrollen. Wann es an den fehlenden Aufbau geht, kann ich noch nicht sagen, ich hoffe die Woche nach der Arbeit Zeit dazu zu finden, ansonsten wird es Samstag werden.
-
-![Der fertige Holzbock auf Lenkrollen in der Garage, auf der Auflage liegen zwei Ziegelsteine](./holzbock-fertig.jpg)
 
 Machst gut und bis dahin

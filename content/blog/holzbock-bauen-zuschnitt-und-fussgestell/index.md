@@ -3,7 +3,7 @@ title: "🔨 | Holzbock bauen - Zuschnitt und Fußgestell"
 date: 2017-06-19T09:15:00+0000
 lastmod: 2026-10-02T06:52:46+0000
 summary: "Der erste Bautag an den Holzböcken: Zuschnitt in der Garage, eine Kappsäge mit mäßiger Absaugung, das Fußgestell und die ersten Zapfenlöcher."
-cover: ./laptop-sketchup.jpg
+cover: ./cover.jpg
 coverAlt: "Der Laptop zeigt die Maße der Holzböcke in SketchUp, aufgestellt auf der Werkbank in der Garage"
 series: "Holzbock bauen"
 seriesLabel: "Teil III: Zuschnitt und Fußgestell"
@@ -16,8 +16,6 @@ draft: true
 Heute war wie gestern bereits angekündigt der erste Tag, an dem ich praktisch an den Holzböcken arbeiten konnte. Zuvor bestand meine Arbeit an dem Projekt ja überwiegend aus Blättern, dem Geodreieck und anschließenden Abenden vor SketchUp.
 
 Zu allererst galt es die elterliche Garage zur Werkstatt zu transformieren. Aus zwei Klapp-Böcken und meiner Zukünftigen MDF-Tischplatte wurde kurzerhand ein Kappungen-Stand, der WABECO Bohrständer wurde um einen Schraubstock ergänzt und das Material grob zurechtgelegt. Außerdem fand der Laptop seinen Platz auf der Werkbank, da ich in SketchUp bereits alle Maßangaben vorbereitet habe, aber keine Lust auf Papierkrieg hatte.
-
-![Der Laptop zeigt die Maße der Holzböcke in SketchUp, aufgestellt auf der Werkbank in der Garage](./laptop-sketchup.jpg)
 
 Danach ging es an den Zuschnitt aller benötigten Teile. Die Maße dafür hatte ich wie gesagt in Form meines MacBooks und SketchUp dabei. Je nach Bestandteil, den ich zugeschnitten habe, habe ich entsprechende Layer ein und ausgeblendet, um immer nur das zu sehen, was im Fokus sein soll.
 

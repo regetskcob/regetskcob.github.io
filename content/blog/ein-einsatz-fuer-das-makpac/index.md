@@ -3,7 +3,7 @@ title: "🔨 | Ein Einsatz für das MakPac"
 date: 2017-06-09T07:35:00+0000
 lastmod: 2026-10-02T06:52:46+0000
 summary: "Ein selbstgebauter Einsatz für ein MakPac nach einem Festool-Bauplan, der Werkzeug sicher und handlich transportiert."
-cover: ./makpac-einsatz.jpg
+cover: ./cover.jpg
 coverAlt: "Selbstgebauter Holzeinsatz im MakPac mit Fächern für Werkzeug, Schraubendreher und Wasserwaage"
 tags: ["Holzwerken"]
 draft: true
@@ -18,7 +18,6 @@ Ich bin dann nach einigem Suchen bei einem Bauplan von Festool gelandet, der sic
 Leider habe ich den Bau meines Einsatzes nicht mit der Kamera begleitet, es gibt also weder Videos noch Bilder davon. Aber das Ergebnis möchte ich euch dennoch als Anregung vorstellen.
 
 {{< gallery >}}
-![Selbstgebauter Holzeinsatz im MakPac mit Fächern für Werkzeug, Schraubendreher und Wasserwaage](./makpac-einsatz.jpg)
 ![Schraubendreher in der Halterung am Einsatz](./makpac-schraubendreher.jpg)
 ![Zangen und eine Wasserwaage in der Halterung an der Seitenwand](./makpac-zangen.jpg)
 ![Fach mit orangefarbenem Werkzeug und Kabeln](./makpac-fach.jpg)

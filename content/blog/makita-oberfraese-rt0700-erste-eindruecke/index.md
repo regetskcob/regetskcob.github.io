@@ -3,7 +3,7 @@ title: "🔨 | Makita Oberfräse RT0700: Erste Eindrücke"
 date: 2017-07-03T20:06:00+0000
 lastmod: 2026-10-02T06:52:46+0000
 summary: "Die Makita RT0700 im Set mit drei Körben: ein lieblos verpackter Versand, brauchbares Zubehör und Löcher für den Multifunktionstisch."
-cover: ./oberfraese-ausgepackt.jpg
+cover: ./cover.jpg
 coverAlt: "Makita Oberfräse im Systainer mit Zubehör und Fräserset, ausgepackt auf einer MDF-Platte"
 tags: ["Holzwerken"]
 disclosure:
@@ -34,10 +34,7 @@ Nun zur Oberfräse selber Diese hatte abgesehen von einigen Kratzern am MakPac 
 
 Gekauft habe ich die RT0700 im Set mit dem Zusatz CX2J, welches zusätzlich zur eigentlichen Fräseneinheit einen Senk-Korb, einen Winkel-Korb und einen Kantenfräs-Korb beinhaltet, alles verstaut mit jeder Menge Zubehör in einer mehr oder weniger praktischen Stofftasche, die ins MakPac passt wie angegossen. Warum nur mehr oder weniger praktisch? Weil die Tasche zwar alles an ihrem Platz hält, allerdings sobald man diese aus dem MakPac entnimmt durchhängt und keinen wirklich sicheren halt für den Inhalt bietet. Da muss wohl wieder mal ein Holz-Einsatz her.
 
-{{< images >}}
-![Makita Oberfräse im Systainer mit Zubehör und Fräserset, ausgepackt auf einer MDF-Platte](./oberfraese-ausgepackt.jpg)
 ![Die Einzelteile der Oberfräse mit Parallelanschlag, Grundplatte und Körben auf der Tischplatte](./oberfraese-zubehoer.jpg)
-{{< /images >}}
 
 ### Zubehör
 

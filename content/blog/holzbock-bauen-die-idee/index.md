@@ -3,7 +3,7 @@ title: "🔨 | Holzbock bauen - Die Idee"
 date: 2017-06-09T13:52:00+0000
 lastmod: 2026-10-02T06:52:46+0000
 summary: "Ein Multifunktionstisch auf zwei fahrbaren Holzböcken, der in einen kleinen Kellerraum passt: Konzept, grobe Planung und Materialliste."
-cover: ./sketchup-farbig.jpg
+cover: ./cover.jpg
 coverAlt: "SketchUp-Entwurf des Multifunktionstisches: zwei Holzböcke tragen eine Lochplatte als Tischplatte"
 series: "Holzbock bauen"
 seriesLabel: "Teil I: Die Idee"
@@ -27,10 +27,9 @@ Der Plan, um aus diesen zwei Böcken einen Multifunktionstisch zu machen, sind d
 
 Zu guter letzt wird eine Verstärkung aus zwei weiteren Kanthölzern eine starre Verbindung beider Böcke gewährleisten, damit diese korrekt ausgerichtet unter dem Tisch stehen.
 
-{{< gallery >}}
+{{< images >}}
 ![Drahtmodell des Multifunktionstisches in SketchUp mit zwei Holzböcken und Lochplatte](./sketchup-drahtmodell.jpg)
-![SketchUp-Entwurf des Multifunktionstisches: zwei Holzböcke tragen eine Lochplatte als Tischplatte](./sketchup-farbig.jpg)
 ![Seitenansicht des Holzbocks als technische Zeichnung mit Fußbalken und Mittelstrebe](./sketchup-seitenansicht.jpg)
-{{< /gallery >}}
+{{< /images >}}
 
 Mehr Details und vielleicht auch schon erste Bilder vom Material folgen im nächsten Beitrag.
