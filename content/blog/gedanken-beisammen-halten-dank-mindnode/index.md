@@ -3,6 +3,9 @@ title: "💻 | Gedanken beisammen halten dank MindNode"
 date: 2016-11-23T13:35:30+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Warum ich mich für MindNode entschieden habe, um Gedanken zu ordnen: reduziert, anpassbar und mit iCloud-Sync zwischen Mac und iPhone."
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Eine Mindmap mit einem roten Knoten in der Mitte und sechs Ästen mit Knoten, an zwei davon kleine Unteräste"
 tags: ["Softwareentwicklung"]
 draft: true
 ---

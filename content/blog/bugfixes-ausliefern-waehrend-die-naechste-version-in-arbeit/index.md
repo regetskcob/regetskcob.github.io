@@ -3,6 +3,9 @@ title: "💻 | Bugfixes ausliefern, während die nächste Version in Arbeit ist"
 date: 2016-10-21T09:18:46+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Wie sich Bugfixes ausliefern lassen, wenn die nächste Version noch in der Entwicklung ist: Lösungsvorschläge mit Branches in Git."
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Ein Versionsverlauf mit einer Hauptlinie und Release-Fahne, darüber ein langer Feature-Zweig, darunter ein kurzer roter Hotfix-Zweig, der wieder einmündet"
 tags: ["Softwareentwicklung"]
 draft: true
 ---

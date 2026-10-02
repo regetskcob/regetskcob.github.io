@@ -3,6 +3,9 @@ title: "📝 | Fast sechs Jahre Blog"
 date: 2017-05-02T09:38:29+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Rückblick auf fast sechs Jahre Bloggen und warum ich das Blog in der bisherigen Form beende."
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Sechs Beitragskarten, von Jahr zu Jahr höher, die sechste nur gestrichelt, darunter fünf ausgefüllte Punkte und ein offener"
 draft: true
 ---
 

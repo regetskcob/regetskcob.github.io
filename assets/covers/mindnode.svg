@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 -500 2000 2000">
+  <!-- Cover for "Gedanken beisammen halten dank MindNode": a mind map, one centre and six branches. Flat style of the other generated covers. The artwork is
+       2000x1000 (y 0 to 1000) in the middle of a square canvas. Render with
+       qlmanage (size 2000), then sips -c 1000 2000 and conversion to JPEG
+       (quality 88), see README, "Generierte Cover". -->
+  <rect x="0" y="-500" width="2000" height="2000" fill="#f3efe6"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M900 500 C 810 500, 830 330, 740 330" stroke="#2b2b29" stroke-width="3"/>
+<path d="M900 500 C 810 500, 790 500, 700 500" stroke="#2b2b29" stroke-width="3"/>
+<path d="M900 500 C 810 500, 830 670, 740 670" stroke="#2b2b29" stroke-width="3"/>
+<path d="M1100 500 C 1190 500, 1170 330, 1260 330" stroke="#2b2b29" stroke-width="3"/>
+<path d="M1100 500 C 1190 500, 1210 500, 1300 500" stroke="#2b2b29" stroke-width="3"/>
+<path d="M1100 500 C 1190 500, 1170 670, 1260 670" stroke="#2b2b29" stroke-width="3"/>
+<rect x="540" y="302" width="200" height="56" rx="28.0" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+<rect x="580" y="325" width="120" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="500" y="472" width="200" height="56" rx="28.0" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+<rect x="540" y="495" width="120" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="540" y="642" width="200" height="56" rx="28.0" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+<rect x="580" y="665" width="120" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1260" y="302" width="200" height="56" rx="28.0" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+<rect x="1300" y="325" width="120" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1300" y="472" width="200" height="56" rx="28.0" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+<rect x="1340" y="495" width="120" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1260" y="642" width="200" height="56" rx="28.0" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+<rect x="1300" y="665" width="120" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<path d="M1460 330 C 1510 330, 1530 270, 1570 270" stroke="#9a9a94" stroke-width="3"/><circle cx="1582" cy="270" r="12" fill="#c9c6bd" stroke="#2b2b29" stroke-width="3"/>
+<path d="M1460 330 C 1510 330, 1530 390, 1570 390" stroke="#9a9a94" stroke-width="3"/><circle cx="1582" cy="390" r="12" fill="#c9c6bd" stroke="#2b2b29" stroke-width="3"/>
+<path d="M540 670 C 490 670, 470 730, 430 730" stroke="#9a9a94" stroke-width="3"/><circle cx="418" cy="730" r="12" fill="#c9c6bd" stroke="#2b2b29" stroke-width="3"/>
+<rect x="900" y="452" width="200" height="96" rx="48.0" fill="#b55229" stroke="#2b2b29" stroke-width="3"/>
+<rect x="950" y="497" width="100" height="10" rx="5.0" fill="#faf9f4" stroke="none"/>
+<circle cx="1000" cy="500" r="120" stroke="#b55229" stroke-width="3" opacity="0.3"/>
+  </g>
+</svg>

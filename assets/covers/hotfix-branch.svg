@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 -500 2000 2000">
+  <!-- Cover for "Bugfixes ausliefern, während die nächste Version in Arbeit ist": a release on the main line, a long feature branch above it, a short hotfix branch below. Flat style of the other generated covers. The artwork is
+       2000x1000 (y 0 to 1000) in the middle of a square canvas. Render with
+       qlmanage (size 2000), then sips -c 1000 2000 and conversion to JPEG
+       (quality 88), see README, "Generierte Cover". -->
+  <rect x="0" y="-500" width="2000" height="2000" fill="#f3efe6"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M560 600 H1440" stroke="#2b2b29" stroke-width="4"/>
+<path d="M620 600 C 670 600, 670 400, 730 400 H1200 C 1260 400, 1260 600, 1300 600" stroke="#9a9a94" stroke-width="4"/>
+<path d="M740 600 C 790 600, 790 710, 850 710 H1000 C 1060 710, 1060 600, 1110 600" stroke="#b55229" stroke-width="4"/>
+<circle cx="600" cy="600" r="13" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<circle cx="740" cy="600" r="13" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<circle cx="1110" cy="600" r="13" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<circle cx="1300" cy="600" r="13" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<circle cx="1400" cy="600" r="13" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<circle cx="800" cy="400" r="11" fill="#faf9f4" stroke="#9a9a94" stroke-width="4"/>
+<circle cx="880" cy="400" r="11" fill="#faf9f4" stroke="#9a9a94" stroke-width="4"/>
+<circle cx="960" cy="400" r="11" fill="#faf9f4" stroke="#9a9a94" stroke-width="4"/>
+<circle cx="1040" cy="400" r="11" fill="#faf9f4" stroke="#9a9a94" stroke-width="4"/>
+<circle cx="1120" cy="400" r="11" fill="#faf9f4" stroke="#9a9a94" stroke-width="4"/>
+<circle cx="880" cy="710" r="12" fill="#b55229" stroke="none"/>
+<circle cx="960" cy="710" r="12" fill="#b55229" stroke="none"/>
+<path d="M740 600 V500" stroke="#2b2b29" stroke-width="3"/><path d="M740 500 H800 L786 522 L800 544 H740 Z" fill="#b55229" stroke="#2b2b29" stroke-width="3"/>
+<circle cx="1110" cy="600" r="30" stroke="#b55229" stroke-width="3" opacity="0.4"/>
+<path d="M1180 400 H1240" stroke="#9a9a94" stroke-width="4" stroke-dasharray="3 12"/>
+  </g>
+</svg>

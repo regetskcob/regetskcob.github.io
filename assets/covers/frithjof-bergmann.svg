@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 -500 2000 2000">
+  <!-- Cover for "Frithjof Bergmann, der Urvater der neuen Arbeit": a video window with a play button, an audio waveform for the podcasts and a dashed book on the reading list. Flat style of the other generated covers. The artwork is
+       2000x1000 (y 0 to 1000) in the middle of a square canvas. Render with
+       qlmanage (size 2000), then sips -c 1000 2000 and conversion to JPEG
+       (quality 88), see README, "Generierte Cover". -->
+  <rect x="0" y="-500" width="2000" height="2000" fill="#f3efe6"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="580" y="330" width="380" height="250" rx="10" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><path d="M580 372 H960" stroke="#c9c6bd" stroke-width="3"/>
+<circle cx="604" cy="351" r="5" fill="#9a9a94" stroke="none"/><circle cx="626" cy="351" r="5" fill="#9a9a94" stroke="none"/><circle cx="648" cy="351" r="5" fill="#9a9a94" stroke="none"/>
+<path d="M740 430 L740 526 L822 478 Z" fill="#b55229" stroke="none"/><circle cx="772" cy="478" r="96" stroke="#b55229" stroke-width="3" opacity="0.3"/>
+<path d="M600 640 H940" stroke="#c9c6bd" stroke-width="3"/><rect x="600" y="640" width="170" height="5" rx="2.5" fill="#b55229" stroke="none"/><circle cx="770" cy="640" r="9" fill="#b55229" stroke="none"/>
+<rect x="1040" y="470.0" width="14" height="40" rx="7" fill="#2b2b29" stroke="none"/>
+<rect x="1066" y="445.0" width="14" height="90" rx="7" fill="#2b2b29" stroke="none"/>
+<rect x="1092" y="415.0" width="14" height="150" rx="7" fill="#b55229" stroke="none"/>
+<rect x="1118" y="455.0" width="14" height="70" rx="7" fill="#2b2b29" stroke="none"/>
+<rect x="1144" y="430.0" width="14" height="120" rx="7" fill="#2b2b29" stroke="none"/>
+<rect x="1170" y="460.0" width="14" height="60" rx="7" fill="#2b2b29" stroke="none"/>
+<rect x="1196" y="440.0" width="14" height="100" rx="7" fill="#2b2b29" stroke="none"/>
+<rect x="1222" y="472.0" width="14" height="36" rx="7" fill="#2b2b29" stroke="none"/>
+<path d="M1030 590 H1260" stroke="#c9c6bd" stroke-width="3"/>
+<rect x="1340" y="360" width="120" height="180" fill="none" stroke="#9a9a94" stroke-width="3" stroke-dasharray="8 10"/><path d="M1340 360 V540" stroke="#9a9a94" stroke-width="10" opacity="0.5"/>
+<path d="M965 455 C 1180 455, 1200 300, 1330 420" stroke="#9a9a94" stroke-width="3" stroke-dasharray="2 10"/><path d="M1270 490 C 1300 520 1310 500 1330 500" stroke="#9a9a94" stroke-width="3" stroke-dasharray="2 10"/>
+  </g>
+</svg>

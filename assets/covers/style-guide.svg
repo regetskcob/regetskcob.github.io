@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 -500 2000 2000">
+  <!-- Cover for "Warum ein Style Guide durchaus Sinn macht": messy code on the left, the same code with one style on the right. Flat style of the other generated covers. The artwork is
+       2000x1000 (y 0 to 1000) in the middle of a square canvas. Render with
+       qlmanage (size 2000), then sips -c 1000 2000 and conversion to JPEG
+       (quality 88), see README, "Generierte Cover". -->
+  <rect x="0" y="-500" width="2000" height="2000" fill="#f3efe6"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="540" y="270" width="400" height="460" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+<rect x="1060" y="270" width="400" height="460" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/>
+<rect x="580" y="316" width="220" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="618" y="362" width="150" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="586" y="408" width="260" height="9" rx="4.5" fill="#c9c6bd" stroke="none"/>
+<rect x="650" y="454" width="110" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="602" y="500" width="230" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="644" y="546" width="90" height="9" rx="4.5" fill="#b55229" stroke="none"/>
+<rect x="580" y="592" width="240" height="9" rx="4.5" fill="#c9c6bd" stroke="none"/>
+<rect x="624" y="638" width="160" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="592" y="684" width="200" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1100" y="316" width="160" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1100" y="316" width="34" height="9" rx="4.5" fill="#b55229" stroke="none"/>
+<rect x="1134" y="362" width="200" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1134" y="362" width="34" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="1134" y="408" width="150" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1134" y="408" width="34" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="1100" y="454" width="120" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1100" y="454" width="34" height="9" rx="4.5" fill="#b55229" stroke="none"/>
+<rect x="1134" y="500" width="210" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1134" y="500" width="34" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="1168" y="546" width="130" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1168" y="546" width="34" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="1168" y="592" width="100" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1168" y="592" width="34" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="1134" y="638" width="180" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1134" y="638" width="34" height="9" rx="4.5" fill="#2b2b29" stroke="none"/>
+<rect x="1100" y="684" width="140" height="9" rx="4.5" fill="#9a9a94" stroke="none"/>
+<rect x="1100" y="684" width="34" height="9" rx="4.5" fill="#b55229" stroke="none"/>
+<path d="M1134 296 V706" stroke="#c9c6bd" stroke-width="2" stroke-dasharray="3 9"/><path d="M1168 296 V706" stroke="#c9c6bd" stroke-width="2" stroke-dasharray="3 9"/>
+<path d="M960 500 H1040" stroke="#b55229" stroke-width="4"/><path d="M1022 482 L1040 500 L1022 518" stroke="#b55229" stroke-width="4"/>
+<circle cx="1260" cy="810" r="30" fill="#b55229" stroke="none"/><path d="M1244 811 L1256 823 L1278 797" stroke="#faf9f4" stroke-width="6"/>
+<path d="M700 800 q15 -22 30 0 t30 0 t30 0 t30 0" stroke="#9a9a94" stroke-width="3"/>
+  </g>
+</svg>

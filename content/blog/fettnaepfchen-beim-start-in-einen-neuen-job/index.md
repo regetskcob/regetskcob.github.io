@@ -3,6 +3,9 @@ title: "👨‍🎓 | Fettnäpfchen beim Start in einen neuen Job"
 date: 2017-01-15T10:34:55+0000
 lastmod: 2026-10-02T06:41:45+0000
 summary: "Wie man beim Start in einen neuen Job nicht gleich ins Fettnäpfchen tritt: sich selbst beobachten, sich zurückhalten und Kritik mit Gespür anbringen."
+cover: ./cover.jpg
+coverAI: true
+coverAlt: "KI-generierte Grafik: Eine Person tritt aus einer Tür und läuft auf einen Napf mit Fett zu, darüber ein rotes Ausrufezeichen"
 tags: ["Ausbildung", "Arbeitswelt"]
 draft: true
 ---

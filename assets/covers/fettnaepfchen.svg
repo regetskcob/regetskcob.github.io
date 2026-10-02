@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 -500 2000 2000">
+  <!-- Cover for "Fettnäpfchen beim Start in einen neuen Job": a new colleague stepping out of a door, a bowl of grease right in front of the feet. Flat style of the other generated covers. The artwork is
+       2000x1000 (y 0 to 1000) in the middle of a square canvas. Render with
+       qlmanage (size 2000), then sips -c 1000 2000 and conversion to JPEG
+       (quality 88), see README, "Generierte Cover". -->
+  <rect x="0" y="-500" width="2000" height="2000" fill="#f3efe6"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M520 760 H1480" stroke="#9a9a94" stroke-width="3"/>
+<rect x="560" y="340" width="190" height="420" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><path d="M750 340 L840 380 V720 L750 760 Z" fill="#e4dfd2" stroke="#2b2b29" stroke-width="3"/><circle cx="812" cy="560" r="9" fill="#b55229" stroke="none"/>
+<circle cx="960" cy="470" r="30" fill="#2b2b29" stroke="none"/><path d="M960 505 V620" stroke="#2b2b29" stroke-width="14"/><path d="M960 540 L920 600 M960 540 L1010 590" stroke="#2b2b29" stroke-width="12"/><path d="M960 620 L930 760 M960 620 L1040 752" stroke="#2b2b29" stroke-width="14"/><path d="M1040 752 H1070" stroke="#2b2b29" stroke-width="12"/>
+<path d="M1160 700 H1360 C1360 760 1300 790 1260 790 C1220 790 1160 760 1160 700 Z" fill="#faf9f4" stroke="#2b2b29" stroke-width="3"/><ellipse cx="1260" cy="700" rx="100" ry="18" fill="#e4dfd2" stroke="#2b2b29" stroke-width="3"/>
+<ellipse cx="1245" cy="702" rx="26" ry="7" fill="#b55229" stroke="none"/><ellipse cx="1300" cy="698" rx="14" ry="5" fill="#b55229" stroke="none"/>
+<circle cx="1260" cy="700" r="150" stroke="#b55229" stroke-width="3" opacity="0.25"/>
+<circle cx="1260" cy="500" r="30" fill="#b55229" stroke="none"/><text x="1260" y="516" font-family="Georgia, serif" font-size="46" fill="#faf9f4" text-anchor="middle" stroke="none">!</text>
+<path d="M1100 560 C1140 520 1180 520 1210 540" stroke="#9a9a94" stroke-width="3" stroke-dasharray="2 10"/>
+  </g>
+</svg>
