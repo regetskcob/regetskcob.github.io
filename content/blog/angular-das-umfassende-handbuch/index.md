@@ -3,7 +3,7 @@ title: "📚 | Angular - Das umfassende Handbuch"
 date: 2025-01-24T22:12:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Christoph Höllers Handbuch ist mit über 1.000 Seiten ein Nachschlagewerk zu Angular, von TypeScript und RxJS über Formulare und Routing bis zu Performance und Storybook."
-aliases: ["/posts/angular-das-praxisbuch/"]
+aliases: ["/posts/angular-das-praxisbuch/", "/blog/angular-das-praxisbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
