@@ -17,17 +17,17 @@ Hier ein bisschen was eingeben, da ein bisschen klicken, dort eine Einstellung �
 
 **Falsch!**, denn damit ist es längst nicht getan, denn aktuell Software wird immer Sicherlich ist es wichtig, dass Änderungen an Apps und anderen Software-Produkten auch durch die menschliche Qualitätssicherung gegen getestet werden,  aber auch der Entwickler selber sollte sich bemühen, seinen Code sauber, übersichtlich **und** getestet zu hinterlassen, wenn er etwas ändert.
 
-# Das Buch
+## Das Buch
 
 Unter dem Motto „Sauberer Code. Bessere Produkte.“ hat Jeff Langr sein ursprünglich auf Englisch erschienenes Buch „Testgetriebene Entwicklung mit C++“ veröffentlicht, welches [übersetzt ins Deutsche beim dpunkt Verlag erhältlich](https://dpunkt.de/produkt/testgetriebene-entwicklung-mit-c/) ist. (Original-Titel: „Modern C++ Programming with test-Driven Development“)
 
-## Überblick
+### Überblick
 
 Trotz der Zielsetzung, überwiegend Einsteiger an testgetriebene Entwicklung (engl. Test-Driven development) und testgetriebenes Design (test-Driven Design) heran zu führen, biete das Buch auch für Softwareentwickler mit Erfahrung auf diesen Gebieten sicherlich einige Kapitel, die dennoch lesenswert und alleine schon rechtfertigen, dieses Buch in euer Regal zu stellen, geschweige denn es zu lesen.
 
 Auf nicht ganz 400 Seiten erstrecken sich 11 Kapitel und zwei Anhänge. Jedes einzelne Kapitel mit einem „Setup“- und einem „Teardown“-Aschnitt, deren Benennung zwei engl. Fachbegriffe aus dem Themengebiet **TDD** sind. Im Setup erfahrt ihr kurz und knapp, worum es geht. Im Teardown fasst der Autor das gelesene erneut zusammen und bietet ebenfalls einen Ausblick auf das folgende Kapitel.
 
-## Im Detail
+### Im Detail
 
 Begonnen wird selbstverständlich - wie sollte es auch anders sein - mit der Einrichtung von eurem Arbeitsumfeld. Je nach Betriebssystem werdet ihr an die Installation von allen nötigen Werkzeugen heran geführt und Jeff Langr weicht euch während dessen nicht von der Seite.
 
@@ -41,7 +41,7 @@ Nachdem eure Arbeitsumgebung eingerichtet ist, stellt euch Jeff anhand eines Bei
 
 Im weiteren Verlauf erwarten euch zuerst einleitende, danach herausfordernde und zu guter letzt durchaus als „professionell“ zu bezeichnete Themen und Kapitel auf euch. Diese alle vorweg zu nehmen, würde ebenfalls die Freude über den Umfang nehmen, der einen erwartet, wenn man dieses Buch durcharbeitet.
 
-# Fazit
+## Fazit
 
 Für einen Preis um die 40,00 € erhaltet ihr mit diesem Werk ein Buch, welches alle Belangen beim Testen von Software abdeckt. Seien es nun manuelle Tests, die man von Hand vornimmt, oder geschriebene Tests, die automatisiert vom abzuledernder gesteuert und ausgewertet werden können.
 

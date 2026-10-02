@@ -11,8 +11,6 @@ tags: ["Holzwerken"]
 draft: true
 ---
 
-<!-- Bilder und Videos des Originalbeitrags fehlen im Backup. -->
-
 Dass ein 3,00 x 3,00 Meter großer Kellerraum nicht gerade viel Platz bietet, muss ich vermutlich nicht weiter erklären. Meine Antwort darauf ist ein Konzept eines Multifunktionstisches, der auf zwei Holzböcken basiert, um diesen möglichst Platzsparend zu lagern, wenn er gerade nicht benötigt wird. Um besagte Holzböcke geht es in dieser Artikelreihe.
 
 Ich werde euch also am Bau meiner zwei Holzböcke teilhaben lassen und hoffe, dass es euch gefällt. Schließlich ist es auch für mich das erste Projekt, dass ich mit Kamera und Text begleiten werde.

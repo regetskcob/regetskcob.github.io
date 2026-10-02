@@ -15,8 +15,6 @@ disclosure:
 draft: true
 ---
 
-<!-- Bilder und Videos des Originalbeitrags fehlen im Backup. -->
-
 Gestern Abend habe ich zwischen 19:00 und 22:30 Uhr den zweiten Holzbock fertiggestellt und bins ehr zufrieden mit dem Ergebnis. Nun kann es in den nächsten Tagen endlich an die Tischplatte gehen.
 
 Aber zuerst möchte ich euch einige Neuzugänge in meinem Werkzeug-Fundus vorstellen :-)

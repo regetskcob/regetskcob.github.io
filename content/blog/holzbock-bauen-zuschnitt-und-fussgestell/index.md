@@ -11,7 +11,7 @@ tags: ["Holzwerken"]
 draft: true
 ---
 
-<!-- Bilder und Videos des Originalbeitrags fehlen im Backup. -->
+<!-- Das Video des Originalbeitrags fehlt im Backup. -->
 
 Heute war wie gestern bereits angekündigt der erste Tag, an dem ich praktisch an den Holzböcken arbeiten konnte. Zuvor bestand meine Arbeit an dem Projekt ja überwiegend aus Blättern, dem Geodreieck und anschließenden Abenden vor SketchUp.
 

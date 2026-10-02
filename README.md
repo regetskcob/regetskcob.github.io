@@ -40,7 +40,7 @@ data/
   recipes.yaml    JPEG-Rezepte der C-Slots für die Rezepte-Seite
   cameras.yaml    Anzeigenamen für Kameras, die in der Datei nur ein Code sind (Drohne)
   exif.yaml       Aufnahmedaten für Fotos ohne EXIF, optional (scripts/extract-exif.sh)
-scripts/          Hilfsskripte für Fotos (import-photo.sh, extract-exif.sh)
+scripts/          Hilfsskripte für Fotos und Buchcover (import-photo.sh, extract-exif.sh, book-cover.py)
 layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen, dazu Shortcodes (images, gallery, address)
 assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
 assets/js/        Lightbox (lightbox.js), Raster mit Mischen und großen Kacheln (series.js), Nach-oben-Knopf (to-top.js)
@@ -387,6 +387,23 @@ In `hugo.toml` legt `[imaging.exif]` eine Whitelist fest und schaltet GPS und Da
 es kann also nichts Weiteres auf die Seite gelangen. Fotos ohne Daten zeigen keinen
 EXIF-Knopf. Für Fotos, die ohne Metadaten exportiert wurden, kann `data/exif.yaml`
 die Werte liefern, `scripts/extract-exif.sh <Ordner mit Originalen>` schreibt sie.
+
+### Buchcover für Rezensionen
+
+Rezensionen (📚) tragen das Cover des Verlags: mittig auf einem Papierton (RGB 243 / 239 / 230),
+2000 × 1000 Pixel, das Buch 670 Pixel hoch, mit weichem Schatten. So sehen alle Rezensionscover
+gleich aus, egal wie die Verlage ihre Bilder liefern. Das Skript macht daraus die `cover.jpg`
+im Beitragsordner (braucht Pillow, `pip install pillow`):
+
+```bash
+scripts/book-cover.py ~/Pictures/blog/books/cover/react.jpeg content/blog/react-das-umfassende-handbuch/cover.jpg
+```
+
+Im Front Matter stehen dazu `cover: ./cover.jpg`, ein `coverAlt` („Cover des Buches „…“ von … mit …“)
+und die Quelle als `coverCredit`, am Verlag und so, wie dessen Logo auf dem Bild steht
+(`"Cover: Rheinwerk Verlag"`, `"Cover: O’Reilly"`). Eigene Fotos vom Buch (in der Hand, auf dem Tisch)
+laufen stattdessen durch `import-photo.sh` und brauchen keinen Credit. Das Cover darf nicht im Text
+stehen: Enthält der Text den Dateinamen, blendet die Seite das Cover oben aus.
 
 ### Anschrift im Impressum
 

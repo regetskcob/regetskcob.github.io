@@ -11,7 +11,7 @@ tags: ["Holzwerken"]
 draft: true
 ---
 
-<!-- Bilder und Videos des Originalbeitrags fehlen im Backup. -->
+<!-- Das Video des Originalbeitrags fehlt im Backup. -->
 
 Wie gestern angekündigt, ging es auch am Samstag weiter mit den Holzböcken. Zwar war ich im Gegensatz zum Freitag statt um 9:00 Uhr erst gegen 11:00 Uhr in der ‚Werkstatt‘, dennoch habe ich – nicht zuletzt durch die Unterstützung meiner besseren Hälfte – einiges geschafft. Dazu mal einige Bilder.
 
