@@ -9,7 +9,7 @@ aliases: ["/posts/wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald/
 tags: ["Fotografie", "Natur"]
 ---
 
-Nach 20 Minuten Autofahrt ist man in einer neuen Welt. Sicherlich gibt es näher an Goch auch tolle Natur, in der man spazieren oder wandern könnte. Der Uedemer Hochwald hat es mir allerdings aufgrund der Dimensionen und des Höhenprofils besonders angetan.
+Nach 20 Minuten Autofahrt ist man in einer neuen Welt. Sicherlich gibt es auch näher an zu Hause tolle Natur, in der man spazieren oder wandern könnte. Der Uedemer Hochwald hat es mir allerdings aufgrund der Dimensionen und des Höhenprofils besonders angetan.
 
 ![Menschenleere Landstraße mit Mittelstreifen, gesäumt von kahlen Bäumen, die sich im Dunst verliert](./20191231-dscf1835.jpg)
 
