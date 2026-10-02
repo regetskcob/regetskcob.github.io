@@ -3,6 +3,7 @@ title: 🔭 | Bau des OpenAstroTracker - Teil I
 date: 2025-12-14T10:40:00+0000
 summary: In den kommenden Wochen möchte ich mir einen OpenAstroTracker bauen. Ich werde den Bau in dieser Artikelserie begleiten und auch auf Astro-Fotografie als solche näher eingehen. 
 cover: ./parts.jpeg
+coverAlt: "Gedruckte Teile des OpenAstroTrackers auf weißem Grund: ein weißes Speichenrad, zwei schlanke Bögen und weitere Kleinteile in Weiß, rechts zwei schwarze, durchbrochene Bögen"
 aliases: ["/posts/bau-des-openastrotracker-teil-i/"]
 tags: ["Fotografie"]
 ---

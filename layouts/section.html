@@ -3,7 +3,7 @@
   _default/list.html: the breadcrumbs and the "Tags" branch are gone (tags
   have layouts/taxonomy.html now), and the blog opens with a search field
   and a row of its topics, the tags with their post counts, before
-  the list of posts. Posts in the works come between search and topics.
+  the list of posts. Posts in the works come above the search.
 
   The search is Pagefind's Component UI: the deploy workflow indexes the
   built site after Hugo and writes /pagefind/. Everything runs in the
@@ -19,14 +19,14 @@
   {{- $paginator := .Paginate .Pages }}
 
   {{- if eq .Section "blog" }}
-  {{ partial "blog-search.html" . }}
-
-  {{- /* Previews of posts that are not out yet, between the search and the
-         topics, on the first page: the blog's "soon" list in
-         content/blog/_index.md (partials/soon-box.html). */}}
+  {{- /* Previews of posts that are not out yet, on top and on the first page:
+         the blog's "soon" list in content/blog/_index.md
+         (partials/soon-box.html). The search follows below it. */}}
   {{- if eq $paginator.PageNumber 1 }}
     {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
   {{- end }}
+
+  {{ partial "blog-search.html" . }}
 
   {{ partial "topic-row.html" "" }}
   {{- end }}

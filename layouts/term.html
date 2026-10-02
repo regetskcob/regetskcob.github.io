@@ -11,11 +11,12 @@
   {{ .Content }}
 
   {{- $paginator := .Paginate .Pages }}
-  {{ partial "blog-search.html" . }}
-  {{- /* The previews of posts in the works stay on tag pages, as on /blog/. */}}
+  {{- /* The previews of posts in the works stay on tag pages, above the search as on /blog/. */}}
   {{- if eq $paginator.PageNumber 1 }}
     {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
   {{- end }}
+
+  {{ partial "blog-search.html" . }}
 
   {{ partial "topic-row.html" . }}
   {{ partial "post-list.html" $paginator }}

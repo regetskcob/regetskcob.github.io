@@ -359,7 +359,7 @@ Kacheln.
 ### Vorschau auf Beiträge in Arbeit
 
 Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter
-Kasten „In Arbeit“ zwischen Suche und Themen (Titel, Cover, Zusammenfassung, nicht
+Kasten „In Arbeit“ über der Suche, vor den Themen (Titel, Cover, Zusammenfassung, nicht
 verlinkt; ab 768 px Breite aufgeklappt, darunter eingeklappt mit Hinweistext, der Link
 `#in-arbeit` klappt ihn auf), einen Block „Demnächst im Blog“ im Intro der Startseite (ab 820 px Breite), und bei Beiträgen
 einer Serie ein Kasten unter den Teilen auf der Serienseite. Die Vorschau hat keine

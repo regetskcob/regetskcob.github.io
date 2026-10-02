@@ -7,6 +7,8 @@ cover: ./cover.jpg
 coverAlt: "Das Buch „Kleine Gase – Große Wirkung“ mit Weltkugel auf dem Cover, vor Dächern und Heidekraut in die Höhe gehalten"
 aliases: ["/posts/kleine-gase-grosse-wirkung-der-klimawandel/"]
 tags: ["Bücher"]
+disclosure:
+  type: purchased
 ---
 
 Fundierte Basics, wissenschaftliche Erkenntnisse und verständliche Info-Grafiken. Genau **das** beschreibt K*leine Gase - Große Wirkung | Der Klimawandel* von *David Nelles* und *Christian Serrer* wohl am besten.

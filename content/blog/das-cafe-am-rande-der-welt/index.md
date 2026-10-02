@@ -7,6 +7,8 @@ cover: ./cover.jpg
 coverAlt: "Das Taschenbuch „Das Café am Rande der Welt“ von John Strelecky, vor blauem Himmel über Dächern in die Höhe gehalten"
 aliases: ["/posts/das-cafe-am-rande-der-welt/"]
 tags: ["Bücher"]
+disclosure:
+  type: purchased
 ---
 
 Geschrieben von *John Strelecky* ist *Das Café am Rande der Welt* ein Buch über den Sinn des Lebens, des Tuns und des Warum.

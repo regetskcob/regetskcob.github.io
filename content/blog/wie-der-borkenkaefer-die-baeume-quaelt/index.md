@@ -4,6 +4,7 @@ date: 2020-04-15T07:00:00+0000
 lastmod: 2025-01-31T11:22:32+0000
 summary: "Auf den Poltern am Wegesrand sieht man gerade oft, was der Borkenkäfer anrichtet. Seine Larven fressen Gänge durch den Bast, bis der Baum verdurstet."
 cover: ./dscf2510.jpg
+coverAlt: "Nahaufnahme einer Fichtenrinde voller Bohrlöcher des Borkenkäfers, an den Rändern ist das helle Holz freigelegt"
 aliases: ["/posts/wie-der-borkenkaefer-die-baeume-quaelt/"]
 tags: ["Natur", "Fotografie"]
 ---
