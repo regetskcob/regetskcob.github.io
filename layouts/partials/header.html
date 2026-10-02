@@ -43,6 +43,7 @@
 
     <nav class="header-menu" aria-label="Hauptmenü">
         {{ $here := .RelPermalink }}
+        {{ $onTag := and (eq .Kind "term") (eq .Data.Plural "tags") }}
 
         {{/* Collect the entries per group, in the order they first appear. */}}
         {{ $order := slice }}
@@ -62,6 +63,8 @@
           {{ if eq $here $url }}
             {{ $current = "page" }}
           {{ else if and (ne $url "/") (hasPrefix $here $url) }}
+            {{ $current = "true" }}
+          {{ else if and $onTag (eq $url "/blog/") }}
             {{ $current = "true" }}
           {{ end }}
 

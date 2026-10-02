@@ -198,6 +198,13 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   `<title>` („Blog – Seite 2“, `seo/title.html`) und einen eigenen Canonical-Link samt
   `prev`/`next` (`head.html`), damit Suchmaschinen sie nicht für Kopien von `/blog/` halten.
   Der Umblätterer sagt „Neuere“ und „Ältere“ statt „prev“ und „next“ des Themes.
+- **Tag-Filter (`layouts/term.html`, `partials/topic-row.html`, `partials/post-list.html`)** — Ein Tag
+  im Blog öffnet dieselbe Liste, gefiltert: Die Überschrift „Blog“ und die Themen-Zeile bleiben, das
+  Menü markiert „Blog“, der offene Tag steht fett in der Zeile (`.topic-row a.is-active`). Ein Klick
+  darauf führt zurück nach `/blog/` und hebt den Filter auf. Auch die gefilterte Liste hat
+  Jahresüberschriften und 15 Beiträge je Seite, ab Seite 2 mit eigenem `<title>` und Canonical-Link.
+  Tag-Seiten bleiben `noindex`. Die Liste und der Umblätterer sind in `post-list.html` für Blog und
+  Tags gemeinsam.
 
   Fußzeile (`footerContent`), Brotkrumen (`[params.breadcrumbs]`) und der Titel
   der Schlagwort-Übersicht (`content/tags/_index.md`) sind ohne Kopie einstellbar.

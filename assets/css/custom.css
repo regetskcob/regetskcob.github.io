@@ -745,6 +745,15 @@ a.series-label:hover {
   text-decoration-color: currentColor;
 }
 
+/* The open tag, set like the current menu entry: bold, in the text colour,
+   with a solid underline. Clicking it takes the filter off. */
+.topic-row a.is-active {
+  color: var(--content-primary);
+  font-weight: 700;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+}
+
 .topic-row .tag-count {
   margin-left: 0.15rem;
   font-size: 0.85em;

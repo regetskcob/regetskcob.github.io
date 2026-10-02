@@ -1,0 +1,25 @@
+{{- /*
+  The row of topics (tags with their post counts) above the blog list, on the
+  blog page and on every tag page. Called with the tag page that is open, or
+  nothing on /blog/:
+
+    {{ partial "topic-row.html" . }}        (on a tag page: the page itself)
+    {{ partial "topic-row.html" "" }}       (on /blog/)
+
+  The open tag is set in bold, like the menu entry of the current page, and
+  links back to /blog/, so a second click takes the filter off again. The
+  other tags link to their page.
+*/ -}}
+{{- $active := "" }}
+{{- with . }}{{ if reflect.IsMap . }}{{ else }}{{ $active = . }}{{ end }}{{ end }}
+{{- with site.Taxonomies.tags }}
+<nav class="topic-row" aria-label="Themen">
+  {{- range .ByCount }}
+  {{- if and $active (eq .Page.RelPermalink $active.RelPermalink) }}
+  <a href="{{ "blog/" | relURL }}" class="is-active" aria-current="true" title="Filter aufheben">#{{ .Page.Title }} <span class="tag-count">{{ .Count }}</span></a>
+  {{- else }}
+  <a href="{{ .Page.RelPermalink }}">#{{ .Page.Title }} <span class="tag-count">{{ .Count }}</span></a>
+  {{- end }}
+  {{- end }}
+</nav>
+{{- end }}

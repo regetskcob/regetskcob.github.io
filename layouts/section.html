@@ -73,27 +73,9 @@
     {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
   {{- end }}
 
-  {{- with site.Taxonomies.tags }}
-  <nav class="topic-row" aria-label="Themen">
-    {{- range .ByCount }}
-    <a href="{{ .Page.RelPermalink }}">#{{ .Page.Title }} <span class="tag-count">{{ .Count }}</span></a>
-    {{- end }}
-  </nav>
-  {{- end }}
+  {{ partial "topic-row.html" "" }}
   {{- end }}
 
-  {{- /* The list runs newest first. A heading with the year of publication
-         opens every year, and each page opens with the year of its first
-         post, so a page never starts without one. */}}
-  {{- $year := "" }}
-  {{- range $paginator.Pages }}
-    {{- $y := .Date.Format "2006" }}
-    {{- if ne $y $year }}
-    <h2 class="year-heading">{{ $y }}</h2>
-    {{- $year = $y }}
-    {{- end }}
-    {{ partial "post-entry.html" . }}
-  {{- end }}
-  {{ partial "pagination-controls.html" $paginator }}
+  {{ partial "post-list.html" $paginator }}
 </div>
 {{ end }}

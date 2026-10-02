@@ -66,7 +66,7 @@
 {{- /* Page 2 and up of the blog list is its own page: own canonical, and the
        neighbours as prev/next. */}}
 {{- $canonical := .Permalink }}
-{{- if and (eq .Kind "section") (eq .Section "blog") }}
+{{- if or (and (eq .Kind "section") (eq .Section "blog")) (and (eq .Kind "term") (eq .Data.Plural "tags")) }}
   {{- with .Paginator }}
     {{- if gt .PageNumber 1 }}{{ $canonical = .URL | absURL }}{{ end }}
     {{- if .HasPrev }}
