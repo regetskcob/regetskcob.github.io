@@ -5,6 +5,30 @@ der schrittweise zu einer Landing-/Portfolio-Seite ausgebaut wird.
 
 Live: <https://www.regetskcob.de>
 
+## Herkunft der Inhalte
+
+Die Beiträge stammen aus nahezu zehn Jahren Blog-Geschichte. Sie lagen in mehreren Backups
+mit ganz unterschiedlichen Formaten und sind hier auf einen Nenner gebracht: zwei Ghost-Exporte,
+ein WordPress-Export, Ulysses-Blätter der älteren Blogs und Foto-Exporte mit Buchcovern,
+Werkstattbildern und Wanderfotos. Die Originale der Backups liegen nicht im Repository.
+
+Daraus ist ein einheitlicher Bestand geworden:
+
+- **Ein Format:** jeder Beitrag ein Page Bundle mit Markdown und seinen Bildern, die alten
+  Adressen leiten per `aliases` weiter.
+- **Eine Titelform:** Emoji-Kategorie, dann der Titel (`📚 | …` Buch, `📸 | …` Foto, …).
+- **Ein Satz Schlagwörter** statt der rund dreihundert aus Ghost.
+- **Transparenz bei Rezensionen:** wie das Buch zu mir kam (gestellt, gekauft, geschenkt).
+- **Drei Arten von Covern:** eigene Fotos, Verlagscover mittig auf Papierton und generierte
+  Grafiken, jeweils mit Alt-Text und, wo es nötig ist, mit Quelle.
+- **Nichts Privates in den Fotos:** GPS, Seriennummern und Besitzer sind aus jeder Datei entfernt.
+- **Daten:** Wo es ein Veröffentlichungsdatum gab, gilt es. Bei Beiträgen, die nie erschienen
+  sind, ist es das Aufnahmedatum des Covers oder der Zeitpunkt des Ulysses-Blatts.
+
+Was noch nicht reif ist, steht als Entwurf (`draft: true`) im Repository, ist aber auf der
+Live-Seite unsichtbar. Die Einzelheiten dazu stehen weiter unten unter „Inhalte pflegen“ und
+„Front Matter“.
+
 ## Tech-Stack
 
 | Baustein | Wahl | Warum |
