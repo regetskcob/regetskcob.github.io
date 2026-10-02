@@ -1,6 +1,6 @@
 ---
 title: "📚 | 500 Tipps und Tricks für Hobbyschreiner"
-date: 2017-08-20T09:42:04+0000
+date: 2017-07-03T15:32:00+0000
 lastmod: 2026-10-02T06:52:46+0000
 summary: "Der Ulmer Verlag bündelt Tipps rund um Werkstatt, Oberfräse, Drechseln und Schnitzen. Ein umfangreiches Nachschlagewerk für Einsteiger ins Holzwerken."
 cover: ./cover.jpg

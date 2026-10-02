@@ -1,6 +1,6 @@
 ---
 title: "📚 | Abenteuer Naturfotografie"
-date: 2020-04-15T15:58:36+0000
+date: 2019-07-02T11:27:59+0000
 lastmod: 2026-10-02T07:01:11+0000
 summary: "Ein Bildband mit Tipps der beiden Expeditionsleiter, der deutsche Landschaften im Morgengrauen und bei Sonnenuntergang zeigt."
 cover: ./cover.jpg
