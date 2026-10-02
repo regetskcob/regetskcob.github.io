@@ -251,6 +251,19 @@ Mit `hugo server` ohne `--disableFastRender` rendert der Server nur die geänder
 zeigt nach einem Fehler oder mehreren Änderungen schnell hintereinander gelegentlich einen
 veralteten Stand. Dann hilft ein Neustart des Servers.
 
+Die Suche zeigt der Vorschau-Server nicht: Den Index (Pagefind) erzeugt der Workflow erst nach dem
+Hugo-Build, deshalb fehlt `/pagefind/` unter `hugo server`, und das Feld erscheint nicht. Zum Ausprobieren,
+auch mit Entwürfen, die Seite einmal bauen, indexieren und statisch ausliefern:
+
+```bash
+hugo --buildDrafts --baseURL http://localhost:8088/ -d /tmp/site
+npx -y pagefind@1.5.2 --site /tmp/site
+python3 -m http.server 8088 --directory /tmp/site
+```
+
+`hugo` meldet dabei den fehlenden Impressums-Eintrag (`data/legal_private.yaml`) als Fehler, die Seiten
+entstehen trotzdem. Nach jeder Änderung an Texten die ersten beiden Befehle wiederholen.
+
 Theme auf eine neue Version heben:
 
 ```bash

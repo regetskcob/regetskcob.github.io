@@ -1,6 +1,6 @@
 {{/*
   A single tag (/tags/natur/), shown as the blog list filtered by that tag:
-  the blog's heading and its row of topics stay, the open tag is marked and
+  the blog's heading, the search and its row of topics stay, the open tag is marked and
   clicking it again leads back to /blog/ (partials/topic-row.html). Needed
   on its own because term pages would otherwise fall back to taxonomy.html,
   the tag overview. The tag's own name is in <title> and in the marked topic.
@@ -11,6 +11,7 @@
   {{ .Content }}
 
   {{- $paginator := .Paginate .Pages }}
+  {{ partial "blog-search.html" . }}
   {{- /* The previews of posts in the works stay on tag pages, as on /blog/. */}}
   {{- if eq $paginator.PageNumber 1 }}
     {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
