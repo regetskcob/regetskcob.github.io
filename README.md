@@ -64,7 +64,7 @@ data/
   recipes.yaml    JPEG-Rezepte der C-Slots für die Rezepte-Seite
   cameras.yaml    Anzeigenamen für Kameras, die in der Datei nur ein Code sind (Drohne)
   exif.yaml       Aufnahmedaten für Fotos ohne EXIF, optional (scripts/extract-exif.sh)
-scripts/          Hilfsskripte für Fotos und Buchcover (import-photo.sh, extract-exif.sh, book-cover.py)
+scripts/          Hilfsskripte für Fotos, Buchcover und die lokale Vorschau (import-photo.sh, extract-exif.sh, book-cover.py, preview-build.sh)
 layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen, dazu Shortcodes (images, gallery, address)
 assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
 assets/js/        Lightbox (lightbox.js), Raster mit Mischen und großen Kacheln (series.js), Nach-oben-Knopf (to-top.js)
@@ -286,10 +286,15 @@ Hugo-Build, deshalb fehlt `/pagefind/` unter `hugo server`, und das Feld erschei
 auch mit Entwürfen, die Seite einmal bauen, indexieren und statisch ausliefern:
 
 ```bash
-hugo --buildDrafts --baseURL http://localhost:8088/ -d /tmp/site
-npx -y pagefind@1.5.2 --site /tmp/site
+scripts/preview-build.sh /tmp/site 8088
 python3 -m http.server 8088 --directory /tmp/site
 ```
+
+Das Skript baut in einen Nebenordner und tauscht ihn erst am Ende aus. Ein laufender Server liefert so nie einen halb leeren Ordner aus, und lazy geladene Bilder bleiben nicht als kaputte Kacheln stehen. Zu Fuß sind es `hugo --buildDrafts --environment development --baseURL http://localhost:8088/ -d /tmp/site` und danach `npx -y pagefind@1.5.2 --site /tmp/site`.
+
+`--environment development` ist wichtig: Ein normaler `hugo`-Aufruf baut als Produktion und bricht ohne
+`data/legal_private.yaml` mit einem Fehler ab (die Seiten entstehen trotzdem). Als Entwicklung zeigt das Impressum
+stattdessen den Hinweis auf die fehlende Datei, und Analytics bleibt aus.
 
 `hugo` meldet dabei den fehlenden Impressums-Eintrag (`data/legal_private.yaml`) als Fehler, die Seiten
 entstehen trotzdem. Nach jeder Änderung an Texten die ersten beiden Befehle wiederholen.

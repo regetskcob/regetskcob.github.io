@@ -336,6 +336,12 @@ figure.img-portrait + p:empty + h2 {
   margin-bottom: 3rem;
 }
 
+/* The same before the transparency box: the theme's 5rem would leave it far
+   from the end of the text, the box brings its own 2.5rem. */
+.single-content:has(+ .disclosure) {
+  margin-bottom: 2.5rem;
+}
+
 .series-nav {
   margin-top: 0;
   /* 40px narrower than the text, so the box sits slightly indented. */
