@@ -7,6 +7,9 @@ aliases: ["/posts/"]
 soon:
   - waidwerk
   - der-jaga-und-der-koch
+  - drohnen-die-grosse-fotoschule
+  - ein-meta-modell-fur-agile-innovation
+  - outside-project-freiheit-sehnsucht-abenteuer
 # Every post shows its tags and reading time in the header card.
 cascade:
   showTags: true

@@ -3,6 +3,14 @@ title: "📚 | Outside Project - Freiheit, Sehnsucht, Abenteuer"
 date: 2020-04-15T06:30:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Ein Bildband, in dem acht Fotografinnen und Fotografen zeigen, wie viel Abenteuer auch vor der eigenen Haustür liegt."
+# Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite: nicht
+# rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
+# Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
+# Optional: soon: Oktober  ->  "demnächst · Oktober"
+build:
+  render: never
+  list: never
+soon: true
 cover: ./cover.jpg
 coverAlt: "Der Bildband „Outside Project“ mit einer Person vor einem Bergsee auf dem Cover, vor Häusern in die Höhe gehalten"
 aliases: ["/posts/outside-project-freiheit-sehnsucht-abenteuer/"]
@@ -10,7 +18,6 @@ tags: ["Bücher", "Natur"]
 disclosure:
   type: gift
   by: "von meinen Schwiegereltern"
-draft: true
 ---
 
 > Komm mit nach draußen!  

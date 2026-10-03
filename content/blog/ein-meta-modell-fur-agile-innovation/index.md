@@ -3,6 +3,14 @@ title: "📚 | Ein Meta-Modell für agile Innovation"
 date: 2023-05-10T13:00:00+0000
 lastmod: 2026-10-02T05:29:49+0000
 summary: "Jean-Philippe Hagmann erklärt Innovation als Geschichte mit eingestreuten Gedankennotizen. Ich habe mehrere Anläufe gebraucht, bis mich das Buch gepackt hat."
+# Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite: nicht
+# rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
+# Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
+# Optional: soon: Oktober  ->  "demnächst · Oktober"
+build:
+  render: never
+  list: never
+soon: true
 cover: ./cover.jpg
 coverAlt: "Das Buch „Ein Meta-Modell für agile Innovation“ von Jean-Philippe Hagmann mit dunklem Cover und farbigen Punkten auf Kreisbahnen liegt auf einem Holztisch"
 aliases: ["/posts/ein-meta-modell-fur-agile-innovation/"]
@@ -10,7 +18,6 @@ tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "vom Vahlen Verlag"
-draft: true
 ---
 
 Viele Unternehmen tun sich schwer damit, Innovation hervorzubringen. Jean-Philippe Hagmann hat einen neuen, innovativen Weg gefunden, Wissen darüber zu vermitteln, wie man Innovation entwickelt. Im Buch geht es um eine Forscherin, die das "Noita Vonni"-Modell entdeckt; Das Planetensystem der Innovation, wenn man so will.

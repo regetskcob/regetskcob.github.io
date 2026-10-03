@@ -185,7 +185,7 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   eingebunden (`photo-grid-script.html` bringt es mit, sonst `lightbox.html` selbst).
 
 - **Vorschau „In Arbeit“** — `layouts/partials/soon-pages.html` und `soon-box.html`:
-  Kasten über der Blog-Liste und auf Serienseiten, ein Stichpunktblock im Intro der Startseite.
+  Kasten unter den Themen der Blog-Liste und auf Serienseiten, ein Stichpunktblock im Intro der Startseite.
   Siehe „Vorschau auf Beiträge in Arbeit“.
 
 - **Labels „kürzlich neu erschienen“, „kürzlich aktualisiert“ und „Entwurf“** —
@@ -226,7 +226,7 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   im Blog öffnet dieselbe Liste, gefiltert: Die Überschrift „Blog“ und die Themen-Zeile bleiben, das
   Menü markiert „Blog“, der offene Tag steht fett in der Zeile (`.topic-row a.is-active`). Ein Klick
   darauf führt zurück nach `/blog/` und hebt den Filter auf. Auch die gefilterte Liste hat
-  Jahresüberschriften und 15 Beiträge je Seite; der Kasten „In Arbeit“ steht auch hier auf Seite 1. Ab Seite 2 mit eigenem `<title>` und Canonical-Link.
+  Jahresüberschriften und 15 Beiträge je Seite; der Kasten „In Arbeit“ steht auch hier auf Seite 1, unter den Themen, und zeigt nur die Vorschauen mit diesem Tag. Ab Seite 2 mit eigenem `<title>` und Canonical-Link.
   Tag-Seiten bleiben `noindex`. Die Liste und der Umblätterer sind in `post-list.html` für Blog und
   Tags gemeinsam.
 
@@ -386,7 +386,7 @@ Kacheln.
 ### Vorschau auf Beiträge in Arbeit
 
 Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter
-Kasten „In Arbeit“ über der Suche, vor den Themen (Titel, Cover, Zusammenfassung, nicht
+Kasten „In Arbeit“ unter Suche und Themen, vor den Beiträgen (Titel, Cover, Zusammenfassung, nicht
 verlinkt; ab 768 px Breite aufgeklappt, darunter eingeklappt mit Hinweistext, der Link
 `#in-arbeit` klappt ihn auf), einen Block „Demnächst im Blog“ im Intro der Startseite (ab 820 px Breite), und bei Beiträgen
 einer Serie ein Kasten unter den Teilen auf der Serienseite. Die Vorschau hat keine

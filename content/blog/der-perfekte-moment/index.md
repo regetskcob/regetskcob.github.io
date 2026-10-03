@@ -1,16 +1,15 @@
 ---
 title: "📸 | Der perfekte Moment"
 date: 2020-04-13T11:45:27+0000
-lastmod: 2026-10-02T05:29:49+0000
+lastmod: 2026-10-03T11:00:00+0000
 summary: "Dieselbe Brücke über die Niers, zweimal fotografiert: im goldenen Nebel und Monate später klar und ruhig."
 cover: ./cover.jpg
 coverAlt: "Die Sonne steht tief über der Niers, über dem Wasser liegt Nebel, ein Vogel fliegt vor den Bäumen"
 aliases: ["/posts/der-perfekte-moment/"]
 tags: ["Natur", "Fotografie"]
-draft: true
 ---
 
-Ich stehe auf der Niersbrücke an der Kalkarer Straße, den Blick in Richtung Kalbecker Forst gerichtet, das Wetter ist perfekt. Der Nebel steht über den Feldern und wabert über der Niers, die Sonne versetzt den Nebel und die Blätter der Bäume in einen goldenen Schimmer.
+Ich stehe auf einer Brücke über die Niers, den Blick in Richtung Wald gerichtet, das Wetter ist perfekt. Der Nebel steht über den Feldern und wabert über der Niers, die Sonne versetzt den Nebel und die Blätter der Bäume in einen goldenen Schimmer.
 
 Das kleine Gelenkstativ ist fix am Geländer der Brücke montiert und ich setze meine FUJIFILM X-T30 darauf.
 

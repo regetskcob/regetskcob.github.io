@@ -19,16 +19,16 @@
   {{- $paginator := .Paginate .Pages }}
 
   {{- if eq .Section "blog" }}
-  {{- /* Previews of posts that are not out yet, on top and on the first page:
-         the blog's "soon" list in content/blog/_index.md
-         (partials/soon-box.html). The search follows below it. */}}
-  {{- if eq $paginator.PageNumber 1 }}
-    {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
-  {{- end }}
-
   {{ partial "blog-search.html" . }}
 
   {{ partial "topic-row.html" "" }}
+
+  {{- /* Previews of posts that are not out yet, below the topics and on the
+         first page: the blog's "soon" list in content/blog/_index.md
+         (partials/soon-box.html). Tag pages show the ones with their tag. */}}
+  {{- if eq $paginator.PageNumber 1 }}
+    {{ partial "soon-box.html" (dict "pages" (partial "soon-pages.html" "")) }}
+  {{- end }}
   {{- end }}
 
   {{ partial "post-list.html" $paginator }}
