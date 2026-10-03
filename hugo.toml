@@ -43,7 +43,7 @@ series = 'series'
 
 [params]
 # Meta description
-description = "Landschafts- und Luftbilder vom Niederrhein, Fotowalks und Fuji-Rezepte, Smarthome mit KNX, Buchrezensionen und die Ausbildung zum Fachinformatiker."
+description = "Landschafts- und Luftbilder vom Niederrhein, Film-Rezepte, Projekte zwischen Technik und Natur und Buchrezensionen, seit 2015."
 
 # Author for <meta name="author"> and the JSON-LD. Not "author": the theme
 # prints .Param "author" as a byline, which would then appear on every page.
@@ -65,7 +65,7 @@ homeIntroTitle = 'Hi!'
 homeIntroContent = """
 Ich bin Daniel, online als @regetskcob unterwegs. Beruflich entwickle ich Software, überwiegend mit Flutter. Meine freie Zeit verbringe ich draußen, mit der Kamera am Niederrhein, im Wald und im Revier.
 
-Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür und den [Blog](/blog/) mit allem, was nebenher entsteht. Das sind Fotowalks wie [durch den Uedemer Hochwald](/blog/wander-dir-den-kopf-frei-wanderbericht-aus-m-uedemer-hochwald/), Projekte zwischen Technik und Natur wie [der Alarm über KNX](/blog/zentraler-wohnhaus-alarm-mit-knx/) oder [ein selbstgebauter Astro-Tracker](/blog/bau-des-openastrotracker-teil-i/) und [Rezensionen](/tags/bücher/) zu den Büchern, die ich gelesen habe.
+Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür und den [Blog](/blog/) mit allem, was nebenher entsteht, von Fotowalks und Projekten über Serien bis zu Rezensionen der Bücher, die mich begleiten.
 """
 
 
@@ -130,7 +130,7 @@ url = "/ausruestung"
 group = "foto"
 
 [[params.menu]]
-name = "Rezepte"
+name = "Film-Rezepte"
 url = "/rezepte"
 group = "foto"
 

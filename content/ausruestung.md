@@ -24,7 +24,7 @@ Problem löst, und das darf gerne gebraucht sein. Das 16-80er ist über rebuy hi
 durchgehend auf der Kamera.
 
 Ich fotografiere JPEG plus RAW, arbeite aber mit dem JPEG weiter. In den
-C-Slots beider Bodys liegen [meine eigenen Rezepte](/rezepte), sodass die
+C-Slots beider Bodys liegen [meine eigenen Film-Rezepte](/rezepte), sodass die
 Bilder schon so aus der Kamera kommen, wie ich sie haben möchte. Das RAW läuft
 als Rückfall mit, falls ich mich beim Licht vertan habe. Verwaltet wird alles
 in Apple Fotos, bearbeitet in Photomator, und ein Adobe-Abo möchte ich für ein

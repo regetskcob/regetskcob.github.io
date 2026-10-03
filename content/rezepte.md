@@ -1,5 +1,5 @@
 ---
-title: "Rezepte"
+title: "Film-Rezepte"
 description: "Meine eigenen JPEG-Rezepte auf den C-Slots der X-T5 und der X-T30."
 layout: recipes
 ---

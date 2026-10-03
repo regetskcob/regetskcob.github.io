@@ -1,7 +1,7 @@
 ---
 title: Über mich
 date: 2020-04-05T15:07:57+0000
-lastmod: 2026-09-29T12:00:00+0000
+lastmod: 2026-10-03T12:00:00+0000
 description: "Daniel Bocksteger vom Niederrhein: Softwareentwickler, draußen mit der Kamera unterwegs und Jäger im heimischen Revier."
 # The photo and its caption open the page, so the title is only kept for
 # screen readers and search engines (layouts/_default/single.html).
@@ -39,7 +39,9 @@ fotografiere ich die Gegend vor der Haustür, und daraus ist die Serie
 [Niederrhein.](/niederrhein) entstanden.
 
 Seit April 2024 haben meine Partnerin und ich den Jagdschein und sind seitdem im
-heimischen Hegering und Revier aktiv. Im Frühjahr fliegen wir außerdem mit einer
+heimischen Hegering und Revier aktiv. Wie wir uns
+[darauf vorbereitet haben](/blog/vorbereitungen-fur-die-jagdschein-prufungen/),
+steht im Blog. Im Frühjahr fliegen wir außerdem mit einer
 Wärmebilddrohne für die Kitzrettung, damit bei der Mahd keine Rehkitze ins
 Mähwerk geraten.
 
@@ -50,10 +52,9 @@ mit mir auf dem Sitzsack im Gras.
 ## Was ihr hier findet
 
 - [Niederrhein.](/niederrhein): die Fotoserie aus der Gegend
-- [Ausrüstung](/ausruestung) und [Rezepte](/rezepte): womit ich fotografiere und
+- [Ausrüstung](/ausruestung) und [Film-Rezepte](/rezepte): womit ich fotografiere und
   wie die Kameras eingestellt sind
-- [Blog](/blog): Projektberichte zwischen Technik und Natur, dazu Rezensionen
-  der Bücher, die ich gelesen habe
+- [Blog](/blog): Projekte, [Serien](/series) und Rezensionen, seit 2015
 
 Austauschen könnt ihr euch mit mir gerne auf
 [Instagram](https://www.instagram.com/regetskcob/),
