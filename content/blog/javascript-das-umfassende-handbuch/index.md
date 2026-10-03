@@ -7,6 +7,7 @@ cover: ./img_5225.jpg
 coverAlt: "Das Buch „JavaScript“ von Philip Ackermann in der dritten Auflage auf grauem Steinboden"
 aliases: ["/posts/javascript-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
 ---

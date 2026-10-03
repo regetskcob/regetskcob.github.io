@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Icinga 2“ von Lennart Betz und Thomas Widhalm mit einem Teleskop unter dem Sternenhimmel"
 coverCredit: "Cover: dpunkt.verlag"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

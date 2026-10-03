@@ -7,6 +7,7 @@ cover: ./img_6232.jpg
 coverAlt: "Das Buch „Basiswissen Softwaretest“ mit rotem Einband auf einem Holztisch"
 aliases: ["/posts/basiswissen-softwaretest/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
 ---

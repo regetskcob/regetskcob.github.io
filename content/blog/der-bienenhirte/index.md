@@ -7,6 +7,7 @@ summary: "Rini van Solingens Roman erzählt auf 126 Seiten, was ein Schäfer bei
 cover: ./cover.jpg
 coverAlt: "Das Buch „Der Bienenhirte“ von Rini van Solingen mit Wabenmuster auf dem Cover liegt schräg auf einem dunkelblauen Untergrund"
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

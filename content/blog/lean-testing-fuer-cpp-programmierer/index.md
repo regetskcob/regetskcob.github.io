@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Lean Testing für C++-Programmierer“ von Andreas Spillner und Ulrich Breymann"
 coverCredit: "Cover: dpunkt.verlag"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

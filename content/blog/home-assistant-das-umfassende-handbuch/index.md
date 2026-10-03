@@ -7,6 +7,7 @@ cover: ./IMG_4480.jpeg
 coverAlt: "Das Buch „Home Assistant“ von Udo Brandes in der zweiten Auflage auf einem Holztisch"
 aliases: ["/posts/home-assistant-das-umfassende-handbuch/"]
 tags: ["Bücher", "Smarthome"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
 ---

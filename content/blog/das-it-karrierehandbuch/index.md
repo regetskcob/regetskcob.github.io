@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Das IT-Karrierehandbuch“ von Martina Diel mit gezeichneten Fernrohren"
 coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "O’Reilly"
 disclosure:
   type: provided
   by: "von O’Reilly"

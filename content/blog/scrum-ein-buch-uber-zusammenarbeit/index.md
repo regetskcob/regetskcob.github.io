@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „Scrum – Ein Buch über Zusammenarbeit“ der Sc
 coverCredit: "Cover: Vahlen"
 aliases: ["/posts/scrum-ein-buch-uber-zusammenarbeit/"]
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Vahlen Verlag"
 disclosure:
   type: provided
   by: "vom Vahlen Verlag"

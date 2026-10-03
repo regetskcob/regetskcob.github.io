@@ -6,6 +6,7 @@ summary: "Eigener Stil, Muster und Formen, Abstraktion, Langzeitbelichtung und k
 cover: ./cover.jpg
 coverAlt: "Das „Praxisbuch Kreative Naturfotografie“ mit Herbstlaub auf dem Cover liegt auf einem dunklen Holztisch"
 tags: ["Bücher", "Fotografie"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

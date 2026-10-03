@@ -7,6 +7,7 @@ cover: ./IMG_4265.jpeg
 coverAlt: "Das Buch „Node-RED“ von Udo Brandes auf einem Holztisch"
 aliases: ["/posts/node-red-das-umfassende-handbuch/"]
 tags: ["Bücher", "Smarthome"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
 ---

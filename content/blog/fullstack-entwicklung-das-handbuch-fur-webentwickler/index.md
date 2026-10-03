@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „Fullstack-Entwicklung“ von Philip Ackermann mit
 coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/fullstack-entwicklung-das-handbuch-fur-webentwickler/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

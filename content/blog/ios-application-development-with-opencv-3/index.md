@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „iOS Application Development with OpenCV 3“ von Joseph Howse mit einer Bergblume"
 coverCredit: "Cover: Packt"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Packt"
 disclosure:
   type: provided
   by: "von Packt"

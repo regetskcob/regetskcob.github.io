@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Managing Happiness“ von Marcus Börner mit grünen Formeln und Symbolen"
 coverCredit: "Cover: Redline Verlag"
 tags: ["Bücher", "Gesellschaft"]
+verlag: "Redline Verlag"
 disclosure:
   type: provided
   by: "vom Redline Verlag"

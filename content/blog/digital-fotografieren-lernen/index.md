@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Digital fotografieren lernen“ von Dietmar Spehr mit Fotomotiven"
 coverCredit: "Cover: Vierfarben Verlag"
 tags: ["Bücher", "Fotografie"]
+verlag: "Vierfarben Verlag"
 disclosure:
   type: provided
   by: "vom Vierfarben Verlag"

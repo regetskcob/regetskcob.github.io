@@ -10,6 +10,7 @@ disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
 tags: ["Bücher", "Smarthome"]
+verlag: "Rheinwerk Verlag"
 ---
 
 Benjamin Kappel führt euch Stück für Stück an den Arduino und die damit verbundenen Kenntnisse der Elektrotechnik heran und erklärt spielerisch Themen, welche meine Lehrer mir so nie hätten vermitteln können.

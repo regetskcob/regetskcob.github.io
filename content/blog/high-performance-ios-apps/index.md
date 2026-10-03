@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „High Performance iOS Apps“ von Gaurav Vaish mit einem Vogel"
 coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "O’Reilly"
 disclosure:
   type: provided
   by: "von O’Reilly"

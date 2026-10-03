@@ -5,6 +5,7 @@ summary: "Ein Bildband mit Tipps der beiden Expeditionsleiter, der deutsche Land
 cover: ./cover.jpg
 coverAlt: "Das Buch „Abenteuer Naturfotografie“ mit Fuchs und Fasan auf dem Cover, vor einer Straße in die Höhe gehalten"
 tags: ["Bücher", "Fotografie"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

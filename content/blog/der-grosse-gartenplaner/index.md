@@ -10,6 +10,7 @@ disclosure:
   type: provided
   by: "vom Ulmer Verlag"
 tags: ["Bücher", "Natur"]
+verlag: "Ulmer Verlag"
 ---
 
 Letzteres besonders, um geplante Projekte so lange zu verbessern, bis sowohl Plan als auch Umsetzung den eigenen Ansprüchen genügen.

@@ -1,0 +1,22 @@
+{{/*
+  The links to the publisher pages (layouts/verlag/term.html) in one list, for
+  copying: a tool for the local preview, like the page of drafts, not built in
+  the deploy (config/production/hugo.toml). Shows the address as it will be
+  live, and the number of reviews; the name opens the page in the preview.
+*/}}
+{{ define "main" }}
+<div class="list-container">
+  <h1>Verlagslinks</h1>
+  {{- $terms := site.Taxonomies.verlag }}
+  <p class="drafts-note">{{ len $terms }} Verlage mit Rezensionen. Die Seiten sind von nirgends verlinkt, nicht im Index und nicht in der Sitemap, nur wer den Link hat, findet sie.</p>
+  <ul class="tag-overview">
+    {{- range $terms.ByCount }}
+    <li>
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+      <span class="tag-count">{{ .Count }} {{ cond (eq .Count 1) "Rezension" "Rezensionen" }}</span><br>
+      <code>{{ .Page.RelPermalink | absURL }}</code>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

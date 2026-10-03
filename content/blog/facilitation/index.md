@@ -7,6 +7,7 @@ cover: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 coverAlt: "Das Buch „Facilitation“ mit weißem Umschlag und bunter Kritzelzeichnung auf einem Holztisch"
 aliases: ["/posts/facilitation/"]
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Vahlen Verlag"
 disclosure:
   type: provided
 ---

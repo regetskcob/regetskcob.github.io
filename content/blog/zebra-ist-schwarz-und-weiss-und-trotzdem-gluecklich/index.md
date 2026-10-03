@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Zebra ist schwarz und weiß – und trotzdem glücklich“ von Kazim Akboga mit dem Autor auf orangem Grund"
 coverCredit: "Cover: Ullstein"
 tags: ["Bücher"]
+verlag: "Ullstein Verlag"
 disclosure:
   type: provided
   by: "vom Ullstein Verlag"

@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Fotografieren wie ein Profi“ von Björn Göttlicher mit einer Collage aus Porträts und Straßenszenen"
 coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Fotografie"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

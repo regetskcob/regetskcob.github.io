@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Python 3“ von Michael Weigend mit Programmcode im Hintergrund"
 coverCredit: "Cover: mitp"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "mitp Verlag"
 disclosure:
   type: provided
   by: "vom mitp Verlag"

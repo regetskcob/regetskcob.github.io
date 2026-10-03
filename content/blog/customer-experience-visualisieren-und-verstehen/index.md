@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „Customer Experience visualisieren und verstehen�
 coverCredit: "Cover: O’Reilly"
 aliases: ["/posts/customer-experience-visualisieren-und-verstehen/"]
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "O’Reilly"
 disclosure:
   type: provided
   by: "von O’Reilly"

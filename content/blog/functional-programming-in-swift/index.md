@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Functional Programming in Swift“ von Chris Eidhof, Florian Kugler und Wouter Swierstra mit einem roten Swift-Vogel"
 coverCredit: "Cover: objc.io"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "objc.io"
 disclosure:
   type: provided
   by: "von objc.io"

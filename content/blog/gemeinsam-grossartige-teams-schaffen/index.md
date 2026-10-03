@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Gemeinsam großartige Teams schaffen“ mit einer gezeichneten Gesprächsrunde"
 coverCredit: "Cover: Hanser"
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Hanser Verlag"
 disclosure:
   type: provided
   by: "vom Hanser Verlag"

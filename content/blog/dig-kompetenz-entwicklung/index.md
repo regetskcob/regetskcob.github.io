@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Das „Handbuch Digitale Kompetenzentwicklung“ liegt auf einem Stapel Bücher auf einem Holztisch"
 aliases: ["/posts/dig-kompetenz-entwicklung/"]
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Hanser Verlag"
 disclosure:
   type: provided
   by: "vom Hanser Verlag"

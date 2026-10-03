@@ -8,6 +8,7 @@ coverCredit: "Cover: O’Reilly / dpunkt.verlag"
 coverAlt: "Buchcover von „Programmieren in TypeScript“ von Boris Cherny, zwei gezeichnete Guanakos, auf hellem Grund"
 aliases: ["/posts/typescript-skalierbare-javascript-applikationen-entwickeln/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
 ---

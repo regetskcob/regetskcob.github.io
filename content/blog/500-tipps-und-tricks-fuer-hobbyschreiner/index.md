@@ -6,6 +6,7 @@ summary: "Der Ulmer Verlag bündelt Tipps rund um Werkstatt, Oberfräse, Drechse
 cover: ./cover.jpg
 coverAlt: "Das Buch „500 Tipps und Tricks für Hobbyschreiner“ liegt auf einer dunklen Werkbank neben Schraubzwingen"
 tags: ["Bücher", "DIY"]
+verlag: "Ulmer Verlag"
 disclosure:
   type: provided
   by: "vom Ulmer Verlag"

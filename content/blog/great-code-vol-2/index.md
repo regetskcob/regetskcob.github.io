@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Great Code, Volume 2: Thinking Low-Level, Writing High-Level“ von Randall Hyde mit einem Schnellzug auf einer Brücke"
 coverCredit: "Cover: No Starch Press"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "No Starch Press"
 disclosure:
   type: provided
   by: "von No Starch Press"

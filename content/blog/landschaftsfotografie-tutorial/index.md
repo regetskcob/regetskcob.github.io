@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Landschaftsfotografie Tutorial“ von Stephan Wiesner mit einer Fotografin im Morgenlicht"
 coverCredit: "Cover: mitp"
 tags: ["Bücher", "Fotografie"]
+verlag: "mitp Verlag"
 disclosure:
   type: provided
   by: "vom mitp Verlag"

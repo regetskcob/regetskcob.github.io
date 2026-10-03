@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „Inspiration Leica Akademie“ mit einem roten Pun
 coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/inspiration-leica-akademie/"]
 tags: ["Bücher", "Fotografie"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

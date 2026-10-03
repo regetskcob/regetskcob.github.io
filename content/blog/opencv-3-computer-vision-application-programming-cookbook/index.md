@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „OpenCV 3 Computer Vision Application Programming Cookbook“ in Grün"
 coverCredit: "Cover: Packt"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Packt"
 disclosure:
   type: provided
   by: "von Packt"

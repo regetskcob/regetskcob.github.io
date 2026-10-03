@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „App-Design“ von Jan Semler mit einem gezeichneten Smartphone"
 coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

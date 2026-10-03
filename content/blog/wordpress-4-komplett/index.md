@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „WordPress 4 komplett“ von Tim Schürmann mit einem Wolf"
 coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "O’Reilly"
 disclosure:
   type: provided
   by: "von O’Reilly"

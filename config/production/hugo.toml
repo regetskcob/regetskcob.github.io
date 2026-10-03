@@ -1,4 +1,5 @@
 # Only in the production build (the deploy): the page of drafts is a tool for
 # the local preview (content/entwuerfe.md, layouts/_default/drafts.html) and
-# must not end up on the live site.
-ignoreFiles = ['entwuerfe\.md$']
+# must not end up on the live site. The same goes for the list of the
+# publisher links (content/verlagslinks.md).
+ignoreFiles = ['entwuerfe\.md$', 'verlagslinks\.md$']

@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Swift – Das umfassende Handbuch“ von Michael Kofler mit dem Swift-Logo auf blauen Kacheln"
 coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

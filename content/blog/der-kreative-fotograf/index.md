@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „Der kreative Fotograf“ von Heidi und Robert Mer
 coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/der-kreative-fotograf/"]
 tags: ["Bücher", "Fotografie"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

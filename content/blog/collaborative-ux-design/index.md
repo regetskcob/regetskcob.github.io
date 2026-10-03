@@ -7,6 +7,7 @@ cover: ./dscf8828.jpeg
 coverAlt: "Das Buch „Collaborative UX Design“, vor blauem Himmel über den Dächern einer Siedlung in die Höhe gehalten"
 aliases: ["/posts/collaborative-ux-design/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
 ---

@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Digitale Landschaftsfotografie“ von Michael Frye mit einem Baum vor Abendhimmel"
 coverCredit: "Cover: mitp"
 tags: ["Bücher", "Fotografie"]
+verlag: "mitp Verlag"
 disclosure:
   type: provided
   by: "vom mitp Verlag"

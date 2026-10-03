@@ -8,6 +8,7 @@ coverCredit: "Cover: Vahlen"
 coverAlt: "Buchcover des „Design Thinking Playbook“ im Querformat mit handgezeichneten Figuren, die auf Bauklötzen balancieren, auf hellem Grund"
 aliases: ["/posts/das-design-thinking-playbook/"]
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Vahlen Verlag"
 disclosure:
   type: provided
 ---

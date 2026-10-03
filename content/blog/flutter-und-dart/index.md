@@ -7,6 +7,7 @@ cover: ./img_5223.jpg
 coverAlt: "Das Buch „Flutter und Dart“ von Marc Marburger auf grauem Steinboden"
 aliases: ["/posts/flutter-und-dart/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
 ---

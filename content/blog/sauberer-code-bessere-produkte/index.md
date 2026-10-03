@@ -8,6 +8,7 @@ coverAlt: "Cover der englischen Ausgabe „Modern C++ Programming with Test-Driv
 coverCredit: "Cover: The Pragmatic Programmers"
 aliases: ["/posts/sauberer-code-bessere-produkte/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

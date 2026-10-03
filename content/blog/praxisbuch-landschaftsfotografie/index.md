@@ -6,6 +6,7 @@ summary: "Ein Band der Reihe von Daan Schoonhoven: Grundlagen, Bekleidungstipps,
 cover: ./cover.jpg
 coverAlt: "Das „Praxisbuch Landschaftsfotografie“ mit Flusslandschaft im Abendlicht liegt auf einem dunklen Holztisch"
 tags: ["Bücher", "Fotografie"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

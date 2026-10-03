@@ -475,6 +475,41 @@ und die Quelle als `coverCredit`, am Verlag und so, wie dessen Logo auf dem Bild
 laufen stattdessen durch `import-photo.sh` und brauchen keinen Credit. Das Cover darf nicht im Text
 stehen: Enthält der Text den Dateinamen, blendet die Seite das Cover oben aus.
 
+### Verlagsseiten für die Verlage
+
+Jeder Verlag mit Rezensionen hat eine eigene Seite, die seine Rezensionen auflistet, gedacht als Link
+für den Verlag. Sie ist von nirgends verlinkt, `noindex`, nicht in der Sitemap und nicht in der
+Suche, eine Übersicht aller Verlage wird nicht gebaut. Die Zuordnung steht im Front Matter der
+Rezension (`verlag: "Rheinwerk Verlag"`, Taxonomie `verlag` in `hugo.toml`); ohne die Zeile
+steht der Beitrag auf keiner Verlagsseite. Das Layout ist `layouts/verlag/term.html`. Der Satz
+„Meine Rezensionen zu Büchern vom …“ nimmt die Form aus `data/verlag_dativ.yaml`; ein Name ohne
+Eintrag bekommt „von …“ (bei einem „… Verlag“ also dort ergänzen). Hugo schreibt Namen groß, die
+klein beginnen (`dpunkt.verlag`, `mitp Verlag`, `objc.io`): dafür gibt es unter
+`content/verlag/<name>/_index.md` einen Titel mit der richtigen Schreibweise. Ein Beitrag in „In
+Arbeit“ (`soon`) erscheint erst, wenn er live ist.
+
+In der lokalen Vorschau führt der Filter „Verlage“ in der Themen-Zeile auf `/verlagslinks/`
+(`content/verlagslinks.md`), die Liste zum Kopieren; im Deploy gibt es sie nicht
+(`config/production/hugo.toml`). Die Links der Live-Seite:
+
+| Verlag | Link |
+| --- | --- |
+| Rheinwerk Verlag | <https://www.regetskcob.de/verlag/rheinwerk-verlag/> |
+| dpunkt.verlag | <https://www.regetskcob.de/verlag/dpunkt.verlag/> |
+| Hanser Verlag | <https://www.regetskcob.de/verlag/hanser-verlag/> |
+| O’Reilly | <https://www.regetskcob.de/verlag/oreilly/> |
+| Vahlen Verlag | <https://www.regetskcob.de/verlag/vahlen-verlag/> |
+| mitp Verlag | <https://www.regetskcob.de/verlag/mitp-verlag/> |
+| Murmann Publishers | <https://www.regetskcob.de/verlag/murmann-publishers/> |
+| No Starch Press | <https://www.regetskcob.de/verlag/no-starch-press/> |
+| Packt | <https://www.regetskcob.de/verlag/packt/> |
+| Redline Verlag | <https://www.regetskcob.de/verlag/redline-verlag/> |
+| Ulmer Verlag | <https://www.regetskcob.de/verlag/ulmer-verlag/> |
+| DVA | <https://www.regetskcob.de/verlag/dva/> |
+| objc.io | <https://www.regetskcob.de/verlag/objc.io/> |
+| Ullstein Verlag | <https://www.regetskcob.de/verlag/ullstein-verlag/> |
+| Vierfarben Verlag | <https://www.regetskcob.de/verlag/vierfarben-verlag/> |
+
 ### Anschrift im Impressum
 
 Die Anschrift (Straße, PLZ, Ort) steht **nicht im öffentlichen Repository**, sondern in

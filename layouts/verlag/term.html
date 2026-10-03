@@ -1,0 +1,19 @@
+{{/*
+  The page of one publisher (/verlag/<name>/): the reviews of its books, newest
+  first, in the lines of the blog list, all on one page. Meant as a link for
+  the publisher, so it is reached from nowhere on the site: head.html marks it
+  noindex, content/verlag/_index.md keeps it out of the sitemap and the
+  overview of all publishers is not built. The overview for me is
+  /verlagslinks/ (local preview only).
+*/}}
+{{ define "main" }}
+<div class="list-container">
+  <h1>{{ .Title }}</h1>
+  {{- $pages := .Pages.ByDate.Reverse }}
+  {{- $dativ := index site.Data.verlag_dativ .Title | default (printf "von %s" .Title) }}
+  <p class="drafts-note">Meine Rezensionen zu Büchern {{ $dativ }}, {{ len $pages }} {{ cond (eq (len $pages) 1) "Beitrag" "Beiträge" }}. Mehr gibt es im <a href="{{ "blog/" | relURL }}">Blog</a>.</p>
+  {{- range $pages }}
+  {{ partial "post-entry.html" . }}
+  {{- end }}
+</div>
+{{ end }}

@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Infografik“ von Raimar Heber mit einer Grafik zum Flugverkehr"
 coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Das Buch „five lines of code“ mit schwarzem Cover und gelben Linien liegt auf einem Holztisch"
 aliases: ["/posts/five-lines-of-code/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

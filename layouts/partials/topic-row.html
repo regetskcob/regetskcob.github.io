@@ -28,6 +28,9 @@
   {{- if $count }}
   <a href="{{ "entwuerfe/" | relURL }}" class="draft-chip" title="Entwürfe und Vorschauen, nur in der lokalen Vorschau">Entwürfe <span class="tag-count">{{ $count }}</span></a>
   {{- end }}
+  {{- with site.Taxonomies.verlag }}
+  <a href="{{ "verlagslinks/" | relURL }}" class="draft-chip" title="Links zu den Verlagsseiten, nur in der lokalen Vorschau">Verlage <span class="tag-count">{{ len . }}</span></a>
+  {{- end }}
   {{- end }}
 </nav>
 {{- end }}

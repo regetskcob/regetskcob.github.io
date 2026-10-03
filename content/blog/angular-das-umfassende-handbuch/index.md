@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „Angular – Das umfassende Handbuch“ von Christ
 coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/angular-das-praxisbuch/", "/blog/angular-das-praxisbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

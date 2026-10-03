@@ -9,6 +9,7 @@ disclosure:
   by: "vom dpunkt Verlag"
   item: "Dieses Buch-Trio"
 tags: ["Bücher"]
+verlag: "dpunkt.verlag"
 ---
 
 Drei Bücher, ein Thema: Die Natur vor der Linse. Die Natur aus den Augen von Fotografen, die sich darauf spezialisiert haben, ihre Eigenheiten, Ereignisse und Auswirkungen mit der Kamera festzuhalten.

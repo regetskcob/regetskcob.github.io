@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Das Buch „Ein Meta-Modell für agile Innovation“ von Jean-Philippe Hagmann mit dunklem Cover und farbigen Punkten auf Kreisbahnen liegt auf einem Holztisch"
 aliases: ["/posts/ein-meta-modell-fur-agile-innovation/"]
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Vahlen Verlag"
 disclosure:
   type: provided
   by: "vom Vahlen Verlag"

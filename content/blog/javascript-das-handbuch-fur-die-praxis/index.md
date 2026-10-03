@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „JavaScript – Das Handbuch für die Praxis“ vo
 coverCredit: "Cover: O’Reilly"
 aliases: ["/posts/javascript-das-handbuch-fur-die-praxis/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

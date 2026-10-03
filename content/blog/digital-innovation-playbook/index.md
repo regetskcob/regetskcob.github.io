@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Digital Innovation Playbook“ in Gelb mit Schriftzug"
 coverCredit: "Cover: Murmann Publishers"
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Murmann Publishers"
 disclosure:
   type: provided
   by: "von Murmann Publishers"

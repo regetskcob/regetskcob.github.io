@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Storytelling“ von Pia Kleine Wieskamp mit bunten Sprechblasen"
 coverCredit: "Cover: Hanser"
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Hanser Verlag"
 disclosure:
   type: provided
   by: "vom Hanser Verlag"

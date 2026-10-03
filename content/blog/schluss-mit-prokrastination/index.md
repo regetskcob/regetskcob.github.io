@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Schluss mit Prokrastination“ mit rot-schwarzem Schriftzug"
 coverCredit: "Cover: Redline Verlag"
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Redline Verlag"
 disclosure:
   type: provided
   by: "vom Redline Verlag"

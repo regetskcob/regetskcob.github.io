@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Ubuntu Server 16.04 LTS“ von Daniel van Soest und Charly Kühnast mit dem Ubuntu-Logo"
 coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Das Handbuch „Capture One Pro 12“ liegt schräg auf einem Holztisch"
 aliases: ["/posts/capture-one-pro-12-buch/"]
 tags: ["Bücher", "Fotografie"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

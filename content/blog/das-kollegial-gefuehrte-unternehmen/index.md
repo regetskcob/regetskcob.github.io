@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Das kollegial geführte Unternehmen“ von Bernd Oestereich und Claudia Schröder mit gezeichneten Personen in Kreisen"
 coverCredit: "Cover: Vahlen"
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Vahlen Verlag"
 disclosure:
   type: provided
   by: "vom Vahlen Verlag"

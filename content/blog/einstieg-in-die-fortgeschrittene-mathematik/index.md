@@ -6,6 +6,7 @@ summary: "Fachbücher des Hanser Verlags zur Mathematik, die ich für den Einsti
 cover: ./cover.jpg
 coverAlt: "Zwei Mathematikbücher, darunter eines zur Linearen Algebra, liegen auf einem Tisch neben einem Adventskranz"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Hanser Verlag"
 disclosure:
   type: provided
   by: "vom Hanser Verlag"

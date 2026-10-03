@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Die neuen Traumhäuser“ von Sabine Reeh mit einem Holzhaus mit Gründach, im Vordergrund ein Kind auf einem Netz"
 coverCredit: "Cover: DVA"
 tags: ["Bücher"]
+verlag: "DVA"
 disclosure:
   type: provided
   by: "von der Bertelsmann Verlagsgruppe"

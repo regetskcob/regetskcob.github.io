@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Gebäudeautomation“ von Hermann Merz, Thomas Hansemann und Christof Hübner mit Bürogebäuden"
 coverCredit: "Cover: Hanser"
 tags: ["Bücher", "Smarthome"]
+verlag: "Hanser Verlag"
 disclosure:
   type: provided
   by: "vom Hanser Verlag"

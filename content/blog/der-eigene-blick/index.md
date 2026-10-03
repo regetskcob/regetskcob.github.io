@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „Der eigene Blick“ von Robert Mertens: eine Pers
 coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/der-eigene-blick/"]
 tags: ["Bücher", "Fotografie"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

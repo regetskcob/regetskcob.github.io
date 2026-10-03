@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Das Handbuch „Node.js“ mit grünem Cover liegt auf einem Holztisch"
 aliases: ["/posts/node-js-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

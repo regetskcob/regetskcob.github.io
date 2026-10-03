@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Linux – Das umfassende Handbuch“ von Michael Kofler mit zwei Pinguinen auf einer Eisscholle"
 coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

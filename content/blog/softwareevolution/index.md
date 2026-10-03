@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Softwareevolution“ von Harry M. Sneed und Richard Seidl mit Gleisen"
 coverCredit: "Cover: dpunkt.verlag"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

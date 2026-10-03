@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Effektives Arbeiten mit Legacy Code“ von Michael C. Feathers mit einem Hochhaus"
 coverCredit: "Cover: mitp"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "mitp Verlag"
 disclosure:
   type: provided
   by: "vom mitp Verlag"

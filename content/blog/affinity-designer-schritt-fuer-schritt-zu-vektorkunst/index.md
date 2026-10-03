@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Affinity Designer“ von Anke Goldbach mit Grafikmotiven in einem Dreieck"
 coverCredit: "Cover: Rheinwerk Verlag"
 tags: ["Bücher"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

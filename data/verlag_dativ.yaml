@@ -1,0 +1,13 @@
+# Dative of each publisher for the sentence on its page ("Meine Rezensionen
+# zu Büchern vom Hanser Verlag", layouts/verlag/term.html). Key: the name as
+# in "verlag" in the posts' front matter. A name missing here gets "von".
+"Rheinwerk Verlag": "vom Rheinwerk Verlag"
+"dpunkt.verlag": "vom dpunkt.verlag"
+"Hanser Verlag": "vom Hanser Verlag"
+"Vahlen Verlag": "vom Vahlen Verlag"
+"mitp Verlag": "vom mitp Verlag"
+"Ulmer Verlag": "vom Ulmer Verlag"
+"Redline Verlag": "vom Redline Verlag"
+"Vierfarben Verlag": "vom Vierfarben Verlag"
+"Ullstein Verlag": "vom Ullstein Verlag"
+"DVA": "von der DVA"

@@ -5,6 +5,7 @@ summary: "Raymond Clement stellt seine Arbeiten vor, mit Panorama-Aufklappseiten
 cover: ./cover.jpg
 coverAlt: "Das Buch „Landschaftsfotografie erleben“ liegt auf einem dunklen Holztisch"
 tags: ["Bücher", "Fotografie"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom Verlag"

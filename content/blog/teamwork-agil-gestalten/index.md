@@ -7,6 +7,7 @@ coverAlt: "Cover des Buches „Teamwork agil gestalten“ von Alois Summerer und
 coverCredit: "Cover: Hanser"
 aliases: ["/posts/teamwork-agil-gestalten/"]
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Hanser Verlag"
 disclosure:
   type: provided
   by: "vom Hanser Verlag"

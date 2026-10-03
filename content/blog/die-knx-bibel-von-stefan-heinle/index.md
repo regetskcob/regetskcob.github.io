@@ -11,6 +11,7 @@ disclosure:
   by: "vom Rheinwerk Verlag"
   note: "Das war eine frühere Auflage, die aktuelle habe ich selbst gekauft."
 tags: ["Bücher", "Smarthome"]
+verlag: "Rheinwerk Verlag"
 ---
 
 > Wer heute ein Haus ohne intelligente Gebäudetechnik baut, errichtet einen Altbau.  

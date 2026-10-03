@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Das Buch „50 Arten, Nein zu sagen“ mit bunten Sprechblasen auf dem Cover liegt auf einem Holztisch"
 aliases: ["/posts/50-arten-nein-zu-sagen/"]
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

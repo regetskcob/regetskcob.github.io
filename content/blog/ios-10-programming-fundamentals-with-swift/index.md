@@ -6,6 +6,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „iOS 10 Programming Fundamentals with Swift“ von Matt Neuburg mit einer Robbe"
 coverCredit: "Cover: O’Reilly"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "O’Reilly"
 disclosure:
   type: provided
   by: "von O’Reilly"

@@ -7,6 +7,7 @@ cover: ./img_6233.jpg
 coverAlt: "Das Buch „Basiswissen Usability und User Experience“ mit grünem Einband auf violettem Untergrund"
 aliases: ["/posts/basiswissen-usability-und-user-experience/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
 ---

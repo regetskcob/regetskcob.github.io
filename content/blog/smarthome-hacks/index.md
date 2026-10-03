@@ -10,6 +10,7 @@ disclosure:
   type: provided
   by: "von O’Reilly"
 tags: ["Bücher", "Smarthome"]
+verlag: "O’Reilly"
 ---
 
 Diese und viele weitere Fragen beantwortet Prof. Peter A. Henning in seinem Buch „SmartHome Hacks“ welches im O’Reilly Verlag erschienen ist.

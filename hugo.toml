@@ -32,6 +32,10 @@ tag = 'tags'
 # Post series ("series" in front matter): each gets an overview page under
 # /series/<name>/ (layouts/series/term.html), linked from its parts.
 series = 'series'
+# Publisher of a reviewed book ("verlag" in front matter): each gets an
+# unlisted page /verlag/<name>/ with its reviews (layouts/verlag/term.html),
+# a link to hand to the publisher. Linked from nowhere, noindex, no sitemap.
+verlag = 'verlag'
 
 [module]
   [[module.imports]]

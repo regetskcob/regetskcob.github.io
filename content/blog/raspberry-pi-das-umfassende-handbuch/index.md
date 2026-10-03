@@ -7,6 +7,7 @@ cover: ./IMG_4275.jpeg
 coverAlt: "Das Buch „Raspberry Pi“ von Kofler, Kühnast und Scherbeck auf einem Holztisch"
 aliases: ["/posts/raspberry-pi-das-umfassende-handbuch/"]
 tags: ["Bücher", "Smarthome"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   note: "Das war eine frühere Auflage, die aktuelle habe ich selbst gekauft."

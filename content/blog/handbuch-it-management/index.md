@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Handbuch IT-Management“, herausgegeben von Ernst Tiemeyer, mit einem Rettungsring"
 coverCredit: "Cover: Hanser"
 tags: ["Bücher", "Arbeitswelt"]
+verlag: "Hanser Verlag"
 disclosure:
   type: provided
   by: "vom Hanser Verlag"

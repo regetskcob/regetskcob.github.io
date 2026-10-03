@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „React – Das umfassende Handbuch“ von Sebastia
 coverCredit: "Cover: Rheinwerk Verlag"
 aliases: ["/posts/react-das-umfassende-handbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

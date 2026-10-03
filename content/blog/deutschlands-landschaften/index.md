@@ -6,6 +6,7 @@ summary: "Mark Robertz porträtiert 16 deutsche Nationalparks in einem Bildband,
 cover: ./cover.jpg
 coverAlt: "Der Bildband „Deutschlands Landschaften fotografieren“ mit nebligem Wald auf dem Cover, vor einer Wohnsiedlung in der Abenddämmerung"
 tags: ["Bücher", "Fotografie"]
+verlag: "Rheinwerk Verlag"
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

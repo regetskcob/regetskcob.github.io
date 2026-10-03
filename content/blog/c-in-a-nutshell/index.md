@@ -8,6 +8,7 @@ coverCredit: "Cover: O’Reilly"
 coverAlt: "Buchcover von „C in a Nutshell“, zweite Auflage, von Peter Prinz und Tony Crawford, eine gezeichnete Kuh über dem Titel auf violettem Feld, auf hellem Grund"
 aliases: ["/posts/c-in-a-nutshell/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "O’Reilly"
 disclosure:
   type: provided
 ---

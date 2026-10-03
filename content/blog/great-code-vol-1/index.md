@@ -7,6 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Great Code, Volume 1: Understanding the Machine“ von Randall Hyde mit einer Dampflokomotive"
 coverCredit: "Cover: No Starch Press"
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "No Starch Press"
 disclosure:
   type: provided
   by: "von No Starch Press"

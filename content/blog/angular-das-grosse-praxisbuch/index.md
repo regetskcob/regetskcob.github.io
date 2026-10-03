@@ -8,6 +8,7 @@ coverAlt: "Cover des Buches „Angular“ von Ferdinand Malcher, Danny Koppenhag
 coverCredit: "Cover: dpunkt.verlag"
 aliases: ["/posts/angular-das-grosse-praxisbuch/"]
 tags: ["Bücher", "Softwareentwicklung"]
+verlag: "dpunkt.verlag"
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"
