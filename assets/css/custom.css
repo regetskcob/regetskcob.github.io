@@ -768,6 +768,35 @@ a.series-label:hover {
   text-decoration-thickness: 2px;
 }
 
+.topic-row a.draft-chip {
+  border: 1px dashed var(--content-secondary);
+  border-radius: 3px;
+  padding: 0 0.35rem;
+}
+
+.draft-open {
+  margin: 0.6rem 0 0;
+}
+
+.draft-open summary {
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--content-secondary);
+}
+
+.draft-open .single-content {
+  margin: 1rem 0 0;
+  padding: 0.2rem 1rem;
+  border-left: 3px solid var(--note-blue-stripe);
+}
+
+.drafts-note {
+  color: var(--content-secondary);
+  font-size: 0.9em;
+  margin: 0.5rem 0 1rem;
+}
+
 .topic-row .tag-count {
   margin-left: 0.15rem;
   font-size: 0.85em;

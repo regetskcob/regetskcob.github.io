@@ -1,0 +1,65 @@
+{{/*
+  All drafts of the blog in one list, newest first, and the previews of "In
+  Arbeit" above them: a tool for the local preview (reached from the chip
+  "Entwürfe" in the topic row, which only exists outside the production build).
+  In the deploy the page is not built at all, see config/production/hugo.toml.
+  Drafts only exist in a build with --buildDrafts (scripts/preview-build.sh,
+  hugo server -D).
+
+  The previews have no page of their own (build.render "never"), so their text
+  opens right here, in a <details> under the row, with the transparency box.
+*/}}
+{{ define "main" }}
+<div class="list-container">
+  <h1>Entwürfe</h1>
+
+  {{- $drafts := where (site.GetPage "/blog").RegularPages "Draft" true }}
+  {{- $soon := partial "soon-pages.html" "" }}
+  {{- partial "topic-row.html" "" }}
+  <p class="drafts-note">{{ len $drafts }} {{ if eq (len $drafts) 1 }}Entwurf{{ else }}Entwürfe{{ end }} und {{ len $soon }} {{ if eq (len $soon) 1 }}Vorschau{{ else }}Vorschauen{{ end }} „In Arbeit“, nur in der lokalen Vorschau sichtbar.</p>
+
+  {{- with $soon }}
+  <h2 class="year-heading">In Arbeit</h2>
+  {{- range . }}
+  {{- $page := . }}
+  {{- $thumb := "" }}
+  {{- with $page.Params.cover }}
+    {{- with $page.Resources.Get (strings.TrimPrefix "./" .) }}
+      {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}{{ $thumb = . }}{{ end }}
+    {{- end }}
+  {{- end }}
+  {{- $when := "" }}
+  {{- with $page.Params.soon }}{{ if eq (printf "%T" .) "string" }}{{ $when = . }}{{ end }}{{ end }}
+  <div class="post-line soon-line{{ with $thumb }} has-thumb{{ end }}">
+    {{- with $thumb }}
+    {{ partial "list-thumb.html" (dict "img" .) }}
+    {{- else }}
+    <span class="line-thumb" aria-hidden="true"></span>
+    {{- end }}
+    <div class="line-text">
+      <p class="line-title">{{ $page.Title }}</p>
+      <span class="soon-label">demnächst{{ with $when }} · {{ . }}{{ end }}</span>
+      {{- with $page.Params.summary }}
+      <p class="line-summary">{{ . }}</p>
+      {{- end }}
+      <details class="draft-open">
+        <summary>Text anzeigen</summary>
+        <div class="single-content">{{ $page.Content }}</div>
+        {{ partial "disclosure.html" $page }}
+      </details>
+    </div>
+  </div>
+  {{- end }}
+  {{- end }}
+
+  {{- $year := "" }}
+  {{- range $drafts.ByDate.Reverse }}
+    {{- $y := .Date.Format "2006" }}
+    {{- if ne $y $year }}
+  <h2 class="year-heading">{{ $y }}</h2>
+    {{- $year = $y }}
+    {{- end }}
+  {{ partial "post-entry.html" . }}
+  {{- end }}
+</div>
+{{ end }}

@@ -289,6 +289,10 @@ scripts/preview-build.sh /tmp/site 8088
 python3 -m http.server 8088 --directory /tmp/site
 ```
 
+In der lokalen Vorschau gibt es in der Themen-Zeile des Blogs einen gestrichelten Filter „Entwürfe“ mit der Anzahl. Er führt auf
+`/entwuerfe/` (`content/entwuerfe.md`, `layouts/_default/drafts.html`), eine Liste aller Beiträge mit `draft: true` und darüber der Vorschauen „In Arbeit“, deren Text sich dort aufklappen lässt (sie haben keine eigene Seite). Im Deploy
+gibt es weder den Filter (`hugo.IsProduction`) noch die Seite (`config/production/hugo.toml`, `ignoreFiles`).
+
 Das Skript baut in einen Nebenordner und tauscht ihn erst am Ende aus. Ein laufender Server liefert so nie einen halb leeren Ordner aus, und lazy geladene Bilder bleiben nicht als kaputte Kacheln stehen. Zu Fuß sind es `hugo --buildDrafts --environment development --baseURL http://localhost:8088/ -d /tmp/site` und danach `npx -y pagefind@1.5.2 --site /tmp/site`.
 
 `--environment development` ist wichtig: Ein normaler `hugo`-Aufruf baut als Produktion und bricht ohne

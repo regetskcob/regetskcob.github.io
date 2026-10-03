@@ -21,5 +21,13 @@
   <a href="{{ .Page.RelPermalink }}">#{{ .Page.Title }} <span class="tag-count">{{ .Count }}</span></a>
   {{- end }}
   {{- end }}
+  {{- /* Local preview only: all drafts in one list (content/entwuerfe.md). */}}
+  {{- if not hugo.IsProduction }}
+  {{- $drafts := where (site.GetPage "/blog").RegularPages "Draft" true }}
+  {{- $count := add (len $drafts) (len (partial "soon-pages.html" "")) }}
+  {{- if $count }}
+  <a href="{{ "entwuerfe/" | relURL }}" class="draft-chip" title="Entwürfe und Vorschauen, nur in der lokalen Vorschau">Entwürfe <span class="tag-count">{{ $count }}</span></a>
+  {{- end }}
+  {{- end }}
 </nav>
 {{- end }}
