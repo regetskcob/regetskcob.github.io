@@ -9,7 +9,7 @@ coverAlt: "KI-generierte Grafik: Eine Person am Anfang, von der vier gepunktete 
 series: "Wie werde ich Fachinformatiker"
 seriesLabel: "Teil VI: Wie es nach der Lehre weiter geht"
 aliases: ["/posts/wie-es-nach-der-lehre-weiter-geht/"]
-tags: ["Ausbildung", "Softwareentwicklung"]
+tags: ["Ausbildung"]
 ---
 
 Das Thema, über da sich heute schreiben möchte, ist sicherlich kein leichtes. Aus diesem Grund möchte ich in diesem Artikel um seinen Inhalt herum eine Geschichte aufbauen, die den Kern des ganzen widerspiegelt und das Verstehen hoffentlich erleichtert.

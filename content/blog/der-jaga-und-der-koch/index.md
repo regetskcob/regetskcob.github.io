@@ -12,7 +12,7 @@ build:
 soon: Dezember
 cover: ./cover.jpg
 coverAlt: "Das Buch „Der Jaga und der Koch“ von Christoph Burgstaller und Rudi Obauer liegt auf einem Eichenholztisch, auf dem dunkelgrünen Cover ein Jäger in Lederhose mit Wanderstock und ein Koch in weißer Jacke vor einer hellen Berglandschaft"
-tags: ["Bücher", "Natur"]
+tags: ["Bücher", "Jagd"]
 disclosure:
   type: purchased
 ---

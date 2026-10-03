@@ -5,7 +5,7 @@ lastmod: 2026-10-02T07:01:11+0000
 summary: "Ein Band der Reihe von Daan Schoonhoven: Grundlagen, Bekleidungstipps, Focus-Stacking und Landschaften in Schwarz-Weiß, kurz und knackig."
 cover: ./cover.jpg
 coverAlt: "Das „Praxisbuch Landschaftsfotografie“ mit Flusslandschaft im Abendlicht liegt auf einem dunklen Holztisch"
-tags: ["Bücher", "Fotografie", "Natur"]
+tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
   by: "vom dpunkt Verlag"

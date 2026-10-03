@@ -7,7 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Scrum – Ein Buch über Zusammenarbeit“ der Scrum Patterns Group mit einem gelben Klebezettel"
 coverCredit: "Cover: Vahlen"
 aliases: ["/posts/scrum-ein-buch-uber-zusammenarbeit/"]
-tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
+tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "vom Vahlen Verlag"

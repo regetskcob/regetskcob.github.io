@@ -7,7 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Der Bormax-Bohrersatz von FAMAG im Holzkasten mit fünf Forstnerbohrern"
 series: "Holzbock bauen"
 seriesLabel: "Teil V: Der zweite Bock"
-tags: ["Holzwerken"]
+tags: ["DIY"]
 disclosure:
   type: provided
   by: "von FAMAG"

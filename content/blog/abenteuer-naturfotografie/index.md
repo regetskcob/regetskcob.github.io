@@ -5,7 +5,7 @@ lastmod: 2026-10-02T07:01:11+0000
 summary: "Ein Bildband mit Tipps der beiden Expeditionsleiter, der deutsche Landschaften im Morgengrauen und bei Sonnenuntergang zeigt."
 cover: ./cover.jpg
 coverAlt: "Das Buch „Abenteuer Naturfotografie“ mit Fuchs und Fasan auf dem Cover, vor einer Straße in die Höhe gehalten"
-tags: ["Bücher", "Fotografie", "Natur"]
+tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
   by: "vom Verlag"

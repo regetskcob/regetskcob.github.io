@@ -8,7 +8,7 @@ coverAlt: "Das Buch „Die Vermessung der Berge“ von Blandine Pluchet steht au
 disclosure:
   type: purchased
   note: "Es war ein gebrauchtes Exemplar von medimops."
-tags: ["Bücher", "Natur", "Fotografie"]
+tags: ["Bücher", "Natur"]
 ---
 
 „Die Vermessung der Berge“ von Blandine Pluchet ist für mich eines dieser Bücher, bei denen etwas hängen bleibt, obwohl man es längst wieder ins Regal gestellt hat.

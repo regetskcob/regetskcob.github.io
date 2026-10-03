@@ -9,7 +9,7 @@ summary: Dieses Buch ist eine Hommage an den Wald und die Natur! Mitten in der
 cover: ./IMG_4276.jpeg
 coverAlt: "Das Buch „Wild, Wald, Genuss“ von Harald Rüssel auf einem Holztisch"
 aliases: ["/posts/wild-wald-genuss-vom-kochen-und-jagen/"]
-tags: ["Bücher", "Natur"]
+tags: ["Bücher", "Jagd"]
 disclosure:
   type: purchased
 ---

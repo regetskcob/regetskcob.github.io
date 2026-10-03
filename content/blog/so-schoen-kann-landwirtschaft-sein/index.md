@@ -5,7 +5,7 @@ lastmod: "2026-10-03T08:00:00+0000"
 summary: "Ein Allgäuer Buch über Landwirtschaft, das den Blick darauf verändert, was eigentlich Landschaft ist."
 cover: ./cover.jpg
 coverAlt: "Das Buch „So schön kann Landwirtschaft sein – VonHier, ein Allgäuer Modell für die Regionen Europas“ wird vor einem Balkonblick ins Allgäu gehalten: auf dem Cover Kühe auf einer Weide vor einer Kapelle und dunklen Bergen, dahinter eine grüne Wiese, ein Hof und schneebedeckte Gipfel"
-tags: ["Bücher", "Natur", "Fotografie"]
+tags: ["Bücher", "Natur"]
 disclosure:
   type: purchased
   note: "Ich habe das Buch zuerst in der Ferienwohnung geliehen und mir danach ein gebrauchtes Exemplar von medimops für zuhause gekauft."

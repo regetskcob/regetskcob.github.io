@@ -6,7 +6,7 @@ summary: "Hans-Peter Schaub, von Beruf Biologe, erklärt Motivwahl und Technik d
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „Naturfotografie – Die große Fotoschule“ von Hans-Peter Schaub mit einer Collage aus Natur- und Tierfotos"
 coverCredit: "Cover: Rheinwerk Verlag"
-tags: ["Bücher", "Fotografie", "Natur"]
+tags: ["Bücher", "Fotografie"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"

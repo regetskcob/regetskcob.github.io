@@ -641,7 +641,7 @@ tags: ["Bücher", "Natur"]
 | `slug` | Nur nötig, wenn die URL vom Ordnernamen abweichen soll. Sonst ist der Ordnername der letzte Teil der URL: `/blog/<ordner>/`. | Hugo |
 | `aliases` | Alte URLs, die auf den Beitrag weiterleiten (`["/posts/…/"]`). | Hugo |
 | `summary` | Kurztext unter dem Titel, in der Blog-Liste, in den Suchergebnissen und als Meta-Description. | `single.html`, `seo/description.html` |
-| `tags` | Themen, z. B. `["Bücher", "Smarthome"]`. Bestimmen die Themen-Zeile im Blog und die Tag-Seiten. | Hugo, `section.html` |
+| `tags` | Themen, z. B. `["Bücher", "Smarthome"]`. Bestimmen die Themen-Zeile im Blog und die Tag-Seiten. Gepflegt wird ein kleines Vokabular (Bücher, Arbeitswelt, Ausbildung, DIY, Fotografie, Gesellschaft, Jagd, Natur, Smarthome, Softwareentwicklung), je Beitrag ein bis zwei, höchstens drei Tags, damit sich sauber filtern lässt. | Hugo, `section.html` |
 | `draft` | `true`: Der Beitrag wird nirgends gebaut oder angezeigt, nur `hugo server -D` zeigt ihn lokal, mit Label „Entwurf“. Ohne Angabe gilt `false`. | Hugo, `updated-label.html` |
 
 **Titelbild**

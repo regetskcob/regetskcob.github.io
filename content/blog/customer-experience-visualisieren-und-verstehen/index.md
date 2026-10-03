@@ -7,7 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Cover des Buches „Customer Experience visualisieren und verstehen“ von Jim Kalbach mit einem gezeichneten Braunbären"
 coverCredit: "Cover: O’Reilly"
 aliases: ["/posts/customer-experience-visualisieren-und-verstehen/"]
-tags: ["Bücher"]
+tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "von O’Reilly"

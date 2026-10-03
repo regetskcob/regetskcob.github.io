@@ -6,7 +6,7 @@ summary: "David Nelles und Christian Serrer erklären die Grundlagen des Klimawa
 cover: ./cover.jpg
 coverAlt: "Das Buch „Kleine Gase – Große Wirkung“ mit Weltkugel auf dem Cover, vor Dächern und Heidekraut in die Höhe gehalten"
 aliases: ["/posts/kleine-gase-grosse-wirkung-der-klimawandel/"]
-tags: ["Bücher"]
+tags: ["Bücher", "Gesellschaft"]
 disclosure:
   type: purchased
 ---

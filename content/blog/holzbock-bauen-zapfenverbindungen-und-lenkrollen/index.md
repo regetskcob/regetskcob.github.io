@@ -7,7 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Der fertige Holzbock auf Lenkrollen in der Garage, auf der Auflage liegen zwei Ziegelsteine"
 series: "Holzbock bauen"
 seriesLabel: "Teil IV: Zapfenverbindungen und Lenkrollen"
-tags: ["Holzwerken"]
+tags: ["DIY"]
 draft: true
 ---
 

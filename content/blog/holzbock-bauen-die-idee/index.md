@@ -7,7 +7,7 @@ cover: ./cover.jpg
 coverAlt: "SketchUp-Entwurf des Multifunktionstisches: zwei Holzböcke tragen eine Lochplatte als Tischplatte"
 series: "Holzbock bauen"
 seriesLabel: "Teil I: Die Idee"
-tags: ["Holzwerken"]
+tags: ["DIY"]
 draft: true
 ---
 

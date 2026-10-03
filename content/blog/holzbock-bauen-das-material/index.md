@@ -8,7 +8,7 @@ coverAI: true
 coverAlt: "KI-generierte Grafik: Ein Stapel Kanthölzer, daneben eine Lochplatte und eine Checkliste mit drei Haken"
 series: "Holzbock bauen"
 seriesLabel: "Teil II: Das Material"
-tags: ["Holzwerken"]
+tags: ["DIY"]
 draft: true
 ---
 

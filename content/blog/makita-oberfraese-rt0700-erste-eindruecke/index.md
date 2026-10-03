@@ -5,7 +5,7 @@ lastmod: 2026-10-02T06:52:46+0000
 summary: "Die Makita RT0700 im Set mit drei Körben: ein lieblos verpackter Versand, brauchbares Zubehör und Löcher für den Multifunktionstisch."
 cover: ./cover.jpg
 coverAlt: "Makita Oberfräse im Systainer mit Zubehör und Fräserset, ausgepackt auf einer MDF-Platte"
-tags: ["Holzwerken"]
+tags: ["DIY"]
 disclosure:
   type: purchased
   item: "Diese Oberfräse"

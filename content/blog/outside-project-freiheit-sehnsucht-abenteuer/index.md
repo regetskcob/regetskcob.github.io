@@ -6,7 +6,7 @@ summary: "Ein Bildband, in dem acht Fotografinnen und Fotografen zeigen, wie vie
 cover: ./cover.jpg
 coverAlt: "Der Bildband „Outside Project“ mit einer Person vor einem Bergsee auf dem Cover, vor Häusern in die Höhe gehalten"
 aliases: ["/posts/outside-project-freiheit-sehnsucht-abenteuer/"]
-tags: ["Bücher", "Natur", "Fotografie"]
+tags: ["Bücher", "Natur"]
 disclosure:
   type: gift
   by: "von meinen Schwiegereltern"

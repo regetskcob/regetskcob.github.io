@@ -7,7 +7,7 @@ cover: ./cover.jpg
 coverAlt: "Der Laptop zeigt die Maße der Holzböcke in SketchUp, aufgestellt auf der Werkbank in der Garage"
 series: "Holzbock bauen"
 seriesLabel: "Teil III: Zuschnitt und Fußgestell"
-tags: ["Holzwerken"]
+tags: ["DIY"]
 draft: true
 ---
 

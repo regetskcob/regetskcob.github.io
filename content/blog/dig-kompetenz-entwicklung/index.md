@@ -6,7 +6,7 @@ summary: "48 Autoren und 27 Praxisbeiträge: Das Handbuch des Hanser Verlags zei
 cover: ./cover.jpg
 coverAlt: "Das „Handbuch Digitale Kompetenzentwicklung“ liegt auf einem Stapel Bücher auf einem Holztisch"
 aliases: ["/posts/dig-kompetenz-entwicklung/"]
-tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
+tags: ["Bücher", "Arbeitswelt"]
 disclosure:
   type: provided
   by: "vom Hanser Verlag"

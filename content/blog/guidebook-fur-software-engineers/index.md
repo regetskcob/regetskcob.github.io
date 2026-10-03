@@ -6,7 +6,7 @@ summary: "Gergely Orosz begleitet Software Engineers durch alle Karrierestufen. 
 cover: ./cover.jpg
 coverAlt: "Das „Guidebook für Software Engineers“ liegt auf einem Holzbalken, dahinter ein nebliges Feld und kahle Bäume"
 aliases: ["/posts/guidebook-fur-software-engineers/"]
-tags: ["Bücher", "Softwareentwicklung", "Arbeitswelt"]
+tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom Verlag"
