@@ -6,6 +6,7 @@ aliases: ["/posts/"]
 # page): the folder names under content/blog/, see layouts/partials/soon-pages.html.
 soon:
   - waidwerk
+  - der-jaga-und-der-koch
 # Every post shows its tags and reading time in the header card.
 cascade:
   showTags: true
