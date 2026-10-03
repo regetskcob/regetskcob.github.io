@@ -1,16 +1,18 @@
 ---
 title: 🔭 | Bau des OpenAstroTracker - Teil I
 date: 2025-12-14T10:40:00+0000
-summary: In den kommenden Wochen möchte ich mir einen OpenAstroTracker bauen. Ich werde den Bau in dieser Artikelserie begleiten und auch auf Astro-Fotografie als solche näher eingehen. 
+summary: "Ein OpenAstroTracker besteht aus gedruckten Teilen, Alu-Profilen und Elektronik. Teil I zeigt den 3D-Druck, die Materialwahl und das Buch, das mich in die Astrofotografie begleitet."
 cover: ./parts.jpeg
 coverAlt: "Gedruckte Teile des OpenAstroTrackers auf weißem Grund: ein weißes Speichenrad, zwei schlanke Bögen und weitere Kleinteile in Weiß, rechts zwei schwarze, durchbrochene Bögen"
 aliases: ["/posts/bau-des-openastrotracker-teil-i/"]
+series: "Bau des OpenAstroTracker"
+seriesLabel: "Teil I: Die Teile"
 tags: ["Fotografie"]
 ---
 
-Ich wurde kürzlich von einem Arbeitskollegen auf [OpenAstroTech][1] aufmerksam gemacht. Nachdem ich bereits vor Jahren und mit einfachstem Equipment erste Aufnahmen vom Nachthimmel gemacht hatte, war das feuer sofort wieder entfacht. 
+Ich wurde kürzlich von einem Arbeitskollegen auf [OpenAstroTech][1] aufmerksam gemacht. Nachdem ich bereits vor Jahren und mit einfachstem Equipment erste Aufnahmen vom Nachthimmel gemacht hatte, war das Feuer sofort wieder entfacht.
 
-Im Moment läuft Bernd, unser BambuLab P1S, nahezu pausenlos, um alle nötigen Teile für den OpenAstroTracker zu produzieren, die nich aus Metall bestehen oder elektronische Komponenten sind. 
+Im Moment läuft Bernd, unser BambuLab P1S, nahezu pausenlos, um alle nötigen Teile für den OpenAstroTracker zu produzieren, die nicht aus Metall bestehen oder elektronische Komponenten sind. 
 
 ![BambuLab P1S druckt die Aufnahme für den 20x20mm Alu-Extrusions-Stab](./print.jpeg)
 
@@ -18,11 +20,11 @@ Ab und zu kommt es auch zu Problemen mit der Layer-Haftung im 1. Layer, dank der
 
 ![Bisherige Teile](./parts.jpeg)
 
-Ich habe mich dazu entschieden, den OpenAstroTracker aus klaren PETG-Translucent und dunkelgrauem PETG-CF zu drucken, möglichst wiederstands- und strapazierfähig.
+Ich habe mich dazu entschieden, den OpenAstroTracker aus klaren PETG-Translucent und dunkelgrauem PETG-CF zu drucken, möglichst widerstands- und strapazierfähig.
 
 ---
 
-Im Moment lese ich parallel dazu Das Praxisbuch 'Nachthimmel fotografieren' von Rutger Bus, welches das geballte Wissen des Autors auf leicht verständliche Art vermittelt, sowohl was die fotografischen, meterologischen aber auch technischen Hintergründe anbelangt.
+Im Moment lese ich parallel dazu das Praxisbuch „Nachthimmel fotografieren“ von Rutger Bus, welches das geballte Wissen des Autors auf leicht verständliche Art vermittelt, sowohl was die fotografischen, meteorologischen aber auch technischen Hintergründe anbelangt.
 
 Fortsetzung folgt...
 

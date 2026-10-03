@@ -8,6 +8,7 @@ soon:
   - waidwerk
   - der-jaga-und-der-koch
   - drohnen-die-grosse-fotoschule
+  - bau-des-openastrotracker-teil-ii
 # Every post shows its tags and reading time in the header card.
 cascade:
   showTags: true
