@@ -1,7 +1,6 @@
 ---
 title: "📚 | High Performance iOS Apps"
 date: 2017-04-12T10:23:19+0000
-lastmod: 2026-10-02T06:41:45+0000
 summary: "Gaurav Vaish zeigt, wie sich Performance und Stabilität von iOS-Apps messen und verbessern lassen."
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „High Performance iOS Apps“ von Gaurav Vaish mit einem Vogel"
@@ -10,7 +9,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "von O’Reilly"
-draft: true
 ---
 
 Was ist heute schon eine App? Mittlerweile ist **jeder** dazu in der Lage, eine eigene App entwickeln, wenn er bereit ist, sich mit Swift oder Objective-C (auf iOS Seite) auseinander zu setzen. Aber das, was eine **erfolgreiche** App aus macht, ist etwas anderes.

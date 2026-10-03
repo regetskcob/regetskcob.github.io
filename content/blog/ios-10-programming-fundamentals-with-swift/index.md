@@ -1,7 +1,6 @@
 ---
 title: "📚 | iOS 10 Programming Fundamentals with Swift"
 date: 2017-04-19T10:19:54+0000
-lastmod: 2026-10-02T06:41:45+0000
 summary: "Matt Neuburgs Buch führt in vier Teilen durch die App-Programmierung für iOS 10 mit Swift, von Views und View Controllern bis zu Netzwerk und Threads."
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „iOS 10 Programming Fundamentals with Swift“ von Matt Neuburg mit einer Robbe"
@@ -10,7 +9,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "von O’Reilly"
-draft: true
 ---
 
 Das Programmieren von Apps für das iOS Betriebssystem hat sich mit der WWDC am 2. Juni 2014 grundlegend verändert. Apple hat mit Swift eine neue Programmiersprache vorgestellt, die seit her immer weiter gewachsen ist. Und genau darum geht es im Buch von Matt Neuburg. Die Programmierung von Apps für iOS 10 mit Swift.

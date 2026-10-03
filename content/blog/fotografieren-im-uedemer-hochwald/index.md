@@ -1,12 +1,10 @@
 ---
 title: "📸 + 🥾 | Fotografieren im Uedemer Hochwald"
 date: 2019-05-11T14:44:20+0000
-lastmod: 2026-10-02T07:01:11+0000
 summary: "Parken, Orientierung, Wald und Wege im Uedemer Hochwald: ein Ausflugsziel für Wanderer und Fotografen."
-cover: ./05-11-2019-0718.jpg
+cover: ./cover.jpg
 coverAlt: "Hohe Buchenstämme im frischen Frühlingsgrün des Uedemer Hochwalds"
 tags: ["Fotografie", "Natur"]
-draft: true
 ---
 
 Mit Kauf meiner FUJI X-T30 war für mich gegen Ostern 2019 auch klar,  dass ich ab sofort wieder mehr raus in die Natur möchte. Bewegung und die frische Luft sollen bekanntlich dem Körper gut bekommen und das meistens einsame spazieren/wandern Im irrsinnig groß scheinenden Wald hilft dabei, den Kopf frei zu bekommen.

@@ -1,7 +1,6 @@
 ---
 title: "📚 | Ubuntu Server 16.04 LTS"
 date: 2017-03-29T11:52:15+0000
-lastmod: 2026-10-02T06:41:45+0000
 summary: "Das Administrationshandbuch von Kühnast und van Soest zu Ubuntu Server: von der Installation über DNS und Mailserver bis zu Backup und Monitoring."
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „Ubuntu Server 16.04 LTS“ von Daniel van Soest und Charly Kühnast mit dem Ubuntu-Logo"
@@ -10,7 +9,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
 Neben dem allgemeinen Handbuch zu Linux von Michael Kofler bietet der Rheinwerk Verlag auch ein Administrationshandbuch speziell für den Ubuntu Server an. Zur Version 16.04 LTS haben Charly Kühnast und Daniel v. Soest ihr Handbuch erneut aktualisiert.

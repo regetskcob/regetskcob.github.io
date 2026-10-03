@@ -342,6 +342,12 @@ figure.img-portrait + p:empty + h2 {
   margin-bottom: 2.5rem;
 }
 
+/* After the transparency box (a dialog and a script sit between them) the series box needs its own gap: it has none
+   of its own (the text above brings 3rem), and the two would touch. */
+.disclosure ~ .series-nav {
+  margin-top: 2rem;
+}
+
 .series-nav {
   margin-top: 0;
   /* 40px narrower than the text, so the box sits slightly indented. */

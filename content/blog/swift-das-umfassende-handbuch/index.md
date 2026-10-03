@@ -1,7 +1,6 @@
 ---
 title: "📚 | Swift - Das umfassende Handbuch"
 date: 2017-01-14T22:03:32+0000
-lastmod: 2026-10-02T06:41:45+0000
 summary: "Michael Koflers Swift-Handbuch ist für mich das deutsche Standardwerk zur Sprache, für Ein- wie Umsteiger."
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „Swift – Das umfassende Handbuch“ von Michael Kofler mit dem Swift-Logo auf blauen Kacheln"
@@ -10,7 +9,6 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
 Seit dem Swift im Jahr 2014 von Apple der Öffentlichkeit präsentiert wurde, hat sich viel getan. Mit jedem größeren Versionssprung wurden zahlreiche Veränderungen, Verbesserungen und vor allem Nachbesserungen ausgeliefert, welche die Sprache noch weiter ausbauen sollten. Mittlerweile sind wir bei Swift 3 angekommen, Swift 4 ist seit einiger Zeit in der Entwicklung und die Anzahl der Anhänger wächst und wächst.

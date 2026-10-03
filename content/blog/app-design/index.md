@@ -1,7 +1,6 @@
 ---
 title: "📚 | App-Design"
 date: 2016-12-05T10:00:00+0000
-lastmod: 2026-10-02T06:41:45+0000
 summary: "Jan Semlers App-Design behandelt auf rund 480 Seiten alles von der Idee bis zu Usability und Barrierefreiheit, was eine gute App ausmacht."
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „App-Design“ von Jan Semler mit einem gezeichneten Smartphone"
@@ -10,12 +9,9 @@ tags: ["Bücher", "Softwareentwicklung"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
-Mit [Apps-Machen](http://werd-fachinformatiker.de/wie-gehe-ich-ein-app-projekt-richtig-an/5359/) habe ich euch vor einigen Tagen bereits ein Buch über das Gestalten von Apps und einer guten Benutzerführung vorgestellt.
-
-Parallel zum Hanser Verlag bietet der Rheinwerk Verlag ebenfalls ein Buch über genau diese Themengebiete an. Auf guten 480 Seiten bekommt ihr von jedem wichtigen Thema einen guten Eindruck.
+Der Rheinwerk Verlag bietet ein Buch über das Gestalten von Apps und eine gute Benutzerführung an. Auf guten 480 Seiten bekommt ihr von jedem wichtigen Thema einen guten Eindruck.
 
 ### Inhalt des Buches „App-Design“
 

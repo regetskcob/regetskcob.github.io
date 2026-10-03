@@ -1,7 +1,6 @@
 ---
 title: "📚 | Gebäudeautomation"
 date: 2017-02-20T20:47:48+0000
-lastmod: 2026-10-02T06:41:45+0000
 summary: "Merz, Hansemann und Hübner erklären Gebäudeautomation mit KNX, LonWorks und BACnet, samt Sicherheit und praxisnahen Beispielen."
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „Gebäudeautomation“ von Hermann Merz, Thomas Hansemann und Christof Hübner mit Bürogebäuden"
@@ -10,7 +9,6 @@ tags: ["Bücher", "Smarthome"]
 disclosure:
   type: provided
   by: "vom Hanser Verlag"
-draft: true
 ---
 
 Das Buch ‚Gebäudeautomation‘ geschrieben von Hermann Merz, Thomas Hansemann und Christof Hübner, hält alle wichtigen Gesichtspunkte des Themas in einer übersichtlichen Struktur für euch bereit.

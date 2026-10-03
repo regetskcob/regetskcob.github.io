@@ -1,7 +1,6 @@
 ---
 title: "📚 | Infografik"
 date: 2016-11-05T12:45:44+0000
-lastmod: 2026-10-02T06:41:45+0000
 summary: "Raimar Heber erklärt, wie Infografiken entstehen, von den Grundlagen bis zu interaktiven Umsetzungen für Print, Web und App."
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „Infografik“ von Raimar Heber mit einer Grafik zum Flugverkehr"
@@ -10,7 +9,6 @@ tags: ["Bücher"]
 disclosure:
   type: provided
   by: "vom Rheinwerk Verlag"
-draft: true
 ---
 
 Themengebiete oder Aufgabenstellungen, die auf komplexen Daten oder Analyse-Ergebnissen basieren einem Leser verständlich zu erklären, wird immer schwerer, da die erhobenen Daten zunehmend umfangreicher werden. Mit Infografiken könnt ihr diesen Umstand kompensieren, indem die wichtigsten Informationen hervorgehoben werden und alle Eckdaten grafisch aufbereitet werden, um direkt ins Auge zu fallen.

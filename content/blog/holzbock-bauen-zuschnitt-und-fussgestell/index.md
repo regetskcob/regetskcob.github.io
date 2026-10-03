@@ -1,27 +1,21 @@
 ---
 title: "🔨 | Holzbock bauen - Zuschnitt und Fußgestell"
 date: 2017-06-19T09:15:00+0000
-lastmod: 2026-10-02T06:52:46+0000
 summary: "Der erste Bautag an den Holzböcken: Zuschnitt in der Garage, eine Kappsäge mit mäßiger Absaugung, das Fußgestell und die ersten Zapfenlöcher."
 cover: ./cover.jpg
 coverAlt: "Der Laptop zeigt die Maße der Holzböcke in SketchUp, aufgestellt auf der Werkbank in der Garage"
 series: "Holzbock bauen"
 seriesLabel: "Teil III: Zuschnitt und Fußgestell"
 tags: ["DIY"]
-draft: true
 ---
-
-<!-- Das Video des Originalbeitrags fehlt im Backup. -->
 
 Heute war wie gestern bereits angekündigt der erste Tag, an dem ich praktisch an den Holzböcken arbeiten konnte. Zuvor bestand meine Arbeit an dem Projekt ja überwiegend aus Blättern, dem Geodreieck und anschließenden Abenden vor SketchUp.
 
-Zu allererst galt es die elterliche Garage zur Werkstatt zu transformieren. Aus zwei Klapp-Böcken und meiner Zukünftigen MDF-Tischplatte wurde kurzerhand ein Kappungen-Stand, der WABECO Bohrständer wurde um einen Schraubstock ergänzt und das Material grob zurechtgelegt. Außerdem fand der Laptop seinen Platz auf der Werkbank, da ich in SketchUp bereits alle Maßangaben vorbereitet habe, aber keine Lust auf Papierkrieg hatte.
+Zu allererst galt es die elterliche Garage zur Werkstatt zu transformieren. Aus zwei Klapp-Böcken und meiner zukünftigen MDF-Tischplatte wurde kurzerhand ein Kappungen-Stand, der WABECO Bohrständer wurde um einen Schraubstock ergänzt und das Material grob zurechtgelegt. Außerdem fand der Laptop seinen Platz auf der Werkbank, da ich in SketchUp bereits alle Maßangaben vorbereitet habe, aber keine Lust auf Papierkrieg hatte.
 
 Danach ging es an den Zuschnitt aller benötigten Teile. Die Maße dafür hatte ich wie gesagt in Form meines MacBooks und SketchUp dabei. Je nach Bestandteil, den ich zugeschnitten habe, habe ich entsprechende Layer ein und ausgeblendet, um immer nur das zu sehen, was im Fokus sein soll.
 
-Dazu habe ich euch außerdem eine kurze Videosequenz unserer Metabo Kappsäge (GKS 216 M) eingeblendet, welche wir an einem Was Staubsauger betrieben haben. Leider mit wenig erfolg, wie folgende Bilder zeigen.
-
-Hier besagte Bilder zur eher enttäuschenden Absaugwirkung. Aufgefallen ist mir, dass es besonders bei den Winkelschnitten außerhalb des 0° – 15° Bereichs dazu kommt, dass die Absaugung der Säge weniger gut funktioniert. Bei geraden Schnitten werden grob geschätzt bis zu 70% abgesaugt. Ob es auch an unserem Sauger liegt, mag ich nicht abstreiten.
+Unsere Metabo Kappsäge (GKS 216 M) haben wir dabei an einem Staubsauger betrieben, leider mit wenig Erfolg. Aufgefallen ist mir, dass es besonders bei den Winkelschnitten außerhalb des 0° – 15° Bereichs dazu kommt, dass die Absaugung der Säge weniger gut funktioniert. Bei geraden Schnitten werden grob geschätzt bis zu 70% abgesaugt. Ob es auch an unserem Sauger liegt, mag ich nicht abstreiten.
 
 ### Fußgestell
 

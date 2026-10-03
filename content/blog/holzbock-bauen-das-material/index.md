@@ -1,7 +1,6 @@
 ---
 title: "🔨 | Holzbock bauen - Das Material"
 date: 2017-06-13T08:07:00+0000
-lastmod: 2026-10-02T06:52:46+0000
 summary: "Welches Holz, welche Schrauben und welche Rollen die beiden Holzböcke brauchen und warum ich nicht alles beim Händler vor Ort bekam."
 cover: ./cover.jpg
 coverAI: true
@@ -9,12 +8,9 @@ coverAlt: "KI-generierte Grafik: Ein Stapel Kanthölzer, daneben eine Lochplatte
 series: "Holzbock bauen"
 seriesLabel: "Teil II: Das Material"
 tags: ["DIY"]
-draft: true
 ---
 
-<!-- Bilder und Videos des Originalbeitrags fehlen im Backup. -->
-
-Ich hatte es in „Holzbock bauen - Die Idee“ zwar schon kurz angerissen, aber heute möchte ich erneut im details darauf eingehen, woraus ich meine beiden Holzböcke bauen möchte.
+Ich hatte es in „Holzbock bauen - Die Idee“ zwar schon kurz angerissen, aber heute möchte ich erneut im Detail darauf eingehen, woraus ich meine beiden Holzböcke bauen möchte.
 
 Ich habe mir von einem Holzhändler ein Angebot für folgendes Material machen lassen.
 

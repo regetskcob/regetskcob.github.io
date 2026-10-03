@@ -1,14 +1,12 @@
 ---
 title: "🔨 | Holzbock bauen - Die Idee"
 date: 2017-06-09T13:52:00+0000
-lastmod: 2026-10-02T06:52:46+0000
 summary: "Ein Multifunktionstisch auf zwei fahrbaren Holzböcken, der in einen kleinen Kellerraum passt: Konzept, grobe Planung und Materialliste."
 cover: ./cover.jpg
 coverAlt: "SketchUp-Entwurf des Multifunktionstisches: zwei Holzböcke tragen eine Lochplatte als Tischplatte"
 series: "Holzbock bauen"
 seriesLabel: "Teil I: Die Idee"
 tags: ["DIY"]
-draft: true
 ---
 
 Dass ein 3,00 x 3,00 Meter großer Kellerraum nicht gerade viel Platz bietet, muss ich vermutlich nicht weiter erklären. Meine Antwort darauf ist ein Konzept eines Multifunktionstisches, der auf zwei Holzböcken basiert, um diesen möglichst Platzsparend zu lagern, wenn er gerade nicht benötigt wird. Um besagte Holzböcke geht es in dieser Artikelreihe.
@@ -30,4 +28,4 @@ Zu guter letzt wird eine Verstärkung aus zwei weiteren Kanthölzern eine starre
 ![Seitenansicht des Holzbocks als technische Zeichnung mit Fußbalken und Mittelstrebe](./sketchup-seitenansicht.jpg)
 {{< /images >}}
 
-Mehr Details und vielleicht auch schon erste Bilder vom Material folgen im nächsten Beitrag.
+Mehr Details zum Material folgen im nächsten Beitrag.
