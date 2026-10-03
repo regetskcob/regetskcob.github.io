@@ -2,10 +2,7 @@
 title: 📚 | Home Assistant - Das umfassende Handbuch
 date: 2025-01-08T15:27:00+0000
 lastmod: 2025-01-24T08:38:42+0000
-summary: '"Home Assistant – Das umfassende Handbuch" von Udo Brandes, erschienen
-  im Rheinwerk Verlag in der 2., aktualisierten und erweiterten Auflage 2024, ist
-  ein detaillierter Leitfaden für den Aufbau eines individuellen Smart Homes mit Home
-  Assistant.'
+summary: "Udo Brandes begleitet vom ersten Start über Automatisierungen und Dashboards bis zu ESPHome und Node-RED. Neu in der 2. Auflage sind ein Ausblick auf Matter und die Installation von Home Assistant auf Proxmox."
 cover: ./IMG_4480.jpeg
 coverAlt: "Das Buch „Home Assistant“ von Udo Brandes in der zweiten Auflage auf einem Holztisch"
 aliases: ["/posts/home-assistant-das-umfassende-handbuch/"]

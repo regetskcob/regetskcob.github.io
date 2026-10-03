@@ -1,7 +1,7 @@
 ---
 title: "📚 | SmartHome Hacks"
 date: "2025-07-15T00:40:04-07:00"
-summary: "SmartHomes oder intelligente Häuser sind in aller Munde. Doch wie mache ich aus meinem öden Haus – womöglich aus den 70er oder 80er Jahren oder älter – nun ein smartes Haus?"
+summary: "Peter A. Henning zeigt mit Raspberry Pi, FHEM und Elektronikbauteilen, wie sich ein bestehendes Haus Schritt für Schritt smart machen lässt: von rechtlichen Fallstricken über Lichtsteuerung bis zur Verbrauchsmessung."
 cover: ./cover.jpg
 coverCredit: "Cover: O’Reilly"
 coverAlt: "Buchcover von „SmartHome Hacks – Hausautomatisierung selber machen“ von Peter A. Henning, mit Kacheln für Wetter, Temperatur und ein Haus, auf hellem Grund"

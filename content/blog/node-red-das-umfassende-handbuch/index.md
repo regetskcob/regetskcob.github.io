@@ -2,9 +2,7 @@
 title: 📚 | Node-RED - Das umfassende Handbuch
 date: 2024-12-28T12:25:51+0000
 lastmod: 2025-01-06T14:09:53+0000
-summary: Von der Installation, die Administration und die Grundlagen des Editors,
-  über das Erstellen und Verwalten von Dashboards bis hin zu JavaScript, MQTT und
-  Mikrocontroller. Der Begriff „umfassend“ ist absolut ernst zu nehmen.
+summary: "Udo Brandes führt durch Node-RED: von der Installation über Flows, Dashboards und MQTT bis zu eigenen Nodes und Mikrocontrollern. Das „umfassend“ im Titel ist ernst gemeint."
 cover: ./IMG_4265.jpeg
 coverAlt: "Das Buch „Node-RED“ von Udo Brandes auf einem Holztisch"
 aliases: ["/posts/node-red-das-umfassende-handbuch/"]

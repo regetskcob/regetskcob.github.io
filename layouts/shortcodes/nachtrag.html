@@ -1,0 +1,16 @@
+{{- /*
+  A later addition to an old post: the text I would write differently today, or
+  what has happened since. Used in a post as
+    {{< nachtrag 2024 >}}
+    Text, with **Markdown** and several paragraphs.
+    {{< /nachtrag >}}
+  The year is optional ("Nachtrag" alone, without it). {{< nachtrag label="Hinweis" >}}
+  sets another heading for a note that is no addition from later. A pale blue card with
+  a stripe on the left and a bold heading like the transparency box, the colours of "kürzlich
+  aktualisiert", so it reads as a note on the post and not as part of the
+  original text. Styled in custom.css (.nachtrag).
+*/ -}}
+<aside class="nachtrag">
+  <p class="nachtrag-label">{{ with .Get "label" }}{{ . }}{{ else }}Nachtrag{{ with .Get 0 }} von {{ . }}{{ end }}{{ end }}</p>
+  {{- .Inner | .Page.RenderString (dict "display" "block") -}}
+</aside>

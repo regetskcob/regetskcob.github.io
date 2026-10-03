@@ -6,9 +6,11 @@
 :root {
   --note-green-bg: light-dark(rgb(232, 243, 232), rgb(31, 64, 42));
   --note-green-border: light-dark(rgb(190, 217, 192), rgb(62, 110, 78));
+  --note-green-stripe: light-dark(rgb(86, 156, 98), rgb(104, 176, 118));
   /* The pale blue of the label "kürzlich aktualisiert". */
   --note-blue-bg: light-dark(rgb(228, 238, 249), rgb(30, 49, 77));
   --note-blue-border: light-dark(rgb(183, 205, 232), rgb(63, 98, 148));
+  --note-blue-stripe: light-dark(rgb(74, 126, 196), rgb(110, 160, 225));
 }
 
 /* The theme's grey for secondary text (summary, date, tags, notes) is
@@ -1448,6 +1450,7 @@ figure a[data-lightbox] {
   margin-top: 2.5rem;
   background: var(--note-green-bg);
   border: 1px solid var(--note-green-border);
+  border-left: 4px solid var(--note-green-stripe);
   padding: 0.8rem 1rem;
   border-radius: 6px;
   font-size: 0.95em;
@@ -1467,6 +1470,34 @@ figure a[data-lightbox] {
   padding-top: 1.2rem;
   border-top: 1px solid var(--code-border);
   color: var(--content-secondary);
+}
+
+/* A later addition to an old post (shortcodes/nachtrag.html): a pale blue card
+   with a stripe on the left, the colours of "kürzlich aktualisiert", built like
+   the green transparency box (same heading, padding, stripe) so it stands out
+   from the original text. */
+.nachtrag {
+  margin: 2rem 0;
+  padding: 0.8rem 1rem;
+  background: var(--note-blue-bg);
+  border: 1px solid var(--note-blue-border);
+  border-left: 4px solid var(--note-blue-stripe);
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.nachtrag > :last-child {
+  margin-bottom: 0;
+}
+
+.nachtrag p {
+  margin: 0 0 0.8rem;
+}
+
+.nachtrag .nachtrag-label {
+  margin: 0 0 0.2rem;
+  font-weight: bold;
+  color: var(--content-primary);
 }
 
 /* --- Basics above the recipes --- */

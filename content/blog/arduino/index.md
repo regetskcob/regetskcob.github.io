@@ -1,7 +1,7 @@
 ---
 title: "📚 | Arduino - Ein Einstieg"
 date: "2025-06-18T00:40:04-07:00"
-summary: "Als Leser dieses Blogs unterstelle ich einfach mal, dass ihr durchaus interessiert an aktuellen Themen wie SmartHome, Swift oder IoT seid. Um letzteres Thema kümmert sich das Buch, welches ich euch heute vorstellen möchte."
+summary: "Repost aus 2019, aus einem alten Backup gerettet: Benjamin Kappels Arduino-Buch als Einstieg ins Thema IoT."
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein aufgeschlagenes Buch mit Textzeilen und dem Schaltzeichen einer LED, darauf ein Arduino-Board, das über zwei Kabel mit einem Steckbrett verbunden ist, auf dem eine rote LED leuchtet"
@@ -11,8 +11,6 @@ disclosure:
   by: "vom Rheinwerk Verlag"
 tags: ["Bücher", "Smarthome"]
 ---
-
-> Das ist ein Repost aus 2019, ich habe ihn aus einem alten Backup gerettet. 
 
 Benjamin Kappel führt euch Stück für Stück an den Arduino und die damit verbundenen Kenntnisse der Elektrotechnik heran und erklärt spielerisch Themen, welche meine Lehrer mir so nie hätten vermitteln können.
 

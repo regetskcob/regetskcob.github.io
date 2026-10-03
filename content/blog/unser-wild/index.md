@@ -2,10 +2,7 @@
 title: 📚 | Unser Wild
 date: 2025-01-10T12:10:12+0000
 lastmod: 2025-01-10T12:12:05+0000
-summary: „Wer dieses Buch gelesen und die Porträts unserer wilden Mitbewohner
-  gesehen hat, wird schnell von der Erkenntnis heimgesucht, dass wir dem großen Schatz,
-  den uns die Natur hier anvertraut hat, mit Rücksicht, Bewunderung und Respekt begegnen
-  sollen.“
+summary: "Wildtierkunde zu 15 Wildarten Österreichs, mit Texten von Werner Meisinger und Fotos von Christoph Burgstaller. Das Wissen lässt sich fast eins zu eins auf Deutschland übertragen, dazu kommen Mahnungen zu Tourismus und Konsum."
 cover: ./DSCF4594.jpeg
 coverAlt: "Das Buch „Unser Wild“ mit Hirschsilhouetten auf dem Umschlag, daneben weiße Hortensienblüten"
 aliases: ["/posts/unser-wild/"]

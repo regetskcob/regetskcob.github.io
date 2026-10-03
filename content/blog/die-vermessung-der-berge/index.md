@@ -2,7 +2,7 @@
 title: "📚 | Die Vermessung der Berge"
 date: "2026-09-30T20:00:00+02:00"
 lastmod: "2026-10-03T08:00:00+0000"
-summary: "Ein Buch, das meinen Blick über die Gipfel hinaus auf die ganze Landschaft gelenkt hat."
+summary: "Blandine Pluchet versteht Berge als Landschaft mit Geschichte, geprägt von Geologie, Klima, Vegetation und Nutzung. Ein Buch, das beim Fotografieren neue Fragen an Hänge, Wälder und Übergänge weckt."
 cover: ./cover.jpg
 coverAlt: "Das Buch „Die Vermessung der Berge“ von Blandine Pluchet steht aufrecht vor einer Allgäuer Landschaft: dahinter ein Hof auf einer Wiese, dunkle Berge mit Schneeresten und Wolken, oben ragt ein rosa Lesebändchen heraus"
 disclosure:

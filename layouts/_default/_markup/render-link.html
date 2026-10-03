@@ -1,0 +1,13 @@
+{{- /*
+  Link render hook: links to other sites open in a new tab, so the post stays
+  open behind them. Links within this site (relative, or on the site's own
+  host), anchors and mailto: keep their default behaviour. "noopener" keeps the
+  new tab from reaching back into the page; no "noreferrer", so the sites I
+  link to can still see where their visitors come from.
+*/ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $external := and $u.IsAbs (in (slice "http" "https") $u.Scheme) (ne $u.Host (urls.Parse site.BaseURL).Host) -}}
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- if $external }} target="_blank" rel="noopener"{{ end -}}
+>{{ .Text | safeHTML }}</a>

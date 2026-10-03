@@ -1,7 +1,7 @@
 ---
 title: "👨‍🎓 | Die Abschlussprüfung als Fachinformatiker"
 date: 2023-01-02T05:00:00+0000
-lastmod: 2026-09-29T14:00:00+0000
+lastmod: 2026-10-03T09:12:11+0000
 summary: "Im letzten Teil der Serie geht es um die Abschlussprüfung mit schriftlichem Teil, Projektdokumentation und Präsentation, und darum, wie ihr sie meistert."
 cover: ./cover.jpg
 coverAI: true
@@ -35,10 +35,6 @@ Es warten besonders Aufgaben zu euren Kernkompetenzen, zu wirtschaftlichen und s
 **Projektdokumentation**
 
 Meine Projektdokumentation wurde im Juni 2015 mit 99,x % bewertet, nachdem ich zusammen mit einem weiteren Auszubildenden der Firma, meinem Ausbilder und unserem Chef bei der IHK vorsprechen musste. Besagter Azubi hatte Teile meiner Dokumentation kopiert und nur sehr unsauber oder gar nicht umgeschrieben.
-
-**In diesem Zusammenhang lesenswert**
-
-> Mein [Artikel über den Täuschungsverdacht in Bezug auf meine Projektdokumentation (Wayback Machine)](https://web.archive.org/web/20160724052203/http://werd-fachinformatiker.de/verdacht-auf-taeuschungsversuch-was-nun/4803/). Der Verdacht stellte sich nach der Untersuchung durch die IHK als unbegründet heraus, da ein Mit-Azubi in der Firma von mir abgeschrieben hatte und der Verdacht damit ihm zur Last fiel.
 
 **Mündliche Prüfung**
 

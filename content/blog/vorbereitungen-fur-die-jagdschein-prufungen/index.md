@@ -1,7 +1,7 @@
 ---
 title: "🦌 | Vorbereitungen für die Jagdschein-Prüfungen"
 date: 2024-11-17T16:41:47+0000
-lastmod: 2026-10-03T10:00:00+0000
+lastmod: 2026-10-03T09:12:17+0000
 summary: "Wie ich mich mit Kurs, Büchern, App und Videos auf die Jagdschein-Prüfungen vorbereitet habe und was ich künftigen Jungjägern empfehle."
 cover: ./cover.jpg
 coverAlt: "Lehrbücher, Karteikarten und Prüfungsfragen zur Jägerprüfung, ausgebreitet auf einem Tisch"

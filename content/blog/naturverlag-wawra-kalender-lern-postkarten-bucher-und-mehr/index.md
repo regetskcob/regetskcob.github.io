@@ -45,7 +45,9 @@ Einlaminiert ergeben sie die perfekten Platz-Deckchen, um Kindern die Natur auch
 
 Wiederrum noch mehr Details finden sich im Naturbuch. Hier werden insbesondere Zusammenhängen zwischen Wild- und Pflanzenarten erläutert, allgemein wird noch tiefer auf die Natur eingegangen.
 
-> 💡 Ich habe vom Verlag die Info bekommen, dass angedacht ist noch einen weiteren Band des Naturbuches zu veröffentlichen, welcher insbesondere die Pflanzenwelt näher behandeln wird.
+{{< nachtrag label="Hinweis" >}}
+Ich habe vom Verlag die Info bekommen, dass angedacht ist noch einen weiteren Band des Naturbuches zu veröffentlichen, welcher insbesondere die Pflanzenwelt näher behandeln wird.
+{{< /nachtrag >}}
 
 ![Wawra’s Naturfächer „Wer hat am Zapfen gezupft?“, aufgefächert auf einem Holztisch](./img_4433.jpg)
 

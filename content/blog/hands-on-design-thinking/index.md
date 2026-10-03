@@ -2,10 +2,7 @@
 title: 📚 | Hands on Design Thinking
 date: 2020-06-13T15:13:42+0000
 lastmod: 2025-01-06T14:01:30+0000
-summary: Das Buch „Hands on Design Thinking“ hat es sich zum Ziel gesetzt, Leser:innen
-  - ohne viel "Schi-Schi" und umso mehr Bezug zur Praxis - an die Methode heran zu
-  führen und im Verlauf des Buches darauf vorzubereiten, Design Thinking in der Praxis
-  einzusetzen.
+summary: "Glitza, Hamburger und Metzger führen praxisnah in Design Thinking ein: sechs Phasen und ein Baukasten voller Werkzeuge, die sich flexibel an die eigene Situation im Unternehmen anpassen lassen."
 cover: ./cover-hands-on-design-thinking.jpg
 coverAlt: "Schwarzweißbild: Das Buch „Hands on Design Thinking“ mit gezeichneten Karteikarten auf dem Umschlag, über einer Siedlung in die Höhe gehalten"
 aliases: ["/posts/hands-on-design-thinking/"]

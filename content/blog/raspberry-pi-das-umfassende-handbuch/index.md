@@ -2,9 +2,7 @@
 title: 📚 | Raspberry Pi - Das umfassende Handbuch
 date: 2025-01-01T21:23:08+0000
 lastmod: 2025-01-06T14:08:50+0000
-summary: Das deutschsprachige Referenzwerk, aktualisiert in der 8. Auflage, für
-  den Raspberry Pi 5. Mit dem Autorenteam aus Michael Kofler, Charly Kühnast und Christoph
-  Scherbeck steht geballte Kompetenz hinter dem Buch.
+summary: "Das Referenzwerk von Kofler, Kühnast und Scherbeck liegt in der 8. Auflage vor und berücksichtigt jetzt den Raspberry Pi 5, den Zero 2 und den Pico W."
 cover: ./IMG_4275.jpeg
 coverAlt: "Das Buch „Raspberry Pi“ von Kofler, Kühnast und Scherbeck auf einem Holztisch"
 aliases: ["/posts/raspberry-pi-das-umfassende-handbuch/"]

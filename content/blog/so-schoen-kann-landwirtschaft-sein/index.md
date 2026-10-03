@@ -2,7 +2,7 @@
 title: "📚 | So schön kann Landwirtschaft sein"
 date: "2026-05-17T18:52:42+02:00"
 lastmod: "2026-10-03T08:00:00+0000"
-summary: "Ein Allgäuer Buch über Landwirtschaft, das den Blick darauf verändert, was eigentlich Landschaft ist."
+summary: "Ernst Wirthensohn zeigt am Allgäuer Modell „VonHier“, wie Landwirtschaft die Landschaft prägt. Das Buch hat meinen Blick darauf verändert, was eigentlich Landschaft ist."
 cover: ./cover.jpg
 coverAlt: "Das Buch „So schön kann Landwirtschaft sein – VonHier, ein Allgäuer Modell für die Regionen Europas“ wird vor einem Balkonblick ins Allgäu gehalten: auf dem Cover Kühe auf einer Weide vor einer Kapelle und dunklen Bergen, dahinter eine grüne Wiese, ein Hof und schneebedeckte Gipfel"
 tags: ["Bücher", "Natur"]

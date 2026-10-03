@@ -80,6 +80,12 @@ hugo.toml         Zentrale Konfiguration
 Das Theme bleibt unangetastet; Anpassungen liegen als Overrides in `layouts/` und
 gewinnen gegenüber der gleichnamigen Datei im Theme.
 
+- **`layouts/_default/_markup/render-link.html`** — Links in Beiträgen auf andere Seiten öffnen in einem
+  neuen Tab (`target="_blank" rel="noopener"`). Links innerhalb der Seite, Anker und `mailto:` bleiben unverändert.
+
+- **`layouts/shortcodes/nachtrag.html`** — blauer Kasten für Nachträge in alten Beiträgen:
+  `{{< nachtrag 2024 >}} … {{< /nachtrag >}}` (Kopf „Nachtrag von 2024“). Mit `label="Hinweis"`
+  statt des Jahres bekommt der Kasten eine andere Überschrift.
 - **`layouts/_default/_markup/render-image.html`** — ersetzt den Bild-Render-Hook des
   Themes, der Originale unverändert ausliefert. Stattdessen entstehen WebP-Varianten
   in 480/800/1200/1600 px inklusive `srcset`/`sizes`. Das DOM und die Klassen des

@@ -2,7 +2,7 @@
 title: "📚 | Schluss mit Prokrastination"
 date: 2017-05-09T08:38:50+0000
 lastmod: 2026-10-02T06:41:45+0000
-summary: "Wie man aufhört zu verschieben und anfängt zu leben: ein Ratgeber mit Übungen gegen das ständige Aufschieben."
+summary: "Petr Ludwig erklärt, warum wir Dinge aufschieben, und gibt Übungen mit, um ins Machen zu kommen."
 cover: ./cover.jpg
 coverAlt: "Cover des Buches „Schluss mit Prokrastination“ mit rot-schwarzem Schriftzug"
 coverCredit: "Cover: Redline Verlag"

@@ -2,10 +2,7 @@
 title: 📚 | Facilitation
 date: 2023-06-09T14:00:00+0000
 lastmod: 2025-01-06T13:34:59+0000
-summary: Dieses Buch ist eine inspirierende Lektüre für die Mittagspause oder
-  den Feierabend, könnte aber auch während der Arbeit gelesen werden. Die Illustrationen
-  sind liebevoll gestaltet und perfekt auf den Inhalt zugeschnitten, sodass markante
-  Informationen einprägsam visualisiert werden.
+summary: "Facilitation war mir lange fremd, und die 400 Seiten haben mich erst abgeschreckt. Dann haben mich die liebevollen Illustrationen und die Methoden überzeugt. Für meine Arbeit als Teamlead gab es einiges zum Mitnehmen."
 cover: ./0d50659d-0654-4e21-81c4-f4b198c50155-5122-000006fda7f8b295_file.jpg
 coverAlt: "Das Buch „Facilitation“ mit weißem Umschlag und bunter Kritzelzeichnung auf einem Holztisch"
 aliases: ["/posts/facilitation/"]

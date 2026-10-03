@@ -2,8 +2,7 @@
 title: 📚 | Freiheit & Verantwortung für intelligente Organisationen
 date: 2020-04-21T08:18:00+0000
 lastmod: 2024-11-17T16:54:13+0000
-summary: Mark Lambertz schreibt in seinem Buch darüber, was es bedarf
-  um Unternehmen, im Sinne von lebensfähigen Systeme, aufzustellen.
+summary: "Mark Lambertz beschreibt, wie sich Unternehmen als lebensfähige Systeme aufstellen lassen, in denen Wissensarbeiter Freiheit und Verantwortung wirklich leben können."
 cover: ./dscf2973.jpeg
 coverAlt: "Das Buch „Freiheit & Verantwortung für intelligente Organisationen“ mit bunten Markierungsreitern, vor blauem Himmel über einer Siedlung in die Höhe gehalten"
 aliases: ["/posts/freiheit-verantwortung-fuer-intelligente-organisationen/"]

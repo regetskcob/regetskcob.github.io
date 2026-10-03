@@ -2,10 +2,7 @@
 title: 📚 | Wild, Wald, Genuss - Vom Kochen und Jagen
 date: 2025-01-01T21:55:35+0000
 lastmod: 2025-01-06T14:03:55+0000
-summary: Dieses Buch ist eine Hommage an den Wald und die Natur! Mitten in der
-  wunderschönen Landschaft des Hunsrück hat Spitzenkoch und Jäger Harald Rüssel in
-  Rezepten, Bildern und Texten festgehalten, was seine Küche so kostbar und authentisch
-  macht.
+summary: "Harald Rüssel verbindet Wildrezepte mit Wissen über Natur, Kräuter und Brauchtum und wirbt für einen bewussteren Umgang mit Fleisch. Ein Kochbuch aus dem Hunsrück, das Lust auf Wild und vielleicht auch auf die Jagd macht."
 cover: ./IMG_4276.jpeg
 coverAlt: "Das Buch „Wild, Wald, Genuss“ von Harald Rüssel auf einem Holztisch"
 aliases: ["/posts/wild-wald-genuss-vom-kochen-und-jagen/"]
@@ -22,9 +19,9 @@ Im folgenden werde ich auf das „Beiwerk“ um die Rezepte herum eingehen, da i
 
 Das Buch beginnt mit einer Ode an das Wildfleisch, an die Qualität der Produkte, die wir Jägerinnern und Jäger erzeugen. Zusammen mit einer Ermahnung an die heutige Gesellschaft, die nach „Geiz ist Geil“-Mentalität ihre Lebensmittel kauft und sich von der Haltung, dem Transport und der Herstellung völlig entfremdet. Wichtige Worte, die ich in dieser Form noch in keinem Kochbuch gesehen habe.
 
-💡
-
-****„**** Früher war es selbstverständlich, dass Fleisch als wertvolles Gut nicht jeden Tag auf den Tisch kam. Die natürliche Verfügbarkeit bestimmte den Speisezettel. Wir täten gut daran, wenn wir uns wieder mehr darauf besinnen würden, was uns die Natur zur jeweiligen Saison schenkt.****“****
+> „Früher war es selbstverständlich, dass Fleisch als wertvolles Gut nicht jeden Tag auf den Tisch kam. Die natürliche Verfügbarkeit bestimmte den Speisezettel. Wir täten gut daran, wenn wir uns wieder mehr darauf besinnen würden, was uns die Natur zur jeweiligen Saison schenkt.“  
+>   
+> Aus dem Buch
 
 Im Anschluss thematisiert Rüssel kurz und knapp das sog. "Hundewesen". Ein Thema, das bei keinem jagenden zu kurz kommen sollte. Er bringt sehr prägnant die Entscheidungswege und Gründe auf den Punkt. Was muss ich mir überlegen, bei der Wahl der Jagdhunderasse? Welche Rasse ist worauf spezialisiert? 
 

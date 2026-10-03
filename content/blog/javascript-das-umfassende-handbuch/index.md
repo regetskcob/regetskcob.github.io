@@ -2,8 +2,7 @@
 title: 📚 | JavaScript - Das umfassende Handbuch
 date: 2023-01-30T13:00:00+0000
 lastmod: 2025-01-06T13:38:08+0000
-summary: Umfassendes Wissen auf über 1250 Seiten. Muss man dazu noch viel sagen?
-  Eigentlich nicht, einfach so stehen lassen möchte ich es aber auch nicht. 😊
+summary: "Philip Ackermanns Rundumschlag zu JavaScript, von der Geschichte über APIs bis zu Node.js, Mikrocontrollern und einem professionellen Entwicklungsprozess mit Git und Tests. Klare Kaufempfehlung."
 cover: ./img_5225.jpg
 coverAlt: "Das Buch „JavaScript“ von Philip Ackermann in der dritten Auflage auf grauem Steinboden"
 aliases: ["/posts/javascript-das-umfassende-handbuch/"]

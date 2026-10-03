@@ -2,7 +2,7 @@
 title: 📚 | Die entfaltete Organisation
 date: 2023-05-01T19:42:35+0000
 lastmod: 2025-01-12T14:12:28+0000
-summary: Mit Inner Work die Zukunft gestalten.
+summary: "Frédéric Laloux beschreibt Organisationen, die auf Selbstführung und einen evolutionären Sinn setzen statt auf Hierarchie. Ich fasse die Kernbotschaften seines Buches zusammen."
 cover: ./img_6213.jpg
 coverAlt: "Das Buch „Die entfaltete Organisation“ mit weißem Umschlag und bunten Formen auf einem Holztisch"
 aliases: ["/posts/die-entfaltete-organisation/"]

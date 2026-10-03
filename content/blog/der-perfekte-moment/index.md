@@ -1,7 +1,7 @@
 ---
 title: "📸 | Der perfekte Moment"
 date: 2020-04-13T11:45:27+0000
-lastmod: 2026-10-03T11:00:00+0000
+lastmod: 2026-10-03T09:12:17+0000
 summary: "Dieselbe Brücke über die Niers, zweimal fotografiert: im goldenen Nebel und Monate später klar und ruhig."
 cover: ./cover.jpg
 coverAlt: "Die Sonne steht tief über der Niers, über dem Wasser liegt Nebel, ein Vogel fliegt vor den Bäumen"

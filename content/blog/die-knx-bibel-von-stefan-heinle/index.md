@@ -1,8 +1,8 @@
 ---
 title: 📚 + ⚡️ | Die "KNX Bibel" von Stefan Heinle
 date: 2017-05-02T19:04:00+0000
-lastmod: 2024-12-29T18:57:03+0000
-summary: Original-Rezension von 2017, ergänzt und aktualisiert im Dezember 2024.
+lastmod: 2026-10-03T09:12:11+0000
+summary: "Mit knapp 22 habe ich Stefan Heinles KNX-Handbuch gelesen, lange vor dem Hausbau. 2024 ergänze ich, was sich beim Bauen ausgezahlt hat, was die neue Auflage anders macht und warum 1-Wire bei uns nie eingeplant wurde."
 cover: ./IMG_4274.jpeg
 coverAlt: "Das Buch „Heimautomation mit KNX, DALI, 1-Wire und Co.“ von Stefan Heinle auf einem Holztisch"
 aliases: ["/posts/die-knx-bibel-von-stefan-heinle/"]
@@ -19,10 +19,9 @@ tags: ["Bücher", "Smarthome"]
 
 Unter diesem Gesichtspunkt habe ich mir vorgenommen das Buch zu lesen und so viel Wissen wie möglich aufzusaugen. Zwar ist ein Hausbau aktuell noch nicht in Sicht (mit knapp 22 Jahren vielleicht ein wenig früh..) und dennoch. Wieso nicht schon jetzt das Wissen erlangen, das man später gebrauchen kann?
 
-💡
-
-****Nachtrag von 2024****  
+{{< nachtrag 2024 >}}
 Es hat sich definitiv wortwörtlich bezahlt gemacht, dass ich mich bereits so früh mit der Elektroinstallation und KNX beschäftigt habe. Als unser Hausbau im Jahr 2021 begann, war die Installation bereits durchgeplant, die KNX Aktoren und andere Endgeräte parametriert und Leitungspläne sowie die Reihenklemmen dokumentiert.
+{{< /nachtrag >}}
 
 Der Umfang des Buches ist der Wahnsinn. Ganz egal ob ihr Grundlagen der Elektrotechnik nachholen wollt, Schaltzeichen zu verstehen versucht oder ob ihr die Verkabelung eures KNX BUS planen mögt. Euch wird unter die Arme gegriffen. Auch Themen wie die Lichtsteuerung oder die Einrichtung eines Linux Heimservers sind Teil des Buches.
 
@@ -34,12 +33,11 @@ Viele weitere Szenarios warten in einem Kapitel weit am Anfang des Buches, welch
 
 Danach geht es ziemlich direkt los. Ihr lernt recht früh den 1Wire BUS, unzählige verschiedene Kabelarten und die typische „Einrichtung“ eines Schaltschrankes kennen. Während ihr den 1Wire BUS kennenlernt werdet ihr einen Temperatursensor mit einer beliebigen Linux Umgebung auslesen. Dazu werde ich in einem getrennten Artikel näher eingehen.
 
-💡
+{{< nachtrag 2024 >}}
+Ich fand es damals sehr fehlleitend, dass der 1-Wire-Bus so früh thematisiert wurde. Inzwischen liegt das Kapitel weit später im Buch, es wird Fokus auf elektrotechnische Grundlagen und dann Basiswissen zu KNX gelegt, bevor 1-Wire als Exot thematisiert wird.
 
-****Nachtrag von 2024****  
-Ich fand es damals sehr fehlleitend, dass der 1-Wire-Bus so früh thematisiert wurde. Inzwischen liegt das Kapitel weit später im Buch, es wird Fokus auf elektrotechnische Grundlagen und dann Basiswissen zu KNX gelegt, bevor 1-Wire als Exot thematisiert wird.  
-  
 Ich will auch ehrlich sein, ich habe 1-Wire beim Hausbau nie eingeplant und vermisse es bis heute nicht. Zigbee, Matter und andere Dienste (bspw. auch Sensor-Zentralen wie der ioBroker) sind da deutlich moderner und nachhaltiger, als ein weiterer Kabel-Bus.
+{{< /nachtrag >}}
 
 Im Anschluss daran erfahrt ihr Grundlagen der Elektrotechnik in Form von den entsprechenden Installationsebenen, den unterschiedlichen Schaltungen (OR, XOR, NOR, AND, Flip-Flop uvm.). Zusätzlich gibt es Einführungen ist Regelkreise mit stetigen oder schaltenden Regeln, oder auch Hysteresen. Details dazu könnt ihr euch ja selber im Buch anlesen. 🙂
 
@@ -61,10 +59,14 @@ Danach geht es wie bereits geschrieben unter vielem anderem noch an diese Themen
 
 ## Webseite
 
-[Hier](https://www.heimautomation-buch.de) findet ihr außerdem die Webseite zum Buch. In der ersten Auflage warb Autor Stefan Heinle damit, regelmäßige Ergänzungen oder weitergehende Inhalte bereitstellen zu wollen, schnell entwickelte sich die Seite leider eher zu einer „Einladung“ für die Beratungsanfrage. Inzwischen vergrößern sich auch die Update-Zyklen für das Buch, Neues wird erst nach einer halben Ewigkeit (in der Technikwelt leider fatal!) ergänzt.
+Zum Buch gibt es auch eine eigene Webseite: [heimautomation-buch.de](https://www.heimautomation-buch.de).
 
 ## Fazit
 
 Auch wenn ich sicher noch lange Zeit in diesem Buch verbringen werde, um das ganze Wissen aufzunehmen, kann ich es bereits jetzt nur empfehlen. Natürlich nur, wenn ihr technisch interessiert, nicht völlig auf den Kopf gefallen seid und vor allem, wenn ihr irgendwann plant euer Haus ’smart zu machen‘ oder direkt zu bauen.
+
+{{< nachtrag 2026 >}}
+In der ersten Auflage hatte der Autor angekündigt, auf der Webseite zum Buch regelmäßig Ergänzungen und weiterführende Inhalte bereitzustellen. Inzwischen liegt dort der Schwerpunkt auf seinem Beratungsangebot, und auch das Buch selbst wird in größeren Abständen aktualisiert. Wer sich auf dem aktuellen Stand halten möchte, sollte für neue Geräte und Entwicklungen daher zusätzlich selbst recherchieren. Als Grundlage für Planung und Verständnis hat das Buch für mich nichts von seinem Wert verloren.
+{{< /nachtrag >}}
 
 Für 49,90 € bietet Stefan Heinle euch [hier](https://www.rheinwerk-verlag.de/heimautomation-mit-knx-das-umfassende-handbuch/) beim Rheinwerk Verlag ein Buch, das es im wahrsten Sinne des Wortes in sich hat. Ich wünsche bereits jetzt schon viel Spaß mit dem Buch und hoffe, dass ihr ähnlich begeistert sein werdet. 

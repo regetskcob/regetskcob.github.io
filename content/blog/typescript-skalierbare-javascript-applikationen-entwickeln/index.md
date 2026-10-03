@@ -2,10 +2,7 @@
 title: 📚 | TypeScript - Skalierbare JavaScript-Applikationen entwickeln
 date: 2025-01-22T11:40:36+0000
 lastmod: 2025-01-22T11:42:06+0000
-summary: '"Programmieren in TypeScript: Skalierbare JavaScript-Applikationen entwickeln"
-  von Boris Cherny, erschienen im dpunkt.verlag, ist ein umfassendes Werk, das sich
-  an JavaScript-Entwickler richtet, die ihre Kenntnisse erweitern und robuste, skalierbare
-  Anwendungen mit TypeScript erstellen möchten.'
+summary: "Boris Cherny führt vom Typsystem über Fehlerbehandlung und asynchrone Programme bis zur Migration bestehender JavaScript-Projekte. Für alle, die größere Anwendungen robuster und besser wartbar bauen wollen."
 cover: ./cover.jpg
 coverCredit: "Cover: O’Reilly / dpunkt.verlag"
 coverAlt: "Buchcover von „Programmieren in TypeScript“ von Boris Cherny, zwei gezeichnete Guanakos, auf hellem Grund"

@@ -1,7 +1,7 @@
 ---
 title: "📚 | Data for the People"
 date: "2024-08-22T00:40:04-07:00"
-summary: "In der folgenden Rezension möchte ich euch mit „Data for the People“ von Andreas Weigend ein Buch vorstellen, dass weniger als Fachbuch, sondern mehr als Roman durchgehen kann, der mit enormem Fachwissen aufbereitet wurde."
+summary: "Andreas Weigend erzählt in Geschichten, wofür unsere Daten genutzt werden und wie wir den Fluss der eigenen Daten besser in die Hand nehmen. Kein Fachbuch, dafür ein Anstoß, den eigenen digitalen Konsum zu hinterfragen."
 cover: ./cover.jpg
 coverCredit: "Cover: Murmann Publishers"
 coverAlt: "Buchcover von „Data for the People“ von Andreas Weigend, dunkelgraue Großbuchstaben auf leuchtendem Gelb, auf hellem Grund"
