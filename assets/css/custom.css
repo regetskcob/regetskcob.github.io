@@ -1522,6 +1522,11 @@ figure a[data-lightbox] {
   margin: 1.5rem 0;
 }
 
+.image-row--3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+}
+
 .image-row figure {
   margin: 0;
 }
@@ -1531,7 +1536,8 @@ figure a[data-lightbox] {
 }
 
 @media (max-width: 480px) {
-  .image-row {
+  .image-row,
+  .image-row--3 {
     grid-template-columns: 1fr;
   }
 }

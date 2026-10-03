@@ -1,5 +1,6 @@
 {{- /*
   Images side by side in two columns, for two images that belong together.
+  With cols=3 in three columns (a table cut into parts, for example).
   Used in a post as
     {{< images >}}
     ![Alt text](./one.jpg)
@@ -10,6 +11,6 @@
   stack. The hook's "sizes" still say one full column, so a browser may load
   the next larger variant than the half width needs.
 */ -}}
-<div class="image-row">
+<div class="image-row{{ with .Get "cols" }} image-row--{{ . }}{{ end }}">
 {{- .Inner | .Page.RenderString (dict "display" "inline") -}}
 </div>

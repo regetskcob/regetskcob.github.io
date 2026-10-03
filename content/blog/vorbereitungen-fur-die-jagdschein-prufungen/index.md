@@ -28,11 +28,11 @@ Im Laufe der Vorbereitung haben meine Partnerin und ich uns einige Hilfsmittel s
 
 Dazu kamen Steckbrief-Tabellen für Schalenwild, Raubwild sowie Hasenartige und Nager. Wir haben sie bewusst sehr hart heruntergebrochen: Pro Tierart steht nur das Wichtigste darin, von Nahrung und Lebensraum über Fortpflanzung und Gewicht bis zu Haarwechsel und Jagdzeit. Zum schnellen Wiederholen ist das Gold wert, denn in den dicken Büchern verteilt sich dasselbe Wissen auf viele Seiten. Hier seht ihr als Beispiel das Schalenwild, ein Klick auf die Bilder öffnet sie groß.
 
+{{< images cols=3 >}}
 ![Steckbrief-Tabelle zum Schalenwild, Teil 1: Wildart, Familie, Nahrung, Wildschäden, Lebensraum und Lebensweise von Rotwild bis Schwarzwild](./steckbrief-schalenwild-1-nahrung.png)
-
 ![Steckbrief-Tabelle zum Schalenwild, Teil 2: Fortpflanzung, Tragzeit, Setzzeit, Nachwuchs, Zahnentwicklung und Wildbretgewicht](./steckbrief-schalenwild-2-fortpflanzung.png)
-
 ![Steckbrief-Tabelle zum Schalenwild, Teil 3: Sommer- und Winterhaar, Abwurf- und Fegetermin, Jagdzeit, typische Jagdarten und Besonderheiten](./steckbrief-schalenwild-3-haar-jagd.png)
+{{< /images >}}
 
 ## Für künftige Jungjäger
 

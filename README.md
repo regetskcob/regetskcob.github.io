@@ -342,6 +342,9 @@ behalten ihren Alt-Text und öffnen die Lightbox:
 {{< /images >}}
 ```
 
+Mit `{{< images cols=3 >}}` stehen drei Bilder in einer Reihe, zum Beispiel eine in Teile geschnittene
+Tabelle. Inline sind sie dann klein, gelesen wird in der Lightbox.
+
 ### Drei oder mehr Bilder als Galerie
 
 Stehen in einem Beitrag drei oder mehr Bilder zusammen, kommen sie mit dem Shortcode `gallery`
