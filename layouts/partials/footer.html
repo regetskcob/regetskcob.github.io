@@ -1,0 +1,24 @@
+{{/* Copy of themes/typo/layouts/partials/footer.html with the line "footerSource" added. Diff against the theme file when updating typo. */}}
+{{ $showFooter := default true .Site.Params.showFooter }}
+{{ if $showFooter }}
+    {{/* Footer start hook */}}
+    {{ partial "functions/get_hook.html" (dict "hook" "footer_start" "context" .) }}
+
+    {{ if not .Site.Params.footerContent }}
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    {{ end }}
+    
+    {{ with .Site.Params.footerContent }}
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+
+    {{/* Added: a smaller line under the footer with the link to the source
+         (params.footerSource in hugo.toml, styled in custom.css). */}}
+    {{ with .Site.Params.footerSource }}
+    <p class="footer-source">{{ . | markdownify }}</p>
+    {{ end }}
+{{ end }}

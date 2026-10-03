@@ -84,6 +84,10 @@ footerContent = '''
 Mit ❤️ am Niederrhein gebaut mit [Hugo](https://gohugo.io) und [typo](https://github.com/tomfran/typo)
 '''
 
+# Under the footer, smaller (layouts/partials/footer.html): where the source
+# of the site lives. Markdown.
+footerSource = "Quellen unter [github.com/regetskcob/regetskcob.github.io](https://github.com/regetskcob/regetskcob.github.io)"
+
 # The theme's "back to top" text link is replaced by the floating button in
 # layouts/partials/hooks/body_end.html, which works on every page.
 hideBackToTop = true

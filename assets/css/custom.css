@@ -1735,12 +1735,23 @@ footer {
   max-height: none;
   padding: 0 var(--main-padding) 1rem;
   text-align: center;
+  /* The theme's footer is a row; the lines stand on top of each other. */
+  flex-direction: column;
 }
 
 /* Two lines, legal links above the credit line (a <br> from footerContent
    in hugo.toml); the line height gives them room. */
 footer p {
   line-height: 2.4;
+}
+
+/* The link to the source under the footer: smaller and quieter, close to
+   the credit line above it. */
+footer p.footer-source {
+  margin: 0;
+  font-size: 0.8em;
+  line-height: 1.6;
+  color: var(--content-secondary);
 }
 
 /* Impressum and Datenschutz: needed, but not what the footer is about. */
