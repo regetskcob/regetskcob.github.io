@@ -6,7 +6,7 @@ summary: "Harald Rüssel verbindet Wildrezepte mit Wissen über Natur, Kräuter 
 cover: ./IMG_4276.jpeg
 coverAlt: "Das Buch „Wild, Wald, Genuss“ von Harald Rüssel auf einem Holztisch"
 aliases: ["/posts/wild-wald-genuss-vom-kochen-und-jagen/"]
-tags: ["Bücher", "Jagd"]
+tags: ["Bücher", "Jagd", "Kochen"]
 disclosure:
   type: purchased
 ---
