@@ -214,7 +214,7 @@ html:root {
 /* --- Post list thumbnails ---
    A column on the left holds the cover image in 2:1, like the covers, then the title.
    Posts without a cover keep the column empty, so the titles line up in
-   every row. On phones the thumbnail is smaller. */
+   every row. On phones the parts stack (see below). */
 
 .post-line .line-text {
   flex: 1;
@@ -245,15 +245,61 @@ html:root {
   margin-bottom: 1rem;
 }
 
+/* On phones the row would squeeze the text into a narrow column beside the
+   thumbnail, so the parts stack: title, the labels in a row, the cover
+   across the full width, the summary. The text block gives up its own box
+   (display: contents), so its children can be ordered between the thumbnail
+   and each other; the wrapping row keeps the labels side by side. */
 @media screen and (max-width: 640px) {
   .post-line {
-    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 1.75rem;
   }
 
-  .line-thumb {
-    width: 112px;
-    height: 56px;
-    margin-right: 0.75rem;
+  .post-line .line-text {
+    display: contents;
+  }
+
+  .post-line .line-title {
+    order: 1;
+    flex: 0 0 100%;
+    /* A little smaller than the text, so a long title takes two lines
+       instead of three and the list stays easy to scan. */
+    font-size: 0.92em;
+    line-height: 1.35;
+  }
+
+  .post-line .series-label,
+  .post-line .updated-label,
+  .post-line .new-label,
+  .post-line .draft-label,
+  .post-line .soon-label {
+    order: 2;
+    margin-right: 0.4rem;
+  }
+
+  .post-line .line-thumb {
+    order: 3;
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    margin: 0.75rem 0 0.4rem;
+  }
+
+  .post-line:not(.has-thumb) .line-thumb {
+    display: none;
+  }
+
+  .post-line .line-summary {
+    order: 4;
+    flex: 0 0 100%;
+  }
+
+  .post-line .draft-open {
+    order: 5;
+    flex: 0 0 100%;
   }
 }
 
@@ -556,6 +602,18 @@ a.series-label:hover {
 
 .soon-hint {
   margin-left: 0.8rem;
+}
+
+/* On a phone the box is collapsed and there is no room for the note beside the
+   title, it would squeeze "In Arbeit" onto three lines. */
+@media screen and (max-width: 767px) {
+  .soon-hint {
+    display: none;
+  }
+
+  .soon-title {
+    white-space: nowrap;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
