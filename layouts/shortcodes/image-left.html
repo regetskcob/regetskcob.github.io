@@ -1,0 +1,15 @@
+{{- /*
+  One image floated to the left of the paragraphs that follow it, smaller than
+  the column and hanging a little into the left margin on a wide screen, so the
+  text keeps its room. Used in a post as
+    {{< image-left >}}
+    ![Alt text](./one.jpg)
+    {{< /image-left >}}
+  The image goes through the same render hook as any other (WebP variants, link
+  to the lightbox). Place it right before the paragraphs it should sit beside;
+  the next heading starts below it. On a phone it stands on its own above the
+  text (assets/css/custom.css, ".float-image").
+*/ -}}
+<div class="float-image">
+{{- .Inner | .Page.RenderString (dict "display" "inline") -}}
+</div>
