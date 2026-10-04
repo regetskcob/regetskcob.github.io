@@ -1407,6 +1407,34 @@ figure a[data-lightbox] {
   margin-top: 3.5rem;
 }
 
+/* Where a recipe I want to try comes from (not my own), under its heading. */
+.recipe-source {
+  margin: 0.2rem 0 0.8rem;
+  color: var(--content-secondary);
+}
+
+/* The block "Zum Ausprobieren" below the three recipes (layouts/_default/
+   recipes.html): set apart by a line and room above, and by a pale card behind
+   the recipes, so it reads as "not part of the set". */
+.experiments {
+  margin-top: 4rem;
+  padding: 1.6rem 1.4rem 0.4rem;
+  border: 1px dashed var(--content-secondary);
+  border-radius: 6px;
+}
+
+.experiments > h2 {
+  margin-top: 0;
+}
+
+.experiments .recipe + .recipe {
+  margin-top: 2.5rem;
+}
+
+.recipes-review {
+  margin-top: 1rem;
+}
+
 .recipe-slot {
   font-family: var(--font-mono);
   color: var(--content-secondary);

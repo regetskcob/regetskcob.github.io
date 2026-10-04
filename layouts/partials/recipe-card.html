@@ -1,0 +1,63 @@
+{{- /*
+  One recipe as a card: heading, intro, table, notes. Takes a dict with "r" (the
+  recipe from data/recipes.yaml), "bodies" (the camera names) and "level" (the
+  heading level of the card, 2 on the page itself, 3 inside the block "Zum
+  Ausprobieren"; the notes sit one level below).
+
+  A recipe table renders three columns as soon as a single row carries its own
+  values for xt30 and xt5, otherwise two columns with one shared value column.
+  A recipe without "settings" is skipped, so an unfinished block in the data
+  file does not leave a half-rendered card on the page. "source" names where a
+  recipe comes from, when it is not my own.
+*/ -}}
+{{- $r := .r }}
+{{- $bodies := .bodies }}
+{{- $level := .level }}
+{{- with $r.settings }}
+
+  {{/* First check whether any row carries per-body values. */}}
+  {{- $split := false -}}
+  {{- range $s := . -}}
+    {{- if or (isset $s "xt30") (isset $s "xt5") -}}{{- $split = true -}}{{- end -}}
+  {{- end }}
+
+<section class="recipe">
+  <h{{ $level }}>
+    {{- with $r.slot }}<span class="recipe-slot">{{ . }}</span> {{ end -}}
+    {{ $r.name -}}
+  </h{{ $level }}>
+  {{- with $r.source }}<p class="recipe-source">{{ . | markdownify }}</p>{{ end }}
+  {{- with $r.intro }}<p class="recipe-intro">{{ . }}</p>{{ end }}
+
+  <div class="table-outer">
+    <table class="recipe-table">
+      <thead>
+        <tr>
+          <th>{{ or $r.settings_title "Einstellung" }}</th>
+          {{- if $split }}
+          <th>{{ $bodies.xt30 }}</th>
+          <th>{{ $bodies.xt5 }}</th>
+          {{- else }}
+          <th>{{ if $r.source }}Wert{{ else }}{{ $bodies.shared }}{{ end }}</th>
+          {{- end }}
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $s := . }}
+        <tr>
+          <td>{{ $s.label }}</td>
+          {{- if $split }}
+          <td>{{ or $s.xt30 $s.value }}</td>
+          <td>{{ or $s.xt5 $s.value }}</td>
+          {{- else }}
+          <td>{{ $s.value }}</td>
+          {{- end }}
+        </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </div>
+
+  {{- with $r.notes }}{{ partial "recipe-notes.html" (dict "notes" . "level" (add $level 1)) }}{{ end }}
+</section>
+{{- end }}

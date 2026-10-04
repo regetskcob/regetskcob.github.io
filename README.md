@@ -69,6 +69,7 @@ assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme
 assets/js/        Lightbox (lightbox.js), Raster mit Mischen und großen Kacheln (series.js), Nach-oben-Knopf (to-top.js)
 assets/gallery/   Fotos der Galerien und der Serie, nach Motiv in Ordnern
 assets/gear/      Titelbild der Ausrüstungsseite, Blockfotos, einsatz/ (Foto-Raster „Im Einsatz“)
+assets/recipes/   Titelbild der Rezepte-Seite
 themes/typo/      Theme als Git-Submodule (nicht direkt bearbeiten)
 static/           Unverarbeitete Dateien (Favicons)
 hugo.toml         Zentrale Konfiguration
@@ -620,6 +621,29 @@ recipes:
 
 Quelle der Werte sind die Rezept- und die Settingkarte. Ändert sich etwas an
 der Kamera, wird hier gepflegt und nicht in den Rezepttabellen doppelt.
+
+**Block „Zum Ausprobieren“:** Ganz unten auf der Seite, abgesetzt durch einen gestrichelten
+Rahmen, stehen Rezepte, die ich ausprobieren möchte und die nicht von mir sind. Sie stehen in
+`data/recipes.yaml` unter `experiments` mit `title`, `intro` (Markdown) und `items`. Ein Eintrag
+hat wie ein Rezept `slot`, `name`, `settings` und `notes`, dazu `source` (Markdown): woher das
+Rezept stammt, es steht unter der Überschrift. Mit `source` heißt die Wertespalte „Wert“ statt
+„Beide Bodys“. Die Werte stehen so im Buch, die Beschriftungen wie in den eigenen Rezepten.
+Beide Arten von Rezeptkarten rendert `layouts/partials/recipe-card.html`. Im Text von
+`content/rezepte.md` führt `[Zum Ausprobieren](#zum-ausprobieren)` zum Block.
+
+**Verweis auf eine Rezension:** Im Front Matter von `content/rezepte.md` nennt `review` den Ordner
+des Beitrags (hier die Rezension des JPEG-Buchs). Ist der Beitrag veröffentlicht, steht oben auf
+der Seite eine Zeile mit dem Link; solange er ein Entwurf ist, fehlt die Zeile, denn im echten
+Build gibt es die Seite nicht (lokal mit `hugo server -D` schon). Das Titelbild der Seite
+kommt wie bei der Ausrüstungsseite aus `photo` und `photo_alt`, das Foto liegt unter
+`assets/recipes/`.
+
+**Lesezeit und „kürzlich aktualisiert“:** Wie bei der Ausrüstungsseite steht unter dem Titel
+die Lesezeit (`readTime: true`), in die die Wörter aus `data/recipes.yaml` eingerechnet sind
+(Überschriften, Einleitungen, Tabellenzeilen, Hinweise, Schlusssatz und der Block „Zum
+Ausprobieren“), und das Label „kürzlich aktualisiert“, solange `lastmod` im Front Matter
+von `content/rezepte.md` höchstens vier Wochen zurückliegt. Nach einer Änderung an den Rezepten
+`lastmod` auf das heutige Datum setzen.
 
 ### Galerie pflegen
 

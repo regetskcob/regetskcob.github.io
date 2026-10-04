@@ -2,28 +2,59 @@
   The JPEG recipes of the C slots, fed by data/recipes.yaml.
 
   Page layout: an optional cover photo with the title on it (photo, photo_alt in
-  front matter), text from content/rezepte.md, then the basics (autofocus, auto
-  ISO banks, settings that stay put), then one card per recipe. Whatever
-  applies to all three recipes sits at the top and is not repeated in the
-  recipe tables.
-
-  A recipe table renders three columns as soon as a single row carries its own
-  values for xt30 and xt5, otherwise two columns with one shared value column.
-  A recipe without "settings" is skipped, so an unfinished block in the data
-  file does not leave a half-rendered card on the page.
+  front matter), text from content/rezepte.md (and a line pointing to the
+  review of the recipe book, "review" in front matter), then the basics
+  (autofocus, auto ISO banks, settings that stay put), then one card per
+  recipe (partials/recipe-card.html) and, set apart at the end, the recipes I
+  want to try ("experiments" in the data file). Whatever applies to all three
+  recipes sits at the top and is not repeated in the recipe tables. How a
+  recipe table renders is described in partials/recipe-card.html.
 */}}
 {{ define "main" }}
 
 {{- $bodies := site.Data.recipes.bodies }}
 
+{{- /* The words the page adds from data/recipes.yaml (headings, intros, notes,
+       table rows, the closing line and the block "Zum Ausprobieren"), for the
+       reading time in the cover ("readTime: true" in front matter). */}}
+{{- $words := 0 }}
+{{- $texts := slice }}
+{{- range site.Data.recipes.basics }}
+  {{- $texts = $texts | append (printf "%s %s" (.title | default "") (.intro | default "")) }}
+  {{- range .rows }}{{ $texts = $texts | append (printf "%s %s" .label .value) }}{{ end }}
+  {{- range .banks }}{{ $texts = $texts | append (printf "%s %s %s %s" .bank .purpose .time .recipes) }}{{ end }}
+  {{- range .items }}{{ $texts = $texts | append . }}{{ end }}
+  {{- range .notes }}{{ $texts = $texts | append (printf "%s %s" .title .text) }}{{ end }}
+{{- end }}
+{{- $cards := site.Data.recipes.recipes }}
+{{- with site.Data.recipes.experiments }}
+  {{- $texts = $texts | append (printf "%s %s" .title (.intro | default "")) }}
+  {{- $cards = $cards | append .items }}
+{{- end }}
+{{- range $cards }}
+  {{- $texts = $texts | append (printf "%s %s %s" .name (.source | default "") (.intro | default "")) }}
+  {{- range .settings }}{{ $texts = $texts | append (printf "%s %s %s %s" .label (.value | default "") (.xt30 | default "") (.xt5 | default "")) }}{{ end }}
+  {{- range .notes }}{{ $texts = $texts | append (printf "%s %s" .title .text) }}{{ end }}
+{{- end }}
+{{- $texts = $texts | append (site.Data.recipes.closing | default "") }}
+{{- range $texts }}{{ $words = add $words (countwords .) }}{{ end }}
+
 <article class="recipes">
   {{/* Optional page cover, as on the gear page: "photo" and "photo_alt" in
        front matter (partials/page-cover.html). Without a photo, the plain
        headline. */}}
-  {{ partial "page-cover.html" (dict "page" . "lightbox" true) }}
+  {{ partial "page-cover.html" (dict "page" . "words" $words "lightbox" true) }}
 
   <div class="recipes-intro">
     {{ .Content }}
+    {{- /* Points to the review of the recipe book once it is out: "review" in
+           front matter names the post's folder. A draft does not exist in the
+           live build, so the line is not there before the review is published. */}}
+    {{- with .Params.review }}
+      {{- with site.GetPage (printf "/blog/%s" .) }}
+    <p class="recipes-review">Wie solche Rezepte entstehen und wie man eigene baut, steht in einem Buch, das ich hier besprochen habe: <a href="{{ .RelPermalink }}">{{ replaceRE `^[^\p{L}\p{N}]+` "" .Title }}</a>.</p>
+      {{- end }}
+    {{- end }}
   </div>
 
   {{- with site.Data.recipes.basics }}
@@ -92,57 +123,23 @@
   {{- end }}
 
   {{- range $r := site.Data.recipes.recipes }}
-  {{- with $r.settings }}
-
-    {{/* First check whether any row carries per-body values. */}}
-    {{- $split := false -}}
-    {{- range $s := . -}}
-      {{- if or (isset $s "xt30") (isset $s "xt5") -}}{{- $split = true -}}{{- end -}}
-    {{- end }}
-
-  <section class="recipe">
-    <h2>
-      {{- with $r.slot }}<span class="recipe-slot">{{ . }}</span> {{ end -}}
-      {{ $r.name -}}
-    </h2>
-    {{- with $r.intro }}<p class="recipe-intro">{{ . }}</p>{{ end }}
-
-    <div class="table-outer">
-      <table class="recipe-table">
-        <thead>
-          <tr>
-            <th>{{ or $r.settings_title "Einstellung" }}</th>
-            {{- if $split }}
-            <th>{{ $bodies.xt30 }}</th>
-            <th>{{ $bodies.xt5 }}</th>
-            {{- else }}
-            <th>{{ $bodies.shared }}</th>
-            {{- end }}
-          </tr>
-        </thead>
-        <tbody>
-          {{- range $s := . }}
-          <tr>
-            <td>{{ $s.label }}</td>
-            {{- if $split }}
-            <td>{{ or $s.xt30 $s.value }}</td>
-            <td>{{ or $s.xt5 $s.value }}</td>
-            {{- else }}
-            <td>{{ $s.value }}</td>
-            {{- end }}
-          </tr>
-          {{- end }}
-        </tbody>
-      </table>
-    </div>
-
-    {{- with $r.notes }}{{ partial "recipe-notes.html" (dict "notes" . "level" 3) }}{{ end }}
-  </section>
-  {{- end }}
+    {{ partial "recipe-card.html" (dict "r" $r "bodies" $bodies "level" 2) }}
   {{- end }}
 
   {{- with site.Data.recipes.closing }}
   <p class="recipes-closing">{{ . }}</p>
+  {{- end }}
+
+  {{/* A block set apart below the recipes: recipes I want to try, with their
+       source (data/recipes.yaml, "experiments"). */}}
+  {{- with site.Data.recipes.experiments }}
+  <section class="experiments" id="zum-ausprobieren">
+    <h2>{{ .title }}</h2>
+    {{- with .intro }}<p class="experiments-intro">{{ . | markdownify }}</p>{{ end }}
+    {{- range $r := .items }}
+      {{ partial "recipe-card.html" (dict "r" $r "bodies" $bodies "level" 3) }}
+    {{- end }}
+  </section>
   {{- end }}
 
 </article>

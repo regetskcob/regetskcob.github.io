@@ -34,7 +34,8 @@ bodies:
 closing: >-
   Kurz gesagt: C1 ist die Serie, C2 ihre ältere Schwester und C3 der
   Freundschaftsdienst, wenn Freunde oder Bekannte fragen. Neue Ideen probiere
-  ich zuhause aus, draußen bleibt es bei diesen dreien.
+  ich zuhause aus, draußen bleibt es bei diesen dreien. Was ich als Nächstes
+  testen möchte, steht im Block darunter.
 
 # The basics above all recipes. Every block has a "kind":
 #   table   setting and value, like the recipes
@@ -229,3 +230,104 @@ recipes:
           „Eigene Einstellung 1“ ist der Platzhalter für den Wert, den ihr vor
           Ort messt. Ohne diese Messung stimmt der Rest der Zahlen zwar, die
           Farbe aber nicht.
+
+# Recipes I want to try, set apart below the three recipes (layout
+# recipes.html, block "Zum Ausprobieren"). They are not my own: "source" says
+# where each one comes from. The values are those printed in the book, labels as
+# in the tables above. Slots C6 and C7 are where they are stored on the camera.
+experiments:
+  title: "Zum Ausprobieren"
+  intro: >-
+    Neben diesen drei Rezepten probiere ich immer wieder Neues aus, um andere
+    Looks zu entdecken. Die beiden hier stammen aus einem Buch, das ich
+    gelesen habe. Sie liegen auf C6 und C7, und ich probiere sie gelegentlich
+    in der Freizeit aus, zum Beispiel auf Dienstreisen. Es sind nicht meine
+    Rezepte, die Quelle steht jeweils darüber.
+  items:
+    - slot: "C6"
+      name: "Áhrifamikill"
+      source: >-
+        Rezept 2 aus „33 JPEG-Rezepte für Fujifilm X-Kameras“ von Thomas B.
+        Jones. Das Schwarzweiß-Rezept, gebaut für wechselhaftes Wetter.
+      settings:
+        - label: "Filmsimulation"
+          value: "ACROS + R (Rotfilter)"
+        - label: "Dynamikbereich"
+          value: "DR100 bis DR200"
+        - label: "Ton Lichter"
+          value: "0 bis −1"
+        - label: "Ton Schatten"
+          value: "+1 bis +2"
+        # Printed as "1" in the book (confirmed), without a sign.
+        - label: "Klarheit"
+          value: "1"
+        - label: "Farbe"
+          value: "0"
+        - label: "Schärfe"
+          value: "+1"
+        - label: "Rauschreduktion"
+          value: "−4"
+        - label: "Körnung"
+          value: "stark / klein"
+        - label: "Farbchrom-Effekt"
+          value: "aus"
+        - label: "Farbchrom FX Blau"
+          value: "aus"
+        - label: "Monochrome Farbe"
+          value: "WC 0 / MG 0"
+        - label: "Weißabgleich"
+          value: "Auto (R 0 / B 0)"
+        - label: "ISO"
+          value: "Auto"
+        - label: "Belichtungskorrektur"
+          value: "+1/3"
+      notes:
+        - title: "Als Grundlage gedacht"
+          text: >-
+            Das Rezept liefert je nach Wetter unterschiedliche Ergebnisse. Die
+            Lichter werden etwas gedrückt, um den Himmel in der Hand zu
+            behalten, die Schatten verstärkt. Mit Lichtern, Schatten und
+            Belichtung muss man ein wenig spielen.
+    - slot: "C7"
+      name: "Chromance"
+      source: >-
+        Rezept 30 aus „33 JPEG-Rezepte für Fujifilm X-Kameras“, von Immanuel
+        Sander aka Captn Look ([captnlook.com](https://www.captnlook.com)).
+      settings:
+        - label: "Filmsimulation"
+          value: "Eterna Bleach Bypass"
+        - label: "Dynamikbereich"
+          value: "DR100"
+        - label: "Ton Lichter"
+          value: "−1"
+        - label: "Ton Schatten"
+          value: "+1"
+        - label: "Klarheit"
+          value: "0"
+        - label: "Farbe"
+          value: "+2"
+        - label: "Schärfe"
+          value: "−1"
+        - label: "Rauschreduktion"
+          value: "−4"
+        - label: "Körnung"
+          value: "schwach / klein"
+        - label: "Farbchrom-Effekt"
+          value: "stark"
+        - label: "Farbchrom FX Blau"
+          value: "schwach"
+        - label: "Monochrome Farbe"
+          value: "WC 0 / MG 0"
+        - label: "Weißabgleich"
+          value: "Auto (R +7 / B −9)"
+        - label: "ISO"
+          value: "Auto"
+        - label: "Belichtungskorrektur"
+          value: "0 bis +1/3"
+      notes:
+        - title: "Wofür es gedacht ist"
+          text: >-
+            Ein sehr eigenes Rezept, das nicht zu jedem Motiv passt. Es ist
+            auf Motive mit Geschichte ausgelegt, etwa alte Gebäude, Autos,
+            Schriften oder eine heroische Landschaft, und gibt dem Bild im
+            Sucher eine andere Zeit.
