@@ -64,7 +64,7 @@ data/
   cameras.yaml    Anzeigenamen für Kameras, die in der Datei nur ein Code sind (Drohne)
   exif.yaml       Aufnahmedaten für Fotos ohne EXIF, optional (scripts/extract-exif.sh)
 scripts/          Hilfsskripte für Fotos, Buchcover und die lokale Vorschau (import-photo.sh, extract-exif.sh, book-cover.py, preview-build.sh)
-layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen, dazu Shortcodes (images, gallery, address)
+layouts/          Eigene Overrides, die das Theme ergänzen oder ersetzen, dazu Shortcodes (images, gallery, image-left, address)
 assets/css/       Eigenes CSS (custom.css überschreibt die leere Datei im Theme)
 assets/js/        Lightbox (lightbox.js), Raster mit Mischen und großen Kacheln (series.js), Nach-oben-Knopf (to-top.js)
 assets/gallery/   Fotos der Galerien und der Serie, nach Motiv in Ordnern
@@ -384,6 +384,25 @@ Die Reihenfolge bleibt wie geschrieben; mit `shuffle=true` wird sie bei jedem Be
 Die großen Kacheln kommen wie in allen Galerien nach einer Regel, siehe „Große Kacheln in
 Galerien“ unten.
 
+### Ein Bild neben dem Text
+
+Ein einzelnes Bild, das neben den folgenden Absätzen stehen soll statt in voller Breite
+(sinnvoll bei einem Hochformat), setzt der Shortcode `image-left` links neben sie:
+
+```markdown
+{{< image-left >}}
+![Alt text](./seite.jpg)
+{{< /image-left >}}
+
+Die Absätze, die daneben stehen sollen …
+```
+
+Das Bild ist 240 px breit, läuft durch denselben Render-Hook wie alle (WebP, Lightbox) und steht
+direkt vor den Absätzen, die es begleiten soll. Die nächste Überschrift beginnt darunter. Ab 1000 px
+Fensterbreite hängt es 4 rem in den linken Rand, damit der Text seine volle Zeilenlänge behält;
+darunter steht es in der Spalte, unter 560 px allein über dem Text (`.float-image` in
+`assets/css/custom.css`).
+
 ### Große Kacheln in Galerien
 
 Für alle Raster (Niederrhein-Serie, Startseiten-Galerien, „Im Einsatz“ der Ausrüstungsseite,
@@ -423,7 +442,15 @@ soon:
   - die-vermessung-der-berge
 ```
 
-Zum Veröffentlichen den `build`-Block, `soon` und den Namen in `_index.md` entfernen.
+Zum Veröffentlichen den `build`-Block, `soon` und den Namen in `_index.md` entfernen, das `date`
+auf den Tag der Veröffentlichung setzen und pushen (es gibt keinen Zeitplan, der von allein
+baut).
+
+**Das `date` einer Vorschau darf nicht in der Zukunft liegen.** Hugo baut einen Beitrag mit
+zukünftigem Datum nicht, dann findet die Vorschau die Seite nicht und fehlt im Kasten. Bis zum
+Veröffentlichen steht deshalb ein Platzhalter in der Vergangenheit (nach dem Beitrag, hinter dem er
+einsortiert werden soll), am Tag selbst das echte Datum mit einer Uhrzeit, die beim Push schon
+vorbei ist. `soon` nimmt freien Text, auch mit Jahr (`soon: Januar 2027`).
 Zusammenfassung (`summary`) und Cover (`cover`) werden angezeigt; bei Serienteilen
 `series` und `seriesLabel` setzen. Wer einen Beitrag lieber ganz verstecken will,
 lässt `draft: true`, dann erscheint er nirgends (lokal mit `hugo server -D` schon, mit
@@ -440,6 +467,20 @@ Brennweite, Zeit, ISO, Belichtungskorrektur), dazu Orientierung und Farbprofil:
 ```bash
 scripts/import-photo.sh ~/Pictures/blog/Allgäu/DSCF0473.jpeg assets/gallery/allgaeu/dscf0473.jpg
 ```
+
+**Gedrehte Fotos vorher festdrehen.** iPhone-Fotos tragen die Drehung oft nur als EXIF-Hinweis
+(`Orientation`, die Pixel liegen quer), die der Import mit übernimmt. In den WebP-Varianten
+des Beitrags erschien ein solches Foto dann um 90° gekippt (so bei einem Seitenfoto im Raiffeisen-Entwurf). Abhilfe vor dem Import: die Drehung ins Bild
+schreiben und den Hinweis zurücksetzen, etwa bei „Rotate 90 CW“:
+
+```bash
+sips -r 90 foto.jpeg --out foto-gedreht.jpeg
+exiftool -overwrite_original -n -Orientation=1 foto-gedreht.jpeg
+```
+
+Ob ein Foto gedreht ist, zeigt `exiftool -Orientation foto.jpeg` („Horizontal (normal)“ ist
+in Ordnung). Dazu die lange Kante auf 2000 px verkleinern (`sips -Z 2000`), die Originale
+vom iPhone sind sonst mehrere MB groß.
 
 Dateinamen klein geschrieben, `_` als `-`, ohne Leerzeichen (`dscf0473.jpg`), lange
 Kameranamen der DJI-App auf `dji-JJJJMMTT-HHMMSS` gekürzt. Länge der langen Kante: 2000 px.
@@ -482,7 +523,8 @@ Jeder Verlag mit Rezensionen hat eine eigene Seite, die seine Rezensionen auflis
 für den Verlag. Sie ist von nirgends verlinkt, `noindex`, nicht in der Sitemap und nicht in der
 Suche, eine Übersicht aller Verlage wird nicht gebaut. Die Zuordnung steht im Front Matter der
 Rezension (`verlag: "Rheinwerk Verlag"`, Taxonomie `verlag` in `hugo.toml`); ohne die Zeile
-steht der Beitrag auf keiner Verlagsseite. Das Layout ist `layouts/verlag/term.html`. Der Satz
+steht der Beitrag auf keiner Verlagsseite. Gesetzt wird es bei gestellten Büchern, bei selbst
+gekauften nicht (so bei bisher allen). Das Layout ist `layouts/verlag/term.html`. Der Satz
 „Meine Rezensionen zu Büchern vom …“ nimmt die Form aus `data/verlag_dativ.yaml`; ein Name ohne
 Eintrag bekommt „von …“ (bei einem „… Verlag“ also dort ergänzen). Hugo schreibt Namen groß, die
 klein beginnen (`dpunkt.verlag`, `mitp Verlag`, `objc.io`): dafür gibt es unter

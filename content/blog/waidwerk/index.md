@@ -9,7 +9,7 @@ summary: "Nikolaus Alexander Fegert zeigt in seinem Bildband „Waidwerk“ Bild
 build:
   render: never
   list: never
-soon: Dezember
+soon: November
 cover: ./cover.jpg
 coverAlt: "Der Bildband „Waidwerk – Bilder vom Jagen“ von Nikolaus Alexander Fegert liegt auf einem Eichenholztisch, auf dem Cover ein Jäger mit Hund auf einer Anhöhe vor einem mächtigen, dunklen Berg"
 tags: ["Bücher", "Jagd"]

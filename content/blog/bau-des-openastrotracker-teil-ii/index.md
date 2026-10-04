@@ -9,7 +9,7 @@ summary: "Aus den gedruckten Teilen wird ein Tracker: Gewindeeinsätze, Steuerpl
 build:
   render: never
   list: never
-soon: true
+soon: Januar 2027
 cover: ./cover.jpg
 coverAlt: "Der fertig aufgebaute OpenAstroTracker auf einem Teppichboden: schwarzes Gehäuse mit Handbox und Display, weiße gedruckte Räder und Arme, darauf ein schwarzes Objektiv"
 series: "Bau des OpenAstroTracker"

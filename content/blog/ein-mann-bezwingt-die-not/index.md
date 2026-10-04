@@ -1,12 +1,16 @@
 ---
 title: "📚 | Ein Mann bezwingt die Not"
-date: "2026-10-04T12:00:00+02:00"
+# Platzhalter: Ein Datum in der Zukunft baut Hugo nicht, dann fehlte auch die
+# Vorschau. Beim Veröffentlichen auf den Tag setzen (Mittwoch, 2026-10-07).
+date: "2026-10-04T18:00:00+02:00"
 summary: "Ein eher unscheinbares Buch über Friedrich Wilhelm Raiffeisen, das deutlich mehr Gedanken zurücklässt, als sein Umfang vermuten lässt."
-# Entwurf: wird nirgends gebaut oder angezeigt (lokal mit hugo server -D schon).
-# Für die Vorschau "In Arbeit" stattdessen den build-Block und "soon" setzen
-# und den Ordnernamen unter "soon" in content/blog/_index.md eintragen (siehe
-# README, "Vorschau auf Beiträge in Arbeit"). Zum Veröffentlichen "draft" entfernen.
-draft: true
+# Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite. Zum
+# Veröffentlichen diesen Block und den Namen unter "soon" in
+# content/blog/_index.md entfernen, "soon" hier auch.
+build:
+  render: never
+  list: never
+soon: Oktober
 cover: ./cover.jpg
 coverAlt: "Eine Hand hält das Taschenbuch „Ein Mann bezwingt die Not“ von Franz Braumann vor einen Waldhang mit Gräsern und Büschen im goldenen Abendlicht, rechts ein gebogenes Stahlrohrgeländer"
 disclosure:
