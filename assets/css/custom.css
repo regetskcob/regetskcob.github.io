@@ -214,7 +214,7 @@ html:root {
 /* --- Post list thumbnails ---
    A column on the left holds the cover image in 2:1, like the covers, then the title.
    Posts without a cover keep the column empty, so the titles line up in
-   every row. On phones the parts stack (see below). */
+   every row. On phones (up to 480px) the parts stack (see below). */
 
 .post-line .line-text {
   flex: 1;
@@ -245,12 +245,25 @@ html:root {
   margin-bottom: 1rem;
 }
 
-/* On phones the row would squeeze the text into a narrow column beside the
-   thumbnail, so the parts stack: title, the labels in a row, the cover
-   across the full width, the summary. The text block gives up its own box
-   (display: contents), so its children can be ordered between the thumbnail
-   and each other; the wrapping row keeps the labels side by side. */
+/* Up to 640px the thumbnail is smaller and the rows stay in two columns. */
 @media screen and (max-width: 640px) {
+  .post-line {
+    margin-bottom: 1.25rem;
+  }
+
+  .line-thumb {
+    width: 112px;
+    height: 56px;
+    margin-right: 0.75rem;
+  }
+}
+
+/* On a phone (up to 480px) the row would squeeze the text into a narrow column
+   beside the thumbnail, so the parts stack: title, the labels in a row, the
+   cover across the full width, the summary. The text block gives up its own
+   box (display: contents), so its children can be ordered between the
+   thumbnail and each other; the wrapping row keeps the labels side by side. */
+@media screen and (max-width: 480px) {
   .post-line {
     flex-wrap: wrap;
     align-items: flex-start;
@@ -606,7 +619,7 @@ a.series-label:hover {
 
 /* On a phone the box is collapsed and there is no room for the note beside the
    title, it would squeeze "In Arbeit" onto three lines. */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .soon-hint {
     display: none;
   }

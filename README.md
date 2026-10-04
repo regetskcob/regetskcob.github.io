@@ -197,7 +197,8 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
 - **Beitragslisten auf dem Handy** — `layouts/partials/post-entry.html`, `list-thumb.html` und
   `assets/css/custom.css` („Post list thumbnails“). Eine Zeile der Blog-Liste (auch „Zuletzt erschienen“
   auf der Startseite, Serienübersicht, Kasten „In Arbeit“) hat das Cover links neben dem Text. Bis
-  640 px Breite wäre die Textspalte daneben zu schmal, deshalb stehen die Teile übereinander: Titel,
+  640 px Breite ist das Cover kleiner (112 × 56 px), bis 480 px (Handy) wäre die Textspalte daneben
+  zu schmal, deshalb stehen die Teile dort übereinander: Titel,
   Labels nebeneinander, das Cover über die ganze Breite (2:1, die 720-px-Variante deckt einen 2×-Bildschirm
   ab), dann die Zusammenfassung. Dafür gibt die Textspalte ihre Box ab (`display: contents`), die
   Teile werden per `order` zwischen Cover und Text geschoben; Beiträge ohne Cover lassen den leeren
@@ -430,7 +431,7 @@ Kacheln.
 
 Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter
 Kasten „In Arbeit“ unter Suche und Themen, vor den Beiträgen (Titel, Cover, Zusammenfassung, nicht
-verlinkt; ab 768 px Breite aufgeklappt, darunter eingeklappt (auf dem Handy nur „In Arbeit“, der Hinweistext daneben fehlt), der Link
+verlinkt; ab 768 px Breite aufgeklappt, darunter eingeklappt (auf dem Handy, bis 480 px, nur „In Arbeit“, der Hinweistext daneben fehlt), der Link
 `#in-arbeit` klappt ihn auf), einen Block „Demnächst im Blog“ im Intro der Startseite (ab 820 px Breite), und bei Beiträgen
 einer Serie ein Kasten unter den Teilen auf der Serienseite. Die Vorschau hat keine
 eigene Seite und taucht in RSS, Sitemap, Suche, Tags und Serienzählung nicht auf.

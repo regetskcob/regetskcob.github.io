@@ -7,7 +7,7 @@
   cover is lost, and the book keeps the size it has in the cover. A 4:3
   thumbnail cut the sides off, and "smart" crop chose a different window for
   every image; the whole 2:1 image in a 4:3 box made the books tiny.
-  The box is 180x90; on phones the cover runs across the full width (the 720w rendition covers a 2x screen).
+  The box is 180x90; up to 640px it is 112x56, and on a phone (up to 480px) the cover runs across the full width (the 720w rendition covers a 2x screen).
   Takes a dict: "img", the cover resource, and "href", the link of the post;
   without "href" the thumbnail is not a link (the previews have no page).
 */ -}}
@@ -16,6 +16,6 @@
 {{- $xl := .img.Fill "720x360 webp q75 Center" }}
 {{- if .href }}<a class="line-thumb" href="{{ .href }}" tabindex="-1" aria-hidden="true">{{ else }}<span class="line-thumb" aria-hidden="true">{{ end }}
   <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 180w, {{ $l.RelPermalink }} 360w, {{ $xl.RelPermalink }} 720w"
-       sizes="(max-width: 640px) 100vw, 180px" width="180" height="90"
+       sizes="(max-width: 480px) 100vw, (max-width: 640px) 112px, 180px" width="180" height="90"
        loading="lazy" decoding="async" alt="">
 {{- if .href }}</a>{{ else }}</span>{{ end }}
