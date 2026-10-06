@@ -21,18 +21,22 @@ Der Bildband „Waidwerk – Bilder vom Jagen“ von Nikolaus Alexander Fegert v
 
 ## Das Buch
 
-Fegert ist in einer Jäger- und Künstlerfamilie in Oberbayern aufgewachsen und hat Natur, Jagd, Hunde und Fotografie früh für sich entdeckt. Der Band erscheint im Sternath Verlag (2020), hat 216 Seiten und zeigt 145 Farbfotos. Wenn er auf die Jagd geht, hat er die Kamera dabei, und oft ist sein Deutsch-Langhaar mit von der Partie.
+[Nikolaus Alexander Fegert](https://www.instagram.com/nikolausfegert) wuchs in einer Jäger- und Künstlerfamilie in Oberbayern auf. Natur, Jagd, Hunde und Fotografie begleiten ihn seit seiner Kindheit. Er ist bestätigter Schweißhundführer und Jagdhundeausbilder, und wenn er auf die Jagd geht, hat er neben der Büchse die Kamera dabei, oft mit seinem Deutsch-Langhaar.
 
-<!-- Prüfen/ergänzen: Format (Hardcover?), Preis, ISBN nicht nötig. -->
+Der Band erschien 2020 im Sternath Verlag in Mallnitz. Er ist ein großformatiger Bildband mit festem Einband, hat 216 Seiten mit 145 Farbfotos und kostet 65 €. Das Vorwort schrieb Bernd E. Ergert, der frühere Direktor des Deutschen Jagd- und Fischereimuseums in München und Onkel des Autors.
 
 ## Inhalt
 
-Fegert erzählt mit seinen Bildern, was es für einen Jäger bedeutet, die Natur zu spüren. Dazu gehören ungewöhnliche Perspektiven, weite Ausblicke und sehr persönliche Momente, in denen Liebe und Respekt für Tier, Hund und Landschaft im Mittelpunkt stehen. Seine Fotos wollen mehr sein als schöne Naturaufnahmen, sie halten den Blick des Jägers fest.
+Fegert erzählt mit seinen Bildern von der ältesten Tätigkeit des Menschen, der Jagd. Er zeigt dunkle Wälder, vernebelte Seen, ausgesetzte Pfade und kleine Abenteuer, und er zeigt den Jäger als Teil der Natur.
 
-<!-- Eigene Erfahrung ergänzen: Aufbau des Bandes (Kapitel, Bildfolge, Texte?), ein, zwei Lieblingsbilder, was dir als Fotograf auffällt (Licht, Perspektive, Hund als Motiv). -->
+Die Bilder entstehen im Wald, auf dem Feld, am Wasser und im Gebirge. Dazu gehört die Arbeit mit dem Jagdhund, vor und nach dem Schuss und bei der Nachsuche. Man spürt Kälte, Wind und Anstrengung, bis hin zum Atem im Morgennebel. Fegert sucht dafür ungewöhnliche Perspektiven und spektakuläre Ausblicke, und er hält sehr emotionale Momente fest.
+
+Hinter den Bildern steht eine Haltung aus Demut und Dankbarkeit. Fegert verlässt sich auf Wissen und Handwerk statt auf moderne Technik. Ein Interview mit ihm gibt Einblick in seine Jagdphilosophie und seine Vorbilder, laut Halali-Magazin ist er von der Farbwelt des niederländischen Künstlers Rien Poortvliet beeinflusst.
+
+<!-- Persönliche Note folgt: Aufbau (Kapitel, Bildfolge, Texte), ein, zwei Lieblingsbilder, was dir als Fotograf und Jäger auffällt (Licht, Perspektive, Hund als Motiv). Zu prüfen am Exemplar: Format, Einband, Kapitelstruktur. -->
 
 ## Fazit
 
 Wer sich für Naturfotografie interessiert und wissen will, wie ein Jäger seine Umgebung sieht, findet in „Waidwerk“ viel zum Anschauen und zum Mitnehmen für die eigene Kamera. Ein Band, den man mehrfach in die Hand nimmt.
 
-<!-- Persönliche Einschätzung prüfen: Passt "mehrfach in die Hand nehmen" und die Empfehlung zu deinem Eindruck? Dazu noch: wie das Buch zu dir kam (Hinweis bei "disclosure": gekauft, evtl. Zusatz wie "gebraucht von medimops"). -->
+<!-- Persönliche Einschätzung folgt: Passt das zu deinem Eindruck? Herkunft des Buchs bestätigen (gekauft oder gestellt?), der Hinweis steht bei "disclosure" (bisher gekauft). -->
