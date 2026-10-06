@@ -86,6 +86,9 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
 - **`layouts/shortcodes/nachtrag.html`** — blauer Kasten für Nachträge in alten Beiträgen:
   `{{< nachtrag 2024 >}} … {{< /nachtrag >}}` (Kopf „Nachtrag von 2024“). Mit `label="Hinweis"`
   statt des Jahres bekommt der Kasten eine andere Überschrift.
+  Mit `image="datei.png"`, `alt="…"` und optional `credit="Cover: …"` steht ein kleines Bild
+  (110 px) rechts im Kasten, auf dem Handy darüber, etwa ein Buchcover zu einem Hinweis auf eine
+  neue Auflage oder ein zweites Buch. Die Datei liegt im Ordner des Beitrags.
 - **`layouts/_default/_markup/render-image.html`** — ersetzt den Bild-Render-Hook des
   Themes, der Originale unverändert ausliefert. Stattdessen entstehen WebP-Varianten
   in 480/800/1200/1600 px inklusive `srcset`/`sizes`. Das DOM und die Klassen des

@@ -1626,6 +1626,46 @@ figure a[data-lightbox] {
   font-size: 0.95em;
 }
 
+/* A small image in the box (shortcode parameter "image"), to the right of the text;
+   on a phone it stands above it. The box encloses the float. */
+.nachtrag {
+  display: flow-root;
+}
+
+.nachtrag-image {
+  float: right;
+  width: max-content;
+  margin: 0.1rem 0 0.2rem 1rem;
+  text-align: center;
+}
+
+.nachtrag-image img {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.nachtrag-image figcaption {
+  margin-top: 0.1rem;
+  font-size: 0.65rem;
+  line-height: 1.3;
+  white-space: nowrap;
+  color: var(--content-secondary);
+}
+
+@media screen and (max-width: 480px) {
+  .nachtrag-image {
+    float: none;
+    margin: 0 0 0.6rem;
+    text-align: left;
+  }
+
+  .nachtrag-image img {
+    margin: 0;
+  }
+}
+
 .nachtrag > :last-child {
   margin-bottom: 0;
 }

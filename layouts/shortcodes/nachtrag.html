@@ -9,8 +9,27 @@
   a stripe on the left and a bold heading like the transparency box, the colours of "kürzlich
   aktualisiert", so it reads as a note on the post and not as part of the
   original text. Styled in custom.css (.nachtrag).
+
+  An image can sit in the box, small and to the right (a book cover next to a
+  note on another edition or a second book):
+    {{< nachtrag label="Neue Auflage" image="cover.png" alt="Alt text" credit="Cover: Rheinwerk Verlag" >}}
+  "image" is a file in the post's folder, "alt" its alt text (required with
+  an image), "credit" optional and shown under the image.
 */ -}}
 <aside class="nachtrag">
+  {{- with .Get "image" }}
+    {{- with $.Page.Resources.Get . }}
+      {{- $img := .Resize "260x webp q85" }}
+  <figure class="nachtrag-image">
+    <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.Get "alt" }}" loading="lazy" decoding="async">
+    {{- with $.Get "credit" }}
+    <figcaption>{{ . }}</figcaption>
+    {{- end }}
+  </figure>
+    {{- else }}
+      {{- errorf "nachtrag shortcode in %s: no image %q in the post's folder" $.Page.File.Path . }}
+    {{- end }}
+  {{- end }}
   <p class="nachtrag-label">{{ with .Get "label" }}{{ . }}{{ else }}Nachtrag{{ with .Get 0 }} von {{ . }}{{ end }}{{ end }}</p>
   {{- .Inner | .Page.RenderString (dict "display" "block") -}}
 </aside>
