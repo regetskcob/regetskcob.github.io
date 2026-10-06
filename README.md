@@ -378,7 +378,9 @@ Tabelle. Inline sind sie dann klein, gelesen wird in der Lightbox.
 Stehen in einem Beitrag drei oder mehr Bilder zusammen, kommen sie mit dem Shortcode `gallery`
 in dasselbe Raster wie die Galerien (`layouts/shortcodes/gallery.html`, nutzt
 `partials/photo-grid.html`): aus der Textspalte ausbrechend, zwei bis vier Spalten, Hochformate
-über zwei Zeilen. Die Bilder liegen im Ordner des Beitrags, die Reihenfolge ist die geschriebene.
+über zwei Zeilen. Die Bilder liegen im Ordner des Beitrags oder, mit ihrem Pfad unter `assets/` (ohne `./`, etwa
+`gallery/niederrhein/dscf0435.jpg`), in den Galerien: so wird ein Foto, das schon im Repository
+liegt, nicht noch einmal kopiert. Die Reihenfolge ist die geschriebene.
 Ein Klick öffnet die Lightbox mit den Bildern dieser Galerie zum Blättern, betitelt wie der
 Beitrag. Ein fehlendes Bild bricht den Build mit einer Fehlermeldung ab.
 

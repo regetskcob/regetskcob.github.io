@@ -7,8 +7,10 @@
     ![Alt text](./two.jpg)
     ![Alt text](./three.jpg)
     {{< /gallery >}}
-  The images are those of the post's own folder (no remote ones), in the order
-  written. A click opens the lightbox with this gallery's photos to page
+  The images are those of the post's own folder or, with their path under
+  assets/ (no leading "./", e.g. gallery/niederrhein/dscf0435.jpg), those of
+  the galleries, so a photo that is already in the repository is not copied
+  again. No remote images. The order is the one written. A click opens the lightbox with this gallery's photos to page
   through, titled like the post (assets/js/lightbox.js, partials/photo-grid.html).
   Two images that belong together stay with {{< images >}}. Without
   JavaScript each tile links to the large rendition.
@@ -20,14 +22,16 @@
 */ -}}
 {{- $page := .Page -}}
 {{- $items := slice -}}
-{{- range findRE `!\[[^\]]*\]\(\./[^)]+\)` .Inner -}}
-  {{- $m := findRESubmatch `!\[([^\]]*)\]\(\./([^)]+)\)` . -}}
+{{- range findRE `!\[[^\]]*\]\([^)]+\)` .Inner -}}
+  {{- $m := findRESubmatch `!\[([^\]]*)\]\((?:\./)?([^)]+)\)` . -}}
   {{- $alt := index (index $m 0) 1 -}}
   {{- $name := index (index $m 0) 2 -}}
-  {{- with $page.Resources.Get $name -}}
+  {{- $img := $page.Resources.Get $name -}}
+  {{- if not $img }}{{ $img = resources.Get $name }}{{ end -}}
+  {{- with $img -}}
     {{- $items = $items | append (dict "img" . "alt" $alt) -}}
   {{- else -}}
-    {{- errorf "gallery shortcode in %s: no image %q in the post's folder" $page.File.Path $name -}}
+    {{- errorf "gallery shortcode in %s: no image %q in the post's folder or in assets/" $page.File.Path $name -}}
   {{- end -}}
 {{- end -}}
 {{- $shuffle := eq (printf "%v" (.Get "shuffle")) "true" -}}
