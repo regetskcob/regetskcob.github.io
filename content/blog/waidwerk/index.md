@@ -31,7 +31,7 @@ Fegert erzählt mit seinen Bildern von der ältesten Tätigkeit des Menschen, de
 
 Die Bilder entstehen im Wald, auf dem Feld, am Wasser und im Gebirge. Dazu gehört die Arbeit mit dem Jagdhund, vor und nach dem Schuss und bei der Nachsuche. Man spürt Kälte, Wind und Anstrengung, bis hin zum Atem im Morgennebel. Fegert sucht dafür ungewöhnliche Perspektiven und spektakuläre Ausblicke, und er hält sehr emotionale Momente fest.
 
-Hinter den Bildern steht eine Haltung aus Demut und Dankbarkeit. Fegert verlässt sich auf Wissen und Handwerk statt auf moderne Technik. Ein Interview mit ihm gibt Einblick in seine Jagdphilosophie und seine Vorbilder, laut Halali-Magazin ist er von der Farbwelt des niederländischen Künstlers Rien Poortvliet beeinflusst.
+Hinter den Bildern steht eine Haltung aus Demut und Dankbarkeit. Fegert verlässt sich auf Wissen und Handwerk statt auf moderne Technik. Wer mehr über seine Jagdphilosophie wissen möchte, findet im [Halali-Magazin](https://halali-magazin.de/bilder-vom-jagen/) (Ausgabe 02/2021) ein Interview mit ihm, in dem auch der Einfluss der Farbwelt des niederländischen Künstlers Rien Poortvliet zur Sprache kommt.
 
 <!-- Persönliche Note folgt: Aufbau (Kapitel, Bildfolge, Texte), ein, zwei Lieblingsbilder, was dir als Fotograf und Jäger auffällt (Licht, Perspektive, Hund als Motiv). Zu prüfen am Exemplar: Format, Einband, Kapitelstruktur. -->
 
