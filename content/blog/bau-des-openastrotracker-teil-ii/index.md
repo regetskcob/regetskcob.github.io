@@ -2,7 +2,7 @@
 title: "🔭 | Bau des OpenAstroTracker - Teil II"
 date: "2026-01-26T18:53:08+01:00"
 summary: "Aus den gedruckten Teilen wird ein Tracker: Gewindeeinsätze, Steuerplatine, Verkabelung, Raspberry Pi und die erste Kamera auf der Montierung. Was beim Zusammenbau zwischen den Jahren und im Januar passiert ist."
-# Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite: nicht
+# Vorschau in der Blog-Liste, noch keine eigene Seite: nicht
 # rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
 # Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
 # Optional: soon: Oktober  ->  "demnächst · Oktober"

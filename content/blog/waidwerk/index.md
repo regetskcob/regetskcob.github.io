@@ -2,7 +2,7 @@
 title: "📚 | Waidwerk"
 date: "2026-10-01T09:00:00+02:00"
 summary: "Nikolaus Alexander Fegert zeigt in seinem Bildband „Waidwerk“ Bilder vom Jagen."
-# Vorschau in der Blog-Liste ("In Arbeit"), noch keine eigene Seite: nicht
+# Vorschau in der Blog-Liste, noch keine eigene Seite: nicht
 # rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
 # Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
 # Optional: soon: Oktober  ->  "demnächst · Oktober"

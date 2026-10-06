@@ -116,7 +116,7 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   des Themes, ganz auf die Fotografie ausgerichtet: Intro mit Social-Icons, darunter
   „Zuletzt erschienen“ (der neueste veröffentlichte Beitrag als Zeile wie in der
   Blog-Liste, mit Cover und Zusammenfassung, Entwürfe zählen nicht) und „Demnächst im
-  Blog“ (die Titel aus der Vorschau „In Arbeit“ als Stichpunkte). Ab 820 px Breite stehen
+  Blog“ (die Titel aus der Vorschau als Stichpunkte). Ab 820 px Breite stehen
   beide nebeneinander; darunter fehlt „Demnächst“, es braucht am Handy zu viel Platz.
   Dann folgen Serien-Teaser und Galerien. Die Beiträge stehen unter `/blog/`,
   erreichbar über das Menü.
@@ -193,13 +193,13 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   ist, steht unter „Fotos aufnehmen und EXIF“. Das Skript wird einmal pro Seite
   eingebunden (`photo-grid-script.html` bringt es mit, sonst `lightbox.html` selbst).
 
-- **Vorschau „In Arbeit“** — `layouts/partials/soon-pages.html` und `soon-box.html`:
+- **Vorschau** — `layouts/partials/soon-pages.html` und `soon-box.html`:
   Kasten unter den Themen der Blog-Liste und auf Serienseiten, ein Stichpunktblock im Intro der Startseite.
   Siehe „Vorschau auf Beiträge in Arbeit“.
 
 - **Beitragslisten auf dem Handy** — `layouts/partials/post-entry.html`, `list-thumb.html` und
   `assets/css/custom.css` („Post list thumbnails“). Eine Zeile der Blog-Liste (auch „Zuletzt erschienen“
-  auf der Startseite, Serienübersicht, Kasten „In Arbeit“) hat das Cover links neben dem Text. Bis
+  auf der Startseite, Serienübersicht, Kasten „Vorschau“) hat das Cover links neben dem Text. Bis
   640 px Breite ist das Cover kleiner (112 × 56 px), bis 480 px (Handy) wäre die Textspalte daneben
   zu schmal, deshalb stehen die Teile dort übereinander: Titel,
   Labels nebeneinander, das Cover über die ganze Breite (2:1, die 720-px-Variante deckt einen 2×-Bildschirm
@@ -245,7 +245,7 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
   im Blog öffnet dieselbe Liste, gefiltert: Die Überschrift „Blog“ und die Themen-Zeile bleiben, das
   Menü markiert „Blog“, der offene Tag steht fett in der Zeile (`.topic-row a.is-active`). Ein Klick
   darauf führt zurück nach `/blog/` und hebt den Filter auf. Auch die gefilterte Liste hat
-  Jahresüberschriften und 15 Beiträge je Seite; der Kasten „In Arbeit“ steht auch hier auf Seite 1, unter den Themen, und zeigt nur die Vorschauen mit diesem Tag. Ab Seite 2 mit eigenem `<title>` und Canonical-Link.
+  Jahresüberschriften und 15 Beiträge je Seite; der Kasten „Vorschau“ steht auch hier auf Seite 1, unter den Themen, und zeigt nur die Vorschauen mit diesem Tag. Ab Seite 2 mit eigenem `<title>` und Canonical-Link.
   Tag-Seiten bleiben `noindex`. Die Liste und der Umblätterer sind in `post-list.html` für Blog und
   Tags gemeinsam.
 
@@ -304,7 +304,7 @@ python3 -m http.server 8088 --directory /tmp/site
 ```
 
 In der lokalen Vorschau gibt es in der Themen-Zeile des Blogs einen gestrichelten Filter „Entwürfe“ mit der Anzahl. Er führt auf
-`/entwuerfe/` (`content/entwuerfe.md`, `layouts/_default/drafts.html`), eine Liste aller Beiträge mit `draft: true` und darüber der Vorschauen „In Arbeit“, deren Text sich dort aufklappen lässt (sie haben keine eigene Seite). Im Deploy
+`/entwuerfe/` (`content/entwuerfe.md`, `layouts/_default/drafts.html`), eine Liste aller Beiträge mit `draft: true` und darüber der Vorschauen, deren Text sich dort aufklappen lässt (sie haben keine eigene Seite). Im Deploy
 gibt es weder den Filter (`hugo.IsProduction`) noch die Seite (`config/production/hugo.toml`, `ignoreFiles`).
 
 Das Skript baut in einen Nebenordner und tauscht ihn erst am Ende aus. Ein laufender Server liefert so nie einen halb leeren Ordner aus, und lazy geladene Bilder bleiben nicht als kaputte Kacheln stehen. Zu Fuß sind es `hugo --buildDrafts --environment development --baseURL http://localhost:8088/ -d /tmp/site` und danach `npx -y pagefind@1.5.2 --site /tmp/site`.
@@ -435,9 +435,9 @@ Kacheln.
 ### Vorschau auf Beiträge in Arbeit
 
 Ein Beitrag, der noch nicht fertig ist, kann als Vorschau im Blog stehen: gestrichelter
-Kasten „In Arbeit“ unter Suche und Themen, vor den Beiträgen (Titel, Cover, Zusammenfassung, nicht
-verlinkt; ab 768 px Breite aufgeklappt, darunter eingeklappt (auf dem Handy, bis 480 px, nur „In Arbeit“, der Hinweistext daneben fehlt), der Link
-`#in-arbeit` klappt ihn auf), einen Block „Demnächst im Blog“ im Intro der Startseite (ab 820 px Breite), und bei Beiträgen
+Kasten „Vorschau“ unter Suche und Themen, vor den Beiträgen (Titel, Cover, Zusammenfassung, nicht
+verlinkt; ab 768 px Breite aufgeklappt, darunter eingeklappt (auf dem Handy, bis 480 px, nur „Vorschau“, der Hinweistext daneben fehlt), der Link
+`#vorschau` klappt ihn auf), einen Block „Demnächst im Blog“ im Intro der Startseite (ab 820 px Breite), und bei Beiträgen
 einer Serie ein Kasten unter den Teilen auf der Serienseite. Die Vorschau hat keine
 eigene Seite und taucht in RSS, Sitemap, Suche, Tags und Serienzählung nicht auf.
 
@@ -859,7 +859,7 @@ wie der letzte Build, die Seite baut nur bei einem Push neu.
 | `series` | Name der Serie, genau wie der Titel in `content/series/<name>/_index.md`. Setzt Label „Serie · Teil 2/5“, Navigation zwischen den Teilen und die Serienseite. |
 | `seriesLabel` | Titel des Teils auf der Serienseite („Teil II: Voraussetzungen“). |
 
-**Vorschau „In Arbeit“**
+**Vorschau**
 
 Der Beitrag steht als Kasten im Blog, ohne eigene Seite (Details unter „Vorschau auf Beiträge in Arbeit“).
 
@@ -934,6 +934,6 @@ steht auf der Serienseite über der Teileliste.
 
 | Feld | Wirkung |
 | --- | --- |
-| `soon` | Ordnernamen der Beiträge, die als Vorschau „In Arbeit“ gezeigt werden. |
+| `soon` | Ordnernamen der Beiträge, die als Vorschau gezeigt werden. |
 | `cascade` | Standardwerte für alle Beiträge: `showTags` und `readTime` stehen auf `true`. Ein Beitrag überschreibt sie mit seinem eigenen Wert. |
 | `aliases` | `["/posts/"]` leitet die alte Blog-Adresse weiter. |

@@ -63,7 +63,7 @@ Der Teil, der mir am meisten Spaß gemacht hat. Aus einer Beitragsliste ist in w
 - **Serien**, bei denen Beiträge zusammengehören, mit Navigation zwischen den Teilen
 - **Galerien** und die Serie „Niederrhein.“ als gemischtes, zufälliges, Raster
 - **Ausrüstung und Rezepte** als eigene Seiten, deren Inhalte in YAML-Dateien stehen und von Vorlagen gerendert werden
-- **Vorschau „In Arbeit“**, mit der ich auch diesen Artikel schon ankündigen konnte, ohne dass er halbfertig im Netz steht
+- **Vorschau**, mit der ich auch diesen Artikel schon ankündigen konnte, ohne dass er halbfertig im Netz steht
 
 Entscheidend war dabei nicht, dass Claude schnell Code schreibt. Entscheidend war, dass ich Iterationen fahren konnte. Ich probiere die Seite lokal aus, sage „die Karte ist zu laut“ oder „auf dem Handy ist das zu lang“, und eine Viertelstunde später sieht es anders aus. Dafür hätte ich allein Wochenenden gebraucht, und vieles wäre geblieben, wie es zuerst war.
 

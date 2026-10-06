@@ -16,10 +16,10 @@
   {{- $drafts := where (site.GetPage "/blog").RegularPages "Draft" true }}
   {{- $soon := partial "soon-pages.html" "" }}
   {{- partial "topic-row.html" "" }}
-  <p class="drafts-note">{{ len $drafts }} {{ if eq (len $drafts) 1 }}Entwurf{{ else }}Entwürfe{{ end }} und {{ len $soon }} {{ if eq (len $soon) 1 }}Vorschau{{ else }}Vorschauen{{ end }} „In Arbeit“, nur in der lokalen Vorschau sichtbar.</p>
+  <p class="drafts-note">{{ len $drafts }} {{ if eq (len $drafts) 1 }}Entwurf{{ else }}Entwürfe{{ end }} und {{ len $soon }} {{ if eq (len $soon) 1 }}Vorschau{{ else }}Vorschauen{{ end }}, nur lokal sichtbar.</p>
 
   {{- with $soon }}
-  <h2 class="year-heading">In Arbeit</h2>
+  <h2 class="year-heading">Vorschau</h2>
   {{- range . }}
   {{- $page := . }}
   {{- $thumb := "" }}

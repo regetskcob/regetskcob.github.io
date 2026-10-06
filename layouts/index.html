@@ -48,7 +48,7 @@
   {{ partial "post-entry.html" . }}
 </div>
 {{- end }}
-{{- /* One line about the posts in the works, linking to the box "In Arbeit" at
+{{- /* One line about the posts in the works, linking to the box "Vorschau" at
        the top of the blog list (partials/soon-box.html). The emoji and the
        pipe the titles start with are left off. */}}
 {{- with partial "soon-pages.html" "" }}
@@ -56,7 +56,7 @@
   <h3 class="latest-heading">Demnächst im Blog</h3>
   <ul class="soon-home-list">
     {{- range . }}
-    <li><a href="{{ "blog/#in-arbeit" | relURL }}">{{ replaceRE `^[^\p{L}\p{N}]+` "" .Title }}</a></li>
+    <li><a href="{{ "blog/#vorschau" | relURL }}">{{ replaceRE `^[^\p{L}\p{N}]+` "" .Title }}</a></li>
     {{- end }}
   </ul>
 </div>

@@ -547,7 +547,7 @@ a.series-label:hover {
   margin-left: 0.4rem;
 }
 
-/* --- Previews of posts in the works ("In Arbeit", partials/soon-box.html) ---
+/* --- Previews of posts in the works ("Vorschau", partials/soon-box.html) ---
    A box like the cards on the site, but with a dashed border, and inside the
    lines of the post list with a muted cover and a muted title: no link, no
    page behind it. A line in the home page's intro points to it. */
@@ -618,7 +618,7 @@ a.series-label:hover {
 }
 
 /* On a phone the box is collapsed and there is no room for the note beside the
-   title, it would squeeze "In Arbeit" onto three lines. */
+   title, it would squeeze "Vorschau" onto three lines. */
 @media screen and (max-width: 480px) {
   .soon-hint {
     display: none;
