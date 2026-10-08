@@ -84,6 +84,9 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
+          # Keeps .well-known/apple-app-site-association, which the Wargame
+          # app needs for its room links. Hidden files are left out otherwise.
+          include-hidden-files: true
   deploy:
     environment:
       name: github-pages
