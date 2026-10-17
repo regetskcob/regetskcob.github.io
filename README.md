@@ -416,7 +416,8 @@ Das Bild ist 240 px breit, läuft durch denselben Render-Hook wie alle (WebP, Li
 direkt vor den Absätzen, die es begleiten soll. Die nächste Überschrift beginnt darunter. Ab 1000 px
 Fensterbreite hängt es 4 rem in den linken Rand, damit der Text seine volle Zeilenlänge behält;
 darunter steht es in der Spalte, unter 560 px allein über dem Text (`.float-image` in
-`assets/css/custom.css`).
+`assets/css/custom.css`). Eine Liste daneben behält ihre Einrückung, weil sie als eigener Block
+neben dem Bild steht; sie läuft dafür auch unterhalb des Bildes schmal weiter.
 
 ### Große Kacheln in Galerien
 

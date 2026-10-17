@@ -1775,6 +1775,14 @@ figure a[data-lightbox] {
   clear: both;
 }
 
+/* A list beside the image would lose its indent under the float, the bullets
+   then stood left of the paragraphs' edge. As its own block it sits next to
+   the image and keeps the indent. */
+.float-image ~ ul,
+.float-image ~ ol {
+  display: flow-root;
+}
+
 @media (min-width: 1000px) {
   .float-image {
     margin-left: -4rem;
