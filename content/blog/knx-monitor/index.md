@@ -81,7 +81,7 @@ Wer keine Anlage zur Hand hat, kann die App im Demo-Modus mit einem erfundenen M
 
 ## Auch in Home Assistant
 
-Die App läuft außerdem als Add-on in Home Assistant und erscheint dort in der Seitenleiste. Ein kleiner Server liefert die Web-Version aus und leitet die Telegramme zum Gateway weiter. Aufnahmen und Verlauf liegen im Datenordner des Add-ons. Alarme erscheinen als Benachrichtigung in Home Assistant, auf Wunsch zusätzlich als Push aufs Handy. Installiert wird das Add-on über ein eigenes Add-on-Repository, nicht über HACS, weil HACS keine Add-ons verteilt.
+Die App läuft außerdem als Add-on in Home Assistant und erscheint dort in der Seitenleiste. Ein kleiner Server liefert die Web-Version aus und leitet die Telegramme zum Gateway weiter. Aufnahmen und Verlauf liegen im Datenordner des Add-ons. Alarme erscheinen als Benachrichtigung in Home Assistant, auf Wunsch zusätzlich als Push aufs Handy. Installiert wird das Add-on über ein eigenes Add-on-Repository, die drei Schritte dafür stehen auf der [Seite der App][3].
 
 ## Wie es weitergeht
 
