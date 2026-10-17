@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 -500 2000 2000">
+  <!-- Cover for "KNX Monitor": a bus line with three devices, a telegram as a square wave running
+       along it, and a phone on the right that shows the values as small cards. Flat style of the
+       other generated covers. The artwork is 2000x1000 (y 0 to 1000) in the middle of a square
+       canvas. Render with qlmanage (size 2000), then sips -c 1000 2000 and conversion to JPEG
+       (quality 88), see README, "Generierte Cover". -->
+  <rect x="0" y="-500" width="2000" height="2000" fill="#f3efe6"/>
+  <g transform="translate(0 -80)" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M300 640 H1220" stroke="#2b2b29" stroke-width="4"/>
+<path d="M300 668 H1220" stroke="#9a9a94" stroke-width="4"/>
+<path d="M400 640 V560" stroke="#2b2b29" stroke-width="3"/>
+<rect x="350" y="470" width="100" height="90" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<path d="M375 500 H425 M375 520 H410" stroke="#9a9a94" stroke-width="3"/>
+<path d="M640 640 V560" stroke="#2b2b29" stroke-width="3"/>
+<rect x="590" y="470" width="100" height="90" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<circle cx="640" cy="515" r="20" stroke="#9a9a94" stroke-width="3"/>
+<path d="M880 640 V560" stroke="#2b2b29" stroke-width="3"/>
+<rect x="830" y="470" width="100" height="90" rx="8" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<path d="M855 535 L880 495 L905 535" stroke="#9a9a94" stroke-width="3"/>
+<path d="M450 760 H520 V700 H570 V760 H600 V700 H680 V760 H720 V700 H750 V760 H820" stroke="#b55229" stroke-width="5"/>
+<path d="M850 760 H900" stroke="#b55229" stroke-width="5" stroke-dasharray="3 14"/>
+<path d="M1220 640 C 1260 640, 1260 560, 1300 560" stroke="#2b2b29" stroke-width="3" stroke-dasharray="3 12"/>
+<rect x="1300" y="300" width="300" height="560" rx="40" fill="#faf9f4" stroke="#2b2b29" stroke-width="4"/>
+<path d="M1415 330 H1485" stroke="#2b2b29" stroke-width="4"/>
+<rect x="1335" y="380" width="230" height="90" rx="10" stroke="#2b2b29" stroke-width="3"/>
+<path d="M1355 445 L1395 425 L1430 438 L1470 405 L1510 418 L1545 400" stroke="#b55229" stroke-width="4"/>
+<rect x="1335" y="490" width="108" height="100" rx="10" stroke="#2b2b29" stroke-width="3"/>
+<path d="M1355 520 H1420 M1355 560 H1400" stroke="#9a9a94" stroke-width="3"/>
+<rect x="1457" y="490" width="108" height="100" rx="10" stroke="#2b2b29" stroke-width="3"/>
+<path d="M1477 520 H1540 M1477 560 H1515" stroke="#9a9a94" stroke-width="3"/>
+<rect x="1335" y="610" width="230" height="44" rx="10" stroke="#9a9a94" stroke-width="3"/>
+<rect x="1335" y="670" width="230" height="44" rx="10" stroke="#9a9a94" stroke-width="3"/>
+<rect x="1335" y="730" width="230" height="44" rx="10" stroke="#9a9a94" stroke-width="3"/>
+<circle cx="1545" cy="632" r="9" fill="#b55229" stroke="none"/>
+  </g>
+</svg>
