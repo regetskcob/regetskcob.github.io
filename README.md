@@ -38,7 +38,7 @@ Live-Seite unsichtbar. Die Einzelheiten dazu stehen weiter unten unter „Inhalt
 | Hosting | [GitHub Pages](https://pages.github.com) | Statisches Hosting direkt am Repo |
 | CI/CD | GitHub Actions (`.github/workflows/hugo.yaml`) | Build und Deploy bei jedem Push auf `main`; der Bild-Cache wird zwischen den Läufen gespeichert |
 | Suche | [Pagefind](https://pagefind.app) 1.5.2 | Läuft im Workflow nach dem Hugo-Build und indexiert die fertige Seite; im Browser, ohne externen Dienst |
-| Designsystem | [Horizont](https://github.com/regetskcob/design-system) als Hugo-Modul | Gemeinsame Farben, Kennungen und Marke mit Jagdaufseher, KNX Monitor und Panzergefecht; Doku unter [/design-system/](https://www.regetskcob.de/design-system/) |
+| Designsystem | [Horizont](https://github.com/regetskcob/horizont) als Hugo-Modul | Gemeinsame Farben, Kennungen und Marke mit Jagdaufseher, KNX Monitor und Panzergefecht; Doku unter [/horizont/](https://www.regetskcob.de/horizont/) |
 
 ### Eingebundene Dritt-Dienste
 
@@ -84,7 +84,7 @@ gewinnen gegenüber der gleichnamigen Datei im Theme.
 ### Horizont
 
 Farben, Kennungen und die Marke kommen aus Horizont, dem Designsystem des Blogs und
-der Projekte ([regetskcob/design-system](https://github.com/regetskcob/design-system)).
+der Projekte ([regetskcob/horizont](https://github.com/regetskcob/horizont)).
 `hugo.toml` importiert es als Modul und hängt drei Ordner ein: die Tokens als Daten
 (`site.Data.horizont`), die CSS-Schicht unter `assets/css/horizont/` und die Partials
 für Marke und App-Icon unter `horizont/`.
@@ -98,7 +98,7 @@ für Marke und App-Icon unter `horizont/`.
   über der Fußzeile (`footer.html`), als SVG-Favicon in `head.html`.
 - **Kennungen** — Tagline und Datum im Beitragskopf in Mono-Versalien.
 
-Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/design-system@main`
+Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/horizont@<tag>`, etwa `@v0.3.0`
 (ändert `go.mod` und `go.sum`).
 
 - **`layouts/_default/_markup/render-link.html`** — Links in Beiträgen auf andere Seiten öffnen in einem
