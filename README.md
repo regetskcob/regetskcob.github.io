@@ -97,8 +97,11 @@ für Marke und App-Icon unter `horizont/`.
 - **Marke** — die Buche auf dem Horizont vor dem Seitennamen (`header.html`) und
   über der Fußzeile (`footer.html`), als SVG-Favicon in `head.html`.
 - **Kennungen** — Tagline und Datum im Beitragskopf in Mono-Versalien.
+- **Shortcodes für Beiträge** — `hz-device` (Screenshot aus dem Bundle im
+  Geräterahmen), `hz-kennung`, `hz-badge`, `hz-symbol`, `hz-facts`. Aufruf und
+  Parameter: `docs/web.md` im Horizont-Repo.
 
-Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/horizont@<tag>`, etwa `@v0.3.0`
+Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/horizont@<tag>`, etwa `@v0.4.0`
 (ändert `go.mod` und `go.sum`).
 
 - **`layouts/_default/_markup/render-link.html`** — Links in Beiträgen auf andere Seiten öffnen in einem
