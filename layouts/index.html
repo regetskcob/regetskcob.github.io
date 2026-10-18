@@ -1,7 +1,7 @@
 {{/*
   Home page. Replaces the theme's home layout, which renders the full paginated
   post list, with a landing page: intro and news, then the photography kept
-  light: the series framed in one row of photos, the galleries as cards. The full grids live
+  light: the series as a column of the news, the galleries as cards. The full grids live
   on the series page and on /galerie/. Posts live at /blog/, linked from the
   menu.
 
@@ -37,8 +37,8 @@
 </div>
 {{ end }}
 
-{{- /* Below the icons, the news in two columns on a wide screen: the latest
-       post on the left, the ones in the works on the right. */}}
+{{- /* Below the icons, the news in three columns on a wide screen: the
+       latest post, the ongoing series, the posts in the works. */}}
 <div class="home-news">
 {{- /* The latest post that is out, as a row like in the blog list
        (partials/post-entry.html), above the line about the posts in the works.
@@ -47,7 +47,25 @@
 {{- range first 1 (where (site.GetPage "/blog").RegularPages "Draft" false).ByPublishDate.Reverse }}
 <div class="latest-home">
   <h3 class="latest-heading">Zuletzt erschienen</h3>
-  {{ partial "post-entry.html" . }}
+  {{ partial "post-entry.html" (dict "page" . "thumbSizes" "(max-width: 480px) 100vw, (max-width: 640px) 112px, (max-width: 819px) 180px, 320px") }}
+</div>
+{{- end }}
+{{- /* The ongoing series between the two, in the shape of the latest post:
+       its cover, title and teaser (content/niederrhein.md). */}}
+{{- with $series := site.GetPage "/niederrhein" }}
+<div class="latest-home series-home">
+  <h3 class="latest-heading">Laufende Serie · {{ len .Params.photos }} Fotos</h3>
+  <div class="post-line{{ with .Params.photo }} has-thumb{{ end }}">
+    {{- with resources.Get .Params.photo }}
+    {{ partial "list-thumb.html" (dict "img" . "href" $series.RelPermalink "sizes" "(max-width: 480px) 100vw, (max-width: 640px) 112px, (max-width: 819px) 180px, 320px") }}
+    {{- end }}
+    <div class="line-text">
+      <p class="line-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+      {{- with .Params.teaser }}
+      <p class="line-summary">{{ . }}</p>
+      {{- end }}
+    </div>
+  </div>
 </div>
 {{- end }}
 {{- /* One line about the posts in the works, linking to the box "Vorschau" at
@@ -66,12 +84,8 @@
 </div>
 </section>
 
-{{/* The series in its frame, one row of photos; then a card per gallery. */}}
-{{ partial "series-teaser.html" . }}
+{{/* A card per gallery, in a frame, linking to /galerie/. */}}
 {{ partial "gallery-cards.html" . }}
-
-{{/* Lightbox and shuffle for the series row, once, after the last grid. */}}
-{{ partial "photo-grid-script.html" . }}
 
 {{/* TODO: projects section — needs content under content/projects/ first. */}}
 
