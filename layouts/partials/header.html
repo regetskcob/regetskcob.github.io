@@ -38,11 +38,11 @@
 
     {{ if .IsHome }}
     <h1 class="header-title">
-        <a href="{{ site.BaseURL }}">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 34) }}{{ site.Title }}</a>
+        <a class="hz-lockup" href="{{ site.BaseURL }}">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 34) }}{{ site.Title }}</a>
     </h1>
     {{ else }}
     <p class="header-title">
-        <a href="{{ site.BaseURL }}">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 34) }}{{ site.Title }}</a>
+        <a class="hz-lockup" href="{{ site.BaseURL }}">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 34) }}{{ site.Title }}</a>
     </p>
     {{ end }}
 
