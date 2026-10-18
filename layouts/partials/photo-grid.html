@@ -1,8 +1,8 @@
 {{/*
   A photo grid, shared by the series page and the galleries on the home page.
 
-  Breaks out of the text column to up to 80% of the viewport and runs two,
-  three or four columns depending on its width. One row is a 3:2 landscape at
+  Takes the page frame (up to 1040px) and runs two, three or four columns
+  depending on its width. One row is a 3:2 landscape at
   single-column width. Tile shapes:
     landscape   1 column  x 1 row   (default)
     portrait    1 column  x 2 rows  detected from the image, so a portrait sits
@@ -14,7 +14,6 @@
   Takes a dict:
     items    list of dicts: img (image resource), alt, size, href
     shuffle  true to randomise the order on every visit (assets/js/series.js)
-    narrow   true to stay within the text column instead of breaking out
     uniform  true to give every tile the same 3:2 cell, ignoring portrait,
              panorama and "size: large" (the series teaser counts on it)
     page     the page the grid is on, for the image rights in the structured
@@ -24,7 +23,7 @@
   a large rendition of its photo, which series.js opens in a lightbox; the
   page includes partials/photo-grid-script.html once, after its last grid.
 */}}
-<div class="series-gallery{{ if .narrow }} is-narrow{{ end }}">
+<div class="series-gallery">
   <div class="series-grid"{{ with .title }} data-lightbox-title="{{ . }}"{{ end }}{{ if .shuffle }} data-shuffle{{ end }}{{ if .uniform }} data-uniform{{ end }}>
   {{- range $it := .items }}
     {{- $img := $it.img }}
@@ -40,12 +39,12 @@
       {{- $shape = "is-wide" }}
     {{- end }}
 
-    {{/* Rendered tile widths: half the phone screen on two columns, about
-         a third of 80vw on three, and at most 350px once the capped
-         gallery runs four. Two-column tiles are twice that. */}}
-    {{- $sizes := "(max-width: 640px) 50vw, (max-width: 1250px) 27vw, 350px" }}
+    {{/* Rendered tile widths: half the phone screen on two columns, a
+         third of the screen on three, and at most 330px in the 1040px
+         frame. Two-column tiles are twice that. */}}
+    {{- $sizes := "(max-width: 640px) 50vw, (max-width: 1088px) 33vw, 330px" }}
     {{- if in (slice "is-large" "is-wide") $shape }}
-      {{- $sizes = "(max-width: 640px) 100vw, (max-width: 1250px) 54vw, 700px" }}
+      {{- $sizes = "(max-width: 640px) 100vw, (max-width: 1088px) 66vw, 660px" }}
     {{- end }}
 
     <figure class="{{ trim (printf "series-tile %s" $shape) " " }}">

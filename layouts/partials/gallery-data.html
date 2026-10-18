@@ -1,0 +1,36 @@
+{{/*
+  The photo galleries of data/gallery.yaml, resolved to image resources.
+  Returns a list of dicts, in file order: id, title, description, items (each
+  img, alt, size, href). Used by the gallery page (_default/gallery.html) and
+  the cards on the home page (partials/gallery-cards.html).
+
+  An item with "post" + "image" pulls the file out of that blog post's page
+  bundle and links the tile to the post instead of the lightbox; an item with
+  only "image" reads assets/gallery/<image>. Missing files are skipped rather
+  than failing the build, so a typo in the data file does not take a page
+  down. A gallery without a single photo is left out. "id" is the anchor on
+  the gallery page; without one the title is used.
+*/}}
+{{- $blocks := slice -}}
+{{- range $g := site.Data.gallery.galleries -}}
+  {{- $items := slice -}}
+  {{- range $it := $g.items -}}
+    {{- $img := "" -}}
+    {{- $href := "" -}}
+    {{- with $it.post -}}
+      {{- with site.GetPage (printf "/blog/%s" .) -}}
+        {{- $img = .Resources.Get $it.image -}}
+        {{- $href = .RelPermalink -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $img = resources.Get (printf "gallery/%s" $it.image) -}}
+    {{- end -}}
+    {{- with $img -}}
+      {{- $items = $items | append (dict "img" . "alt" $it.alt "size" $it.size "href" $href "cover" $it.cover) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $items -}}
+    {{- $blocks = $blocks | append (dict "id" ($g.id | default (anchorize $g.title)) "title" $g.title "description" $g.description "items" .) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $blocks -}}

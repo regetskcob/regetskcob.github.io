@@ -10,6 +10,10 @@
    is measured, dates, counts and Kennungen. */
 
 :root {
+  /* One frame for everything: header, main, galleries and footer share
+     --page. Running text keeps the reading measure --column inside it,
+     flush left, so its edge lines up with the site name above. */
+  --page: 1040px;
   --column: 760px;
   --page-pad: var(--s-24);
   --figure-img-max-height: 80vh;
@@ -57,13 +61,13 @@ img, svg, video { max-width: 100%; }
 
 .skip-link:focus { top: var(--s-8); }
 
-/* --- The column: header, main and footer share it --- */
+/* --- The frame: header, main and footer share it --- */
 
 .site-head,
 .site-main,
 .site-foot {
   width: 100%;
-  max-width: calc(var(--column) + 2 * var(--page-pad));
+  max-width: calc(var(--page) + 2 * var(--page-pad));
   margin-inline: auto;
   padding-inline: var(--page-pad);
 }
@@ -71,6 +75,13 @@ img, svg, video { max-width: 100%; }
 .site-main {
   flex: 1;
   padding-bottom: var(--s-64);
+}
+
+/* Text keeps the measure; images, grids, tables and code take the frame.
+   :where() keeps this at zero specificity, so any component can override;
+   lists that are grids (cards, gear, recipes) set max-width: none. */
+:where(.site-main) :where(p, ul, ol, dl, blockquote, h1, h2, h3, h4, h5, h6, .post-line, .toc, .series-nav, .soon-box, .pagination, .single-pagination) {
+  max-width: var(--column);
 }
 
 /* --- Headlines and text --- */

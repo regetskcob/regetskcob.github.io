@@ -1,7 +1,11 @@
-# Photo galleries shown on the home page.
+# Photo galleries: the page /galerie/ (layouts/_default/gallery.html) shows
+# each one in full, the home page one card per gallery that links there
+# (layouts/partials/gallery-cards.html).
 #
 # Each block renders as its own titled section, in the order listed here; to
-# add a new theme, append another block at the bottom. Within a block the
+# add a new theme, append another block at the bottom. "id" is its anchor on
+# the gallery page. "cover: true" on an item picks the photo of the card on
+# the home page; without one the first landscape is used. Within a block the
 # photos appear in a random order on every visit, in the same grid as the
 # Niederrhein. series (layouts/partials/photo-grid.html).
 #
@@ -18,6 +22,7 @@
 
 galleries:
   - title: "Luftbilder"
+    id: luftbilder
     description: "Mit der Drohne über Felder und Dörfer, am liebsten früh am Morgen im Nebel."
     items:
       - image: "luftbilder/dji-0308.jpg"
@@ -86,11 +91,13 @@ galleries:
       - image: "luftbilder/dscf5877.jpg"
         alt: "Die Sonne steht im Morgennebel tief über einer Wiese mit jungen Bäumen und einem Hochsitz, am Horizont drei Windräder"
   - title: "Menschen"
+    id: menschen
     description: "Freunde und Bekannte, auf Feiern und unterwegs."
     # Photos go to assets/gallery/menschen/. The block stays hidden while empty.
     items: []
 
   - title: "Tiere"
+    id: tiere
     description: "Wild aus dem Revier und was mir draußen sonst vor die Linse läuft."
     items:
       - image: "tiere/xt5-20260920-180551.jpg"
@@ -149,6 +156,7 @@ galleries:
       - image: "tiere/img-7702.jpg"
         alt: "Schafherde auf einer nebligen Wiese mit hohem Gras, rechts Bäume im Dunst, vorne ein Weidezaun"
   - title: "Allgäu"
+    id: allgaeu
     description: "Berge, sobald es einmal weiter weg gehen darf."
     items:
       - image: "allgaeu/dscf0480.jpg"
