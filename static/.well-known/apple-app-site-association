@@ -15,6 +15,15 @@
             "comment": "Pairing links turn the app into the controller of a screen"
           }
         ]
+      },
+      {
+        "appIDs": ["86HB5U6788.de.jagdaufseher.app"],
+        "components": [
+          {
+            "/": "/jagdaufseher/konto/*",
+            "comment": "Where confirmation and password-reset mails land, so the app opens instead of the page"
+          }
+        ]
       }
     ]
   }

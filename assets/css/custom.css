@@ -520,18 +520,7 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
 
 @media (min-width: 820px) {
   .home-news {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  /* In a third of the frame the latest post and the series stack: the
-     cover across the column, the text below. */
-  .home-news .post-line.has-thumb { flex-direction: column; }
-
-  .home-news .line-thumb {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 2 / 1;
-    margin: 0 0 var(--s-12);
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   }
 
   .home-news .soon-home {
@@ -742,9 +731,41 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
 }
 
 /* --- Photography on the home page ---
-   The series is a column of the news above; the galleries stand in a frame
-   (partials/gallery-cards.html), one card each, under a Kennung. The cards
-   run the columns and gaps of the photo grid (.series-grid). */
+   The series opens under the intro, open, a single row of its photos
+   (partials/series-teaser.html); the galleries stand in a frame
+   (partials/gallery-cards.html), one card each. Both under a Kennung. The
+   cards run the columns and gaps of the photo grid (.series-grid). */
+
+.series-teaser { margin: var(--s-32) 0 var(--s-16); }
+
+/* Inside the intro section, but a section heading, not the greeting. */
+.intro-card .series-teaser .home-heading { font: 300 1.625rem/1.25 var(--font-serif); }
+
+.series-teaser .hz-kennung,
+.gallery-teaser .hz-kennung { margin: 0 0 var(--s-4); }
+
+.series-teaser .home-heading,
+.gallery-teaser .home-heading { margin: 0 0 var(--s-8); }
+
+.series-teaser .home-heading a,
+.gallery-teaser .home-heading a { color: inherit; text-decoration: none; }
+
+.series-teaser .home-heading a:hover,
+.gallery-teaser .home-heading a:hover { text-decoration: underline; }
+
+/* The series row shows all series photos shuffled, but a single row: two,
+   three or four tiles at two, three or four columns, the breakpoints of the
+   grid's own container queries. Hidden tiles are display: none, so their
+   lazy images are never fetched. */
+.series-teaser .series-tile:nth-child(n + 3) { display: none; }
+
+@container (min-width: 600px) {
+  .series-teaser .series-tile:nth-child(3) { display: block; }
+}
+
+@container (min-width: 900px) {
+  .series-teaser .series-tile:nth-child(4) { display: block; }
+}
 
 .gallery-teaser {
   margin-top: var(--s-48);
@@ -757,14 +778,6 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
 @media (max-width: 640px) {
   .gallery-teaser { padding: var(--s-16); }
 }
-
-.gallery-teaser .hz-kennung { margin: 0 0 var(--s-4); }
-
-.gallery-teaser .home-heading { margin: 0 0 var(--s-8); }
-
-.gallery-teaser .home-heading a { color: inherit; text-decoration: none; }
-
-.gallery-teaser .home-heading a:hover { text-decoration: underline; }
 
 .teaser-text {
   color: var(--text-muted);
