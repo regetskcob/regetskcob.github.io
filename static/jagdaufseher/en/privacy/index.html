@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy – Jagdaufseher</title>
+<meta name="description" content="Privacy policy for the Jagdaufseher app: what data is processed, by whom and for how long.">
+<meta name="theme-color" content="#2f5d3a">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="../">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="color: var(--green)" aria-hidden="true">
+        <path d="M12 2 6.5 10h3L5 16.5h5.75V22h2.5v-5.5H19L14.5 10h3L12 2z"/>
+      </svg>
+      Jagdaufseher
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a class="lang" href="../../datenschutz/" hreflang="de" lang="de">DE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="prose">
+  <div class="container">
+    <h1>Privacy policy</h1>
+
+    <p>
+      <strong>Draft.</strong> It describes what the app actually does – read off
+      the code rather than taken from a template. What it does not replace: a
+      look from somebody who carries the liability. What is
+      <span class="todo">marked like this</span> is still outstanding. The German
+      <a href="../../datenschutz/" hreflang="de" lang="de">Datenschutzerklärung</a>
+      is the authoritative version.
+    </p>
+
+    <h2>Controller</h2>
+    <p>
+      The controller within the meaning of the GDPR is the person named in the
+      <a href="https://www.regetskcob.de/legal/" hreflang="de" lang="de">Impressum</a>.
+    </p>
+
+    <h2>What this is about</h2>
+    <p>
+      Jagdaufseher manages a hunting district: its facilities, tasks, game
+      reports and the members of that district. An account is needed for that,
+      and data is stored – on the device and on a server.
+    </p>
+    <p>
+      The app contains <strong>no advertising, no analytics and no
+      tracking.</strong> Nothing is passed to third parties for advertising, and
+      there is nothing to object to, because none of that happens.
+    </p>
+    <p>
+      The same goes for these pages under <code>/jagdaufseher/</code>: they load
+      no fonts, scripts or tracking pixels from third parties, set no cookies and
+      therefore need no consent. They are served by GitHub Pages (GitHub, Inc.,
+      San Francisco, USA – a Microsoft company), which keeps the usual server
+      logs, including the IP address.
+      <em>Legal basis: Art. 6(1)(f) GDPR (operation and security).</em>
+      For the rest of the site at regetskcob.de, its
+      <a href="https://www.regetskcob.de/legal/" hreflang="de" lang="de">own privacy
+      statement</a> applies; the Impressum is there too.
+    </p>
+
+    <h2>What data, and why</h2>
+
+    <p>
+      <strong>Account.</strong> Email address, password and a display name.
+      Without them there is no sign-in and no way to tell who entered what. The
+      password is not stored in clear text.<br>
+      <em>Legal basis: Art. 6(1)(b) GDPR (performance of a contract).</em>
+    </p>
+
+    <p>
+      <strong>District entries.</strong> Facilities with type, condition and
+      coordinates; tasks with due date and assignee; game reports with species,
+      sex, age class, weight, place and time; the district boundary. Every entry
+      carries who made it.<br>
+      <em>Legal basis: Art. 6(1)(b) GDPR.</em>
+    </p>
+
+    <p>
+      <strong>Photos.</strong> Only those deliberately added to a facility or a
+      report. They sit in non-public storage and are reachable only by members of
+      the same district. The app does not read the photo library, only the single
+      image that was picked.<br>
+      <em>Legal basis: Art. 6(1)(b) GDPR.</em>
+    </p>
+
+    <p>
+      <strong>Location.</strong> Only while the app is in use, and only if the
+      permission was granted: to show your own position on the district map and
+      to suggest the place of a report or a facility. <strong>No background
+      location</strong>, no movement profile. A location is stored only when it
+      belongs to an entry. The permission can be withdrawn at any time in the
+      system settings; the map keeps working.<br>
+      <em>Legal basis: Art. 6(1)(a) GDPR (consent).</em>
+    </p>
+
+    <p>
+      <strong>Technically unavoidable.</strong> Reaching the server produces an
+      IP address and a timestamp there, as any network request does.<br>
+      <em>Legal basis: Art. 6(1)(f) GDPR (operation and security).</em>
+    </p>
+
+    <h2>Who sees the data</h2>
+    <p>
+      The data of a district is seen by <strong>the members of that
+      district</strong>, and by nobody else. That is not merely a promise: the
+      server enforces it for every single row (row level security), and a request
+      without a membership gets nothing back. A guest in a district may read and
+      change nothing.
+    </p>
+
+    <h2>Processors</h2>
+    <p>
+      <strong>Supabase</strong> (database, sign-in, file storage) – server
+      location
+      <span class="todo">[enter the region; for the EU pick a region in the EU]</span>.
+      A data processing agreement is in place with Supabase.
+    </p>
+    <p>
+      <strong>Bundesamt für Kartographie und Geodäsie (BKG)</strong> – supplies
+      the map tiles (TopPlusOpen). Loading a tile transmits the IP address to the
+      BKG, as calling up any web page does. Tiles already loaded stay on the
+      device and are not requested again.
+    </p>
+    <p>
+      Beyond those, none. The app embeds no service it does not need in order to
+      work.
+    </p>
+
+    <h2>On the device</h2>
+    <p>
+      The app is built to work without a network. That is why the device holds:
+      the district entries last loaded, map tiles, photos already viewed and – for
+      as long as there is no connection – entries not yet sent, together with
+      their photos. All of it lives in the app's protected area and goes with the
+      app when it is uninstalled.
+    </p>
+
+    <h2>Retention</h2>
+    <p>
+      District entries stay as long as the district exists – they are its
+      history. Account data stays until the account is deleted.
+    </p>
+
+    <h2>Deleting the account</h2>
+    <p>
+      The account can be deleted in the app itself: on &ldquo;My districts&rdquo;,
+      in the menu at the top right, entry <em>Delete account</em>. You are asked
+      twice; the second time the word &ldquo;DELETE&rdquo; has to be typed out.
+      What happens then:
+    </p>
+    <ul>
+      <li>
+        The sign-in account is removed – email address, password and display name
+        are gone afterwards.
+      </li>
+      <li>
+        The entries in the district stay, the name on them goes. Facilities,
+        tasks, reports and photos are the history of the district, not of an
+        account; where a person stood before, nobody stands afterwards.
+      </li>
+      <li>
+        A district is never left without an owner: if somebody is still there, it
+        passes to the longest-standing member. If nobody is left, the district is
+        deleted along with it, photos included.
+      </li>
+      <li>
+        On the device the local cache, the queue and the stored photos are
+        cleared before the app signs out.
+      </li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <p>
+      Access, rectification, erasure, restriction, data portability and objection
+      (Art. 15–21 GDPR), plus the right to lodge a complaint with a supervisory
+      authority. A message to
+      <a href="mailto:regetskcob@icloud.com">regetskcob@icloud.com</a> is enough.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      The app is aimed at adults holding a hunting licence, not at children.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      Changes are published here. Last updated: 18 October 2026.
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Jagdaufseher</span>
+    <a href="../">Home</a>
+    <a class="spacer" href="../../datenschutz/" hreflang="de" lang="de">Deutsch</a>
+  </div>
+</footer>
+
+</body>
+</html>
