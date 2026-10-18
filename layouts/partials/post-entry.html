@@ -13,18 +13,10 @@
   Diff against the theme file when updating typo.
 
   The thumbnail is the cover in its own 2:1 (partials/list-thumb.html).
-
-  Takes the page, or a dict with "page" and "thumbSizes", the sizes
-  attribute of the thumbnail where it renders wider than in the list (the
-  home page news).
 */}}
-{{- $p := . -}}
-{{- $sizes := "" -}}
-{{- if reflect.IsMap . }}{{ $p = .page }}{{ $sizes = .thumbSizes }}{{ end -}}
-{{- with $p -}}
 {{- $thumb := "" -}}
 {{- with .Params.cover -}}
-  {{- with $p.Resources.Get (strings.TrimPrefix "./" .) -}}
+  {{- with $.Resources.Get (strings.TrimPrefix "./" .) -}}
     {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}
       {{- $thumb = . -}}
     {{- end -}}
@@ -34,7 +26,7 @@
 <div class="post-line{{ with $thumb }} has-thumb{{ end }}">
 
     {{- with $thumb }}
-    {{ partial "list-thumb.html" (dict "img" . "href" $p.RelPermalink "sizes" $sizes) }}
+    {{ partial "list-thumb.html" (dict "img" . "href" $.RelPermalink) }}
     {{- else }}
     <span class="line-thumb" aria-hidden="true"></span>
     {{- end }}
@@ -56,4 +48,3 @@
     </div>
 
 </div>
-{{- end }}
