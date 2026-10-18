@@ -1,0 +1,35 @@
+{{/*
+  The gallery page (content/galerie.md): every gallery of data/gallery.yaml
+  in the large photo grid (partials/photo-grid.html), shuffled on every visit,
+  with lightbox. A row of Kennung links at the top jumps to each gallery; the
+  cards on the home page link to the same anchors.
+*/}}
+{{ define "main" }}
+<article class="gallery-page">
+  <header class="post-intro">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{- $blocks := partial "gallery-data.html" "" }}
+    {{- if gt (len $blocks) 1 }}
+    <ul class="gallery-jump">
+      {{- range $blocks }}
+      <li><a href="#{{ .id }}">{{ .title }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </header>
+
+  {{- range partial "gallery-data.html" "" }}
+  <section class="gallery-block" id="{{ .id }}">
+    <div class="gallery-block-head">
+      <h2>{{ .title }}</h2>
+      <span class="gallery-card-count">{{ len .items }} {{ cond (eq (len .items) 1) "Foto" "Fotos" }}</span>
+    </div>
+    {{- with .description }}<p class="gallery-description">{{ . }}</p>{{ end }}
+    {{ partial "photo-grid.html" (dict "items" .items "title" .title "shuffle" true "page" $) }}
+  </section>
+  {{- end }}
+
+  {{ partial "photo-grid-script.html" . }}
+</article>
+{{ end }}

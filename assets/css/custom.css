@@ -562,6 +562,11 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
 
 .soon-home-list { font-family: var(--font-sans); font-size: 0.9375rem; line-height: 1.5; list-style: none; padding-left: 0; }
 .soon-home-list li { padding: var(--s-8) 0; margin: 0; border-bottom: var(--line-hairline) solid var(--line); }
+
+/* The section's own line closes the news: the last row of each column draws
+   none, so no hairline stacks on the line under the intro. */
+.home-news .post-line:last-child,
+.soon-home-list li:last-child { border-bottom: 0; padding-bottom: 0; }
 .soon-home-list a { text-decoration: none; }
 
 .soon-home a:hover {
@@ -725,56 +730,169 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
   font-size: 0.85em;
 }
 
-/* A grid that stays within the text column (the series teaser). */
-.series-gallery.is-narrow {
+/* --- Photography on the home page ---
+   Two frames of the same kind: the series (partials/series-teaser.html), a
+   single row of its photos, and the galleries (partials/gallery-cards.html),
+   one card each. A Kennung on top says which is which; the cards run the
+   same columns and gaps as the series row, so the tiles line up. */
+
+.series-teaser,
+.gallery-teaser {
+  margin-top: var(--s-24);
+  padding: var(--s-24);
+  background: var(--sunken);
+  border: var(--line-hairline) solid var(--line);
+  border-radius: var(--r-10);
+}
+
+.series-teaser { margin-top: var(--s-48); }
+
+@media (max-width: 640px) {
+  .series-teaser,
+  .gallery-teaser { padding: var(--s-16); }
+}
+
+.series-teaser .hz-kennung,
+.gallery-teaser .hz-kennung { margin: 0 0 var(--s-4); }
+
+.series-teaser .home-heading,
+.gallery-teaser .home-heading { margin: 0 0 var(--s-8); }
+
+.series-teaser .home-heading a,
+.gallery-teaser .home-heading a { color: inherit; text-decoration: none; }
+
+.series-teaser .home-heading a:hover,
+.gallery-teaser .home-heading a:hover { text-decoration: underline; }
+
+.teaser-text {
+  color: var(--text-muted);
+  margin: 0 0 var(--s-16);
+}
+
+.teaser-more {
+  margin: var(--s-16) 0 0;
+  font: 500 0.875rem/1.5 var(--font-sans);
+}
+
+.teaser-more a { text-decoration: none; }
+.teaser-more a:hover { text-decoration: underline; }
+
+/* The series teaser carries all series photos, shuffled, and shows a single
+   row: two, three or four tiles at two, three or four columns, the
+   breakpoints of the grid's own container queries. Hidden tiles are
+   display: none, so their lazy images are never fetched. */
+.series-teaser .series-tile:nth-child(n + 3) { display: none; }
+
+@container (min-width: 600px) {
+  .series-teaser .series-tile:nth-child(3) { display: block; }
+}
+
+@container (min-width: 900px) {
+  .series-teaser .series-tile:nth-child(4) { display: block; }
+}
+
+.gallery-cards-wrap { container-type: inline-size; }
+
+/* The columns and gaps of .series-grid, at its breakpoints. */
+.gallery-cards {
+  --cols: 2;
+  --gap: 0.5rem;
+  max-width: none;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  gap: var(--s-16) var(--gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@container (min-width: 600px) {
+  .gallery-cards { --cols: 3; --gap: 0.75rem; }
+}
+
+@container (min-width: 900px) {
+  .gallery-cards { --cols: 4; }
+}
+
+.gallery-card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.gallery-card img {
+  display: block;
   width: 100%;
-  margin-left: 0;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--r-6);
+  transition: opacity var(--motion-fast) ease-out;
 }
 
-/* The series teaser on the home page carries all series photos, shuffled,
-   and shows as many as fill whole rows: four on two columns, six on three,
-   four on four. The
-   breakpoints are those of the grid's own container queries. */
-.series-teaser .series-tile:nth-child(n + 5) {
-  display: none;
+.gallery-card a:hover img { opacity: 0.88; }
+
+.gallery-card-title {
+  display: block;
+  margin-top: var(--s-8);
+  font: 500 0.9375rem/1.4 var(--font-sans);
 }
 
-@container (min-width: 600px) and (max-width: 999.98px) {
-  .series-teaser .series-tile:nth-child(5),
-  .series-teaser .series-tile:nth-child(6) {
-    display: block;
-  }
+.gallery-card a:hover .gallery-card-title { text-decoration: underline; }
+
+.gallery-card-count {
+  display: block;
+  font: 600 0.6875rem/1.6 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
-/* --- Home gallery ---
-   The grids themselves are the shared photo grid, see "Photo series". */
+/* --- Gallery page (/galerie/) ---
+   A row of Kennung links to the galleries, then one section per gallery
+   with the full photo grid. */
 
-.gallery-section {
-  margin-top: 3rem;
+.gallery-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-8);
+  margin: var(--s-16) 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-/* One block per theme; blocks stack down the page. A block, title and
-   description included, takes the wide gallery width, so the heading lines
-   up with the photos below it; the grid inside then just fills the block. */
+.gallery-jump a {
+  display: inline-block;
+  padding: var(--s-4) var(--s-8);
+  font: 600 0.6875rem/1.6 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  border: var(--line-hairline) solid var(--line);
+  border-radius: var(--r-2);
+}
+
+.gallery-jump a:hover { color: var(--text); border-color: var(--line-strong); }
+
 .gallery-block {
-  --gallery-width: max(100%, min(80vw, 1400px));
-  width: var(--gallery-width);
-  margin-left: calc((100% - var(--gallery-width)) / 2);
+  margin-top: var(--s-48);
+  scroll-margin-top: var(--s-24);
 }
 
-.gallery-block .series-gallery {
-  width: 100%;
-  margin-left: 0;
+.gallery-block-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-4) var(--s-12);
+  margin-bottom: var(--s-4);
 }
 
-.gallery-block + .gallery-block {
-  margin-top: 1rem;
-}
+.gallery-block-head h2 { margin: 0; }
 
 .gallery-description {
   color: var(--text-muted);
-  margin-top: -0.5rem;
-  margin-bottom: 1rem;
+  margin: 0 0 var(--s-16);
 }
 
 /* --- Photo series --- */
@@ -783,14 +901,10 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
   margin-bottom: 2.5rem;
 }
 
-/* The gallery breaks out of the text column and uses up to 80% of the
-   viewport, capped for very wide screens. It never gets narrower than the
-   column itself, which is what happens on phones. The theme centres the body,
-   so equal negative margins on both sides keep the gallery centred too. */
+/* The gallery takes the page frame, like everything else; only running
+   text keeps the narrower measure. */
 .series-gallery {
-  --gallery-width: max(100%, min(80vw, 1400px));
-  width: var(--gallery-width);
-  margin-left: calc((100% - var(--gallery-width)) / 2);
+  width: 100%;
   /* A size container, so the grid can derive columns and row height from the
      gallery's own width instead of the viewport. */
   container-type: inline-size;
@@ -816,7 +930,7 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
   }
 }
 
-@container (min-width: 1000px) {
+@container (min-width: 900px) {
   .series-grid {
     --cols: 4;
   }
@@ -1213,28 +1327,6 @@ figure a[data-lightbox] {
   cursor: zoom-in;
   text-decoration: none;
   border-bottom: none;
-}
-
-/* --- Series teaser on the home page --- */
-
-.series-teaser {
-  margin-top: 3rem;
-}
-
-.series-teaser h2 a {
-  text-decoration: none;
-  border-bottom: none;
-}
-
-.series-teaser-text {
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
-}
-
-.series-more {
-  margin-top: 1rem;
-  font-family: var(--font-mono);
-  font-size: 0.9em;
 }
 
 /* --- Gear page --- */

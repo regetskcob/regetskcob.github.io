@@ -1,0 +1,44 @@
+{{/*
+  The galleries on the home page, light: one card per gallery of
+  data/gallery.yaml with a 3:2 cover, the title and the number of photos,
+  linking to its section on /galerie/. The full grids live there
+  (_default/gallery.html). Framed like the series teaser above
+  (partials/series-teaser.html), with the same columns as its row.
+
+  A gallery's cover is its item with "cover: true", else its first
+  landscape.
+*/}}
+{{- with $page := site.GetPage "/galerie" }}
+{{- with partial "gallery-data.html" "" }}
+<section class="gallery-teaser">
+  {{ partial "horizont/kennung.html" (dict "text" (printf "Galerien · %d Themen" (len .)) "tag" "p") }}
+  <h2 class="home-heading"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h2>
+  <p class="teaser-text">Lose Sammlungen nach Themen, bei jedem Besuch neu gemischt.</p>
+  <div class="gallery-cards-wrap">
+  <ul class="gallery-cards">
+    {{- range . }}
+      {{- $cover := "" }}
+      {{- range first 1 (where .items "cover" true) }}{{ $cover = . }}{{ end }}
+      {{- if not $cover }}
+        {{- range .items }}
+          {{- if and (not $cover) (ge .img.Width .img.Height) }}{{ $cover = . }}{{ end }}
+        {{- end }}
+      {{- end }}
+      {{- $cover = $cover | default (index .items 0) }}
+      {{- $thumb := $cover.img.Fill "480x320 webp q80 Smart" }}
+      {{- $thumb2 := $cover.img.Fill "960x640 webp q80 Smart" }}
+    <li class="gallery-card">
+      <a href="{{ $page.RelPermalink }}#{{ .id }}">
+        <img src="{{ $thumb.RelPermalink }}" srcset="{{ $thumb.RelPermalink }} 480w, {{ $thumb2.RelPermalink }} 960w"
+             sizes="(max-width: 640px) 50vw, (max-width: 1088px) 25vw, 240px" width="480" height="320" loading="lazy" decoding="async" alt="">
+        <span class="gallery-card-title">{{ .title }}</span>
+        <span class="gallery-card-count">{{ len .items }} {{ cond (eq (len .items) 1) "Foto" "Fotos" }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+  </div>
+  <p class="teaser-more"><a href="{{ $page.RelPermalink }}">Alle Galerien →</a></p>
+</section>
+{{- end }}
+{{- end }}

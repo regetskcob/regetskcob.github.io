@@ -1,7 +1,9 @@
 {{/*
   Home page. Replaces the theme's home layout, which renders the full paginated
-  post list, with a landing page about the photography: intro, the series
-  teaser and the galleries. Posts live at /blog/, linked from the menu.
+  post list, with a landing page: intro and news, then the photography kept
+  light: the series framed in one row of photos, the galleries as cards. The full grids live
+  on the series page and on /galerie/. Posts live at /blog/, linked from the
+  menu.
 
   The site name in the header is the page's only h1; the sections below are
   h2 with the class home-heading, which keeps their former h1 size.
@@ -64,15 +66,13 @@
 </div>
 </section>
 
-{{/* Ongoing series first, then the loose galleries below it. */}}
+{{/* The series in its frame, one row of photos; then a card per gallery. */}}
 {{ partial "series-teaser.html" . }}
+{{ partial "gallery-cards.html" . }}
 
-{{/* Gallery */}}
-{{ partial "gallery.html" . }}
+{{/* Lightbox and shuffle for the series row, once, after the last grid. */}}
+{{ partial "photo-grid-script.html" . }}
 
 {{/* TODO: projects section — needs content under content/projects/ first. */}}
-
-{{/* Lightbox and shuffle for the grids above, once, after the last one. */}}
-{{ partial "photo-grid-script.html" . }}
 
 {{ end }}

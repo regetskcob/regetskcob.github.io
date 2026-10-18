@@ -160,6 +160,11 @@ url = "/niederrhein"
 group = "foto"
 
 [[params.menu]]
+name = "Galerie"
+url = "/galerie"
+group = "foto"
+
+[[params.menu]]
 name = "Ausrüstung"
 url = "/ausruestung"
 group = "foto"
