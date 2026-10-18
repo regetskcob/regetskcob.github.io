@@ -17,7 +17,8 @@
 /* The test deploy under /preview/ (config/preview): a quiet line above the
    header, so nobody takes it for the live site. */
 .preview-note {
-  margin: 0 0 1rem;
+  flex-basis: 100%;
+  margin: 0;
   padding: 0.35rem 0.6rem;
   font: 600 0.6875rem/1.4 var(--font-mono);
   letter-spacing: 0.08em;
@@ -27,202 +28,120 @@
   border-radius: 2px;
 }
 
-/* --- Heading levels ---
-   Only one h1 per page, so the header's site name is a <p> outside the home
-   page, and the home sections are h2. These keep the sizes they had as h1
-   (and the gallery blocks theirs as h2). */
+/* --- Site header (partials/header.html) ---
+   The lockup of the umbrella brand (mark and name on one baseline, Mona Sans
+   like every word mark of Horizont), the tagline as a Kennung, the menu in
+   two groups on the right; a hairline closes the header. The site name is
+   the h1 only on the home page. */
 
-/* Beats ".header p", which styles the menu entries. */
-.header p.header-title {
-  font-family: inherit;
-  font-size: 2.6em;
-  line-height: 1.2;
-  color: var(--primary);
+.site-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--s-16) var(--s-32);
+  padding-top: var(--s-32);
+  padding-bottom: var(--s-16);
+  border-bottom: var(--line-hairline) solid var(--line);
+}
+
+.header { display: contents; }
+
+.site-brand { min-width: 0; }
+
+.header-title {
   margin: 0;
+  font: 600 1.625rem/1.1 var(--font-sans);
+  letter-spacing: -0.01em;
 }
 
-.home-heading {
-  margin-top: var(--h1-margin-top);
-  margin-bottom: var(--h1-margin-bottom);
-  font-size: var(--h1-font-size);
+.header-title a {
+  color: var(--text);
+  text-decoration: none;
+  gap: 0.3em;
+  --mark: 0.95em;
 }
 
-/* On phones, a long word in a heading is wider than the column and was
-   broken at the last letter that fit: "Datenschutzerkläru / ng",
-   "OpenAstroTracke / r", "PHOTOGRAPHER / S". Hyphenation splits it at a
-   syllable instead; the page is lang="de-DE", so the browser uses German
-   rules. Short words stay whole. Where the syllable is not the best break,
-   a soft hyphen in the heading picks it (see content/legal.md). */
-@media screen and (max-width: 640px) {
-  h1, h2, h3, h4 {
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphenate-limit-chars: 10 4 4;
-  }
-}
-
-/* The mark of Horizont before the site name: the beech on the horizon, in
-   the colour of the name, sized with it. A lockup of Horizont (hz-lockup in
-   header.html): the mark's horizon lies on the baseline of the name. */
-.header .header-title a {
-  gap: 0.28em;
-  --mark: 0.62em;
-}
-
-/* Tagline under the site name, as a Kennung of Horizont: small mono capitals
-   that label rather than speak. */
-.header p.header-subtitle {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 600;
+.header-subtitle {
+  margin: var(--s-8) 0 0;
+  font: 600 0.6875rem/1.4 var(--font-mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--content-secondary);
-  margin: 0.35rem 0 1rem;
+  color: var(--text-muted);
 }
+
+.home-heading { margin-top: 0; }
 
 /* --- Post header ---
-   In posts, title, summary, author, date and tags sit on a light grey
-   card, set off from the article text below. Pages like Über keep the
-   plain header. The grey is the theme's code background,
-   so it follows light and dark mode like the code blocks do. */
+   The cover on top, edge to edge of the column and square-cornered, then the
+   Kennung line, title, summary, contents and tags (base.css), closed by a
+   hairline before the text. */
 
 .post-intro {
-  background: var(--code-background);
-  border: 1px solid var(--code-border);
-  border-radius: 6px;
-  padding: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-top: var(--s-24);
+  padding-bottom: var(--s-24);
+  border-bottom: var(--line-hairline) solid var(--line);
 }
 
-/* Cover on top of the card, edge to edge: the negative margins cancel the
-   card padding. Height capped, so portrait and square covers are cropped
-   instead of pushing the title down. */
 .post-intro .post-cover {
-  margin: -1.5rem -1.5rem 1.25rem;
+  position: relative;
+  margin: 0 0 var(--s-24);
 }
 
 .post-intro .post-cover img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 22rem;
+  max-height: 26rem;
   object-fit: cover;
-  border-radius: 5px 5px 0 0;
 }
 
-.post-intro .post-cover {
-  position: relative;
+/* The line above the title: series, date, state, reading time. */
+.post-kennung {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-4) var(--s-12);
 }
 
-/* Label on generated covers ("coverAI: true"): small, in the corner, readable
-   on light and dark images alike. */
+.post-kennung .single-date { display: contents; }
+
+/* Note on generated or borrowed covers ("coverAI", "coverCredit"): small,
+   in the corner, readable on light and dark pictures alike. */
 .post-cover-ai {
   position: absolute;
-  right: 0.6rem;
-  bottom: 0.6rem;
+  right: var(--s-8);
+  bottom: var(--s-8);
   margin: 0;
-  padding: 0.15rem 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
+  padding: var(--s-2) var(--s-8);
+  font: 400 0.6875rem/1.4 var(--font-mono);
   color: #fff;
-  background: rgba(0, 0, 0, 0.55);
-  border-radius: 3px;
+  background: rgb(0 0 0 / 0.55);
+  border-radius: var(--r-2);
   pointer-events: none;
 }
 
-@media screen and (max-width: 640px) {
-  .post-intro .post-cover {
-    margin: -1rem -1.1rem 1rem;
-  }
+.post-intro .single-title { margin-top: var(--s-12); }
 
-  .post-intro .post-cover img {
-    max-height: 15rem;
-  }
-}
+.post-intro > :last-child { margin-bottom: 0; }
 
-/* Balanced lines instead of a lone last word ("Teil / I"). */
-.post-intro .single-title {
-  margin-top: 0;
-  text-wrap: balance;
-}
-
-.post-intro > :last-child {
-  margin-bottom: 0;
-}
-
-/* Table of contents inside the card, between summary and date: a touch
-   smaller than the text, so it reads as part of the header. */
-.post-intro .toc {
-  font-size: 0.9em;
-  margin: 1rem 0 0.75rem;
-}
-
-.post-intro .toc p {
-  margin: 0 0 0.2rem;
-}
-
-.post-intro .toc ul {
-  padding-left: 1.2rem;
-}
-
-/* Tags as quiet metadata: smaller and grey, so the summary above leads. */
-.post-intro .single-tags {
-  margin-top: 0.75rem;
-  font-size: 0.8em;
-  line-height: 1.5;
-}
-
-/* A tag never breaks inside itself ("#Astro- / Fotografie"). */
-.post-intro .single-tags span {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.post-intro .single-tags a {
-  color: var(--content-secondary);
-  text-decoration-color: var(--code-border);
-  text-underline-offset: 0.2em;
-}
-
-.post-intro .single-tags a:hover {
-  color: var(--content-primary);
-  text-decoration-color: currentColor;
-}
-
-@media screen and (max-width: 640px) {
-  .post-intro {
-    padding: 1rem 1.1rem;
-  }
-}
-
-/* --- Home intro card ---
-   The greeting and the social icons on the same grey card as the post
-   header, on the home page only. */
+/* --- Home intro ---
+   No card: the greeting in Literata, the text in the reading voice, the
+   social icons, then the latest post and the posts in the works side by
+   side, each under a Kennung. */
 
 .intro-card {
-  background: var(--code-background);
-  border: 1px solid var(--code-border);
-  border-radius: 6px;
-  padding: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: var(--s-32);
+  padding-bottom: var(--s-32);
+  border-bottom: var(--line-hairline) solid var(--line);
 }
 
 .intro-card .home-heading {
-  margin-top: 0;
+  margin: 0 0 var(--s-16);
+  font: 300 2.5rem/1.1 var(--font-serif);
 }
 
-.intro-card .social-icons {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-@media screen and (max-width: 640px) {
-  .intro-card {
-    padding: 1rem 1.1rem;
-  }
-}
+.intro-card .intro p { font-size: 1.125rem; line-height: 1.6; }
 
 /* --- Post list thumbnails ---
    A column on the left holds the cover image in 2:1, like the covers, then the title.
@@ -242,7 +161,7 @@
   height: 90px;
   margin-right: 1rem;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--r-6);
   overflow: hidden;
 }
 
@@ -363,7 +282,7 @@ figure.img-portrait img {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: var(--r-6);
 }
 
 figure.img-portrait figcaption {
@@ -400,175 +319,78 @@ figure.img-portrait + p:empty + h2 {
   }
 }
 
-/* --- Series navigation under a post (partials/series-nav.html) --- */
+/* --- Series navigation under a post (partials/series-nav.html) ---
+   Between hairlines, the series as a Kennung, previous and next part left and
+   right. */
 
-/* The theme keeps 5rem below the post text; before the series box that
-   reads as a gap, so it shrinks there. */
-.single-content:has(+ .series-nav) {
-  margin-bottom: 3rem;
-}
-
-/* The same before the transparency box: the theme's 5rem would leave it far
-   from the end of the text, the box brings its own 2.5rem. */
-.single-content:has(+ .disclosure) {
-  margin-bottom: 2.5rem;
-}
-
-/* After the transparency box (a dialog and a script sit between them) the series box needs its own gap: it has none
-   of its own (the text above brings 3rem), and the two would touch. */
-.disclosure ~ .series-nav {
-  margin-top: 2rem;
-}
+.single-content:has(+ .series-nav) { margin-bottom: var(--s-32); }
+.single-content:has(+ .disclosure) { margin-bottom: var(--s-32); }
+.disclosure ~ .series-nav { margin-top: var(--s-32); }
 
 .series-nav {
-  margin-top: 0;
-  /* 40px narrower than the text, so the box sits slightly indented. */
-  margin-inline: 20px;
-  /* Series posts have no post pagination, which used to keep the footer at
-     a distance; the box keeps it there itself. */
-  margin-bottom: 4rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--content-secondary);
-  border-radius: 5px;
+  margin: 0 0 var(--s-48);
+  padding: var(--s-16) 0;
+  border-top: var(--line-hairline) solid var(--line);
+  border-bottom: var(--line-hairline) solid var(--line);
 }
 
 .series-nav-title {
-  margin: 0 0 0.75rem;
-  font-size: 0.85em;
-  color: var(--content-secondary);
+  margin: 0 0 var(--s-12);
+  font: 600 0.6875rem/1.6 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 .series-nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
+  gap: var(--s-12) var(--s-24);
   justify-content: space-between;
+  font: 500 0.9375rem/1.4 var(--font-sans);
 }
 
-.series-nav-links a {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-}
-
-.series-nav-links a:hover span:last-child {
-  text-decoration: underline;
-}
-
-.series-nav-next {
-  margin-left: auto;
-  text-align: right;
-}
+.series-nav-links a { display: flex; flex-direction: column; gap: var(--s-2); text-decoration: none; }
+.series-nav-links a:hover span:last-child { text-decoration: underline; }
+.series-nav-next { margin-left: auto; text-align: right; }
 
 .series-nav-dir {
-  font-family: var(--font-mono);
-  font-size: 0.8em;
-  color: var(--content-secondary);
+  font: 400 0.75rem/1.4 var(--font-mono);
+  color: var(--text-muted);
 }
 
-/* --- Series label (partials/series-label.html) ---
-   Marks a part of a series above the post title and under the title in the
-   post lists; links to the series overview. */
+/* --- Labels: series, state, draft, preview ---
+   Shaped like the badges of Horizont: radius 2, mono, the state's tint. The
+   series label is a Kennung with a link, the states carry their word. */
 
-.series-label {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  line-height: 1.4;
-  padding: 0.1rem 0.45rem;
-  border: 1px solid var(--content-secondary);
-  border-radius: 3px;
-  color: var(--content-secondary);
+.series-label,
+.updated-label,
+.new-label,
+.draft-label,
+.soon-label {
+  display: inline-flex;
+  align-items: center;
+  height: 1.375rem;
+  padding: 0 var(--s-8);
+  font: 600 0.6875rem/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  border-radius: var(--r-2);
+  white-space: nowrap;
   text-decoration: none;
-  white-space: nowrap;
+  vertical-align: 0.1em;
 }
 
-a.series-label:hover {
-  color: var(--content-primary);
-  border-color: var(--content-primary);
-}
+.series-label { color: var(--text-muted); background: var(--sunken); border: var(--line-hairline) solid var(--line); }
+a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
+.updated-label { color: var(--info); background: var(--info-tint); }
+.new-label { color: var(--positive); background: var(--positive-tint); }
+.draft-label, .soon-label { color: var(--text-muted); border: var(--line-hairline) dashed var(--line-strong); }
 
-.post-intro .series-label {
-  margin-bottom: 0.6rem;
-}
-
-.line-text .series-label {
-  margin-top: 0.3rem;
-}
-
-/* "kürzlich aktualisiert" (partials/updated-label.html): the series label's
-   shape in pale blue, so a note about the
-   post's state reads differently from the series label. */
-.updated-label {
-  display: inline-block;
-  margin: 0.3rem 0 0 0;
-  padding: 0.1rem 0.45rem;
-  background: var(--note-blue-bg);
-  border: 1px solid var(--note-blue-border);
-  border-radius: 3px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  line-height: 1.4;
-  color: var(--content-primary);
-  white-space: nowrap;
-}
-
-/* "Entwurf" (same partial): a draft, only ever seen in the local preview.
-   Dashed like the previews of posts in the works. */
-.draft-label {
-  display: inline-block;
-  margin: 0.3rem 0.4rem 0 0;
-  padding: 0.1rem 0.45rem;
-  border: 1px dashed var(--content-secondary);
-  border-radius: 3px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  line-height: 1.4;
-  color: var(--content-primary);
-  white-space: nowrap;
-}
-
-.single-date .draft-label {
-  margin: 0;
-  vertical-align: 0.05em;
-}
-
-/* "kürzlich neu erschienen" (same partial): the same shape in the pale green. */
-.new-label {
-  display: inline-block;
-  margin: 0.3rem 0 0 0;
-  padding: 0.1rem 0.45rem;
-  background: var(--note-green-bg);
-  border: 1px solid var(--note-green-border);
-  border-radius: 3px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  line-height: 1.4;
-  color: var(--content-primary);
-  white-space: nowrap;
-}
-
-/* The date in the post header as a Kennung: mono capitals, like every
-   measured value in Horizont. */
-.single-date time {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-/* In the post header, inline between the date and the reading time. */
-.single-date .updated-label,
-.single-date .new-label {
-  margin: 0;
-  vertical-align: 0.05em;
-}
-
-.line-text .series-label + .updated-label,
-.line-text .series-label + .new-label {
-  margin-left: 0.4rem;
-}
+.line-text .series-label,
+.line-text .updated-label,
+.line-text .new-label,
+.line-text .draft-label,
+.line-text .soon-label { margin: var(--s-8) var(--s-4) 0 0; }
 
 /* --- Previews of posts in the works ("Vorschau", partials/soon-box.html) ---
    A box like the cards on the site, but with a dashed border, and inside the
@@ -578,9 +400,9 @@ a.series-label:hover {
 .soon-box {
   margin: 0 0 2rem;
   padding: 0.9rem 1rem 0.2rem;
-  background: var(--code-background);
-  border: 1px dashed color-mix(in srgb, var(--content-secondary) 55%, transparent);
-  border-radius: 6px;
+  background: var(--sunken);
+  border: 1px dashed color-mix(in srgb, var(--text-muted) 55%, transparent);
+  border-radius: var(--r-6);
 }
 
 /* Where there is room, the box reaches out by its own padding and border, so
@@ -596,7 +418,7 @@ a.series-label:hover {
   margin: 0 0 0.9rem;
   font-size: 0.95rem;
   line-height: 1.4;
-  color: var(--content-secondary);
+  color: var(--text-muted);
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -659,7 +481,7 @@ a.series-label:hover {
 }
 
 .soon-line .line-title {
-  color: var(--content-secondary);
+  color: var(--text-muted);
 }
 
 .soon-line .line-thumb img {
@@ -671,12 +493,12 @@ a.series-label:hover {
   display: inline-block;
   margin-top: 0.3rem;
   padding: 0.1rem 0.45rem;
-  border: 1px dashed var(--content-secondary);
-  border-radius: 3px;
+  border: 1px dashed var(--text-muted);
+  border-radius: var(--r-2);
   font-family: var(--font-mono);
   font-size: 0.72rem;
   line-height: 1.4;
-  color: var(--content-secondary);
+  color: var(--text-muted);
   white-space: nowrap;
 }
 
@@ -713,7 +535,7 @@ a.series-label:hover {
 }
 
 .soon-home a {
-  color: var(--content-secondary);
+  color: var(--text-muted);
 }
 
 /* "Zuletzt erschienen": the newest post as a row of the blog list, inside the
@@ -729,14 +551,21 @@ a.series-label:hover {
 }
 
 .latest-heading {
-  margin: 0 0 0.9rem;
-  font-size: 0.9em;
-  font-weight: bold;
-  color: var(--content-primary);
+  margin: 0 0 var(--s-8);
+  padding-bottom: var(--s-8);
+  font: 600 0.6875rem/1.6 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: var(--line-hairline) solid var(--line-strong);
 }
 
+.soon-home-list { font-family: var(--font-sans); font-size: 0.9375rem; line-height: 1.5; list-style: none; padding-left: 0; }
+.soon-home-list li { padding: var(--s-8) 0; margin: 0; border-bottom: var(--line-hairline) solid var(--line); }
+.soon-home-list a { text-decoration: none; }
+
 .soon-home a:hover {
-  color: var(--content-primary);
+  color: var(--text);
 }
 
 /* --- Series overview (layouts/series/term.html) ---
@@ -755,7 +584,7 @@ a.series-label:hover {
 
 .series-parts .line-summary {
   margin: 0.25rem 0 0;
-  color: var(--content-secondary);
+  color: var(--text-muted);
   font-size: 0.9em;
 }
 
@@ -775,33 +604,33 @@ a.series-label:hover {
 .tag-count {
   margin-left: 0.4rem;
   font-size: 0.85em;
-  color: var(--content-secondary);
+  color: var(--text-muted);
 }
 
 /* Pagefind search on the blog page, in the site's colours and font. The
    theme's colour tokens switch with light and dark mode, so the search
    follows along without a dark variant of its own. */
 .blog-search {
-  --pf-text: var(--content-primary);
-  --pf-text-secondary: var(--content-secondary);
-  --pf-text-muted: var(--content-secondary);
-  --pf-background: var(--background);
-  --pf-border: var(--code-border);
-  --pf-border-focus: var(--content-secondary);
-  --pf-hover: var(--code-background);
-  --pf-skeleton: var(--code-background);
-  --pf-skeleton-shine: var(--code-border);
-  --pf-mark: var(--content-primary);
-  --pf-outline-focus: var(--content-secondary);
+  --pf-text: var(--text);
+  --pf-text-secondary: var(--text-muted);
+  --pf-text-muted: var(--text-muted);
+  --pf-background: var(--bg);
+  --pf-border: var(--line);
+  --pf-border-focus: var(--text-muted);
+  --pf-hover: var(--sunken);
+  --pf-skeleton: var(--sunken);
+  --pf-skeleton-shine: var(--line);
+  --pf-mark: var(--text);
+  --pf-outline-focus: var(--text-muted);
   /* Not "inherit": on a custom property that inherits the variable itself,
      which is Pagefind's system font stack. */
-  --pf-font: var(--font-body);
+  --pf-font: var(--font-serif);
   --pf-input-height: 40px;
   --pf-result-title-font-size: 16px;
   --pf-result-excerpt-font-size: 14px;
   --pf-image-width: 112px;
   --pf-image-height: 56px;
-  --pf-border-radius: 6px;
+  --pf-border-radius: var(--r-6);
   margin: 0 0 1.25rem;
 }
 
@@ -842,29 +671,29 @@ a.series-label:hover {
 }
 
 .topic-row a {
-  color: var(--content-secondary);
-  text-decoration-color: var(--code-border);
+  color: var(--text-muted);
+  text-decoration-color: var(--line);
   text-underline-offset: 0.2em;
   white-space: nowrap;
 }
 
 .topic-row a:hover {
-  color: var(--content-primary);
+  color: var(--text);
   text-decoration-color: currentColor;
 }
 
 /* The open tag, set like the current menu entry: bold, in the text colour,
    with a solid underline. Clicking it takes the filter off. */
 .topic-row a.is-active {
-  color: var(--content-primary);
+  color: var(--text);
   font-weight: 700;
   text-decoration-color: currentColor;
   text-decoration-thickness: 2px;
 }
 
 .topic-row a.draft-chip {
-  border: 1px dashed var(--content-secondary);
-  border-radius: 3px;
+  border: 1px dashed var(--text-muted);
+  border-radius: var(--r-2);
   padding: 0 0.35rem;
 }
 
@@ -876,7 +705,7 @@ a.series-label:hover {
   cursor: pointer;
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--content-secondary);
+  color: var(--text-muted);
 }
 
 .draft-open .single-content {
@@ -886,7 +715,7 @@ a.series-label:hover {
 }
 
 .drafts-note {
-  color: var(--content-secondary);
+  color: var(--text-muted);
   font-size: 0.9em;
   margin: 0.5rem 0 1rem;
 }
@@ -943,7 +772,7 @@ a.series-label:hover {
 }
 
 .gallery-description {
-  color: var(--content-secondary);
+  color: var(--text-muted);
   margin-top: -0.5rem;
   margin-bottom: 1rem;
 }
@@ -1037,7 +866,7 @@ a.series-label:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: var(--r-6);
 }
 
 /* Lightbox */
@@ -1398,7 +1227,7 @@ figure a[data-lightbox] {
 }
 
 .series-teaser-text {
-  color: var(--content-secondary);
+  color: var(--text-muted);
   margin-bottom: 1.5rem;
 }
 
@@ -1444,7 +1273,7 @@ figure a[data-lightbox] {
 }
 
 .gear-description {
-  color: var(--content-secondary);
+  color: var(--text-muted);
   margin-top: -0.5rem;
 }
 
@@ -1472,7 +1301,7 @@ figure a[data-lightbox] {
 /* The reason it is in the bag, set quieter than the name itself. */
 .gear-note {
   display: block;
-  color: var(--content-secondary);
+  color: var(--text-muted);
   margin-top: 0.15rem;
 }
 
@@ -1482,13 +1311,13 @@ figure a[data-lightbox] {
   display: inline-block;
   margin-top: 0.25rem;
   font-size: 0.9em;
-  color: var(--content-secondary);
+  color: var(--text-muted);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
 
 .gear-post:hover {
-  color: var(--content-primary);
+  color: var(--text);
 }
 
 /* --- Recipes page --- */
@@ -1504,7 +1333,7 @@ figure a[data-lightbox] {
 /* Where a recipe I want to try comes from (not my own), under its heading. */
 .recipe-source {
   margin: 0.2rem 0 0.8rem;
-  color: var(--content-secondary);
+  color: var(--text-muted);
 }
 
 /* The block "Zum Ausprobieren" below the three recipes (layouts/_default/
@@ -1513,8 +1342,8 @@ figure a[data-lightbox] {
 .experiments {
   margin-top: 4rem;
   padding: 1.6rem 1.4rem 0.4rem;
-  border: 1px dashed var(--content-secondary);
-  border-radius: 6px;
+  border: 1px dashed var(--text-muted);
+  border-radius: var(--r-6);
 }
 
 .experiments > h2 {
@@ -1531,7 +1360,7 @@ figure a[data-lightbox] {
 
 .recipe-slot {
   font-family: var(--font-mono);
-  color: var(--content-secondary);
+  color: var(--text-muted);
   margin-right: 0.6rem;
 }
 
@@ -1592,16 +1421,16 @@ figure a[data-lightbox] {
    two notes on the page, so it still stands out. */
 .recipe-note {
   margin-top: 1.4rem;
-  background: var(--code-background);
-  border: 1px solid var(--code-border);
+  background: var(--sunken);
+  border: 1px solid var(--line);
   padding: 0.8rem 1rem;
-  border-radius: 6px;
-  color: var(--content-secondary);
+  border-radius: var(--r-6);
+  color: var(--text-muted);
 }
 
 .recipe-note strong {
   display: block;
-  color: var(--content-primary);
+  color: var(--text);
   margin-bottom: 0.2rem;
 }
 
@@ -1615,7 +1444,7 @@ figure a[data-lightbox] {
   border: 1px solid var(--note-green-border);
   border-left: 4px solid var(--note-green-stripe);
   padding: 0.8rem 1rem;
-  border-radius: 6px;
+  border-radius: var(--r-6);
   font-size: 0.95em;
 }
 
@@ -1631,8 +1460,8 @@ figure a[data-lightbox] {
 .recipes-closing {
   margin-top: 3.5rem;
   padding-top: 1.2rem;
-  border-top: 1px solid var(--code-border);
-  color: var(--content-secondary);
+  border-top: 1px solid var(--line);
+  color: var(--text-muted);
 }
 
 /* A later addition to an old post (shortcodes/nachtrag.html): a pale blue card
@@ -1645,7 +1474,7 @@ figure a[data-lightbox] {
   background: var(--note-blue-bg);
   border: 1px solid var(--note-blue-border);
   border-left: 4px solid var(--note-blue-stripe);
-  border-radius: 6px;
+  border-radius: var(--r-6);
   font-size: 0.95em;
 }
 
@@ -1674,7 +1503,7 @@ figure a[data-lightbox] {
   font-size: 0.65rem;
   line-height: 1.3;
   white-space: nowrap;
-  color: var(--content-secondary);
+  color: var(--text-muted);
 }
 
 @media screen and (max-width: 480px) {
@@ -1700,7 +1529,7 @@ figure a[data-lightbox] {
 .nachtrag .nachtrag-label {
   margin: 0 0 0.2rem;
   font-weight: bold;
-  color: var(--content-primary);
+  color: var(--text);
 }
 
 /* --- Basics above the recipes --- */
@@ -1714,7 +1543,7 @@ figure a[data-lightbox] {
 }
 
 .basics-intro {
-  color: var(--content-secondary);
+  color: var(--text-muted);
 }
 
 .basics-list {
@@ -1738,7 +1567,7 @@ figure a[data-lightbox] {
 .recipe-table .bank-purpose {
   white-space: normal;
   text-align: left;
-  font-family: var(--font-body);
+  font-family: var(--font-serif);
   font-size: 1em;
   min-width: 12rem;
 }
@@ -1828,7 +1657,7 @@ figure a[data-lightbox] {
 .page-cover {
   position: relative;
   margin: 0 0 1.5rem;
-  border-radius: 6px;
+  border-radius: var(--r-6);
   overflow: hidden;
 }
 
@@ -1882,7 +1711,7 @@ figure a[data-lightbox] {
 .page-meta {
   margin: 0.65rem 0 0;
   font-size: 0.85rem;
-  color: var(--content-secondary);
+  color: var(--text-muted);
 }
 
 .page-cover-bar .page-meta {
@@ -1921,7 +1750,7 @@ figure a[data-lightbox] {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: var(--r-6);
 }
 
 /* Portrait shots narrower and centred: at full text width they would fill
@@ -1933,61 +1762,32 @@ figure a[data-lightbox] {
   margin-right: auto;
 }
 
-/* --- Footer --- */
+/* --- Footer (partials/footer.html) ---
+   A hairline, then the lockup of the umbrella brand, the legal links and the
+   credit line, quiet in Mona Sans. */
 
-/* The footer carries the legal links now and may wrap on phones, which the
-   theme's fixed max-height would clip. */
-footer {
-  max-height: none;
-  padding: 0 var(--main-padding) 1rem;
-  text-align: center;
-  /* The theme's footer is a row; the lines stand on top of each other. */
-  flex-direction: column;
+.site-foot {
+  padding-top: var(--s-24);
+  padding-bottom: var(--s-32);
+  border-top: var(--line-hairline) solid var(--line);
+  font: 400 0.8125rem/1.6 var(--font-sans);
+  color: var(--text-muted);
 }
 
-/* Two lines, legal links above the credit line (a <br> from footerContent
-   in hugo.toml); the line height gives them room. */
-footer p {
-  line-height: 2.4;
-}
+.site-foot p { margin: 0 0 var(--s-4); }
 
-/* The mark of Horizont above the footer lines. */
-footer p.footer-mark {
-  margin: 0;
-  line-height: 1;
-  color: var(--content-secondary);
-}
+.site-foot .footer-mark { margin-bottom: var(--s-12); }
+.site-foot .footer-mark a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.9375rem; --mark: 1.05em; }
 
-footer p.footer-mark .hz-mark {
-  display: inline-block;
-  vertical-align: middle;
-}
+.site-foot a { color: var(--text-muted); }
+.site-foot a:hover { color: var(--text); }
 
-/* The link to the source under the footer: smaller and quieter, close to
-   the credit line above it. */
-footer p.footer-source {
-  margin: 0;
-  font-size: 0.8em;
-  line-height: 1.6;
-  color: var(--content-secondary);
-}
+.site-foot .footer-source { font-size: 0.75rem; }
 
-/* Impressum and Datenschutz: needed, but not what the footer is about. */
-footer a[href^="/legal/"] {
-  color: var(--content-secondary);
-  text-decoration-color: var(--code-border);
-  text-underline-offset: 0.2em;
-}
-
-footer a[href^="/legal/"]:hover {
-  color: var(--content-primary);
-  text-decoration-color: currentColor;
-}
-
-/* --- Back to top --- */
-
-/* Hidden until the header scrolls away; visibility keeps it out of the tab
-   order while it is not shown. Without JavaScript it simply never appears. */
+/* --- Back to top ---
+   Hidden until the header scrolls away; visibility keeps it out of the tab
+   order while it is not shown. Without JavaScript it never appears. A square
+   control on a hairline, no shadow. */
 .to-top {
   position: fixed;
   right: max(1rem, env(safe-area-inset-right));
@@ -1995,37 +1795,21 @@ footer a[href^="/legal/"]:hover {
   z-index: 10;
   display: grid;
   place-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  border: 1px solid var(--code-border);
-  border-radius: 50%;
-  background: var(--background);
-  color: var(--content-primary);
-  /* On the light theme the button shares the page colour, so the shadow is
-     what sets it apart; on dark the border does that job. */
-  box-shadow: 0 2px 10px rgb(0 0 0 / 0.22);
+  width: var(--size-touch);
+  height: var(--size-touch);
+  border: var(--line-hairline) solid var(--line-strong);
+  border-radius: var(--r-6);
+  background: var(--surface);
+  color: var(--text);
   text-decoration: none;
   opacity: 0;
   visibility: hidden;
   transform: translateY(0.5rem);
-  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+  transition: opacity var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard), visibility var(--motion-base);
 }
 
-.to-top.is-visible {
-  opacity: 1;
-  visibility: visible;
-  transform: none;
-}
-
-.to-top:hover {
-  background: var(--code-background);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .to-top {
-    transition: none;
-  }
-}
+.to-top.is-visible { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { background: var(--sunken); }
 
 /* --- 404 page --- */
 
@@ -2042,97 +1826,54 @@ footer a[href^="/legal/"]:hover {
   margin-bottom: 2rem;
 }
 
-/* --- Header menu --- */
+/* --- Header menu ---
+   Two groups (photography, then writing and about) with a wider gap; the
+   entries in Mona Sans, quiet; the current page and its section carry the
+   2 px line in the accent, the selection of Horizont. */
 
-/* The theme sets the menu at "small" (about 13px), which reads tiny in the
-   monospace face. */
-.header p {
-  font-size: 0.95rem;
-}
-
-/* Groups side by side with a wide gap, entries within a group with a
-   narrower one. The theme's per-entry right margin is replaced by gaps. */
 .header-menu {
-  gap: 0.5rem 2rem;
-}
-
-/* On wider screens the menu sits on a grey bar, like the cards below, so it
-   reads as navigation at a glance. */
-.header .header-menu {
-  background: var(--code-background);
-  border: 1px solid var(--code-border);
-  border-radius: 6px;
-  padding: 0.6rem 1rem;
-  margin-top: 1rem;
-}
-
-.header-menu .menu-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 1.1rem;
-}
-
-.header .header-menu p {
+  gap: var(--s-8) var(--s-32);
   margin: 0;
-  line-height: 1.6;
 }
 
-/* On wider screens the second group (Blog, Über) moves to the right end of
-   the bar, apart from the photography pages. Phones keep both groups left,
-   one per line (below). */
-@media screen and (min-width: 641px) {
-  .header-menu .menu-group:last-child {
-    margin-left: auto;
-  }
-}
+.header-menu .menu-group { display: flex; flex-wrap: wrap; gap: var(--s-4) var(--s-16); }
 
-/* On phones the bar goes: the two groups stand as two plain lines, which
-   is enough to read as navigation there, and the grey stays with the cards
-   below. Tighter gaps keep each group on one line. */
-@media screen and (max-width: 640px) {
-  .header .header-menu {
-    background: none;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    row-gap: 0.4rem;
-  }
+.header-menu p { margin: 0; font: 500 0.875rem/1.6 var(--font-sans); }
 
-  .header-menu .menu-group {
-    column-gap: 0.9rem;
-  }
-}
-
-/* Entries keep an underline, so they read as links, but a faint one: the
-   text colour at 35 %, which shows in light and dark mode alike (the
-   border colour nearly vanishes on the dark background). Hovering and the
-   current page draw it in full. */
 .header-menu a {
-  text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.3em;
+  display: inline-block;
+  padding: var(--s-4) 0;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: var(--line-selection) solid transparent;
 }
 
-.header-menu a:hover {
-  text-decoration-color: currentColor;
-}
+.header-menu a:hover { color: var(--text); }
+.header-menu .is-current a { color: var(--text); border-bottom-color: var(--accent); }
 
-/* The current page, and the section a page lives in: a line under the
-   entry in the text colour, visible in both colour schemes without being
-   heavier than the site name above. */
-.header-menu .is-current a {
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 2px;
+@media (max-width: 640px) {
+  .site-head { padding-top: var(--s-24); }
+  .header-menu { gap: var(--s-4) var(--s-24); }
 }
 
 /* Blog list: a heading per year of publication. */
 .year-heading {
-  margin: 2.25rem 0 1.25rem;
-  padding-bottom: 0.35rem;
-  font-size: 1.25rem;
-  border-bottom: 1px solid var(--code-border);
+  margin: var(--s-48) 0 0;
+  padding-bottom: var(--s-8);
+  font: 600 0.6875rem/1.6 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: var(--line-hairline) solid var(--line-strong);
 }
-.year-heading:first-of-type {
-  margin-top: 1.5rem;
-}
+.year-heading:first-of-type { margin-top: var(--s-24); }
+
+/* --- Voices of the controls ---
+   Topics, the preview box and the tag overview are operated, not read:
+   Mona Sans, counts in Monaspace. */
+.topic-row { font-family: var(--font-sans); font-size: 0.875rem; }
+.topic-row .tag-count, .tag-overview .tag-count { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); }
+.soon-heading { font-family: var(--font-sans); }
+.tag-overview { font-family: var(--font-sans); }

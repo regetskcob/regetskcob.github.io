@@ -1,0 +1,459 @@
+/* The blog's base on Horizont: the reading column, the three voices and the
+   elements Markdown writes. Replaces the typo theme's reset, variables and
+   main styles; the templates keep their class names (post-line, single-*,
+   toc, pagination …), which are styled here. Values come from the tokens
+   (assets/css/horizont/tokens.css): no colour, radius or duration is
+   invented in this file.
+
+   Voices: Literata (light) for what is read, the post text and headlines;
+   Mona Sans for what is operated, menu, lists and labels; Monaspace for what
+   is measured, dates, counts and Kennungen. */
+
+:root {
+  --column: 760px;
+  --page-pad: var(--s-24);
+  --figure-img-max-height: 80vh;
+  /* Names the blog's building blocks and the code highlighting still use. */
+  --main-padding: var(--page-pad);
+  --code-background: var(--sunken);
+  --code-border: var(--line);
+}
+
+@media (max-width: 640px) {
+  :root { --page-pad: var(--s-16); }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: var(--s-24);
+}
+
+body.hz {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font: 300 1.0625rem/1.65 var(--font-serif);
+  font-optical-sizing: auto;
+  overflow-wrap: break-word;
+}
+
+img, svg, video { max-width: 100%; }
+
+.skip-link {
+  position: absolute;
+  left: var(--page-pad);
+  top: -3rem;
+  z-index: 20;
+  padding: var(--s-8) var(--s-12);
+  background: var(--accent);
+  color: var(--on-accent);
+  font: 500 0.875rem/1 var(--font-sans);
+  border-radius: var(--r-6);
+}
+
+.skip-link:focus { top: var(--s-8); }
+
+/* --- The column: header, main and footer share it --- */
+
+.site-head,
+.site-main,
+.site-foot {
+  width: 100%;
+  max-width: calc(var(--column) + 2 * var(--page-pad));
+  margin-inline: auto;
+  padding-inline: var(--page-pad);
+}
+
+.site-main {
+  flex: 1;
+  padding-bottom: var(--s-64);
+}
+
+/* --- Headlines and text --- */
+
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
+
+h1 {
+  font: 300 2.25rem/1.15 var(--font-serif);
+  letter-spacing: -0.01em;
+  margin: var(--s-32) 0 var(--s-16);
+}
+
+h2 {
+  font: 300 1.625rem/1.25 var(--font-serif);
+  letter-spacing: -0.005em;
+  margin: var(--s-48) 0 var(--s-12);
+}
+
+h3 {
+  font: 600 1.0625rem/1.4 var(--font-sans);
+  margin: var(--s-32) 0 var(--s-8);
+}
+
+h4, h5, h6 {
+  font: 600 0.9375rem/1.4 var(--font-sans);
+  margin: var(--s-24) 0 var(--s-8);
+}
+
+/* On phones a long word in a heading breaks at a syllable, not at the last
+   letter that fits ("Datenschutzerkläru / ng"); the page is German. */
+@media (max-width: 640px) {
+  h1, h2, h3, h4 {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphenate-limit-chars: 10 4 4;
+  }
+}
+
+p { margin: 0 0 var(--s-16); }
+
+strong, b { font-weight: 600; }
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color var(--motion-fast) var(--ease-standard);
+}
+
+a:hover { text-decoration-color: currentColor; }
+
+.single-content a { text-decoration-color: color-mix(in srgb, var(--accent-text) 45%, transparent); }
+.single-content a:hover { text-decoration-color: var(--accent-text); }
+
+ul, ol { margin: 0 0 var(--s-16); padding-left: 1.4em; }
+li { margin: 0 0 var(--s-4); }
+li::marker { color: var(--text-muted); }
+li:has(> input[type="checkbox"]) { list-style: none; }
+li > input[type="checkbox"] { margin: 0 0.4em 0.15em -1.4em; vertical-align: middle; accent-color: var(--accent); }
+
+hr {
+  border: 0;
+  border-top: var(--line-hairline) solid var(--line);
+  margin: var(--s-48) 0;
+}
+
+blockquote {
+  margin: var(--s-24) 0;
+  padding: 0 0 0 var(--s-16);
+  border-left: var(--line-selection) solid var(--line-strong);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+blockquote p:last-child { margin-bottom: 0; }
+
+/* Headings with an anchor (the theme's render hook). */
+.heading .anchor {
+  margin-left: 0.3em;
+  font: 400 0.75em var(--font-mono);
+  color: var(--text-faint);
+  text-decoration: none;
+  visibility: hidden;
+}
+
+.heading:hover .anchor { visibility: visible; }
+
+.footnotes {
+  margin-top: var(--s-48);
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+/* --- Code --- */
+
+code, kbd, samp {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  font-variant-numeric: tabular-nums;
+}
+
+:not(pre) > code {
+  padding: 0.1em 0.3em;
+  background: var(--sunken);
+  border: var(--line-hairline) solid var(--line);
+  border-radius: var(--r-2);
+}
+
+pre {
+  margin: var(--s-24) 0;
+  padding: var(--s-16);
+  overflow-x: auto;
+  background: var(--sunken);
+  border: var(--line-hairline) solid var(--line);
+  border-radius: var(--r-6);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+pre code { font-size: inherit; }
+
+div.code-block { position: relative; }
+
+.copy-code-button {
+  position: absolute;
+  top: var(--s-8);
+  right: var(--s-8);
+  padding: var(--s-4) var(--s-8);
+  font: 500 0.75rem/1 var(--font-sans);
+  color: var(--text-muted);
+  background: var(--surface);
+  border: var(--line-hairline) solid var(--line-strong);
+  border-radius: var(--r-6);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity var(--motion-fast) var(--ease-standard);
+}
+
+div.code-block:hover .copy-code-button,
+.copy-code-button:focus-visible { opacity: 1; }
+
+/* --- Tables --- */
+
+.table-outer { overflow-x: auto; margin: var(--s-24) 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font: 400 0.9375rem/1.5 var(--font-sans);
+}
+
+th {
+  text-align: left;
+  font: 600 0.6875rem/1.4 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: var(--s-8) var(--s-12) var(--s-8) 0;
+  border-bottom: var(--line-hairline) solid var(--line-strong);
+}
+
+td {
+  padding: var(--s-8) var(--s-12) var(--s-8) 0;
+  border-bottom: var(--line-hairline) solid var(--line);
+  vertical-align: top;
+}
+
+/* --- Figures ---
+   Photos stay square-cornered: they are pictures, not surfaces. */
+
+figure { margin: var(--s-32) 0; }
+
+figure .img-container {
+  aspect-ratio: var(--w) / var(--h);
+  max-height: var(--figure-img-max-height);
+  width: auto;
+  margin-inline: auto;
+}
+
+figure img { display: block; max-width: 100%; height: auto; }
+
+.caption-container { display: flex; justify-content: center; }
+
+figcaption {
+  margin-top: var(--s-8);
+  font: 400 0.8125rem/1.5 var(--font-sans);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.img-small div { display: flex; align-items: center; justify-content: center; }
+.img-small img { max-height: calc(var(--figure-img-max-height) * 0.8); }
+.img-full div { display: flex; align-items: center; justify-content: center; }
+.img-full img { width: 100vw !important; max-width: 100vw !important; height: auto; }
+
+/* Pictures for light or dark mode only. */
+[data-theme="dark"] .img-light, [data-theme="light"] .img-dark { display: none !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .img-light { display: none !important; } }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .img-dark { display: none !important; } }
+
+/* --- Post header (single-*) ---
+   No card: a Kennung line on top (series, date, reading time, state), the
+   title in Literata, the summary in the muted reading voice, the tags as
+   quiet Kennungen. A hairline separates header and text. */
+
+.single-intro-container { margin: var(--s-32) 0 var(--s-32); }
+
+.single-title {
+  margin: var(--s-12) 0 var(--s-16);
+  font: 300 clamp(2rem, 6vw, 2.75rem)/1.12 var(--font-serif);
+  letter-spacing: -0.012em;
+}
+
+.single-summary {
+  margin: 0 0 var(--s-16);
+  font: 300 1.1875rem/1.55 var(--font-serif);
+  color: var(--text-muted);
+}
+
+.single-subsummary { display: flex; align-items: center; gap: var(--s-12); }
+.single-subsummary img { width: 2.5rem; height: 2.5rem; border-radius: 50%; }
+
+.single-date {
+  margin: 0;
+  font: 600 0.6875rem/1.6 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.single-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4) var(--s-12);
+  margin-top: var(--s-12);
+  font: 400 0.8125rem/1.5 var(--font-mono);
+}
+
+.single-tags a { color: var(--text-muted); text-decoration: none; }
+.single-tags a:hover { color: var(--text); text-decoration: underline; }
+
+.single-content { margin-bottom: var(--s-64); font-size: 1.0625rem; }
+
+.single-content > :first-child { margin-top: 0; }
+
+/* --- Table of contents --- */
+
+.toc {
+  margin: var(--s-16) 0;
+  padding: var(--s-12) 0 var(--s-12) var(--s-16);
+  border-left: var(--line-hairline) solid var(--line-strong);
+  font: 400 0.9375rem/1.5 var(--font-sans);
+}
+
+.toc p { margin: 0 0 var(--s-4); }
+.toc p strong {
+  font: 600 0.6875rem/1.6 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc ul ul { padding-left: var(--s-16); }
+.toc li { margin: var(--s-2) 0; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+/* Numbered headings ("autonumber" in front matter). */
+.autonumber { counter-reset: h2-counter; }
+.autonumber h2 { counter-reset: h3-counter; }
+.autonumber h3 { counter-reset: h4-counter; }
+.autonumber h2::before { counter-increment: h2-counter; content: counter(h2-counter) ". "; color: var(--text-muted); }
+.autonumber h3::before { counter-increment: h3-counter; content: counter(h2-counter) "." counter(h3-counter) " "; color: var(--text-muted); }
+.autonumber h4::before { counter-increment: h4-counter; content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) " "; color: var(--text-muted); }
+
+/* --- Previous and next post --- */
+
+.single-pagination {
+  margin: var(--s-48) 0 var(--s-32);
+  font: 400 0.9375rem/1.4 var(--font-sans);
+}
+
+.single-pagination hr { margin: 0; }
+.single-pagination-text { display: flex; justify-content: center; align-items: center; min-height: 100%; }
+.single-pagination-prev, .single-pagination-next { min-width: 50%; margin: var(--s-16) 0; }
+.single-pagination-prev { text-align: right; }
+.single-pagination-container-prev, .single-pagination-container-next { display: flex; min-height: 100%; padding: var(--s-8); }
+.single-pagination-container-prev { float: right; }
+
+/* --- Lists of posts --- */
+
+.list-container { padding-bottom: var(--s-48); }
+
+.list-container > h1 { margin-bottom: var(--s-24); }
+
+.post-line {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: var(--s-16) 0;
+  border-bottom: var(--line-hairline) solid var(--line);
+}
+
+.post-line p { margin: 0; }
+
+.line-title {
+  margin: 0;
+  font: 500 1.0625rem/1.35 var(--font-sans);
+}
+
+.line-title a { text-decoration: none; }
+.line-title a:hover { text-decoration: underline; text-decoration-color: var(--accent-text); }
+
+.line-summary {
+  margin-top: var(--s-4) !important;
+  font: 400 0.875rem/1.5 var(--font-sans);
+  color: var(--text-muted);
+}
+
+.line-date {
+  min-width: 7.5rem;
+  max-width: 7.5rem;
+  padding-right: var(--s-16);
+  font: 400 0.75rem/1.6 var(--font-mono);
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-8);
+  margin: var(--s-32) 0 0;
+  font: 500 0.875rem/1 var(--font-sans);
+}
+
+.pagination-control, .page-number {
+  min-width: var(--size-touch);
+  min-height: var(--size-touch);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-control a { text-decoration: none; padding: var(--s-8); }
+.page-number { font-family: var(--font-mono); font-weight: 600; }
+
+/* --- Social icons --- */
+
+.social-icons { display: flex; gap: var(--s-16); padding: var(--s-8) 0; }
+.social-icons a { display: inline-flex; color: var(--text-muted); text-decoration: none; }
+.social-icons a:hover { color: var(--text); }
+.social-icons svg { width: 1.25rem; height: 1.25rem; }
+
+/* --- Breadcrumbs (switched off in hugo.toml, styled if they return) --- */
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4);
+  margin-top: var(--s-24);
+  font: 600 0.6875rem/1.6 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.breadcrumbs a { text-decoration: none; }
+
+/* --- 404 --- */
+
+.not-found { display: flex; align-items: center; justify-content: center; min-height: 50vh; }
+.not-found div { text-align: center; }
+.not-found div h1 { font: 300 5rem/1 var(--font-mono); margin: 0 0 var(--s-12); }
+
+/* --- Comments (giscus), if switched on --- */
+
+.giscus { margin-top: var(--s-48); }
+
+@media print {
+  .site-head nav, .to-top, .copy-code-button { display: none !important; }
+}

@@ -1,27 +1,14 @@
-{{/* Copy of themes/typo/layouts/partials/footer.html with the line "footerSource" and the Horizont mark added. Diff against the theme file when updating typo. */}}
-{{ $showFooter := default true .Site.Params.showFooter }}
-{{ if $showFooter }}
-    {{/* Footer start hook */}}
-    {{ partial "functions/get_hook.html" (dict "hook" "footer_start" "context" .) }}
-
-    {{ if not .Site.Params.footerContent }}
-    <p>Powered by
-        <a href="https://gohugo.io/">Hugo</a>
-        and
-        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
-    </p>
-    {{ end }}
-    
-    {{/* Added: the mark of Horizont above the footer lines. */}}
-    <p class="footer-mark">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 22) }}</p>
-
-    {{ with .Site.Params.footerContent }}
-    <p>{{ . | markdownify }}</p>
-    {{ end }}
-
-    {{/* Added: a smaller line under the footer with the link to the source
-         (params.footerSource in hugo.toml, styled in custom.css). */}}
-    {{ with .Site.Params.footerSource }}
-    <p class="footer-source">{{ . | markdownify }}</p>
-    {{ end }}
+{{/*
+  The footer on Horizont: the lockup of the umbrella brand (mark and name on
+  one baseline, linking home), the legal links and the credit line
+  (params.footerContent, one line per backslash), the source line
+  (params.footerSource). Styled in custom.css ("Footer").
+*/}}
+{{ partial "functions/get_hook.html" (dict "hook" "footer_start" "context" .) }}
+<p class="footer-mark">{{ partial "horizont/lockup.html" (dict "product" "regetskcob" "href" ("/" | relURL)) }}</p>
+{{ with site.Params.footerContent }}
+<p>{{ . | markdownify }}</p>
+{{ end }}
+{{ with site.Params.footerSource }}
+<p class="footer-source">{{ . | markdownify }}</p>
 {{ end }}

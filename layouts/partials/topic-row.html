@@ -22,7 +22,7 @@
   {{- end }}
   {{- end }}
   {{- /* Local preview only: all drafts in one list (content/entwuerfe.md). */}}
-  {{- if not hugo.IsProduction }}
+  {{- if and (not hugo.IsProduction) (not site.Params.previewBuild) }}
   {{- $drafts := where (site.GetPage "/blog").RegularPages "Draft" true }}
   {{- $count := add (len $drafts) (len (partial "soon-pages.html" "")) }}
   {{- if $count }}

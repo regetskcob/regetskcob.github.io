@@ -94,7 +94,20 @@
                readers and search engines, but out of sight: for pages whose
                first element already says what they are (the about page). */}}
         {{- /* Posts in a series say so above their title (partials/series-label.html). */}}
-        {{- if $isPost }}{{ partial "series-label.html" . }}{{ end }}
+        {{- /* The Kennung line above the title, in posts: series, date, state
+               (partials/updated-label.html), reading time. */}}
+        {{- if $isPost }}
+        <div class="post-kennung">
+          {{- partial "series-label.html" . }}
+          <p class="single-date">
+          {{- with .Date }}
+            <time datetime="{{ . | time.Format "2006-01-02T15:04:05-07:00" }}">{{ . | time.Format (default ":date_long" $.Site.Params.singleDateFormat) }}</time>
+          {{- end }}
+          {{- if .Param "readTime" }}<span>{{ .ReadingTime }} Min. Lesezeit</span>{{ end }}
+          </p>
+          {{- with partial "updated-label.html" . | strings.TrimSpace | safeHTML }}{{ . }}{{ end }}
+        </div>
+        {{- end }}
         <h1 class="single-title{{ if .Params.hideTitle }} visually-hidden{{ end }}">{{ .Title }}</h1>
         {{- with .Param "summary" }}
         <p class="single-summary" data-pagefind-meta="summary">{{ . | markdownify }}</p>
@@ -120,39 +133,6 @@
           </aside>
         {{- end }}
    
-        {{- /* Date and Reading Time, in posts only: on pages like Über a date
-               reads as "outdated" rather than informing. No author line:
-               there is one author, and the name is in <meta name="author">
-               and the JSON-LD. */}}
-        {{ if and $isPost (or (.Param "authorAvatarPath") (or .Date (.Param "readTime"))) }}
-        <div class="single-subsummary">
-          {{ with $.Param "authorAvatarPath" }}
-            <img src="{{ . }}" alt="Author Avatar" />
-          {{ end }}
-          <div>
-            <p class="single-date">
-            {{- with .Date }}
-              {{- $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
-              {{- $dateHuman := . | time.Format (default ":date_long" $.Site.Params.singleDateFormat) }}
-              <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-            {{- end }}
-
-            {{- /* "kürzlich aktualisiert" between date and reading time, when it
-                   applies (partials/updated-label.html). */}}
-            {{- with partial "updated-label.html" . | strings.TrimSpace | safeHTML }}
-              {{ if $.Date }}&nbsp; · &nbsp;{{ end }}
-              {{- . }}
-            {{- end }}
-        
-            {{- if .Param "readTime" }}
-              {{ if .Date }}&nbsp; · &nbsp;{{ end }}
-              {{- .ReadingTime }} Min. Lesezeit
-            {{- end }}
-            </p>
-          </div>
-        </div>
-        {{- end}}
-
         {{- if .Param "showTags" }}
           {{- $taxonomy := "tags" }}
           {{- with .Param $taxonomy }}    
