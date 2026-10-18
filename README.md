@@ -95,13 +95,15 @@ für Marke und App-Icon unter `horizont/`.
   `custom.css` nutzen die Theme-Variablen oder direkt die von Horizont (`--accent`,
   `--positive`, `--info` …).
 - **Marke** — die Buche auf dem Horizont vor dem Seitennamen (`header.html`) und
-  über der Fußzeile (`footer.html`), als SVG-Favicon in `head.html`.
+  über der Fußzeile (`footer.html`), als SVG-Favicon in `head.html`. Die
+  PNG-Favicons in `static/` stammen aus `icons/export/regetskcob/web/` von
+  Horizont (klein die Glyphe, groß die Illustration).
 - **Kennungen** — Tagline und Datum im Beitragskopf in Mono-Versalien.
 - **Shortcodes für Beiträge** — `hz-device` (Screenshot aus dem Bundle im
   Geräterahmen), `hz-kennung`, `hz-badge`, `hz-symbol`, `hz-facts`. Aufruf und
   Parameter: `docs/web.md` im Horizont-Repo.
 
-Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/horizont@<tag>`, etwa `@v0.4.0`
+Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/horizont@<tag>`, etwa `@v0.5.0`
 (ändert `go.mod` und `go.sum`).
 
 - **`layouts/_default/_markup/render-link.html`** — Links in Beiträgen auf andere Seiten öffnen in einem
