@@ -42,20 +42,28 @@ verlag = 'verlag'
     path = 'github.com/hugomods/umami-analytics'
   # Horizont, the design system of the blog and its projects
   # (github.com/regetskcob/horizont, documented at /horizont/): the tokens as
-  # data, the web layer's CSS and partials (marks, app icons) and its fonts
-  # (Mona Sans, Material Symbols; Literata and Monaspace sit next to the
-  # theme's own files).
+  # data, the symbol codepoints, the web layer's CSS, partials (marks, app
+  # icons, device frames, …) and shortcodes (hz-device, hz-badge, …) and its
+  # fonts (Mona Sans, Material Symbols; Literata and Monaspace sit next to
+  # the theme's own files).
   [[module.imports]]
     path = 'github.com/regetskcob/horizont'
     [[module.imports.mounts]]
       source = 'tokens'
       target = 'data'
     [[module.imports.mounts]]
+      source = 'icons'
+      target = 'data/horizont_icons'
+      includeFiles = ['*.json']
+    [[module.imports.mounts]]
       source = 'web/css'
       target = 'assets/css/horizont'
     [[module.imports.mounts]]
       source = 'web/partials'
       target = 'layouts/_partials/horizont'
+    [[module.imports.mounts]]
+      source = 'web/shortcodes'
+      target = 'layouts/_shortcodes'
     [[module.imports.mounts]]
       source = 'web/fonts'
       target = 'static/fonts'

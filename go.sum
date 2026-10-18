@@ -2,3 +2,5 @@ github.com/hugomods/umami-analytics v0.3.1 h1:C4B1oKRBvCRamH3muiWK+QNbehmxd+7DiK
 github.com/hugomods/umami-analytics v0.3.1/go.mod h1:nlZGLPH5L+H25+HwmuzHsEfM869+tMTUTcSUBcOQEm4=
 github.com/regetskcob/horizont v0.3.0 h1:wWixNRKTOgYg6UuHK3D+UO739308eXn9cWyrNAyZWa4=
 github.com/regetskcob/horizont v0.3.0/go.mod h1:T5yVy8OGTUHOy56+cqNUbjSFpsG2xkPb3CGvnLcOYU8=
+github.com/regetskcob/horizont v0.4.0 h1:f7V0hsygRdvIAuQ8ou/m16qRREgbEK8BQI1RBBzD4WE=
+github.com/regetskcob/horizont v0.4.0/go.mod h1:T5yVy8OGTUHOy56+cqNUbjSFpsG2xkPb3CGvnLcOYU8=
