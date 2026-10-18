@@ -1,0 +1,14 @@
+# The test deploy under https://www.regetskcob.de/preview/, built from a branch
+# by the repository regetskcob/preview (README, "Vorschau"). Like production,
+# but without analytics, kept out of search engines (partials/head.html) and
+# marked as a preview in the header. Links in posts start with "/" and would
+# lead to the live site; canonifyURLs makes them point into the preview.
+# The legal notice's address is not available there, the page shows a note.
+canonifyURLs = true
+ignoreFiles = ['entwuerfe\.md$', 'verlagslinks\.md$']
+
+[params]
+previewBuild = true
+
+[params.umami]
+enable = false

@@ -1,4 +1,4 @@
-{{/* Copy of themes/typo/layouts/partials/footer.html with the line "footerSource" added. Diff against the theme file when updating typo. */}}
+{{/* Copy of themes/typo/layouts/partials/footer.html with the line "footerSource" and the Horizont mark added. Diff against the theme file when updating typo. */}}
 {{ $showFooter := default true .Site.Params.showFooter }}
 {{ if $showFooter }}
     {{/* Footer start hook */}}
@@ -12,6 +12,9 @@
     </p>
     {{ end }}
     
+    {{/* Added: the mark of Horizont above the footer lines. */}}
+    <p class="footer-mark">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 22) }}</p>
+
     {{ with .Site.Params.footerContent }}
     <p>{{ . | markdownify }}</p>
     {{ end }}
