@@ -1,15 +1,7 @@
 ---
 title: "🔭 | Bau des OpenAstroTracker - Teil II"
-date: "2026-01-26T18:53:08+01:00"
+date: "2026-10-18T17:30:00+02:00"
 summary: "Aus den gedruckten Teilen wird ein Tracker: Gewindeeinsätze, Steuerplatine, Verkabelung, Raspberry Pi und die erste Kamera auf der Montierung. Was beim Zusammenbau zwischen den Jahren und im Januar passiert ist."
-# Vorschau in der Blog-Liste, noch keine eigene Seite: nicht
-# rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
-# Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
-# Optional: soon: Oktober  ->  "demnächst · Oktober"
-build:
-  render: never
-  list: never
-soon: Januar 2027
 cover: ./cover.jpg
 coverAlt: "Der fertig aufgebaute OpenAstroTracker auf einem Teppichboden: schwarzes Gehäuse mit Handbox und Display, weiße gedruckte Räder und Arme, darauf ein schwarzes Objektiv"
 series: "Bau des OpenAstroTracker"
@@ -90,6 +82,6 @@ Die Software läuft auf dem Raspberry Pi. Ich habe mich für StellarMate OS ents
 
 ![Der Tracker mit offenem Gehäuse auf dem Schreibtisch, rechts ein Display mit StellarMate OS auf einem flexiblen Stativ, davor Tastatur und Maus](./stellarmate.jpg)
 
-## Stand heute
+## Stand Ende Januar
 
 Ende Januar steht der Tracker komplett aufgebaut da. Es fehlt nur noch, was man nicht planen kann: ein klarer Himmel. Sobald das Wetter mitspielt, geht es hinaus, und dann wird sich zeigen, wie gut er nachführt.
