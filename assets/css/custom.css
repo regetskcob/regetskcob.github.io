@@ -62,17 +62,11 @@
 }
 
 /* The mark of Horizont before the site name: the beech on the horizon, in
-   the colour of the name, sized with it. */
+   the colour of the name, sized with it. A lockup of Horizont (hz-lockup in
+   header.html): the mark's horizon lies on the baseline of the name. */
 .header .header-title a {
-  display: inline-flex;
-  align-items: center;
   gap: 0.28em;
-}
-
-.header .header-title .hz-mark {
-  width: 0.62em;
-  height: 0.62em;
-  flex: none;
+  --mark: 0.62em;
 }
 
 /* Tagline under the site name, as a Kennung of Horizont: small mono capitals

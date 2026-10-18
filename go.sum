@@ -2,3 +2,5 @@ github.com/hugomods/umami-analytics v0.3.1 h1:C4B1oKRBvCRamH3muiWK+QNbehmxd+7DiK
 github.com/hugomods/umami-analytics v0.3.1/go.mod h1:nlZGLPH5L+H25+HwmuzHsEfM869+tMTUTcSUBcOQEm4=
 github.com/regetskcob/design-system v0.0.0-20261018132818-d1697cc6ce51 h1:IFndW64GLOCh2aJ62bAzXBm/4ZQ3/O0tWslmfEl7oFc=
 github.com/regetskcob/design-system v0.0.0-20261018132818-d1697cc6ce51/go.mod h1:b5dkVTPTwdxKZlNmWeWTFHJ9ZRI8XJRUA58PYo3kKQ8=
+github.com/regetskcob/design-system v0.0.0-20261018135412-7ad2db261e78 h1:dto1rhLuktS24YDj1lLAF5j8ig2LuwLX6vJAWmtWFrY=
+github.com/regetskcob/design-system v0.0.0-20261018135412-7ad2db261e78/go.mod h1:b5dkVTPTwdxKZlNmWeWTFHJ9ZRI8XJRUA58PYo3kKQ8=
