@@ -77,12 +77,17 @@ img, svg, video { max-width: 100%; }
   padding-bottom: var(--s-64);
 }
 
-/* Text keeps the measure; images, grids, tables and code take the frame.
-   :where() keeps this at zero specificity, so any component can override;
-   lists that are grids (cards, gear, recipes) set max-width: none. */
-:where(.site-main) :where(p, ul, ol, dl, blockquote, h1, h2, h3, h4, h5, h6, .post-line, .toc, .series-nav, .soon-box, .pagination, .single-pagination) {
+/* One visible width: everything with an edge of its own (a line, a frame,
+   a background, a photo, a table, a field) spans the frame. Only bare
+   running text keeps the reading measure, flush left, so it reads as a
+   ragged right edge, not as a second width. :where() keeps this at zero
+   specificity; lists of rows, headings with a line and boxed paragraphs
+   opt out. */
+:where(.site-main) :where(p, ul, ol, dl, blockquote, h1, h2, h3, h4, h5, h6) {
   max-width: var(--column);
 }
+
+:where(.site-main) :where(.series-parts, .gear-list, .year-heading, .recipes-closing) { max-width: none; }
 
 /* --- Headlines and text --- */
 
