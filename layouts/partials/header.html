@@ -36,6 +36,7 @@
 
     {{ if or (not (.Param "hideHeader")) .IsHome }}
 
+    <div class="site-brand">
     {{ if .IsHome }}
     <h1 class="header-title">
         <a class="hz-lockup" href="{{ site.BaseURL }}">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 34) }}{{ site.Title }}</a>
@@ -49,6 +50,7 @@
     {{ with site.Params.homeTitle }}
     <p class="header-subtitle">{{ . }}</p>
     {{ end }}
+    </div>
 
     <nav class="header-menu" aria-label="Hauptmenü">
         {{ $here := .RelPermalink }}

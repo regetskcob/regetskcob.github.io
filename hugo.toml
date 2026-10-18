@@ -108,7 +108,7 @@ Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür
 footerContent = '''
 [Impressum](/legal/#impressum) · [Datenschutz](/legal/#datenschutzerklärung) · [Bildrechte](/legal/#bildrechte)\
 © Daniel Bocksteger, alle Rechte vorbehalten\
-Mit ❤️ am Niederrhein gebaut mit [Hugo](https://gohugo.io) und [typo](https://github.com/tomfran/typo)
+Mit ❤️ am Niederrhein gebaut mit [Hugo](https://gohugo.io) und [Horizont](/horizont/)
 '''
 
 # Under the footer, smaller (layouts/partials/footer.html): where the source

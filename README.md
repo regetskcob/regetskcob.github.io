@@ -89,11 +89,15 @@ der Projekte ([regetskcob/horizont](https://github.com/regetskcob/horizont)).
 (`site.Data.horizont`), die CSS-Schicht unter `assets/css/horizont/` und die Partials
 für Marke und App-Icon unter `horizont/`.
 
-- **`layouts/partials/head/css.html`** — Kopie aus dem Theme: hängt die Tokens und
-  Komponenten von Horizont an und lädt zuletzt `assets/css/horizont-blog.css`, die
-  Brücke, die die Farbvariablen des Themes aus den Tokens setzt. Neue Regeln in
-  `custom.css` nutzen die Theme-Variablen oder direkt die von Horizont (`--accent`,
-  `--positive`, `--info` …).
+- **`layouts/_default/baseof.html`** — eigener Seitenrahmen statt des Themes:
+  `data-product="regetskcob"`, Kopf, Inhalt und Fuß in einer Lesespalte.
+- **`layouts/partials/head/css.html`** — lädt nur noch Horizont (Tokens,
+  Komponenten), die Code-Farben des Themes, `assets/css/blog/base.css` (Spalte,
+  die drei Stimmen, alle Elemente aus Markdown, Beitragskopf, Listen) und
+  `custom.css` (die Bausteine des Blogs). Das CSS von typo wird nicht mehr
+  geladen; das Theme liefert nur noch einige Partials (Icons, Hooks, Mathe).
+  Neue Regeln nutzen ausschließlich die Variablen von Horizont (`--text`,
+  `--text-muted`, `--sunken`, `--line`, `--accent`, `--s-*`, `--r-*` …).
 - **Marke** — die Buche auf dem Horizont vor dem Seitennamen (`header.html`) und
   über der Fußzeile (`footer.html`), als SVG-Favicon in `head.html`. Die
   PNG-Favicons in `static/` stammen aus `icons/export/regetskcob/web/` von
