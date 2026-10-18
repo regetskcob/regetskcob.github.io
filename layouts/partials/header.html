@@ -20,20 +20,29 @@
 
   Below the name, the tagline says what the site is about. It is the same
   text as the home page's <title> (homeTitle in hugo.toml), so the page
-  and its search result say the same thing.
+  and its search result say the same thing. It is set as a Kennung of
+  Horizont: small mono capitals.
+
+  Before the name stands the mark of Horizont: a beech on the horizon, in
+  the text colour. In the preview build (config/preview) a line above the
+  header says that this is not the live site.
 */}}
 
 <div class="header">
+
+    {{ if site.Params.previewBuild }}
+    <p class="preview-note">Vorschau · nicht die Live-Seite</p>
+    {{ end }}
 
     {{ if or (not (.Param "hideHeader")) .IsHome }}
 
     {{ if .IsHome }}
     <h1 class="header-title">
-        <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
+        <a href="{{ site.BaseURL }}">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 34) }}{{ site.Title }}</a>
     </h1>
     {{ else }}
     <p class="header-title">
-        <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
+        <a href="{{ site.BaseURL }}">{{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 34) }}{{ site.Title }}</a>
     </p>
     {{ end }}
 

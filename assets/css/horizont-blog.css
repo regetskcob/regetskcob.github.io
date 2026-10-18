@@ -1,0 +1,25 @@
+{{- /*
+  Bridge between Horizont and the typo theme: the theme's colour variables
+  from the tokens (tokens/horizont.json of the design system), so every rule
+  of the theme and of custom.css takes the Horizont neutrals without being
+  rewritten. The blog is the umbrella brand: its accent is ink. Executed as a
+  template in partials/head/css.html, loaded last.
+*/ -}}
+{{- $l := .color.neutral.light -}}
+{{- $d := .color.neutral.dark -}}
+{{- $p := .color.product.regetskcob -}}
+html:root {
+  --content-primary-light: {{ $l.text }};
+  --content-primary-dark: {{ $d.text }};
+  --content-secondary-light: {{ index $l "text-muted" }};
+  --content-secondary-dark: {{ index $d "text-muted" }};
+  --background-light: {{ $l.bg }};
+  --background-dark: {{ $d.bg }};
+  --code-background-light: {{ $l.sunken }};
+  --code-background-dark: {{ $d.surface }};
+  --code-border-light: {{ $l.line }};
+  --code-border-dark: {{ $d.line }};
+{{- range $k, $v := $p.light }}
+  --{{ $k }}: light-dark({{ $v }}, {{ index $p.dark $k }});
+{{- end }}
+}

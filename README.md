@@ -38,6 +38,7 @@ Live-Seite unsichtbar. Die Einzelheiten dazu stehen weiter unten unter „Inhalt
 | Hosting | [GitHub Pages](https://pages.github.com) | Statisches Hosting direkt am Repo |
 | CI/CD | GitHub Actions (`.github/workflows/hugo.yaml`) | Build und Deploy bei jedem Push auf `main`; der Bild-Cache wird zwischen den Läufen gespeichert |
 | Suche | [Pagefind](https://pagefind.app) 1.5.2 | Läuft im Workflow nach dem Hugo-Build und indexiert die fertige Seite; im Browser, ohne externen Dienst |
+| Designsystem | [Horizont](https://github.com/regetskcob/design-system) als Hugo-Modul | Gemeinsame Farben, Kennungen und Marke mit Jagdaufseher, KNX Monitor und Panzergefecht; Doku unter [/design-system/](https://www.regetskcob.de/design-system/) |
 
 ### Eingebundene Dritt-Dienste
 
@@ -79,6 +80,26 @@ hugo.toml         Zentrale Konfiguration
 
 Das Theme bleibt unangetastet; Anpassungen liegen als Overrides in `layouts/` und
 gewinnen gegenüber der gleichnamigen Datei im Theme.
+
+### Horizont
+
+Farben, Kennungen und die Marke kommen aus Horizont, dem Designsystem des Blogs und
+der Projekte ([regetskcob/design-system](https://github.com/regetskcob/design-system)).
+`hugo.toml` importiert es als Modul und hängt drei Ordner ein: die Tokens als Daten
+(`site.Data.horizont`), die CSS-Schicht unter `assets/css/horizont/` und die Partials
+für Marke und App-Icon unter `horizont/`.
+
+- **`layouts/partials/head/css.html`** — Kopie aus dem Theme: hängt die Tokens und
+  Komponenten von Horizont an und lädt zuletzt `assets/css/horizont-blog.css`, die
+  Brücke, die die Farbvariablen des Themes aus den Tokens setzt. Neue Regeln in
+  `custom.css` nutzen die Theme-Variablen oder direkt die von Horizont (`--accent`,
+  `--positive`, `--info` …).
+- **Marke** — die Buche auf dem Horizont vor dem Seitennamen (`header.html`) und
+  über der Fußzeile (`footer.html`), als SVG-Favicon in `head.html`.
+- **Kennungen** — Tagline und Datum im Beitragskopf in Mono-Versalien.
+
+Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/design-system@main`
+(ändert `go.mod` und `go.sum`).
 
 - **`layouts/_default/_markup/render-link.html`** — Links in Beiträgen auf andere Seiten öffnen in einem
   neuen Tab (`target="_blank" rel="noopener"`). Links innerhalb der Seite, Anker und `mailto:` bleiben unverändert.
@@ -321,6 +342,22 @@ Theme auf eine neue Version heben:
 ```bash
 git -C themes/typo fetch --tags && git -C themes/typo checkout v3.0.2
 ```
+
+### Vorschau unter /preview/
+
+Ein Branch lässt sich unter https://www.regetskcob.de/preview/ testweise ausrollen,
+ohne die Live-Seite anzufassen. Das Repository
+[regetskcob/preview](https://github.com/regetskcob/preview) ist eine eigene
+Pages-Projektseite; sein Workflow baut einen Branch dieses Repositorys mit
+`--environment preview` (`config/preview/hugo.toml`: ohne Umami, `noindex`, ein
+Hinweis über dem Kopf, Links in Beiträgen zeigen in die Vorschau).
+
+```bash
+gh workflow run preview.yml --repo regetskcob/preview -f ref=<branch>
+```
+
+Das Impressum zeigt dort statt der Anschrift einen Hinweis, die liegt nur im Secret
+dieses Repositorys.
 
 ## Inhalte pflegen
 
