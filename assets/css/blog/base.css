@@ -89,6 +89,17 @@ img, svg, video { max-width: 100%; }
 
 :where(.site-main) :where(.series-parts, .gear-list, .year-heading, .recipes-closing) { max-width: none; }
 
+/* Posts and single pages: the text column stands in the middle of the
+   frame, not wider than the measure; photos, tables, code and the
+   navigation keep the full frame. Floated photos move to the column's left
+   edge with it (custom.css, .float-image and figure.img-portrait). */
+.single-intro-container > :is(.post-kennung, h1, p, .single-tags),
+.single-content > :is(p, ul, ol, dl, blockquote, h1, h2, h3, h4, h5, h6, .toc) {
+  max-width: var(--column);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* --- Headlines and text --- */
 
 h1, h2, h3, h4, h5, h6 { text-wrap: balance; }

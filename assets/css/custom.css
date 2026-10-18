@@ -271,7 +271,8 @@
 figure.img-portrait {
   float: left;
   width: 200px;
-  margin: 0.4rem 2rem 1rem 0;
+  /* At the left edge of the centred text column (base.css). */
+  margin: 0.4rem 2rem 1rem max(0px, calc((100% - var(--column)) / 2));
 }
 
 figure.img-portrait .img-container {
@@ -1699,7 +1700,8 @@ figure a[data-lightbox] {
 .float-image {
   float: left;
   width: 240px;
-  margin: 0.3rem 1.6rem 1rem 0;
+  /* At the left edge of the centred text column (base.css). */
+  margin: 0.3rem 1.6rem 1rem max(0px, calc((100% - var(--column)) / 2));
 }
 
 .float-image figure {
@@ -1719,9 +1721,10 @@ figure a[data-lightbox] {
   display: flow-root;
 }
 
+/* Where the frame leaves room, it reaches 4rem out of the column. */
 @media (min-width: 1000px) {
   .float-image {
-    margin-left: -4rem;
+    margin-left: calc(max(0px, calc((100% - var(--column)) / 2)) - 4rem);
   }
 }
 
