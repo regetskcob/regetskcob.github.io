@@ -1,12 +1,7 @@
 ---
 title: "📚 | Der Alpenwald"
-date: "2026-10-06T14:00:00+02:00"
+date: "2026-10-19T19:00:00+02:00"
 summary: "Ein großer Bildband aus dem Benevento Verlag beschreibt den Wald der Alpen als Lebensraum, Rohstoff und Rückzugsort, aus den Blickwinkeln von Fachleuten und mit beeindruckenden Fotos."
-# Entwurf: wird nirgends gebaut oder angezeigt (lokal mit hugo server -D schon).
-# Für die Vorschau stattdessen den build-Block und "soon" setzen und den
-# Ordnernamen unter "soon" in content/blog/_index.md eintragen (siehe README,
-# "Vorschau auf Beiträge in Arbeit"). Zum Veröffentlichen "draft" entfernen.
-draft: true
 cover: ./cover.jpg
 coverAlt: "Das Buch „Der Alpenwald“ mit hellen, in Holzmaserung geprägten Farbstreifen auf dem Umschlag und einem Foto von Nadelwald vor Felsgipfeln, liegt auf einem Eichenholzdielenboden"
 tags: ["Bücher", "Natur"]
@@ -30,10 +25,12 @@ Dazu kommen die Menschen und das Handwerk. Das Buch erzählt von traditionellen 
 
 Fotos und Karten begleiten die Texte durchgehend. Die Besprechungen beschreiben es als Geschenkband für Wissenshungrige und Naturfreunde, der Wissen über den Wald vermittelt und zeigt, welche Schätze der Alpenraum bereithält und warum es sich lohnt, sie zu bewahren.
 
-<!-- Persönliche Note folgt: Aufbau der 20 Perspektiven (Kapitel?), Lieblingskapitel, eigene Bezüge (Revier, Jagd, Fotografie, Borkenkäfer?), was dir an den Fotos auffällt. Zu prüfen am Exemplar: Seitenzahl (Verlag 408, Händler 416), Untertitel, Format, und wer die Fotos gemacht hat (das Studio nennt Georg Kukuvec als Bildredaktion, Red Dot als Fotografie). -->
+## Mein Eindruck
+
+Für mich als Flachländler ist die Vielfalt, die dieses Buch zeigt, überwältigend. Das gilt für die Landschaft der Alpen und die Kulturen im Alpenraum, für die Kulturlandschaft und deren Bewirtschaftung und für die Tiere und Pflanzen, die dort leben und wachsen. Ich blättere immer wieder darin, entdecke Neues und bin jedes Mal begeistert.
+
+Als Leser:in sehnt man sich schon nach wenigen Seiten nach draußen, in die heimische Kulturlandschaft und ganz besonders in die Alpen.
 
 ## Fazit
 
 Wer den Wald liebt und mehr über ihn wissen möchte, bekommt hier einen Band, den man zum Blättern und zum Nachschlagen in die Hand nimmt. Fachwissen und schöne Bilder gehören dabei zusammen.
-
-<!-- Persönliche Einschätzung folgt: Passt das zu deinem Eindruck? -->
