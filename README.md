@@ -107,7 +107,7 @@ für Marke und App-Icon unter `horizont/`.
   Geräterahmen), `hz-kennung`, `hz-badge`, `hz-symbol`, `hz-facts`. Aufruf und
   Parameter: `docs/web.md` im Horizont-Repo.
 
-Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/horizont@<tag>`, etwa `@v0.5.0`
+Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/horizont@<tag>`, etwa `@v0.6.1`
 (ändert `go.mod` und `go.sum`).
 
 - **`layouts/_default/_markup/render-link.html`** — Links in Beiträgen auf andere Seiten öffnen in einem

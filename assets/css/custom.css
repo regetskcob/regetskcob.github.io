@@ -381,8 +381,8 @@ figure.img-portrait + p:empty + h2 {
   vertical-align: 0.1em;
 }
 
-.series-label { color: var(--text-muted); background: var(--sunken); border: var(--line-hairline) solid var(--line); }
-a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
+.series-label { color: var(--text-muted); background: var(--sunken); border: var(--line-hairline) solid var(--line-strong); }
+a.series-label:hover { color: var(--text); border-color: var(--text-muted); }
 .updated-label { color: var(--info); background: var(--info-tint); }
 .new-label { color: var(--positive); background: var(--positive-tint); }
 .draft-label, .soon-label { color: var(--text-muted); border: var(--line-hairline) dashed var(--line-strong); }
@@ -612,7 +612,7 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
   --pf-text-secondary: var(--text-muted);
   --pf-text-muted: var(--text-muted);
   --pf-background: var(--bg);
-  --pf-border: var(--line);
+  --pf-border: var(--line-strong);
   --pf-border-focus: var(--text-muted);
   --pf-hover: var(--sunken);
   --pf-skeleton: var(--sunken);
@@ -763,7 +763,7 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
   margin-top: var(--s-48);
   padding: var(--s-24);
   background: var(--sunken);
-  border: var(--line-hairline) solid var(--line);
+  border: var(--line-hairline) solid var(--line-strong);
   border-radius: var(--r-10);
 }
 
@@ -862,11 +862,11 @@ a.series-label:hover { color: var(--text); border-color: var(--line-strong); }
   text-transform: uppercase;
   color: var(--text-muted);
   text-decoration: none;
-  border: var(--line-hairline) solid var(--line);
+  border: var(--line-hairline) solid var(--line-strong);
   border-radius: var(--r-2);
 }
 
-.gallery-jump a:hover { color: var(--text); border-color: var(--line-strong); }
+.gallery-jump a:hover { color: var(--text); border-color: var(--text-muted); }
 
 .gallery-block {
   margin-top: var(--s-48);
@@ -1507,7 +1507,7 @@ figure a[data-lightbox] {
 .recipe-note {
   margin-top: 1.4rem;
   background: var(--sunken);
-  border: 1px solid var(--line);
+  border: var(--line-hairline) solid var(--line-strong);
   padding: 0.8rem 1rem;
   border-radius: var(--r-6);
   color: var(--text-muted);

@@ -20,7 +20,7 @@
   /* Names the blog's building blocks and the code highlighting still use. */
   --main-padding: var(--page-pad);
   --code-background: var(--sunken);
-  --code-border: var(--line);
+  --code-border: var(--line-strong);
 }
 
 @media (max-width: 640px) {
@@ -204,7 +204,7 @@ code, kbd, samp {
 :not(pre) > code {
   padding: 0.1em 0.3em;
   background: var(--sunken);
-  border: var(--line-hairline) solid var(--line);
+  border: var(--line-hairline) solid var(--line-strong);
   border-radius: var(--r-2);
 }
 
@@ -213,7 +213,7 @@ pre {
   padding: var(--s-16);
   overflow-x: auto;
   background: var(--sunken);
-  border: var(--line-hairline) solid var(--line);
+  border: var(--line-hairline) solid var(--line-strong);
   border-radius: var(--r-6);
   font-size: 0.875rem;
   line-height: 1.55;
