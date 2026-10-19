@@ -7,7 +7,8 @@ summary: "Ein großer Bildband aus dem Benevento Verlag beschreibt den Wald der 
 # Ordnernamen unter "soon" in content/blog/_index.md eintragen (siehe README,
 # "Vorschau auf Beiträge in Arbeit"). Zum Veröffentlichen "draft" entfernen.
 draft: true
-# Cover folgt: Foto als cover.jpg in diesen Ordner, dazu "cover: ./cover.jpg" und "coverAlt".
+cover: ./cover.jpg
+coverAlt: "Das Buch „Der Alpenwald“ mit hellen, in Holzmaserung geprägten Farbstreifen auf dem Umschlag und einem Foto von Nadelwald vor Felsgipfeln, liegt auf einem Eichenholzdielenboden"
 tags: ["Bücher", "Natur"]
 disclosure:
   type: purchased
@@ -35,4 +36,4 @@ Fotos und Karten begleiten die Texte durchgehend. Die Besprechungen beschreiben 
 
 Wer den Wald liebt und mehr über ihn wissen möchte, bekommt hier einen Band, den man zum Blättern und zum Nachschlagen in die Hand nimmt. Fachwissen und schöne Bilder gehören dabei zusammen.
 
-<!-- Persönliche Einschätzung folgt: Passt das zu deinem Eindruck? Cover-Foto und coverAlt nachtragen. -->
+<!-- Persönliche Einschätzung folgt: Passt das zu deinem Eindruck? -->
