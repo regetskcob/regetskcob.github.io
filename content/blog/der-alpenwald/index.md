@@ -29,6 +29,20 @@ Fotos und Karten begleiten die Texte durchgehend. Die Besprechungen beschreiben 
 
 Für mich als Flachländler ist die Vielfalt, die dieses Buch zeigt, überwältigend. Das gilt für die Landschaft der Alpen und die Kulturen im Alpenraum, für die Kulturlandschaft und deren Bewirtschaftung und für die Tiere und Pflanzen, die dort leben und wachsen. Ich blättere immer wieder darin, entdecke Neues und bin jedes Mal begeistert.
 
+Hängen bleibe ich oft bei den Karten und Grafiken. Eine Doppelseite zeigt die Baumarten des Alpenwalds als Silhouetten, und die Fichte allein steht für knapp die Hälfte, Buche und Tanne folgen mit großem Abstand. Eine Karte im Kapitel „Natur unter Schutz“ zeigt, dass etwa ein Viertel der Alpenregion als Schutzgebiet ausgewiesen ist, darunter 13 Nationalparks. Der deutsche Anteil an dieser Fläche liegt bei knapp drei Prozent. So aufbereitet liest man auch Zahlen gern.
+
+Im Kapitel über die Pecher, die Harz aus Schwarzföhren gewinnen, wird ein Baum mit einem Kirchturm verglichen. Der Statiker berechnet den Turm einmal, der Baum dagegen baut sein Stützmaterial Tag für Tag neu und passt sich an Schnee, Sturm und sein eigenes Gewicht an. Das Bild gefällt mir, gerade weil ich beruflich selbst eher in Iterationen als in fertigen Plänen denke.
+
+### Wild und Jagd
+
+Als Jäger lese ich die Kapitel über Wild und Jagd besonders aufmerksam. Das Buch beschönigt dabei wenig. Der Wald wird als Konfliktzone beschrieben, in der Holzwirtschaft, Jägerschaft und Tierschutz verschiedene Interessen verfolgen. Etwa 20 Prozent der Bäume sind durch Wildverbiss geschädigt, und mit Bär und Wolf kehren die großen Beutegreifer zurück. Der Abschnitt über den Rothirsch erklärt, dass er ursprünglich aus der halboffenen Landschaft stammt und erst durch den Menschen in den Wald gedrängt wurde, und warum mehr Jagddruck das Problem oft nur verlagert. Ansätze wie die Intervallbejagung auf Freiflächen und Ruhezonen im Rotwildlebensraum finde ich spannend.
+
+Für jemanden aus dem Flachland ist die Jagd im Bergwald eine eigene Welt. Schussschneisen müssen erst angelegt werden, die Gams steigt wegen der Wärme in den Wald ab, und ein Hirsch mit 120 Kilogramm will über steile Hänge bis zur nächsten Forststraße gebracht werden. Werner Meisinger zählt das ausdrücklich nicht zur Jagdromantik. Die Bilder dazu stammen vom Salzburger Berufsjäger und Wildtierfotografen Christoph Burgstaller, und sie zeigen genau diese Mühe im Schnee.
+
+### Zwischen den Kapiteln
+
+Schmunzeln musste ich bei einem Satz über gestresste Menschen, die im Wald ganz abschalten wollen und am Ende doch den Erlebnispfad suchen. Ganz frei davon bin ich auch nicht. Den Abschluss macht Michael Köhlmeier mit einer Erzählung, die bei seiner Kindheitsangst vor dem engen, finsteren Tannenwald beginnt und beim „Tännelehonig“ landet. Nach so viel Fachwissen ist das ein schöner, persönlicher Ausklang.
+
 Als Leser:in sehnt man sich schon nach wenigen Seiten nach draußen, in die heimische Kulturlandschaft und ganz besonders in die Alpen.
 
 ## Fazit
