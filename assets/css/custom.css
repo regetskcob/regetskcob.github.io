@@ -1524,7 +1524,8 @@ figure a[data-lightbox] {
    it reads as the same note everywhere without shouting. Light and dark via
    light-dark(), like the theme's own colours. */
 .disclosure {
-  margin-top: 2.5rem;
+  max-width: var(--column);
+  margin: 2.5rem auto 0;
   background: var(--note-green-bg);
   border: 1px solid var(--note-green-border);
   border-left: 4px solid var(--note-green-stripe);
@@ -1554,7 +1555,8 @@ figure a[data-lightbox] {
    the green transparency box (same heading, padding, stripe) so it stands out
    from the original text. */
 .nachtrag {
-  margin: 2rem 0;
+  max-width: var(--column);
+  margin: 2rem auto;
   padding: 0.8rem 1rem;
   background: var(--note-blue-bg);
   border: 1px solid var(--note-blue-border);
