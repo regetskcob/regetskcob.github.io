@@ -1979,7 +1979,31 @@ figure a[data-lightbox] {
   .abzweig-list a::after { grid-column: 3; grid-row: 1; }
 }
 
-/* --- Photography (layouts/_default/fotografie.html) --- */
+/* --- Photography (layouts/_default/fotografie.html) ---
+   Four chapters like the sections of a Feldseite: the Kennung on the left,
+   the chapter on the right; one column on phones. */
 .fotografie-intro { margin-bottom: 0; }
-.fotografie .series-teaser { margin-top: var(--s-32); }
-.fotografie-more { margin-top: var(--s-48); }
+.kapitel {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: var(--s-32);
+  padding: var(--s-48) 0;
+  border-bottom: var(--line-hairline) solid var(--line);
+  scroll-margin-top: 72px;
+}
+.kapitel > .hz-kennung { margin: 0; padding-top: 6px; }
+.kapitel .series-teaser,
+.kapitel .gallery-teaser { margin-top: 0; }
+.kapitel-seite { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: var(--s-32); align-items: start; }
+.kapitel-bild { display: block; }
+.kapitel-bild img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; }
+.kapitel-seite h2 { margin: 0 0 var(--s-8); }
+.kapitel-seite h2 a { color: inherit; text-decoration: none; }
+.kapitel-seite h2 a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.kapitel-liste { list-style: none; margin: 0 0 var(--s-8); padding: 0; font: 400 0.9375rem/1.5 var(--font-sans); }
+.kapitel-liste li { padding: var(--s-4) 0; border-bottom: var(--line-hairline) solid var(--line); }
+.kapitel-slot { display: inline-block; width: 2.5rem; font: 600 0.6875rem/1.6 var(--font-mono); letter-spacing: 0.08em; color: var(--text-muted); }
+@media (max-width: 760px) {
+  .kapitel { grid-template-columns: minmax(0, 1fr); gap: var(--s-12); padding: var(--s-32) 0; }
+  .kapitel-seite { grid-template-columns: minmax(0, 1fr); gap: var(--s-16); }
+}

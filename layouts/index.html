@@ -1,7 +1,8 @@
 {{/*
   The landing page in front of the blog: who writes here, in a few honest
   sentences, one photo from the series, and the turnoffs ("Abzweige") to
-  the three running projects, the blog and the photography. Nothing else;
+  the running projects (Horizont among them), the blog and the
+  photography. Nothing else;
   the posts live at /blog/, the photos at /fotografie/.
 
   The intro is params.homeIntro* in hugo.toml. The projects and their lines
@@ -41,7 +42,7 @@
     {{- range after 1 $flur.gemarkungen }}
     <li data-product="{{ .product }}">
       <a href="{{ printf "%s%s" $flur.site .path }}">
-        {{ partial "horizont/mark.html" (dict "product" .product "size" 28) }}
+        {{ partial "horizont/mark.html" (dict "product" (.mark | default .product) "size" 28) }}
         <span class="abzweig-name">{{ .name }}</span>
         <span class="abzweig-note">{{ .note }}</span>
       </a>
@@ -50,7 +51,7 @@
     <li class="abzweig-gap" aria-hidden="true"></li>
     <li data-product="regetskcob">
       <a href="{{ "blog/" | relURL }}">
-        {{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 28) }}
+        {{ partial "horizont/mark.html" (dict "product" "blog" "size" 28) }}
         <span class="abzweig-name">Blog</span>
         <span class="abzweig-note">{{ len $posts }} Beiträge seit {{ $first }}</span>
       </a>

@@ -9,9 +9,10 @@
                               label, wins over all of the above
 
   "place" is what the mark says (regetskcob / Blog), "field" the field of
-  the Flurkarte the page lies on. The map counts the blog's posts, the
-  photos of the galleries and of the series live; the other fields keep
-  the numbers of tokens/flur.yaml.
+  the Flurkarte the page lies on; on the blog the open book walks the
+  line, elsewhere the beech. The map counts the blog's posts, the photos
+  of the galleries and of the series live; the other fields keep the
+  numbers of tokens/flur.yaml.
 */}}
 {{- $marks := slice -}}
 {{- $section := .Section -}}
@@ -63,6 +64,7 @@
 
 {{ partial "horizont/nav/horizon.html" (dict
     "product" "regetskcob"
+    "mark" (cond (eq $field "blog") "blog" "regetskcob")
     "place" $place
     "marks" $marks
     "karte" (dict "home" "regetskcob" "here" "regetskcob" "field" $field "counts" $counts "url" ("karte/" | relURL))) }}

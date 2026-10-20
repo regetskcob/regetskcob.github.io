@@ -8,8 +8,10 @@ horizon:
     label: Niederrhein.
   - id: galerien
     label: Galerien
-  - id: werkzeug
-    label: Ausrüstung und Rezepte
+  - id: ausruestung
+    label: Ausrüstung
+  - id: rezepte
+    label: Film-Rezepte
 ---
 
 Landschaft vor der Haustür, Luftbilder, Tiere aus dem Revier. Eine Serie
