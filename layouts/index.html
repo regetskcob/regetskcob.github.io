@@ -1,8 +1,8 @@
 {{/*
   The landing page in front of the blog: who writes here, in a few honest
-  sentences, one photo from the series, and the turnoffs ("Abzweige") to
-  the running projects (Horizont among them), the blog and the
-  photography. Nothing else;
+  sentences, one photo from the series, and the turnoffs ("Abzweige"):
+  the blog and the photography as two tiles, then the running projects
+  (Horizont among them) on a field path. Nothing else;
   the posts live at /blog/, the photos at /fotografie/.
 
   The intro is params.homeIntro* in hugo.toml. The projects and their lines
@@ -18,7 +18,9 @@
   <div class="landing-text">
     {{ with site.Params.homeIntroKennung }}{{ partial "horizont/kennung.html" (dict "text" . "tag" "p") }}{{ end }}
     <h1>{{ site.Params.homeIntroTitle }}</h1>
-    {{ with site.Params.homeIntroContent }}<div class="landing-intro">{{ . | markdownify }}</div>{{ end }}
+    {{- /* As a block: markdownify would drop the <p> of a single paragraph,
+           and with it the spacing below the text. */}}
+    {{ with site.Params.homeIntroContent }}<div class="landing-intro">{{ $.RenderString (dict "display" "block") . }}</div>{{ end }}
     {{ with site.Params.social }}
     <div class="social-icons">
       {{- range . }}
@@ -38,6 +40,23 @@
 
 <section class="abzweige" aria-labelledby="abzweige">
   {{ partial "horizont/kennung.html" (dict "text" "Abzweige" "tag" "h2") }}
+  {{- /* Blog and photography first, as two tiles with a sentence each. */}}
+  <div class="kacheln">
+    <a class="kachel" href="{{ "blog/" | relURL }}" data-product="regetskcob">
+      {{ partial "horizont/mark.html" (dict "product" "blog" "size" 32) }}
+      <span class="kachel-name">Blog</span>
+      <span class="kachel-text">Was nebenher entsteht: Bücher, Projekte, Fotowalks und Serien.</span>
+      <span class="kachel-kennung">{{ len $posts }} Beiträge seit {{ $first }}</span>
+    </a>
+    <a class="kachel" href="{{ "fotografie/" | relURL }}" data-product="regetskcob">
+      {{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 32) }}
+      <span class="kachel-name">Fotografie</span>
+      <span class="kachel-text">Die Gegend vor der Haustür: eine Langzeitserie, Galerien nach Themen, Ausrüstung und Rezepte.</span>
+      <span class="kachel-kennung">Niederrhein. · Galerie · Ausrüstung · Film-Rezepte</span>
+    </a>
+  </div>
+  {{- /* Then the projects, each on the field path. */}}
+  {{ partial "horizont/kennung.html" (dict "text" "Projekte" "tag" "h3") }}
   <ul class="abzweig-list">
     {{- range after 1 $flur.gemarkungen }}
     <li data-product="{{ .product }}">
@@ -48,21 +67,6 @@
       </a>
     </li>
     {{- end }}
-    <li class="abzweig-gap" aria-hidden="true"></li>
-    <li data-product="regetskcob">
-      <a href="{{ "blog/" | relURL }}">
-        {{ partial "horizont/mark.html" (dict "product" "blog" "size" 28) }}
-        <span class="abzweig-name">Blog</span>
-        <span class="abzweig-note">{{ len $posts }} Beiträge seit {{ $first }}</span>
-      </a>
-    </li>
-    <li data-product="regetskcob">
-      <a href="{{ "fotografie/" | relURL }}">
-        {{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 28) }}
-        <span class="abzweig-name">Fotografie</span>
-        <span class="abzweig-note">Niederrhein. · Galerie · Ausrüstung · Film-Rezepte</span>
-      </a>
-    </li>
   </ul>
 </section>
 {{ end }}
