@@ -93,7 +93,7 @@ img, svg, video { max-width: 100%; }
    frame, not wider than the measure; photos, tables, code and the
    navigation keep the full frame. Floated photos move to the column's left
    edge with it (custom.css, .float-image and figure.img-portrait). */
-.single-intro-container > :is(.post-kennung, h1, p, .single-tags),
+.single-intro-container > :is(.post-kennung, h1, p, .toc, .single-tags),
 .single-content > :is(p, ul, ol, dl, blockquote, h1, h2, h3, h4, h5, h6, .toc) {
   max-width: var(--column);
   margin-left: auto;

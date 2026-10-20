@@ -42,19 +42,22 @@
 .home-heading { margin-top: 0; }
 
 /* --- Post header ---
-   The cover on top, edge to edge of the column and square-cornered, then the
-   Kennung line, title, summary, contents and tags (base.css), closed by a
-   hairline before the text. */
+   A hairline frame in the one outline colour holds the cover on top, edge
+   to edge and cropped to the frame's corners, then the Kennung line, title,
+   summary, contents and tags (base.css), which keep the centred text
+   column inside the frame. */
 
 .post-intro {
   margin-top: var(--s-24);
-  padding-bottom: var(--s-24);
-  border-bottom: var(--line-hairline) solid var(--line);
+  padding: var(--s-24);
+  border: var(--line-hairline) solid var(--line-strong);
+  border-radius: var(--r-6);
+  overflow: hidden;
 }
 
 .post-intro .post-cover {
   position: relative;
-  margin: 0 0 var(--s-24);
+  margin: calc(-1 * var(--s-24)) calc(-1 * var(--s-24)) var(--s-24);
 }
 
 .post-intro .post-cover img {
@@ -63,6 +66,21 @@
   height: auto;
   max-height: 26rem;
   object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .post-intro { padding: var(--s-16); }
+  .post-intro .post-cover { margin: calc(-1 * var(--s-16)) calc(-1 * var(--s-16)) var(--s-16); }
+}
+
+/* The gallery page shares the header but opens without a frame, like the
+   series and galleries on /fotografie/. */
+.gallery-page .post-intro {
+  padding: 0 0 var(--s-24);
+  border: 0;
+  border-bottom: var(--line-hairline) solid var(--line);
+  border-radius: 0;
+  overflow: visible;
 }
 
 /* The line above the title: series, date, state, reading time. */
