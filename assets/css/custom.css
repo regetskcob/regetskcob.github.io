@@ -1960,6 +1960,7 @@ figure a[data-lightbox] {
 .abzweig-name { font: 300 1.5rem/1.2 var(--font-serif); }
 .abzweig-list a:hover .abzweig-name { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .abzweig-note { font: 400 0.9375rem/1.5 var(--font-sans); color: var(--text-muted); }
+.abzweig-note .hz-badge { margin-right: var(--s-4); vertical-align: 1px; }
 /* The sentence of a project, below its name. */
 .abzweig-text { grid-column: 2 / 4; grid-row: 2; font: 400 0.9375rem/1.55 var(--font-sans); color: var(--text-muted); max-width: 60ch; }
 /* Blog and photography: two tiles above the projects. */

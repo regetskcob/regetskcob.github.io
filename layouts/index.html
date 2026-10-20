@@ -2,7 +2,8 @@
   The landing page in front of the blog: who writes here, in a few honest
   sentences, one photo from the series, and the turnoffs ("Abzweige"):
   the blog and the photography as two tiles, then the running projects
-  (Horizont among them) on a field path. Nothing else;
+  on a field path, Horizont first; the apps that are not out yet carry
+  the badge "Vorschau" ("status" in Horizont's tokens/flur.yaml). Nothing else;
   the posts live at /blog/, the photos at /fotografie/.
 
   The intro is params.homeIntro* in hugo.toml. The projects and their lines
@@ -63,7 +64,7 @@
       <a href="{{ printf "%s%s" $flur.site .path }}">
         {{ partial "horizont/mark.html" (dict "product" (.mark | default .product) "size" 28) }}
         <span class="abzweig-name">{{ .name }}</span>
-        <span class="abzweig-note">{{ .note }}</span>
+        <span class="abzweig-note">{{ with .status }}{{ partial "horizont/badge.html" (dict "status" "info" "label" .) }} {{ end }}{{ .note }}</span>
         {{- with .text }}
         <span class="abzweig-text">{{ . }}</span>
         {{- end }}
