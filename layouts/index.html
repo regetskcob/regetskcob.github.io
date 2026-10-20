@@ -1,81 +1,67 @@
 {{/*
-  Home page. Replaces the theme's home layout, which renders the full paginated
-  post list, with a landing page: intro and news, then the photography kept
-  light: the series in one row of photos under the intro, the galleries as cards in a frame. The full grids live
-  on the series page and on /galerie/. Posts live at /blog/, linked from the
-  menu.
+  The landing page in front of the blog: who writes here, in a few honest
+  sentences, one photo from the series, and the turnoffs ("Abzweige") to
+  the three running projects, the blog and the photography. Nothing else;
+  the posts live at /blog/, the photos at /fotografie/.
 
-  The site name in the header is the page's only h1; the sections below are
-  h2 with the class home-heading, which keeps their former h1 size.
-
-  Sections for projects and a proper hero still have to be added — see the
-  placeholder below.
+  The intro is params.homeIntro* in hugo.toml. The projects and their lines
+  come from Horizont's tokens/flur.yaml, so they read the same here, on the
+  Flurkarte and in the apps.
 */}}
 {{ define "main" }}
+{{- $flur := site.Data.flur -}}
+{{- $posts := where (site.GetPage "/blog").RegularPages "Draft" false -}}
+{{- $first := (index $posts.ByDate 0).Date.Format "2006" -}}
 
-{{ .Content }}
-
-{{/* Intro and social icons on a card like the post header, on this page
-     only. The intro text is markdown with several paragraphs, so it goes
-     into a div: paragraphs inside a <p> are invalid HTML. */}}
-<section class="intro-card">
-{{ if or site.Params.homeIntroTitle site.Params.homeIntroContent }}
-<div class="intro">
-  {{ with site.Params.homeIntroTitle }}<h2 class="home-heading">{{ . }}</h2>{{ end }}
-  {{ with site.Params.homeIntroContent }}<div>{{ . | markdownify }}</div>{{ end }}
-</div>
-{{ end }}
-
-{{ with site.Params.social }}
-<div class="social-icons">
-  {{- range . }}
-  <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
-     title="{{ (.title | default .name) | title }}">
-    {{ partial "svg.html" . }}
-  </a>
+<section class="landing">
+  <div class="landing-text">
+    {{ with site.Params.homeIntroKennung }}{{ partial "horizont/kennung.html" (dict "text" . "tag" "p") }}{{ end }}
+    <h1>{{ site.Params.homeIntroTitle }}</h1>
+    {{ with site.Params.homeIntroContent }}<div class="landing-intro">{{ . | markdownify }}</div>{{ end }}
+    {{ with site.Params.social }}
+    <div class="social-icons">
+      {{- range . }}
+      <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}">{{ partial "svg.html" . }}</a>
+      {{- end }}
+    </div>
+    {{ end }}
+  </div>
+  {{- with site.Params.homePhoto }}
+  {{- with resources.Get .image }}
+  <figure class="landing-photo">
+    {{ partial "responsive-img.html" (dict "img" (.Fill "1200x900 webp q82 Center") "widths" (slice 600 900 1200) "sizes" "(max-width: 760px) 100vw, 460px" "alt" site.Params.homePhoto.alt "loading" "eager" "page" $) }}
+  </figure>
   {{- end }}
-</div>
-{{ end }}
-
-{{- /* Below the icons the ongoing series, one row of its photos, without a
-       frame (partials/series-teaser.html). */}}
-{{ partial "series-teaser.html" . }}
-
-{{- /* Then the news in two columns on a wide screen: the latest post on the
-       left, the ones in the works on the right. */}}
-<div class="home-news">
-{{- /* The latest post that is out, as a row like in the blog list
-       (partials/post-entry.html), above the line about the posts in the works.
-       Posts held back with build.list "never" are not in RegularPages, so a
-       preview cannot show up here. */}}
-{{- range first 1 (where (site.GetPage "/blog").RegularPages "Draft" false).ByPublishDate.Reverse }}
-<div class="latest-home">
-  <h3 class="latest-heading">Zuletzt erschienen</h3>
-  {{ partial "post-entry.html" . }}
-</div>
-{{- end }}
-{{- /* One line about the posts in the works, linking to the box "Vorschau" at
-       the top of the blog list (partials/soon-box.html). The emoji and the
-       pipe the titles start with are left off. */}}
-{{- with partial "soon-pages.html" "" }}
-<div class="latest-home soon-home">
-  <h3 class="latest-heading">Demnächst im Blog</h3>
-  <ul class="soon-home-list">
-    {{- range . }}
-    <li><a href="{{ "blog/#vorschau" | relURL }}">{{ replaceRE `^[^\p{L}\p{N}]+` "" .Title }}</a></li>
-    {{- end }}
-  </ul>
-</div>
-{{- end }}
-</div>
+  {{- end }}
 </section>
 
-{{/* A card per gallery, in a frame, linking to /galerie/. */}}
-{{ partial "gallery-cards.html" . }}
-
-{{/* Lightbox and shuffle for the series row, once, after the last grid. */}}
-{{ partial "photo-grid-script.html" . }}
-
-{{/* TODO: projects section — needs content under content/projects/ first. */}}
-
+<section class="abzweige" aria-labelledby="abzweige">
+  {{ partial "horizont/kennung.html" (dict "text" "Abzweige" "tag" "h2") }}
+  <ul class="abzweig-list">
+    {{- range after 1 $flur.gemarkungen }}
+    <li data-product="{{ .product }}">
+      <a href="{{ printf "%s%s" $flur.site .path }}">
+        {{ partial "horizont/mark.html" (dict "product" .product "size" 28) }}
+        <span class="abzweig-name">{{ .name }}</span>
+        <span class="abzweig-note">{{ .note }}</span>
+      </a>
+    </li>
+    {{- end }}
+    <li class="abzweig-gap" aria-hidden="true"></li>
+    <li data-product="regetskcob">
+      <a href="{{ "blog/" | relURL }}">
+        {{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 28) }}
+        <span class="abzweig-name">Blog</span>
+        <span class="abzweig-note">{{ len $posts }} Beiträge seit {{ $first }}</span>
+      </a>
+    </li>
+    <li data-product="regetskcob">
+      <a href="{{ "fotografie/" | relURL }}">
+        {{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 28) }}
+        <span class="abzweig-name">Fotografie</span>
+        <span class="abzweig-note">Niederrhein. · Galerie · Ausrüstung · Film-Rezepte</span>
+      </a>
+    </li>
+  </ul>
+</section>
 {{ end }}

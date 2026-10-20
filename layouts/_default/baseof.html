@@ -2,7 +2,9 @@
   The page frame, built on Horizont instead of the typo theme's baseof: the
   product is the umbrella brand (data-product="regetskcob", ink as accent),
   the body carries the Horizont base (class hz), header, main and footer sit
-  in one reading column (assets/css/blog/base.css). The theme still supplies
+  in one frame (assets/css/blog/base.css). The navigation is Horizont's
+  horizon line (partials/horizon.html), straight in the body so it can stay
+  on screen; its script comes last. The theme still supplies
   a few partials (svg icons, hooks, math), not its look.
 */}}
 <!DOCTYPE html>
@@ -12,9 +14,8 @@
 </head>
 <body class="hz" id="top">
   <a class="skip-link" href="#inhalt">Zum Inhalt</a>
-  <header class="site-head">
-    {{ partial "header.html" . }}
-  </header>
+  {{ if site.Params.previewBuild }}<p class="preview-note">Vorschau · nicht die Live-Seite</p>{{ end }}
+  {{ partial "horizon.html" . }}
   <main class="site-main" id="inhalt">
     {{ block "main" . }}{{ end }}
   </main>
@@ -24,5 +25,6 @@
   </footer>
   {{ if .Param "math" }}{{ partialCached "math.html" . }}{{ end }}
   <script defer src="{{ "js/copy-code.js" | relURL }}"></script>
+  {{ partial "horizont/nav/script.html" . }}
 </body>
 </html>

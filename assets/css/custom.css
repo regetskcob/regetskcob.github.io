@@ -28,47 +28,16 @@
   border-radius: 2px;
 }
 
-/* --- Site header (partials/header.html) ---
-   The lockup of the umbrella brand (mark and name on one baseline, Mona Sans
-   like every word mark of Horizont), the tagline as a Kennung, the menu in
-   two groups on the right; a hairline closes the header. The site name is
-   the h1 only on the home page. */
+/* --- Navigation ---
+   Horizont's horizon line (partials/horizon.html) across the page frame:
+   the line starts and ends where the text does. */
 
-.site-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: var(--s-16) var(--s-32);
-  padding-top: var(--s-32);
-  padding-bottom: var(--s-16);
-  border-bottom: var(--line-hairline) solid var(--line);
+.hz-horizon {
+  --horizon-width: calc(var(--page) + 2 * var(--page-pad));
+  --inset: var(--page-pad);
 }
 
-.header { display: contents; }
-
-.site-brand { min-width: 0; }
-
-.header-title {
-  margin: 0;
-  font: 600 1.625rem/1.1 var(--font-sans);
-  letter-spacing: -0.01em;
-}
-
-.header-title a {
-  color: var(--text);
-  text-decoration: none;
-  gap: 0.3em;
-  --mark: 0.95em;
-}
-
-.header-subtitle {
-  margin: var(--s-8) 0 0;
-  font: 600 0.6875rem/1.4 var(--font-mono);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
+.preview-note { position: relative; z-index: 21; text-align: center; border-radius: 0; }
 
 .home-heading { margin-top: 0; }
 
@@ -1898,6 +1867,11 @@ figure a[data-lightbox] {
 }
 
 .to-top.is-visible { opacity: 1; visibility: visible; transform: none; }
+
+/* On touch the horizon line sits at the bottom; the button stands above it. */
+@media (hover: none) and (pointer: coarse) {
+  .to-top { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); }
+}
 .to-top:hover { background: var(--sunken); }
 
 /* --- 404 page --- */
@@ -1913,38 +1887,6 @@ figure a[data-lightbox] {
   font-weight: bold;
   line-height: 1.25;
   margin-bottom: 2rem;
-}
-
-/* --- Header menu ---
-   Two groups (photography, then writing and about) with a wider gap; the
-   entries in Mona Sans, quiet; the current page and its section carry the
-   2 px line in the accent, the selection of Horizont. */
-
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--s-8) var(--s-32);
-  margin: 0;
-}
-
-.header-menu .menu-group { display: flex; flex-wrap: wrap; gap: var(--s-4) var(--s-16); }
-
-.header-menu p { margin: 0; font: 500 0.875rem/1.6 var(--font-sans); }
-
-.header-menu a {
-  display: inline-block;
-  padding: var(--s-4) 0;
-  color: var(--text-muted);
-  text-decoration: none;
-  border-bottom: var(--line-selection) solid transparent;
-}
-
-.header-menu a:hover { color: var(--text); }
-.header-menu .is-current a { color: var(--text); border-bottom-color: var(--accent); }
-
-@media (max-width: 640px) {
-  .site-head { padding-top: var(--s-24); }
-  .header-menu { gap: var(--s-4) var(--s-24); }
 }
 
 /* Blog list: a heading per year of publication. */
@@ -1966,3 +1908,78 @@ figure a[data-lightbox] {
 .topic-row .tag-count, .tag-overview .tag-count { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); }
 .soon-heading { font-family: var(--font-sans); }
 .tag-overview { font-family: var(--font-sans); }
+
+/* --- Landing page (layouts/index.html) ---
+   Left the few sentences, right the one photo; below the turnoffs, every
+   destination on a field path: the path is a vertical line through the
+   marks, each mark stands on its own small horizon. */
+
+.landing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 460px);
+  gap: var(--s-48);
+  align-items: end;
+  padding: var(--s-64) 0 var(--s-48);
+}
+
+.landing-text > .hz-kennung { margin: 0; }
+.landing h1 {
+  margin: var(--s-16) 0 var(--s-24);
+  max-width: 18ch;
+  font: 300 clamp(2.25rem, 5vw, 3.25rem)/1.08 var(--font-serif);
+  letter-spacing: -0.015em;
+}
+.landing-intro p { margin: 0 0 var(--s-16); font-size: 1.125rem; line-height: 1.6; color: var(--text-muted); max-width: 46ch; }
+.landing .social-icons { padding-top: 0; }
+.landing-photo { margin: 0; }
+.landing-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+
+.abzweige { padding-top: var(--s-24); border-top: var(--line-hairline) solid var(--line); }
+.abzweige > .hz-kennung,
+.fotografie-more > .hz-kennung { margin: 0 0 var(--s-8); font: 600 0.6875rem/1.6 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+
+.abzweig-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  /* The field path: one line through the column of the marks. */
+  background: linear-gradient(var(--line-strong), var(--line-strong)) 13px var(--s-24) / 1px calc(100% - var(--s-48)) no-repeat;
+}
+.abzweig-list li { margin: 0; }
+.abzweig-list a {
+  display: grid;
+  grid-template-columns: 28px auto minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: var(--s-4) var(--s-16);
+  padding: var(--s-16) 0;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: var(--line-hairline) solid var(--line);
+}
+.abzweig-list a::after { content: "→"; font: 400 1rem var(--font-sans); color: var(--text-faint); }
+.abzweig-list a:hover::after { color: var(--accent-text); }
+.abzweig-list .hz-mark {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  top: calc(28px / 3);
+  color: var(--accent-text);
+  background: var(--bg);
+}
+.abzweig-name { font: 300 1.5rem/1.2 var(--font-serif); }
+.abzweig-list a:hover .abzweig-name { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.abzweig-note { font: 400 0.9375rem/1.5 var(--font-sans); color: var(--text-muted); }
+.abzweig-gap { height: var(--s-24); }
+
+@media (max-width: 760px) {
+  .landing { grid-template-columns: minmax(0, 1fr); gap: var(--s-32); padding-top: var(--s-48); }
+  .abzweig-list a { grid-template-columns: 28px minmax(0, 1fr) auto; }
+  .abzweig-note { grid-column: 2; grid-row: 2; }
+  .abzweig-list a::after { grid-column: 3; grid-row: 1; }
+}
+
+/* --- Photography (layouts/_default/fotografie.html) --- */
+.fotografie-intro { margin-bottom: 0; }
+.fotografie .series-teaser { margin-top: var(--s-32); }
+.fotografie-more { margin-top: var(--s-48); }

@@ -65,6 +65,9 @@ verlag = 'verlag'
       source = 'web/shortcodes'
       target = 'layouts/_shortcodes'
     [[module.imports.mounts]]
+      source = 'web/js'
+      target = 'assets/js/horizont'
+    [[module.imports.mounts]]
       source = 'web/fonts'
       target = 'static/fonts'
     
@@ -91,13 +94,14 @@ ogImage = "gallery/niederrhein/20190727-dscf0435.jpg"
 colorPalette = 'default'
 hideHeader = false
 
-# Intro on main page, content is markdown
-homeIntroTitle = 'Hi!'
+# The landing page (layouts/index.html): a Kennung, one sentence as the
+# headline, a few honest lines. Markdown.
+homeIntroKennung = 'Daniel · regetskcob'
+homeIntroTitle = 'Ich baue Apps und fotografiere den Niederrhein.'
 homeIntroContent = """
-Ich bin Daniel, online als @regetskcob unterwegs. Beruflich entwickle ich Software, überwiegend mit Flutter. Meine freie Zeit verbringe ich draußen, mit der Kamera am Niederrhein, im Wald und im Revier.
-
-Hier findet ihr beides: Landschaftsfotografie aus der Gegend vor meiner Haustür und den [Blog](/blog/) mit allem, was nebenher entsteht, von Fotowalks und Projekten über Serien bis zu Rezensionen der Bücher, die mich begleiten.
+Beruflich entwickle ich Software, meist mit Flutter. Nebenher laufen drei eigene Apps, und draußen bin ich mit der Kamera unterwegs, im Wald und im Revier. Von hier geht es zu allem davon.
 """
+
 
 
 # Footer, replacing the theme's English credit line. The legal page moved out
@@ -120,7 +124,8 @@ footerSource = "Quellen unter [github.com/regetskcob/regetskcob.github.io](https
 hideBackToTop = true
 
 # Lists parameters
-# 15 posts per page of the blog. Pages 2 and up get their own <title> and
+# The blog list shows every post on one page: the horizon line marks its
+# years. Formerly 15 posts per page. Pages 2 and up get their own <title> and
 # canonical link (partials/head.html, partials/seo/title.html), so search
 # engines do not take /blog/page/2/ for a copy of /blog/. The size is
 # [pagination] below, not a param, so that partials/head.html can ask for the
@@ -151,38 +156,8 @@ url = "https://github.com/regetskcob"
 name = "linkedin"
 url = "https://www.linkedin.com/in/regetskcob/"
 
-# Main menu pages, in two groups: the photography pages, then writing and
-# about. A new "group" starts with a wider gap (layouts/partials/header.html).
-# No "Start": the site name above the menu links home.
-[[params.menu]]
-name = "Niederrhein."
-url = "/niederrhein"
-group = "foto"
-
-[[params.menu]]
-name = "Galerie"
-url = "/galerie"
-group = "foto"
-
-[[params.menu]]
-name = "Ausrüstung"
-url = "/ausruestung"
-group = "foto"
-
-[[params.menu]]
-name = "Film-Rezepte"
-url = "/rezepte"
-group = "foto"
-
-[[params.menu]]
-name = "Blog"
-url = "/blog"
-group = "text"
-
-[[params.menu]]
-name = "Über"
-url = "/about"
-group = "text"
+# No menu: Horizont's horizon line and its Flurkarte are the navigation
+# (layouts/partials/horizon.html, Horizont's tokens/flur.yaml).
 
 
 # Syntax highlighting is styled by the theme's syntax-highlighting.css
@@ -202,4 +177,10 @@ websiteId = "c06c7f84-1748-4134-a2ab-c3e5b7b0fe5d"
 jsLocation = "https://cloud.umami.is/script.js"
 
 [pagination]
-pagerSize = 15
+pagerSize = 1000
+
+# The one photo of the landing page (layouts/index.html), from the series
+# Niederrhein.
+[params.homePhoto]
+image = "gallery/niederrhein/20190727-dscf0435.jpg"
+alt = "Sonnenuntergang über einem Kartoffelfeld, eine Baumgruppe am Horizont, Schleierwolken im goldenen Abendhimmel"

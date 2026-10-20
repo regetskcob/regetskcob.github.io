@@ -1,0 +1,68 @@
+{{/*
+  The blog's navigation: Horizont's horizon line (horizont/nav/horizon.html)
+  with the marks this page has. Replaces the header with site name and menu.
+
+    blog list and tag pages   one mark per year, as high as its posts
+    posts and text pages      one mark per second-level heading
+    gallery                   one mark per gallery
+    any page                  "horizon" in front matter, a list of id and
+                              label, wins over all of the above
+
+  "place" is what the mark says (regetskcob / Blog), "field" the field of
+  the Flurkarte the page lies on. The map counts the blog's posts, the
+  photos of the galleries and of the series live; the other fields keep
+  the numbers of tokens/flur.yaml.
+*/}}
+{{- $marks := slice -}}
+{{- $section := .Section -}}
+{{- $place := "regetskcob" -}}
+{{- $field := "" -}}
+
+{{- /* Where the page lies on the map. */ -}}
+{{- $fields := dict "blog" "blog" "tags" "blog" "series" "blog" "verlag" "blog" "galerie" "galerie" "niederrhein" "niederrhein" "ausruestung" "ausruestung" "rezepte" "rezepte" "about" "ueber" -}}
+{{- $key := cond (ne $section "") $section (path.Base (strings.TrimSuffix "/" .RelPermalink)) -}}
+{{- with index $fields $key }}{{ $field = . }}{{ end -}}
+{{- if not .IsHome -}}
+  {{- $name := cond (eq $field "blog") "Blog" .Title -}}
+  {{- $place = printf "regetskcob / %s" (replaceRE `^[^\p{L}\p{N}]+` "" $name) -}}
+{{- end -}}
+
+{{- /* The marks. */ -}}
+{{- with .Params.horizon -}}
+  {{- range $i, $m := . -}}
+    {{- $marks = $marks | append (dict "id" $m.id "label" $m.label "short" (printf "%d" (add $i 1))) -}}
+  {{- end -}}
+{{- else -}}
+  {{- if or (and (eq .Kind "section") (eq $section "blog")) (eq .Kind "term") -}}
+    {{- range (where .Pages "Draft" false).GroupByDate "2006" -}}
+      {{- $n := len .Pages -}}
+      {{- $marks = $marks | append (dict "id" (printf "jahr-%s" .Key) "label" .Key "short" (substr .Key 2 2) "n" $n "title" (printf "%s · %d %s" .Key $n (cond (eq $n 1) "Beitrag" "Beiträge"))) -}}
+    {{- end -}}
+  {{- else if eq .Layout "gallery" -}}
+    {{- range $i, $g := partial "gallery-data.html" "" -}}
+      {{- $marks = $marks | append (dict "id" $g.id "label" $g.title "short" (printf "%d" (add $i 1))) -}}
+    {{- end -}}
+  {{- else if .IsPage -}}
+    {{- $i := 0 -}}
+    {{- range .Fragments.Headings -}}
+      {{- range (cond (eq .Level 2) (slice .) .Headings) -}}
+        {{- if and (eq .Level 2) .ID -}}
+          {{- $i = add $i 1 -}}
+          {{- $marks = $marks | append (dict "id" .ID "label" (.Title | plainify | htmlUnescape) "short" (printf "%d" $i)) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Live numbers for the map. */ -}}
+{{- $photos := 0 -}}
+{{- range partial "gallery-data.html" "" }}{{ $photos = add $photos (len .items) }}{{ end -}}
+{{- $counts := dict "blog" (len (where (site.GetPage "/blog").RegularPages "Draft" false)) "galerie" $photos -}}
+{{- with site.GetPage "/niederrhein" }}{{ $counts = merge $counts (dict "niederrhein" (len .Params.photos)) }}{{ end -}}
+
+{{ partial "horizont/nav/horizon.html" (dict
+    "product" "regetskcob"
+    "place" $place
+    "marks" $marks
+    "karte" (dict "home" "regetskcob" "here" "regetskcob" "field" $field "counts" $counts "url" ("karte/" | relURL))) }}

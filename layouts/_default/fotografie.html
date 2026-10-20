@@ -1,0 +1,33 @@
+{{/*
+  The photography (content/fotografie.md): what the home page carried
+  before the landing page took its place. The series in one row of photos,
+  a card per gallery, and the way to the gear and the film recipes. The
+  sections carry the ids the horizon line marks ("horizon" in front matter).
+*/}}
+{{ define "main" }}
+<article class="fotografie">
+  <header class="post-intro fotografie-intro">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+  <div id="serie">{{ partial "series-teaser.html" . }}</div>
+  <div id="galerien">{{ partial "gallery-cards.html" . }}</div>
+  <section id="werkzeug" class="fotografie-more">
+    {{ partial "horizont/kennung.html" (dict "text" "Werkzeug" "tag" "h2") }}
+    <ul class="abzweig-list">
+      {{- range slice "/ausruestung" "/rezepte" }}
+      {{- with site.GetPage . }}
+      <li data-product="regetskcob">
+        <a href="{{ .RelPermalink }}">
+          {{ partial "horizont/mark.html" (dict "product" "regetskcob" "size" 28) }}
+          <span class="abzweig-name">{{ .Title }}</span>
+          <span class="abzweig-note">{{ .Description }}</span>
+        </a>
+      </li>
+      {{- end }}
+      {{- end }}
+    </ul>
+  </section>
+  {{ partial "photo-grid-script.html" . }}
+</article>
+{{ end }}

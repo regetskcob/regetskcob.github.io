@@ -1,6 +1,7 @@
 {{- /*
   The posts of a pager (blog list and tag pages), newest first, with a
-  heading for every year of publication and the pager below. Each page opens
+  heading for every year of publication and the pager below. The year
+  headings are the anchors of the horizon line (partials/horizon.html). Each page opens
   with the year of its first post, so a page never starts without one.
   Called with the paginator: {{ partial "post-list.html" $paginator }}
 */ -}}
@@ -8,7 +9,7 @@
 {{- range .Pages }}
   {{- $y := .Date.Format "2006" }}
   {{- if ne $y $year }}
-  <h2 class="year-heading">{{ $y }}</h2>
+  <h2 class="year-heading" id="jahr-{{ $y }}">{{ $y }}</h2>
   {{- $year = $y }}
   {{- end }}
   {{ partial "post-entry.html" . }}
