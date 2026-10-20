@@ -4,5 +4,5 @@ go 1.25.3
 
 require (
 	github.com/hugomods/umami-analytics v0.3.1 // indirect
-	github.com/regetskcob/horizont v0.7.0 // indirect
+	github.com/regetskcob/horizont v0.7.2 // indirect
 )
