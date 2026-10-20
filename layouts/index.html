@@ -64,6 +64,9 @@
         {{ partial "horizont/mark.html" (dict "product" (.mark | default .product) "size" 28) }}
         <span class="abzweig-name">{{ .name }}</span>
         <span class="abzweig-note">{{ .note }}</span>
+        {{- with .text }}
+        <span class="abzweig-text">{{ . }}</span>
+        {{- end }}
       </a>
     </li>
     {{- end }}

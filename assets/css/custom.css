@@ -1957,7 +1957,7 @@ figure a[data-lightbox] {
   text-decoration: none;
   border-bottom: var(--line-hairline) solid var(--line);
 }
-.abzweig-list a::after { content: "→"; font: 400 1rem var(--font-sans); color: var(--text-faint); }
+.abzweig-list a::after { content: "→"; grid-column: 4; grid-row: 1; font: 400 1rem var(--font-sans); color: var(--text-faint); }
 .abzweig-list a:hover::after { color: var(--accent-text); }
 .abzweig-list .hz-mark {
   width: 28px;
@@ -1970,6 +1970,8 @@ figure a[data-lightbox] {
 .abzweig-name { font: 300 1.5rem/1.2 var(--font-serif); }
 .abzweig-list a:hover .abzweig-name { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .abzweig-note { font: 400 0.9375rem/1.5 var(--font-sans); color: var(--text-muted); }
+/* The sentence of a project, below its name. */
+.abzweig-text { grid-column: 2 / 4; grid-row: 2; font: 400 0.9375rem/1.55 var(--font-sans); color: var(--text-muted); max-width: 60ch; }
 /* Blog and photography: two tiles above the projects. */
 .kacheln {
   display: grid;
@@ -2007,6 +2009,7 @@ figure a[data-lightbox] {
   .landing { grid-template-columns: minmax(0, 1fr); gap: var(--s-32); padding-top: var(--s-48); }
   .abzweig-list a { grid-template-columns: 28px minmax(0, 1fr) auto; }
   .abzweig-note { grid-column: 2; grid-row: 2; }
+  .abzweig-text { grid-column: 2 / 4; grid-row: 3; }
   .abzweig-list a::after { grid-column: 3; grid-row: 1; }
 }
 
