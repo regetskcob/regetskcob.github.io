@@ -691,11 +691,11 @@ a.series-label:hover { color: var(--text); border-color: var(--text-muted); }
   font-size: 0.85em;
 }
 
-/* --- Photography on the home page ---
-   The series opens under the intro, open, a single row of its photos
-   (partials/series-teaser.html); the galleries stand in a frame
-   (partials/gallery-cards.html), one card each. Both under a Kennung. The
-   cards run the columns and gaps of the photo grid (.series-grid). */
+/* --- Series and galleries (the chapters of /fotografie/) ---
+   Both open, in the same look: a Kennung, the heading, a line of text, one
+   row of photos (partials/series-teaser.html) or one card per gallery
+   (partials/gallery-cards.html). The cards run the columns and gaps of the
+   photo grid (.series-grid). */
 
 .series-teaser { margin: var(--s-32) 0 var(--s-16); }
 
@@ -728,17 +728,7 @@ a.series-label:hover { color: var(--text); border-color: var(--text-muted); }
   .series-teaser .series-tile:nth-child(4) { display: block; }
 }
 
-.gallery-teaser {
-  margin-top: var(--s-48);
-  padding: var(--s-24);
-  background: var(--sunken);
-  border: var(--line-hairline) solid var(--line-strong);
-  border-radius: var(--r-10);
-}
-
-@media (max-width: 640px) {
-  .gallery-teaser { padding: var(--s-16); }
-}
+.gallery-teaser { margin-top: var(--s-48); }
 
 .teaser-text {
   color: var(--text-muted);
