@@ -1,6 +1,6 @@
 ---
 title: "⚡️ | Abschied von den Logikblättern im Gira X1"
-date: "2026-10-21T18:10:00+02:00"
+date: "2026-10-21T18:30:00+02:00"
 summary: "Neun Logikblätter liefen jahrelang auf unserem Gira X1. Beim Umzug nach Home Assistant habe ich sie Blatt für Blatt ausgelesen und dabei Fehler gefunden, die niemandem aufgefallen waren: ein Regenzähler ohne Ende, ein Schalter ohne Wirkung und eine Abfrage an eine Fritz!Box, die es nicht mehr gibt."
 # Entwurf: offen sind die markierten Stellen […]. Bilder: ein nachgezeichnetes
 # Logikblatt (SVG aus dem smart-home-Repo, docs/gira-x1/svg/) wäre ideal, vorher
@@ -9,6 +9,8 @@ draft: true
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Links ein Logikblatt mit grauen Bausteinen und Verbindungslinien, einer davon rostrot markiert, rechts eine schlanke Liste von Automationen, dazwischen ein gepunkteter Pfeil"
+series: "Unser KNX-Haus"
+seriesLabel: "Teil VII: Die Logik zieht um"
 tags: ["Smarthome"]
 ---
 
@@ -79,3 +81,5 @@ Noch ein Tipp, falls ihr selbst mit GPA-Projekten arbeitet: In der Projektdatei 
 ## Fazit
 
 […eigenes Fazit: Was hat der Umzug gebracht, fehlt dir etwas am X1?]
+
+## Fortsetzung folgt…

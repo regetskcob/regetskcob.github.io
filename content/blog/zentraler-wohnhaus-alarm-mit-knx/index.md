@@ -7,6 +7,8 @@ cover: ./cover.jpg
 coverAlt: "KI-generierte Grafik: Ein Haus bei Nacht, in dem alle Fenster und Außenleuchten brennen und die Rollläden oben sind, verbunden über eine grüne Busleitung mit einem einzelnen roten Schalter, von dem Signalringe ausgehen"
 coverAI: true
 aliases: ["/posts/zentraler-wohnhaus-alarm-mit-knx/"]
+series: "Unser KNX-Haus"
+seriesLabel: "Teil I: Der zentrale Alarm"
 tags: ["Smarthome"]
 ---
 

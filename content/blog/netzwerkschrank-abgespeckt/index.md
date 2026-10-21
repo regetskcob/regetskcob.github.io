@@ -1,6 +1,6 @@
 ---
 title: "👨🏻‍💻 | Der Netzwerkschrank wird leichter"
-date: "2026-10-21T18:00:00+02:00"
+date: "2026-10-21T18:20:00+02:00"
 summary: "Zwei Jahre nach dem letzten Stand: UniFi statt Fritz!Box, ein Messstecker vor dem Schrank und drei Geräte weniger. Wie der Netzwerkschrank von drei Raspberry Pis auf einen geschrumpft ist und was das im Jahr spart."
 # Entwurf: offen sind die markierten Stellen […]. Vor dem Veröffentlichen klären,
 # ob die Time Capsule noch am Gateway hängt (architektur.md sagt ja, energie.md nein),
@@ -9,6 +9,8 @@ draft: true
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein Netzwerkschrank mit Patchfeld, Switch und Gateway, in dem drei Einschübe leer sind, rechts daneben drei herausgezogene Geräte, die immer blasser werden, darunter eine Messkurve, die stufenweise abfällt"
+series: "Unser KNX-Haus"
+seriesLabel: "Teil VI: Der Netzwerkschrank 2026"
 tags: ["Smarthome"]
 ---
 
@@ -57,6 +59,15 @@ Wenn ihr also überlegt, ob sich das Abschalten eines kleinen Geräts lohnt: Rec
 
 Ganz ohne Zuwachs ging es nicht. Im Zählerschrank hängen zwei Tasmota-Leseköpfe an den Stromzählern, und die sind immer wieder aus dem WLAN gefallen. Kein Wunder bei −79 dBm. Seit Mitte Oktober hängt dort provisorisch ein kleiner UniFi Access Point, und die Leseköpfe melden sich mit −27 und −30 dBm. Für den AP plane ich einen Halter für die Hutschiene aus dem 3D-Drucker.
 
+## Was aus den ToDos von 2024 wurde
+
+Im Beitrag von 2024 standen ein paar offene Punkte. Ein kurzer Abgleich:
+
+- **Zigbee:** Läuft inzwischen mit Zigbee2MQTT. Dazu gehören Zwischenstecker, die den Verbrauch messen, und ein Fensterkontakt. Der Briefkasten wartet noch auf einen Zigbee-Router in der Garage, damit das Signal bis dorthin reicht.
+- **Die Heizung:** Die Wärmepumpe hängt über die Luxtronik-Integration an Home Assistant. Den Umweg über Modbus brauchte es dafür nicht.
+- **Sommer und Winter:** […Stand der Sommer-/Winter-Umschaltung]
+- **Die Außen-Bewegungsmelder:** […sind die Sperren inzwischen umgesetzt?]
+
 ## Momentaner Stand
 
 - Glasfasermodem, UniFi Cloud Gateway und der 24-Port-PoE-Switch im Schrank
@@ -70,3 +81,5 @@ Und der Verbrauch: […aktuellen Wert vom Shelly eintragen, nach dem HKKNX-Abbau
 ## Wie es weitergeht
 
 Der Schrank ist jetzt so leer wie seit Jahren nicht. Als Nächstes sollen die übrigen Bridges unter die Lupe, denn auch dort steckt das eine oder andere Netzteil, das nur aus Gewohnheit läuft.
+
+## Fortsetzung folgt…

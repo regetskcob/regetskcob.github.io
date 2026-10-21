@@ -6,6 +6,8 @@ summary: "Glasfaser, Fritz!Box, zwei Raspberry Pis und ein PoE-Switch: Das läuf
 cover: ./IMG_3831.jpeg
 coverAlt: "Geöffneter Netzwerkschrank mit Patchpanel, Switch und bunten Netzwerkkabeln, darunter Router, Steckdosenleisten und Netzteile"
 aliases: ["/posts/aktueller-netzwerk-aufbau/"]
+series: "Unser KNX-Haus"
+seriesLabel: "Teil III: Der Netzwerk-Aufbau 2024"
 tags: ["Smarthome"]
 ---
 

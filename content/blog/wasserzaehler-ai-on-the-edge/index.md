@@ -1,6 +1,6 @@
 ---
 title: "⚡️ | Ein analoger Wasserzähler lernt lesen"
-date: "2026-10-21T18:30:00+02:00"
+date: "2026-10-21T18:40:00+02:00"
 summary: "Unser Wasserzähler ist analog, ein smarter Zähler war nicht zu bekommen. Seit Januar liest ihn eine kleine Kamera mit AI on the Edge ab und schickt den Stand an Home Assistant. Ein Erfahrungsbericht mit Aufbau, Pannen und einer Automation, die Fehllesungen selbst korrigiert."
 # Entwurf: offen sind die markierten Stellen […]. Fotos vom Aufbau am Zähler fehlen noch
 # (vor dem Import Seriennummer des Zählers abdecken oder wegschneiden).
@@ -8,6 +8,8 @@ draft: true
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein runder analoger Wasserzähler mit Ziffernrollen und kleinen Zeigern, darüber eine Kamera, von der eine gepunktete Linie zu einer Zahlenanzeige mit Verlaufskurve führt"
+series: "Unser KNX-Haus"
+seriesLabel: "Teil VIII: Der Wasserzähler"
 tags: ["Smarthome", "DIY"]
 ---
 
@@ -64,3 +66,5 @@ Dazu kommt ein Wächter, der meldet, wenn längere Zeit ununterbrochen Wasser fl
 ## Fazit
 
 […eigenes Fazit: Lohnt sich der Aufwand?]
+
+## Fortsetzung folgt…

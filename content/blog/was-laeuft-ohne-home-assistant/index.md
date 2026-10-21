@@ -1,6 +1,6 @@
 ---
 title: "⚡️ | Was läuft, wenn Home Assistant ausfällt?"
-date: "2026-10-21T19:00:00+02:00"
+date: "2026-10-21T18:50:00+02:00"
 summary: "Je mehr Home Assistant im Haus übernimmt, desto wichtiger wird die Frage, was ohne es noch geht. Eine Bestandsaufnahme für unser KNX-Haus: was weiterläuft, was ausfällt und wie wir dann zurechtkommen."
 # Entwurf: bewusst ohne Details zu Alarm, Kamera und Abwesenheitslogik.
 # Offen sind die markierten Stellen […].
@@ -8,6 +8,8 @@ draft: true
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Ein Haus im Querschnitt mit zwei Etagen, in denen die Leuchten weiter in warmem Gelb brennen, an den Wänden Taster und Heizungsregler, daneben ein ausgegrauter kleiner Server mit einem rostroten Punkt, nur gestrichelt angebunden"
+series: "Unser KNX-Haus"
+seriesLabel: "Teil IX: Wenn Home Assistant ausfällt"
 tags: ["Smarthome"]
 ---
 

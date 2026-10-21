@@ -1,6 +1,6 @@
 ---
 title: "💻 | Claude als Hauswart"
-date: "2026-10-21T19:10:00+02:00"
+date: "2026-10-21T18:10:00+02:00"
 summary: "In einer Woche sind über 180 Commits Dokumentation und Automationen für unser Smart Home entstanden. Wie ich Claude Code an Home Assistant angebunden habe, welche Regeln es dabei gibt und was beim gemeinsamen Durchsehen des Hauses alles aufgefallen ist."
 # Entwurf: offen sind die markierten Stellen […]. Keine Webhook-URL, IPs, Netzplan
 # oder Sicherheitsdetails übernehmen.
@@ -8,6 +8,8 @@ draft: true
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Links ein dunkles Terminalfenster mit Zeilen und einem rostroten Prompt, rechts der Umriss eines Hauses mit kleinen Geräten, dazwischen eine gepunktete Verbindung"
+series: "Unser KNX-Haus"
+seriesLabel: "Teil V: Eine Woche mit Claude"
 tags: ["Smarthome", "Softwareentwicklung"]
 ---
 
@@ -41,9 +43,9 @@ Das Repo ist am 14. Oktober entstanden. Die ersten vier Tage waren die intensivs
 
 ## Was dabei herauskam
 
-Spannender als die Zahlen ist, was beim systematischen Durchsehen aufgefallen ist:
+Spannender als die Zahlen ist, was beim systematischen Durchsehen aufgefallen ist. Die größeren Funde bekommen in dieser Serie jeweils einen eigenen Teil:
 
-- **Die Logik des Gira X1:** Neun Logikblätter, ausgelesen, nachgezeichnet und nach Home Assistant umgezogen. Dabei kamen ein endlos zählender Regensensor und eine Abfrage an eine längst ausgebaute Fritz!Box ans Licht. […Link auf den X1-Beitrag, sobald er online ist]
+- **Die Logik des Gira X1:** Neun Logikblätter, ausgelesen, nachgezeichnet und nach Home Assistant umgezogen. Dabei kamen ein endlos zählender Regensensor und eine Abfrage an eine längst ausgebaute Fritz!Box ans Licht.
 - **Der Netzwerkschrank:** Mit einem Messstecker davor ließ sich zeigen, was jedes Gerät kostet. Pi-hole und HKKNX sind seitdem abgeschaltet.
 - **Der Wasserzähler:** Seine Fehllesungen korrigiert jetzt eine Automation selbst.
 - **Die Rollläden:** Beim Nachtmodus sprang der Hauszähler kurz auf über 4.000 W. Der Grund waren 20 Rollladenmotoren, die gleichzeitig fahren. Der Lesekopf hatte das vorher kaum erfasst, weil er nur alle 90 Sekunden sendete und eine Fahrt nur etwa 25 Sekunden dauert. Jetzt sendet er alle zehn Sekunden. […Ergebnis der Messung je Motor]
@@ -57,3 +59,5 @@ Spannender als die Zahlen ist, was beim systematischen Durchsehen aufgefallen is
 ## Fazit
 
 […eigenes Fazit]
+
+## Fortsetzung folgt…

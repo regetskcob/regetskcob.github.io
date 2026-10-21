@@ -6,6 +6,8 @@ summary: "Duspol, Multimeter und Leitungssucher haben mich durch die gesamte Ele
 cover: ./img_3134.jpg
 coverAlt: "Ein Spannungsprüfer mit leuchtenden Anzeigen an einer Klemme im Verteilerkasten, dahinter KNX-Aktoren"
 aliases: ["/posts/messgeraete-fuer-den-hausbau/"]
+series: "Unser KNX-Haus"
+seriesLabel: "Teil II: Die Messgeräte"
 tags: ["Smarthome"]
 ---
 
