@@ -98,9 +98,9 @@ für Marke und App-Icon unter `horizont/`.
   Neue Regeln nutzen ausschließlich die Variablen von Horizont (`--text`,
   `--text-muted`, `--sunken`, `--line`, `--accent`, `--s-*`, `--r-*` …).
 - **Marke** — die Buche auf dem Horizont vor dem Seitennamen (`header.html`) und
-  über der Fußzeile (`footer.html`), als SVG-Favicon in `head.html`. Die
-  PNG-Favicons in `static/` stammen aus `icons/export/regetskcob/web/` von
-  Horizont (klein die Glyphe, groß die Illustration).
+  über der Fußzeile (`footer.html`). Die Favicons in `static/` zeigen das Porträt von
+  der Über-mich-Seite. Ein SVG-Favicon bindet `head.html` deshalb nicht ein, Browser
+  würden es den PNGs vorziehen.
 - **Kennungen** — Tagline und Datum im Beitragskopf in Mono-Versalien.
 - **Shortcodes für Beiträge** — `hz-device` (Screenshot aus dem Bundle im
   Geräterahmen), `hz-kennung`, `hz-badge`, `hz-symbol`, `hz-facts`. Aufruf und

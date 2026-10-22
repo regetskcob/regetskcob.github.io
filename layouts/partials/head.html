@@ -7,7 +7,7 @@
     other pages allow large image previews
   - JSON-LD from partials/seo/jsonld.html, and a meta author tag
   - the text and data mining reservation (TDMRep meta tags)
-  - the SVG favicon from Horizont, and noindex for the preview build
+  - noindex for the preview build
   Diff against the theme file when updating typo.
 */}}
 <meta charset="utf-8">
@@ -24,12 +24,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ urls.JoinPath $faviconPath "favicon-32x32.png" }}">
 <link rel="icon" type="image/png" sizes="192x192" href="{{ urls.JoinPath $faviconPath "android-chrome-192x192.png" }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ urls.JoinPath $faviconPath "apple-touch-icon.png" }}">
-
-{{/* The Horizont app icon of the blog as SVG (a beech on the horizon), drawn
-     by the design system's partial. Browsers that read SVG favicons prefer it
-     over the PNGs above. */}}
-{{ $fav := partial "horizont/app-icon.html" (dict "product" "regetskcob" "size" 64) | resources.FromString "favicon.svg" }}
-<link rel="icon" type="image/svg+xml" href="{{ $fav.RelPermalink }}">
 
 {{ with .OutputFormats.Get "rss" -}}
 {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
