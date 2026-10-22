@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.regetskcob.de/knx/preview/en/box/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://www.regetskcob.de/knx/preview/box/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.regetskcob.de/knx/preview/en/box/"
+                />
+  </url><url>
     <loc>https://www.regetskcob.de/knx/preview/en/</loc>
     <xhtml:link
                 rel="alternate"

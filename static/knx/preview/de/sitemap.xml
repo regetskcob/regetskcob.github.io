@@ -13,5 +13,17 @@
                 hreflang="de-DE"
                 href="https://www.regetskcob.de/knx/preview/"
                 />
+  </url><url>
+    <loc>https://www.regetskcob.de/knx/preview/box/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.regetskcob.de/knx/preview/en/box/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://www.regetskcob.de/knx/preview/box/"
+                />
   </url>
 </urlset>
