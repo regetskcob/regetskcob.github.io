@@ -28,9 +28,10 @@
   nav a { color: var(--accent); }
   .post { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 16px 32px; padding: 40px 0; border-bottom: 1px solid var(--line); }
   .post header { grid-column: 1 / -1; }
-  .strip { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
-  .strip img, .single { flex: none; width: min(100%, 420px); height: auto; border-radius: 8px; border: 1px solid var(--line); scroll-snap-align: start; background: #fff; }
-  .reel { width: min(100%, 340px); aspect-ratio: 9 / 16; border-radius: 12px; background: #000; }
+  /* Nicht auf die Höhe der Caption-Spalte strecken: Bilder bleiben 4:5 bzw. 3:4. */
+  .strip { display: flex; align-items: flex-start; align-self: start; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .strip img, .single { flex: none; align-self: start; width: min(100%, 420px); height: auto; border-radius: 8px; border: 1px solid var(--line); scroll-snap-align: start; background: #fff; }
+  .reel { align-self: start; width: min(100%, 340px); aspect-ratio: 9 / 16; border-radius: 12px; background: #000; }
   .caption { min-width: 0; }
   .caption-head { display: flex; justify-content: space-between; align-items: center; }
   .copy { font: 600 13px/1 "Mona Sans", system-ui, sans-serif; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--accent); background: none; color: var(--accent); cursor: pointer; }
