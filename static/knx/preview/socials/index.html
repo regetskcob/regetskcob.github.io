@@ -29,7 +29,7 @@
   .post { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 16px 32px; padding: 40px 0; border-bottom: 1px solid var(--line); }
   .post header { grid-column: 1 / -1; }
   .strip { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
-  .strip img, .single { flex: none; width: min(100%, 420px); height: auto; aspect-ratio: 4 / 5; border-radius: 8px; border: 1px solid var(--line); scroll-snap-align: start; background: #fff; }
+  .strip img, .single { flex: none; width: min(100%, 420px); height: auto; border-radius: 8px; border: 1px solid var(--line); scroll-snap-align: start; background: #fff; }
   .reel { width: min(100%, 340px); aspect-ratio: 9 / 16; border-radius: 12px; background: #000; }
   .caption { min-width: 0; }
   .caption-head { display: flex; justify-content: space-between; align-items: center; }
@@ -46,9 +46,56 @@
 <main>
   <span class="kennung">KNX Monitor · Vorschau, intern</span>
   <h1>Instagram-Beiträge</h1>
-  <p class="lead">Alle vorbereiteten Karussells, Bilder und Reels mit Caption, Alt-Text und erstem Kommentar. Karussells seitlich wischen, Reels laufen ohne Ton.</p>
-  <nav><a href="#start-1-rechts">Start</a><a href="#karussell-diagnose">Karussells</a><a href="#bild-box">Bild</a><a href="#reel-live">Reels</a></nav>
-  <section><h2>Start</h2>
+  <p class="lead">Alle vorbereiteten Karussells, Bilder und Reels mit Caption, Alt-Text und erstem Kommentar. Karussells seitlich wischen, Reels laufen ohne Ton. Die drei Hero-Kacheln sind 3:4 wie das Profilraster und werden angepinnt: rechts zuerst, links zuletzt, dann stehen sie in der richtigen Reihenfolge oben.</p>
+  <nav><a href="#hero-1-rechts">Angepinnt</a><a href="#start-1-rechts">Start</a><a href="#karussell-diagnose">Karussells</a><a href="#bild-box">Bild</a><a href="#reel-live">Reels</a></nav>
+  <section><h2>Angepinnt: Hero der Startseite</h2>
+    <article class="post" id="hero-1-rechts">
+      <header><span class="kennung">Bild · hero-1-rechts</span><h3>Kachel 1 (rechts, zuerst anpinnen)</h3></header>
+      <img class="single" src="media/hero-1-rechts.webp" alt="Gezeichneter Kleinverteiler mit Spannungsversorgung, IP-Schnittstelle und drei Aktoren, das grüne Buskabel führt in eine waagrechte grüne Linie." loading="lazy" width="1080" height="1440">
+      <div class="caption">
+        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
+        <pre>Ein Kleinverteiler, ein Buskabel, und jedes Telegramm darauf im Blick.
+
+KNX Monitor ist Busmonitor und Diagnose für KNX: live, mit deinem ETS-Projekt, zu Hause und auf der Baustelle.
+
+👉 knx-monitor.de
+
+#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #schaltschrank #busmonitor</pre>
+        <dl><dt>Alt-Text</dt><dd>Gezeichneter Kleinverteiler mit Spannungsversorgung, IP-Schnittstelle und drei Aktoren, das grüne Buskabel führt in eine waagrechte grüne Linie.</dd><dt>Erster Kommentar</dt><dd>Wie sieht euer Schaltschrank aus, ordentlich oder historisch gewachsen?</dd></dl>
+      </div>
+    </article>
+    <article class="post" id="hero-2-mitte">
+      <header><span class="kennung">Bild · hero-2-mitte</span><h3>Kachel 2 (Mitte)</h3></header>
+      <img class="single" src="media/hero-2-mitte.webp" alt="Eine leuchtende Lampe „Licht Küche 1/1/3“, darunter eine Live-Liste von Telegrammen des Demo-Hauses mit Uhrzeit, Absender, Adresse, Name und Wert." loading="lazy" width="1080" height="1440">
+      <div class="caption">
+        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
+        <pre>Licht Küche an, und in der Liste steht es sofort: Absender, Gruppenadresse, Name, Wert.
+
+So sieht der Bus in KNX Monitor aus, eingeordnet mit deinem ETS-Projekt statt Hex-Kolonnen.
+
+👉 knx-monitor.de
+
+#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #ets6 #busmonitor</pre>
+        <dl><dt>Alt-Text</dt><dd>Eine leuchtende Lampe „Licht Küche 1/1/3“, darunter eine Live-Liste von Telegrammen des Demo-Hauses mit Uhrzeit, Absender, Adresse, Name und Wert.</dd><dt>Erster Kommentar</dt><dd>Welche Adresse schaut ihr euch auf dem Bus als Erstes an?</dd></dl>
+      </div>
+    </article>
+    <article class="post" id="hero-3-links">
+      <header><span class="kennung">Bild · hero-3-links</span><h3>Kachel 3 (links, zuletzt anpinnen)</h3></header>
+      <img class="single" src="media/hero-3-links.webp" alt="Das App-Symbol von KNX Monitor, darunter die Überschrift „Jedes Telegramm im Blick, zu Hause und auf der Baustelle.“ und ein kurzer Text zum ETS-Projekt und zur Prüfung der Anlage." loading="lazy" width="1080" height="1440">
+      <div class="caption">
+        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
+        <pre>Jedes Telegramm im Blick, zu Hause und auf der Baustelle.
+
+KNX Monitor ordnet deinen Bus mit deinem ETS-Projekt ein: Geräte, Räume und Werte statt Hex-Kolonnen. Dazu prüft es die Anlage auf stille Sensoren, falsche Datentypen und Busprobleme.
+
+Heute kostenlos als Home-Assistant-Add-on und für Linux. iPhone, iPad, Android, Mac und Windows folgen. Deine Anlagendaten bleiben in deinem Netz.
+
+👉 knx-monitor.de (Link in der Bio)
+
+#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #homeassistant #elektriker #busmonitor #ets6</pre>
+        <dl><dt>Alt-Text</dt><dd>Das App-Symbol von KNX Monitor, darunter die Überschrift „Jedes Telegramm im Blick, zu Hause und auf der Baustelle.“ und ein kurzer Text zum ETS-Projekt und zur Prüfung der Anlage.</dd><dt>Erster Kommentar</dt><dd>Was würdet ihr als Erstes auf eurem Bus nachsehen?</dd></dl>
+      </div>
+    </article></section><section><h2>Start</h2>
     <article class="post" id="start-1-rechts">
       <header><span class="kennung">Bild · start-1-rechts</span><h3>Kachel 1 (rechts, zuerst posten)</h3></header>
       <img class="single" src="media/start-1-rechts.webp" alt="Gezeichneter Kleinverteiler mit Hutschienengeräten, das grüne Buskabel läuft nach unten in eine waagrechte grüne Linie." loading="lazy" width="1080" height="1350">
