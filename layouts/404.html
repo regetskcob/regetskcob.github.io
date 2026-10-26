@@ -5,6 +5,20 @@
 */}}
 {{ define "main" }}
 
+{{- /* Panzergefecht moved from /wargame/ to its own domain. GitHub redirects
+   the old project path once the game's Pages site has panzergefecht.de as
+   its custom domain; should a request still end up here, it goes on to the
+   same path there, room links (?room=, ?pad=) and sign-in mails (#…)
+   included, before anything is drawn. */}}
+<script>
+  (function () {
+    var p = location.pathname;
+    if (p === "/wargame" || p.indexOf("/wargame/") === 0) {
+      location.replace("https://panzergefecht.de" + (p.slice(8) || "/") + location.search + location.hash);
+    }
+  })();
+</script>
+
 <div class="not-found">
 
     <div>
