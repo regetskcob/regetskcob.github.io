@@ -22,7 +22,7 @@ Daniel Bocksteger
 {{< address >}}  
 Deutschland
 
-E-Mail: regetskcob@icloud.com
+E-Mail: [hi@regetskcob.de](mailto:hi@regetskcob.de)
 
 Verantwortlich für den Inhalt nach § 18 Abs. 2 Medienstaatsvertrag (MStV): Daniel Bocksteger, Anschrift wie oben.
 
@@ -42,7 +42,7 @@ Diese Webseite ist eine statisch generierte Seite und wird über [GitHub Pages][
 
 ### Persönliche Daten
 
-Die Sammlung und Speicherung persönlicher Daten ist soweit möglich eingeschränkt. Es gibt auf dieser Seite kein Kontaktformular und keine Registrierung. Schreibst du mir eine E-Mail, verwende ich deine Angaben ausschließlich zur Beantwortung deiner Nachricht (Art. 6 Abs. 1 lit. f DSGVO) und lösche sie, wenn die Unterhaltung erledigt ist. Die E-Mails liegen bei meinem Mailanbieter Apple (iCloud Mail).
+Die Sammlung und Speicherung persönlicher Daten ist soweit möglich eingeschränkt. Es gibt auf dieser Seite kein Kontaktformular und keine Registrierung. Schreibst du mir eine E-Mail, verwende ich deine Angaben ausschließlich zur Beantwortung deiner Nachricht (Art. 6 Abs. 1 lit. f DSGVO) und lösche sie, wenn die Unterhaltung erledigt ist. E-Mails an diese Adresse werden über do.de, einen Dienst der Greenmark IT GmbH, Leinstraße 3, 31061 Alfeld (Leine), Deutschland, empfangen und gespeichert.
 
 ### Apps und Projekte
 
