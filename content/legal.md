@@ -1,7 +1,7 @@
 ---
 title: Rechtliches
 date: 2020-04-05T16:31:43+0000
-lastmod: 2026-09-08T20:00:00+0000
+lastmod: 2026-10-28T12:00:00+0000
 description: Impressum und Datenschutzerklärung
 # Cover: a generated graphic (assets/covers/legal.jpg, source legal.svg) with the title on a bar.
 photo: "covers/legal.jpg"
@@ -38,21 +38,29 @@ Diese Webseite ist eine statisch generierte Seite und wird über [GitHub Pages][
 
 ### Reichweitenmessung
 
-Zur Analyse der Nutzung setze ich [Umami][2] ein. Umami arbeitet ohne Cookies und ohne Wiedererkennung einzelner Personen und erhebt ausschließlich aggregierte Daten wie aufgerufene Seiten, ungefähre Herkunftsregion und Gerätetyp. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, mein berechtigtes Interesse daran zu verstehen, welche Inhalte gelesen werden.
+Zur Analyse der Nutzung setze ich [Umami Cloud][2] ein, einen Dienst der Umami Software, Inc. (USA). Beim Aufruf einer Seite lädt dein Browser dazu ein kleines Skript von cloud.umami.is und meldet den Seitenaufruf; dabei erhält Umami technisch bedingt deine IP-Adresse. Umami setzt keine Cookies, legt nichts auf deinem Gerät ab und speichert die IP-Adresse nicht, sondern nutzt sie nur kurz, um die ungefähre Herkunftsregion zu bestimmen. Gespeichert werden ausschließlich zusammengefasste Angaben wie aufgerufene Seite, verweisende Seite, ungefähre Region, Browser, Betriebssystem und Gerätetyp; einzelne Personen kann ich daraus nicht erkennen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, mein berechtigtes Interesse daran zu verstehen, welche Inhalte gelesen werden.
+
+Sendet dein Browser das Signal „Do Not Track“, wird nichts gezählt. Dabei können Daten in die USA übermittelt werden; Einzelheiten stehen in der [Datenschutzerklärung von Umami][2]. Du kannst der Messung jederzeit widersprechen (Art. 21 DSGVO), am einfachsten über „Do Not Track“ oder einen Inhaltsblocker.
 
 ### Keine weiteren Dienste
 
-Über die beiden genannten Punkte hinaus bindet diese Seite keine externen Dienste ein. Es gibt keine Kommentarfunktion, keine Werbung, keine Affiliate- oder Tracking-Links und keine Einbettungen von Social-Media-Plattformen. Verlinkungen auf externe Seiten werden erst beim Klick aufgerufen.
+Über Hosting und Reichweitenmessung hinaus bindet diese Seite keine externen Dienste ein. Es gibt keine Kommentarfunktion, keine Werbung, keine Affiliate- oder Tracking-Links und keine Einbettungen von Social-Media-Plattformen. Verlinkungen auf externe Seiten werden erst beim Klick aufgerufen.
 
 ### Persönliche Daten
 
-Die Sammlung und Speicherung persönlicher Daten ist soweit möglich eingeschränkt. Es gibt auf dieser Seite kein Kontaktformular und keine Registrierung. Schreibst du mir eine E-Mail, verwende ich deine Angaben ausschließlich zur Beantwortung deiner Nachricht.
+Die Sammlung und Speicherung persönlicher Daten ist soweit möglich eingeschränkt. Es gibt auf dieser Seite kein Kontaktformular und keine Registrierung. Schreibst du mir eine E-Mail, verwende ich deine Angaben ausschließlich zur Beantwortung deiner Nachricht (Art. 6 Abs. 1 lit. f DSGVO) und lösche sie, wenn die Unterhaltung erledigt ist. Die E-Mails liegen bei meinem Mailanbieter Apple (iCloud Mail).
+
+### Apps und Projekte
+
+Meine Apps und Spiele haben eigene Datenschutzerklärungen, die genau beschreiben, was dort verarbeitet wird: [KNX Monitor](https://knx-monitor.de/datenschutz/) und [Panzergefecht](https://panzergefecht.de/datenschutz/). Diese Erklärung hier gilt nur für www.regetskcob.de.
 
 ### Deine Rechte
 
 Dir stehen gegenüber dem Verantwortlichen die folgenden Rechte zu: Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen eine Verarbeitung auf Grundlage berechtigter Interessen (Art. 21). Wende dich dafür an die im Impressum genannte E-Mail-Adresse.
 
 Außerdem steht dir ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu. Zuständig ist in der Regel die Behörde deines Wohnsitzes oder die des Verantwortlichen, für Nordrhein-Westfalen die [Landesbeauftragte für Datenschutz und Informationsfreiheit NRW][3].
+
+Stand: 28. Oktober 2026
 
 ## Haftungsausschluss
 
