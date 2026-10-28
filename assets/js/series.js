@@ -3,7 +3,7 @@
 // promoted (large) tiles, one for every seven photos. Both are
 // progressive enhancements. Without JavaScript the tiles keep their data file
 // order and each one links straight to its large rendition or its page. The
-// lightbox they open is in lightbox.js.
+// lightbox they open comes from Horizont (horizont/lightbox.html).
 (() => {
   const grids = document.querySelectorAll(".series-grid");
   if (!grids.length) return;

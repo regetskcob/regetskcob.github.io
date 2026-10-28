@@ -48,7 +48,7 @@
     {{- /* A click opens it in the lightbox, on its own (each photo is its own
            group, titled like the block). */}}
     {{- $exif := partial "exif.html" $gimg }}
-    <figure class="gear-group-photo{{ if $portrait }} gear-group-photo-portrait{{ end }}"{{ with $.g.title }} data-lightbox-title="{{ . }}"{{ end }}>
+    <figure class="gear-group-photo{{ if $portrait }} gear-group-photo-portrait{{ end }}" data-lightbox-group{{ with $.g.title }} data-lightbox-title="{{ . }}"{{ end }}>
       <a href="{{ ($gimg.Fit "2000x2000 webp q85").RelPermalink }}" data-lightbox{{ with $exif }} data-exif="{{ jsonify . | string }}"{{ end }}>
       {{ partial "responsive-img.html" (dict
            "img" $gimg
