@@ -42,11 +42,10 @@ Live-Seite unsichtbar. Die Einzelheiten dazu stehen weiter unten unter „Inhalt
 
 ### Eingebundene Dritt-Dienste
 
-| Dienst | Zweck | Konfiguriert in |
-| --- | --- | --- |
-| [Umami](https://umami.is) via [hugomods/umami-analytics](https://github.com/hugomods/umami-analytics) v0.3.1 | Datenschutzfreundliche, cookielose Reichweitenmessung | `[params.umami]` in `hugo.toml` |
-
-Umami ist in der [Datenschutzerklärung](content/legal.md) benannt.
+Keine. Die Seite misst seit Oktober 2026 keine Reichweite mehr (vorher Umami)
+und lädt nichts von Dritten nach; nur das Hosting bei GitHub Pages steht in der
+[Datenschutzerklärung](content/legal.md). Wer einen Dienst einbaut, ergänzt sie
+im selben Commit.
 
 ## Projektstruktur
 
@@ -284,7 +283,7 @@ Eine neue Version von Horizont holt `hugo mod get github.com/regetskcob/horizont
 
 ## Lokale Entwicklung
 
-Voraussetzung ist Hugo **extended** sowie Go (für das Umami-Hugo-Modul).
+Voraussetzung ist Hugo **extended** sowie Go (für das Hugo-Modul Horizont).
 
 ```bash
 brew install hugo go
@@ -341,7 +340,7 @@ Das Skript baut in einen Nebenordner und tauscht ihn erst am Ende aus. Ein laufe
 
 `--environment development` ist wichtig: Ein normaler `hugo`-Aufruf baut als Produktion und bricht ohne
 `data/legal_private.yaml` mit einem Fehler ab (die Seiten entstehen trotzdem). Als Entwicklung zeigt das Impressum
-stattdessen den Hinweis auf die fehlende Datei, und Analytics bleibt aus.
+stattdessen den Hinweis auf die fehlende Datei.
 
 `hugo` meldet dabei den fehlenden Impressums-Eintrag (`data/legal_private.yaml`) als Fehler, die Seiten
 entstehen trotzdem. Nach jeder Änderung an Texten die ersten beiden Befehle wiederholen.
@@ -358,7 +357,7 @@ Ein Branch lässt sich unter https://www.regetskcob.de/preview/ testweise ausrol
 ohne die Live-Seite anzufassen. Das Repository
 [regetskcob/preview](https://github.com/regetskcob/preview) ist eine eigene
 Pages-Projektseite; sein Workflow baut einen Branch dieses Repositorys mit
-`--environment preview` (`config/preview/hugo.toml`: ohne Umami, `noindex`, ein
+`--environment preview` (`config/preview/hugo.toml`: `noindex`, ein
 Hinweis über dem Kopf, Links in Beiträgen zeigen in die Vorschau).
 
 ```bash

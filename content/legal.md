@@ -36,15 +36,9 @@ Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist die im Imp
 
 Diese Webseite ist eine statisch generierte Seite und wird über [GitHub Pages][1] gehostet, einen Dienst der GitHub Inc. Beim Aufruf der Seite werden durch den Hoster technisch notwendige Zugriffsdaten verarbeitet, darunter die IP-Adresse. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, mein berechtigtes Interesse am sicheren und störungsfreien Betrieb der Seite. Auf Umfang und Dauer dieser Speicherung habe ich keinen Einfluss; Einzelheiten stehen in den verlinkten Angaben von GitHub.
 
-### Reichweitenmessung
+### Keine Analyse, keine weiteren Dienste
 
-Zur Analyse der Nutzung setze ich [Umami Cloud][2] ein, einen Dienst der Umami Software, Inc. (USA). Beim Aufruf einer Seite lädt dein Browser dazu ein kleines Skript von cloud.umami.is und meldet den Seitenaufruf; dabei erhält Umami technisch bedingt deine IP-Adresse. Umami setzt keine Cookies, legt nichts auf deinem Gerät ab und speichert die IP-Adresse nicht, sondern nutzt sie nur kurz, um die ungefähre Herkunftsregion zu bestimmen. Gespeichert werden ausschließlich zusammengefasste Angaben wie aufgerufene Seite, verweisende Seite, ungefähre Region, Browser, Betriebssystem und Gerätetyp; einzelne Personen kann ich daraus nicht erkennen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, mein berechtigtes Interesse daran zu verstehen, welche Inhalte gelesen werden.
-
-Sendet dein Browser das Signal „Do Not Track“, wird nichts gezählt. Dabei können Daten in die USA übermittelt werden; Einzelheiten stehen in der [Datenschutzerklärung von Umami][2]. Du kannst der Messung jederzeit widersprechen (Art. 21 DSGVO), am einfachsten über „Do Not Track“ oder einen Inhaltsblocker.
-
-### Keine weiteren Dienste
-
-Über Hosting und Reichweitenmessung hinaus bindet diese Seite keine externen Dienste ein. Es gibt keine Kommentarfunktion, keine Werbung, keine Affiliate- oder Tracking-Links und keine Einbettungen von Social-Media-Plattformen. Verlinkungen auf externe Seiten werden erst beim Klick aufgerufen.
+Über das Hosting hinaus bindet diese Seite keine externen Dienste ein. Sie setzt keine Cookies, misst keine Reichweite und erstellt keine Nutzungsprofile. Es gibt keine Kommentarfunktion, keine Werbung, keine Affiliate- oder Tracking-Links und keine Einbettungen von Social-Media-Plattformen. Verlinkungen auf externe Seiten werden erst beim Klick aufgerufen.
 
 ### Persönliche Daten
 
@@ -85,5 +79,4 @@ Möchtest du ein Foto verwenden, schreib mir gerne an die im Impressum genannte 
 Die Nutzung der Inhalte dieser Seite für Text und Data Mining behalte ich mir nach § 44b Abs. 3 UrhG ausdrücklich vor. Das automatisierte Auslesen, um Inhalte auszuwerten oder damit KI-Modelle zu trainieren, ist ohne meine Zustimmung nicht gestattet. Der Vorbehalt ist zusätzlich maschinenlesbar hinterlegt, in der robots.txt und in den Metadaten jeder Seite.
 
 [1]:	https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection "GitHub Pages"
-[2]:	https://umami.is/privacy "Umami"
 [3]:	https://www.ldi.nrw.de "LDI NRW"

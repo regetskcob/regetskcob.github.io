@@ -38,8 +38,6 @@ series = 'series'
 verlag = 'verlag'
 
 [module]
-  [[module.imports]]
-    path = 'github.com/hugomods/umami-analytics'
   # Horizont, the design system of the blog and its projects
   # (github.com/regetskcob/horizont, documented at /horizont/): the tokens as
   # data, the symbol codepoints, the web layer's CSS, partials (marks, app
@@ -170,11 +168,6 @@ url = "https://www.linkedin.com/in/regetskcob/"
 disableLatLong = true
 disableDate = true
 includeFields = '^(Make|Model|LensModel|FNumber|FocalLength|FocalLengthIn35mmFormat|ExposureTime|ISO|ISOSpeedRatings|PhotographicSensitivity|ExposureCompensation|ExposureBiasValue)$'
-
-[params.umami]
-enable = true
-websiteId = "c06c7f84-1748-4134-a2ab-c3e5b7b0fe5d"
-jsLocation = "https://cloud.umami.is/script.js"
 
 [pagination]
 pagerSize = 1000
