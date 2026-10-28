@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      # Go is required: the site pulls hugomods/umami-analytics as a Hugo module.
+      # Go is required: the site pulls Horizont as a Hugo module.
       # Dart Sass is not, the project has no .scss. Node, preinstalled on the
       # runner, runs Pagefind for the search index.
       GO_VERSION: 1.25.3

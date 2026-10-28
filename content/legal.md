@@ -1,7 +1,7 @@
 ---
 title: Rechtliches
 date: 2020-04-05T16:31:43+0000
-lastmod: 2026-09-08T20:00:00+0000
+lastmod: 2026-10-28T12:00:00+0000
 description: Impressum und Datenschutzerklärung
 # Cover: a generated graphic (assets/covers/legal.jpg, source legal.svg) with the title on a bar.
 photo: "covers/legal.jpg"
@@ -22,7 +22,7 @@ Daniel Bocksteger
 {{< address >}}  
 Deutschland
 
-E-Mail: regetskcob@icloud.com
+E-Mail: [hi@regetskcob.de](mailto:hi@regetskcob.de)
 
 Verantwortlich für den Inhalt nach § 18 Abs. 2 Medienstaatsvertrag (MStV): Daniel Bocksteger, Anschrift wie oben.
 
@@ -36,23 +36,25 @@ Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist die im Imp
 
 Diese Webseite ist eine statisch generierte Seite und wird über [GitHub Pages][1] gehostet, einen Dienst der GitHub Inc. Beim Aufruf der Seite werden durch den Hoster technisch notwendige Zugriffsdaten verarbeitet, darunter die IP-Adresse. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, mein berechtigtes Interesse am sicheren und störungsfreien Betrieb der Seite. Auf Umfang und Dauer dieser Speicherung habe ich keinen Einfluss; Einzelheiten stehen in den verlinkten Angaben von GitHub.
 
-### Reichweitenmessung
+### Keine Analyse, keine weiteren Dienste
 
-Zur Analyse der Nutzung setze ich [Umami][2] ein. Umami arbeitet ohne Cookies und ohne Wiedererkennung einzelner Personen und erhebt ausschließlich aggregierte Daten wie aufgerufene Seiten, ungefähre Herkunftsregion und Gerätetyp. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, mein berechtigtes Interesse daran zu verstehen, welche Inhalte gelesen werden.
-
-### Keine weiteren Dienste
-
-Über die beiden genannten Punkte hinaus bindet diese Seite keine externen Dienste ein. Es gibt keine Kommentarfunktion, keine Werbung, keine Affiliate- oder Tracking-Links und keine Einbettungen von Social-Media-Plattformen. Verlinkungen auf externe Seiten werden erst beim Klick aufgerufen.
+Über das Hosting hinaus bindet diese Seite keine externen Dienste ein. Sie setzt keine Cookies, misst keine Reichweite und erstellt keine Nutzungsprofile. Es gibt keine Kommentarfunktion, keine Werbung, keine Affiliate- oder Tracking-Links und keine Einbettungen von Social-Media-Plattformen. Verlinkungen auf externe Seiten werden erst beim Klick aufgerufen.
 
 ### Persönliche Daten
 
-Die Sammlung und Speicherung persönlicher Daten ist soweit möglich eingeschränkt. Es gibt auf dieser Seite kein Kontaktformular und keine Registrierung. Schreibst du mir eine E-Mail, verwende ich deine Angaben ausschließlich zur Beantwortung deiner Nachricht.
+Die Sammlung und Speicherung persönlicher Daten ist soweit möglich eingeschränkt. Es gibt auf dieser Seite kein Kontaktformular und keine Registrierung. Schreibst du mir eine E-Mail, verwende ich deine Angaben ausschließlich zur Beantwortung deiner Nachricht (Art. 6 Abs. 1 lit. f DSGVO) und lösche sie, wenn die Unterhaltung erledigt ist. E-Mails an diese Adresse werden über do.de, einen Dienst der Greenmark IT GmbH, Leinstraße 3, 31061 Alfeld (Leine), Deutschland, empfangen und gespeichert.
+
+### Apps und Projekte
+
+Meine Apps und Spiele haben eigene Datenschutzerklärungen, die genau beschreiben, was dort verarbeitet wird: [KNX Monitor](https://knx-monitor.de/datenschutz/) und [Panzergefecht](https://panzergefecht.de/datenschutz/). Diese Erklärung hier gilt nur für www.regetskcob.de.
 
 ### Deine Rechte
 
 Dir stehen gegenüber dem Verantwortlichen die folgenden Rechte zu: Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen eine Verarbeitung auf Grundlage berechtigter Interessen (Art. 21). Wende dich dafür an die im Impressum genannte E-Mail-Adresse.
 
 Außerdem steht dir ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu. Zuständig ist in der Regel die Behörde deines Wohnsitzes oder die des Verantwortlichen, für Nordrhein-Westfalen die [Landesbeauftragte für Datenschutz und Informationsfreiheit NRW][3].
+
+Stand: 28. Oktober 2026
 
 ## Haftungsausschluss
 
@@ -77,5 +79,4 @@ Möchtest du ein Foto verwenden, schreib mir gerne an die im Impressum genannte 
 Die Nutzung der Inhalte dieser Seite für Text und Data Mining behalte ich mir nach § 44b Abs. 3 UrhG ausdrücklich vor. Das automatisierte Auslesen, um Inhalte auszuwerten oder damit KI-Modelle zu trainieren, ist ohne meine Zustimmung nicht gestattet. Der Vorbehalt ist zusätzlich maschinenlesbar hinterlegt, in der robots.txt und in den Metadaten jeder Seite.
 
 [1]:	https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection "GitHub Pages"
-[2]:	https://umami.is/privacy "Umami"
 [3]:	https://www.ldi.nrw.de "LDI NRW"

@@ -95,13 +95,7 @@
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
 
-{{ if hugo.IsProduction }}
-{{ template "_internal/google_analytics.html" . }}
-
-{{ if .Site.Params.umami.enable }}
-{{ partial "umami.html" . }}
-{{ end }}
-{{ end }}
+{{- /* No analytics: the site counts nothing (privacy notice on /legal/). */}}
 
 {{/* Head end hook */}}
 {{ partial "functions/get_hook.html" (dict "hook" "head_end" "context" .) }}
