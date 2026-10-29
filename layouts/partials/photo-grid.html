@@ -24,7 +24,7 @@
   page includes partials/photo-grid-script.html once, after its last grid.
 */}}
 <div class="series-gallery">
-  <div class="series-grid"{{ with .title }} data-lightbox-title="{{ . }}"{{ end }}{{ if .shuffle }} data-shuffle{{ end }}{{ if .uniform }} data-uniform{{ end }}>
+  <div class="series-grid" data-lightbox-group{{ with .title }} data-lightbox-title="{{ . }}"{{ end }}{{ if .shuffle }} data-shuffle{{ end }}{{ if .uniform }} data-uniform{{ end }}>
   {{- range $it := .items }}
     {{- $img := $it.img }}
     {{- $ratio := div (float $img.Width) $img.Height }}

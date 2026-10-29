@@ -1,53 +1,10 @@
 {{/*
-  The lightbox for photos: one dialog and its script (assets/js/lightbox.js),
-  included once per page that has photos to open. Links marked data-lightbox
-  open it; the photos of the same grid (partials/photo-grid.html) or the same
-  post can be paged through with the buttons, the arrow keys or a swipe.
-  The bar above the photo holds the count, the name of the album or post
-  ("data-lightbox-title" on the grid or the post text) and the close button;
-  the bar below holds the paging buttons with the alt text of the photo
-  between them. The EXIF button next to the count opens a bar on the left
-  with the shooting data of the photo (partials/exif.html); photos without
-  any have no button.
-  A click on the photo zooms to its full size (one image pixel per CSS pixel),
-  where it can be dragged or scrolled; a second click zooms out again. A click
-  beside the photo, the close button or Escape closes the view.
-  Without JavaScript the links simply open the large photo.
-  Include it once per page: the photo grid script brings it along
-  (partials/photo-grid-script.html), so does the page cover when it is the
-  only photo (partials/page-cover.html).
+  The lightbox for photos, from Horizont (horizont/lightbox.html, since 0.8.4
+  part of the design system; until 0.9.0 the blog had its own copy). Include
+  it once per page that has photos to open: the photo grid script brings it
+  along (partials/photo-grid-script.html), so does the page cover when it is
+  the only photo (partials/page-cover.html). The photos of one grid, post or
+  gear block page together: those containers carry data-lightbox-group, their
+  data-lightbox-title names them in the bar.
 */}}
-<dialog class="lightbox" aria-label="Bildansicht">
-  <div class="lightbox-bar lightbox-bar-top">
-    <div class="lightbox-start">
-      <p class="lightbox-count" aria-live="polite"></p>
-      <button type="button" class="lightbox-exif-toggle" aria-pressed="false" aria-controls="lightbox-exif">EXIF</button>
-    </div>
-    <p class="lightbox-title"></p>
-    <button type="button" class="lightbox-close" aria-label="Schließen">
-      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-        <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-      </svg>
-    </button>
-  </div>
-  <div class="lightbox-stage"><img alt=""></div>
-  <aside class="lightbox-exif" id="lightbox-exif" aria-label="Aufnahmedaten" hidden>
-    <dl></dl>
-  </aside>
-  <div class="lightbox-bar lightbox-bar-bottom">
-    <button type="button" class="lightbox-nav lightbox-prev" aria-label="Vorheriges Bild">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
-        <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </button>
-    <p class="lightbox-caption"></p>
-    <button type="button" class="lightbox-nav lightbox-next" aria-label="Nächstes Bild">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
-        <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </button>
-  </div>
-</dialog>
-{{- with resources.Get "js/lightbox.js" }}
-<script>{{ (. | minify).Content | safeJS }}</script>
-{{- end }}
+{{ partial "horizont/lightbox.html" (dict "lang" site.Language.Lang) }}
