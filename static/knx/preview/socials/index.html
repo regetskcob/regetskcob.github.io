@@ -40,6 +40,10 @@
   dl { margin: 16px 0 0; font-size: 14px; }
   dt { margin-top: 10px; font: 600 12px/1 "Monaspace Argon", ui-monospace, monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
   dd { margin: 4px 0 0; }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details > summary h2::after { content: " ▸"; color: var(--muted); }
+  details[open] > summary h2::after { content: " ▾"; }
   @media (max-width: 760px) { .post { grid-template-columns: minmax(0, 1fr); } .strip img, .single { width: 82%; } }
 </style>
 </head>
@@ -47,56 +51,9 @@
 <main>
   <span class="kennung">KNX Monitor · Vorschau, intern</span>
   <h1>Instagram-Beiträge</h1>
-  <p class="lead">Alle vorbereiteten Karussells, Bilder und Reels mit Caption, Alt-Text und erstem Kommentar. Karussells seitlich wischen, Reels laufen ohne Ton. Die angepinnten Kacheln (Hero, Aktor/Diagnose/Add-on) sind 3:4 wie das Profilraster und werden angepinnt: rechts zuerst, links zuletzt, dann stehen sie in der richtigen Reihenfolge oben.</p>
-  <nav><a href="#hero-1-rechts">Angepinnt</a><a href="#pin-1-rechts">Angepinnt 2</a><a href="#start-1-rechts">Start</a><a href="#karussell-diagnose">Karussells</a><a href="#bild-box">Bild</a><a href="#reel-live">Reels</a></nav>
-  <section><h2>Angepinnt: Hero der Startseite</h2>
-    <article class="post" id="hero-1-rechts">
-      <header><span class="kennung">Bild · hero-1-rechts</span><h3>Kachel 1 (rechts, zuerst anpinnen)</h3></header>
-      <img class="single" src="media/hero-1-rechts.webp" alt="Gezeichneter Kleinverteiler mit Spannungsversorgung, IP-Schnittstelle und drei Aktoren, das grüne Buskabel führt in eine waagrechte grüne Linie." loading="lazy" width="1080" height="1440">
-      <div class="caption">
-        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
-        <pre>Ein Kleinverteiler, ein Buskabel, und jedes Telegramm darauf im Blick.
-
-KNX Monitor ist Busmonitor und Diagnose für KNX: live, mit deinem ETS-Projekt, zu Hause und auf der Baustelle.
-
-👉 knx-monitor.de
-
-#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #schaltschrank #busmonitor</pre>
-        <dl><dt>Alt-Text</dt><dd>Gezeichneter Kleinverteiler mit Spannungsversorgung, IP-Schnittstelle und drei Aktoren, das grüne Buskabel führt in eine waagrechte grüne Linie.</dd><dt>Erster Kommentar</dt><dd>Wie sieht euer Schaltschrank aus, ordentlich oder historisch gewachsen?</dd></dl>
-      </div>
-    </article>
-    <article class="post" id="hero-2-mitte">
-      <header><span class="kennung">Bild · hero-2-mitte</span><h3>Kachel 2 (Mitte)</h3></header>
-      <img class="single" src="media/hero-2-mitte.webp" alt="Eine leuchtende Lampe „Licht Küche 1/1/3“, darunter eine Live-Liste von Telegrammen des Demo-Hauses mit Uhrzeit, Absender, Adresse, Name und Wert." loading="lazy" width="1080" height="1440">
-      <div class="caption">
-        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
-        <pre>Licht Küche an, und in der Liste steht es sofort: Absender, Gruppenadresse, Name, Wert.
-
-So sieht der Bus in KNX Monitor aus, eingeordnet mit deinem ETS-Projekt statt Hex-Kolonnen.
-
-👉 knx-monitor.de
-
-#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #ets6 #busmonitor</pre>
-        <dl><dt>Alt-Text</dt><dd>Eine leuchtende Lampe „Licht Küche 1/1/3“, darunter eine Live-Liste von Telegrammen des Demo-Hauses mit Uhrzeit, Absender, Adresse, Name und Wert.</dd><dt>Erster Kommentar</dt><dd>Welche Adresse schaut ihr euch auf dem Bus als Erstes an?</dd></dl>
-      </div>
-    </article>
-    <article class="post" id="hero-3-links">
-      <header><span class="kennung">Bild · hero-3-links</span><h3>Kachel 3 (links, zuletzt anpinnen)</h3></header>
-      <img class="single" src="media/hero-3-links.webp" alt="Das App-Symbol von KNX Monitor, darunter die Überschrift „Jedes Telegramm im Blick, zu Hause und auf der Baustelle.“ und ein kurzer Text zum ETS-Projekt und zur Prüfung der Anlage." loading="lazy" width="1080" height="1440">
-      <div class="caption">
-        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
-        <pre>Jedes Telegramm im Blick, zu Hause und auf der Baustelle.
-
-KNX Monitor ordnet deinen Bus mit deinem ETS-Projekt ein: Geräte, Räume und Werte statt Hex-Kolonnen. Dazu prüft es die Anlage auf stille Sensoren, falsche Datentypen und Busprobleme.
-
-Heute kostenlos als Home-Assistant-Add-on und für Linux. iPhone, iPad, Android, Mac und Windows folgen. Deine Anlagendaten bleiben in deinem Netz.
-
-👉 knx-monitor.de (Link in der Bio)
-
-#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #homeassistant #elektriker #busmonitor #ets6</pre>
-        <dl><dt>Alt-Text</dt><dd>Das App-Symbol von KNX Monitor, darunter die Überschrift „Jedes Telegramm im Blick, zu Hause und auf der Baustelle.“ und ein kurzer Text zum ETS-Projekt und zur Prüfung der Anlage.</dd><dt>Erster Kommentar</dt><dd>Was würdet ihr als Erstes auf eurem Bus nachsehen?</dd></dl>
-      </div>
-    </article></section><section><h2>Angepinnt: Aktor, Diagnose, Add-on</h2>
+  <p class="lead">Alle vorbereiteten Karussells, Bilder und Reels mit Caption, Alt-Text und erstem Kommentar. Karussells seitlich wischen, Reels laufen ohne Ton. Bereits veröffentlichte Beiträge stehen eingeklappt am Ende. Die angepinnten Kacheln (Hero, Aktor/Diagnose/Add-on) sind 3:4 wie das Profilraster und werden angepinnt: rechts zuerst, links zuletzt, dann stehen sie in der richtigen Reihenfolge oben.</p>
+  <nav><a href="#pin-1-rechts">Angepinnt 2</a><a href="#start-1-rechts">Start</a><a href="#karussell-diagnose">Karussells</a><a href="#bild-box">Bild</a><a href="#reel-inbetrieb">Reels</a><a href="#veroeffentlicht">Veröffentlicht</a></nav>
+  <section><h2>Angepinnt: Aktor, Diagnose, Add-on</h2>
     <article class="post" id="pin-1-rechts">
       <header><span class="kennung">Bild · pin-1-rechts</span><h3>Kachel 1 (rechts, zuerst anpinnen)</h3></header>
       <img class="single" src="media/pin-1-rechts.webp" alt="Gezeichneter Schaltaktor 8-fach mit acht Kanal-LEDs, links und rechts je vier Karten mit Raum, Zustand Ein oder Aus und Gruppenadresse 1/1/0 bis 1/1/7, dünne Linien führen von jeder Karte zu ihrer LED. Das grüne Buskabel läuft in eine waagrechte grüne Linie." loading="lazy" width="1080" height="1440">
@@ -322,36 +279,6 @@ Image und Anleitung gibt es kostenlos, noch als Vorschau. Rückmeldungen von ech
         <dl><dt>Alt-Text</dt><dd>Gezeichneter Raspberry Pi, sein grünes Kabel führt in die waagrechte grüne Linie.</dd><dt>Erster Kommentar</dt><dd>Wie sucht ihr heute nach Fehlern, die nur sporadisch auftreten?</dd></dl>
       </div>
     </article></section><section><h2>Reels</h2>
-    <article class="post" id="reel-live">
-      <header><span class="kennung">Reel · reel-live</span><h3>Live-Monitor</h3></header>
-      <video class="reel" src="media/reel-live.mp4" controls muted loop playsinline preload="metadata" aria-label="Animation: Ein gezeichneter Kleinverteiler, darüber erscheinen Telegramme mit Namen und Werten, danach der Live-Monitor auf einem Android-Handy."></video>
-      <div class="caption">
-        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
-        <pre>Was passiert gerade auf deinem Bus?
-
-KNX Monitor zeigt jedes Telegramm live, mit den Namen aus deinem ETS-Projekt. Kostenlos als Home-Assistant-Add-on und für Linux, die Apps folgen.
-
-👉 knx-monitor.de
-
-#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #elektroinstallation #schaltschrank #ets6 #homeassistant #homeautomation</pre>
-        <dl><dt>Alt-Text</dt><dd>Animation: Ein gezeichneter Kleinverteiler, darüber erscheinen Telegramme mit Namen und Werten, danach der Live-Monitor auf einem Android-Handy.</dd><dt>Erster Kommentar</dt><dd>Was schaut ihr euch auf dem Bus am liebsten an?</dd></dl>
-      </div>
-    </article>
-    <article class="post" id="reel-diagnose">
-      <header><span class="kennung">Reel · reel-diagnose</span><h3>Diagnose</h3></header>
-      <video class="reel" src="media/reel-diagnose.mp4" controls muted loop playsinline preload="metadata" aria-label="Animation: Fünf Befundkarten erscheinen nacheinander, danach die Gesundheitsprüfung auf dem iPhone."></video>
-      <div class="caption">
-        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
-        <pre>Dein Bus weiß, was kaputt ist.
-
-Verstummte Geräte, Wiederholungen, falsche Datentypen, Buslast und unbeantwortete Leseanfragen: Die Gesundheitsprüfung in KNX Monitor findet sie in einem Lauf.
-
-👉 knx-monitor.de
-
-#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #elektroinstallation #schaltschrank #ets6 #fehlersuche</pre>
-        <dl><dt>Alt-Text</dt><dd>Animation: Fünf Befundkarten erscheinen nacheinander, danach die Gesundheitsprüfung auf dem iPhone.</dd><dt>Erster Kommentar</dt><dd>Welchen Fehler hättet ihr gern früher gefunden?</dd></dl>
-      </div>
-    </article>
     <article class="post" id="reel-inbetrieb">
       <header><span class="kennung">Reel · reel-inbetrieb</span><h3>Inbetriebnahme</h3></header>
       <video class="reel" src="media/reel-inbetrieb.mp4" controls muted loop playsinline preload="metadata" aria-label="Animation: Sechs Status-Adressen werden nacheinander abgehakt, ein Balken füllt sich, danach die Inbetriebnahme auf dem iPhone."></video>
@@ -426,9 +353,86 @@ Gruppenadresse wählen, Wert setzen, schreiben. KNX Monitor nimmt den Datentyp a
 #knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #elektroinstallation #schaltschrank #ets6</pre>
         <dl><dt>Alt-Text</dt><dd>Animation: In ein Formular wird „1/1/3 Licht Küche“ getippt, der Wert Ein gewählt und Schreiben gedrückt, darunter erscheinen das gesendete Telegramm und die Rückmeldung.</dd><dt>Erster Kommentar</dt><dd>Womit testet ihr Aktoren bei der Inbetriebnahme?</dd></dl>
       </div>
+    </article></section><details id="veroeffentlicht"><summary><h2>Veröffentlicht · 6</h2></summary>
+    <article class="post" id="hero-1-rechts">
+      <header><span class="kennung">Bild · hero-1-rechts · veröffentlicht 2026-10-25</span><h3>Hero der Startseite: Kachel 1 (rechts, zuerst anpinnen)</h3></header>
+      <img class="single" src="media/hero-1-rechts.webp" alt="Gezeichneter Kleinverteiler mit Spannungsversorgung, IP-Schnittstelle und drei Aktoren, das grüne Buskabel führt in eine waagrechte grüne Linie." loading="lazy" width="1080" height="1440">
+      <div class="caption">
+        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
+        <pre>Ein Kleinverteiler, ein Buskabel, und jedes Telegramm darauf im Blick.
+
+KNX Monitor ist Busmonitor und Diagnose für KNX: live, mit deinem ETS-Projekt, zu Hause und auf der Baustelle.
+
+👉 knx-monitor.de
+
+#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #schaltschrank #busmonitor</pre>
+        <dl><dt>Alt-Text</dt><dd>Gezeichneter Kleinverteiler mit Spannungsversorgung, IP-Schnittstelle und drei Aktoren, das grüne Buskabel führt in eine waagrechte grüne Linie.</dd><dt>Erster Kommentar</dt><dd>Wie sieht euer Schaltschrank aus, ordentlich oder historisch gewachsen?</dd></dl>
+      </div>
+    </article>
+    <article class="post" id="hero-2-mitte">
+      <header><span class="kennung">Bild · hero-2-mitte · veröffentlicht 2026-10-25</span><h3>Hero der Startseite: Kachel 2 (Mitte)</h3></header>
+      <img class="single" src="media/hero-2-mitte.webp" alt="Eine leuchtende Lampe „Licht Küche 1/1/3“, darunter eine Live-Liste von Telegrammen des Demo-Hauses mit Uhrzeit, Absender, Adresse, Name und Wert." loading="lazy" width="1080" height="1440">
+      <div class="caption">
+        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
+        <pre>Licht Küche an, und in der Liste steht es sofort: Absender, Gruppenadresse, Name, Wert.
+
+So sieht der Bus in KNX Monitor aus, eingeordnet mit deinem ETS-Projekt statt Hex-Kolonnen.
+
+👉 knx-monitor.de
+
+#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #ets6 #busmonitor</pre>
+        <dl><dt>Alt-Text</dt><dd>Eine leuchtende Lampe „Licht Küche 1/1/3“, darunter eine Live-Liste von Telegrammen des Demo-Hauses mit Uhrzeit, Absender, Adresse, Name und Wert.</dd><dt>Erster Kommentar</dt><dd>Welche Adresse schaut ihr euch auf dem Bus als Erstes an?</dd></dl>
+      </div>
+    </article>
+    <article class="post" id="hero-3-links">
+      <header><span class="kennung">Bild · hero-3-links · veröffentlicht 2026-10-25</span><h3>Hero der Startseite: Kachel 3 (links, zuletzt anpinnen)</h3></header>
+      <img class="single" src="media/hero-3-links.webp" alt="Das App-Symbol von KNX Monitor, darunter die Überschrift „Jedes Telegramm im Blick, zu Hause und auf der Baustelle.“ und ein kurzer Text zum ETS-Projekt und zur Prüfung der Anlage." loading="lazy" width="1080" height="1440">
+      <div class="caption">
+        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
+        <pre>Jedes Telegramm im Blick, zu Hause und auf der Baustelle.
+
+KNX Monitor ordnet deinen Bus mit deinem ETS-Projekt ein: Geräte, Räume und Werte statt Hex-Kolonnen. Dazu prüft es die Anlage auf stille Sensoren, falsche Datentypen und Busprobleme.
+
+Heute kostenlos als Home-Assistant-Add-on und für Linux. iPhone, iPad, Android, Mac und Windows folgen. Deine Anlagendaten bleiben in deinem Netz.
+
+👉 knx-monitor.de (Link in der Bio)
+
+#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #homeassistant #elektriker #busmonitor #ets6</pre>
+        <dl><dt>Alt-Text</dt><dd>Das App-Symbol von KNX Monitor, darunter die Überschrift „Jedes Telegramm im Blick, zu Hause und auf der Baustelle.“ und ein kurzer Text zum ETS-Projekt und zur Prüfung der Anlage.</dd><dt>Erster Kommentar</dt><dd>Was würdet ihr als Erstes auf eurem Bus nachsehen?</dd></dl>
+      </div>
+    </article>
+    <article class="post" id="reel-diagnose">
+      <header><span class="kennung">Reel · reel-diagnose · veröffentlicht 2026-10-27</span><h3>Reels: Diagnose</h3></header>
+      <video class="reel" src="media/reel-diagnose.mp4" controls muted loop playsinline preload="metadata" aria-label="Animation: Fünf Befundkarten erscheinen nacheinander, danach die Gesundheitsprüfung auf dem iPhone."></video>
+      <div class="caption">
+        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
+        <pre>Dein Bus weiß, was kaputt ist.
+
+Verstummte Geräte, Wiederholungen, falsche Datentypen, Buslast und unbeantwortete Leseanfragen: Die Gesundheitsprüfung in KNX Monitor findet sie in einem Lauf.
+
+👉 knx-monitor.de
+
+#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #elektroinstallation #schaltschrank #ets6 #fehlersuche</pre>
+        <dl><dt>Alt-Text</dt><dd>Animation: Fünf Befundkarten erscheinen nacheinander, danach die Gesundheitsprüfung auf dem iPhone.</dd><dt>Erster Kommentar</dt><dd>Welchen Fehler hättet ihr gern früher gefunden?</dd></dl>
+      </div>
+    </article>
+    <article class="post" id="reel-live">
+      <header><span class="kennung">Reel · reel-live · veröffentlicht 2026-10-28</span><h3>Reels: Live-Monitor</h3></header>
+      <video class="reel" src="media/reel-live.mp4" controls muted loop playsinline preload="metadata" aria-label="Animation: Ein gezeichneter Kleinverteiler, darüber erscheinen Telegramme mit Namen und Werten, danach der Live-Monitor auf einem Android-Handy."></video>
+      <div class="caption">
+        <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
+        <pre>Was passiert gerade auf deinem Bus?
+
+KNX Monitor zeigt jedes Telegramm live, mit den Namen aus deinem ETS-Projekt. Kostenlos als Home-Assistant-Add-on und für Linux, die Apps folgen.
+
+👉 knx-monitor.de
+
+#knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #elektroinstallation #schaltschrank #ets6 #homeassistant #homeautomation</pre>
+        <dl><dt>Alt-Text</dt><dd>Animation: Ein gezeichneter Kleinverteiler, darüber erscheinen Telegramme mit Namen und Werten, danach der Live-Monitor auf einem Android-Handy.</dd><dt>Erster Kommentar</dt><dd>Was schaut ihr euch auf dem Bus am liebsten an?</dd></dl>
+      </div>
     </article>
     <article class="post" id="reel-topologie">
-      <header><span class="kennung">Reel · reel-topologie</span><h3>Topologie und Geräte</h3></header>
+      <header><span class="kennung">Reel · reel-topologie · veröffentlicht 2026-10-29</span><h3>Reels: Topologie und Geräte</h3></header>
       <video class="reel" src="media/reel-topologie.mp4" controls muted loop playsinline preload="metadata" aria-label="Animation: Eine Linie mit 22 Geräten baut sich auf, ein Schaltaktor wird angetippt, in seinem Gerätefenster gehen die Kanäle nacheinander an. Danach die Topologie auf dem iPhone."></video>
       <div class="caption">
         <div class="caption-head"><span class="kennung">Caption</span><button type="button" class="copy">Kopieren</button></div>
@@ -441,7 +445,7 @@ Die Topologie in KNX Monitor zeigt jede Linie mit ihren Geräten. Ein Tipp öffn
 #knx #knxsmarthome #smarthome #hausautomation #knxmonitor #elektriker #elektroinstallation #schaltschrank #ets6 #topologie</pre>
         <dl><dt>Alt-Text</dt><dd>Animation: Eine Linie mit 22 Geräten baut sich auf, ein Schaltaktor wird angetippt, in seinem Gerätefenster gehen die Kanäle nacheinander an. Danach die Topologie auf dem iPhone.</dd><dt>Erster Kommentar</dt><dd>Was wollt ihr in einem Gerätefenster unbedingt sehen?</dd></dl>
       </div>
-    </article></section>
+    </article></details>
 </main>
 <script>
   for (const b of document.querySelectorAll('.copy')) {
