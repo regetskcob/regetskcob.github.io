@@ -2,8 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.regetskcob.de/knx/preview/changelog/</loc>
+    <lastmod>2026-10-31T18:21:20+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.regetskcob.de/knx/preview/en/changelog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://www.regetskcob.de/knx/preview/changelog/"
+                />
+  </url><url>
+    <loc>https://www.regetskcob.de/knx/preview/bauherren/</loc>
+    <lastmod>2026-10-31T16:11:35+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.regetskcob.de/knx/preview/en/bauherren/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://www.regetskcob.de/knx/preview/bauherren/"
+                />
+  </url><url>
     <loc>https://www.regetskcob.de/knx/preview/datenschutz/</loc>
-    <lastmod>2026-10-22T13:35:55+02:00</lastmod>
+    <lastmod>2026-10-31T16:38:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -13,6 +39,45 @@
                 rel="alternate"
                 hreflang="de-DE"
                 href="https://www.regetskcob.de/knx/preview/datenschutz/"
+                />
+  </url><url>
+    <loc>https://www.regetskcob.de/knx/preview/feedback/</loc>
+    <lastmod>2026-10-31T11:03:25+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.regetskcob.de/knx/preview/en/feedback/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://www.regetskcob.de/knx/preview/feedback/"
+                />
+  </url><url>
+    <loc>https://www.regetskcob.de/knx/preview/karte/</loc>
+    <lastmod>2026-10-26T12:22:53+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.regetskcob.de/knx/preview/en/karte/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://www.regetskcob.de/knx/preview/karte/"
+                />
+  </url><url>
+    <loc>https://www.regetskcob.de/knx/preview/addon/</loc>
+    <lastmod>2026-10-25T07:27:40+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.regetskcob.de/knx/preview/en/addon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://www.regetskcob.de/knx/preview/addon/"
                 />
   </url><url>
     <loc>https://www.regetskcob.de/knx/preview/</loc>
@@ -42,7 +107,7 @@
                 />
   </url><url>
     <loc>https://www.regetskcob.de/knx/preview/konto-loeschen/</loc>
-    <lastmod>2026-10-21T08:40:40+02:00</lastmod>
+    <lastmod>2026-10-31T11:03:25+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
