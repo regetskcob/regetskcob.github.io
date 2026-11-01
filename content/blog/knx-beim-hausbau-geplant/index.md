@@ -89,4 +89,6 @@ Und trotz aller Planung fehlt hier und da tatsächlich ein Taster oder eine Stec
 
 Immer wieder so. 🙂
 
-## Fortsetzung folgt…
+Die Leitung, die heute noch ungenutzt in der Decke liegt, hat kaum etwas gekostet und hält mir alle Möglichkeiten offen. Auch der volle Verteiler war den Aufwand wert, weil eine Änderung dort nur noch ein Umklemmen ist. Und während Home Assistant in diesen Jahren vom Experiment zur Zentrale geworden ist, sind die Taster die erste Wahl geblieben und funktionieren weiterhin ohne jeden Server.
+
+Ganz ohne Lücken geht es trotzdem nicht, das zeigen die fehlenden Außensteckdosen. Wenn ihr selbst baut, legt lieber noch eine Leitung mehr, gerade nach draußen.
