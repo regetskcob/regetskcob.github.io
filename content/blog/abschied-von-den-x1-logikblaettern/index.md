@@ -2,10 +2,14 @@
 title: "⚡️ | Abschied von den Logikblättern im Gira X1"
 date: "2026-10-21T18:30:00+02:00"
 summary: "Neun Logikblätter liefen jahrelang auf unserem Gira X1. Beim Umzug nach Home Assistant habe ich sie Blatt für Blatt ausgelesen und dabei Fehler gefunden, die niemandem aufgefallen waren: ein Regenzähler ohne Ende, ein Schalter ohne Wirkung und eine Abfrage an eine Fritz!Box, die es nicht mehr gibt."
-# Entwurf: offen sind die markierten Stellen […]. Bilder: ein nachgezeichnetes
-# Logikblatt (SVG aus dem smart-home-Repo, docs/gira-x1/svg/) wäre ideal, vorher
-# auf Gruppenadressen prüfen, die nichts verraten sollen.
-draft: true
+# Entwurf: offen ist die markierte Stelle […]. Im Logikblatt stehen Gruppenadressen,
+# vor dem Veröffentlichen prüfen, ob sie so öffentlich sein dürfen.
+# Vorschau in der Blog-Liste, noch keine eigene Seite. Zum Veröffentlichen diesen
+# Block und den Namen unter "soon" in content/blog/_index.md entfernen.
+build:
+  render: never
+  list: never
+soon: Dezember
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Links ein Logikblatt mit grauen Bausteinen und Verbindungslinien, einer davon rostrot markiert, rechts eine schlanke Liste von Automationen, dazwischen ein gepunkteter Pfeil"
@@ -26,7 +30,7 @@ Home Assistant war bei uns lange nur ein Versuch nebenher. Inzwischen ist es die
 
 Eine GPA-Projektdatei ist im Kern ein ZIP-Archiv mit XML. Darin stehen alle Bausteine, Parameter, Verbindungen und Gruppenadressen. Zusammen mit Claude habe ich daraus jedes Blatt automatisch ausgelesen, als Diagramm im Stil der GPA nachgezeichnet und mit dem ETS-Export und der Home-Assistant-Konfiguration abgeglichen.
 
-[…Bild: ein nachgezeichnetes Logikblatt, z. B. Garage]
+![Nachgezeichnetes Logikblatt „Garage“ aus dem Gira X1: Torimpuls und Außenhelligkeit laufen über Filter, Vergleicher und Und-Gatter in ein Treppenhauslicht, das Garagenlicht und Außenleuchte an der Haustür schaltet](./logikblatt-garage.svg)
 
 Die neun Blätter:
 

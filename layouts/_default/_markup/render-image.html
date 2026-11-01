@@ -86,7 +86,7 @@
       {{- if $lightbox }}</a>{{ end -}}
       {{- partial "seo/add-image.html" (dict "page" $.Page "img" $fallback "alt" $.Text) -}}
     {{- else -}}
-      <div class="img-container"{{ with .Width }} style="--w: {{ . }}; --h: {{ $img.Height }};"{{ end }}>
+      <div class="img-container"{{ if ne .MediaType.SubType "svg" }}{{ with .Width }} style="--w: {{ . }}; --h: {{ $img.Height }};"{{ end }}{{ end }}>
         <img loading="lazy" decoding="async" alt="{{ $.Text }}" src="{{ .RelPermalink }}">
       </div>
     {{- end -}}
