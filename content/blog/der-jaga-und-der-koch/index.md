@@ -1,15 +1,7 @@
 ---
 title: "📚 | Der Jaga und der Koch"
-date: "2025-02-08T18:11:46+01:00"
+date: "2026-11-01T12:00:00+01:00"
 summary: "Spitzenkoch Rudi Obauer und Berufsjäger Christoph Burgstaller gehen gemeinsam auf die Pirsch und bringen das Wild danach auf den Teller: Wildkunde, Jagdreportagen, 64 Rezepte und Fotos, die sich echt anfühlen."
-# Vorschau in der Blog-Liste, noch keine eigene Seite: nicht
-# rendern, in keiner Liste führen. Zum Veröffentlichen diesen Block und den
-# Namen unter "soon" in content/blog/_index.md entfernen, "soon" hier auch.
-# Optional: soon: Oktober  ->  "demnächst · Oktober"
-build:
-  render: never
-  list: never
-soon: November
 cover: ./cover.jpg
 coverAlt: "Das Buch „Der Jaga und der Koch“ von Christoph Burgstaller und Rudi Obauer liegt auf einem Eichenholztisch, auf dem dunkelgrünen Cover ein Jäger in Lederhose mit Wanderstock und ein Koch in weißer Jacke vor einer hellen Berglandschaft"
 tags: ["Bücher", "Jagd", "Kochen"]
@@ -34,7 +26,7 @@ Das Buch läuft von vorn nach hinten durch und teilt sich in zwei Hälften: Gut 
 {{< nachtrag label="Limitierte Sonderausgabe" image="sonderausgabe.jpg" alt="Die limitierte Sonderausgabe von „Der Jaga und der Koch“: ein rosafarbenes Buch mit dem Titel und einem Foto eines gebundenen Bratens, dahinter ein grünes Buch, beide zu einem Band verbunden, auf einem rosa Samtwürfel vor einem dunkelgrünen Vorhang" credit="Bild: Verlag" >}}
 Neben der normalen Ausgabe gibt es seit Oktober 2019 eine limitierte Sonderausgabe, die nur in 500 Exemplaren erschien. Jedes Exemplar ist nummeriert und von den Autoren signiert. Der Verlag beschreibt sie als hochwertige Buchbinderarbeit, die zwei Bücher zu einem großen Band verbindet, auf dem Foto sieht man einen rosafarbenen und einen grünen Buchblock. Auch der Preis liegt höher, er beträgt 149 € statt 48 €.
 
-Beim Inhalt unterscheiden sich beide Ausgaben nach den Angaben des Verlags nicht: Beide haben 384 Seiten im selben Format, dazu die Jagdgeschichten und die Landschaftsfotografie. Der Verlag nennt 44 Wildrezepte, in den Rezeptlisten meiner normalen Ausgabe stehen 64 Einträge. Meine Rezension beschreibt die normale Ausgabe. Zum Zeitpunkt dieser Rezension ist die Sonderausgabe bei Thalia noch erhältlich.
+Beim Inhalt unterscheiden sich beide Ausgaben nach den Angaben des Verlags nicht: Beide haben 384 Seiten im selben Format, dazu die Jagdgeschichten und die Landschaftsfotografie. Der Verlag nennt 44 Wildrezepte, in den Rezeptlisten meiner normalen Ausgabe stehen 64 Einträge. Meine Rezension beschreibt die normale Ausgabe.
 {{< /nachtrag >}}
 
 ## Der Jaga
@@ -72,7 +64,3 @@ Wer nur etwas über die Jagd oder die Natur erfahren möchte, dem werden die Int
 Zu [Unser Wild](/blog/unser-wild/) ist es die perfekte Fortsetzung: Mit den Jagdformen, den Rezepten und den Interview-Auszügen erweitert es das Buch um den Blick über den Tellerrand 🙂. Mit [Wild, Wald, Genuss](/blog/wild-wald-genuss-vom-kochen-und-jagen/) lässt es sich dagegen kaum vergleichen, das ist ein anderes Level von Buch.
 
 Die 48 € sind es absolut wert, ich hätte auch 65 € bezahlt wie für den Bildband „Waidwerk“.
-
-<!-- Zu prüfen vor dem Veröffentlichen: Ist die Sonderausgabe bei Thalia dann noch erhältlich (Satz im Hinweiskasten), und stimmt die Bildquelle "Bild: Verlag"? -->
-
-<!-- Das Datum im Kopf (2025-02-08) auf den Veröffentlichungstag setzen. -->
