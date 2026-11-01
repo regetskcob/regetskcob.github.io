@@ -29,7 +29,8 @@ Der wichtigste Grundsatz war, KNX-Leitung an jede Stelle zu legen, an der sie ir
 - Jeder Raum hat mindestens eine KNX-Leitung für den Taster.
 - Zwei Räume haben bewusst keinen Taster: Im Gäste-WC und im Technikraum schaltet ein Bewegungsmelder in der abgehängten Decke das Licht, die Temperatur messen dort Zigbee-Sensoren.
 
-![Aus einer Einbaudose in der Decke hängt eine rote und eine schwarze Ader mit grüner Klemme für einen Rauchmelder](./rauchmelder-leitung.jpg "Die Leitung für die Rauchmelder: Über diese Klemme hängt je Geschoss jeder Gira-Melder daran, ein KNX-Modul meldet den Alarm weiter.")
+![Aus einer Einbaudose in der Decke hängt eine rote und eine schwarze Ader mit grüner Klemme für einen Rauchmelder](./rauchmelder-leitung.jpg "Die Leitung für die Rauchmelder: Über diese Klemme hängt je Geschoss jeder Gira-Melder daran,  
+ein KNX-Modul meldet den Alarm weiter.")
 
 ## Sternförmig verdrahtet
 
