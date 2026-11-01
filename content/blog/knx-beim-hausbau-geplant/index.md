@@ -4,7 +4,12 @@ date: "2026-10-21T18:00:00+02:00"
 summary: "Unser Haus habe ich elektrisch selbst geplant und zum größten Teil selbst verdrahtet. Fünf Jahre später: welche Entscheidungen bei der KNX-Planung sich bewährt haben, wie der Verteiler aussieht und welche Fehler erst beim Abgleich mit der ETS aufgefallen sind."
 # Entwurf: offen sind die markierten Stellen […]. Prüfen, ob die Planungsentscheidungen
 # so stimmen und ob noch Fotos aus der Bauphase (Leerrohre, Leitungen) vorhanden sind.
-draft: true
+# Vorschau in der Blog-Liste, noch keine eigene Seite. Zum Veröffentlichen diesen
+# Block und den Namen unter "soon" in content/blog/_index.md entfernen.
+build:
+  render: never
+  list: never
+soon: November
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Grundriss eines Hauses in feinen Linien, von einem Verteiler links unten laufen grüne Busleitungen in die Räume, an ihren Enden kleine Taster und rostrote Punkte als Reserve"
