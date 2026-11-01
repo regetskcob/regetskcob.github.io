@@ -43,7 +43,7 @@ Jeder Raum ist sternförmig angefahren, mit eigenen Zuleitungen für Licht, Roll
 
 ![Blick in den Verteiler: zwei Reihen MDT-Aktoren mit blauen Tasten und gelben Status-LEDs, darunter beschriftete Leitungsschutzschalter für die Beleuchtung im Erdgeschoss und Obergeschoss](./verteiler-aktoren.jpg)
 
-![Der fertig verdrahtete Verteiler: oben Reihenklemmen, darunter mehrere Reihen KNX-Aktoren, unten rechts Gira S1 und X1](./verteiler-verdrahtet.jpg "Fertig verdrahtet, oben die Klemmen, darunter die Aktoren.")
+![Der Verteiler im Aufbau: oben Reihenklemmen, darunter mehrere Reihen KNX-Aktoren, unten rechts Gira S1 und X1](./verteiler-im-aufbau.jpg "Mitten im Aufbau: oben die Klemmen, darunter die Aktoren. Angeschlossen sind hier erst die Rollläden.")
 
 Im Verteiler stecken heute:
 
