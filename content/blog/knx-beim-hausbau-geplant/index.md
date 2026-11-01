@@ -2,8 +2,8 @@
 title: "⚡️ | KNX beim Hausbau: Was ich vorab verlegt habe"
 date: "2026-10-21T18:00:00+02:00"
 summary: "Unser Haus habe ich elektrisch selbst geplant und zum größten Teil selbst verdrahtet. Fünf Jahre später: welche Entscheidungen bei der KNX-Planung sich bewährt haben, wie der Verteiler aussieht und welche Fehler erst beim Abgleich mit der ETS aufgefallen sind."
-# Entwurf: offen sind die markierten Stellen […]. Prüfen, ob die Planungsentscheidungen
-# so stimmen und ob noch Fotos aus der Bauphase (Leerrohre, Leitungen) vorhanden sind.
+# Angekündigt für November. Offen: Planungsentscheidungen gegenlesen, Fotos aus der
+# Bauphase (Leerrohre, Leitungen) einbauen, falls vorhanden.
 # Vorschau in der Blog-Liste, noch keine eigene Seite. Zum Veröffentlichen diesen
 # Block und den Namen unter "soon" in content/blog/_index.md entfernen.
 build:
@@ -71,10 +71,10 @@ Beim Abgleich der ETS mit Home Assistant im Oktober kamen ein paar Dinge zutage,
 - **Gleich benannte Adressen:** Zwei Gruppenadressen trugen denselben Namen, die Visualisierung schaltete die eine, Home Assistant die andere.
 - **Falsch beschriftete Kanäle:** Der Messkanal „Dunstabzug“ hat in Wahrheit den Trockner gemessen.
 
-[…weitere Erfahrungen aus der Bauphase: Was würdest du heute anders machen?]
+Und trotz aller Planung fehlt hier und da tatsächlich ein Taster oder eine Steckdose. Vor allem die Außensteckdosen direkt an der Hausfassade sind irgendwann im Stress untergegangen.
 
 ## Fazit
 
-[…eigenes Fazit]
+Immer wieder so. 🙂
 
 ## Fortsetzung folgt…
