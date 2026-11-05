@@ -1,14 +1,7 @@
 ---
 title: "⚡️ | KNX beim Hausbau: Was ich vorab verlegt habe"
-date: "2026-10-21T18:00:00+02:00"
+date: "2026-11-05T09:00:00+01:00"
 summary: "Unser Haus habe ich elektrisch selbst geplant und zum größten Teil selbst verdrahtet. Fünf Jahre später: welche Entscheidungen bei der KNX-Planung sich bewährt haben, wie der Verteiler aussieht und welche Fehler erst beim Abgleich mit der ETS aufgefallen sind."
-# Angekündigt für November. Offen: Planungsentscheidungen gegenlesen.
-# Vorschau in der Blog-Liste, noch keine eigene Seite. Zum Veröffentlichen diesen
-# Block und den Namen unter "soon" in content/blog/_index.md entfernen.
-build:
-  render: never
-  list: never
-soon: November
 cover: ./cover.jpg
 coverAI: true
 coverAlt: "KI-generierte Grafik: Grundriss eines Hauses in feinen Linien, von einem Verteiler links unten laufen grüne Busleitungen in die Räume, an ihren Enden kleine Taster und rostrote Punkte als Reserve"
