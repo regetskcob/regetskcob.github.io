@@ -6,6 +6,14 @@
     partials/seo/description.html, instead of "Recent content in Home on …".
   - Feed readers get the full title including the emoji category, like
     the list on the site itself.
+  - Each item carries the full post (content:encoded), so a reader can show
+    it without fetching the page. Links and images are made absolute, since
+    readers resolve relative URLs inconsistently; srcset and sizes are
+    dropped, the src already is the largest rendition.
+  - Tags become <category>, the author is dc:creator, and the post's cover
+    (the Open Graph crop, a JPEG) is media:content, for the list thumbnail;
+    posts without an image of their own get none.
+  - A channel image: the app icon of regetskcob.
 */ -}}
 {{- $pages := slice }}
 {{- if .IsHome }}
@@ -20,14 +28,26 @@
   {{- $pages = $pages | first $limit }}
 {{- end }}
 {{- $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
+{{- $base := strings.TrimSuffix "/" site.BaseURL }}
+{{- /* The site-wide Open Graph image is no thumbnail of a post: skipped. */}}
+{{- $fallbackImage := "" }}
+{{- with site.Params.ogImage | default "images/og-image.jpg" | resources.Get }}
+  {{- $fallbackImage = (.Fill "1200x630 jpg q75 smart").Permalink }}
+{{- end }}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>{{ $title }}</title>
     <link>{{ .Permalink }}</link>
     <description>{{ partial "seo/description.html" . }}</description>
     <generator>Hugo</generator>
     <language>{{ site.Language.LanguageCode }}</language>
+    <copyright>© {{ site.Params.authorName }}</copyright>
+    <image>
+      <url>{{ "android-chrome-192x192.png" | absURL }}</url>
+      <title>{{ $title }}</title>
+      <link>{{ .Permalink }}</link>
+    </image>
     {{- with $pages }}
     <lastBuildDate>{{ (index .ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
     {{- end }}
@@ -35,12 +55,21 @@
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end }}
     {{- range $pages }}
+    {{- $html := .Content | replaceRE `\s(srcset|sizes)="[^"]*"` "" | replaceRE `\s(src|href)="/([^/"])` (printf ` $1="%s/$2` $base) }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      <guid>{{ .Permalink }}</guid>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
+      <dc:creator>{{ site.Params.authorName }}</dc:creator>
+      {{- range .Params.tags }}
+      <category>{{ . }}</category>
+      {{- end }}
       <description>{{ partial "seo/description.html" . | transform.XMLEscape | safeHTML }}</description>
+      <content:encoded>{{ printf "<![CDATA[%s]]>" (replace $html "]]>" "]]]]><![CDATA[>") | safeHTML }}</content:encoded>
+      {{- with partial "head/og-image.html" . }}{{ if ne . $fallbackImage }}
+      <media:content url="{{ . }}" medium="image" type="image/jpeg" />
+      {{- end }}{{ end }}
     </item>
     {{- end }}
   </channel>
