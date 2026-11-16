@@ -1746,6 +1746,14 @@ figure a[data-lightbox] {
    the land below the line, in the sunken tone. On a phone only the first
    two shapes stand (far ones are drawn first); more would crowd the line. */
 .site-land { width: 100%; margin-top: var(--s-48); overflow: hidden; }
+/* Horizont draws near shapes in --line and far ones in --sunken. Those are
+   tones for hairlines and wells, too faint for a picture (in the dark scheme
+   --sunken is even darker than the page). Here both are mixed from the
+   strong line tone into the page, so the shapes read in light and dark. */
+.site-land {
+  --line: color-mix(in srgb, var(--line-strong) 62%, var(--bg));
+  --sunken: color-mix(in srgb, var(--line-strong) 40%, var(--bg));
+}
 .site-land .hz-landschaft svg { display: block; }
 .site-foot { border-top: 0; box-shadow: 0 0 0 100vmax var(--sunken); clip-path: inset(0 -100vmax); background: var(--sunken); }
 @media (max-width: 640px) {
