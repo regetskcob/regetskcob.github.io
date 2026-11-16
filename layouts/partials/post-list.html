@@ -3,15 +3,17 @@
   heading for every year of publication and the pager below. The year
   headings are the anchors of the horizon line (partials/horizon.html). Each page opens
   with the year of its first post, so a page never starts without one.
+  The posts of a year stand as cards in a grid (partials/post-card.html):
+  one column on a phone, two from 640px, three from 1100px, so the list
+  fills the frame instead of leaving its right half empty.
   Called with the paginator: {{ partial "post-list.html" $paginator }}
 */ -}}
-{{- $year := "" }}
-{{- range .Pages }}
-  {{- $y := .Date.Format "2006" }}
-  {{- if ne $y $year }}
-  <h2 class="year-heading" id="jahr-{{ $y }}">{{ $y }}</h2>
-  {{- $year = $y }}
+{{- range $i, $g := .Pages.GroupByDate "2006" }}
+  <h2 class="year-heading" id="jahr-{{ $g.Key }}">{{ $g.Key }}</h2>
+  <div class="post-grid">
+  {{- range $g.Pages }}
+    {{ partial "post-card.html" . }}
   {{- end }}
-  {{ partial "post-entry.html" . }}
+  </div>
 {{- end }}
 {{ partial "pagination-controls.html" . }}

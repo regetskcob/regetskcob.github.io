@@ -1,0 +1,39 @@
+{{/*
+  One post as a card in the blog grid (partials/post-list.html: the blog and
+  the tag pages): the cover in 2:1 on top, then the title, topic and reading
+  time, the series and update labels and the summary. The home page keeps
+  the plain rows of partials/post-entry.html.
+  Every post names its cover in front matter ("cover"); a post without one,
+  or with a cover the image pipeline cannot cut (svg, gif), gets a calm
+  field in the sunken tone instead, so the cards keep one height per row.
+  The picture repeats the title link, so it is hidden from screen readers
+  and skipped by the keyboard (partials/list-thumb.html does the same).
+*/}}
+{{- $img := "" -}}
+{{- with .Params.cover -}}
+  {{- with $.Resources.Get (strings.TrimPrefix "./" .) -}}
+    {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}{{ $img = . }}{{- end -}}
+  {{- end -}}
+{{- end -}}
+<article class="post-card">
+  <a class="card-cover" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+    {{- with $img }}
+    {{- $s := .Fill "400x200 webp q75 Center" }}
+    {{- $m := .Fill "640x320 webp q75 Center" }}
+    {{- $l := .Fill "960x480 webp q75 Center" }}
+    <img src="{{ $m.RelPermalink }}" srcset="{{ $s.RelPermalink }} 400w, {{ $m.RelPermalink }} 640w, {{ $l.RelPermalink }} 960w"
+         sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" width="640" height="320"
+         loading="lazy" decoding="async" alt="">
+    {{- end }}
+  </a>
+  <h3 class="line-title"><a href="{{ .RelPermalink }}">{{ partial "clean-title.html" . }}</a></h3>
+  <p class="line-meta">
+    {{- with .Params.tags }}{{ $t := index . 0 }}{{ with site.GetPage (printf "/tags/%s" (urlize $t)) }}{{ .Title }}{{ else }}{{ $t }}{{ end }} · {{ end -}}
+    {{ .ReadingTime }} Min.
+  </p>
+  {{- $labels := print (partial "series-label.html" .) (partial "updated-label.html" .) | strings.TrimSpace }}
+  {{- with $labels }}<div class="card-labels">{{ . | safeHTML }}</div>{{ end }}
+  {{- if .Site.Params.listSummaries }}
+  <p class="line-summary">{{ .Summary | plainify | htmlUnescape }}</p>
+  {{- end }}
+</article>
