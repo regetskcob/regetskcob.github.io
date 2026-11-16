@@ -1761,3 +1761,44 @@ figure a[data-lightbox] {
 @media (max-width: 640px) {
   .site-land svg svg:nth-of-type(n+3) { display: none; }
 }
+
+/* --- Blog grid (partials/post-card.html) -----------------------------------
+   The blog and the tag pages show their posts as cards with the cover on
+   top: one column on a phone, two from 640px, three from 1100px. No frame
+   or shadow around a card; the cover carries it, the text stands below. */
+.post-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s-32) var(--s-24);
+  margin: var(--s-16) 0 var(--s-48);
+}
+@media (min-width: 640px) { .post-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .post-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.post-card { display: flex; flex-direction: column; min-width: 0; }
+.post-card > * { max-width: none; }
+.card-cover {
+  display: block;
+  aspect-ratio: 2 / 1;
+  margin-bottom: var(--s-12);
+  border-radius: var(--r-6);
+  overflow: hidden;
+  background: var(--sunken);
+  outline: var(--line-hairline) solid var(--line);
+  outline-offset: calc(-1 * var(--line-hairline));
+}
+.card-cover img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.post-card:hover .card-cover img { transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) { .post-card:hover .card-cover img { transform: none; } }
+.post-card .line-title { margin: 0; font: 600 1.125rem/1.35 var(--font-sans); }
+.post-card .line-meta { margin: var(--s-4) 0 0; font: 400 0.875rem/1.5 var(--font-sans); color: var(--text-muted); }
+.post-card .card-labels { display: flex; flex-wrap: wrap; gap: var(--s-8); margin-top: var(--s-8); }
+.post-card .card-labels > * { margin: 0; }
+.post-card .line-summary {
+  margin: var(--s-8) 0 0;
+  font: 400 0.9375rem/1.55 var(--font-sans);
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
