@@ -14,19 +14,19 @@
   </header>
 
   <section class="kapitel" id="serie">
-    {{ partial "horizont/kennung.html" (dict "text" (printf "01 — %s" (index $chapters 0).label) "tag" "p") }}
+    {{ partial "horizont/kennung.html" (dict "text" (index $chapters 0).label "tag" "p") }}
     <div>{{ partial "series-teaser.html" . }}</div>
   </section>
 
   <section class="kapitel" id="galerien">
-    {{ partial "horizont/kennung.html" (dict "text" (printf "02 — %s" (index $chapters 1).label) "tag" "p") }}
+    {{ partial "horizont/kennung.html" (dict "text" (index $chapters 1).label "tag" "p") }}
     <div>{{ partial "gallery-cards.html" . }}</div>
   </section>
 
   {{- range $i, $c := slice (dict "id" "ausruestung" "page" "/ausruestung") (dict "id" "rezepte" "page" "/rezepte") }}
   {{- with site.GetPage $c.page }}
   <section class="kapitel" id="{{ $c.id }}">
-    {{ partial "horizont/kennung.html" (dict "text" (printf "%02d — %s" (add $i 3) .Title) "tag" "p") }}
+    {{ partial "horizont/kennung.html" (dict "text" .Title "tag" "p") }}
     <div class="kapitel-seite">
       {{- with resources.Get .Params.photo }}
       <a class="kapitel-bild" href="{{ (site.GetPage $c.page).RelPermalink }}" tabindex="-1" aria-hidden="true">

@@ -1,0 +1,8 @@
+{{- /*
+  A post's title without the emoji and bar in front of it ("📚 | 50 Arten,
+  Nein zu sagen" becomes "50 Arten, Nein zu sagen"). The front matter keeps
+  the prefix; since the redesign of 16.11.2026 no page shows it: the topic
+  stands in words under the title in lists. Same rule as seo/title.html.
+  Called with the page; returns a string.
+*/ -}}
+{{- return replaceRE `^[^\p{L}\p{N}|„"(]*\|\s*` "" .Title -}}

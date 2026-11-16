@@ -1708,3 +1708,46 @@ figure a[data-lightbox] {
   .kapitel { grid-template-columns: minmax(0, 1fr); gap: var(--s-12); padding: var(--s-32) 0; }
   .kapitel-seite { grid-template-columns: minmax(0, 1fr); gap: var(--s-16); }
 }
+
+/* --- Redesign 16.11.2026 ---------------------------------------------------
+   Minimal and on the land: lists without pictures in front of the titles,
+   a page that uses the width it gets (more beside the posts from 1200px, a
+   wider frame from 1440px), and every page ending on a strip of land with
+   Horizont's silhouettes (partials/landscape.html). */
+
+/* Wider screens get a wider frame; the reading measure (--column) stays. */
+@media (min-width: 1440px) { :root { --page: 1200px; } }
+@media (min-width: 1800px) { :root { --page: 1360px; } }
+
+/* Post lines: the title, under it topic and reading time. */
+.post-line { display: block; padding: var(--s-16) 0; margin: 0; border-bottom: var(--line-hairline) solid var(--line); }
+.post-line .line-title { margin: 0; font: 600 1.1875rem/1.35 var(--font-sans); }
+.post-line .line-meta { margin: var(--s-4) 0 0; font: 400 0.875rem/1.5 var(--font-sans); color: var(--text-muted); }
+.post-line .series-label, .post-line .updated-label { margin-top: var(--s-8); }
+@media (max-width: 480px) {
+  .post-line .line-title { font-size: 1.0625rem; }
+}
+
+/* Home: the newest posts, topics and series beside them where there is room. */
+.home-neu { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-48); padding: var(--s-32) 0 var(--s-48); border-top: var(--line-hairline) solid var(--line); }
+.home-heading-small { margin: 0 0 var(--s-8); font: 600 0.8125rem/1.6 var(--font-sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.home-more { margin: var(--s-16) 0 0; font: 600 0.9375rem var(--font-sans); }
+.home-more a::after { content: " →"; }
+.home-neben { display: none; }
+.home-themen { list-style: none; margin: 0 0 var(--s-32); padding: 0; }
+.home-themen li { display: flex; justify-content: space-between; gap: var(--s-16); padding: var(--s-8) 0; border-bottom: var(--line-hairline) solid var(--line); font: 400 0.9375rem/1.5 var(--font-sans); }
+.home-themen span { color: var(--text-faint); }
+@media (min-width: 1200px) {
+  .home-neu { grid-template-columns: minmax(0, 1fr) 280px; gap: var(--s-64); }
+  .home-neben { display: block; }
+}
+
+/* The strip of land above the footer, across the full width; the footer is
+   the land below the line, in the sunken tone. On a phone only the first
+   two shapes stand (far ones are drawn first); more would crowd the line. */
+.site-land { width: 100%; margin-top: var(--s-48); overflow: hidden; }
+.site-land .hz-landschaft svg { display: block; }
+.site-foot { border-top: 0; box-shadow: 0 0 0 100vmax var(--sunken); clip-path: inset(0 -100vmax); background: var(--sunken); }
+@media (max-width: 640px) {
+  .site-land svg svg:nth-of-type(n+3) { display: none; }
+}

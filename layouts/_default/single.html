@@ -108,7 +108,7 @@
           {{- with partial "updated-label.html" . | strings.TrimSpace | safeHTML }}{{ . }}{{ end }}
         </div>
         {{- end }}
-        <h1 class="single-title{{ if .Params.hideTitle }} visually-hidden{{ end }}">{{ .Title }}</h1>
+        <h1 class="single-title{{ if .Params.hideTitle }} visually-hidden{{ end }}">{{ partial "clean-title.html" . }}</h1>
         {{- with .Param "summary" }}
         <p class="single-summary" data-pagefind-meta="summary">{{ . | markdownify }}</p>
         {{- end }}
