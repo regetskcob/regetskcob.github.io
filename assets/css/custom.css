@@ -1752,7 +1752,9 @@ figure a[data-lightbox] {
    strong line tone into the page, so the shapes read in light and dark. */
 .site-land {
   --line: color-mix(in srgb, var(--line-strong) 62%, var(--bg));
-  --sunken: color-mix(in srgb, var(--line-strong) 40%, var(--bg));
+  /* Far shapes stay close to the sky: faint by day, a little lighter than
+     the night so they still read. */
+  --sunken: light-dark(color-mix(in srgb, var(--line-strong) 20%, var(--bg)), color-mix(in srgb, var(--line-strong) 38%, var(--bg)));
 }
 .site-land .hz-landschaft svg { display: block; }
 .site-foot { border-top: 0; box-shadow: 0 0 0 100vmax var(--sunken); clip-path: inset(0 -100vmax); background: var(--sunken); }
