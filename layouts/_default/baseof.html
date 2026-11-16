@@ -4,7 +4,8 @@
   the body carries the Horizont base (class hz), header, main and footer sit
   in one frame (assets/css/blog/base.css). The navigation is Horizont's
   horizon line (partials/horizon.html), straight in the body so it can stay
-  on screen; its script comes last. The theme still supplies
+  on screen; its script comes last. Above the footer the page ends on a
+  strip of land (partials/landscape.html). The theme still supplies
   a few partials (svg icons, hooks, math), not its look.
 */}}
 <!DOCTYPE html>
@@ -20,6 +21,7 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "functions/get_hook.html" (dict "hook" "body_end" "context" .) }}
+  {{ partial "landscape.html" . }}
   <footer class="site-foot">
     {{ partial "footer.html" . }}
   </footer>

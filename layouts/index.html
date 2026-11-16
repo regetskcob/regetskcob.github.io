@@ -1,6 +1,8 @@
 {{/*
   The landing page in front of the blog: who writes here, in a few honest
-  sentences, one photo from the series, and the turnoffs ("Abzweige"):
+  sentences, one photo from the series, the newest posts (with topics and
+  series beside them where the screen is wide enough, see "Home" in
+  custom.css), and the turnoffs ("Abzweige"):
   the blog and the photography as two tiles, then the running projects
   on a field path, Horizont first; the apps that are not out yet carry
   the badge "Vorschau" ("status" in Horizont's tokens/flur.yaml). Nothing else;
@@ -37,6 +39,34 @@
   </figure>
   {{- end }}
   {{- end }}
+</section>
+
+{{- /* The newest posts. From 1200px a column beside them names the topics and
+       the running series; below that it is not shown, the blog has both. */}}
+<section class="home-neu" aria-labelledby="neu">
+  <div class="home-neu-liste">
+    <h2 id="neu" class="home-heading-small">Neu im Blog</h2>
+    {{- range first 6 $posts.ByDate.Reverse }}
+    {{ partial "post-entry.html" . }}
+    {{- end }}
+    <p class="home-more"><a href="{{ "blog/" | relURL }}">Alle {{ len $posts }} Beiträge</a></p>
+  </div>
+  <aside class="home-neben" aria-label="Themen und Serien">
+    <h2 class="home-heading-small">Themen</h2>
+    <ul class="home-themen">
+      {{- range first 7 site.Taxonomies.tags.ByCount }}
+      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a><span>{{ .Count }}</span></li>
+      {{- end }}
+    </ul>
+    {{- with site.Taxonomies.series }}
+    <h2 class="home-heading-small">Serien</h2>
+    <ul class="home-themen">
+      {{- range first 4 .ByCount }}
+      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a><span>{{ .Count }} {{ cond (eq .Count 1) "Teil" "Teile" }}</span></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </aside>
 </section>
 
 <section class="abzweige" aria-labelledby="abzweige">

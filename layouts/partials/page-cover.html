@@ -38,7 +38,7 @@
   </figure>
   {{- $meta := partial "page-meta.html" (dict "page" $page "words" $.words) | strings.TrimSpace | safeHTML }}
   <div class="page-cover-bar hz-scrim-bar{{ if $meta }} has-meta{{ end }}">
-    <h1 class="page-cover-title">{{ $page.Title }}</h1>
+    <h1 class="page-cover-title">{{ partial "clean-title.html" $page }}</h1>
     {{ $meta }}
   </div>
 </div>
@@ -48,6 +48,6 @@
   {{- end }}
 {{- end }}
 {{- if not $shown }}
-<h1>{{ $page.Title }}</h1>
+<h1>{{ partial "clean-title.html" $page }}</h1>
 {{ partial "page-meta.html" (dict "page" $page "words" $.words) }}
 {{- end }}

@@ -57,7 +57,7 @@
     {{- range $pages }}
     {{- $html := .Content | replaceRE `\s(srcset|sizes)="[^"]*"` "" | replaceRE `\s(src|href)="/([^/"])` (printf ` $1="%s/$2` $base) }}
     <item>
-      <title>{{ .Title }}</title>
+      <title>{{ partial "clean-title.html" . }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid isPermaLink="true">{{ .Permalink }}</guid>

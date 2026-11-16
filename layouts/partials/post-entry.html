@@ -1,41 +1,18 @@
 {{/*
-  Copy of themes/typo/layouts/partials/post-entry.html (theme v3.0.2) with a
-  thumbnail column on the left for posts that name an image in front matter
-  ("cover"). Posts without one get an
-  empty slot of the same width, so the titles line up in every row. The
-  theme's date column is left out: the date stands in the post itself, and
-  in the list it took width from the titles.
-  Only an explicitly chosen image is used: the first image of a bundle can
-  be anything, a table or a screenshot.
-
-  The thumbnail repeats the title link, so it is hidden from screen readers
-  and skipped by the keyboard; alt stays empty for the same reason.
-  Diff against the theme file when updating typo.
-
-  The thumbnail is the cover in its own 2:1 (partials/list-thumb.html).
+  One post in a list (blog, tag pages, publisher pages, the home page): the
+  title, then one quiet line with its topic and reading time, the series and
+  update labels. No picture in front of the title: the list is for reading
+  and scanning, the covers live on the post itself (redesign of 16.11.2026).
+  The topic is the post's first tag; posts without tags show only the time.
 */}}
-{{- $thumb := "" -}}
-{{- with .Params.cover -}}
-  {{- with $.Resources.Get (strings.TrimPrefix "./" .) -}}
-    {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}
-      {{- $thumb = . -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
-
-<div class="post-line{{ with $thumb }} has-thumb{{ end }}">
-
-    {{- with $thumb }}
-    {{ partial "list-thumb.html" (dict "img" . "href" $.RelPermalink) }}
-    {{- else }}
-    <span class="line-thumb" aria-hidden="true"></span>
-    {{- end }}
-
+<div class="post-line">
     <div class="line-text">
         <p class="line-title">
-            <a href="{{ .RelPermalink }}">
-                {{ .Title }}
-            </a>
+            <a href="{{ .RelPermalink }}">{{ partial "clean-title.html" . }}</a>
+        </p>
+        <p class="line-meta">
+            {{- with .Params.tags }}{{ $t := index . 0 }}{{ with site.GetPage (printf "/tags/%s" (urlize $t)) }}{{ .Title }}{{ else }}{{ $t }}{{ end }} · {{ end -}}
+            {{ .ReadingTime }} Min.
         </p>
         {{- /* Parts of a series carry a small label under the title. */}}
         {{ partial "series-label.html" . }}
@@ -46,5 +23,4 @@
         <p class="line-summary"> {{ .Summary }} </p>
         {{ end }}
     </div>
-
 </div>

@@ -17,22 +17,11 @@
   <summary class="soon-heading"><span class="soon-title">Vorschau</span><span class="soon-hint">{{ if eq (len .) 1 }}Dieser Beitrag erscheint als Nächstes{{ else }}Diese Beiträge erscheinen als Nächstes{{ end }}</span></summary>
   {{- range . }}
   {{- $page := . }}
-  {{- $thumb := "" }}
-  {{- with $page.Params.cover }}
-    {{- with $page.Resources.Get (strings.TrimPrefix "./" .) }}
-      {{- if not (in (slice "svg" "gif") .MediaType.SubType) }}{{ $thumb = . }}{{ end }}
-    {{- end }}
-  {{- end }}
   {{- $when := "" }}
   {{- with $page.Params.soon }}{{ if eq (printf "%T" .) "string" }}{{ $when = . }}{{ end }}{{ end }}
-  <div class="post-line soon-line{{ with $thumb }} has-thumb{{ end }}">
-    {{- with $thumb }}
-    {{ partial "list-thumb.html" (dict "img" .) }}
-    {{- else }}
-    <span class="line-thumb" aria-hidden="true"></span>
-    {{- end }}
+  <div class="post-line soon-line">
     <div class="line-text">
-      <p class="line-title">{{ if $series }}{{ $page.Params.seriesLabel | default $page.Title }}{{ else }}{{ $page.Title }}{{ end }}</p>
+      <p class="line-title">{{ if $series }}{{ $page.Params.seriesLabel | default (partial "clean-title.html" $page) }}{{ else }}{{ partial "clean-title.html" $page }}{{ end }}</p>
       <span class="soon-label">demnächst{{ with $when }} · {{ . }}{{ end }}</span>
       {{- with $page.Params.summary }}
       <p class="line-summary">{{ . }}</p>

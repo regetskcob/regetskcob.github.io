@@ -20,7 +20,7 @@
       {{- with index $parts (sub $index 1) }}
     <a class="series-nav-prev" href="{{ .RelPermalink }}" rel="prev">
       <span class="series-nav-dir">← Vorheriger Teil</span>
-      <span>{{ .Params.seriesLabel | default .Title }}</span>
+      <span>{{ .Params.seriesLabel | default (partial "clean-title.html" .) }}</span>
     </a>
       {{- end }}
     {{- end }}
@@ -28,7 +28,7 @@
       {{- with index $parts (add $index 1) }}
     <a class="series-nav-next" href="{{ .RelPermalink }}" rel="next">
       <span class="series-nav-dir">Nächster Teil →</span>
-      <span>{{ .Params.seriesLabel | default .Title }}</span>
+      <span>{{ .Params.seriesLabel | default (partial "clean-title.html" .) }}</span>
     </a>
       {{- end }}
     {{- end }}
