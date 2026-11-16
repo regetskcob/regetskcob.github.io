@@ -5,7 +5,8 @@
   custom.css), and the turnoffs ("Abzweige"):
   the blog and the photography as two tiles, then the running projects
   on a field path, Horizont first; the apps that are not out yet carry
-  the badge "Vorschau" ("status" in Horizont's tokens/flur.yaml). Nothing else;
+  the badge "Vorschau" ("status" in Horizont's tokens/flur.yaml); the
+  products themselves are presented on kalkar-it.de. Nothing else;
   the posts live at /blog/, the photos at /fotografie/.
 
   The intro is params.homeIntro* in hugo.toml. The projects and their lines
@@ -86,10 +87,15 @@
       <span class="kachel-kennung">Niederrhein. · Galerie · Ausrüstung · Film-Rezepte</span>
     </a>
   </div>
-  {{- /* Then the projects, each on the field path. */}}
-  {{ partial "horizont/kennung.html" (dict "text" "Projekte" "tag" "h3") }}
+  {{- /* Then what I build. Since 16.11.2026 the products (those with a site
+         of their own in flur.yaml, plus Kalkar Kompakt) are presented by
+         Kalkar IT; here they get one line that leads there. What stays is
+         mine alone: Horizont, the design system. */}}
+  {{ partial "horizont/kennung.html" (dict "text" "Woran ich baue" "tag" "h3") }}
+  {{- $products := slice -}}
   <ul class="abzweig-list">
     {{- range after 1 $flur.gemarkungen }}
+    {{- if .site }}{{ $products = $products | append .name }}{{ continue }}{{ end }}
     <li data-product="{{ .product }}">
       <a href="{{ printf "%s%s" $flur.site .path }}">
         {{ partial "horizont/mark.html" (dict "product" (.mark | default .product) "size" 28) }}
@@ -101,6 +107,14 @@
       </a>
     </li>
     {{- end }}
+    <li data-product="regetskcob">
+      <a href="https://kalkar-it.de/#arbeiten">
+        {{ partial "horizont/mark.html" (dict "product" "kalkar-it" "size" 28) }}
+        <span class="abzweig-name">Kalkar IT</span>
+        <span class="abzweig-note">Apps und Werkzeuge</span>
+        <span class="abzweig-text">{{ delimit ($products | append "Kalkar Kompakt") ", " " und " }}: die Apps stellt meine Firma vor, die Geschichten dahinter stehen hier im Blog.</span>
+      </a>
+    </li>
   </ul>
 </section>
 {{ end }}
