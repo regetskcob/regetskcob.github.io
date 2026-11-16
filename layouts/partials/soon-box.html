@@ -1,6 +1,6 @@
 {{/*
   The box "Vorschau" with the previews of posts that are not out yet: cover,
-  title and summary in the lines of the blog list, but not linked, there is
+  title and summary as cards in the grid of the blog list (post-card.html), but not linked, there is
   no page behind them (see partials/soon-pages.html). The box has a dashed
   border and a muted cover to set it apart from the finished posts.
   Takes a dict: "pages", the previews, and "series" (true on a series page,
@@ -15,20 +15,29 @@
 {{- $series := $.series }}
 <details class="soon-box" id="vorschau" open>
   <summary class="soon-heading"><span class="soon-title">Vorschau</span><span class="soon-hint">{{ if eq (len .) 1 }}Dieser Beitrag erscheint als Nächstes{{ else }}Diese Beiträge erscheinen als Nächstes{{ end }}</span></summary>
+  <div class="post-grid soon-grid">
   {{- range . }}
   {{- $page := . }}
   {{- $when := "" }}
   {{- with $page.Params.soon }}{{ if eq (printf "%T" .) "string" }}{{ $when = . }}{{ end }}{{ end }}
-  <div class="post-line soon-line">
-    <div class="line-text">
-      <p class="line-title">{{ if $series }}{{ $page.Params.seriesLabel | default (partial "clean-title.html" $page) }}{{ else }}{{ partial "clean-title.html" $page }}{{ end }}</p>
-      <span class="soon-label">demnächst{{ with $when }} · {{ . }}{{ end }}</span>
-      {{- with $page.Params.summary }}
-      <p class="line-summary">{{ . }}</p>
+  {{- $img := "" }}
+  {{- with $page.Params.cover }}{{ with $page.Resources.Get (strings.TrimPrefix "./" .) }}{{ if not (in (slice "svg" "gif") .MediaType.SubType) }}{{ $img = . }}{{ end }}{{ end }}{{ end }}
+  <div class="post-card soon-line">
+    <span class="card-cover" aria-hidden="true">
+      {{- with $img }}
+      {{- $s := .Fill "400x200 webp q75 Center" }}{{ $m := .Fill "640x320 webp q75 Center" }}
+      <img src="{{ $m.RelPermalink }}" srcset="{{ $s.RelPermalink }} 400w, {{ $m.RelPermalink }} 640w"
+           sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" width="640" height="320" loading="lazy" decoding="async" alt="">
       {{- end }}
-    </div>
+    </span>
+    <p class="line-title">{{ if $series }}{{ $page.Params.seriesLabel | default (partial "clean-title.html" $page) }}{{ else }}{{ partial "clean-title.html" $page }}{{ end }}</p>
+    <div class="card-labels"><span class="soon-label">demnächst{{ with $when }} · {{ . }}{{ end }}</span></div>
+    {{- with $page.Params.summary }}
+    <p class="line-summary">{{ . }}</p>
+    {{- end }}
   </div>
   {{- end }}
+  </div>
 </details>
 <script>
   (function () {

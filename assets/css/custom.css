@@ -1802,3 +1802,8 @@ figure a[data-lightbox] {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* The previews as cards: same grid, cover a little muted, not linked. */
+.soon-grid { margin: var(--s-16) 0 var(--s-8); }
+.soon-line.post-card { padding: 0; border: 0; }
+.soon-line .card-cover img { opacity: 0.75; filter: saturate(0.6); }
+.post-card:hover .soon-line .card-cover img, .soon-line:hover .card-cover img { transform: none; }
