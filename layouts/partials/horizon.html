@@ -31,7 +31,7 @@
 {{- /* The marks. */ -}}
 {{- with .Params.horizon -}}
   {{- range $i, $m := . -}}
-    {{- $marks = $marks | append (dict "id" $m.id "label" $m.label "short" (printf "%d" (add $i 1))) -}}
+    {{- $marks = $marks | append (dict "id" $m.id "label" $m.label "short" $m.label) -}}
   {{- end -}}
 {{- else -}}
   {{- if or (and (eq .Kind "section") (eq $section "blog")) (eq .Kind "term") -}}
@@ -41,7 +41,7 @@
     {{- end -}}
   {{- else if eq .Layout "gallery" -}}
     {{- range $i, $g := partial "gallery-data.html" "" -}}
-      {{- $marks = $marks | append (dict "id" $g.id "label" $g.title "short" (printf "%d" (add $i 1))) -}}
+      {{- $marks = $marks | append (dict "id" $g.id "label" $g.title "short" $g.title) -}}
     {{- end -}}
   {{- else if .IsPage -}}
     {{- $i := 0 -}}
@@ -49,7 +49,7 @@
       {{- range (cond (eq .Level 2) (slice .) .Headings) -}}
         {{- if and (eq .Level 2) .ID -}}
           {{- $i = add $i 1 -}}
-          {{- $marks = $marks | append (dict "id" .ID "label" (.Title | plainify | htmlUnescape) "short" (printf "%d" $i)) -}}
+          {{- $marks = $marks | append (dict "id" .ID "label" (.Title | plainify | htmlUnescape) "short" (.Title | plainify | htmlUnescape)) -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}
