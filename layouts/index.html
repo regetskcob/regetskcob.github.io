@@ -1,9 +1,8 @@
 {{/*
   The landing page in front of the blog: who writes here, in a few honest
-  sentences, one photo from the series, the newest posts (with topics and
-  series beside them where the screen is wide enough, see "Home" in
-  custom.css), and the turnoffs ("Abzweige"):
-  the blog and the photography as two tiles, then the running projects
+  sentences, one photo from the series, the turnoffs ("Abzweige"):
+  the blog and the photography as two tiles, the three newest posts in a
+  line each, then the running projects
   on a field path, Horizont first; the apps that are not out yet carry
   the badge "Vorschau" ("status" in Horizont's tokens/flur.yaml); the
   products themselves are presented on kalkar-it.de. Nothing else;
@@ -42,33 +41,6 @@
   {{- end }}
 </section>
 
-{{- /* The newest posts. From 1200px a column beside them names the topics and
-       the running series; below that it is not shown, the blog has both. */}}
-<section class="home-neu" aria-labelledby="neu">
-  <div class="home-neu-liste">
-    <h2 id="neu" class="home-heading-small">Neu im Blog</h2>
-    {{- range first 6 $posts.ByDate.Reverse }}
-    {{ partial "post-entry.html" . }}
-    {{- end }}
-    <p class="home-more"><a href="{{ "blog/" | relURL }}">Alle {{ len $posts }} Beiträge</a></p>
-  </div>
-  <aside class="home-neben" aria-label="Themen und Serien">
-    <h2 class="home-heading-small">Themen</h2>
-    <ul class="home-themen">
-      {{- range first 7 site.Taxonomies.tags.ByCount }}
-      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a><span>{{ .Count }}</span></li>
-      {{- end }}
-    </ul>
-    {{- with site.Taxonomies.series }}
-    <h2 class="home-heading-small">Serien</h2>
-    <ul class="home-themen">
-      {{- range first 4 .ByCount }}
-      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a><span>{{ .Count }} {{ cond (eq .Count 1) "Teil" "Teile" }}</span></li>
-      {{- end }}
-    </ul>
-    {{- end }}
-  </aside>
-</section>
 
 <section class="abzweige" aria-labelledby="abzweige">
   {{ partial "horizont/kennung.html" (dict "text" "Abzweige" "tag" "h2") }}
@@ -87,6 +59,15 @@
       <span class="kachel-kennung">Niederrhein. · Galerie · Ausrüstung · Film-Rezepte</span>
     </a>
   </div>
+  {{- /* Between the tiles and the projects, the three newest posts as one
+         line each: date and title, no summary. The blog list has the rest
+         (17.11.2026: the longer list with topics pushed the tiles down). */}}
+  <h3 class="hz-kennung" id="neu">Neu im Blog</h3>
+  <ul class="home-neu">
+    {{- range first 3 $posts.ByDate.Reverse }}
+    <li><a href="{{ .RelPermalink }}"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time><span>{{ partial "clean-title.html" . }}</span></a></li>
+    {{- end }}
+  </ul>
   {{- /* Then what I build. Since 16.11.2026 the products (those with a site
          of their own in flur.yaml, plus Kalkar Kompakt) are presented by
          Kalkar IT; here they get one line that leads there. What stays is
