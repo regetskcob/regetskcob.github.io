@@ -67,4 +67,5 @@
     "mark" (cond (eq $field "blog") "blog" "regetskcob")
     "place" $place
     "marks" $marks
+    "search" (dict "url" ("blog/#suche" | relURL) "label" (printf "Suchen in %d Beiträgen" (index $counts "blog")))
     "karte" (dict "home" "regetskcob" "here" "regetskcob" "field" $field "counts" $counts "url" ("karte/" | relURL))) }}
