@@ -2,4 +2,4 @@ module regetskcob.github.io
 
 go 1.25.3
 
-require github.com/regetskcob/horizont v0.20.0 // indirect
+require github.com/regetskcob/horizont v0.20.1 // indirect
