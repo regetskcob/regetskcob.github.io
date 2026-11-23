@@ -369,6 +369,19 @@ dieses Repositorys.
 
 ## Inhalte pflegen
 
+Gepflegt wird die Seite in der [Redaktion](https://www.kalkar-it.de/redaktion/) (Web, iPhone,
+iPad): Beiträge, die Seiten unter `content/*.md`, Serien- und Verlagsseiten, Galerien,
+Ausrüstung, die Fotos der Serie Niederrhein., Kameranamen und Verlage im Dativ. Was dort
+bearbeitet werden darf, steht in `.redaktion.yml`. Jedes Veröffentlichen ist genau ein Commit
+auf `main`, den der Pages-Workflow baut und ausliefert. Neue Fotos für Galerien, die Serie und
+die Ausrüstung landen direkt im passenden Ordner unter `assets/`, ohne Metadaten. Front-Matter-
+Schlüssel, die die Redaktion nicht kennt (`aliases`, `soon` in Beiträgen, `build`, `layout`),
+und Kommentare bleiben beim Speichern stehen. Layouts, Stile, `data/recipes.yaml` und der
+Workflow bleiben beim Entwickler. Neue Schlüssel im Front Matter oder in `data/` gehören im
+selben Commit in `.redaktion.yml`, wenn sie in der Redaktion bearbeitbar sein sollen.
+
+Ohne Redaktion geht es wie bisher direkt im Repository:
+
 Beiträge sind [Page Bundles](https://gohugo.io/content-management/page-bundles/):
 ein Ordner unter `content/blog/` mit einer `index.md` und den zugehörigen Bildern
 daneben. Im Markdown werden sie relativ referenziert, die Größenanpassung übernimmt
