@@ -1,0 +1,278 @@
+# What can be edited in Redaktion (kalkar-it.de/redaktion/). Layouts, styles,
+# the Horizont module and the workflow stay with the developer. Front matter
+# keys and comments not listed here (aliases, soon, build, layout, …) survive
+# every save unchanged. Each publish is one commit on main; the Pages workflow
+# builds and deploys it.
+timezone: Europe/Berlin
+
+media:
+  dir: static/uploads
+  url: /uploads
+  # Images under assets/ are published by Hugo's templates, each with the value
+  # the template reads (relative to its root).
+  libraries:
+    bilder:
+      label: Alle Bilder
+      dir: assets
+      root: assets           # gallery/niederrhein/a.jpg, gear/setup.jpg: shortcodes and cover photos
+    galerien:
+      label: Galerien
+      dir: assets/gallery
+      root: assets/gallery   # luftbilder/a.jpg, as data/gallery.yaml stores it
+    serie:
+      label: Niederrhein.
+      dir: assets/gallery/niederrhein
+      root: assets/gallery   # niederrhein/a.jpg, as content/niederrhein.md stores it
+    ausruestung:
+      label: Ausrüstung
+      dir: assets/gear
+      root: assets/gear      # rucksack.jpg, as data/gear.yaml stores it
+    einsatz:
+      label: Im Einsatz
+      dir: assets/gear/einsatz
+      root: assets/gear/einsatz
+
+collections:
+  - name: posts
+    label: Beiträge
+    icon: article
+    folder: content/blog
+    bundle: true               # content/blog/<slug>/index.md, images next to it
+    slug: "{{title}}"
+    url: /blog/{{slug}}/
+    fields:
+      - { name: title, label: Titel, type: string, required: true, seo: title, hint: "Mit Emoji-Präfix wie „📸 | …“" }
+      - { name: date, label: Datum, type: datetime, required: true }
+      - { name: lastmod, label: Zuletzt überarbeitet, type: datetime, hint: "Nur bei echten Überarbeitungen setzen" }
+      - { name: summary, label: Kurzfassung, type: text, required: true, hint: "Erscheint in Listen und als Beschreibung" }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description, hint: "Leer gilt die Kurzfassung" }
+      - { name: cover, label: Titelbild, type: image, alt: coverAlt, seo: image, hint: "Datei im Beitragsordner, meist cover.jpg" }
+      - { name: coverAlt, label: Bildbeschreibung, type: string }
+      - { name: coverCredit, label: Bildnachweis, type: string, hint: "z. B. „Cover: Rheinwerk Verlag“" }
+      - { name: coverAI, label: Titelbild mit KI erzeugt, type: boolean }
+      - { name: tags, label: Schlagwörter, type: list, taxonomy: tags }
+      - { name: series, label: Serie, type: string, taxonomy: series }
+      - { name: seriesLabel, label: Teil der Serie, type: string, hint: "z. B. „Teil II: Die Systeme verbinden“" }
+      - { name: verlag, label: Verlag, type: string, taxonomy: verlag, hint: "Nur bei Buchbesprechungen" }
+      - name: disclosure
+        label: Transparenz
+        type: object
+        fields:
+          - { name: type, label: Wie bekommen, type: select, options: [provided, purchased, gift], hint: "provided = kostenlos gestellt, purchased = selbst gekauft, gift = privat geschenkt" }
+          - { name: by, label: Von wem, type: string, hint: "Im Dativ: „vom Rheinwerk Verlag“" }
+          - { name: item, label: Was, type: string, hint: "Leer: „Dieses Buch“" }
+          - { name: note, label: Zusatz, type: text }
+      - { name: draft, label: Entwurf (nicht veröffentlichen), type: boolean }
+      - { name: body, label: Text, type: markdown }
+
+singletons:
+  - name: blog
+    label: Blog (Übersicht)
+    icon: newspaper
+    file: content/blog/_index.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung, type: text, seo: description }
+      - { name: soon, label: Demnächst, type: list, hint: "Ordnernamen von Entwürfen unter content/blog/, die als Vorschau erscheinen" }
+
+  - name: about
+    label: Über mich
+    icon: info
+    file: content/about.md
+    lastmod: true
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
+      - { name: ogImage, label: Vorschaubild beim Teilen, type: image, library: bilder, seo: image }
+      - { name: body, label: Text, type: markdown }
+
+  - name: niederrhein
+    label: Niederrhein.
+    icon: image
+    file: content/niederrhein.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
+      - { name: teaser, label: Text auf der Startseite, type: text }
+      - { name: photo, label: Titelfoto, type: image, library: bilder, alt: photo_alt, seo: image }
+      - { name: photo_alt, label: Bildbeschreibung, type: string }
+      - { name: shuffle, label: Bei jedem Besuch mischen, type: boolean }
+      - name: photos
+        label: Fotos
+        type: list
+        fields:
+          - { name: image, label: Foto, type: image, library: serie, alt: alt, required: true }
+          - { name: alt, label: Bildbeschreibung, type: string, required: true }
+          - { name: size, label: Größe, type: select, options: [large], hint: "large: zwei Spalten, zwei Zeilen" }
+      - { name: body, label: Text, type: markdown }
+
+  - name: fotografie
+    label: Fotografie
+    icon: image
+    file: content/fotografie.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
+      - { name: body, label: Text, type: markdown }
+
+  - name: galerie
+    label: Galerie (Seite)
+    icon: image
+    file: content/galerie.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
+      - { name: body, label: Text, type: markdown }
+
+  - name: ausruestung-seite
+    label: Ausrüstung (Seite)
+    icon: info
+    file: content/ausruestung.md
+    lastmod: true
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
+      - { name: photo, label: Titelfoto, type: image, library: bilder, alt: photo_alt, seo: image }
+      - { name: photo_alt, label: Bildbeschreibung, type: string }
+      - { name: body, label: Text, type: markdown }
+
+  - name: rezepte
+    label: Film-Rezepte (Seite)
+    icon: info
+    file: content/rezepte.md
+    lastmod: true
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
+      - { name: photo, label: Titelfoto, type: image, library: bilder, alt: photo_alt, seo: image }
+      - { name: photo_alt, label: Bildbeschreibung, type: string }
+      - { name: review, label: Beitrag zum Rezeptbuch (Ordnername), type: string }
+      - { name: body, label: Text, type: markdown, hint: "Die Werte der Rezepte stehen in data/recipes.yaml und bleiben beim Entwickler" }
+
+  - name: karte
+    label: Flurkarte
+    icon: map
+    file: content/karte.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
+      - { name: body, label: Text, type: markdown }
+
+  - name: legal
+    label: Rechtliches
+    icon: gavel
+    file: content/legal.md
+    lastmod: true
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung, type: text }
+      - { name: body, label: Text, type: markdown, hint: "Die Anschrift kommt aus dem Secret LEGAL_PRIVATE, nicht aus dem Text" }
+
+lists:
+  - name: galerien
+    label: Galerien
+    icon: image
+    file: data/gallery.yaml
+    key: galleries
+    title_field: title
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: id, label: Anker, type: string, required: true, hint: "Kleinbuchstaben, für /galerie/#anker" }
+      - { name: description, label: Beschreibung, type: text }
+      - name: items
+        label: Fotos
+        type: list
+        fields:
+          - { name: image, label: Foto, type: image, library: galerien, alt: alt, required: true, hint: "Mit „Beitrag“ eine Datei aus dessen Ordner" }
+          - { name: alt, label: Bildbeschreibung, type: string, required: true }
+          - { name: post, label: Beitrag (Ordnername), type: string, hint: "Optional: die Kachel verlinkt dann den Beitrag" }
+          - { name: cover, label: Foto der Karte auf der Startseite, type: boolean }
+          - { name: size, label: Größe, type: select, options: [large] }
+
+  - name: ausruestung
+    label: Ausrüstung
+    icon: list
+    file: data/gear.yaml
+    key: groups
+    title_field: title
+    fields:
+      - { name: title, label: Überschrift, type: string, required: true }
+      - { name: description, label: Beschreibung, type: text }
+      - { name: image, label: Foto, type: image, library: ausruestung, alt: alt }
+      - { name: alt, label: Bildbeschreibung, type: string }
+      - { name: beside, label: Neben dem vorigen Block, type: boolean }
+      - name: items
+        label: Einträge
+        type: list
+        fields:
+          - { name: name, label: Name, type: string, required: true }
+          - { name: note, label: Notiz, type: text, hint: "Warum es in der Tasche ist, in einem Satz" }
+          - { name: post, label: Beitrag (Ordnername), type: string, hint: "Ein falscher Name lässt den Build scheitern" }
+          - { name: postLabel, label: Linktext, type: string, hint: "Leer: „Mehr dazu im Blog“" }
+
+data:
+  - name: einsatz
+    label: Ausrüstung im Einsatz
+    icon: image
+    file: data/gear.yaml
+    fields:
+      - name: inUse
+        label: Im Einsatz
+        type: object
+        fields:
+          - { name: title, label: Überschrift, type: string, required: true }
+          - name: items
+            label: Fotos
+            type: list
+            fields:
+              - { name: image, label: Foto, type: image, library: einsatz, alt: alt, required: true }
+              - { name: alt, label: Bildbeschreibung, type: string, required: true }
+              - { name: size, label: Größe, type: select, options: [large] }
+
+  - name: kameras
+    label: Kameranamen
+    icon: info
+    file: data/cameras.yaml
+    fields:
+      - { name: namen, label: Modell → Name, type: map, root: true, hint: "Kennung aus den EXIF-Daten → voller Name" }
+
+  - name: verlage-dativ
+    label: Verlage im Dativ
+    icon: info
+    file: data/verlag_dativ.yaml
+    fields:
+      - { name: verlage, label: Verlag → „vom …“, type: map, root: true }
+
+taxonomies:
+  - name: series
+    label: Serien
+    folder: content/series
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung, type: text, seo: description }
+      - { name: body, label: Einleitung, type: markdown }
+  - name: verlag
+    label: Verlage
+    folder: content/verlag
+    fields:
+      - { name: title, label: Name des Verlags, type: string, required: true }
+      - { name: body, label: Text, type: markdown }
+
+shortcodes:
+  gallery:
+    open: "{{< gallery >}}"
+    item: "![{alt}]({file})"
+    close: "{{< /gallery >}}"
+  snippets:
+    - name: nachtrag
+      label: Nachtrag mit Jahr
+      text: "{{< nachtrag {year} >}}\n{cursor}\n{{< /nachtrag >}}"
+    - name: hinweis
+      label: Hinweis
+      text: "{{< nachtrag label=\"Hinweis\" >}}\n{cursor}\n{{< /nachtrag >}}"
+    - name: images
+      label: Zwei Bilder nebeneinander
+      text: "{{< images >}}\n{cursor}\n{{< /images >}}"
+    - name: image-left
+      label: Bild links neben dem Text
+      text: "{{< image-left >}}\n{cursor}\n{{< /image-left >}}"
