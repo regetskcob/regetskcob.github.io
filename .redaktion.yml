@@ -35,6 +35,7 @@ media:
 collections:
   - name: posts
     label: Beiträge
+    group: Blog
     icon: article
     folder: content/blog
     bundle: true               # content/blog/<slug>/index.md, images next to it
@@ -67,7 +68,8 @@ collections:
 
 singletons:
   - name: blog
-    label: Blog (Übersicht)
+    label: Blog-Startseite
+    group: Blog
     icon: newspaper
     file: content/blog/_index.md
     fields:
@@ -75,19 +77,9 @@ singletons:
       - { name: description, label: Beschreibung, type: text, seo: description }
       - { name: soon, label: Demnächst, type: list, hint: "Ordnernamen von Entwürfen unter content/blog/, die als Vorschau erscheinen" }
 
-  - name: about
-    label: Über mich
-    icon: info
-    file: content/about.md
-    lastmod: true
-    fields:
-      - { name: title, label: Titel, type: string, required: true }
-      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
-      - { name: ogImage, label: Vorschaubild beim Teilen, type: image, library: bilder, seo: image }
-      - { name: body, label: Text, type: markdown }
-
   - name: niederrhein
-    label: Niederrhein.
+    label: Serie Niederrhein.
+    group: Fotografie
     icon: image
     file: content/niederrhein.md
     fields:
@@ -107,7 +99,8 @@ singletons:
       - { name: body, label: Text, type: markdown }
 
   - name: fotografie
-    label: Fotografie
+    label: Fotografie-Seite
+    group: Fotografie
     icon: image
     file: content/fotografie.md
     fields:
@@ -116,7 +109,8 @@ singletons:
       - { name: body, label: Text, type: markdown }
 
   - name: galerie
-    label: Galerie (Seite)
+    label: Galerie-Startseite
+    group: Fotografie
     icon: image
     file: content/galerie.md
     fields:
@@ -125,7 +119,8 @@ singletons:
       - { name: body, label: Text, type: markdown }
 
   - name: ausruestung-seite
-    label: Ausrüstung (Seite)
+    label: Ausrüstungs-Seite
+    group: Ausrüstung
     icon: info
     file: content/ausruestung.md
     lastmod: true
@@ -137,7 +132,8 @@ singletons:
       - { name: body, label: Text, type: markdown }
 
   - name: rezepte
-    label: Film-Rezepte (Seite)
+    label: Film-Rezepte
+    group: Ausrüstung
     icon: info
     file: content/rezepte.md
     lastmod: true
@@ -149,8 +145,21 @@ singletons:
       - { name: review, label: Beitrag zum Rezeptbuch (Ordnername), type: string }
       - { name: body, label: Text, type: markdown, hint: "Die Werte der Rezepte stehen in data/recipes.yaml und bleiben beim Entwickler" }
 
+  - name: about
+    label: Über mich
+    group: Über mich
+    icon: info
+    file: content/about.md
+    lastmod: true
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Beschreibung für Suchmaschinen, type: text, seo: description }
+      - { name: ogImage, label: Vorschaubild beim Teilen, type: image, library: bilder, seo: image }
+      - { name: body, label: Text, type: markdown }
+
   - name: karte
     label: Flurkarte
+    group: Über mich
     icon: map
     file: content/karte.md
     fields:
@@ -160,6 +169,7 @@ singletons:
 
   - name: legal
     label: Rechtliches
+    group: Über mich
     icon: gavel
     file: content/legal.md
     lastmod: true
@@ -167,10 +177,10 @@ singletons:
       - { name: title, label: Titel, type: string, required: true }
       - { name: description, label: Beschreibung, type: text }
       - { name: body, label: Text, type: markdown, hint: "Die Anschrift kommt aus dem Secret LEGAL_PRIVATE, nicht aus dem Text" }
-
 lists:
   - name: galerien
     label: Galerien
+    group: Fotografie
     icon: image
     file: data/gallery.yaml
     key: galleries
@@ -191,6 +201,7 @@ lists:
 
   - name: ausruestung
     label: Ausrüstung
+    group: Ausrüstung
     icon: list
     file: data/gear.yaml
     key: groups
@@ -212,7 +223,8 @@ lists:
 
 data:
   - name: einsatz
-    label: Ausrüstung im Einsatz
+    label: Im Einsatz
+    group: Ausrüstung
     icon: image
     file: data/gear.yaml
     fields:
@@ -231,6 +243,7 @@ data:
 
   - name: kameras
     label: Kameranamen
+    group: Feineinstellungen
     icon: info
     file: data/cameras.yaml
     fields:
@@ -238,6 +251,7 @@ data:
 
   - name: verlage-dativ
     label: Verlage im Dativ
+    group: Feineinstellungen
     icon: info
     file: data/verlag_dativ.yaml
     fields:
@@ -246,6 +260,7 @@ data:
 taxonomies:
   - name: series
     label: Serien
+    group: Blog
     folder: content/series
     fields:
       - { name: title, label: Titel, type: string, required: true }
@@ -253,6 +268,7 @@ taxonomies:
       - { name: body, label: Einleitung, type: markdown }
   - name: verlag
     label: Verlage
+    group: Blog
     folder: content/verlag
     fields:
       - { name: title, label: Name des Verlags, type: string, required: true }
